@@ -1,0 +1,13 @@
+{
+    "vin": "VIN",
+    "order-id": "Order ID",
+    "internal-order-id": "Internal Order ID",
+    "pki-business-name": "Pickup Name",
+    "di-business-name": "Delivery Name",
+    "customer": "Shipper/Customer",
+    "vehicle": "Vehicle",
+    "pmi-invoice-id": "Invoice ID",
+    "all": "All",
+    "receiver-name": "Receiver",
+    "offering-company-name": "Offering Company"
+}

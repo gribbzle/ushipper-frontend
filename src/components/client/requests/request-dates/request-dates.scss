@@ -1,0 +1,36 @@
+.request-dates {
+    .timeline-content {
+        padding: 4px 0;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        & > svg {
+            color: var(--color-border-default);
+        }
+    }
+
+    .timeline-item {
+        gap: 8px;
+    }
+
+    &__route-date {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+
+        &--warning {
+            color: var(--color-warning);
+        }
+
+        &:not(&--warning) {
+            color: var(--color-text-header);
+        }
+    }
+
+    &__type {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

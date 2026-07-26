@@ -1,0 +1,28 @@
+.dispatcher-item-body {
+    grid-template-columns: 4fr 1fr 2fr;
+    display: grid;
+    gap: 32px;
+    justify-content: space-between;
+
+    &__business-hours {
+        align-self: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-text-light);
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}

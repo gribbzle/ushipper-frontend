@@ -1,0 +1,12 @@
+.parsed-order-chat-button {
+    position: relative;
+
+    &__action {
+        padding: 8px;
+
+        svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

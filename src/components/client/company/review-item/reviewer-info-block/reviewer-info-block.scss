@@ -1,0 +1,26 @@
+.reviewer-info-block {
+    font-weight: 400;
+    line-height: 16px;
+    gap: 4px;
+
+    h4 {
+        color: var(--color-text-default);
+        overflow-wrap: break-word;
+    }
+
+    &__city {
+        font-weight: 600;
+    }
+
+    &__label {
+        color: var(--color-text-light);
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__name:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

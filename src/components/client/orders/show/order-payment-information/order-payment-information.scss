@@ -1,0 +1,9 @@
+.payment-information {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-input-background-disabled);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 16px;
+    height: fit-content;
+}

@@ -1,0 +1,27 @@
+.order-contact-address {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+
+    &__name-field,
+    &__street-address-field {
+        grid-column: 1 / 4;
+    }
+
+    &__state-field {
+        grid-column: 2 / 3;
+    }
+
+    &__zip-field {
+        grid-column: 3 / 4;
+    }
+
+    &__contact-name-title {
+        display: flex;
+        gap: 4px;
+
+        .icon-button {
+            padding: 0;
+        }
+    }
+}

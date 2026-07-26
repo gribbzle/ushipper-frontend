@@ -1,0 +1,58 @@
+$btn-size: 40px;
+$svg-size: 22px;
+
+.check-attachment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &__file {
+        display: flex;
+        gap: 8px;
+
+        &-details {
+            width: 112px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        &-name {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            color: var(--color-table-text-default);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &-size {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            color: var(--color-text-light);
+        }
+
+        &--hover {
+            cursor: pointer;
+
+            &:hover {
+                .check-attachment-info__file-name,
+                .check-attachment-info__file-size {
+                    color: var(--color-primary);
+                }
+
+                .file-clip-button {
+                    background: var(--color-primary-button-background-plain);
+                    border: 1px solid var(--color-primary-button-border-plain);
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

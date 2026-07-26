@@ -1,0 +1,17 @@
+import React from 'react';
+
+import { Tabs } from '@components';
+import { classname } from '@utils';
+
+import { OfferDrawerTabsProps } from './offer-drawer-tabs.types';
+import { useOfferDrawerTabs } from './use-offer-drawer-tabs';
+
+import './offer-drawer-tabs.scss';
+
+const cn = classname('offer-drawer-tabs');
+
+export const OfferDrawerTabs = ({ onSelectTab, queryTab }: OfferDrawerTabsProps) => {
+    const { tabs } = useOfferDrawerTabs();
+
+    return <Tabs classNames={cn()} tabs={tabs} onSelectTab={onSelectTab} initialSelectedTabIndex={tabs.findIndex(el => el.value === queryTab)} />;
+};

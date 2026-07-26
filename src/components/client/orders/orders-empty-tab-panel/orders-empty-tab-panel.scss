@@ -1,0 +1,23 @@
+.orders-empty-tab-panel {
+    flex: 1;
+    justify-content: center;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__main-text {
+        color: var(--color-table-text-default);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    &__tip {
+        font-size: 14px;
+        color: var(--color-text-muted);
+    }
+}

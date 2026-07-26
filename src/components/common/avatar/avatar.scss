@@ -1,0 +1,49 @@
+.avatar {
+    $avatar-size: 40px;
+    $avatar-size-mini: 32px;
+    $avatar-size-medium: 48px;
+    $avatar-size-huge: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-info);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    overflow: hidden;
+
+    &__initials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & > * {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--size-mini {
+        width: $avatar-size-mini;
+        height: $avatar-size-mini;
+    }
+
+    &--size-medium {
+        width: $avatar-size-medium;
+        height: $avatar-size-medium;
+    }
+
+    &--size-huge {
+        width: $avatar-size-huge;
+        height: $avatar-size-huge;
+    }
+}

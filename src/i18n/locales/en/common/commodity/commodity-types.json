@@ -1,0 +1,18 @@
+{
+    "bundle_one": "Bundle",
+    "bundle_other": "Bundles",
+    "carton_one": "Carton",
+    "carton_other": "Cartons",
+    "skid_one": "Skid",
+    "skid_other": "Skids",
+    "package_one": "Package",
+    "package_other": "Packages",
+    "container_one": "Container",
+    "container_other": "Containers",
+    "crate_one": "Crate",
+    "crate_other": "Crates",
+    "pallet_one": "Pallet",
+    "pallet_other": "Pallets",
+    "other_one": "Other",
+    "other_other": "Others"
+}

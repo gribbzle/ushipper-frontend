@@ -1,0 +1,57 @@
+.manager-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--color-text-primary);
+    text-wrap: nowrap;
+
+    &--size {
+        &-default {
+            .avatar {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &-medium {
+            .avatar {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__name-and-rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__company,
+    &__rating {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__company {
+        color: var(--color-text-secondary);
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding: 2px 4px;
+        background-color: var(--color-white);
+        border-radius: 40px;
+    }
+}

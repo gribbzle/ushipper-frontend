@@ -1,0 +1,19 @@
+.custom-fees-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .button {
+        width: min-content;
+    }
+
+    &__warning-title {
+        font-weight: 700;
+    }
+
+    &__missing-fee {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+    }
+}

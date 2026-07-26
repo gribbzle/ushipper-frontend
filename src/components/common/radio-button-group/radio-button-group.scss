@@ -1,0 +1,22 @@
+.radio-button-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &__options-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__group-label {
+        font-weight: 700;
+        color: var(--color-text-default);
+        margin-bottom: 4px;
+
+        &-required {
+            font-weight: normal;
+            color: var(--color-danger);
+        }
+    }
+}

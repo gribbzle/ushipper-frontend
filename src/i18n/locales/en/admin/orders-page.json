@@ -1,0 +1,89 @@
+{
+    "page-title": "Orders | {{ projectName }}",
+    "header": "Orders",
+    "table-columns-title": {
+        "order-id": "Order ID",
+        "pickup-location": "Pickup Location",
+        "delivery-location": "Delivery Location",
+        "price": "Price",
+        "company": "Company",
+        "status": "Status",
+        "payment-status": "Payment Status",
+        "created-at": "Created At",
+        "driver": "Driver",
+        "dispatcher": "Dispatcher",
+        "delivered-at": "Delivered At",
+        "receipt-photo": "Receipt Photo",
+        "receipt-status": "Receipt Status",
+        "contract": "Contract",
+        "rc": "RC",
+        "bol": "BOL",
+        "pod": "POD",
+        "rc-description": "Rate Confirmation"
+    },
+    "table-actions": {
+        "pay-to-driver": "Pay to Driver",
+        "upload-payment-document": "Upload Payment Document"
+    },
+    "funds-transfer-status-actions": {
+        "none": "Mark as Ready to Factoring",
+        "documents-requested": "Mark as Documents Requested",
+        "documents-submitted": "Mark as Documents Submitted",
+        "factoring-requested": "Mark as Sent to Factoring",
+        "initiated": "Mark as Paid",
+        "completed": "Mark as Paid",
+        "factoring-confirmed": "Mark as Approved by Factoring",
+        "damage-claim": "Mark as Claimed"
+    },
+    "funds-transfer-status-tag": {
+        "driver-fee-charged": "Charged {{ amount }}",
+        "paid": "Paid {{ amount }}",
+        "view-transactions": "View Transactions"
+    },
+    "driver-payment-tag": {
+        "labels": {
+            "recipient-company": "Receipt Pending",
+            "recipient-driver": "Receipt Pending",
+            "recipient-company-paid": "Receipt Paid",
+            "recipient-company-declined": "Receipt Declined",
+            "receipt-paid": "Receipt Paid {{ amount }}"
+        },
+        "options": {
+            "send-payment-form": "Send Payment Form",
+            "edit-payment-form": "Edit Payment Form",
+            "resend-payment-form": "Resend Payment Form",
+            "view-in-cod-cop": "View in COD/COP"
+        }
+    },
+    "cod-cop-order-action-tag": {
+        "pending": "Pending",
+        "paid": "Paid",
+        "declined": "Declined",
+        "reason": "Reason"
+    },
+    "click-to-copy": "Click to copy",
+    "no-order-id": "No Order Id",
+    "mark-as-documents-requested-popup": {
+        "title": "Mark {{ orderId }}<br/>as Documents Requested?",
+        "confirm-btn-label": "Mark as Documents Requested",
+        "cancel-btn-label": "Cancel",
+        "form": {
+            "add-btn-label": "Add Document",
+            "title": "Below you can specify the required documents (optional)",
+            "title-field-label": "Required Document #{{ index }}",
+            "mark-as-documents-requested-success-notification": "You successfully marked this order as Documents Requested",
+            "add-documents-requested-success-notification": "You successfully specified the requested documents for this order"
+        },
+        "alert": {
+            "title": "You have already requested the following documents:"
+        }
+    },
+    "notifications": {
+        "success-updated-notification": "Order has been successfully updated",
+        "update-error-notification": "An Error occurred when updating this order",
+        "upload-payment-document-error-notification": "An Error occurred while uploading the payment document for this order.",
+        "load-orders-error": "An error occurred while loading the orders.",
+        "copied-public-id-success-notification": "Public ID has been copied to the clipboard",
+        "export-orders-error": "An Error occurred while exporting orders."
+    }
+}

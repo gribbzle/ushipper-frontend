@@ -1,0 +1,18 @@
+@import 'src/pages/breakpoints';
+
+.distance-direction-info {
+    width: 151px !important;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: var(--color-table-text-default);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+
+    @include breakpoint($large-desktop-min-width) {
+        width: 100% !important;
+    }
+}

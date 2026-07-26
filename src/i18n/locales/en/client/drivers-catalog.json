@@ -1,0 +1,5 @@
+{
+    "page-title": "Drivers Management | {{ projectName }}",
+    "header": "Drivers",
+    "empty": "There are no Drivers <br/> matching your search criteria."
+}

@@ -1,0 +1,15 @@
+.external-broker-rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4px;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+
+    span {
+        white-space: nowrap;
+        color: var(--color-text-light);
+    }
+}

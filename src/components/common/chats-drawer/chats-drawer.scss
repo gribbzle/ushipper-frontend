@@ -1,0 +1,23 @@
+.chats-drawer {
+    display: flex;
+    height: 100%;
+
+    &.drawer.drawer--open {
+        width: 900px;
+    }
+
+    .drawer__body {
+        background-color: #e9edf1;
+        height: 100%;
+    }
+
+    &--partner {
+        .drawer__head {
+            padding: 6px 16px;
+        }
+
+        .drawer__close {
+            align-self: center;
+        }
+    }
+}

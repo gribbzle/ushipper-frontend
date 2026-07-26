@@ -1,0 +1,23 @@
+.account-balance-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    &__balance-and-button {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &__pending {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-primary);
+        text-decoration: underline;
+        white-space: nowrap;
+    }
+}

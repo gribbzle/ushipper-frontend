@@ -1,0 +1,43 @@
+.data-table-block {
+    &__title {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &__items {
+        gap: 8px !important;
+
+        & > .input-label {
+            width: fit-content;
+        }
+    }
+
+    &__table {
+        filter: none;
+        border: 1px solid var(--color-table-border);
+        border-top: none;
+        border-radius: 0;
+
+        td {
+            padding: 6px 16px;
+        }
+
+        .table__header-cell {
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 16px;
+            height: 28px;
+        }
+
+        .table__row {
+            td:not(.actions) {
+                padding: 12px 16px;
+            }
+        }
+
+        .actions {
+            width: 47px;
+        }
+    }
+}

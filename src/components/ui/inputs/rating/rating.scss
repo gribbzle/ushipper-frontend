@@ -1,0 +1,54 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    span {
+        line-height: 0;
+        font-size: 0;
+    }
+
+    &__empty-star {
+        color: var(--color-maize);
+    }
+
+    &__filled-star {
+        color: var(--color-maize);
+        fill: var(--color-maize);
+    }
+
+    &__empty-star:not(:last-child),
+    &__filled-star:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &--size {
+        &-default {
+            $size: 16px;
+
+            svg {
+                width: $size;
+                height: $size;
+            }
+        }
+
+        &-large {
+            $size: 32px;
+
+            svg {
+                width: $size;
+                height: $size;
+            }
+        }
+
+        &-mini {
+            $size: 12px;
+
+            svg {
+                width: $size;
+                height: $size;
+            }
+        }
+    }
+}

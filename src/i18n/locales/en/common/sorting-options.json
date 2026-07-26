@@ -1,0 +1,19 @@
+{
+    "pickup-location": "Pickup Location",
+    "delivery-location": "Delivery Location",
+    "creation-date": "Creation Date",
+    "pickup-date": "Pickup Date",
+    "delivery-date": "Delivery Date",
+    "post-date": "Post Date",
+    "price": "Price",
+    "price-per-distance": "Price Per Distance",
+    "customer": "Customer",
+    "company-name": "Company Name",
+    "asc": "Ascending (A to Z)",
+    "desc": "Descending (Z to A)",
+    "payment-price": "Price",
+    "created-at": "Creation date",
+    "dispatch-fee": "Dispatch Fee",
+    "rating": "Rating",
+    "start-date": "Start Date"
+}

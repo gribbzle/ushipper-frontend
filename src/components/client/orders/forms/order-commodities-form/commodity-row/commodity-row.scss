@@ -1,0 +1,10 @@
+.commodity-row {
+    & > button {
+        margin: 8px 0 8px auto;
+        height: 24px;
+    }
+
+    &__tip-icon {
+        display: flex;
+    }
+}

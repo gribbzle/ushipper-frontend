@@ -1,0 +1,45 @@
+.load-board-order-vehicles-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__vehicle {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        &-model {
+            color: var(--color-text-default);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        &-type,
+        &-sizes {
+            color: var(--color-table-text-default);
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &__view-more {
+        background: none;
+        width: fit-content;
+        color: var(--color-primary);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        border: none;
+        padding: 0;
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+}

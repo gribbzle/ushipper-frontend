@@ -1,0 +1,26 @@
+@import 'src/pages/breakpoints';
+
+.customer-information-paper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: fit-content;
+
+    @include breakpoint(0, $tablet-max-width) {
+        background-color: var(--color-input-background-disabled);
+        border-radius: 8px;
+        padding: 16px;
+
+        .order-information-list__wrapper {
+            gap: 6px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,49 @@
+.create-edit-contacts-drawer {
+    &__form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        column-gap: 16px;
+        row-gap: 10px;
+        grid-auto-rows: min-content;
+
+        &-contact-name-field,
+        &-name-field,
+        &-street-address-field,
+        & > .divider {
+            grid-column: 1 / 4;
+        }
+
+        &-city-field,
+        &-phone-field {
+            grid-column: 1 / 2;
+        }
+
+        &-state-field {
+            grid-column: 2 / 3;
+        }
+
+        &-zip-field {
+            grid-column: 3 / 4;
+        }
+
+        &-notes-field {
+            grid-column: 1 / 4;
+
+            .string-input {
+                .string-input__textarea-input {
+                    text-align: justify;
+                }
+            }
+        }
+
+        &-email-field {
+            grid-column: 2 / 4;
+        }
+    }
+
+    .drawer__actions {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}

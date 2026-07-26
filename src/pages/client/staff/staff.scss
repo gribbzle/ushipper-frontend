@@ -1,0 +1,65 @@
+.staff-page {
+    display: block;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .table__collapse-icon--empty ~ td {
+        .avatar {
+            border: 1px solid var(--color-primary);
+        }
+    }
+
+    tbody {
+        tr {
+            .table__collapse-icon,
+            .actions {
+                width: 2%;
+            }
+
+            .name {
+                width: 22%;
+            }
+            .assignUsers {
+                width: 100%;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+
+                button {
+                    margin-left: 8px;
+                }
+            }
+            .phoneAndEmail {
+                width: 23%;
+            }
+            .email {
+                width: 16%;
+            }
+
+            .status {
+                width: 6%;
+            }
+
+            .lastLoginedAt,
+            .createdAt,
+            .updatedAt {
+                width: 9%;
+            }
+
+            .phone {
+                width: 10%;
+            }
+
+            .email,
+            .phone {
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

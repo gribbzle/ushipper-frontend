@@ -1,0 +1,101 @@
+{
+    "page-title": "Tracking | {{ projectName }}",
+    "header-title": "Tracking",
+    "drivers-list": "Drivers List",
+    "no-orders-assigned-to": "No Orders Assigned to.",
+    "orders-to-deliver": "{{ordersNumber}} {{specification}} to deliver",
+    "assign": "Assign",
+    "switched-off": "Switched Off",
+    "view-route": "View Route ({{distance}})",
+    "message": "Message",
+    "order-id": "Order ID: {{orderId}}",
+    "view-whole-route": "View Whole Route ({{distance}})",
+    "show-all-orders": "All routes",
+    "no-orders": "No Orders",
+    "search-by-name-or-order-id": "Search by Name or Order id ...",
+    "with-orders": "With Orders",
+    "without-orders": "Without Orders",
+    "no-drivers-found-by-search": "There are no Drivers matching your search criteria.",
+    "add-driver": "Add Driver",
+    "you-have-no-drivers-yet": "You have no Drivers yet.",
+    "no-accepted-offers-or-drivers": "No accepted offers, or driver wasn't assigned.",
+    "order_one": "Order",
+    "order_other": "Orders",
+    "add-order-button-label": "Add Order",
+    "shipper-orders-statuses": {
+        "not-dispatched": "Not Dispatched",
+        "dispatched": "Dispatched",
+        "picked-up": "Picked Up"
+    },
+    "help-paper": {
+        "title": "Help",
+        "order-marker-colors": "Order Marker Colors",
+        "truck-colors": "Truck Colors",
+        "other": "Other",
+        "empty": "Empty",
+        "partially-loaded": "Partially Loaded",
+        "favorite-driver": "Favorite Driver"
+    },
+    "shipper-orders-list-paper": {
+        "title": "Orders List",
+        "no-data": "There are no Orders.",
+        "no-orders-for-managers": "Managers currently have no orders.",
+        "no-orders": "You have no orders yet.",
+        "order-id": "Order ID",
+        "manager": "Manager",
+        "delivery-terms": "Delivery Terms",
+        "vehicles": "Vehicles",
+        "cost-per-mile": "Cost per Mile",
+        "status": "Status"
+    },
+    "shipper-filters": {
+        "title": "Filters",
+        "manager-group-label": "Filter by Manager",
+        "driver-group-label": "Filter by Drivers",
+        "orders-group-label": "Filter by Orders",
+        "all": "All",
+        "favorite-only": "Favorite Only"
+    },
+    "shipper-tracking-order-paper": {
+        "details": "Details"
+    },
+    "active-requests": {
+        "title": "Active Requests",
+        "no-data": "There are no Active Requests."
+    },
+    "commodities-info": {
+        "total-weight": "Total Weight",
+        "total-quantity": "Quantity"
+    },
+    "driver-info-paper": {
+        "message": "Message",
+        "send-offer": "Send Offer",
+        "upload-drivers-error": "Unable to display driver information",
+        "load-order-error": "An error occurred while loading the order."
+    },
+    "counters": {
+        "reviews": "{{ count }} reviews",
+        "dispatched-orders": "{{ count }} orders dispatched by you",
+        "truck-load": "Truck Load",
+        "average-speed": "Average Speed",
+        "stops": "Stops",
+        "about-speed": "{{ speed }} mi/h",
+        "total-miles": "Total miles",
+        "delivery": "Delivery",
+        "about-delivery": "≈ in {{ time }} h"
+    },
+    "order-pin": {
+        "delivery-in-label": "Delivery in {{ time }} h ({{ miles }})",
+        "picked-up-ago-label": "Picked Up {{ time }} h ago",
+        "pick-up-in-label": "Pick up in {{ time }} h ({{ miles }})",
+        "can-arrive-in-label": "Can arrive in {{ time }} h ({{ miles }})",
+        "insufficient-data-label": "Insufficient data to calculate {{ status }} time.",
+        "driver-location-outdated-label": "Driver's location data is outdated",
+        "pick-up": "pick-up",
+        "delivery": "delivery"
+    },
+    "no-details": "No details",
+    "notifications": {
+        "upload-orders-error": "An Error occurred while uploading the orders."
+    }
+}

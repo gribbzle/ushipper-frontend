@@ -1,0 +1,27 @@
+import React from 'react';
+
+import { OrderItemInfoColumn } from '@components';
+import { useMeCarrier } from '@hooks';
+import { classname, diffForHumans, translateByNamespace } from '@utils';
+
+import { JobOfferStatusInfoColumnProps } from './job-offer-status-info-column.types';
+import { JobOfferStatusTag } from './job-offer-status-tag';
+import { useJobOfferStatusInfoColumn } from './use-job-offer-status-info-column';
+
+import './job-offer-status-info-column.scss';
+
+const cn = classname('job-offer-status-info');
+const t = translateByNamespace('client:job-offers-page.job-offer.offer-status');
+const tJobOfferStatus = translateByNamespace('client:order-offers:filters');
+
+export const JobOfferStatusInfoColumn = ({ status, jobOffer }: JobOfferStatusInfoColumnProps) => {
+    const { time } = useJobOfferStatusInfoColumn(status, jobOffer);
+    const isMeCarrier = useMeCarrier();
+
+    return (
+        <OrderItemInfoColumn title={t('title')} className={cn('', { 'justify--center': isMeCarrier })}>
+            <JobOfferStatusTag view={status}>{tJobOfferStatus(`${isMeCarrier ? 'shipper-' : ''}${status}`)}</JobOfferStatusTag>
+            {time && <div className={cn('date')}>{diffForHumans(new Date(time))}</div>}
+        </OrderItemInfoColumn>
+    );
+};

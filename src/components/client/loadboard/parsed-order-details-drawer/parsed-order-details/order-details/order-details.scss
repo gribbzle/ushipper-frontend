@@ -1,0 +1,45 @@
+.order-details {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    height: fit-content;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+
+    .order-item-info-column {
+        gap: 6px;
+    }
+
+    &__header {
+        color: var(--text-default);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__order-id {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    &__description {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-table-text-default);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}

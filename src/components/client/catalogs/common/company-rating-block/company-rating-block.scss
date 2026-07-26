@@ -1,0 +1,13 @@
+.company-rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &__reviews {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+}

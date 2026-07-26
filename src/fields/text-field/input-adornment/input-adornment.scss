@@ -1,0 +1,16 @@
+.input-adornment__wrapper {
+    display: flex;
+    color: var(--color-info);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 12px 0 12px 12px;
+
+    &--reverse {
+        padding: 12px 12px 12px 0;
+    }
+
+    & + .text-field {
+        padding-left: 6px;
+    }
+}

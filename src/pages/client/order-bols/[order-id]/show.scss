@@ -1,0 +1,34 @@
+@import 'src/pages/breakpoints';
+
+.show-order-bol-page {
+    display: flex;
+    flex-direction: column;
+    max-width: 1146px;
+    margin: 0 auto;
+
+    @include breakpoint(0, $tablet-max-width) {
+        gap: 16px;
+    }
+
+    @include breakpoint($desktop-min-width) {
+        gap: 24px;
+    }
+
+    &__footer {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 120%;
+
+        span {
+            color: var(--color-text-light);
+        }
+
+        & > .link {
+            text-decoration: underline;
+        }
+
+        @include breakpoint(0, $tablet-max-width) {
+            text-align: center;
+        }
+    }
+}

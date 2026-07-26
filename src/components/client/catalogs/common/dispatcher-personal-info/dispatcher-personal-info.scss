@@ -1,0 +1,22 @@
+.dispatcher-personal-info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+
+    .badge {
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .avatar {
+        $size: 88px;
+
+        width: $size;
+        height: $size;
+        border-radius: 16px;
+
+        & > img {
+            object-fit: cover;
+        }
+    }
+}

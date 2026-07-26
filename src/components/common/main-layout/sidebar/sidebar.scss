@@ -1,0 +1,126 @@
+.main-layout-sidebar {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 8px 12px rgb(0 0 0 / 8%);
+
+    &__logo-container {
+        align-self: flex-start;
+        margin: 8px 10px 0;
+    }
+
+    &__routes-wrapper {
+        width: 100%;
+        max-height: 100%;
+        overflow: auto;
+    }
+
+    &__block {
+        width: 100%;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 16px 18px 0;
+        color: var(--color-text-light);
+        box-sizing: border-box;
+    }
+
+    &__group {
+        width: 100%;
+        max-height: 44px;
+        overflow: hidden;
+        transition: 0.3s;
+        position: relative;
+
+        &--open {
+            max-height: 100%;
+        }
+
+        &-arrow {
+            position: absolute;
+            right: 14px;
+            margin-right: 0 !important;
+            transition: 0.3s;
+
+            .main-layout-sidebar__group--open & {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        height: 44px;
+        align-items: center;
+        text-decoration: none;
+
+        &--sub {
+            padding-left: 28px;
+            height: 40px;
+
+            & > div {
+                font-size: 13px;
+            }
+        }
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            height: 100%;
+            width: 4px;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            transition: 0.3s;
+        }
+
+        svg {
+            margin-right: 6px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+
+        &-text {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: var(--color-text-default);
+            transition: 0.3s;
+        }
+
+        &-badge {
+            margin-left: auto;
+        }
+
+        &--active,
+        &:hover {
+            cursor: pointer;
+
+            &::before {
+                background: var(--color-primary);
+            }
+
+            svg path {
+                stroke: var(--color-primary);
+            }
+
+            .main-layout-sidebar__link-text {
+                color: var(--color-primary);
+            }
+        }
+    }
+}

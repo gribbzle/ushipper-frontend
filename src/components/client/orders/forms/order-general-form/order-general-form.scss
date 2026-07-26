@@ -1,0 +1,104 @@
+.order-general-form {
+    display: grid;
+    gap: 24px;
+    grid-template:
+        'details details'
+        'pickup delivery'
+        'vehicles vehicles'
+        'customer payment'
+        'attachments payment'
+        'expenses expenses';
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(2, 1fr);
+
+    &--freightx {
+        grid-template:
+            'details details'
+            'pickup delivery'
+            'commodities commodities'
+            'customer payment'
+            'attachments attachments'
+            'expenses expenses';
+    }
+
+    & > * {
+        height: fit-content;
+    }
+
+    &__details-paper {
+        grid-area: details;
+
+        .paper__body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 24px 16px;
+
+            .inspection-type-radio-group {
+                grid-column: 1 / 5;
+            }
+
+            & > .driver-instructions,
+            & > .order-instructions {
+                grid-column: 1 / 5;
+            }
+        }
+    }
+
+    &__pickup-information-paper {
+        grid-area: pickup;
+
+        .paper__body {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-gap: 16px;
+            gap: 16px;
+        }
+    }
+
+    &__delivery-information-paper {
+        grid-area: delivery;
+
+        .paper__body {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-gap: 16px;
+            gap: 16px;
+        }
+    }
+
+    &__customer-information-paper {
+        grid-area: customer;
+
+        .paper__body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    &__payment-information-paper {
+        grid-area: payment;
+
+        .paper__body {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__vehicles-paper {
+        grid-area: vehicles;
+    }
+
+    &__commodities-paper {
+        grid-area: commodities;
+    }
+
+    &__attachments-paper {
+        grid-area: attachments;
+    }
+
+    &__expenses-paper {
+        grid-area: expenses;
+    }
+}

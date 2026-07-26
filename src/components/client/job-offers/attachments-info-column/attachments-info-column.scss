@@ -1,0 +1,41 @@
+.attachments-info {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    &__file {
+        display: flex;
+        background: var(--color-input-background-disabled);
+        color: var(--color-table-text-default);
+        font-weight: 400;
+        line-height: 16px;
+        font-size: 14px;
+        padding: 6px;
+        border-radius: 8px;
+        gap: 8px;
+
+        svg {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: var(--color-primary);
+
+            svg {
+                path {
+                    stroke: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.attachments-info.order-item-info-column {
+    gap: 6px;
+}

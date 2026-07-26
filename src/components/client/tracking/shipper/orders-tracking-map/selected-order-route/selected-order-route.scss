@@ -1,0 +1,19 @@
+.selected-order-route {
+    &__driver {
+        &--view-dispatched {
+            .driver-order-pin__marker-icon {
+                path {
+                    fill: var(--color-primary);
+                }
+            }
+        }
+
+        &--view-picked-up {
+            .driver-order-pin__marker-icon {
+                path {
+                    fill: var(--color-primary-green);
+                }
+            }
+        }
+    }
+}

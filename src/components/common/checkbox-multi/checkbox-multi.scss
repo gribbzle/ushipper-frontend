@@ -1,0 +1,33 @@
+.checkbox-multi {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--color-text-light);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+
+    input {
+        display: none;
+    }
+
+    &__option {
+        cursor: pointer;
+        display: flex;
+        padding: 16px 24px;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        border-radius: 8px;
+        border: 1px dashed var(--color-table-border);
+        background: var(--color-white);
+        white-space: nowrap;
+    }
+
+    &__option:hover,
+    &__option--checked  {
+        border: 1px dashed var(--color-primary);
+        background: var(--color-pale-blue);
+    }
+}

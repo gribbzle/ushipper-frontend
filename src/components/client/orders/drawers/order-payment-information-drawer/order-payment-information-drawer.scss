@@ -1,0 +1,11 @@
+.order-payment-information-drawer {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.drawer--open.order-payment-information-drawer {
+    width: 642px;
+}

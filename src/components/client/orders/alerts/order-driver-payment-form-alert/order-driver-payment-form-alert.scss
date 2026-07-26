@@ -1,0 +1,90 @@
+@import 'src/pages/breakpoints';
+
+.driver-payment-form-alert {
+    overflow: visible !important;
+
+    .alert-block__line {
+        border-radius: 4px 0 0 4px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+            line-height: 20px;
+            font-size: 14px;
+            color: var(--color-table-text-default);
+        }
+
+        .button {
+            align-self: flex-start;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--color-space-cadet);
+
+        &--size-small {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__link {
+        color: var(--color-primary);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+
+        &-value {
+            font-size: 12px;
+            margin-top: 3px;
+            font-weight: 600;
+            line-height: 14px;
+            color: var(--color-text-light);
+        }
+    }
+
+    &--size-small {
+        .driver-payment-form-alert__content {
+            gap: 4px;
+        }
+
+        .driver-payment-form-alert__wrapper {
+            gap: 10px;
+        }
+
+        @include breakpoint(0, $large-desktop-min-width) {
+            .driver-payment-form-alert__link-label {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .driver-payment-form-alert__link {
+                max-width: 218px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

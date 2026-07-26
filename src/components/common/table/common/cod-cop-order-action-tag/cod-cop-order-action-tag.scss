@@ -1,0 +1,25 @@
+.cod-cop-order-action-tag {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .dropdown {
+            align-self: flex-start;
+        }
+
+        &--inline {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__reason,
+    &__time {
+        line-height: 16px;
+        font-size: 12px;
+        color: var(--color-text-light);
+        font-weight: 400;
+    }
+}

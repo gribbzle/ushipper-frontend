@@ -1,0 +1,28 @@
+.company-fees-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 130px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--color-info);
+
+    &__fee {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 2px;
+    }
+
+    &__value {
+        white-space: nowrap;
+        font-weight: 600;
+        color: var(--color-table-text-default);
+    }
+
+    &__title {
+        font-weight: 600;
+        line-height: 18px;
+    }
+}

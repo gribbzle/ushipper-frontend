@@ -1,0 +1,15 @@
+{
+    "title": "Send Job Offer to {{name}}",
+    "form": {
+        "role": "Role in your Company",
+        "time": "Time conditions",
+        "start-date": "Start Date",
+        "select-date": "Select Date",
+        "specify-other": "Specify other important conditions",
+        "attach": "Attach files",
+        "upload": "Upload Files"
+    },
+    "send-offer-success": "Your offer was successfully sent to {{ companyType }}.",
+    "send-offer-error": "Your offer isn't sent. Something was wrong.",
+    "send": "Send"
+}

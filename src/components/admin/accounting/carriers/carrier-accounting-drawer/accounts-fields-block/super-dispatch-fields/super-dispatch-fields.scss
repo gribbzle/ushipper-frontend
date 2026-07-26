@@ -1,0 +1,9 @@
+.super-dispatch-fields {
+    &__code {
+        grid-row-start: 3;
+    }
+
+    &__alert {
+        grid-column: span 2;
+    }
+}

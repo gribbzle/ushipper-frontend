@@ -1,0 +1,31 @@
+.timeline-arrow {
+    position: relative;
+    flex-grow: 1;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--color-border-default);
+    margin: 5px 1px;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -1px;
+        width: 10px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: var(--color-border-default);
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+        top: -2px;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before {
+        top: 4px;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}

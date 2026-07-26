@@ -1,0 +1,9 @@
+.job-offer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &--justify--center {
+        justify-content: center;
+    }
+}

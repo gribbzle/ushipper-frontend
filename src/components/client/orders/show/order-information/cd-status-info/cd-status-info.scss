@@ -1,0 +1,32 @@
+.cd-status-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+
+    &__tag {
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: var(--color-error-label);
+        background-color: var(--color-error-background);
+        font-weight: 700;
+        line-height: 14px;
+    }
+
+    &__time {
+        line-height: 16px;
+        color: var(--color-table-text-default);
+    }
+
+    &__row {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__accepted {
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--color-success);
+        padding: 0;
+    }
+}

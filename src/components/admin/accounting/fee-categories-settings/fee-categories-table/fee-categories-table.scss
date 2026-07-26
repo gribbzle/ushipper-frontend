@@ -1,0 +1,9 @@
+.fee-categories-table {
+    max-width: 364px;
+    height: fit-content;
+
+    & &__header-cell,
+    & &__cell {
+        height: 43px;
+    }
+}

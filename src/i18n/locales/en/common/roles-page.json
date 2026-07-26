@@ -1,0 +1,14 @@
+{
+    "head-title": "Roles Settings | {{ projectName }}",
+    "title": "Roles Settings",
+    "add-role-button": "Add role",
+    "shipper": "Shipper",
+    "unknown": "Unknown",
+    "role-name-column-label": "Role Name",
+    "active-users-column-label": "Active Users",
+    "role-success-notification-created": "Role has been successfully created.",
+    "role-success-notification-updated": "Role has been successfully updated.",
+    "role-deleted-success-notification": "Role has been successfully deleted.",
+    "role-deleted-error-notification": "An error occurred while deleting this role",
+    "text-error-notification": "An unknown error occurred."
+}

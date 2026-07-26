@@ -1,0 +1,15 @@
+.counter-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+    height: 25px;
+    display: flex;
+    align-items: center;
+
+    &--empty {
+        color: var(--color-table-text-default);
+        text-decoration: none;
+    }
+}

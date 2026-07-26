@@ -1,0 +1,12 @@
+{
+    "payment-with-terms": "{{ payment }} ({{ terms }})",
+    "term-with-method": "{{ term }}, {{ method }}",
+    "phone-label": "Phone: {{ phone }}",
+    "order-id-label": "Order #{{ orderId }}",
+    "no-order-id": "No Order ID",
+    "no-data": "No Data",
+    "view-route": "View Route ({{ distance }})",
+    "scheduled-at": " {{date }}",
+    "order-check-approval-status": "Check Approval",
+    "check-declined": "Check Declined"
+}

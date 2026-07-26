@@ -1,0 +1,22 @@
+import React, { useMemo } from 'react';
+import { toKebabCase } from 'js-convert-case';
+import { FieldRenderProps } from 'react-final-form';
+
+import { CompanyType } from '@/enums';
+import { SelectField } from '@fields';
+import { translateByNamespace } from '@utils';
+
+const t = translateByNamespace('common:company-types');
+
+export const CompanyTypesSelect = (props: FieldRenderProps<string>) => {
+    const options = useMemo(
+        () =>
+            Object.values(CompanyType).map(type => ({
+                label: t(toKebabCase(type)),
+                value: type,
+            })),
+        [],
+    );
+
+    return <SelectField {...props} options={options} />;
+};

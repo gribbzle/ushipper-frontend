@@ -1,0 +1,89 @@
+.stacked-area-chart {
+    position: relative;
+
+    .recharts-cartesian-grid-vertical {
+        display: none;
+    }
+
+    .recharts-layer.recharts-cartesian-axis-tick {
+        font-size: 8px;
+        line-height: 12px;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+
+        text {
+            fill: #9EA1A8;
+        }
+    }
+
+    &__label-x-axis-and-legend {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__legend {
+        display: flex;
+
+        & > * {
+            display: flex;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 16px;
+
+            span {
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                margin-right: 4px;
+            }
+
+            &:not(:last-of-type){
+                margin-right: 16px;
+            }
+        }
+    }
+
+    &__label-x-axis,
+    &__label-y-axis {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #66686E;
+        text-transform: uppercase;
+    }
+
+    
+    &__label-y-axis {
+        text-align: right;
+    }
+
+    &__tooltip {
+        min-width: 84px;
+        box-shadow: 6px 6px 48px 0px #9EA1A866;
+        background-color: white;
+        border-radius: 4px;
+        padding: 12px;
+
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: left;
+        }
+    }
+}

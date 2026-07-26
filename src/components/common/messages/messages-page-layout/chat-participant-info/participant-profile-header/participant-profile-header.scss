@@ -1,0 +1,36 @@
+$avatar-size: 68px;
+
+.participant-profile-header {
+    width: 344px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-table-border);
+
+    &__avatar {
+        width: $avatar-size;
+        height: $avatar-size;
+    }
+
+    &__name {
+        color: var(--color-text-primary);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 12px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 12px;
+
+        &-btn {
+            padding: 7px;
+            background-color: #f5f5f5;
+            color: var(--color-text-default);
+        }
+    }
+}

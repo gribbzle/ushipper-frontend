@@ -1,0 +1,21 @@
+.create-transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .form-control {
+        gap: 6px;
+    }
+
+    &__account {
+        &.form-control {
+            min-height: 64px;
+        }
+    }
+
+    &__type {
+        .selection-button {
+            padding: 7px 8px;
+        }
+    }
+}

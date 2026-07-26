@@ -1,0 +1,22 @@
+.chat-message-order {
+    display: flex;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--color-text-light);
+    align-self: flex-start;
+
+    &--mine {
+        align-self: flex-end;
+    }
+
+    &__details {
+        color: var(--color-primary);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

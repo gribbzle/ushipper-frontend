@@ -1,0 +1,18 @@
+.black-list-items-filters {
+    margin-left: 8px;
+    display: flex;
+    gap: 8px;
+
+    & > * {
+        width: 240px;
+    }
+
+    .react-select-container, .react-select__control {
+        height: 40px;
+    }
+
+    .react-select__single-value, 
+    .react-select__placeholder {
+        font-weight: 400;
+    }
+}

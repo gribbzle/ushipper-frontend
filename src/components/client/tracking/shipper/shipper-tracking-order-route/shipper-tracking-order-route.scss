@@ -1,0 +1,65 @@
+$timeline-inner-width: 70px;
+
+.shipper-tracking-order-route {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &__route-details {
+        &-wrapper {
+            width: 100%;
+            position: relative;
+        }
+
+        &-connector {
+            position: relative;
+
+            &--inner {
+                width: $timeline-inner-width !important;
+                background-color: var(--color-primary) !important;
+            }
+        }
+
+        &-icon {
+            bottom: -11px;
+            left: $timeline-inner-width;
+            background-color: var(--color-white);
+        }
+    }
+
+    &__info-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        white-space: nowrap;
+        padding: 4px 0;
+        gap: 2px;
+        color: var(--color-text-primary);
+
+        &-city,
+        &-address {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &-city {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+
+        &-address {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+    }
+
+    .timeline-connector {
+        width: 100%;
+        height: 2px;
+    }
+}

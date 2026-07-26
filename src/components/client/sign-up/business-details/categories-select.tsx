@@ -1,0 +1,46 @@
+import React, { useMemo } from 'react';
+import { Field } from 'react-final-form';
+
+import { SelectOption } from '@/shared';
+import { CheckboxMultiSelectInput, FormControl, InputLabel } from '@fields';
+import { useAppSelector } from '@store';
+import { specializationByIdSelector } from '@store/common';
+import { translateByNamespace } from '@utils';
+import { getTransportCategoryTranslate } from '@utils';
+import { requiredArray } from '@validators';
+
+type CategoriesSelectProps = {
+    specializationId: number;
+};
+const t = translateByNamespace('client:sign-up-page.form.business-details-step');
+
+export const CategoriesSelect = ({ specializationId }: CategoriesSelectProps) => {
+    const specialization = useAppSelector(specializationByIdSelector(specializationId));
+
+    const options = useMemo<SelectOption<number>[]>(
+        () =>
+            specialization?.categories.map(category => ({
+                label: getTransportCategoryTranslate(category.name),
+                value: category.id,
+            })) || [],
+        [specialization],
+    );
+
+    if (!specialization || !options.length) {
+        return null;
+    }
+
+    const { name, id } = specialization;
+
+    return (
+        <FormControl>
+            <InputLabel required={true}>{t('category-label', { categoryName: name })}</InputLabel>
+            <Field<number[]>
+                name={`category-${id}`}
+                component={props => <CheckboxMultiSelectInput {...props} options={options} />}
+                validate={requiredArray}
+                options={options}
+            />
+        </FormControl>
+    );
+};

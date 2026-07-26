@@ -1,0 +1,36 @@
+.simple-file-uploader {
+    &--has-file {
+        display: none;
+    }
+
+    &__file {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        padding: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        min-width: 0;
+        height: 32px;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        & > span {
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &:not(:hover) {
+            text-decoration: underline;
+            color: var(--color-table-text-default);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+            background-color: var(--color-input-background-disabled);
+        }
+    }
+}

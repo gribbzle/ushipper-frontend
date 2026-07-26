@@ -1,0 +1,225 @@
+import React, { useEffect } from 'react';
+import { useMemo } from 'react';
+import { toast } from 'react-toastify';
+
+import { AmountInfoBlock, DescriptionInfoBlock, PriceAndReceiptPhotos, TableColumn, TransactionTimeInfoBlock, UserInfoBlock } from '@/components/common';
+import { OrderSortingDirection, PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
+import { useIsTransactionsPage, useQueryFilters, useTable } from '@hooks';
+import { Transaction } from '@store/admin';
+import { TransactionsFiltersParams, useGetTransactionsQuery } from '@store/api/transactions-api';
+import { TransactionsFiltersState } from '@types';
+import { classname, isCashIn, isCashOut, translateByNamespace, translateCompanyType } from '@utils';
+
+import { BalanceTableProps } from './balance-table';
+import { MoveBalanceInfoBlock } from './move-balance-info-block';
+import { StatusColumn } from './status-column';
+
+const t = translateByNamespace('admin:accounting:balance-table');
+const cn = classname('balance-table');
+
+export const transformFilters = (filters: TransactionsFiltersParams) => {
+    const modifiedFilters = { ...filters };
+
+    if (filters.type === 'cash-in') {
+        modifiedFilters.sourceTypeGroup = 'user_external';
+        delete modifiedFilters.type;
+    } else if (filters.type === 'cash-out') {
+        modifiedFilters.destinationTypeGroup = 'user_external';
+        delete modifiedFilters.type;
+    }
+
+    return modifiedFilters;
+};
+
+export const useBalanceTable = ({ balanceType, balanceId }: BalanceTableProps) => {
+    const isTransactionsPage = useIsTransactionsPage();
+    const { filters } = useQueryFilters<TransactionsFiltersState>({ orderDirection: OrderSortingDirection.DESC });
+    const { onOrderChangeHandler, onPageChangeHandler, onPerPageChangeHandler } = useTable();
+
+    const transformedFilters = useMemo(() => transformFilters(filters), [filters]);
+    const accountIdFilter = useMemo(() => transformedFilters?.accountId, [transformedFilters]);
+
+    const {
+        data: transactionsPaginateData,
+        isSuccess,
+        isError,
+        isLoading,
+    } = useGetTransactionsQuery({ ...transformedFilters, ...(balanceType ? { balanceType } : undefined), ...(balanceId && { balanceId }) });
+
+    useEffect(() => {
+        if (isError) {
+            toast.error<string>(t('upload-transactions-error-notification'));
+        }
+    }, [isError]);
+
+    const transactionsColumns = useMemo<TableColumn<Transaction>[]>(
+        () => [
+            {
+                key: 'created_at',
+                name: t('transaction-time-column-title'),
+                isSortable: true,
+                cellRender: ({ row: { createdAt, publicId } }) => <TransactionTimeInfoBlock time={createdAt} id={publicId} />,
+            },
+            {
+                key: 'source_balance',
+                name: t('from-column-title'),
+                cellRender: ({ row: { sourceBalance } }) => <MoveBalanceInfoBlock balance={sourceBalance} />,
+            },
+            {
+                key: 'destination_balance',
+                name: t('to-column-title'),
+                cellRender: ({ row: { destinationBalance } }) => <MoveBalanceInfoBlock balance={destinationBalance} />,
+            },
+            {
+                key: 'amount',
+                name: t('amount-column-title'),
+                cellRender: ({ row: { sourceBalance, destinationBalance, type, amount, status } }) => {
+                    const isCancelledStatus = status === TransactionStatusesEnum.CANCELLED;
+                    const isSameSourceAccount = sourceBalance?.accountId === accountIdFilter;
+                    const cashIn = isCashIn({ confirmation: type, sourceType: sourceBalance?.type });
+                    const cashOut = isCashOut({ confirmation: type, destinationType: destinationBalance?.type });
+                    const includePlus = !!accountIdFilter && (cashIn || cashOut) && status !== TransactionStatusesEnum.COMPLETED && !isCancelledStatus;
+                    const disabled = !accountIdFilter || isCancelledStatus || includePlus;
+
+                    let value = Number(amount.amount);
+
+                    if (accountIdFilter && !isCancelledStatus && isSameSourceAccount && !cashIn) {
+                        value = -1 * value;
+                    }
+
+                    return <AmountInfoBlock value={value} disabled={disabled} includePlus={includePlus} warning={status === TransactionStatusesEnum.PENDING} />;
+                },
+            },
+            {
+                key: 'status',
+                name: t('status-column-title'),
+                cellRender: ({ row: { status, publicId, destinationBalance, sourceBalance, type, entity, amount, externalProvider } }) => (
+                    <StatusColumn
+                        status={status}
+                        publicId={publicId}
+                        destinationBalance={destinationBalance}
+                        sourceBalance={sourceBalance}
+                        type={type}
+                        entity={entity}
+                        amount={amount}
+                        externalProvider={externalProvider}
+                    />
+                ),
+            },
+            {
+                key: 'type_and_description',
+                name: t('description-column-title'),
+                cellRender: ({ row }) => {
+                    const { type, entity, metadata } = row;
+
+                    const isOrderPaymentConfirmationCheckTransaction = type === PaymentConfirmationType.ORDER_PAYMENT_CONFIRMED_CHECK;
+
+                    const { publicId: orderPublicId, orderId } = entity?.data || {};
+                    const price = metadata?.baseAmount?.formatted;
+
+                    return (
+                        <div className={cn('type-and-description')}>
+                            <DescriptionInfoBlock {...row} showExternalInfo={true} showDriverInfo={true} showReasonAccount={true} />
+                            {isOrderPaymentConfirmationCheckTransaction && (
+                                <PriceAndReceiptPhotos disabled={false} price={price} orderPublicId={orderPublicId} orderId={orderId} />
+                            )}
+                        </div>
+                    );
+                },
+            },
+        ],
+        [accountIdFilter],
+    );
+
+    const balanceColumns = useMemo<TableColumn<Transaction>[]>(
+        () => [
+            {
+                key: 'created_at',
+                name: t('transaction-time-column-title'),
+                isSortable: true,
+                cellRender: ({ row: { createdAt, publicId } }) => <TransactionTimeInfoBlock time={createdAt} id={publicId} />,
+            },
+            {
+                key: 'amount',
+                name: t('amount-column-title'),
+                cellRender: ({ row: { amount, status } }) => (
+                    <AmountInfoBlock value={Number(amount.amount)} warning={status === TransactionStatusesEnum.PENDING} />
+                ),
+            },
+            {
+                key: 'amount_before',
+                name: t('balance-before-column-title'),
+                cellRender: ({ row: { amountBefore } }) => amountBefore?.formatted ?? '—',
+            },
+            {
+                key: 'type_and_description',
+                name: t('description-column-title'),
+                cellRender: ({ row }) => <DescriptionInfoBlock {...row} showDriverInfo={false} showReasonAccount={false} showExternalInfo={true} />,
+            },
+            {
+                key: 'status',
+                name: t('status-column-title'),
+                cellRender: ({ row: { status, publicId, destinationBalance, sourceBalance, type, entity, amount, externalProvider } }) => (
+                    <StatusColumn
+                        status={status}
+                        publicId={publicId}
+                        destinationBalance={destinationBalance}
+                        sourceBalance={sourceBalance}
+                        type={type}
+                        entity={entity}
+                        amount={amount}
+                        externalProvider={externalProvider}
+                    />
+                ),
+            },
+            {
+                key: 'company',
+                name: t('company-column-title'),
+                cellRender: ({ row: { entity } }) => {
+                    const company = entity?.data?.company;
+
+                    return company ? <UserInfoBlock name={company.name} avatar={company.owner.avatar} role={translateCompanyType(company.type)} /> : '—';
+                },
+            },
+            {
+                key: 'owner_or_driver',
+                name: t('owner-or-driver-column-title'),
+                cellRender: ({ row: { entity, type, reasonAccount } }) => {
+                    const handleDriverClick = (name: string) => window.open(`/admin/accounting/drivers?name=${encodeURIComponent(name)}`, '_blank');
+
+                    if (type === PaymentConfirmationType.RECURRING_TRANSACTION) {
+                        if (!reasonAccount) return <>—</>;
+
+                        const { ownerUser, name, publicId } = reasonAccount;
+
+                        return (
+                            <UserInfoBlock
+                                name={name}
+                                roleName={t('driver-label')}
+                                avatar={ownerUser?.avatar ?? null}
+                                onNameClick={() => handleDriverClick(name)}
+                                showChatButton={true}
+                                accountPublicId={publicId}
+                            />
+                        );
+                    }
+                    const driver = entity?.data?.driver;
+
+                    return driver ? <UserInfoBlock {...driver} onNameClick={() => handleDriverClick(driver.name)} showChatButton={true} /> : '—';
+                },
+            },
+        ],
+        [],
+    );
+
+    return {
+        isLoading,
+        filters,
+        columns: isTransactionsPage ? transactionsColumns : balanceColumns,
+        transactionsPaginateData,
+        isSuccess,
+        onPageChangeHandler,
+        onPerPageChangeHandler,
+        onOrderChangeHandler,
+    };
+};

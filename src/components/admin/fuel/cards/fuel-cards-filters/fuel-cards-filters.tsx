@@ -1,0 +1,52 @@
+import React from 'react';
+import { Field } from 'react-final-form';
+
+import { AsyncDriverAccountsSelect, FuelCardCompaniesSelect, FuelCardStatusesSelect } from '@/components/common';
+import { FuelCardStatus } from '@/enums';
+import { parseField } from '@/utils/parse-field';
+import { FormControl, InputLabel, TextField } from '@fields';
+import { translateByNamespace } from '@utils';
+
+import { FuelFiltersPaper } from '../../fuel-filters-paper';
+
+import { useFuelCardsFilters } from './use-fuel-cards-filters';
+
+export type FuelCardsFiltersFormState = {
+    number: string;
+    statuses: FuelCardStatus[];
+    accountId: string;
+    companyName: string;
+};
+
+const t = translateByNamespace('admin:fuel:filters');
+
+export const FuelCardsFilters = () => {
+    const { handleFiltersChange, initialValues } = useFuelCardsFilters();
+
+    return (
+        <FuelFiltersPaper<FuelCardsFiltersFormState>
+            initialValues={initialValues}
+            handleFiltersChange={handleFiltersChange}
+            fields={
+                <>
+                    <FormControl>
+                        <InputLabel>{t('number-field-label')}</InputLabel>
+                        <Field parse={parseField} name='number' component={TextField} placeholder='' />
+                    </FormControl>
+                    <FormControl>
+                        <InputLabel>{t('company-field-label')}</InputLabel>
+                        <Field parse={parseField} name='companyName' component={FuelCardCompaniesSelect} isMulti={false} />
+                    </FormControl>
+                    <FormControl>
+                        <InputLabel>{t('driver-field-label')}</InputLabel>
+                        <Field parse={parseField} name='accountId' component={AsyncDriverAccountsSelect} />
+                    </FormControl>
+                    <FormControl>
+                        <InputLabel>{t('status-field-label')}</InputLabel>
+                        <Field parse={parseField} name='statuses' component={FuelCardStatusesSelect} isMulti={false} />
+                    </FormControl>
+                </>
+            }
+        />
+    );
+};

@@ -1,0 +1,50 @@
+import { OrderStatisticsStatus } from '@/enums';
+
+export const ORDERS_FILTERS_TABS_MAP = new Map<'partnerCarrier' | 'carrier' | 'shipper', OrderStatisticsStatus[]>([
+    [
+        'carrier',
+        [
+            OrderStatisticsStatus.NEW,
+            OrderStatisticsStatus.ASSIGNED,
+            OrderStatisticsStatus.PICKED_UP,
+            OrderStatisticsStatus.DELIVERED,
+            OrderStatisticsStatus.BILLED,
+            OrderStatisticsStatus.PAID,
+            OrderStatisticsStatus.ARCHIVED,
+            OrderStatisticsStatus.DELETED,
+        ],
+    ],
+    [
+        'shipper',
+        [
+            OrderStatisticsStatus.NEW,
+            OrderStatisticsStatus.ON_HOLD,
+            OrderStatisticsStatus.POSTED,
+            OrderStatisticsStatus.PENDING,
+            OrderStatisticsStatus.DECLINED,
+            OrderStatisticsStatus.ACCEPTED,
+            OrderStatisticsStatus.PICKED_UP,
+            OrderStatisticsStatus.DELIVERED,
+            OrderStatisticsStatus.INVOICED,
+            OrderStatisticsStatus.PAID,
+            OrderStatisticsStatus.FLAGGED,
+            OrderStatisticsStatus.CANCELLED,
+            OrderStatisticsStatus.ARCHIVED,
+            OrderStatisticsStatus.DELETED,
+        ],
+    ],
+    [
+        'partnerCarrier',
+        [
+            OrderStatisticsStatus.NEW,
+            OrderStatisticsStatus.ASSIGNED,
+            OrderStatisticsStatus.PICKED_UP,
+            OrderStatisticsStatus.DELIVERED,
+            OrderStatisticsStatus.FUNDS_PENDING,
+            OrderStatisticsStatus.FUNDS_TRANSFERRED,
+            OrderStatisticsStatus.FUNDS_CLAIMED,
+            OrderStatisticsStatus.ARCHIVED,
+            OrderStatisticsStatus.DELETED,
+        ],
+    ],
+]);

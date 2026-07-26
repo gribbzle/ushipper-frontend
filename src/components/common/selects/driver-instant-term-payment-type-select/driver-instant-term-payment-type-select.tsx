@@ -1,0 +1,26 @@
+import React, { useMemo } from 'react';
+import { FieldRenderProps } from 'react-final-form';
+
+import { InstantTermPaymentType } from '@/enums';
+import { SelectField } from '@fields';
+import { useMeAdmin } from '@hooks';
+import { getDriverPaymentRecipientTranslate, getPaymentRecipientTranslate } from '@utils';
+
+export const DriverInstantTermPaymentTypeSelect = (props: FieldRenderProps<string>) => {
+    const isMeAdmin = useMeAdmin();
+
+    const options = useMemo(
+        () => [
+            {
+                label: isMeAdmin
+                    ? getPaymentRecipientTranslate(InstantTermPaymentType.RECIPIENT_DRIVER)
+                    : getDriverPaymentRecipientTranslate(InstantTermPaymentType.RECIPIENT_DRIVER),
+                value: InstantTermPaymentType.RECIPIENT_DRIVER,
+            },
+            { label: getDriverPaymentRecipientTranslate(InstantTermPaymentType.RECIPIENT_COMPANY), value: InstantTermPaymentType.RECIPIENT_COMPANY },
+        ],
+        [isMeAdmin],
+    );
+
+    return <SelectField options={options} {...props} />;
+};

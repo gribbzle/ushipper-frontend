@@ -1,0 +1,46 @@
+.order-inspection {
+    color: var(--color-text-header, #1f2f3d);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+
+    &__vin {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+    .accordion {
+        &__head {
+            display: flex;
+            justify-content: flex-start;
+            gap: 8px;
+
+            &-right-addon {
+                position: static;
+            }
+
+            &-carret {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    &__inspection-tab-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__inspection-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inspection-items {
+        order: 2;
+    }
+}

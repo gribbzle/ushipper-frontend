@@ -1,0 +1,17 @@
+.companies-filters {
+    margin-bottom: 24px;
+    background: var(--color-white);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    padding: 24px;
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+
+        & > div {
+            flex: 1;
+        }
+    }
+}

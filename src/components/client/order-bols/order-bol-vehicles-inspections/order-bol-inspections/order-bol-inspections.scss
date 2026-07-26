@@ -1,0 +1,48 @@
+@import 'src/pages/breakpoints';
+
+.inspections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include breakpoint($mobile-min-width, $tablet-max-width) {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    & > .divider {
+        @include breakpoint($mobile-min-width, $tablet-max-width) {
+            &::before,
+            &::after {
+                width: 100%;
+                height: auto;
+                align-self: center;
+                border-top: thin dashed var(--color-border-default);
+            }
+        }
+    }
+
+    & > .inspection-stub-container {
+        flex: 1;
+    }
+
+    &__inspection-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1;
+    }
+
+    &__title {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        @include breakpoint($mobile-min-width, $tablet-max-width) {
+            color: var(--color-text-header);
+        }
+    }
+}

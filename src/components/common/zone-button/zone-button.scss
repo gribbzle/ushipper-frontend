@@ -1,0 +1,51 @@
+.zone-button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 98px;
+    height: 100%;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 8px;
+    padding: 6px;
+
+    &:not(:hover) {
+        border-color: var(--color-button-border-default);
+    }
+
+    &:not(&--disabled):hover {
+        cursor: pointer;
+        border-color: var(--color-primary);
+        background-color: var(--color-primary-button-background-plain);
+    }
+
+    &--disabled:hover {
+        border-color: var(--color-button-border-default);
+    }
+
+    &__title {
+        display: flex;
+        gap: 8px;
+        color: var(--color-primary);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+
+        & > svg {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+            flex-shrink: 0;
+        }
+    }
+
+    &__hint {
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--color-input-placeholder);
+    }
+}

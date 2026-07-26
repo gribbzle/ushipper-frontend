@@ -1,0 +1,21 @@
+{
+    "broken": "BR - Broken",
+    "chipped": "CH - Chipped",
+    "cracked": "CR - Cracked",
+    "dented": "D - Dented",
+    "faded": "F - Faded",
+    "foreign-fluid": "FF - Foreign Fluid",
+    "flat-tire": "FT - Flat Tire",
+    "gouge": "G - Gouge",
+    "hail-damage": "HD - Hail Damage",
+    "loose-contents": "LC - Loose Contents",
+    "missing": "M - Missing",
+    "major-damage": "MD - Major Damage",
+    "multiple-scratches": "MS - Multiple Scratches",
+    "other": "O - Other",
+    "paint-chip": "PC - Paint Chip",
+    "rubbed": "R - Rubbed",
+    "rust": "RU - Rust",
+    "scratched": "S - Scratched",
+    "scuffed": "SC - Scuffed"
+}

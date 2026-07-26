@@ -1,0 +1,15 @@
+import { OrderSortingName } from '@enums';
+import { FormOrdersFilters } from '@types';
+import { getObjectWithoutEmptyFields } from '@utils';
+
+import { OrdersFiltersFormState } from './orders-filters.types';
+
+export const getFiltersFromFormValue = ({ dispatchers, driverAccountId, search, searchSubject, sortBy }: OrdersFiltersFormState): FormOrdersFilters =>
+    getObjectWithoutEmptyFields({
+        dispatchers,
+        driverAccountId,
+        search,
+        searchSubject,
+        orderName: sortBy?.[0]?.value as OrderSortingName,
+        orderDirection: sortBy?.[1]?.value,
+    });

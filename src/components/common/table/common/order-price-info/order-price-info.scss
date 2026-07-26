@@ -1,0 +1,15 @@
+.price-info {
+    &__clock-icon {
+        color: var(--color-warning);
+    }
+
+    &__text {
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    &__sub-text {
+        color: var(--color-text-light);
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,23 @@
+.edit-order-page {
+    &__forms-wrapper {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__vehicles,
+    &__order-details,
+    &__expenses-information {
+        grid-column: 1 / 3;
+    }
+
+    &__delivery-information,
+    &__customer-information {
+        align-self: start;
+    }
+
+    &__payment-information {
+        grid-column: 2;
+        grid-row: 4 / 6;
+    }
+}

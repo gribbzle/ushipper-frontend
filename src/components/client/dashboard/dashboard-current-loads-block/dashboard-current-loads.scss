@@ -1,0 +1,43 @@
+.dashboard-current-loads {
+    display: flex;
+
+    &__loads {
+        width: 348px;
+        max-height: 373px;
+        box-sizing: border-box;
+        overflow: auto;
+
+        .drivers-switch-menu {
+            width: auto;
+            background-color: #F5F7FA;
+            min-height: 100%;
+        }
+    }
+
+    &__map {
+        height: 373px;
+        width: calc(100% - 340px);
+
+        .tracking-map {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__paper {
+        border-radius: 8px;
+        overflow: hidden;
+
+        .paper__header {
+            justify-content: space-between;
+            
+            form {
+                width: 240px;
+            }
+        }
+
+        .paper__body {
+            padding: 0;
+        }
+    }
+}

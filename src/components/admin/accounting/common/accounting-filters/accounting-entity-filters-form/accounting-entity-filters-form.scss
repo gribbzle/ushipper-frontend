@@ -1,0 +1,9 @@
+.accounting-entity-filters-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+
+    & > * {
+        flex: 1;
+    }
+}

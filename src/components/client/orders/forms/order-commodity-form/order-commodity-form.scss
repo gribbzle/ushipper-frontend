@@ -1,0 +1,24 @@
+.order-commodity-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__first-group,
+    &__second-group {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__first-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__second-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__switches-container {
+        display: flex;
+        gap: 16px;
+    }
+}

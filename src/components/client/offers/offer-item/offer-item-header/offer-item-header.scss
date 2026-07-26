@@ -1,0 +1,19 @@
+.offer-item-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &__payment {
+        color: var(--color-text-default);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__distance {
+        color: var(--color-input-text-secondary);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}

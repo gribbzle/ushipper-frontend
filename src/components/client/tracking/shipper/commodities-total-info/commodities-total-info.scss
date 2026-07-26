@@ -1,0 +1,14 @@
+.commodities-total-info {
+    &__label {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-text-secondary);
+        text-wrap: nowrap;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}

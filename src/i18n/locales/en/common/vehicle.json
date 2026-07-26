@@ -1,0 +1,6 @@
+{
+  "no-data": "No Vehicle Information",
+  "inop": "INOP",
+  "enclosed": "ENCLOSED",
+  "view-more": "View More ({{ counter }})"
+}

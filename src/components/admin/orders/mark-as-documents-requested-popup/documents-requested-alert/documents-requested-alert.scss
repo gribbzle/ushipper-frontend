@@ -1,0 +1,11 @@
+.documents-requested-alert {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

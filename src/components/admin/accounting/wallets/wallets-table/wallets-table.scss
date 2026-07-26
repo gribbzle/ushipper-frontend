@@ -1,0 +1,29 @@
+.wallets-table {
+    &__cell {
+        &--name {
+            h4 {
+                max-width: 250px;
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                overflow: hidden;
+                -webkit-font-smoothing: antialiased;
+                margin-top: 4px;
+                font-weight: 600;
+            }
+        }
+
+        &--created-at {
+            min-width: 115px;
+        }
+
+        &--fees {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .amount-info-block--view-bold {
+        font-weight: 600 !important;
+    }
+}

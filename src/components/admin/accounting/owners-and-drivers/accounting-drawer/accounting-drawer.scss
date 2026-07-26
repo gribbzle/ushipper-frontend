@@ -1,0 +1,39 @@
+.accounting-drawer {
+    $drawer-size: 830px;
+    width: $drawer-size;
+
+    &:not(.drawer--open) {
+        right: -$drawer-size;
+    }
+
+    &__body {
+        .tabs__wrapper {
+            border-bottom: none;
+        }
+
+        &-empty,
+        .dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            height: 700px;
+        }
+
+        &-empty {
+            color: var(--color-text-light);
+            font-size: 18px;
+        }
+    }
+
+    &__content {
+        box-sizing: border-box;
+        padding: 0 4px;
+        overflow: auto;
+        height: 100%;
+
+        .zone-button {
+            height: fit-content;
+        }
+    }
+}

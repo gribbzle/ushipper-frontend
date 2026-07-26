@@ -1,0 +1,24 @@
+.admin-order-id-info {
+    a {
+        line-height: 16px;
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 2px;
+    }
+
+    h4,
+    &__sub-text {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &__sub-text {
+        color: var(--color-text-light);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+}

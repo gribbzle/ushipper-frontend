@@ -1,0 +1,58 @@
+.loadboard-filter-location {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__coordinates {
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    &__radius {
+        width: 110px;
+        flex-shrink: 0;
+    }
+
+    &__remove {
+        flex-shrink: 0;
+        width: 14px;
+        height: 40px;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #A1A5B7;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    &__button-add {
+        color: #409EFF;
+        padding: 0;
+        border: 0;
+        background: unset;
+        text-decoration-line: underline;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        font-style: normal;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+}

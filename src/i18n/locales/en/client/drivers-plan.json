@@ -1,0 +1,21 @@
+{
+    "page-title": "Drivers Plan | {{ projectName }}",
+    "header": "Drivers Plan",
+    "no-data-title": "You have no Drivers yet",
+    "driver-item": {
+        "current-location": "Current Location",
+        "trailer-capacity": "Trailer Capacity",
+        "average-speed": "Average Speed",
+        "loads-to-deliver": "Loads to Deliver",
+        "no-data": "No Data",
+        "orders-tab": {
+            "title": "Orders",
+            "search-orders-btn": "Search Orders",
+            "suggested": "Suggested",
+            "requested": "Requested",
+            "assigned": "Assigned",
+            "picked-up": "Picked Up",
+            "no-data": "There are no Orders "
+        }
+    }
+}

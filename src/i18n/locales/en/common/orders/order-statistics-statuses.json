@@ -1,0 +1,22 @@
+{
+    "new": "New",
+    "status-new": "New",
+    "on-hold": "On Hold",
+    "posted": "Posted",
+    "pending": "Pending",
+    "cancelled": "Canceled",
+    "flagged": "Flagged",
+    "declined": "Declined",
+    "accepted": "Accepted",
+    "invoiced": "Invoiced",
+    "assigned": "Assigned",
+    "picked-up": "Picked Up",
+    "delivered": "Delivered",
+    "billed": "Billed",
+    "paid": "Paid",
+    "archived": "Archived",
+    "deleted": "Deleted",
+    "funds-pending": "Pending",
+    "funds-transferred": "Paid",
+    "funds-claimed": "Claimed"
+}

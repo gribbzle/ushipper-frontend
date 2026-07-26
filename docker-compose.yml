@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  client:
+    image: node:16.14-alpine
+    command: sh -c "${NODE_COMMAND}"
+    container_name: client
+    working_dir: /app
+    volumes:
+      - ./:/app/
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_OPTIONS=--max-old-space-size=4096

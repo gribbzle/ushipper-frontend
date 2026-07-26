@@ -1,0 +1,4 @@
+{
+    "on-pending": "Transaction Creation",
+    "on-transfer-initiate": "Transaction Approval"
+}

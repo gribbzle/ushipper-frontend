@@ -1,0 +1,26 @@
+.access-forbidden-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    flex-direction: column;
+    height: 60vh;
+
+    h1 {
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 120%;
+        color: var(--color-text-default);
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: var(--color-table-text-default);
+    }
+}

@@ -1,0 +1,13 @@
+.edit-fee-item {
+    display: flex;
+    gap: 16px;
+
+    &__category {
+        width: 180px;
+    }
+
+    .icon-button {
+        align-self: start;
+        margin-top: 32px;
+    }
+}

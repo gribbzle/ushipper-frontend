@@ -1,0 +1,6 @@
+{
+    "page-title": "Car Makers Management | {{ projectName }}",
+    "header": "Car Makers",
+    "add-maker-button": "Add Maker",
+    "name-filter-placeholder": "Search by Name ..."
+}

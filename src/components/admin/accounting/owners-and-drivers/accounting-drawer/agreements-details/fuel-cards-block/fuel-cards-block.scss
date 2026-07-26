@@ -1,0 +1,11 @@
+.fuel-cards-block {
+    &__number {
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+    }
+
+    &__actions {
+        width: 15px;
+    }
+}

@@ -1,0 +1,22 @@
+.assigned-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__user {
+        color: var(--color-table-text-default);
+        font-weight: 400;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}

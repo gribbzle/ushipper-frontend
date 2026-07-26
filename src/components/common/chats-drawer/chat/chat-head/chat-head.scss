@@ -1,0 +1,101 @@
+.chat-head {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__info {
+        border-bottom: 1px solid var(--color-table-border);
+        padding: 16px;
+        box-sizing: border-box;
+
+        h4 {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            color: var(--color-dark-gunmetal);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            margin: 0;
+        }
+
+        &--mode-drawer {
+            padding: 13px 16px;
+        }
+
+        &--mode-support {
+            padding: 16px;
+            height: 72px;
+            box-sizing: border-box;
+        }
+
+        &-orders {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        &--messages-page {
+            padding: 13px 16px;
+            height: 72px;
+            box-sizing: border-box;
+        }
+
+        &-order-details {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            color: var(--color-text-light);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+
+            &-link {
+                &--disabled {
+                    cursor: initial;
+
+                    &:hover {
+                        color: inherit;
+                        text-decoration: inherit;
+                        cursor: initial;
+                    }
+                }
+            }
+
+            &-link:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            span {
+                margin-right: 6px;
+
+                .order-tag {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+    &__support-driver-phone {
+        display: flex;
+        gap: 4px;
+        color: var(--color-text-light);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+
+    &__support-title {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}

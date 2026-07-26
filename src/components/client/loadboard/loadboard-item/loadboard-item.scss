@@ -1,0 +1,94 @@
+.loadboard-item {
+    display: flex;
+    border: 1px solid transparent;
+
+    .paper__body {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &--tagged {
+        background: var(--color-loadboard-item-tagged) !important;
+        border-color: var(--color-warning);
+    }
+
+    &--flagged {
+        border-color: var(--color-red);
+    }
+
+    &--offerStatus-accepted {
+        border-color: var(--color-success);
+    }
+
+    &__item-content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+
+        &--carrier {
+            grid-template-columns: 3fr minmax(284px, 1fr);
+        }
+    }
+
+    &__broker-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: fit-content;
+            color: var(--color-table-text-default);
+
+            & > span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+            }
+
+            & > svg {
+                width: 12px;
+                height: 12pt;
+            }
+        }
+    }
+
+    &__broker-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-text-default);
+    }
+
+    &__left-block {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__status-info {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__sent-ago {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: var(--color-table-text-default);
+    }
+
+    &__view-more {
+        color: var(--color-primary);
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,26 @@
+.timeline-connector {
+    width: 2px;
+
+    &--view-default {
+        background-color: var(--color-button-border-default);
+    }
+
+    &--view-primary,
+    &--view-accepted {
+        background-color: var(--color-primary);
+    }
+
+    &--view-success,
+    &--view-delivered {
+        background-color: var(--color-success);
+    }
+
+    &--view-warning,
+    &--view-picked-up {
+        background-color: var(--color-warning);
+    }
+
+    &--hidden {
+        visibility: hidden;
+    }
+}

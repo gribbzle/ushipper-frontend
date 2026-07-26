@@ -1,0 +1,48 @@
+.collapsible-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__head {
+        color: var(--color-text-light);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        svg {
+            $size: 14px;
+
+            width: $size;
+            height: $size;
+            transition: 0.3s;
+
+            path {
+                stroke: var(--color-text-light);
+            }
+
+            .collapsible-section--open & {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+
+        .collapsible-section--open & {
+            max-height: 2000px;
+            transition: max-height 0.3s ease-in-out;
+        }
+    }
+}

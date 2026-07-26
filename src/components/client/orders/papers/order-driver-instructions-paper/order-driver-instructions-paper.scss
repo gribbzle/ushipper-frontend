@@ -1,0 +1,20 @@
+.driver-instructions-paper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+
+    .text-accordion__text {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}

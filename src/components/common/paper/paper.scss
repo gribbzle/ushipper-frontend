@@ -1,0 +1,52 @@
+.paper {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+
+    &__header {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 1px solid var(--color-table-border);
+    }
+
+    &__title-container {
+        display: flex;
+        gap: 2px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--color-space-cadet);
+    }
+
+    &__counter {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--color-table-text-default);
+    }
+
+    &__body {
+        padding: 16px;
+    }
+
+    &__footer {
+        border-top: 1px solid var(--color-table-border);
+        padding: 16px;
+    }
+
+    &--dark {
+        background-color: var(--color-dark) !important;
+        color: white;
+    }
+
+    &--gray {
+        background-color: #f1f1f9 !important;
+    }
+}

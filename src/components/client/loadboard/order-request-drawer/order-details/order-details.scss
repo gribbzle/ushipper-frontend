@@ -1,0 +1,57 @@
+.order-details {
+    .order-item-info-column {
+        gap: 6px;
+    }
+
+    &__header {
+        color: var(--text-default);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__order-id {
+        color: var(--color-table-text-default);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    &__broker-info-wrapp {
+        display: flex;
+        column-gap: 4px;
+        row-gap: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--color-input-text-secondary);
+
+        svg {
+            width: 12px;
+            height: 12px;
+            padding: 2px 0;
+        }
+    }
+
+    &__broker-name {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--color-primary);
+    }
+
+    &__broker-column {
+        gap: 6px;
+    }
+
+    &__broker-name:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

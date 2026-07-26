@@ -1,0 +1,14 @@
+{
+    "page-title": "Sign In | {{ projectName }}",
+    "form": {
+        "title": "Sign In",
+        "login-label": "Login",
+        "login-placeholder": "Enter your login",
+        "password-label": "Password",
+        "password-placeholder": "Enter your password",
+        "forgot-password-button": "Forgot password?",
+        "sign-in-button": "Sign In",
+        "dont-have-account": "Don’t have an account?",
+        "sign-up-link": "Sign Up"
+    }
+}

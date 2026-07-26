@@ -1,0 +1,9 @@
+.broker-details-block {
+    gap: 6px;
+
+    .order-item-info-column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

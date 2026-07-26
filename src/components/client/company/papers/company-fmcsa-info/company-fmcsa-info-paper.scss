@@ -1,0 +1,15 @@
+.fmcsa-info-paper {
+    .paper__body {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__empty-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        height: 100%;
+    }
+}

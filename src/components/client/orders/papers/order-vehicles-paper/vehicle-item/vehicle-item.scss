@@ -1,0 +1,69 @@
+@import 'src/pages/breakpoints';
+
+.vehicle-item {
+    &__vehicle-info {
+        font-size: 14px;
+        display: flex;
+        gap: 4px;
+    }
+
+    @include breakpoint(0, $extra-large-desktop-min-width) {
+        &__vehicle-info {
+            flex-direction: column;
+        }
+    }
+
+    @include breakpoint($extra-large-desktop-min-width) {
+        &__vehicle-info {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__color,
+    &__type,
+    &__vin,
+    &__price {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+    }
+
+    &__price {
+        font-weight: 600;
+        color: var(--color-text-default);
+    }
+
+    &__color {
+        text-transform: capitalize;
+    }
+
+    &__first-line,
+    &__second-line,
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+
+    &__first-line {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__second-line {
+        gap: 4px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-end;
+        align-self: flex-start;
+    }
+
+    &__tip {
+        max-width: 150px;
+    }
+}

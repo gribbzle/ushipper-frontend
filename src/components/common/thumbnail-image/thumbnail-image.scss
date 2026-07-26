@@ -1,0 +1,18 @@
+.thumbnail-image {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-default);
+
+    &:hover {
+        border: 1px solid var(--color-primary);
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &__image {
+        object-fit: cover;
+        height: 100%;
+    }
+}

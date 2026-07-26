@@ -1,0 +1,17 @@
+export enum TermsEnum {
+    ACH = 'ach',
+    Comcheck = 'comcheck',
+    CashOnPickup = 'cash_on_pickup',
+    CashOnDelivery = 'cash_on_delivery',
+    QuickPay = 'quickpay',
+    CheckOnDelivery = 'check_on_delivery',
+    CheckOnPickup = 'check_on_pickup',
+    FiveBusinessDays = '5_business_days',
+    SevenBusinessDays = '7_business_days',
+    FifteenBusinessDays = '15_business_days',
+    TwentyBusinessDays = '20_business_days',
+    ThirtyBusinessDays = '30_business_days',
+    FortyFiveBusinessDays = '45_business_days',
+    SixtyBusinessDays = '60_business_days',
+    Other = 'other',
+}

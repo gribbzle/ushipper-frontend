@@ -1,0 +1,47 @@
+.parsed-loadboard-item-payment-block {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 4px;
+
+    &__source {
+        display: flex;
+        gap: 6px;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        .order-tag {
+            padding: 2px 6px;
+        }
+    }
+
+    &__meta {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        white-space: nowrap;
+        color: var(--color-input-text-secondary);
+
+        &--danger {
+            color: var(--color-danger);
+        }
+    }
+
+    &__label {
+        display: flex;
+        gap: 10px;
+        padding: 4px 6px;
+        box-sizing: border-box;
+        height: 22px;
+        align-items: center;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        color: var(--color-warning);
+        background: var(--color-warning-button-plain-backgound-disabled);
+        border: 1px solid var(--color-warning);
+        border-radius: 6px;
+        white-space: nowrap;
+    }
+}

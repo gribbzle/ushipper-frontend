@@ -1,0 +1,28 @@
+.loadboard-content {
+    display: flex;
+    gap: 24px;
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__pagination {
+        margin-top: 24px;
+    }
+
+    &__item-preloader-wrapper {
+        display: block;
+        border-radius: 8px;
+        width: 100%;
+        height: 167px;
+        margin-bottom: 12px;
+    }
+
+    &__item-preloader {
+        border-radius: 8px;
+        background-color: #f3f3f3;
+        height: 100%;
+    }
+}

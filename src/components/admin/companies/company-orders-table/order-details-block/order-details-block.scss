@@ -1,0 +1,11 @@
+.order-details-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    line-height: 16px;
+
+    &__order-id {
+        color: var(--color-primary);
+    }
+}

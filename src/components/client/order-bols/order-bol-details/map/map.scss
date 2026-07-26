@@ -1,0 +1,12 @@
+@import 'src/pages/breakpoints';
+
+.map {
+    position: relative;
+    min-width: 250px;
+    min-height: 250px;
+    height: 100%;
+
+    .custom-marker {
+        transform: translateY(-50%);
+    }
+}

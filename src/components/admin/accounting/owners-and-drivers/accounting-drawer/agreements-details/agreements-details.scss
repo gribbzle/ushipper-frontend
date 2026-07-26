@@ -1,0 +1,42 @@
+.agreements-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &--wrapper {
+        min-height: 70vh;
+    }
+
+    &--reverse {
+        flex-direction: column-reverse;
+    }
+
+    .divider {
+        padding-top: 12px;
+    }
+
+    &__contractor-type {
+        max-width: 336px;
+    }
+
+    &__driver-owner {
+        max-width: 356px;
+    }
+
+    &__balance-limit {
+        width: 277px;
+    }
+
+    &__add-new {
+        width: fit-content;
+        align-self: flex-start;
+    }
+
+    &__fees-rules {
+        gap: 6px;
+    }
+
+    .form-control {
+        gap: 6px;
+    }
+}

@@ -1,0 +1,15 @@
+.app-and-device-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    &__model-name {
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-info);
+    }
+}

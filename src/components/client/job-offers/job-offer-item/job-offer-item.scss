@@ -1,0 +1,26 @@
+.job-offer-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+    gap: 16px;
+
+    &__content,
+    &__offering-info,
+    &__dispatcher-info {
+        display: grid;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    &__content {
+        grid-template-columns: 5fr 1fr;
+    }
+
+    &__offering-info {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    &__dispatcher-info {
+        grid-template-columns: 2fr 1fr;
+    }
+}

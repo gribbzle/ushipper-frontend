@@ -1,0 +1,40 @@
+.order-internal-notes {
+    & > .paper__header {
+        justify-content: space-between;
+    }
+
+    & > .paper__body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__text {
+        white-space: pre-wrap;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+    }
+
+    .dropdown {
+        $size: 16px;
+
+        width: $size;
+        height: $size;
+        padding: 4px;
+
+        &__control {
+            svg {
+                width: $size;
+                height: $size;
+            }
+        }
+    }
+}

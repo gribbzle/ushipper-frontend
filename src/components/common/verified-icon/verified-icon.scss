@@ -1,0 +1,22 @@
+.verified-icon {
+    display: flex;
+    align-self: center;
+    $size: 14px;
+
+    width: $size;
+    height: $size;
+
+    svg {
+        margin: auto;
+        width: 11px;
+        height: 11px;
+    }
+
+    &__success {
+        color: var(--color-success);
+    }
+
+    &__danger {
+        color: var(--color-danger);
+    }
+}

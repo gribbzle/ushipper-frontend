@@ -1,0 +1,32 @@
+.chat-message-delimiter {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    width: 100%;
+    color: var(--color-table-text-default);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0 16px;
+
+    &.chat-message-delimiter--new-messages {
+        color: var(--color-danger);
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-danger);
+        }
+    }
+
+    span {
+        background-color: var(--color-white);
+        z-index: 1;
+        padding: 0 4px;
+    }
+}

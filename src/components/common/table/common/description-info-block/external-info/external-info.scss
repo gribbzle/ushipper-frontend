@@ -1,0 +1,12 @@
+.external-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-wrap: nowrap;
+
+    &--ellipse {
+        width: 4px;
+        height: 4px;
+        color: var(--color-border-default);
+    }
+}

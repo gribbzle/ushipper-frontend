@@ -1,0 +1,26 @@
+.funds-transfer-status-tag {
+    &__dropdown-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &--inline {
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .dropdown {
+            align-self: flex-start;
+        }
+
+        .helper-text {
+            line-height: 16px;
+            color: var(--color-text-light);
+        }
+    }
+}

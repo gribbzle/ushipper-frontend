@@ -1,0 +1,37 @@
+@import 'src/pages/breakpoints';
+
+.order-bol-details {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;
+
+    @include breakpoint(0, $tablet-max-width) {
+        grid-template: 'map' 'info' 'alert' 'activity';
+    }
+
+    @include breakpoint($desktop-min-width) {
+        grid-template: 'info activity map' 'alert activity map';
+        grid-template-columns: 33fr 28fr 39fr;
+    }
+
+    &__order-info {
+        grid-area: info;
+    }
+
+    &__alert {
+        grid-area: alert;
+    }
+
+    &__activity {
+        grid-area: activity;
+    }
+
+    &__map {
+        grid-area: map;
+    }
+
+    .alert-block__content {
+        display: flex;
+        align-items: center;
+    }
+}

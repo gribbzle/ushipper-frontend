@@ -1,0 +1,83 @@
+.company-settings-page {
+    &__header {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    &__company-card-user-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px 16px;
+        margin-bottom: 32px;
+    }
+
+    &__form-address-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    &__form-about-block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+    &__row-fields {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__country-field {
+        grid-column: 1/4;
+    }
+
+    &__info-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__info-content {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--color-input-text-secondary);
+        margin-top: 4px;
+    }
+
+    &__invisible {
+        visibility: hidden;
+    }
+
+    &__cards {
+        align-items: baseline;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        &-right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .paper {
+            flex: 1;
+        }
+    }
+
+    &__business-info-card {
+        padding: 24px 16px;
+    }
+
+    &__contact-form,
+    &__business-info-form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

@@ -1,0 +1,43 @@
+.user-company-info {
+    min-width: 190px;
+
+    &__username {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--color-text-default);
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--color-text-light);
+
+        & > span {
+            color: var(--color-primary);
+        }
+    }
+
+    &__description > span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 4px;
+        white-space: nowrap;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}

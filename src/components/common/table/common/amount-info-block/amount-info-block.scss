@@ -1,0 +1,28 @@
+.amount-info-block {
+    font-size: 14px;
+    line-height: 16px;
+    white-space: nowrap;
+    color: var(--color-table-text-default);
+
+    &--view {
+        &-bold {
+            font-weight: 700;
+        }
+
+        &-light {
+            font-weight: 400;
+        }
+    }
+
+    &--income {
+        color: var(--color-success);
+    }
+
+    &--expense {
+        color: var(--color-red);
+    }
+
+    &--warning {
+        color: var(--color-warning);
+    }
+}

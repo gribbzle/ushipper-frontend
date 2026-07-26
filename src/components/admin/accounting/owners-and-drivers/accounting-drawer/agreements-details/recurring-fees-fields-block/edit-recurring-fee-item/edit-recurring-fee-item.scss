@@ -1,0 +1,58 @@
+.edit-recurring-fee-item {
+    $field-width: 110px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &--row {
+        flex-direction: row !important;
+    }
+
+    &__period,
+    &__day,
+    &__limit {
+        width: $field-width !important;
+    }
+
+    .react-select__value-container,
+    .currency-input__wrapper input {
+        padding-right: 0;
+    }
+
+    .edit-recurring-fee-item__category {
+        width: 145px;
+    }
+
+    .edit-recurring-fee-item__amount,
+    .edit-recurring-fee-item__limit {
+        width: $field-width;
+
+        .currency-percentage-field__select {
+            width: 32px;
+
+            .react-select__value-container {
+                padding-left: 8px;
+            }
+        }
+    }
+
+    .icon-button {
+        align-self: start;
+        margin-top: 32px;
+    }
+
+    &__changed-total {
+        text-wrap: nowrap;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        &--success {
+            color: var(--color-text-success);
+        }
+    }
+}

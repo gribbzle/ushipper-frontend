@@ -1,0 +1,5 @@
+{
+    "incorrect-login-or-password": "Incorrect login or password.<br/>Please double-check and try again.",
+    "no-rights": "You have no rights for this action",
+    "confirm-email-error": "You can't sign in. Please check your email inbox and confirm your email by following the link."
+}

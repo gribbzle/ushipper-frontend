@@ -1,0 +1,30 @@
+{
+    "page-title": "Company Settings | {{ projectName }}",
+    "header": "Company Settings",
+    "carrier-card-title": "Carrier Information",
+    "shipper-card-title": "Shipper Information",
+    "contact-information": "Contact Information",
+    "company-card": {
+        "c-role-name": "Carrier Name",
+        "s-role-name": "Shipper Name",
+        "usdot-number": "USDOT number"
+    },
+    "divider-address": "Address Details",
+    "divider-about": "About",
+    "fields": {
+        "working-time": "Working Time",
+        "country": "Country",
+        "website": "Website",
+        "mcNumber": "MC Number",
+        "birthYear": "In Business since Year",
+        "name": "Name",
+        "phone": "Phone Number",
+        "email": "Email",
+        "no-placeholder": ""
+    },
+    "company-update-success": "Updated successfully",
+    "company-contact-update-success": "Contact info updated successfully",
+    "logo": "logo",
+    "contact-card-title": "Contact Information",
+    "view-company": "View Profile"
+}

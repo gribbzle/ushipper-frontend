@@ -1,0 +1,9 @@
+.alerts-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+
+    & > * {
+        flex: 1;
+    }
+}

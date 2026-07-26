@@ -1,0 +1,87 @@
+@import 'src/pages/breakpoints';
+
+.attachments-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .order-item-info-column {
+        gap: 8px;
+    }
+
+    &--row {
+        flex-direction: row;
+
+        & > * {
+            flex: 1;
+        }
+
+        .file-uploader__container {
+            gap: 8px;
+
+            &:first-of-type:not(:has(.form-helper-text)) {
+                flex-direction: column-reverse;
+            }
+
+            .file-uploader__label {
+                @include breakpoint(0, $tablet-max-width) {
+                    max-width: 150px;
+                }
+
+                @include breakpoint($desktop-min-width, $desktop-max-width) {
+                    max-width: 200px;
+                }
+
+                @include breakpoint($large-desktop-min-width) {
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+
+    &__transition {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        overflow: hidden;
+        transition: max-height 500ms ease-in-out;
+        max-height: 0;
+
+        &--state-exited {
+            max-height: 0;
+            transition: max-height 500ms ease-in-out;
+        }
+
+        &--state-entering {
+            max-height: 1000px;
+            transition: max-height 1000ms ease-in-out;
+        }
+
+        &--state-entered {
+            max-height: 1000px;
+        }
+
+        &--state-exiting {
+            max-height: 0;
+            transition: max-height 500ms ease-in-out;
+        }
+    }
+
+    &__bin-icon {
+        path {
+            stroke: var(--color-input-text-secondary);
+        }
+
+        &:hover {
+            path {
+                stroke: var(--color-primary);
+            }
+        }
+    }
+
+    &__title {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

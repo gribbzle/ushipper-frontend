@@ -1,0 +1,20 @@
+{
+    "manual-transaction": "Manual Transaction",
+    "adjustment-transaction": "Adjustment Transaction",
+    "order-payment-confirmed-factoring": "Factoring Fee",
+    "order-payment-confirmed-ushipper": "Ushipper Fee",
+    "order-payment-confirmed-driver": "Driver Pay",
+    "order-payment-confirmed-dispatch": "Dispatch Fee",
+    "order-hold-funds-factoring": "Factoring Instant Fee",
+    "order-hold-funds-ushipper": "COD/COP Fee",
+    "order-hold-funds-dispatch": "Dispatch Instant Fee",
+    "order-hold-broker-fee": "Broker Fee",
+    "recurring-transaction": "Recurring Transaction",
+    "order-payment-confirmed-check": "Driver Pay for COD/COP",
+    "order-delayed-payment-to-wallet": "Delayed Payment to Wallet",
+    "order-instant-payment-to-wallet": "Instant Payment to Wallet",
+    "order-cod-wallet-top-up": "COD/COP Wallet Top Up",
+    "order-cod-delayed-driver-payment": "Delayed COD/COP",
+    "rollback-transaction": "Rollback Transaction",
+    "fuel-card-transaction": "Fuel Transaction"
+}

@@ -1,0 +1,70 @@
+$mobile-min-width: 320px;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-portrait-max-width: 1023px;
+$tablet-landscape-min-width: 1024px;
+$tablet-max-width: 1279px;
+$desktop-min-width: 1280px;
+$desktop-max-width: 1919px;
+$large-desktop-min-width: 1920px;
+$extra-large-desktop-min-width: 1600px;
+
+@mixin mobile {
+    @media (max-width: $mobile-max-width) {
+        @content;
+    }
+}
+
+@mixin tablet-portrait {
+    @media (min-width: $tablet-portrait-min-width) and (max-width: $tablet-portrait-max-width) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media (min-width: $tablet-landscape-min-width) and (max-width: $tablet-landscape-max-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-min-width) and (max-width: $desktop-max-width) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width: $large-desktop-min-width) {
+        @content;
+    }
+}
+
+@mixin extra-large-desktop {
+    @media (min-width: $extra-large-desktop-min-width) {
+        @content;
+    }
+}
+
+@mixin breakpoint($min-width: null, $max-width: null) {
+    @if $min-width and $max-width {
+        @media (min-width: $min-width) and (max-width: $max-width) {
+            @content;
+        }
+    } @else if $min-width {
+        @media (min-width: $min-width) {
+            @content;
+        }
+    } @else if $max-width {
+        @media (max-width: $max-width) {
+            @content;
+        }
+    } @else {
+        @error "Unknown breakpoint.";
+    }
+}

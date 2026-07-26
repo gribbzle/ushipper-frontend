@@ -1,0 +1,14 @@
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__view-whole-route-button {
+        width: fit-content;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+}

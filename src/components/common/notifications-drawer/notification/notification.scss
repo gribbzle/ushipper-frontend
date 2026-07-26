@@ -1,0 +1,92 @@
+.notification {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px #00000014;
+    border: 1px solid var(--color-table-border);
+    position: relative;
+    transition: max-height 0.3s ease-in;
+    max-height: 300px;
+
+    &--deleted {
+        max-height: 0;
+    }
+
+    &--read {
+        background: linear-gradient(0deg, var(--color-table-border), var(--color-table-border)),
+            linear-gradient(0deg, var(--color-internal-note-background), var(--color-internal-note-background));
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
+
+    & > * {
+        margin: 0 16px;
+    }
+
+    & > button {
+        margin-bottom: 16px;
+    }
+
+    &__user {
+        display: flex;
+        margin-top: 16px;
+        gap: 12px;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            color: var(--color-text-default);
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 510;
+            line-height: 14px;
+            color: var(--color-table-text-default);
+            margin: 0;
+        }
+    }
+
+    &__content {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        margin-top: 8px;
+    }
+
+    &__open-load-button {
+        margin-top: 8px;
+        width: fit-content;
+    }
+
+    .dropdown {
+        $size: 16px;
+        position: absolute;
+        height: $size;
+        width: $size;
+        right: 0;
+        top: 16px;
+
+        &__control {
+            svg {
+                width: $size;
+                height: $size;
+            }
+        }
+    }
+
+    .dropdown__options {
+        top: 26px !important;
+    }
+
+    &__system-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

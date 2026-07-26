@@ -1,0 +1,20 @@
+.companies-users-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: var(--color-info);
+
+    &--hover {
+        cursor: pointer;
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+
+    &__company-name {
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        white-space: nowrap;
+    }
+}

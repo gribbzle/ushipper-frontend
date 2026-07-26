@@ -1,0 +1,28 @@
+.parsed-order-status-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 6px;
+    border-radius: 8px 0 0 8px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    justify-content: center;
+
+    &--view {
+        &-called {
+            background-color: var(--color-primary);
+        }
+
+        &-booked {
+            background-color: var(--color-success);
+        }
+
+        &-declined {
+            background-color: var(--color-danger);
+        }
+    }
+}

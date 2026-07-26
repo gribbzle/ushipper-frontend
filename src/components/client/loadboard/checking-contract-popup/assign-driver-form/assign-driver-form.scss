@@ -1,0 +1,25 @@
+.assign-driver-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 6px;
+
+    &__driver-wrapper {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        white-space: nowrap;
+        height: 40px;
+
+        &--column {
+            flex-direction: column;
+            height: fit-content;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    &__driver {
+        width: 276px;
+    }
+}

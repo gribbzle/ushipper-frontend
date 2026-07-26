@@ -1,0 +1,40 @@
+@import 'src/pages/breakpoints';
+
+.route-item {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile-min-width, $tablet-max-width) {
+        flex-direction: column;
+    }
+
+    @include breakpoint($desktop-min-width) {
+        align-items: center;
+    }
+
+    &__address {
+        color: var(--color-text-header);
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+    }
+
+    &__ellipse {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--color-button-border-default);
+
+        @include breakpoint($mobile-min-width, $tablet-max-width) {
+            display: none;
+        }
+    }
+
+    &__date {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}

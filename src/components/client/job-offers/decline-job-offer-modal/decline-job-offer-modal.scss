@@ -1,0 +1,40 @@
+.decline-job-offer-modal {
+    .popup__title {
+        margin-bottom: 24px;
+    }
+
+    &__block-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        p {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__form-checkboxes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__action-btns {
+        display: flex;
+        column-gap: 6px;
+    }
+
+    &__submit-btn {
+        visibility: hidden;
+    }
+
+    .popup {
+        &__description {
+            width: 100%;
+        }
+    }
+}

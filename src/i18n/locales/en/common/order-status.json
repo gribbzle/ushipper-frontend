@@ -1,0 +1,15 @@
+{
+    "new": "New",
+    "on-hold": "On Hold",
+    "cancelled": "Canceled",
+    "canceled": "Canceled",
+    "pending": "Pending",
+    "declined": "Declined",
+    "accepted": "Accepted",
+    "picked-up": "Picked Up",
+    "delivered": "Delivered",
+    "posted": "Posted to LB",
+    "carrier-posted": "LB",
+    "shipper-order-cancelled": "Canceled by Broker",
+    "order-deleted": "Deleted"
+}

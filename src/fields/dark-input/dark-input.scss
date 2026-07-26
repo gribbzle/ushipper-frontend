@@ -1,0 +1,29 @@
+.dark-input {
+    width: 100%;
+
+    .text-field__wrapper {
+        border: none;
+        width: 100%;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    input {
+        border-radius: 9px;
+        color: white;
+    }
+
+    &--gray {
+        input {
+            background-color: var(--color-input-background-dark);
+        }
+    }
+
+    &--blue {
+        input {
+            background-color: var(--color-input-background-dark-blue);
+        }
+    }
+}

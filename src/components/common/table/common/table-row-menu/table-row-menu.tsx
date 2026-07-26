@@ -1,0 +1,21 @@
+import React from 'react';
+
+import { DropdownDividerOption, DropdownOption, FloatingDropdown } from '@components';
+import { ActionsIcon } from '@icons';
+import { classname } from '@utils';
+
+import './table-row-menu.scss';
+
+type TableRowMenuProps = {
+    dataTestId: string;
+    options: Array<DropdownOption | DropdownDividerOption>;
+    className?: string;
+};
+
+const cn = classname('table-row-menu');
+
+export const TableRowMenu = ({ options, dataTestId, className }: TableRowMenuProps) => (
+    <FloatingDropdown dataTestId={dataTestId} options={options} className={cn('', [className])}>
+        <ActionsIcon className={cn('icon')} />
+    </FloatingDropdown>
+);

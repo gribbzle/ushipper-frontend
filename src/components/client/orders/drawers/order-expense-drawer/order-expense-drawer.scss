@@ -1,0 +1,16 @@
+.order-expense-drawer {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-row {
+            display: flex;
+            gap: 16px;
+
+            & > * {
+                flex: 1;
+            }
+        }
+    }
+}

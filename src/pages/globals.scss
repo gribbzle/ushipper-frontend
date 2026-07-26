@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'colors';
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+.Toastify__toast {
+    font-family: 'Open Sans', sans-serif !important;
+
+    div[role='progressbar'] {
+        background: var(--color-primary) !important;
+    }
+
+    div[role='progressbar'].Toastify__progress-bar--error {
+        background: var(--color-danger) !important;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    button {
+        display: none !important;
+    }
+}

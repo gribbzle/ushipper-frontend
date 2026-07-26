@@ -1,0 +1,13 @@
+@import 'src/pages/breakpoints';
+
+.inspection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+
+    @include breakpoint(0, $tablet-max-width) {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

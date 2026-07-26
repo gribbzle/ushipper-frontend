@@ -1,0 +1,35 @@
+.selection-button {
+    display: flex;
+    width: 100px;
+    padding: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 6px;
+    gap: 10px;
+    cursor: pointer;
+    border: 0.5px solid transparent;
+    flex: 1 0 0;
+
+    &__input {
+        display: none;
+    }
+
+    &:not(&--disabled):hover,
+    &--checked {
+        border-color: rgba(0, 0, 0, 0.04);
+        background: var(--color-white);
+        box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04);
+    }
+
+    &--disabled {
+        cursor: initial;
+    }
+
+    &__label {
+        color: var(--color-button-text-default);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}

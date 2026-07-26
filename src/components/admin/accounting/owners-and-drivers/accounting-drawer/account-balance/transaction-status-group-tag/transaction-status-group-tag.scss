@@ -1,0 +1,33 @@
+.transaction-status-group-tag {
+    display: flex;
+    box-sizing: border-box;
+    width: fit-content;
+    height: 28px;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 6px;
+
+    &--view {
+        &-completed {
+            color: var(--color-done-label);
+            background-color: var(--color-done-background);
+        }
+
+        &-awaiting {
+            color: var(--color-golden-sunrise);
+            background-color: var(--color-soft-cream);
+        }
+
+        &-cancelled {
+            color: var(--color-error-label);
+            background: var(--color-error-background);
+        }
+    }
+}

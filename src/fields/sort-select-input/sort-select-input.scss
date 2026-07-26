@@ -1,0 +1,13 @@
+.sort-select-input {
+    width: 100%;
+
+    &__label {
+        width: 100%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-text-header);
+        margin-bottom: 6px;
+        display: block;
+    }
+}

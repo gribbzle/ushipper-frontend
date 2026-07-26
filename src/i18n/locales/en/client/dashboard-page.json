@@ -1,0 +1,29 @@
+{
+    "page-title": "Dashboard Management | {{ projectName }}",
+    "header": "Dashboard",
+    "empty-block": {
+        "title": "Not enough data.",
+        "description": "Try to find new Loads on Loadboard and send Requests to Shippers first.",
+        "action": "Find Loads on Loadboard"
+    },
+    "current-loads-block": {
+        "title": "Current Loads",
+        "drivers-filter-placeholder": "All Drivers"
+    },
+    "statictics-block": {
+        "axis-labels": {
+            "x": "Date",
+            "y": "Count"
+        },
+        "titles": {
+            "gross": "Total Gross",
+            "miles": "Total Miles",
+            "avg-mile-cost": "Avg Mile Cost"
+        },
+        "period-filter-options": {
+            "last-month": "Last Month", 
+            "six-months": "6 Month",
+            "one-year": "1 Year"
+        }
+    }
+}

@@ -1,0 +1,156 @@
+.request-item {
+    & > .paper__header {
+        padding: 14px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        gap: 4px;
+    }
+
+    &__header-company-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    &__header-company-name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-text-default);
+    }
+
+    &--sent {
+        border: 1px var(--color-warning) solid;
+    }
+
+    &--declined {
+        border: 1px var(--color-red) solid;
+    }
+
+    &--canceled {
+        border: 1px var(--color-table-text-default) solid;
+    }
+
+    &__alert-price {
+        font-weight: 700;
+        margin: 0 4px;
+    }
+
+    &__created-at {
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 16px;
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__block-title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+
+    &__price-container {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    &__price {
+        font-weight: 700;
+        color: var(--color-text-default);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__price-per-distance {
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+    }
+
+    &__carrier-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--color-primary);
+    }
+
+    &__carrier-name:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__carrier-container {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        line-height: 18px;
+
+        & > svg {
+            color: var(--color-border-default);
+        }
+    }
+
+    &__carrier-owner {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        svg {
+            $size: 12px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__comment {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 16px;
+
+        &-btn-group {
+            display: flex;
+            column-gap: 12px;
+        }
+    }
+}

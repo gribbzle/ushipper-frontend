@@ -1,0 +1,7 @@
+{
+    "validators": {
+        "required": "erforderlich"
+    },
+    "h1": "HEIL HIDRA",
+    "change-locale": "Change locale to \"{{changeTo}}\""
+}

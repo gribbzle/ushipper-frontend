@@ -1,0 +1,41 @@
+{
+    "page-title": "Requests | {{ projectName }}",
+    "title": "Requests from Carriers",
+    "empty-list": "You have no requests",
+    "drawer": {
+        "title": "Carrier Requests",
+        "active": "{{ counter }} active",
+        "order-id-label": "Order ID: {{ orderId }}",
+        "show-more-button-label": "Show more",
+        "request-item": {
+            "offer-sent": "Offer sent to",
+            "offer-for": "Offer for",
+            "your-offer-for": "Your Offer for",
+            "request-declined-by-shipper": "You Declined this Request",
+            "request-canceled-by-carrier": "Carrier Canceled this Request",
+            "offer-declined": "has been Declined",
+            "offer-canceled": "has been Canceled",
+            "price": "PRICE",
+            "dates": "DATES",
+            "carrier": "CARRIER",
+            "comment": "COMMENT",
+            "pdate": "Pickup Date",
+            "ddate": "Delivery Date",
+            "requested": "Requested {{ date }}",
+            "send-offer-btn": "Send Offer",
+            "cancel-offer-btn": "Cancel Offer",
+            "decline-btn": "Decline",
+            "hide-btn": "Hide",
+            "show-details-btn": "Show Details",
+            "messages-btn": "Messages",
+            "cancel-success": "Offer was Canceled successfully",
+            "declined-success": "Request was Declined successfully",
+            "statuses": {
+                "new": "New",
+                "declined": "Declined by {{ companyType }} ",
+                "offer-sent": "Offer Sent",
+                "canceled": "Canceled by {{ companyType }}"
+            }
+        }
+    }
+}

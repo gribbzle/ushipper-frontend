@@ -1,0 +1,16 @@
+.users-page {
+    display: block;
+
+    &__head {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-left: 8px;
+
+            svg {
+                margin-right: 6px;
+            }
+        }
+    }
+}

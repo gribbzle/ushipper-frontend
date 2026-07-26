@@ -1,0 +1,44 @@
+.vehicle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__vehicle {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+
+        &-model {
+            font-weight: 700;
+            color: var(--color-text-default);
+        }
+
+        &-price {
+            color: var(--color-text-default);
+        }
+
+        &-group {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 4px;
+        }
+
+        &-param {
+            color: var(--color-table-text-default);
+        }
+
+        &-value {
+            color: var(--color-text-default);
+        }
+
+        &-type {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+    }
+}

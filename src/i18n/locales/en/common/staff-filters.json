@@ -1,0 +1,13 @@
+{
+    "user-statuses-labels": {
+        "active": "Active",
+        "pending-confirmation": "Pending",
+        "blocked": "Blocked"
+    },
+    "name-field-label": "Name",
+    "phone-field-label": "Phone",
+    "email-field-label": "Email",
+    "role-field-label": "Role",
+    "company-field-label": "Company",
+    "status-field-label": "Status"
+}

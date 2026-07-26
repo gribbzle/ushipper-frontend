@@ -1,0 +1,28 @@
+@import 'src/pages/breakpoints';
+
+.preferences-form-paper {
+    max-width: 576px;
+
+    .paper__body {
+        height: 100%;
+    }
+
+    form > div:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 16px;
+
+        & > * {
+            flex: 1;
+        }
+
+        .currency-input__wrapper {
+            input {
+                padding-left: 12px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.carrier-item-body {
+    grid-template-columns: 1fr 30px;
+    display: grid;
+    gap: 32px;
+    justify-content: space-between;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 4fr 2fr 1fr;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .flag-button {
+        align-self: flex-start;
+    }
+}

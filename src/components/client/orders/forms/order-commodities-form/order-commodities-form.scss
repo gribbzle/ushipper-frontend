@@ -1,0 +1,12 @@
+.order-commodities-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__header,
+    &__row {
+        display: grid;
+        grid-template-columns: 18fr 8fr 12fr repeat(2, 8fr) repeat(3, 8fr) 10fr 20px;
+        gap: 16px;
+    }
+}

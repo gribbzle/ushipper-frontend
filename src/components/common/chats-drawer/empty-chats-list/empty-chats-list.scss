@@ -1,0 +1,11 @@
+.empty-chats-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-input-placeholder-secondary);
+    padding: 80px 16px 80px 16px;
+
+    &__button {
+        margin-top: 6px;
+    }
+}

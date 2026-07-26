@@ -1,0 +1,103 @@
+.call-message-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    $size: 32px;
+
+    width: $size;
+    height: $size;
+
+    &__phone {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 9px;
+    }
+
+    &--view {
+        &-in-progress,
+        &-queued,
+        &-ringing {
+            background-color: #5dd622;
+
+            .call-message-icon__phone {
+                top: 11px;
+            }
+        }
+
+        &-canceled,
+        &-busy,
+        &-no-answer,
+        &-failed {
+            background-color: #f24600;
+
+            .call-message-icon__phone {
+                top: 11px;
+            }
+        }
+
+        &-canceled,
+        &-busy {
+            .call-message-icon__phone {
+                transform: rotate(136deg);
+            }
+        }
+
+        &-completed {
+            background-color: var(--color-primary);
+
+            .call-message-icon__phone {
+                top: 12px;
+            }
+
+            .chat-message-wrapper--mine & {
+                background-color: #6cb5ff;
+            }
+        }
+
+        &-canceled,
+        &-queued {
+            .call-message-icon__phone {
+                top: 13px;
+            }
+        }
+    }
+
+    &__check,
+    &__cross,
+    &__lines,
+    &__dots {
+        position: absolute;
+        color: var(--color-white);
+        top: 9px;
+    }
+
+    &__check {
+        width: 6px;
+        height: 4px;
+        left: 17px;
+        stroke-width: 4px;
+    }
+
+    &__cross {
+        width: 4px;
+        height: 4px;
+        left: 19px;
+        stroke-width: 2px;
+    }
+
+    &__lines {
+        width: 6px;
+        height: 6px;
+        left: 17px;
+    }
+
+    &__dots {
+        width: 6px;
+        height: 6px;
+        left: 16px;
+        stroke-width: 2px;
+    }
+}

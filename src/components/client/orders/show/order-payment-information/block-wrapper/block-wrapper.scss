@@ -1,0 +1,17 @@
+.block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+
+    .labeled-text {
+        padding-bottom: 0 !important;
+    }
+}

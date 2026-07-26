@@ -1,0 +1,13 @@
+{
+    "pulling-fee": "Pulling Fee",
+    "storage-fee": "Storage Fee",
+    "late-fee": "Late Fee",
+    "dry-run-fee": "Dry Run Fee",
+    "tax": "Tax",
+    "fuel": "Fuel",
+    "toll": "Toll",
+    "other": "Other",
+    "unknown": "Unknown",
+    "yes": "Yes",
+    "no": "No"
+}

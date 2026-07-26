@@ -1,0 +1,31 @@
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__icon {
+        $size: 24px;
+
+        width: 24px;
+        height: 24px;
+
+        &-done {
+            color: var(--color-done-label);
+        }
+
+        &-error {
+            color: var(--color-error-label);
+        }
+    }
+
+    &__label {
+        color: var(--color-done-label);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+
+        &--error {
+            color: var(--color-error-label);
+        }
+    }
+}

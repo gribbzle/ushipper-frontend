@@ -1,0 +1,10 @@
+.financial-accounts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__actions {
+        display: flex;
+        gap: 6px;
+    }
+}

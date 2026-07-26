@@ -1,0 +1,38 @@
+.contact-information {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    color: var(--color-table-text-default);
+
+    &__icon {
+        padding: 3px 0;
+        display: flex;
+
+        svg {
+            $size: 12px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__values {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__value {
+        font-size: 14px;
+        line-height: 18px;
+
+        a {
+            text-decoration: none;
+            color: var(--color-table-text-default);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

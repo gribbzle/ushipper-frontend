@@ -1,0 +1,16 @@
+.order-send-offer-to-carrier-drawer {
+    gap: 16px;
+    overflow: hidden;
+
+    &__company-list {
+        margin: 0 -16px;
+    }
+
+    &__not-found-message {
+        padding: 40px 10px;
+        color: var(--color-text-muted);
+        font-size: 14px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+}

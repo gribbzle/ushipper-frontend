@@ -1,0 +1,9 @@
+.cash-out-transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .form-control {
+        gap: 6px;
+    }
+}

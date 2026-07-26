@@ -1,0 +1,46 @@
+.shipper-tracking-order-tag {
+    border-radius: 6px;
+    padding: 4px 6px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: fit-content;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+
+    &--has-icon {
+        height: 28px;
+        line-height: 1;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &--view {
+        &-dispatched {
+            color: var(--color-sapphire);
+            border-color: var(--color-sapphire);
+            background: #eef0f8;
+        }
+
+        &-not-dispatched {
+            color: #8c8c9d;
+            border-color: var(--color-text-secondary);
+            background: #eeeef8;
+        }
+
+        &-picked-up {
+            color: #e5a705;
+            border-color: #e5a705;
+            background: #fef4da;
+        }
+    }
+}

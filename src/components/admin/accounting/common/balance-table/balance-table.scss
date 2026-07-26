@@ -1,0 +1,11 @@
+.balance-table {
+    &__type-and-description {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__status {
+        max-width: 180px;
+    }
+}

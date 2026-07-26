@@ -1,0 +1,24 @@
+.user-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-text-default);
+    }
+
+    &__company-type {
+        color: var(--color-misty-silver);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}

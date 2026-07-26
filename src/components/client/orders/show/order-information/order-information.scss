@@ -1,0 +1,58 @@
+@import 'src/pages/breakpoints';
+
+.order-information {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(0, $tablet-max-width) {
+        flex-direction: column;
+        gap: 8px;
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr) 3fr;
+            gap: 24px;
+
+            &--parsed {
+                grid-template-columns: repeat(3, 2fr) 3fr;
+            }
+        }
+
+        .order-price-info,
+        .order-created-info {
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+
+        .order-status-info {
+            flex-direction: column;
+            gap: 6px;
+
+            .order-status-info__status {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2px;
+            }
+        }
+
+        .order-price-info {
+            gap: 4px;
+        }
+
+        .order-created-info {
+            gap: 6px;
+        }
+    }
+
+    @include breakpoint($desktop-min-width) {
+        gap: 40px;
+
+        &__wrapper {
+            display: flex;
+            gap: 40px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "page-title": "Car Models Management | {{ projectName }}",
+    "header": "Car Models",
+    "maker-field-label": "Maker",
+    "maker-field-placeholder": "Input something for search",
+    "model-field-label": "Model Name",
+    "weight-field-label": "Weight",
+    "add-model-button-text": "Add Model",
+    "save-model-button-text": "Save Model"
+}

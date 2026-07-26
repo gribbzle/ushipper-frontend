@@ -1,0 +1,13 @@
+.car-models-filters {
+    display: flex;
+    margin-bottom: 24px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    padding: 24px;
+    gap: 12px;
+
+    & > * {
+        flex: 1;
+    }
+}

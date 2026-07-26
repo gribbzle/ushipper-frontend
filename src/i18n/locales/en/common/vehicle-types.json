@@ -1,0 +1,20 @@
+{
+    "sedan": "Sedan",
+    "coupe-two-doors": "Coupe (2 doors)",
+    "suv": "SUV",
+    "pickup-two-doors": "Pickup (2 doors)",
+    "pickup-four-doors": "Pickup (4 doors)",
+    "van-truck-daycab": "VanTruck (daycab)",
+    "truck-with-sleeper": "Truck (with sleeper)",
+    "motorcycle": "Motorcycle",
+    "boat": "Boat",
+    "rv": "RV",
+    "heavy-machinery": "Heavy Machinery",
+    "freight": "Freight",
+    "livestock": "Livestock",
+    "atv": "ATV",
+    "trailer-bumper-pull": "Trailer (Bumper Pull)",
+    "trailer-gooseneck": "Trailer (Gooseneck)",
+    "trailer-5th-wheel": "Trailer (5th Wheel)",
+    "other": "Other"
+}

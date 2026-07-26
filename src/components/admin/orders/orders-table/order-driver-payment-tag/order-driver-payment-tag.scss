@@ -1,0 +1,18 @@
+.order-driver-payment-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &__dropdown-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__tip {
+        width: 300px;
+    }
+
+    .dropdown {
+        align-self: flex-start;
+    }
+}

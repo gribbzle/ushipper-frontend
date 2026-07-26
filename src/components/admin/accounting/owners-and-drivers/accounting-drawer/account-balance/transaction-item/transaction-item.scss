@@ -1,0 +1,35 @@
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--color-primary);
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &--left {
+            align-items: flex-end;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        color: var(--color-text-light);
+        text-wrap: nowrap;
+    }
+
+    &__description {
+        color: var(--color-table-text-default);
+
+        &--small {
+            font-size: 12px;
+        }
+    }
+}

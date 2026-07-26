@@ -1,0 +1,192 @@
+.company-info-card {
+    display: flex;
+    width: 100%;
+    min-width: 1300px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px 0px #00000014;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    & > div:first-of-type {
+        width: 100%;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #eff2f5;
+        display: flex;
+        gap: 40px;
+    }
+
+    &__logo {
+        .company-logo,
+        img,
+        svg {
+            width: 88px !important;
+            height: 88px !important;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__main {
+        position: relative;
+        min-height: 88px;
+        padding-left: 104px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+
+        h4 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
+            color: var(--color-graphite-gray);
+            gap: 4px;
+
+            svg {
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        &-tags {
+            margin: 8px 0;
+
+            & > * {
+                margin-right: 12px;
+            }
+
+            .tag {
+                height: 24px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16px;
+                width: fit-content;
+                display: inline-flex;
+                box-sizing: border-box;
+
+                &--type-primary {
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    &__usdot {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-misty-silver);
+    }
+
+    .total-rating-block {
+        background-color: var(--color-white);
+        width: fit-content;
+        padding: 0;
+        align-items: center;
+    }
+
+    &__contacts {
+        min-width: 160px;
+        width: 160px;
+        overflow: hidden;
+
+        h4,
+        p {
+            color: var(--color-table-text-default);
+            margin-bottom: 4px;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        h4 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+    &__fees {
+        min-width: 130px;
+        width: 130px;
+
+        h4 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            color: var(--color-table-text-default);
+            text-transform: uppercase;
+        }
+    }
+
+    .button {
+        height: fit-content;
+    }
+
+    &__counters {
+        display: flex;
+        gap: 24px;
+
+        /* stylelint-disable-next-line no-descending-specificity */
+        & > div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &:not(:last-of-type) {
+                position: relative;
+
+                &::after {
+                    content: ' ';
+                    height: 16px;
+                    border-right: 1px dashed var(--color-border-default);
+                    position: absolute;
+                    right: -12px;
+                    top: 12px;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+            color: var(--color-table-text-default);
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+
+            svg {
+                scale: 0.8;
+                margin-right: 4px;
+
+                path {
+                    stroke: var(--color-table-text-default);
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 18px;
+            color: var(--color-text-default);
+        }
+    }
+}

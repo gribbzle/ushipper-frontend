@@ -1,0 +1,8 @@
+.company-orders-table {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: fit-content;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+}

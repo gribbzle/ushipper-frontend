@@ -1,0 +1,50 @@
+{
+    "tabs": {
+        "all": "All",
+        "flagged": "Flagged",
+        "offered": "Offered",
+        "contracted": "Contracted",
+        "has-new-job-offer": "Offered",
+        "has-accepted-job-offer": "Contracted"
+    },
+    "filters": {
+        "ratings": "Rating",
+        "specializations": "Specialization",
+        "specializations-categories": "Categories",
+        "dispatch-fees": "Dispatch Fee",
+        "country": "Location",
+        "languages": "Languages",
+        "name": "Search by name",
+        "sorting": "Sorting",
+        "sort-by": "Sort by",
+        "languages-placeholder": "Input Language Name",
+        "location-placeholder": "Input Country Name",
+        "dispatch-fee-placeholder": "Input Dispatch Fee",
+        "name-placeholder": "Input Company Name",
+        "any-specialization-switch": "Any Specialization",
+        "rating-labels": {
+            "any-rating-switch": "Any Rating",
+            "0": "0-1 stars",
+            "1": "1-2 stars",
+            "2": "2-3 stars",
+            "3": "3-4 stars",
+            "4": "4-5 stars",
+            "5": "5 stars"
+        },
+        "dispatch-fee-labels": {
+            "infinity": "Any Dispatch Fee",
+            "1": "1% and below",
+            "3": "1% - 3%",
+            "5": "3% - 5%",
+            "10": "5% - 10%",
+            "100": "10% and above"
+        },
+        "categories": "categories for {{ categoryName }}",
+        "selected": "selected"
+    },
+    "notifications": {
+        "update-error-notification": "An Error occurred when updating this {{ companyType }}",
+        "flagged-success-notification": "You successfully marked this  {{ companyType }} as Flagged",
+        "unflagged-success-notification": "You successfully marked this {{ companyType }} as UnFlagged"
+    }
+}

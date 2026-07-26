@@ -1,0 +1,10 @@
+.document-form {
+    &__row {
+        display: flex;
+        gap: 16px;
+
+        & > * {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.shipper-tracking-filters {
+    width: 240px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--color-text-default);
+    }
+
+    &__close {
+        cursor: pointer;
+        flex-shrink: 0;
+        align-self: center;
+
+        svg {
+            $size: 20px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__body,
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

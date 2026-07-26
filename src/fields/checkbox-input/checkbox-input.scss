@@ -1,0 +1,13 @@
+.labeled-check-box {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  &__label {
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: var(--color-input-text-secondary);
+    cursor: pointer;
+  }
+}

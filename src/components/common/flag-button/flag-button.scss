@@ -1,0 +1,15 @@
+.flag-button {
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    &--flagged {
+        border-color: var(--color-red);
+    }
+}

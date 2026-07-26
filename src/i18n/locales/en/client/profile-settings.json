@@ -1,0 +1,40 @@
+{
+    "page-title": "Profile Settings | {{ projectName }}",
+    "header": "Profile Settings",
+    "view-profile": "View profile",
+    "personal-info": {
+        "title": "Personal Information",
+        "logo": "Logo",
+        "fields": {
+            "divider-location-details": "Location Details",
+            "name": "Name",
+            "description": "About",
+            "email": "Email",
+            "phone": "Phone Number",
+            "country": "Country",
+            "email-placeholder": "user@example.com"
+        },
+        "save-btn-label": "Save",
+        "notifications": {
+            "updated-success": "Personal Information has been updated",
+            "update-error": "An Error occurred when updating this personal information"
+        }
+    },
+    "business-info": {
+        "title": "Business Information",
+        "fields": {
+            "specialization": "Specialization",
+            "categories": "Categories for {{ categoryName }}",
+            "working-time": "Working Time",
+            "dispatch-fee": "Dispatch Fee",
+            "term": "Term",
+            "birth-year": "In Business since Year",
+            "spoken-languages": "Spoken Languages"
+        },
+        "save-btn-label": "Save",
+        "notifications": {
+            "updated-success": "Business Information has been updated",
+            "update-error": "An Error occurred when updating this business information"
+        }
+    }
+}

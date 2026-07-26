@@ -1,0 +1,114 @@
+{
+    "title": "Sign Up | {{ projectName }}",
+    "sidebar": {
+        "steps": [
+            {
+                "title": "Invitation",
+                "description": "Accept your invitation",
+                "name": "invitation"
+            },
+            {
+                "title": "Account Type",
+                "description": "Select your account type",
+                "name": "account-type"
+            },
+            {
+                "title": "Account Info",
+                "description": "Setup your account settings",
+                "name": "account-info"
+            },
+            {
+                "title": "Business Details",
+                "description": "Setup your business details",
+                "name": "business-details"
+            },
+            {
+                "title": "USDOT Verification",
+                "description": "Verify your company",
+                "name": "usdot-verification"
+            },
+            {
+                "title": "Completed",
+                "description": "Your account is created",
+                "name": "form-completed"
+            }
+        ]
+    },
+    "form": {
+        "invitation-step": {
+            "title": "{{company}} invites you <br/> to join Ushipper"
+        },
+        "company-type-step": {
+            "title": "Choose Account Type",
+            "description": "If you need more info, please check out",
+            "help-page": "Help Page",
+            "company-type-options": {
+                "carrier": {
+                    "title": "Carrier Account",
+                    "description": "If you need more info, Please check it out"
+                },
+                "shipper": {
+                    "title": "Shipper Account",
+                    "description": "Create corporate account to mange your bisiness"
+                },
+                "dispatcher": {
+                    "title": "Dispatcher",
+                    "description": "Create corporate account to mange your bisiness"
+                },
+                "driver": {
+                    "title": "Driver",
+                    "description": "Create corporate account to mange your bisiness"
+                }
+            }
+        },
+        "account-info-step": {
+            "title": "Account Info",
+            "description": "If you need more info, please check out",
+            "help-page": "Help Page",
+            "company-name-label": "Company Name",
+            "company-name-placeholder": "Enter your Company Name",
+            "first-name-label": "First Name",
+            "first-name-placeholder": "Enter your First Name",
+            "last-name-label": "Last Name",
+            "last-name-placeholder": "Enter your Last Name",
+            "email-label": "Email",
+            "email-placeholder": "shipper@example.com",
+            "password-label": "Password",
+            "password-placeholder": "Enter 6 characters or more",
+            "terms-label": "I agree with",
+            "terms-link": "Terms"
+        },
+        "business-details-step": {
+            "title": "Business Details",
+            "description": "If you need more info, please check out",
+            "help-page": "Help Page",
+            "specializations-label": "Select your specialization",
+            "category-label": "Select categories for {{ categoryName }}"
+        },
+        "usdot-verification-step": {
+            "title": "USDOT Verification",
+            "description": "If you need more info, please check out",
+            "help-page": "Help Page",
+            "usdot-label": "USDOT",
+            "usdot-placeholder": "Enter your company USDOT",
+            "usdot-help": "Don’t have USDOT? Please check out",
+            "usdot-error-text": "Service not available",
+            "usdot-exists": "Carrier with this USDOT is already registered.<br/>Please, use another number.<br/><br/>",
+            "usdot-not-found": "Cannot find a carrier with this USDOT.",
+            "gateway-timeout": "Gateway Timeout",
+            "server-error": "FMCSA service not available"
+        },
+        "completed-step": {
+            "title": "You are done!",
+            "description": "If you need more info, please check out",
+            "help-page": "Help Page",
+            "message": "We’ve sent a link to your email.<br/>Please finish your registration by following this link.",
+            "message-pending-approval": "Please, wait until Ushipper team verifies your company."
+        },
+        "continue-button": "Continue",
+        "previous-button": "Previous",
+        "accept-button": "Accept Invitation",
+        "sign-in-text": "Already have an account?",
+        "sign-in-link": "Sign In"
+    }
+}

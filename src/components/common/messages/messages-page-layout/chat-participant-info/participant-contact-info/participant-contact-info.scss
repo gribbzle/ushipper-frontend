@@ -1,0 +1,42 @@
+.participant-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--color-table-border);
+    font-size: 14px;
+    font-weight: 600;
+
+    &__title {
+        line-height: 20px;
+        color: var(--color-table-text-default);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &-value {
+            font-size: 16px;
+            line-height: 18px;
+            color: var(--color-text-default);
+            white-space: nowrap;
+
+            &--primary {
+                color: var(--color-primary);
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-label {
+            font-weight: 400;
+            line-height: 16px;
+            color: var(--color-text-light);
+        }
+    }
+}

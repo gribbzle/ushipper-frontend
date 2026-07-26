@@ -1,0 +1,8 @@
+{
+    "factoring": "Factoring Fee",
+    "ushipper": "Ushipper Fee",
+    "dispatch": "Dispatcher Fee",
+    "to-wallet": "Custom Fee",
+    "recurring": "Static Recurring Fee",
+    "order-interval-recurring": "Dynamic Recurring Fee"
+}

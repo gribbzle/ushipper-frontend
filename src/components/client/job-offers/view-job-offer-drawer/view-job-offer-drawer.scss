@@ -1,0 +1,48 @@
+.view-job-offer-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .chat {
+            flex: 1;
+            height: auto;
+            width: auto;
+            box-shadow: none;
+            border: 1px solid var(--color-table-border);
+
+            .chat__info {
+                display: none;
+            }
+        }
+
+        .conditions-info {
+            &__first-line,
+            &__second-line {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+
+        .offering-company-info {
+            &__name {
+                color: var(--color-graphite-gray);
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

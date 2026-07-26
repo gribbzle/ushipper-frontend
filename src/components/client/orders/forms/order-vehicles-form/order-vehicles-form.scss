@@ -1,0 +1,12 @@
+.order-vehicles-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__header,
+    &__row {
+        display: grid;
+        grid-template-columns: 19fr repeat(3, 8fr) repeat(4, 10fr) repeat(2, 8fr) 20px;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "page-title": "Staff | {{ projectName }}",
+    "header": "Staff Managment",
+    "add-user-button": "Add User",
+    "invite-user": "Invite User",
+    "invite-drawer": {
+        "role": "Role",
+        "parent": "Parent User to Subordinate (optional)",
+        "email": "Email",
+        "name": "Name",
+        "success": "Invitation is sent successfully."
+    },
+    "show-more-button-label": "Show more for {{ name }}"
+}

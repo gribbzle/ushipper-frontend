@@ -1,0 +1,20 @@
+.order-expenses-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__row,
+    &__header {
+        display: grid;
+        grid-template-columns: 18fr 14fr repeat(2, 16fr) 15fr 19fr 2fr;
+        gap: 16px;
+    }
+
+    &__row {
+        align-items: flex-start;
+    }
+
+    &__text-center {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,87 @@
+.currency-percentage-field {
+    display: flex;
+    border: 1px solid var(--color-border-default);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+
+    &:hover:not(&--focused, &--errored, &--disabled) {
+        border: 1px solid var(--color-input-border-hover);
+    }
+
+    &--errored {
+        border: 1px solid var(--color-danger);
+    }
+
+    &--focused {
+        border: 1px solid var(--color-primary);
+    }
+
+    &--disabled {
+        border: 1px solid var(--color-border-default);
+        background: var(--color-input-background-disabled);
+
+        input {
+            color: var(--color-input-placeholder);
+        }
+    }
+
+    .currency-input__wrapper {
+        border: none;
+        height: 38px;
+
+        input {
+            padding: 0px 12px;
+        }
+
+        &:hover:not(&--focused, &--errored, &--disabled),
+        &--errored,
+        &--focused {
+            border: none;
+        }
+    }
+
+    .currency-input__wrapper + .form-helper-text,
+    .react-select-container + .form-helper-text {
+        display: none;
+    }
+
+    &__input {
+        width: 80px;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &__select {
+        width: 62px;
+
+        .react-select__indicators {
+            padding-left: 0;
+        }
+        .react-select__value-container {
+            padding-right: 0;
+        }
+        .react-select__indicator {
+            color: var(--color-info);
+            transform: scale(1.4);
+        }
+        .react-select__control {
+            min-height: 38px;
+            background-color: var(--color-tag-background-default);
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border: none;
+            border-left: 1px solid var(--color-border-default);
+
+            &--menu-is-open {
+                .react-select__indicator {
+                    transform: rotate(180deg) scale(1.4);
+                }
+            }
+        }
+        .react-select__placeholder {
+            display: none;
+        }
+    }
+}

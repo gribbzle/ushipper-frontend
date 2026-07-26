@@ -1,0 +1,25 @@
+.counters-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        h4 {
+            font-size: 12px;
+            line-height: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        P {
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--color-text-primary);
+        }
+    }
+}

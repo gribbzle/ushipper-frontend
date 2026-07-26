@@ -1,0 +1,36 @@
+.suggested-order-pin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -36px;
+        left: 8px;
+        background-color: var(--color-white);
+        padding: 8px 12px;
+        border-radius: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-text-primary);
+        z-index: 4;
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 6.3px 0px var (--color-sapphire);
+
+        &--active {
+            border-color: var(--color-primary);
+        }
+    }
+
+    &__value {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        color: var(--color-table-text-default);
+    }
+}

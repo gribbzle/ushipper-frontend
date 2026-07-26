@@ -1,0 +1,26 @@
+.review-items-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    &__label {
+        text-align: center;
+        color: var(--color-text-light);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__category {
+        display: flex;
+        justify-content: space-between;
+    }
+}

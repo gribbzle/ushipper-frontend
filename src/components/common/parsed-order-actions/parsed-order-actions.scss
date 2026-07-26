@@ -1,0 +1,15 @@
+.parsed-order-actions {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+    position: relative;
+
+    &__actions {
+        padding: 8px !important;
+
+        svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

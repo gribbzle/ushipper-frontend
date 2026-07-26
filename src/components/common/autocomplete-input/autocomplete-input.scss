@@ -1,0 +1,44 @@
+.autocomplete-input {
+    position: relative;
+
+    &__suggestions-container {
+        position: absolute;
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid var(--color-button-border-default);
+        box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+        left: 0;
+        right: 0;
+        margin-top: 4px;
+        padding: 4px 0;
+        z-index: 1;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    &__suggestion {
+        padding: 8px 20px;
+        font-size: 14px;
+        color: var(--color-button-text-default);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-input-background-disabled);
+        }
+    }
+
+    &__divider {
+        padding: 10px 20px 0 20px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        color: var(--color-text-light);
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-table-text-default);
+    }
+}

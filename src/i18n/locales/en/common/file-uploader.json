@@ -1,0 +1,17 @@
+{
+    "attachments-label": "Upload Attachments",
+    "ushipper-cd-contract-label": "Upload Dispatch Contract",
+    "freightx-cd-contract-label": "Upload Document",
+    "bol-label": "Upload BOL",
+    "pod-label": "Upload POD",
+    "others-label": "Other Attachments",
+    "hint": "or Drag & Drop files less than 20 MB",
+    "file-label": "{{ name }} ({{ size }} MB)",
+    "avatar": "avatar",
+    "delete-confirmation": "Delete {{ name }} ({{ size }} MB)?",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "single-file-upload-error": "Please select only one file for upload.",
+    "empty-label": "No Attachments",
+    "upload-error": "An Error occurred while uploading the attachment."
+}

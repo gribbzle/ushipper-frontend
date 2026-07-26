@@ -1,0 +1,10 @@
+{
+    "manual": "Manual",
+    "recurring": "Recurring",
+    "delayed-payment": "Delayed",
+    "instant-payment": "COD",
+    "not-cod": "Not COD",
+    "order-payment": "Order Payment",
+    "order-hold": "Order Hold",
+    "driver-payment": "Driver Payment"
+}

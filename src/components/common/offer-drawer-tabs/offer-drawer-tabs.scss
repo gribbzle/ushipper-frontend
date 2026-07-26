@@ -1,0 +1,11 @@
+.offer-drawer-tabs {
+    flex-shrink: 0;
+    border-bottom: none;
+    gap: 24px;
+
+    .tabs__label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+}

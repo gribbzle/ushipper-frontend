@@ -1,0 +1,17 @@
+.carrier-company-assign-item {
+    &__header {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+
+    &__label-text {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--color-table-text-default);
+    }
+
+    &__label-sub-text {
+        color: var(--color-text-default);
+    }
+}

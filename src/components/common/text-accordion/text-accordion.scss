@@ -1,0 +1,30 @@
+.text-accordion {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: visible;
+
+    &__text {
+        white-space: pre-line;
+
+        &--collapsed {
+            max-height: calc(20px * 3);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    span {
+        color: var(--color-primary);
+        font-weight: 600;
+        line-height: 16px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

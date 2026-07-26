@@ -1,0 +1,16 @@
+{
+    "new": "New",
+    "pending": "Pending",
+    "completed": "Completed",
+    "error": "Error",
+    "transfer-initiated": "Submitted",
+    "in-process": "In Process",
+    "cancelled": "Cancelled",
+    "insufficient-funds": "Insufficient Funds",
+    "refunded": "Refunded",
+
+    "completed-option": "Complete",
+    "transfer-initiated-option": "Submit",
+    "in-process-option": "In Process",
+    "cancelled-option": "Cancel"
+}

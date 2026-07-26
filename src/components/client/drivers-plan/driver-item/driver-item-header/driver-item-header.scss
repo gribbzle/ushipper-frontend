@@ -1,0 +1,10 @@
+.driver-item-header {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 3fr;
+    gap: 40px;
+
+    &__right {
+        display: flex;
+        gap: 8px;
+    }
+}

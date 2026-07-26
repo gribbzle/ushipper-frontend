@@ -1,0 +1,8 @@
+.decline-modal {
+    &__form-checkboxes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin-bottom: 20px;
+    }
+}

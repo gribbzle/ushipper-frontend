@@ -1,0 +1,11 @@
+.order-created-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__value {
+        line-height: 16px;
+        font-size: 14px;
+        color: var(--color-table-text-default);
+    }
+}

@@ -1,0 +1,110 @@
+@import 'src/pages/breakpoints';
+
+.tracking-driver-info {
+    $like-icon: 16px;
+    $avatar-icon: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    h4,
+    p {
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &__details,
+    &__rating,
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        color: var(--color-text-primary);
+    }
+
+    &__details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__rating {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+
+        h4 {
+            @include breakpoint($tablet-max-width, $extra-large-desktop-min-width) {
+                max-width: 130px;
+            }
+        }
+    }
+
+    &__like {
+        width: $like-icon;
+        height: $like-icon;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        color: var(--color-primary);
+
+        svg {
+            margin-top: 2px;
+            width: 13px;
+            height: 12px;
+            fill: var(--color-primary);
+        }
+    }
+
+    &__company {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        color: var(--color-text-secondary);
+    }
+
+    &__avatar {
+        &.avatar {
+            width: $avatar-icon;
+            height: $avatar-icon;
+        }
+    }
+
+    .generic-button {
+        svg {
+            width: 18px !important;
+            height: 16px !important;
+        }
+    }
+
+    &--inline {
+        gap: 8px;
+        width: 100%;
+
+        .tracking-driver-info__details {
+            flex-direction: row;
+        }
+
+        .tracking-driver-info__name h4 {
+            max-width: 100px;
+            margin-top: 2px;
+        }
+
+        .tracking-driver-info__company {
+            max-width: 140px;
+        }
+
+        .generic-button {
+            margin-left: auto;
+        }
+    }
+}

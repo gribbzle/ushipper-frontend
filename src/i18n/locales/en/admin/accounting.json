@@ -1,0 +1,723 @@
+{
+    "transactions-page": {
+        "title": "Transactions | {{ projectName }}",
+        "header": "Transactions",
+        "roll-back-option": "Roll Back",
+        "updated-transaction-status-success": "Transaction status was updated successfully",
+        "transaction-status-tag": {
+            "help-text": "You can’t change the status of<br/>a cash-out transaction after it<br/>has already been processed."
+        }
+    },
+    "wallets-page": {
+        "title": "Wallets | {{ projectName }}",
+        "header": "Wallets",
+        "add-custom-wallet-button": "Add Custom Wallet",
+        "table": {
+            "no-data-title": "You have no Wallets yet",
+            "wallet-column-name": "Wallet",
+            "created-at-column-name": "Created At",
+            "balance-column-name": "Balance",
+            "pending-deposit-column-name": "Pending Deposit",
+            "pending-withdrawal-column-name": "Pending Withdrawal",
+            "type-column-name": "Type",
+            "assigned-fees-column-name": "Assigned Fees",
+            "system-label": "System",
+            "custom-label": "Custom",
+            "edit": "Edit",
+            "upload-wallets-error-notification": "An Error occurred while loading the wallets."
+        },
+        "filters": {
+            "wallet-name-label": "Wallet Name",
+            "amount-type-label": "Amount Type",
+            "type-label": "Type",
+            "positive": "Positive",
+            "negative": "Negative"
+        },
+        "create-wallet-popup": {
+            "title": "Create Custom Wallet",
+            "create-custom-wallet-success": "Custom Wallet has been created",
+            "edit-custom-wallet-success": "Custom Wallet has been edited",
+            "wallet-name-label": "Custom Wallet Name"
+        }
+    },
+    "custom-balance": {
+        "title": "Wallet | {{ projectName }}",
+        "header": "Wallet",
+        "upload-wallet-error": "An Error occurred while uploading data of this wallet"
+    },
+    "cod-balance": {
+        "title": "COD Wallet | {{ projectName }}",
+        "header": "COD Wallet"
+    },
+    "factoring-balance": {
+        "title": "Factoring Wallet | {{ projectName }}",
+        "header": "Factoring Wallet",
+        "create-transaction-popup": {
+            "title": "New Transaction",
+            "form": {
+                "type": "Type",
+                "amount": "Amount",
+                "from-account": "Select From Account",
+                "to-account": "Select To Account",
+                "notes": "Notes",
+                "transaction-date": "Transaction Date",
+                "company": "Company",
+                "user": "User",
+                "wallet-details": "{{ userName }}'s Available Balance",
+                "system-wallet-details": "{{ name }}'s Available Balance"
+            },
+            "add-expense-btn-label": "Add Expense"
+        },
+        "notifications": {
+            "create-transaction-success": "Transaction has been created"
+        }
+    },
+    "ushipper-balance": {
+        "title": "Ushipper Wallet | {{ projectName }}",
+        "header": "Ushipper Wallet"
+    },
+    "dispatch-balance": {
+        "title": "Dispatch Wallet | {{ projectName }}",
+        "header": "Dispatch Wallet"
+    },
+    "broker-fee-balance": {
+        "title": "Broker Fee Wallet | {{ projectName }}",
+        "header": "Broker Fee Wallet"
+    },
+    "cod-orders": {
+        "title": "COD/COP | {{ projectName }}",
+        "header": "COD/COP",
+        "no-data-title": "You have no Orders yet",
+        "declined-or-pay-to-driver-popup": {
+            "pay-title": "Pay {{ driverPay }} from COD Wallet to {{ driverName }}?",
+            "decline-title": "Decline payment of {{ driverPay }} from COD Wallet to {{ driverName }}?",
+            "decline-reason-label": "Reason",
+            "pay": "Pay",
+            "decline": "Decline",
+            "cancel": "Cancel",
+            "close": "Close"
+        }
+    },
+    "alerts": {
+        "title": "Alerts | {{ projectName }}",
+        "header": "Alerts",
+        "no-data-title": "You have no Alerts yet",
+        "table": {
+            "created-at": "Created At",
+            "alert-type": "Alert Type",
+            "alert-status": "Alert Status",
+            "processed-by": "Processed By",
+            "resolve-option": "Approve",
+            "decline-option": "Decline"
+        },
+        "alert-status-change-popup": {
+            "resolved-title": "Are you sure you want to approve this?<br/>This will trigger the recalculation of transactions.",
+            "declined-title": "Are you sure you want to decline this?<br/> This will roll back the changes made to the order.",
+            "cancel-action": "Cancel",
+            "close-action": "Close"
+        }
+    },
+    "carriers": {
+        "title": "Carriers | {{ projectName }}",
+        "header": "Carriers",
+        "no-data-title": "You have no {{ user }} yet",
+        "no-data-description": "Try adding a new company or contact support",
+        "table": {
+            "fees-column-title": "Fees",
+            "ushipper-partner": "Ushipper Partner",
+            "regular": "Regular",
+            "usdot-label": "USDOT #{{ usdotNumber }}"
+        }
+    },
+    "owners-and-drivers": {
+        "title": "Drivers | {{ projectName }}",
+        "header": "Drivers",
+        "table": {
+            "account-balance-column-name": "Account Balance",
+            "pending-label": "Pending",
+            "driver-owner": "Driver Owner",
+            "email-is-verified": "Email is verified",
+            "phone-number-is-verified": "Phone Number is verified",
+            "wallet-exists": "Wallet exists",
+            "partner-company-assigned": "Partner Company assigned",
+            "no-verified-email": "Email not verified.",
+            "transactions-column-name": "Transactions",
+            "fees-column-name": "Fees",
+            "total": "Total",
+            "cash-out-sum": "CashOut",
+            "total-orders": "Total Orders",
+            "pending-orders": "Pending Orders",
+            "damages-orders": "Damages Orders",
+            "doc-request-orders": "Doc request",
+            "driver-owner-column-name": "Driver / Owner",
+            "latest-location-column-name": "Latest Location",
+            "carrier-column-name": "Carrier",
+            "payment-details-column-name": "Payment Details",
+            "no-card-bank-account": "No Card or Bank Account yet",
+            "drivers-count": "{{ count }} Drivers",
+            "ushipper-delayed-terms-label": "Delayed",
+            "freightx-delayed-terms-label": "Lease fee",
+            "instant-terms-label": "COD/COP",
+            "recurring-fees-label": "Week/month",
+            "weekly-fees-label": "Week",
+            "monthly-fees-label": "Month",
+            "mark-email-as-verified-button-label": "Mark Email as Verified",
+            "mark-phone-number-as-verified-button-label": "Mark Phone Number as Verified"
+        },
+        "drivers-map-popup": {
+            "latest-location-driver": "Driver {{ name }}"
+        },
+        "accounting-drawer": {
+            "default-title": "Driver",
+            "statement-v1-report-btn": "Statement Report v1",
+            "statement-v2-report-btn": "Statement Report v2",
+            "balance-report-btn": "Balance Report",
+            "tabs": {
+                "agreements": "Agreements",
+                "account-balance": "Account Balance",
+                "rocketkor": "Wallet Profile",
+                "financial-accounts": "Financial Accounts",
+                "no-account-balance": "None"
+            },
+            "agreements": {
+                "contractor-type-label": "Contractor Type",
+                "fees-rules-label": "Fees Rules",
+                "custom-rules-label": "Use Custom Fees",
+                "company-rules-label": "Get Fees From Company",
+                "companies-fees-label": "Companies Fees",
+                "balance-limit-label": "Balance Limit",
+                "limit-amount-label": "Limit Amount",
+                "company-fees-empty-alert": "Fees have not yet been added.",
+                "companies-empty-alert": "No companies yet.",
+                "same-fee-label": "Same Fee for All Companies",
+                "fee-settings-application-alert": "These fee settings will be applied to the companies:",
+                "balance-limit-alert": "The Driver won’t be able to Pickup Orders when his Account Balance is less than {{ limit }}. <br/>A Dispatcher won’t be able to Assign the Driver to an Order when his Account Balance is less than {{ limit }}.",
+                "driver-owner-label": "Driver Owner",
+                "driver-label": "Driver",
+                "add-new-owner-label": "Add new",
+                "driver-settings-divider": "Driver Settings",
+                "loadboard-sources-label": "Loadboard Sources",
+                "orders-show-full-price-label": "Orders Show Full Price",
+                "order-requests-allowed-label": "Order Requests Allowed",
+                "loadboard-payment-terms-label": "Loadboard Payment Terms",
+                "total-fees": "Total Fees",
+                "fuel-cards-settings": {
+                    "fuel-limit-rules-label": "Fuel Limit Rules",
+                    "fuel-limit-rate-label": "ULSD Limit for {{ type }}",
+                    "def-limit-label": "DEF Limit",
+                    "new-orders": "New Orders",
+                    "picked-up-orders": "Picked Up Orders",
+                    "custom-label": "Personal Settings",
+                    "global-label": "Global Settings"
+                },
+                "assigned-companies-table": {
+                    "assigned-companies-label": "Assigned Companies",
+                    "assigned-to-company-at-column-title": "Assigned At",
+                    "parent-user-column-title": "Parent User",
+                    "company-column-title": "Company",
+                    "assigned-companies-empty-alert": "No assigned companies yet",
+                    "assign-dispatcher-button-label": "Assign Dispatcher",
+                    "un-assign-dispatcher-button-label": "UnAssign Dispatcher",
+                    "reassign-dispatcher-button-label": "Reassign Dispatcher",
+                    "delete-button-label": "Delete"
+                },
+                "fuel-cards-table": {
+                    "fuel-cards-label": "Fuel Cards",
+                    "fuel-cards-empty-alert": "No fuel cards yet",
+                    "delete-action": "Delete"
+                },
+                "custom-fees-warning-alert": {
+                    "warning": "Warning!",
+                    "additional-driver-company-fees-warning": "There are additional Fees in the driver companies which will be applied",
+                    "remove-or-setup-company-fees-instructions": "Remove them from company Settings or set up them here to avoid unnecessary commissions."
+                }
+            },
+            "account-balance": {
+                "empty-account-balance-text-alert": "{{ name }} has no Wallet yet. <br/> Fill in the form and submit it to create Wallet Profile.",
+                "short-empty-account-balance-text-alert": "{{ name }} has no Wallet yet.",
+                "view-all-transactions-btn-label": "View All Transactions",
+                "view-all-orders-btn-label": "View All Orders",
+                "recent-transaction": "RECENT TRANSACTIONS",
+                "no-transactions-text": "User has no transactions yet.",
+                "order-id-label": "Order",
+                "cash-out-to-label": "Cash Out to {{ walletName }} ({{ notes }})",
+                "cash-in-from-label": "Cash In from {{ walletName }} ({{ notes }})",
+                "short-cash-out-to-label": "Cash Out to {{ walletName }}",
+                "short-cash-in-from-label": "Cash In from {{ walletName }}",
+                "transaction-to-label": "To {{ walletName }} ({{ notes }})",
+                "transaction-from-label": "From {{ walletName }} ({{ notes }})",
+                "short-transaction-to-label": "To {{ walletName }}",
+                "short-transaction-from-label": "From {{ walletName }}",
+                "no-details-label": "No details ({{ notes }})",
+                "awaiting-transactions-title": "Awaiting Transactions",
+                "pending-orders-title": "Pending Orders",
+                "no-details-wallet": "No details",
+                "delivered-at-label": "Delivered At: {{ date }}"
+            },
+            "rocketkor": {
+                "add": "Add Wallet Profile",
+                "no-wallet-profile": "No Wallet Profile",
+                "business-type-label": "Business",
+                "individual-type-label": "Individual",
+                "sole-proprietorship": "Sole proprietorship (SP)",
+                "general-partnership": "General partnership (GP)",
+                "limited-partnership": "Limited partnership (LP)",
+                "limited-liability-partnership": "Limited Liability Partnership (LLP)",
+                "limited-liability-limited-partnership": "Limited Liability Limited Partnership (LLLP)",
+                "limited-liability-company": "Limited Liability Company (LLC)",
+                "corporation": "Corporation (CORP)",
+                "nonprofit": "Nonprofit",
+                "government": "Government",
+                "customer-type": "Customer Type",
+                "business-name": "Business Name on Account",
+                "legal-name-of-business": "Legal name of Business",
+                "first-name": "First name",
+                "last-name": "Last name",
+                "email": "Email",
+                "primary-phone-number": "Primary Phone Number",
+                "type-of-business": "Type of Business",
+                "date-of-formation": "Date of Formation",
+                "company-website": "Company Website",
+                "business-tax-id": "Business Tax ID (EIN)",
+                "business-tax-id-country": "Business Tax ID Country",
+                "physical-address-must": "Physical Address (must be a U.S. address)",
+                "physical-address": "Physical Address",
+                "same-address": "Mailing Address is the same as Physical Address",
+                "mailing-address-must": "Mailing Address (must be a U.S. address)",
+                "mailing-address": "Mailing Address",
+                "identity-documents": "Identity Documents",
+                "add-tax": "Add Tax Document (W9)",
+                "tax": "Tax Document (W9)",
+                "add-document": "Add Ownership Document (Driver’s license)",
+                "document": "Ownership Document (Driver’s license)",
+                "add-passport": "Add Passport Document",
+                "passport": "Passport Document",
+                "save": "Save",
+                "edit": "Edit",
+                "cancel": "Cancel",
+                "delete": "Delete",
+                "document-name": "Document Name",
+                "document-description": "Document Description",
+                "upload-file": "Upload File",
+                "document-number": "Document Number",
+                "issuing-country-state": "Issuing Country & STATE",
+                "issuing-date": "Issuing Date",
+                "expiry-date": "Expiry Date",
+                "issuing-country": "Issuing Country",
+                "state": "State",
+                "open-profile": "Open Wallet Profile",
+                "attachment-create-success": "Your attachment was created successfully",
+                "attachment-update-success": "Your attachment was updated successfully",
+                "create-profile-success": "Your profile is created successfully",
+                "update-profile-success": "Your profile is updated successfully"
+            },
+            "financial-accounts": {
+                "add": "Add Financial Account",
+                "no-financial-account": "No Financial Account",
+                "form": {
+                    "external-type-label": "External",
+                    "account-category": "Account Category",
+                    "account-type": "Account Type",
+                    "financial-account-name": "Financial Account Name",
+                    "bank-account-type": "Bank Account Type",
+                    "bank-name": "Bank Name",
+                    "routing-number": "Routing number",
+                    "name-on-account": "Name On Account",
+                    "account-number": "Account Number",
+                    "confirm-account-number": "Confirm Account Number",
+                    "card-type": "Card Type",
+                    "first-name-on-card": "First name on Card",
+                    "last-name-on-card": "Last name on Card",
+                    "middle-name-on-card": "Middle name on Card",
+                    "user-name-on-card": "User name on Card",
+                    "card-number": "Card Number",
+                    "card-exp-date": "Card Exp. Date",
+                    "banking-info-divider": "Banking Info",
+                    "card-info-divider": "Card Info",
+                    "billing-info-divider": "Billing Info",
+                    "external-card-wallet-label": "Card Account",
+                    "external-bank-wallet-label": "Bank Account",
+                    "saving-label": "Saving",
+                    "checking-label": "Checking",
+                    "debit-label": "Debit",
+                    "prepaid-label": "Prepaid",
+                    "credit-label": "Credit",
+                    "routing-no-error": "Routing number must contain exactly 9 digits"
+                },
+                "billing-info": {
+                    "prefix": "*Plan to use a",
+                    "suffix": "on this account? Enter the address below, as a wire transfer requires an address to proceed.",
+                    "strong-text": "wire transfer"
+                },
+                "popup": {
+                    "title": "Edit Financial Account",
+                    "delete-confirmation": "Delete {{ name }}?",
+                    "default-financial-account-name": "this Financial Account"
+                },
+                "item": {
+                    "phone-number": "Phone Number",
+                    "billing-address": "Billing Address",
+                    "email": "Email"
+                }
+            },
+            "address-form": {
+                "address1": "Address Line 1",
+                "address2": "Address Line 2",
+                "city": "City",
+                "state": "State",
+                "zip": "ZIP",
+                "country": "Country",
+                "billing-address1": "Billing address 1",
+                "billing-address2": "Billing address 2"
+            }
+        },
+        "add-driver-to-company-popup": {
+            "title": "Add {{ name }} to Company",
+            "add": "Add",
+            "cancel": "Cancel",
+            "form": {
+                "driver-name-label": "Driver Name",
+                "driver-email-label": "Driver Email",
+                "company-label": "Company",
+                "role-label": "Role",
+                "role-placeholder": "Please select a company first",
+                "parent-label": "Parent User to Subordinate",
+                "parent-placeholder": "Please select a role first",
+                "add-driver-to-company-success": "Driver was added to Company successfully"
+            }
+        },
+        "report-popup": {
+            "cashout-title": "{{ name }}'s Statement Report (Receipt)",
+            "statement-v1-title": "{{ name }}'s Statement Report v1",
+            "statement-v2-title": "{{ name }}'s Statement Report v2",
+            "balance-title": "{{ name }}'s Balance Report",
+            "make-report-option": "Make Report",
+            "cancel-action": "Cancel",
+            "statement-report-receipt-btn": "Statement Report (Receipt)",
+            "form": {
+                "period": "Period",
+                "start-date": "From",
+                "end-date": "To",
+                "select-date": "Select Date",
+                "last-cash-out-option-label": "Last Cash Out",
+                "custom-option-label": "Custom"
+            },
+            "make-report-error": "An error occurred while generating the report"
+        },
+        "link-fuel-card-popup": {
+            "title": "Link Fuel Card to {{ name }}",
+            "link": "Link",
+            "fuel-card-label": "Fuel Card"
+        }
+    },
+    "fee-categories-settings": {
+        "title": "Fee Categories Settings | {{ projectName }}",
+        "header": "Fee Categories Settings",
+        "add-fee-category-button": "Add Fee Category",
+        "table": {
+            "fee-categories-name-column-label": "Fee Name",
+            "wallet-type-column-label": "Wallet Type"
+        },
+        "create-edit-fee-category-block": {
+            "title": "{{ name }} Settings",
+            "new-fee-category": "New Fee Category",
+            "name-field-label": "Fee Category Name",
+            "type-field-label": "Type",
+            "wallet-field-label": "Destination Wallet",
+            "default-amount-field-label": "Default Amount",
+            "default-limit-field-label": "Default Limit (optional)",
+            "update-fee-category-success": "Fee Category updated successfully",
+            "create-fee-category-success": "Fee Category has been created"
+        },
+        "delete-fee-category-popup": {
+            "title": "Delete {{ feeCategoryName }}?",
+            "default-fee-category-name": "Fee Category",
+            "delete-fee-category-success": "Fee Category has been deleted"
+        }
+    },
+    "assign-dispatcher-to-driver-popup": {
+        "assign-title": "Assign Dispatcher to {{ name }}",
+        "reassign-title": "Reassign Dispatcher to {{ name }}",
+        "dispatcher-label": "Parent User to Subordinate",
+        "cancel": "Cancel",
+        "assign": "Assign",
+        "reassign": "Reassign"
+    },
+    "add-transaction-button": "Add Transaction",
+    "total-balance": "Total balance",
+    "pending-deposit": "Pending Deposit",
+    "pending-withdrawal": "Pending Withdrawal",
+    "no-data-title": "You have no transactions yet",
+    "no-data-description": "Try to add new or contact support",
+    "positive-balances": "Total positive balances",
+    "negative-balances": "Total negative balances",
+    "balance-table": {
+        "transaction-time-column-title": "Transaction Time",
+        "company-column-title": "Company",
+        "amount-column-title": "Amount",
+        "from-column-title": "Move From",
+        "to-column-title": "Move To",
+        "balance-before-column-title": "Balance Before",
+        "description-column-title": "Type / Description",
+        "status-column-title": "Status",
+        "owner-or-driver-column-title": "Owner/Driver",
+        "order-column-title": "Order",
+        "for-order": "for Order",
+        "no-order-id": "No Order Id",
+        "order": "Order",
+        "driver-label": "Driver",
+        "notes": "Notes",
+        "period": "Period",
+        "accounting-number": "Accounting number: {{ number }}",
+        "fees": "Fees",
+        "refunded-of": "Refund of",
+        "refunded-transaction-id": "Refunded transaction ID: {{ publicId }}",
+        "price": "Payment form submitted for",
+        "payment-provider": "Payment Provider: {{ provider }}",
+        "payment-status-in": "Payment Status in {{ provider }}: {{ status }}",
+        "external-id": "External  ID: {{ id }}",
+        "upload-transactions-error-notification": "An Error occurred while loading the transactions.",
+        "cancel-rollback-transaction-popup": {
+            "cancel-title": "Cancel Transaction",
+            "rollback-title": "Roll Back Transaction",
+            "cancel-notes-label": "Cancellation Notes",
+            "rollback-notes-label": "Notes",
+            "rollback": "Roll Back",
+            "cancel": "Cancel"
+        }
+    },
+    "filters": {
+        "all": "All",
+        "order-id": "Order ID",
+        "order-public-id": "Order Public ID",
+        "payment-type": "Payment Type",
+        "date-start": "Date start",
+        "date-end": "Date end",
+        "company": "Company",
+        "user": "User",
+        "transaction-type": "Transaction Type",
+        "transaction-status": "Transaction Status",
+        "alert-type": "Alert Type",
+        "alert-status": "Alert Status",
+        "account": "Account",
+        "incoming": "Positive",
+        "outgoing": "Negative",
+        "cash-in": "Cash In",
+        "cash-out": "Cash Out"
+    },
+    "carrier-accounting-drawer": {
+        "ushipper-partner": "Ushipper partner",
+        "ushipper-delayed-terms-title": "Delayed terms",
+        "ushipper-instant-terms-title": "COD/COP TERMS",
+        "freightx-delayed-terms-title": "Lease fee",
+        "recurring-fees-title": "Recurring Fees",
+        "add-fee": "Add Fee",
+        "fee-category": "Fee category",
+        "amount": "Amount",
+        "period": "Period",
+        "day": "Day",
+        "limit": "Limit (optional)",
+        "charged-total-text": "Charged Total: {{ value }}",
+        "enable-payment-system": "Enable Payment System",
+        "upload-carrier-error": "An Error occurred while uploading data of this carrier",
+        "tabs": {
+            "fees": "Fees",
+            "factoring": "Factoring",
+            "accounts": "CD/SD Accounts"
+        },
+        "central-dispatch-fields": {
+            "title": "Central Dispatch",
+            "login-label": "Login",
+            "password-label": "Password"
+        },
+        "super-dispatch-fields": {
+            "title": "Super Dispatch",
+            "log-in-super-dispatch-btn-label": "Log In SuperDispatch",
+            "login-label": "Login",
+            "password-label": "Password",
+            "verification-code-label": "Verification Code",
+            "alert": "SuperDispatch has sent you a temporary 6-digit login code at {{ email }}.<br/>Please enter this code to login to your account."
+        },
+        "factoring": {
+            "settings": "Settings",
+            "auto-send-factoring-request": "Automatically Send Email to Factoring after Delivery",
+            "auto-transfer-funds-on-approval": "Automatically Transfer Funds to the Driver after Factoring Approval",
+            "factoring-provider": "Factoring Provider",
+            "user-name": "User Name",
+            "password": "Password",
+            "host": "Host",
+            "incoming-email": "Factoring Notifications Email",
+            "outgoing-email": "Factoring Incoming Email",
+            "smtp": "SMTP (Simple Mail Transfer Protocol)",
+            "imap": "IMAP (Internet Message Access Protocol)"
+        }
+    },
+    "notifications": {
+        "update-fees-success": "Fees updated successfully",
+        "update-fees-error": "An Error occurred while editing fees",
+        "delete-fees-success": "Fees deleted successfully",
+        "update-agreements-success": "Agreements updated successfully",
+        "add-external-service-settings-success": "External service settings added successfully",
+        "update-factoring-settings-success": "Factoring settings updated successfully",
+        "create-financial-account-success": "Financial Account was created successfully",
+        "update-financial-account-success": "Financial Account was updated successfully",
+        "delete-financial-account-success": "Financial Account was deleted",
+        "update-company-success": "Company was updated successfully",
+        "updated-transaction-status-error": "An Error occurred while updating this transaction",
+        "upload-account-error": "An Error occurred while uploading data of this account",
+        "cancel-transaction-status-success": "Transaction was canceled",
+        "cancel-transaction-status-error": "An Error occurred while canceling this transaction",
+        "rollback-transaction-status-success": "Transaction was rolled back",
+        "rollback-transaction-status-error": "An Error occurred while rolling back this transaction",
+        "assign-dispatcher-to-driver-success": "Dispatcher is successfully assigned",
+        "reassign-dispatcher-to-driver-success": "Dispatcher is successfully reassigned",
+        "un-assign-dispatcher-to-driver-success": "Dispatcher is successfully unassigned",
+        "updated-account-status-success": "Account status updated successfully",
+        "updated-account-status-error": "An Error occurred while updating the status of this account",
+        "upload-drivers-error": "An Error occurred while loading the drivers.",
+        "export-transactions-error": "An Error occurred while exporting transactions.",
+        "pay-to-driver-error": "An Error occurred while processing the payment to the driver.",
+        "pay-to-driver-success": "Payment to Driver was successful.",
+        "payment-to-driver-declined-success": "The payment to Driver was successfully marked as declined.",
+        "payment-to-driver-declined-error": "An Error occurred while marking the payment to Driver as declined.",
+        "resolved-alert-status-success": "Issue was resolved successfully",
+        "resolved-alert-status-error": "An error occurred while resolving the issue status",
+        "declined-alert-status-success": "Issue was declined successfully",
+        "declined-alert-status-error": "An error occurred while declining the issue",
+        "upload-alerts-error": "An Error occurred while uploading data of alerts",
+        "fetch-orders-for-alerts-error": "An error occurred while loading orders for alerts",
+        "updated-account-email-verified-success": "Email verified successfully",
+        "updated-account-email-verified-error": "An error occurred while verifying the email",
+        "updated-account-phone-verified-success": "Phone number verified successfully",
+        "updated-account-phone-verified-error": "An error occurred while verifying the phone",
+        "add-fuel-card-for-driver-success": "Fuel Card is successfully added",
+        "add-fuel-card-for-driver-error": "An Error occurred while adding fuel card",
+        "upload-account-payment-methods-success": "The attributes for the selected  payment service is successfully uploaded",
+        "upload-account-payment-methods-error": "An Error occurred while uploading the attributes for the selected  payment service. Please try again later.",
+        "no-found-attachment-error": "Attachment not found. Please try refreshing the page to reload the data",
+        "attachment-delete-success": "Your attachment was deleted successfully"
+    },
+    "company-card-info": {
+        "carrier-type": "Carrier",
+        "ushipper-partner": "Ushipper Partner",
+        "usdot": "USDOT: #{{ usdot }}",
+        "contacts": {
+            "title": "Contacts",
+            "phone": "Phone: {{ phone }}",
+            "email": "Email: {{ email }}"
+        },
+        "fees-types": {
+            "ushipper-delayed-terms": "Delayed Terms Fees",
+            "freightx-delayed-terms": "Leases Fee",
+            "cod-cop": "COD/COP Fees"
+        },
+        "edit-button": "Edit",
+        "delete-button": "Delete",
+        "login-as-owner-button": "Login as Owner",
+
+        "counters": {
+            "users": "Users",
+            "orders": "Orders",
+            "total-gross": "Total Gross"
+        },
+        "empty-fees": "None"
+    },
+    "fee-periods": {
+        "weekly": "Weekly",
+        "monthly": "Monthly"
+    },
+    "fee-interval-types": {
+        "week": "Week",
+        "month": "Month"
+    },
+    "fee-recurring-week-days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+    },
+    "delete-account-popup": {
+        "title": "Delete {{ accountName }}?",
+        "default-account-name": "this Account",
+        "delete-account-success": "Account was deleted",
+        "delete-account-error": "An Error occurred while deleting this account"
+    },
+    "initiate-account-payment-methods-popup": {
+        "title": "Complete the Required Attributes to Proceed",
+        "attributes": "Attributes",
+        "payment-methods-type": {
+            "masspay": "MassPay",
+            "fluidpay": "Fluid Pay"
+        },
+        "bank-account-type": {
+            "checking": "Checking",
+            "savings": "Savings"
+        },
+        "fields": {
+            "card-number": "Card Number",
+            "bank-account-type": "Bank Account Type",
+            "bank-account-number": "Bank Account Number",
+            "bank-account-branch-number": "Bank Account Branch Number",
+            "bank-name": "Bank Name",
+            "phone-number": "Phone Number",
+            "gender": "Gender",
+            "identification-number": "Identification Number",
+            "bill-reference-number": "Bill Reference Number",
+            "bank-routing-number": "Bank Routing Number",
+            "bank-account-name": "Bank Account Name",
+            "maiden-name": "Maiden Name",
+            "social-security": "Social Security",
+            "employment-name": "Employment Name",
+            "employment-address": "Employment Address",
+            "employment-phone": "Employment Phone",
+            "employment-occupation": "Employment Occupation",
+            "employment-supervisor": "Employment Supervisor",
+            "remittance-reason": "Remittance Reason",
+            "relationship": "Relationship",
+            "second-last-name": "Second Last Name",
+            "swift": "SWIFT",
+            "birth-country": "Birth Country",
+            "source-of-funds": "Source of Funds",
+            "date-of-birth": "Date of Birth",
+            "card-expiration": "Card Expiration",
+            "card-zip": "Card ZIP",
+            "identification-type": "Identification Type",
+            "bank-city": "Bank City",
+            "bank-state": "Bank State",
+            "id-selfie-collection": "Click to verify",
+            "city": "City",
+            "country": "Country",
+            "identification-expiration": "Identification Expiration",
+            "address1": "Address",
+            "iframe-payment-collection": "IFrame Payment Collection",
+            "postal-code": "Postal Code",
+            "payment-method-type": "Payment Method Type",
+            "invalid-value": "Invalid value",
+            "only-9-digits-error": "Only 9 digits",
+            "identification-number-validation-error": "Format must be X-XXXXXXX",
+            "swift-error": "SWIFT Code must follow ISO-9362:2009 (e.g., AAAABBCCDDD)",
+            "only-digits-error": "Only digits",
+            "email-phone-number-account-error": "Email or 10-digit phone number associated with account",
+            "bank-account-number-iban-error": "Bank Account Number or IBAN",
+            "max-characters-error": "Maximum 35 characters",
+            "zip-code-error": "5 digits zipcode",
+            "card-expiration-error": "YYYY-MM i.e. 2030-07"
+        },
+        "info": {
+            "no-details": "No details",
+            "payment-system": "Payment System",
+            "name": "Name",
+            "description": "Description",
+            "no-description": "No description",
+            "estimated-availability": "Estimated Completion Time",
+            "payment-company": "Payment Processor",
+            "rating": "Rating",
+            "financial-info": "Financial Information",
+            "amount": "Amount",
+            "fee": "Fee"
+        }
+    }
+}

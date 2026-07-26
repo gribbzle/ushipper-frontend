@@ -1,0 +1,43 @@
+import React, { useCallback, useMemo } from 'react';
+import has from 'has-values';
+
+import { OrderInformationList, OrderPickupInformationDrawer, ZoneButton } from '@/components';
+import { useCanManageOrder } from '@/hooks/order';
+import { useAppDispatch, useAppSelector } from '@store';
+import { orderPickedUpAtSelector, orderPickupInformationSelector, ordersActions } from '@store/client';
+import { getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+
+const t = translateByNamespace('client:order:pickup-information');
+
+export const OrderPickupInformationBlock = () => {
+    const dispatch = useAppDispatch();
+    const pickupInformation = useAppSelector(orderPickupInformationSelector);
+    const pickedUpAt = useAppSelector(orderPickedUpAtSelector);
+
+    const canPerformActions = useCanManageOrder();
+
+    const handlePickupInformationDrawerOpen = useCallback(() => {
+        if (!canPerformActions) return;
+        dispatch(ordersActions.setPickupInformationDrawerProps(Object.assign({ isVisible: true }, pickupInformation)));
+    }, [dispatch, pickupInformation, canPerformActions]);
+
+    const title = useMemo((): string => (canPerformActions ? t('empty-label') : t('no-data-label')), [canPerformActions]);
+
+    return (
+        <>
+            {!pickupInformation || !has(getObjectWithoutEmptyFields(pickupInformation)) ? (
+                <ZoneButton label={title} onClick={handlePickupInformationDrawerOpen} disabled={!canPerformActions} />
+            ) : (
+                <OrderInformationList
+                    title={t('title-label')}
+                    emptyNameLabel={t('empty-name-label')}
+                    fields={pickupInformation}
+                    pickedUpAt={pickedUpAt}
+                    pickedUpAtTimezone={pickupInformation.timezone}
+                    onClick={handlePickupInformationDrawerOpen}
+                />
+            )}
+            {canPerformActions && <OrderPickupInformationDrawer />}
+        </>
+    );
+};

@@ -1,0 +1,28 @@
+$header-height: 64px;
+$padding-size: 24px;
+$chats-search-height: 72px;
+$support-chat-height: 82px;
+
+.chats-list-block {
+    min-width: 396px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--color-table-border);
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        height: 500px;
+    }
+
+    &__list {
+        display: block;
+        height: calc(100vh - $header-height - $padding-size * 2 - $chats-search-height);
+        overflow-y: auto;
+
+        &--with-support {
+            height: calc(100vh - $header-height - $padding-size * 3 - $chats-search-height - $support-chat-height);
+        }
+    }
+}

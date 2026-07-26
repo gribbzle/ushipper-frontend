@@ -1,0 +1,22 @@
+.carrier-accounting-drawer {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        button {
+            width: min-content;
+        }
+
+        .tabs__wrapper {
+            border-bottom: none;
+        }
+    }
+
+    &__empty {
+        margin: auto;
+        color: var(--color-text-light);
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,13 @@
+.fuel-cards-table {
+    &__created-at {
+        min-width: 115px;
+    }
+
+    &__latest-transaction {
+        min-width: 165px;
+    }
+
+    &__actions {
+        width: 15px;
+    }
+}

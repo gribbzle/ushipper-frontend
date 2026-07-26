@@ -1,0 +1,28 @@
+.vehicle-sizes-info {
+    &__details {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__ellipse {
+        $size: 4px;
+
+        width: $size;
+        height: $size;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background-color: var(--color-button-border-default);
+    }
+
+    &__size {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+
+        &-weight {
+            text-transform: lowercase;
+        }
+    }
+}

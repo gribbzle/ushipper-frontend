@@ -1,0 +1,68 @@
+.driver-truck-pin {
+    $size: 52px;
+
+    width: $size !important;
+    height: $size !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    &:not(&--disabled):hover {
+        cursor: pointer;
+    }
+
+    &:not(&--focused):not(&--disabled):hover {
+        background-color: rgba(78, 200, 140, 0.25);
+    }
+
+    &--focused {
+        border-color: var(--color-primary-green);
+        background-color: var(--color-primary-green);
+        opacity: 0.85;
+    }
+
+    &__truck {
+        transform-origin: center;
+    }
+
+    &__like {
+        position: absolute;
+        top: 45px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        $size: 18px;
+        width: $size;
+        height: $size;
+
+        transform: translate(50%, -50%) rotate(0deg);
+
+        z-index: 10;
+        background-color: var(--color-white);
+        color: var(--color-primary-green);
+        border-radius: 4px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 9px;
+            height: 6px;
+            background: linear-gradient(to bottom, var(--color-white) 99%, transparent 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            border-color: var(--color-white);
+        }
+
+        svg {
+            width: 9px;
+            height: 8px;
+            fill: var(--color-primary-green);
+        }
+    }
+}

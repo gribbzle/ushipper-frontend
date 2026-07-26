@@ -1,0 +1,68 @@
+.user-info-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    div {
+        .user-info-block__name {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--color-primary);
+            cursor: pointer;
+
+            &--trimmed {
+                width: 160px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &--disabled {
+                color: var(--color-table-text-default);
+                -webkit-font-smoothing: antialiased;
+                cursor: auto;
+            }
+
+            &--has-button {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &:not(&--disabled):hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__balance {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-table-text-default);
+        margin-top: 2px;
+
+        &--success {
+            color: var(--color-success);
+        }
+
+        &--awaiting {
+            color: var(--color-warning);
+        }
+
+        &--danger {
+            color: var(--color-red);
+        }
+    }
+
+    &__name-and-button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &--trimmed {
+            width: 160px;
+        }
+    }
+}

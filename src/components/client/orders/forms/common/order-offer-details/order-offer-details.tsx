@@ -1,0 +1,83 @@
+import React from 'react';
+import { Field, useFormState } from 'react-final-form';
+
+import { PaymentMethod, PaymentTerm } from '@/enums';
+import { getOrderTermWithMethod } from '@/utils/order';
+import { DateTypesSelect, Divider, PaymentBrokerFeeAlert, TotalPaymentAlert } from '@components';
+import { CurrencyInput, DatePicker, FormControl, InputLabel } from '@fields';
+import { classname, translateByNamespace } from '@utils';
+import { required } from '@validators';
+
+import './order-offer-details.scss';
+
+const t = translateByNamespace('client:orders-page:send-offer-to-carrier:form');
+const cn = classname('order-offer-details');
+
+type Props = {
+    hideDivider?: boolean;
+    terms?: PaymentTerm | null;
+    delayedTerms?: PaymentTerm | null;
+    method?: PaymentMethod | null;
+    delayedMethod?: PaymentMethod | null;
+};
+export const OrderOfferDetails = ({ hideDivider, terms, method, delayedTerms, delayedMethod }: Props) => {
+    const formState = useFormState();
+    const { delayedPayment, brokerFee, carrierPrice } = formState.values;
+    const { delayedPayment: initialDelayedPayment, brokerFee: initialBrokerFee } = formState.initialValues || {};
+
+    return (
+        <div className={cn()}>
+            {!hideDivider && <Divider>{t('offer-details-divider')}</Divider>}
+            <FormControl>
+                <InputLabel required={true}>{t('carrier-pickup-at-label')}</InputLabel>
+                <Field validate={required} component={DatePicker} name='carrierPickupAt' placeholder={t('placeholder')} parse={value => value} />
+            </FormControl>
+            <FormControl>
+                <InputLabel required={true}>{t('type-date-label')}</InputLabel>
+                <Field validate={required} name='carrierPickupTypeDate' component={DateTypesSelect} />
+            </FormControl>
+            <FormControl>
+                <InputLabel required={true}>{t('carrier-delivery-at-label')}</InputLabel>
+                <Field validate={required} component={DatePicker} name='carrierDeliveryAt' placeholder={t('placeholder')} parse={value => value} />
+            </FormControl>
+            <FormControl>
+                <InputLabel required={true}>{t('type-date-label')}</InputLabel>
+                <Field validate={required} name='carrierDeliveryTypeDate' component={DateTypesSelect} />
+            </FormControl>
+            <FormControl>
+                <InputLabel required={true}>{delayedPayment ? t('instant-amount-label') : t('amount-label')}</InputLabel>
+                <Field startAdornment='$' validate={required} component={CurrencyInput} name='carrierPrice' parse={value => value} />
+                {terms && method && <span className={cn('payment-details')}>{getOrderTermWithMethod(terms, method)}</span>}
+            </FormControl>
+            {initialDelayedPayment && (
+                <FormControl>
+                    <InputLabel required={true}>{t('delayed-amount-label')}</InputLabel>
+                    <Field
+                        component={CurrencyInput}
+                        name='delayedPayment'
+                        startAdornment='$'
+                        parse={value => value}
+                        placeholder={t('no-placeholder')}
+                        validate={required}
+                    />
+                    {delayedTerms && delayedMethod && <span className={cn('payment-details')}>{getOrderTermWithMethod(delayedTerms, delayedMethod)}</span>}
+                </FormControl>
+            )}
+            {carrierPrice > 0 && delayedPayment && <TotalPaymentAlert payment={carrierPrice} delayedPayment={delayedPayment} className={cn('alert')} />}
+            {initialBrokerFee && (
+                <FormControl className='broker-fee'>
+                    <InputLabel required={true}>{t('broker-fee')}</InputLabel>
+                    <Field
+                        startAdornment='$'
+                        component={CurrencyInput}
+                        name='brokerFee'
+                        parse={value => value}
+                        placeholder={t('no-placeholder')}
+                        validate={required}
+                    />
+                </FormControl>
+            )}
+            {brokerFee && carrierPrice > 0 && <PaymentBrokerFeeAlert brokerFee={brokerFee} payment={carrierPrice} className={cn('alert')} />}
+        </div>
+    );
+};

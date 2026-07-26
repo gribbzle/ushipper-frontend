@@ -1,0 +1,31 @@
+.validation-popup {
+  &__errors-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+  }
+
+  &__error-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: var(--color-input-text-secondary);
+  }
+
+  &__dot {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-input-text-secondary);
+    margin-right: 8px;
+  }
+
+  &__action {
+    display: flex;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,20 @@
+.fees-fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--color-table-border);
+    border-radius: 8px;
+
+    &--danger {
+        border-color: var(--color-danger);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+}

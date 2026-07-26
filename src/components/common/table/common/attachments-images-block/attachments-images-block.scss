@@ -1,0 +1,13 @@
+$btn-size: 32px;
+$svg-size: 15px;
+
+.attachments-images-block {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        gap: 4px;
+    }
+}

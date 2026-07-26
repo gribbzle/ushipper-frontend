@@ -1,0 +1,12 @@
+.expense {
+    &__type {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__show-on-invoice,
+    &__deduct-from-driver-pay {
+        justify-self: center;
+    }
+}

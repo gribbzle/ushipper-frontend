@@ -1,0 +1,27 @@
+.order-review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__overall-field {
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__label {
+        color: var(--color-text-light);
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__count {
+        color: var(--color-text-default);
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

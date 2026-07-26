@@ -1,0 +1,76 @@
+@import 'src/pages/breakpoints';
+
+.free-access-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--color-page-background);
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include breakpoint(0, $tablet-max-width) {
+            padding: 0 16px;
+        }
+
+        @include breakpoint($desktop-min-width) {
+            padding: 0 108px;
+        }
+    }
+
+    &__header {
+        box-sizing: border-box;
+        background-color: var(--color-white);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &__header-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @include breakpoint(0, $tablet-max-width) {
+            padding: 12px 0;
+        }
+
+        @include breakpoint($desktop-min-width) {
+            padding: 4px 0;
+        }
+    }
+
+    &__logo-wrapper {
+        @include breakpoint(0, $tablet-max-width) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: var(--color-text-default);
+    }
+
+    &__actions-container {
+        margin-left: auto;
+    }
+
+    &__content {
+        box-sizing: border-box;
+
+        @include breakpoint(0, $tablet-max-width) {
+            padding: 16px 0;
+        }
+
+        @include breakpoint($desktop-min-width) {
+            padding: 24px;
+        }
+    }
+}

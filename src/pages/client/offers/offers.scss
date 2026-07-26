@@ -1,0 +1,23 @@
+.offers-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    height: 100%;
+    width: 100%;
+
+    &__empty-list {
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 12px;
+        padding-bottom: 24px;
+
+        .paginate {
+            padding-top: 12px;
+        }
+    }
+}

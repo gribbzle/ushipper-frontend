@@ -1,0 +1,53 @@
+.chats-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 6px 8px;
+        gap: 6px;
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        &-name {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            color: var(--color-table-text-default);
+        }
+
+        &-phone {
+            color: var(--color-text-light);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 14px;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--color-primary-green);
+
+        .choose-phone-popup {
+            left: 0;
+            top: 26px;
+        }
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

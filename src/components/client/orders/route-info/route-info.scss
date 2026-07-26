@@ -1,0 +1,66 @@
+.route-info {
+  display: flex;
+
+  &__icons-block {
+    position: relative;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__line {
+    position: absolute;
+    height: 12px;
+    width: 2px;
+    background: var(--color-border-default);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__first-item-icon {
+    width: 9px;
+    height: 9px;
+    border: var(--color-primary) 3px solid;
+    border-radius: 50%;
+  }
+
+  &__second-item-icon {
+    width: 9px;
+    height: 9px;
+    border: var(--color-success) 3px solid;
+    border-radius: 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
+    &--text-style-warning {
+      color: var(--color-warning);
+    }
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-table-text-default);
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  &__sub-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-table-text-default);
+  }
+}

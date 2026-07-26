@@ -1,0 +1,5 @@
+{
+    "page-title": "Dispatchers Management | {{ projectName }}",
+    "header": "Dispatchers",
+    "empty": "There are no Dispatchers <br/> matching your search criteria."
+}

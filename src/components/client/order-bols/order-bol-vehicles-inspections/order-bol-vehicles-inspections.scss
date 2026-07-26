@@ -1,0 +1,23 @@
+.order-bol-vehicle-inspections {
+    & > .paper__header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: flex-start;
+    }
+
+    &__vehicle-name {
+        color: var(--color-text-header);
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    &__vin {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}

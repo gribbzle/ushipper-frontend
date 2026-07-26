@@ -1,0 +1,8 @@
+{
+    "48-ft": "48 ft",
+    "53-ft": "53 ft",
+    "ft": "{{count}} ft",
+    "car": "{{count}} car",
+    "cars_one": "1 car",
+    "cars_other": "{{count}} cars"
+}

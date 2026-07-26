@@ -1,0 +1,21 @@
+.tooltip {
+    background: var(--color-white);
+    padding: 16px 20px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    border: 1px solid var(--color-button-border-default);
+    z-index: 999;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+    box-sizing: border-box;
+
+    &__arrow {
+        & > path:first-of-type {
+            stroke: var(--color-button-border-default);
+        }
+
+        & > path:last-of-type {
+            fill: var(--color-white);
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import 'src/pages/breakpoints';
+
+.order-details-paper {
+    display: grid;
+
+    @include breakpoint(0, $tablet-max-width) {
+        grid-template:
+            'vehicles-driver-instructions payment'
+            'vehicles-driver-instructions customer';
+        grid-template-rows: min-content;
+        grid-template-columns: 1fr 340px;
+        gap: 16px;
+
+        & > * {
+            height: fit-content;
+        }
+
+        .vehicles-and-driver-instructions {
+            grid-area: vehicles-driver-instructions;
+        }
+
+        .payment-information {
+            grid-area: payment;
+        }
+
+        .customer-information-paper {
+            grid-area: customer;
+        }
+
+        .driver-instructions-paper {
+            grid-area: driver;
+        }
+    }
+
+    @include breakpoint($desktop-min-width) {
+        grid-template-columns: 2fr 1fr minmax(320px, 1fr);
+        gap: 24px;
+    }
+
+    .vehicles-and-driver-instructions {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

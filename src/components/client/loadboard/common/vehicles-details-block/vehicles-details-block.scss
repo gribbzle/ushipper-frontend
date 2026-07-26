@@ -1,0 +1,35 @@
+.vehicles-details-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--color-dark-gunmetal);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+
+    .order-item-info-column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__vehicle {
+        cursor: pointer;
+        &:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+
+    &__weight {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+
+        &-value {
+            text-transform: lowercase;
+        }
+    }
+}

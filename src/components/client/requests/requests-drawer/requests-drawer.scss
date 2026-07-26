@@ -1,0 +1,68 @@
+.requests-drawer {
+  width: 432px;
+
+  .drawer__body {
+    padding: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  &__order-id {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: var(--color-table-text-default);
+  }
+
+  &__route-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__distance {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-table-text-default);
+  }
+
+  &__price-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: var(--color-text-default);
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__price-per-distance {
+    font-size: 12px;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    color: var(--color-table-text-default);
+  }
+
+  &__request-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--color-page-background);
+    padding: 16px;
+    overflow: auto;
+  }
+}

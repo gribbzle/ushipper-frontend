@@ -1,0 +1,17 @@
+.timeline-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+
+    & > .timeline-connector {
+        &:first-child {
+            height: 6px;
+            flex-shrink: 0;
+        }
+
+        &:last-child {
+            flex: 1;
+        }
+    }
+}

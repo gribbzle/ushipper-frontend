@@ -1,0 +1,30 @@
+.paginate-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+
+    .paginate {
+        padding: 0;
+    }
+
+    &__per-page-selector {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 16px;
+
+        &-label {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16px;
+            color: var(--color-table-text-default);
+            text-wrap: nowrap;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .react-select__indicators {
+            padding-left: 0;
+        }
+    }
+}

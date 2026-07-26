@@ -1,0 +1,16 @@
+.drivers-map-popup {
+    width: 700px;
+
+    &__map {
+        border-radius: 8px;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 600px;
+
+        .tracking-map {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

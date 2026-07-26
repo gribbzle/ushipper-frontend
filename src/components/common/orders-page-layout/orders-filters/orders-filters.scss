@@ -1,0 +1,19 @@
+.orders-filters {
+    &__form {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    .paper__body {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        min-width: 0;
+    }
+}

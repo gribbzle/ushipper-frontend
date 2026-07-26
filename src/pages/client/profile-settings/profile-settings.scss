@@ -1,0 +1,12 @@
+.profile-settings {
+    &__cards {
+        align-items: baseline;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        .paper {
+            flex: 1;
+        }
+    }
+}

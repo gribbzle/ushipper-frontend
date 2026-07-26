@@ -1,0 +1,7 @@
+.currency-percentage-select {
+    &--hide {
+        .react-select__indicators {
+            display: none;
+        }
+    }
+}

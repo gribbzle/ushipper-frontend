@@ -1,0 +1,20 @@
+.accounting-profile {
+    &__files {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    &__key {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-input-text-secondary);
+    }
+
+    &__content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

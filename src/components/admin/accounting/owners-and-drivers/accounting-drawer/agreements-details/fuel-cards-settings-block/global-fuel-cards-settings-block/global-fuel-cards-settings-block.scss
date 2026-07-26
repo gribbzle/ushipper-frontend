@@ -1,0 +1,10 @@
+.global-fuel-cards-settings-block {
+    border-radius: 8px !important;
+    border: 2px solid #53bffc;
+
+    &__loader {
+        .dots {
+            height: 116px !important;
+        }
+    }
+}

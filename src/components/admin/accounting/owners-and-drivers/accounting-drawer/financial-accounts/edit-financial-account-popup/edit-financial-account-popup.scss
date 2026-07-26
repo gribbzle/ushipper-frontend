@@ -1,0 +1,12 @@
+.edit-financial-account-popup {
+    height: 96vh;
+
+    .popup__description {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+        box-sizing: border-box;
+        padding: 16px;
+        overflow-y: auto;
+    }
+}

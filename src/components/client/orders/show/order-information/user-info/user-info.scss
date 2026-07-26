@@ -1,0 +1,57 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__no-user {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__username {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--color-text-default);
+
+        &--danger {
+            color: var(--color-red);
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--color-text-light);
+
+        &--success {
+            color: var(--color-success);
+        }
+
+        &--awaiting {
+            color: var(--color-warning);
+        }
+
+        &--danger {
+            color: var(--color-red);
+        }
+    }
+
+    &__chat-btn {
+        margin-left: 8px;
+    }
+
+    &__message {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--color-red);
+    }
+
+    &__assign-btn {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,12 @@
+import { MaskProps } from '@react-input/mask';
+import React, { useMemo } from 'react';
+import { FieldRenderProps } from 'react-final-form';
+
+import { TextField } from '@fields';
+const MASK_VALUE = 'YYYY-MM';
+
+export const CardExpirationDateInput = (props: FieldRenderProps<string>) => {
+    const mask = useMemo<MaskProps>(() => ({ mask: MASK_VALUE, replacement: { Y: /\d/, M: /\d/ } }), []);
+
+    return <TextField {...props} mask={mask} placeholder={MASK_VALUE} />;
+};

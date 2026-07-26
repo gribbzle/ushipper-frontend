@@ -1,0 +1,20 @@
+.financial-account-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__item {
+        display: flex;
+        gap: 2px;
+        align-items: flex-start;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-input-text-secondary);
+    }
+}

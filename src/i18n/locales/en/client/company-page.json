@@ -1,0 +1,160 @@
+{
+    "no-company-text": "Company Page Not Found",
+    "empty-value": "No details",
+    "no-data-filter": "There are no Reviews <br/> matching your filter criteria.",
+    "no-data-all-reviews": "There are no Reviews yet.",
+    "head": {
+        "copy-link-btn-label": "Copy Link",
+        "title": "Show Company | {{ projectName }}",
+        "header": "Company Page"
+    },
+    "notification": {
+        "copy-link-success": "Link is copied to Clipboard",
+        "reviews-error-text": "An error occurred while loading the reviews.",
+        "update-fmcsa-success": "Update request submitted. Please wait for the process to complete",
+        "update-fmcsa-error": "Failed to submit the update request. Please try again later",
+        "create-review-reply-success": "Reply to review added",
+        "create-review-reply-error": "An error occurred while adding a reply to a review",
+        "edit-review-reply-success": "Reply to review edited",
+        "edit-review-reply-error": "An error occurred while editing a reply to a review",
+        "empty-field-error": "The review can't consist only of spaces. Please enter a substantive comment"
+    },
+    "brief": {
+        "member-since-label": "Member since",
+        "hire": "Hire",
+        "message": "Message",
+        "send-request": "Send Request",
+        "send-offer": "Send Offer"
+    },
+    "tabs": {
+        "overview": "Overview",
+        "ratings": "Ratings"
+    },
+    "filters": {
+        "all-label": "All Reviews ({{count}})",
+        "one-label": "1 star ({{count}})",
+        "two-label": "2 stars ({{count}})",
+        "three-label": "3 stars ({{count}})",
+        "four-label": "4 stars ({{count}})",
+        "five-label": "5 stars ({{count}})",
+        "all-placeholder": "All Reviews ({{count}})"
+    },
+    "overall-rating": {
+        "title": "Overall Rating"
+    },
+    "avg-details-rating": {
+        "title": "Avg Details Rating"
+    },
+    "review": {
+        "reply-btn-label": "Reply",
+        "edit-review-btn-label": "Edit Feedback",
+        "detailed-rating-label": "detailed rating"
+    },
+    "reply": {
+        "title": "{{user}} feedback",
+        "edit-feedback-btn-label": "Edit Feedback",
+        "reviews-completed-label": "{{count}} review completed",
+        "reviews-completed-label-plural": "{{count}} reviews completed"
+    },
+    "fmcsa-info": {
+        "header": "FMCSA Info",
+        "authored-for-property": "Authored for Property",
+        "not-authored-for-property": "Not Authored for Property",
+        "insurance-coverage-to": "Insurance Coverage to {{number}}",
+        "insurance-cargo": "Cargo Insurance",
+        "carrier-out-of-service": "CARRIER IS OUT OF SERVICE",
+        "USDOT-certificate": "USDOT Certificate",
+        "W9-certificate": "W9 Certificate",
+        "last-checked": "Last checked on {{date}}",
+        "update-link-label": "Update",
+        "fields": {
+            "allowed-to-operate": "Allowed to operate",
+            "legal-name": "Legal Name",
+            "EIN": "EIN",
+            "total-drivers": "Total Drivers",
+            "total-power-units": "Total Power Units",
+            "business-address-group": {
+                "title": "Business Adress",
+                "country": "Country",
+                "state": "State",
+                "city": "City",
+                "street": "Street",
+                "zip": "ZIP"
+            },
+            "insurance-group": {
+                "title": "Insurance",
+                "on-file": "{{type}} Insurance On File",
+                "required": "{{type}} Insurance Required",
+                "required-amount": "{{type}} Insurance Required Amount"
+            },
+            "crashes-group": {
+                "title": "crashes",
+                "total": "Crash Total",
+                "fatal": "Fatal Crash",
+                "injury": "Injury Crash",
+                "towaway": "Towaway Crash"
+            },
+            "authority-group": {
+                "title": "Authority",
+                "common-authority-status": "Common Authority Status",
+                "contract-authority-status": "Contract Authority Status",
+                "broker-authority-status": "Broker Authority Status",
+                "authorized-for-broker": "Authorized For Broker",
+                "authorized-for-property": "Authorized For Property",
+                "authorized-for-passenger": "Authorized For Passenger",
+                "authorized-for-household-goods": "Authorized For Household Goods",
+                "docket-number": "Docket Number"
+            }
+        }
+    },
+    "company-info": {
+        "header": "Company Info",
+        "empty-value": "No details",
+        "fields": {
+            "business-type": "Business Type",
+            "USDOT": "USDOT",
+            "mc-number": "MC",
+            "address": "Address",
+            "website": "Website",
+            "trailers": "Trailers",
+            "drivers": "Drivers",
+            "description": "Company Description"
+        }
+    },
+    "contact-info": {
+        "header": "Contact Info"
+    },
+    "review-reply-drawer": {
+        "header": "Send Reply",
+        "send-btn-label": "Send Reply",
+        "comment-field-label": "Your reply to {{user}}",
+        "default-company-name": "this company",
+        "comment-field-placeholder": "Describe your reply"
+    },
+    "dispatcher-page": {
+        "specialization": "specialization",
+        "categories": "trailer categories for {{specialization}}",
+        "languages": "communication languages",
+        "orders-dispatched": "Orders dispatched",
+        "avg-mile": "Avg Mile Cost",
+        "member-since": "Member since"
+    },
+    "driver-info": "Driver info",
+    "dispatcher-info": "Dispatcher info",
+    "statictics-block": {
+        "axis-labels": {
+            "x": "Date",
+            "y": "Count"
+        },
+        "titles": {
+            "gross": "Loads Stats",
+            "miles": "Mile Costs Stats",
+            "avg-mile-cost": "Avg Mile Cost"
+        },
+        "period-filter-options": {
+            "last-month": "Last Month",
+            "six-months": "6 Month",
+            "one-year": "1 Year"
+        }
+    }
+}

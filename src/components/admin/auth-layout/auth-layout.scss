@@ -1,0 +1,53 @@
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, var(--color-primary) 0%, var(--color-blue-crayola) 100%);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &__geometry {
+        &-1 {
+            position: absolute;
+            width: 509.84px;
+            height: 479.2px;
+            left: -39.59px;
+            top: -122.33px;
+            background: var(--color-brilliant-azure);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            transform: rotate(28.34deg);
+        }
+
+        &-2 {
+            position: absolute;
+            width: 523.6px;
+            height: 424.19px;
+            left: 1126.57px;
+            top: 446px;
+            background: var(--color-brilliant-azure);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            transform: rotate(20.05deg);
+        }
+    }
+
+    &__logo {
+        z-index: 1;
+    }
+
+    &__form-container {
+        z-index: 1;
+        background: var(--color-white);
+        box-shadow: 0 0 12px rgb(157 173 187 / 25%);
+        border-radius: 16px;
+        max-width: 340px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+}

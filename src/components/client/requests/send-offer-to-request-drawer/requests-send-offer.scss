@@ -1,0 +1,31 @@
+.requests-send-offer {
+  &__drawer {
+    width: 432px;
+
+    .drawer__body {
+      padding: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__form-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--text-default);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--color-page-background);
+    padding: 16px;
+    height: 100%;
+  }
+}

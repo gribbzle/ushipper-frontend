@@ -1,0 +1,12 @@
+.order-actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__admin {
+        .dropdown__options {
+            width: 160px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+import React, { useMemo } from 'react';
+import { FieldRenderProps } from 'react-final-form';
+
+import { PerformTransactionEventEnum } from '@/enums';
+import { SelectField } from '@fields';
+import { getPerformTransactionEventTranslate } from '@utils';
+
+export const PerformTransactionEventsSelect = ({ ...props }: FieldRenderProps<string>) => {
+    const options = useMemo(
+        () =>
+            Object.values(PerformTransactionEventEnum).map(event => ({
+                label: getPerformTransactionEventTranslate(event),
+                value: event,
+            })),
+        [],
+    );
+
+    return <SelectField {...props} options={options} />;
+};

@@ -1,0 +1,33 @@
+.support-chat-drawer {
+    &__head {
+        color: var(--color-dark-gunmetal);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__phone {
+        display: flex;
+        gap: 4px;
+        color: var(--color-text-light);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+    }
+
+    .drawer__head {
+        height: 64px;
+        padding: 11px 16px;
+    }
+
+    .drawer__close {
+        align-self: center;
+    }
+
+    .drawer__body {
+        background-color: var(--color-page-background);
+    }
+}

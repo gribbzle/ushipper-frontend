@@ -1,0 +1,17 @@
+.timeline {
+    padding: 0;
+    margin: 0;
+
+    &--horizontal {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    & > .timeline-item {
+        &:first-child > .timeline-separator > .timeline-connector:first-child,
+        &:last-child > .timeline-separator > .timeline-connector:last-child {
+            visibility: hidden;
+        }
+    }
+}

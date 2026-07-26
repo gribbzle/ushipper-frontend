@@ -1,0 +1,21 @@
+.additional-documents-alert {
+    border-radius: 4px;
+
+    .alert-block__content {
+        padding: 8px 16px;
+    }
+
+    &__body,
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,26 @@
+.info-tag {
+    border-radius: 6px;
+    padding: 6px 10px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    svg {
+        $size: 12px;
+
+        width: $size;
+        height: $size;
+    }
+
+    &--view-default {
+        color: var(--color-text-light);
+        background: #f5f8fa;
+    }
+}

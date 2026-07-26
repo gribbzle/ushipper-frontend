@@ -1,0 +1,31 @@
+.catalog-filters-form {
+    width: 340px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: fit-content;
+
+    .paper__body {
+        padding: 24px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .divider {
+            margin: 24px 0;
+        }
+
+        .labeled-check-box__label {
+            font-weight: 700;
+            line-height: 16px;
+            font-size: 14px;
+        }
+    }
+
+    &__option-label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}

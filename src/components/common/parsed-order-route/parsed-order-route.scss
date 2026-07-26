@@ -1,0 +1,145 @@
+@import 'src/pages/breakpoints';
+
+.parsed-order-route {
+    display: flex;
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__timeline-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+    }
+
+    &__route-details-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 110px !important;
+
+        &--reverse {
+            flex-direction: column-reverse;
+        }
+
+        &--center {
+            padding-top: 14px;
+        }
+
+        @include breakpoint($large-desktop-min-width) {
+            width: 14vw !important;
+        }
+    }
+
+    &__route-icon-container {
+        width: 12px;
+        height: 12px;
+    }
+
+    &__info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        white-space: nowrap;
+        padding: 4px 0;
+        gap: 2px;
+        color: var(--color-table-text-default);
+
+        .route-city,
+        .route-address {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &--delivery {
+            text-align: end;
+        }
+
+        .route-city {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16px;
+            width: 78px;
+        }
+
+        .route-address {
+            color: var(--color-text-default);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+
+        .route-date {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .route-details {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        height: 16px;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--color-table-text-default);
+
+        &-wrapper {
+            width: 100%;
+        }
+    }
+
+    &__vehicles {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        &-name {
+            text-transform: capitalize;
+        }
+
+        .order-tag {
+            text-transform: uppercase;
+            height: 14px;
+            line-height: 10px;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    &__distance-wrapper {
+        width: 310px !important;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 6px;
+
+        &-pickup {
+            grid-column: 1;
+        }
+
+        &-delivery {
+            grid-column: 2;
+            text-align: end;
+        }
+
+        @include breakpoint($large-desktop-min-width) {
+            width: 24.5vw !important;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import 'src/pages/breakpoints';
+
+.order-item-commodities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .commodity-details__name {
+        @include breakpoint($tablet-landscape-min-width, $extra-large-desktop-min-width) {
+            max-width: 200px;
+        }
+    }
+}

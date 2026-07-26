@@ -1,0 +1,26 @@
+.hidden-external-broker-tooltip {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    &__label {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 16px;
+    }
+
+    &__icon {
+        $size: 12px;
+
+        width: $size;
+        height: $size;
+    }
+
+    &__tip {
+        width: 210px;
+    }
+}

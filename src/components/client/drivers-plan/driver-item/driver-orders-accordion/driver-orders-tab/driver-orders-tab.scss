@@ -1,0 +1,120 @@
+@import 'src/pages/breakpoints';
+
+.driver-orders-tab {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__header {
+        display: flex;
+        gap: 6px;
+        color: var(--color-button-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    &__counter {
+        $size: 16px;
+
+        width: $size;
+        height: $size;
+
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 10px;
+        color: var(--color-white);
+        box-sizing: border-box;
+
+        &--view {
+            &-danger {
+                background-color: var(--color-danger);
+            }
+
+            &-assigned {
+                background-color: var(--color-primary);
+            }
+
+            &-picked-up {
+                background-color: var(--color-warning);
+            }
+        }
+    }
+
+    &__order {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--color-table-border);
+        box-shadow: 0px 0px 4px 0px #ebeef54d;
+        background-color: var(--color-white);
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--color-input-background-disabled);
+        }
+
+        &--active {
+            border-color: var(--color-primary);
+        }
+
+        &--flagged {
+            border: 1px solid var(--color-red);
+        }
+
+        &--declined {
+            border: 1px solid var(--color-warning);
+        }
+
+        .parsed-order-route {
+            margin: 0;
+        }
+
+        .parsed-order-route__route-details-wrapper {
+            width: 140px !important;
+        }
+
+        @include breakpoint($large-desktop-min-width) {
+            .parsed-order-route__route-details-wrapper {
+                width: 140px !important;
+            }
+        }
+    }
+
+    &__item {
+        border: none;
+
+        .accordion__head {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            border: 1px solid var(--color-table-border);
+        }
+    }
+
+    &__empty {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: var(--color-table-text-default);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    &__footer {
+        display: flex;
+        gap: 4px;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,10 @@
+.pickup-delivery-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &__statuses {
+        display: flex;
+        gap: 6px;
+    }
+}

@@ -1,0 +1,26 @@
+.offering-company-info {
+    min-width: 180px;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__name {
+        color: var(--color-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__name:hover {
+        color: var(--color-primary) !important;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.offering-company-info.order-item-info-column {
+    gap: 6px;
+}

@@ -1,0 +1,29 @@
+.send-job-offer {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        & > .form-control {
+            flex: 1;
+        }
+    }
+
+    &__bin-icon {
+        path {
+            stroke: var(--color-input-text-secondary);
+        }
+
+        &:hover {
+            path {
+                stroke: var(--color-primary);
+            }
+        }
+    }
+}

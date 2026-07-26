@@ -1,0 +1,17 @@
+.assigned-companies-block {
+    .table__row {
+        .superior_user {
+            .user-info-block__name {
+                width: 105px;
+            }
+
+            p {
+                color: var(--color-info);
+            }
+        }
+    }
+
+    &__created-at {
+        width: 114px;
+    }
+}

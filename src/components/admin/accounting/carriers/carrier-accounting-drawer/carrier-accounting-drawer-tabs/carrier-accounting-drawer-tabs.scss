@@ -1,0 +1,14 @@
+.carrier-accounting-drawer-tabs {
+    gap: 24px;
+
+    .tabs {
+        &__tab {
+            padding-bottom: 6px;
+        }
+
+        &__label {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

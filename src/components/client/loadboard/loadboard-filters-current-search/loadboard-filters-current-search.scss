@@ -1,0 +1,38 @@
+.loadboard-filters-current-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  &:not(:empty) {
+    margin-top: 16px;
+  }
+
+  &__title {
+    color: #1F2F3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    svg {
+      margin-left: 6px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      svg {
+        color: #409EFF;
+      };
+    }
+  }
+
+  &__reset-icon {
+    display: flex;
+    align-items: center;
+  }
+}

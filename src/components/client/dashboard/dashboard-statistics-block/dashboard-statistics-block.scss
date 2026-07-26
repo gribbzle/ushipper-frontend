@@ -1,0 +1,44 @@
+.dashboard-statistics-block {
+    .paper__header {
+        justify-content: space-between;
+    }
+    
+    &__filters{ 
+        display: flex;
+        gap: 12px;
+
+        form {
+            display: flex;
+            gap: 12px;
+
+            .react-select-container {
+                width: 270px;
+            }
+
+            .react-select__multi-value {
+                max-width: 160px;
+            }
+        }
+    }
+
+    &__period-filter {
+        display: flex;
+
+        & > *:first-of-type {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        & > *:last-of-type {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: none;
+        }
+
+        /* stylelint-disable-next-line no-descending-specificity */
+        & > *:not(:first-of-type):not(:last-of-type) {
+            border-radius: 0;
+            border-left: none;
+        }
+    }
+}

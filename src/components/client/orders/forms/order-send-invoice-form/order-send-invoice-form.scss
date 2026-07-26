@@ -1,0 +1,11 @@
+.order-send-invoice-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__name {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+    }
+}

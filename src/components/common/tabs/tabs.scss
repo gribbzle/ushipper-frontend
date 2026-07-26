@@ -1,0 +1,58 @@
+@keyframes select-tab {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    gap: 40px;
+
+    &__wrapper {
+        border-bottom: 1px solid var(--color-table-border);
+    }
+
+    &__tab {
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-table-text-default);
+        cursor: pointer;
+        padding-bottom: 10px;
+        transition: 0.3s;
+
+        &--active {
+            color: var(--color-primary);
+            position: relative;
+
+            &::after {
+                content: '';
+                border-bottom: 2px solid var(--color-primary);
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                animation: select-tab 0.3s;
+            }
+        }
+
+        sup {
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 600;
+            margin-left: 4px;
+        }
+    }
+
+    &__label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "standart-option-label": "Standart",
+  "advanced-option-label": "Advanced",
+  "standart-option-description": "Doesn't have any required steps for drivers",
+  "advanced-option-description": "Requires the driver to take at least 20 photos at pickup and delivery"
+}

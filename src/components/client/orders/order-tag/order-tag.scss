@@ -1,0 +1,178 @@
+.order-tag {
+    border-radius: 6px;
+    padding: 0 10px;
+    height: 22px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: fit-content;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+
+    &--size-small {
+        height: 16px;
+    }
+
+    &--size-medium {
+        height: 18px;
+    }
+
+    &--size-large {
+        height: 25px;
+        font-size: 12px;
+        padding: 6px 8px;
+        gap: 5px;
+    }
+
+    &--view-new {
+        color: var(--color-white);
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+    }
+
+    &--view-on-hold {
+        color: var(--color-white);
+        background: var(--color-silver-sand);
+        border-color: var(--color-silver-sand);
+    }
+
+    &--view-tagged {
+        color: var(--color-warning);
+        background: var(--color-warning-button-plain-backgound-disabled);
+        border-color: var(--color-warning-button-plain-border-disabled);
+    }
+
+    &--view-danger {
+        color: var(--color-white);
+        background: var(--color-danger);
+        border-color: var(--color-danger);
+    }
+
+    &--view-source {
+        color: var(--color-warning);
+        background: var(--color-white);
+        border-color: var(--color-warning);
+
+        &-danger {
+            color: var(--color-danger);
+            border-color: var(--color-danger);
+        }
+
+        &-declined {
+            color: var(--color-danger);
+            background: var(--color-danger-button-plain-background);
+            border-color: #fbc4c4;
+        }
+
+        &-primary {
+            color: var(--color-primary);
+            border-color: var(--color-primary-button-background-plain);
+            background: var(--color-primary-button-background-plain);
+        }
+
+        &-disabled {
+            color: var(--color-info);
+            border-color: var(--color-tag-border-default);
+            background: var(--color-tag-background-default);
+        }
+    }
+
+    &--view-posted,
+    &--view-none,
+    &--view-initiated {
+        background: var(--color-warning);
+        color: var(--color-warning-button-plain-backgound-disabled);
+        border-color: var(--color-warning);
+    }
+
+    &--view-pending {
+        color: var(--color-white);
+        background: var(--color-lavender-indigo);
+        border-color: var(--color-lavender-indigo);
+    }
+
+    &--view-declined,
+    &--view-cancelled,
+    &--view-canceled {
+        color: var(--color-white);
+        background: var(--color-red);
+        border-color: var(--color-red);
+    }
+
+    &--view-accepted {
+        color: var(--color-white);
+        background: var(--color-sonic-silver);
+        border-color: var(--color-sonic-silver);
+    }
+
+    &--view-picked-up {
+        color: var(--color-warning);
+        border-color: var(--color-warning-button-plain-border-disabled);
+        background: var(--color-warning-button-plain-backgound-disabled);
+    }
+
+    &--view-delivered {
+        color: var(--color-success);
+        border-color: var(--color-tag-border-success);
+        background: var(--color-tag-background-success);
+    }
+
+    &--view-advanced {
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+        background: var(--color-white);
+    }
+
+    &--view-enclosed {
+        color: var(--color-white);
+        border-color: var(--color-info);
+        background: var(--color-info);
+    }
+
+    &--view-inop {
+        color: var(--color-white);
+        border-color: var(--color-warning);
+        background: var(--color-warning);
+    }
+
+    &--view-completed {
+        color: var(--color-white);
+        background: var(--color-success);
+        border-color: var(--color-success);
+    }
+
+    &--hover:hover {
+        cursor: pointer;
+
+        &.order-tag--view-picked-up {
+            color: var(--color-white);
+            border-color: var(--color-warning);
+            background: var(--color-warning);
+        }
+
+        &.order-tag--view-delivered {
+            color: var(--color-white);
+            background: var(--color-success);
+            border-color: var(--color-success);
+        }
+
+        &.order-tag--view-source-declined {
+            color: var(--color-white);
+            background: var(--color-danger);
+            border-color: var(--color-danger);
+        }
+
+        &.order-tag--view-source {
+            &-primary {
+                color: var(--color-white);
+                background: var(--color-primary);
+                border-color: var(--color-primary);
+            }
+        }
+    }
+}

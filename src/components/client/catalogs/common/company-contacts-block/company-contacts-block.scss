@@ -1,0 +1,36 @@
+.company-contacts {
+    color: var(--color-table-text-default);
+    font-size: 14px;
+    line-height: 16px;
+    white-space: nowrap;
+
+    &__row {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        &-icon {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            width: 12px;
+            flex-shrink: 0;
+
+            svg {
+                $size: 12px;
+
+                width: $size;
+                height: $size;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-table-text-default);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

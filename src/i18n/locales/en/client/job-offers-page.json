@@ -1,0 +1,37 @@
+{
+    "page-title": "Job Offers Management | {{ projectName }}",
+    "header": "Job Offers",
+    "dispatchers-empty-title": "You have no {{ status }} Offers from Carriers yet.",
+    "dispatchers-empty-sub-title": "As soon as you accept an Offer from a Carrier, you will see information about it here.",
+    "drivers-empty-title": "You have no {{ status }} Offers from Carriers yet.",
+    "drivers-empty-sub-title": "As soon as you accept an Offer from a Carrier, you will see information about it here.",
+    "carriers-empty-title": "You have no {{ status }} Offers yet.",
+    "carriers-empty-sub-title": "As soon as you sent an Offer, you will see information about it here.",
+    "go-to-dispatchers-catalog-btn": "Go to Dispatchers Catalog",
+    "job-offer": {
+        "carrier-info": {
+            "title": "CARRIER"
+        },
+        "conditions": {
+            "title": "CONDITIONS",
+            "time-label": "Time",
+            "dispatch-fee-label": "Dispatch Fee",
+            "term-label": "Term",
+            "start-date-label": "Start Date"
+        },
+        "offer-status": {
+            "title": "OFFER STATUS"
+        },
+        "description": {
+            "title": "OTHER CONDITIONS"
+        },
+        "attachments": {
+            "title": "ATTACHED FILES"
+        }
+    },
+    "drawer": {
+        "title": "Job Offer Details"
+    },
+    "from-me": "From me",
+    "to-me": "To me"
+}

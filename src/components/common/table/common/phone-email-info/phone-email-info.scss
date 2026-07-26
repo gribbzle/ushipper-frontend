@@ -1,0 +1,47 @@
+.phone-email-info {
+    display: flex;
+    flex-direction: column;
+
+    &__row {
+        display: flex;
+        gap: 2px;
+
+        &--trimmed {
+            width: 140px;
+            gap: 0;
+        }
+    }
+
+    &__value {
+        color: var(--color-table-text-default);
+
+        &--trimmed {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-self: center;
+        $size: 14px;
+
+        width: $size;
+        height: $size;
+
+        svg {
+            margin: auto;
+            width: 11px;
+            height: 11px;
+        }
+
+        &-success {
+            color: var(--color-success);
+        }
+
+        &-danger {
+            color: var(--color-danger);
+        }
+    }
+}

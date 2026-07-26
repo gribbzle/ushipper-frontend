@@ -1,0 +1,27 @@
+@import 'src/pages/breakpoints';
+
+.offer-item-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: space-between;
+    width: fit-content;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .commodity-details__name {
+        @include breakpoint($tablet-landscape-min-width, $extra-large-desktop-min-width) {
+            max-width: 150px;
+        }
+    }
+}

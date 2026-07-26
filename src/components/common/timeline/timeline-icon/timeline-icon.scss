@@ -1,0 +1,40 @@
+.timeline-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    color: var(--color-border-default);
+    border-color: var(--color-border-default);
+    $size: 24px;
+
+    width: $size;
+    height: $size;
+
+    svg {
+        $size: 16px;
+
+        width: $size;
+        height: $size;
+    }
+
+    &--view {
+        &-default {
+            color: var(--color-text-secondary);
+            border-color: var(--color-text-secondary);
+        }
+
+        &-primary {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        &-primary-green {
+            color: var(--color-primary-green);
+            border-color: var(--color-primary-green);
+        }
+    }
+}

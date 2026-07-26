@@ -1,0 +1,10 @@
+.wallets-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+
+    & > * {
+        flex: 1;
+        max-width: 245px;
+    }
+}

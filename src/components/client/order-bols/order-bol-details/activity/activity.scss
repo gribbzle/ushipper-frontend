@@ -1,0 +1,43 @@
+@import 'src/pages/breakpoints';
+
+.activity {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border: 1px solid var(--color-table-border);
+    border-radius: 8px;
+    height: fit-content;
+
+    &__info-row {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__date {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+    }
+
+    &__additional-info {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--color-text-light);
+    }
+
+    &__order-status {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .timeline-connector {
+        flex: 1;
+    }
+
+    .timeline-content {
+        flex-direction: column;
+        gap: 2px;
+    }
+}

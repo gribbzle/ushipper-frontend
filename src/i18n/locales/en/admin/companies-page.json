@@ -1,0 +1,66 @@
+{
+    "page-title": "Companies Management | {{ projectName }}",
+    "header": "Companies Management",
+    "add-company-button-title": "Add Company",
+    "table": {
+        "company-column-title": "Company",
+        "phone-and-email-column-title": "Phone / Email",
+        "type-column-title": "Type",
+        "users-count-column-title": "Users Count",
+        "owner-column-title": "Owner",
+        "status-column-title": "Status",
+        "created-at-column-title": "Created at",
+        "updated-at-column-title": "Updated at",
+        "edit-action-label": "Edit",
+        "delete-action-label": "Delete"
+    },
+    "filters": {
+        "name-field-label": "Name",
+        "phone-field-label": "Phone",
+        "email-field-label": "Email",
+        "type-field-label": "Company Type",
+        "status-field-label": "Status",
+        "company-field-label": "Company",
+        "role-type-field-label": "Role Type",
+        "mobile-app-version-field-label": "Mobile App Version"
+    },
+    "create-edit-company-drawer": {
+        "carrier-company-type-label": "Carrier",
+        "shipper-company-type-label": "Shipper",
+        "add-company-button-label": "Add Company",
+        "save-company-button-label": "Save Company",
+        "delete-company-button-label": "Delete Company",
+        "drawer-header-label": "New Company",
+        "form": {
+            "company-info-section-delimeter": "Company Info",
+            "company-name-field-label": "Company Name",
+            "company-type-field-label": "Company Type",
+            "company-email-field-label": "Company Email",
+            "company-phone-field-label": "Company Phone",
+            "company-twilio-phone-field-label": "Company Twilio Phone",
+            "active-field-label": "Active",
+            "owner-info-section-delimeter": "Owner Info",
+            "owner-name-field-label": "Owner Name",
+            "owner-email-field-label": "Owner Email",
+            "owner-phone-field-label": "Owner Phone",
+            "owner-password-field-label": "Password",
+            "owner-password-confirmation-field-label": "Password Confirmation"
+        },
+        "notifications": {
+            "create-company-success": "Company has been successfully created",
+            "update-company-success": "Company has been successfully updated",
+            "update-company-error": "An error occurred while updating a company",
+            "delete-company-success": "Company has been successfully deleted",
+            "delete-company-error": "An error occurred while deleting a company"
+        },
+        "validationErrors": {
+            "name-already-exists": "The name has already been taken.",
+            "email-already-exists": "The email has already been taken.",
+            "owner-email-already-exists": "The owner email has already been taken."
+        }
+    },
+    "delete-company-popup": {
+        "delete": "Delete",
+        "cancel": "Cancel"
+    }
+}

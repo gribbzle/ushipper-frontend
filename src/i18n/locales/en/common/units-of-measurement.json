@@ -1,0 +1,7 @@
+{
+    "miles": "{{ value }} mi",
+    "megabytes": "{{ value }} MB",
+    "per-miles": "{{ value }}/mi",
+    "gallons": "{{ value }} gal",
+    "percent": "{{ value}} %"
+}

@@ -1,0 +1,117 @@
+// stylelint-disable
+.table__collapse {
+    filter: none;
+
+    &-content {
+        position: relative;
+        border-top: none;
+        padding: 0;
+    }
+}
+
+.table__icon {
+    background-color: white;
+    height: 22px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-3px);
+}
+
+.table__collapse {
+    .vertical {
+        position: absolute;
+        top: -24px;
+        left: 3.5px;
+        display: block;
+        height: 100%;
+        width: 1px;
+        z-index: 1;
+        background-color: var(--color-primary);
+    }
+    .horizontal {
+        position: absolute;
+        top: 29px;
+        left: 4px;
+        display: block;
+        height: 1px;
+        background-color: var(--color-primary);
+    }
+    .short {
+        width: 14px;
+    }
+    .long {
+        width: 76px;
+    }
+}
+
+.table__collapse tr:last-child.table__row,
+tr + .table__row--clickable {
+    .vertical {
+        top: -34px;
+    }
+}
+
+table table table table table table tbody::before {
+    content: '';
+    display: block;
+    position: absolute !important;
+    height: 100%;
+    width: 1px;
+    top: -34px;
+    left: 99.5px;
+    z-index: 2;
+    background-color: var(--color-primary);
+}
+
+table table table table::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: -34px;
+    left: 51.5px;
+    z-index: 1;
+    background-color: var(--color-primary);
+}
+
+table table table::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: -34px;
+    left: 27.5px;
+    z-index: 1;
+    background-color: var(--color-primary);
+}
+
+table table tr:last-child .table__collapse::before,
+table table table table table tr:last-child .table__collapse tbody::before {
+    display: none;
+}
+
+table table table table tr .vertical {
+    height: 100% !important;
+    top: -34px !important;
+}
+
+table table table table tr:first-child .vertical {
+    top: -25px !important;
+    height: 86% !important;
+}
+
+table table table tr:first-child td:first-child .vertical {
+    top: -24px !important;
+    height: 84% !important;
+}
+
+.table__show-more {
+    td {
+        border-top: none;
+        border-bottom: 1px solid var(--color-table-border);
+        text-align: center;
+    }
+}

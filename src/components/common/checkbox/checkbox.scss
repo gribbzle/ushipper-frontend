@@ -1,0 +1,37 @@
+.checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-default);
+    border-radius: 2px;
+    transition: 0.3s;
+
+    input {
+        display: none;
+    }
+
+    &:hover {
+        &:not(.checkbox--disabled) {
+            cursor: pointer;
+            border: 1px solid var(--color-input-border-hover);
+        }
+    }
+
+    &--checked {
+        background: #409eff;
+        border: 1px solid #409eff;
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+
+    &--size-mini {
+        width: 10px;
+        height: 10px;
+    }
+}

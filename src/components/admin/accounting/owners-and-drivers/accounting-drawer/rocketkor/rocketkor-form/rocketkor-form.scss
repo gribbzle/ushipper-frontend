@@ -1,0 +1,22 @@
+.rocketkor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__row {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+
+        & > * {
+            width: 100%;
+        }
+    }
+
+    .phone-number-input__label {
+        margin-bottom: 8px !important;
+    }
+    .phone-number-input__input {
+        height: 40px !important;
+    }
+}

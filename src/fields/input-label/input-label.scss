@@ -1,0 +1,20 @@
+.input-label {
+    display: flex;
+    gap: 4px;
+    color: var(--color-text-default);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    min-width: 0;
+
+    &--required {
+        color: var(--color-danger);
+        font-weight: 500;
+    }
+
+    &__text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

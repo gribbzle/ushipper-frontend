@@ -1,0 +1,42 @@
+.order-activity-details-drawer {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__empty-label {
+        color: var(--color-text-light);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    &__field {
+        font-weight: 600;
+    }
+
+    &__value {
+        white-space: pre-wrap;
+    }
+
+    .table {
+        filter: none;
+        border: 1px solid var(--color-table-border);
+        border-top: none;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "page-title": "Sign In | {{ projectName }}",
+    "title": "Administrator",
+    "description": "Sign In",
+    "login-label": "Login",
+    "login-placeholder": "Enter your login",
+    "password-label": "Password",
+    "password-placeholder": "Enter your password",
+    "submit-button": "Sign In",
+    "forgot-password-link-text": "Forgot password?"
+}

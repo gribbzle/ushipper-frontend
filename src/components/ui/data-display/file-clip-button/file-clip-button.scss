@@ -1,0 +1,31 @@
+.file-clip-button {
+    padding: 9px 7px !important;
+
+    &--size {
+        &-default {
+            $btn-size: 40px;
+            $svg-size: 22px;
+
+            width: $btn-size;
+            height: $btn-size;
+
+            svg {
+                width: 25px !important;
+                height: $svg-size !important;
+            }
+        }
+
+        &-small {
+            $btn-size: 32px;
+            $svg-size: 15px;
+
+            width: $btn-size;
+            height: $btn-size;
+
+            svg {
+                width: $svg-size !important;
+                height: $svg-size !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.fuel-transaction-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-wrap: nowrap;
+
+    &__total {
+        font-weight: 600;
+    }
+
+    &--info {
+        gap: 2px;
+
+        .row-item {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .row-item__value {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.image-viewer-popup {
+    $min-height: 400px;
+
+    .popup__description {
+        min-height: $min-height;
+    }
+
+    &__image {
+        max-height: 60vh;
+        min-height: $min-height;
+        object-fit: contain;
+    }
+}

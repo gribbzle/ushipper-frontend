@@ -1,0 +1,16 @@
+.name-field {
+    display: flex;
+    gap: 4px;
+
+    span {
+        color: var(--color-text-default);
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+    }
+
+    button {
+        padding: 0;
+        height: auto;
+    }
+}

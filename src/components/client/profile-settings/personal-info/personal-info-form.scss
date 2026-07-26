@@ -1,0 +1,25 @@
+.personal-info {
+    &__body {
+        padding: 24px 16px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .form-control {
+            gap: 6px;
+        }
+    }
+
+    &__location-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+    }
+    
+    &__country {
+        grid-column: 1/4;
+    }
+}

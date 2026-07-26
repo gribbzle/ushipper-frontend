@@ -1,0 +1,14 @@
+.fuel-filters {
+    padding: 24px !important;
+
+    &__form {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+
+        & > * {
+            flex: 1;
+            max-width: 245px;
+        }
+    }
+}

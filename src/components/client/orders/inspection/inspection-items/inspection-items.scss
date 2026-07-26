@@ -1,0 +1,25 @@
+@import 'src/pages/breakpoints';
+
+.inspection-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__notes {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        max-width: 100%;
+        padding: 4px 0;
+    }
+
+    &__item-name {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 4px 0;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,43 @@
+.order-payment-information-fields-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__broker-fee-alert-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        .broker-fee + .icon-button {
+            height: 24px;
+            margin: 30px 0 0 0;
+        }
+
+        .broker-fee-back-alert {
+            grid-row-start: 2;
+            grid-column: span 3;
+        }
+    }
+
+    &__payment-add-links-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 24px;
+
+        .button--size-mini {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

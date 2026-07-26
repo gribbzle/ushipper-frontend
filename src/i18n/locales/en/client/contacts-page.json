@@ -1,0 +1,6 @@
+{
+    "page-title": "Contacts | {{ projectName }}",
+    "header": "Contacts",
+    "add-contact-button": "Add Contact",
+    "no-contacts": "You have no Contacts yet."
+}

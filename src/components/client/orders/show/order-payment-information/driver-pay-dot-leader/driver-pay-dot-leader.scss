@@ -1,0 +1,26 @@
+.driver-pay-dot-leader {
+    .dot-leader__title {
+        white-space: nowrap;
+    }
+
+    &--awaiting {
+        .dot-leader__value {
+            color: var(--color-warning);
+            font-weight: 700;
+        }
+    }
+
+    &--success {
+        .dot-leader__value {
+            color: var(--color-success);
+            font-weight: 700;
+        }
+    }
+
+    &--danger {
+        .dot-leader__value {
+            color: var(--color-danger);
+            font-weight: 700;
+        }
+    }
+}

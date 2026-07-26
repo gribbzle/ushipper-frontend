@@ -1,0 +1,11 @@
+.job-offers-filters {
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 12px;
+  }
+
+  &__tabs {
+    margin-top: 24px;
+  }
+}

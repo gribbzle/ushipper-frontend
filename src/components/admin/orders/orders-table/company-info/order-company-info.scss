@@ -1,0 +1,40 @@
+.order-company-info {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 120px;
+    }
+
+    .company-logo,
+    img,
+    svg {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0;
+    }
+
+    &__name,
+    &__type {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &__name {
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    &__type {
+        color: var(--color-text-light);
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,11 @@
+.radius-select {
+    &__menu {
+        min-width: 135px !important;
+        max-height: 400px !important;
+    }
+
+    .react-select__value-container {
+            padding-right: 10px;
+        
+    }
+}

@@ -1,0 +1,25 @@
+.company-name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: var(--color-graphite-gray);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+
+    svg {
+        $size: 24px;
+
+        width: $size;
+        height: $size;
+    }
+
+    &__value {
+        cursor: pointer;
+    }
+
+    &__value:hover {
+        color: var(--color-primary);
+    }
+}

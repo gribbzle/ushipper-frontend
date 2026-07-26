@@ -1,0 +1,29 @@
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__schematic-photo {
+        border-radius: 8px;
+        width: 100%;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+    }
+
+    &__other-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    &__photo {
+        width: 100%;
+        aspect-ratio: 3/2;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    &__download-all-photos-button {
+        width: fit-content;
+    }
+}

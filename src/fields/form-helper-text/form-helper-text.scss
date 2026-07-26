@@ -1,0 +1,10 @@
+.form-helper-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-input-placeholder-secondary);
+
+    &--error {
+        font-weight: 600;
+        color: var(--color-danger);
+    }
+}

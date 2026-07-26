@@ -1,0 +1,3 @@
+{
+    "label": "Showing {{ from }} to {{ to }} of {{ total }}"
+}

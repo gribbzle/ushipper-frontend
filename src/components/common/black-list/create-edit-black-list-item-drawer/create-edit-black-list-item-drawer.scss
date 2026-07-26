@@ -1,0 +1,14 @@
+.create-edit-black-list-item-drawer {
+    form {
+        width: 100%;
+
+        & > div {
+            margin-bottom: 16px;
+        }
+    }
+
+    .drawer__actions {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}

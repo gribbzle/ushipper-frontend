@@ -1,0 +1,11 @@
+.order-chat-drawer {
+   &__head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .drawer__body {
+      background-color: var(--color-page-background);
+   }
+}

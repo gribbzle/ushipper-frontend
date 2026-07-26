@@ -1,0 +1,19 @@
+.order-set-driver-drawer {
+    width: 400px;
+
+    &__body {
+        gap: 16px;
+    }
+
+    &__driver-list {
+        margin: 0 -16px;
+    }
+
+    &__not-found-message {
+        padding: 40px 10px;
+        color: var(--color-text-muted);
+        font-size: 14px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+}

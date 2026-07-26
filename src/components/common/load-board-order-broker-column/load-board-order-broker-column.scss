@@ -1,0 +1,52 @@
+.load-board-order-broker-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &__name {
+        color: var(--color-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 4px;
+        color: var(--color-table-text-default);
+
+        svg {
+            $size: 12px;
+
+            width: $size;
+            height: $size;
+            flex-shrink: 0;
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-table-text-default);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__name:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .company-rating-with-review-count {
+        flex-wrap: wrap;
+    }
+}

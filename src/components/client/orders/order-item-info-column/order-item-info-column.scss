@@ -1,0 +1,26 @@
+.order-item-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+    color: var(--color-table-text-default);
+
+    & > p {
+        line-height: 20px;
+    }
+
+    & > div:first-child {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__no-data {
+        color: var(--color-text-light);
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+}

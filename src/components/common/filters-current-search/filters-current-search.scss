@@ -1,0 +1,38 @@
+.filters-current-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &:not(:empty) {
+        margin-top: 16px;
+    }
+
+    &__title {
+        color: var(--color-text-header);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        svg {
+            margin-left: 6px;
+            cursor: pointer;
+        }
+
+        &:hover {
+            svg {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__reset-icon {
+        display: flex;
+        align-items: center;
+    }
+}

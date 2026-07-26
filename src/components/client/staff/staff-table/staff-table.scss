@@ -1,0 +1,25 @@
+.staff-table {
+    &__no-data {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        min-height: 700px;
+        text-align: center;
+        color: var(--color-table-text-default);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    &__counts {
+        display: flex;
+        flex-direction: column;
+    }
+    &__assign-users-wrapper {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

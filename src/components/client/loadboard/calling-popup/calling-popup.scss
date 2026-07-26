@@ -1,0 +1,50 @@
+.calling-popup {
+    min-width: 300px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 4;
+    padding: 8px;
+
+    &__calling {
+        min-width: 252px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 16px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-text-dark);
+        align-items: center;
+
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__actions {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

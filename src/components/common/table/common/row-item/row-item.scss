@@ -1,0 +1,23 @@
+.row-item {
+    display: flex;
+    gap: 4px;
+    flex-wrap: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-table-text-default);
+
+    &__value {
+        font-weight: 600;
+
+        &--hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__label {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,15 @@
+.payment-details-block {
+    position: relative;
+    display: inline-block;
+
+    &__name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        width: 110px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

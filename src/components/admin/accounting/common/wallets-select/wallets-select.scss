@@ -1,0 +1,14 @@
+.wallets-select {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__strong {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "assign-driver-title": "Assign Driver",
+    "mark-as-paid-title": "Mark as Paid",
+    "send-invoice-title": "Send Invoice",
+    "archive-title": "Archive",
+    "restore-title": "Restore",
+    "reassign-title": "Reassign",
+    "options-button-title": "Options",
+    "edit-button-title": "Edit",
+    "more-button-title": "More",
+    "success-post-to-loadboard": "The Order has been posted to LoadBoard",
+    "success-unpost-to-loadboard": "The Order has been unposted from LoadBoard",
+    "accept-success": "The Order has been accepted",
+    "on-hold-success": "The Order has been moved to hold",
+    "mark-as-pending-success": "The Order has been accepted marked as pending",
+    "bill-success": "The Order has been billed",
+    "offer-canceled-success": "The Offer has been canceled",
+    "offer-canceled-error": "An Error occurred when canceling this offer "
+}

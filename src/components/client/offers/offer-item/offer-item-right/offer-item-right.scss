@@ -1,0 +1,19 @@
+.offer-item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 325px;
+    width: 100%;
+
+    &__meta {
+        color: var(--color-input-text-secondary);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    strong:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

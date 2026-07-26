@@ -1,0 +1,19 @@
+.job-offer-status-info {
+    gap: 6px;
+
+    &--justify--center {
+        justify-content: center;
+    }
+
+    &__date {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        white-space: nowrap;
+    }
+
+    .order-item-info-column__title {
+        white-space: nowrap;
+    }
+}

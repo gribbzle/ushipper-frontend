@@ -1,0 +1,28 @@
+.extended-document-body {
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    &__description,
+    &__value {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--color-input-text-secondary);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    &__key {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 2px;
+        color: var(--color-input-text-secondary);
+        text-transform: uppercase;
+    }
+}

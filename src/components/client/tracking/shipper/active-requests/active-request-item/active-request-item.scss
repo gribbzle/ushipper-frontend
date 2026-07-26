@@ -1,0 +1,12 @@
+.active-request-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 12px 8px;
+
+    &:hover,
+    &:focus {
+        background-color: #e2e2f1;
+    }
+}

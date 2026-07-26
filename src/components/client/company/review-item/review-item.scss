@@ -1,0 +1,42 @@
+.review-item {
+    display: grid;
+    grid-template-columns: minmax(126px, 4fr) 11fr minmax(170px, 5fr);
+    align-items: start;
+    gap: 32px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__rating-info {
+        gap: 6px;
+
+        button {
+            align-self: start;
+        }
+
+        span {
+            color: var(--color-table-text-default);
+        }
+    }
+
+    &__rating-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & > * {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-table-text-default);
+
+            & > :first-child {
+                flex: 1;
+            }
+        }
+    }
+}

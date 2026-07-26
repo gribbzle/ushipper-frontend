@@ -1,0 +1,12 @@
+.accounting-drawer-tabs {
+    .tabs__label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.accounting-drawer-tabs.tabs {
+    gap: 24px;
+    margin-bottom: 16px;
+    align-items: flex-end;
+}

@@ -1,0 +1,45 @@
+import React from 'react';
+import { Field } from 'react-final-form';
+
+import { IconButton } from '@/components/common';
+import { CurrencyPercentageField, FormControl, InputLabel } from '@fields';
+import { TrashIcon } from '@icons';
+import { classname, translateByNamespace } from '@utils';
+import { required } from '@validators';
+
+import { FeeCategorySelect } from './fee-category-select/fee-category-select';
+import { EditFeeItemProps } from './edit-fee-item.types';
+import { useEditFeeItem } from './use-edit-fee-item';
+
+import './edit-fee-item.scss';
+
+const cn = classname('edit-fee-item');
+const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');
+
+export const EditFeeItem = ({ prefix, valueFieldName, disabled = false, handleRemove }: EditFeeItemProps) => {
+    const { handleCategoryChange, selectedFeeCategory } = useEditFeeItem();
+
+    return (
+        <div className={cn()}>
+            <FormControl>
+                <InputLabel required={true}>{t('fee-category')}</InputLabel>
+                <Field
+                    name={prefix ? `${prefix}.feeCategoryId` : 'feeCategoryId'}
+                    className={cn('category')}
+                    component={FeeCategorySelect}
+                    validate={required}
+                    placeholder=''
+                    callback={handleCategoryChange}
+                    isClearable={false}
+                    hideRecurringOption={true}
+                    disabled={disabled}
+                />
+            </FormControl>
+            <FormControl>
+                <InputLabel required={true}>{t('amount')}</InputLabel>
+                <CurrencyPercentageField prefix={prefix} fieldName={valueFieldName} selectedValue={selectedFeeCategory} disabled={disabled} />
+            </FormControl>
+            {!disabled && <IconButton onClick={handleRemove} Icon={TrashIcon} />}
+        </div>
+    );
+};

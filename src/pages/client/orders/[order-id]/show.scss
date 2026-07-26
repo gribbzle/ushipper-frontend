@@ -1,0 +1,143 @@
+@import 'src/pages/breakpoints';
+
+.show-order-page {
+    &__page-header {
+        gap: 40px;
+
+        & > .row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    &__internal-order-id {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__column-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    @include breakpoint(0, $tablet-max-width) {
+        &__column-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__column {
+            &:last-child {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                max-width: none;
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    'notes  attachments'
+                    'activity  activity';
+
+                .order-internal-notes {
+                    grid-area: notes;
+                }
+
+                .order-general-form__attachments-paper {
+                    grid-area: attachments;
+                }
+
+                .order-activity-paper {
+                    grid-area: activity;
+                }
+            }
+
+            &--freightx {
+                &:last-child {
+                    grid-template-areas:
+                        'attachments attachments'
+                        'notes activity';
+
+                    .order-internal-notes {
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint($desktop-min-width) {
+        &__column-wrapper {
+            display: grid;
+            grid-template-columns: 3fr minmax(316px, 1fr);
+
+            &--freightx {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__column {
+            &:last-child {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            &--freightx {
+                &:last-child {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+                    max-width: none;
+                    grid-template-rows: auto auto;
+                    grid-template-areas:
+                        'attachments attachments'
+                        'notes activity';
+
+                    .order-internal-notes {
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    &__column {
+        height: fit-content;
+
+        &:not(:last-child) {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: max-content;
+            gap: 24px;
+
+            .expenses-paper,
+            .order-inspection-details-paper,
+            .shipper-order-inspection-details-paper {
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}
+
+@media (max-width: 1360px) {
+    .show-order-page {
+        &__page-header {
+            .print-bnt,
+            .header-edit-btn,
+            .header-unpost-btn,
+            .header-post-btn {
+                display: none;
+            }
+        }
+    }
+}

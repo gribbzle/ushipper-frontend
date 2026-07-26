@@ -1,0 +1,54 @@
+.shipper-orders-list-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-text-primary);
+
+    &__title-and-count {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__count {
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        color: var(--color-text-secondary);
+    }
+
+    .segmented-control__controls {
+        background: var(--color-border-default);
+        box-shadow: none;
+        border-radius: 8px !important;
+        padding: 2px !important;
+    }
+
+    .segmented-control__controls::before {
+        border-radius: 6px;
+        border: none;
+        box-shadow: 0px 1px 4px 0px #00000014;
+    }
+
+    .segmented-control__segment {
+        padding: 0 !important;
+    }
+
+    .segmented-control__segment label {
+        padding: 4px 8px;
+        color: var(--color-info);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    .segmented-control__segment.active label {
+        color: var(--color-text-primary);
+    }
+}

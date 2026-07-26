@@ -1,0 +1,16 @@
+.roles-table {
+    max-width: 364px;
+    width: 100%;
+    height: fit-content;
+
+    & &__header-cell,
+    & &__cell {
+        height: 43px;
+    }
+
+    .table__row--clicked {
+        .roles-table__roles-table-actions-cell {
+            visibility: hidden;
+        }
+    }
+}

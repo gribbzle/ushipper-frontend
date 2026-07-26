@@ -1,0 +1,17 @@
+.driver-pay-info {
+    display: flex;
+    gap: 2px;
+    color: var(--color-table-text-default);
+    font-size: 16px;
+    flex-wrap: wrap;
+
+    &--danger {
+        color: var(--color-danger);
+    }
+
+    &__value {
+        font-weight: 700;
+        line-height: 20px;
+        text-wrap: nowrap;
+    }
+}

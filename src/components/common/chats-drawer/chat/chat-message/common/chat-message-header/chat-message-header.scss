@@ -1,0 +1,16 @@
+.chat-message-header {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--color-text-default);
+    margin-bottom: 2px;
+    word-wrap: break-word;
+
+    &--mine {
+        color: var(--color-white);
+    }
+
+    &--missed {
+        color: var(--color-primary);
+    }
+}

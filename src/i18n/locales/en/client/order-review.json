@@ -1,0 +1,32 @@
+{
+    "header": "Your Feedback to the {{companyName}}",
+    "rate-experience-with-label": "Rate your experience with",
+    "rate-btn-label": "Rate {{companyType}}",
+    "edit-feedback-btn-label": "Edit Feedback",
+    "overall-rating-label": "overall rating",
+    "detailed-rating-label": "detailed rating",
+    "notifications": {
+        "create-review-success": "Your Feedback has been added.",
+        "create-review-error": "An Error occurred when adding this feedback",
+        "edit-review-success": "Your Feedback has been successfully updated ",
+        "edit-review-error": "An Error occurred when updating this feedback"
+    },
+    "popup": {
+        "cancel-btn-label": "Cancel",
+        "submit-btn-label": "Submit Feedback",
+        "alert-text": "This feedback will be shared on {{companyType}}'s public page",
+        "link-label": "here",
+        "reviews-total-label": "({{count}} ratings)"
+    },
+    "fields": {
+        "more-details-group-label": "provide more details",
+        "rating-label": "your overall rating to this {{companyType}}",
+        "comment-label": "Share your experience with this {{companyType}}",
+        "communication-label": "Communication",
+        "customer-service-label": "Customer Service",
+        "on-time-delivery-label": "On-Time Delivery",
+        "quality-of-work-label": "Quality of Work",
+        "cooperation-label": "Cooperation",
+        "comment-placeholder": "Describe your experience at {{companyName}}"
+    }
+}

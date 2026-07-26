@@ -1,0 +1,109 @@
+/* stylelint-disable no-duplicate-selectors */
+
+.orders-table {
+    td {
+        padding: 12px;
+    }
+
+    &__header-cell {
+        width: 10px;
+    }
+
+    &__cell {
+        a {
+            line-height: 16px;
+            font-weight: 600;
+            -webkit-font-smoothing: antialiased;
+            margin-bottom: 2px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+        }
+
+        &--order-id,
+        &--location,
+        &--price {
+            h4,
+            p {
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                overflow: hidden;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        &--location {
+            min-width: 130px;
+            max-width: 200px;
+        }
+
+        &--payment-status {
+            min-width: 146px;
+        }
+
+        &--order-id,
+        &--receipt-status {
+            max-width: 250px;
+        }
+
+        &--receipt-status {
+            min-width: 180px;
+        }
+
+        &--delivered-at,
+        &--created-at {
+            min-width: 116px;
+        }
+
+        &--price {
+            max-width: 146px;
+            padding-left: 10px;
+
+            h4 {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                & > span:first-of-type {
+                    margin-right: 2px;
+                }
+
+                & > span:last-of-type {
+                    height: 16px;
+                }
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    &__column-text {
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    &__column-sub-text {
+        color: var(--color-text-light);
+        font-weight: 400;
+    }
+
+    &__order-id-cell {
+        max-width: 20%;
+    }
+
+    &__clock-icon {
+        color: var(--color-warning);
+    }
+
+    .user-info-block__name {
+        font-weight: 600 !important;
+    }
+}

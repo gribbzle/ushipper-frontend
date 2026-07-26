@@ -1,0 +1,18 @@
+{
+    "delete-vehicle": {
+        "title": "Delete {{ vehicle }}?",
+        "empty-title": "No Vehicle Information",
+        "confirm-button-label": "Delete",
+        "cancel-button-label": "Cancel",
+        "success-text": "Vehicle has been deleted",
+        "error-text": "An Error occurred when deleting this Vehicle"
+    },
+    "delete-commodity": {
+        "title": "Delete {{ commodity }}?",
+        "empty-title": "No Commodity Information",
+        "confirm-button-label": "Delete",
+        "cancel-button-label": "Cancel",
+        "success-text": "Commodity has been deleted",
+        "error-text": "An Error occurred when deleting this Commodity"
+    }
+}

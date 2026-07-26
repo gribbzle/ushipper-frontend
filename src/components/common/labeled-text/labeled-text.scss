@@ -1,0 +1,21 @@
+.labeled-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 8px;
+
+    & > * {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    & > label {
+        color: var(--color-text-default);
+        font-weight: 700;
+    }
+
+    & > span {
+        color: var(--color-table-text-default);
+        font-weight: 400;
+    }
+}

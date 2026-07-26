@@ -1,0 +1,25 @@
+.company-review-filters {
+    .paper__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        height: 72px;
+        box-sizing: border-box;
+
+        .tabs__wrapper {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .tabs__tab {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0;
+        }
+    }
+    &__form {
+        flex-basis: 260px;
+        flex-shrink: 0;
+        max-width: 260px;
+    }
+}

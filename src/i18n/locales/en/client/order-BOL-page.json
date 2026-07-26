@@ -1,0 +1,32 @@
+{
+    "page-title": "BOL | {{ projectName }}",
+    "header-title": "Online BOL",
+    "order": {
+        "order-id": "Order ID: {{ id }}"
+    },
+    "scheduled": "(Scheduled)",
+    "picked-up": "(Picked Up)",
+    "delivered": "(Delivered)",
+    "order-BOL-details-title": "Order Details",
+    "scheduled-delivery-on": "Scheduled delivery on {{date}}",
+    "delivered-on": "Delivered on {{date}}",
+    "pickup-scheduled-on": "Pickup scheduled on  {{date}}",
+    "header-button-copy": "Link is copied to Clipboard",
+    "header-button-print-title": "Print BOL",
+    "header-button-print-short-title": "Print",
+    "header-button-copy-title": "Copy link",
+    "header-button-copy-short-title": "Copy",
+    "pickup-inspection": "Pickup Inspection",
+    "delivery-inspection": "Delivery Inspection",
+    "powered-by": "Powered by",
+    "ushipper-us": "Ushipper.us",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "vin": "VIN: {{vin}}",
+    "damage": {
+        "header": "Damage Code Definitions",
+        "circles-pickup-damages": "Circles - pickup damages",
+        "cr": "CR",
+        "rounded-rectangles-delivery-damages": "Rounded rectangles - delivery damages"
+    }
+}

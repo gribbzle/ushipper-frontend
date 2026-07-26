@@ -1,0 +1,16 @@
+.rate-info {
+    &__invoiced,
+    &__received {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__invoiced {
+        color: var(--color-warning);
+    }
+
+    &__received {
+        color: var(--color-success);
+    }
+}

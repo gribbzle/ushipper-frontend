@@ -1,0 +1,50 @@
+.selection-group {
+    height: 38px;
+    width: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--color-border-default);
+    align-self: flex-end;
+    display: flex;
+
+    &__item {
+        height: 100%;
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: 0.3s;
+
+        svg {
+            stroke: var(--color-button-text-default);
+        }
+
+        &--active {
+            background-color: var(--color-primary);
+            color: white;
+
+            svg {
+                stroke: white;
+            }
+
+            &:hover {
+                background-color: #66b1ff;
+            }
+        }
+
+        &:not(.selection-group__item--active):hover {
+            background-color: #ecf5ff;
+            color: #409eff;
+
+            svg {
+                stroke: var(--color-primary);
+            }
+        }
+    }
+}

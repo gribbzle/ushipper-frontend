@@ -1,0 +1,19 @@
+.link {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:not(:has(button)):hover {
+        text-decoration: underline;
+    }
+
+    // :has() CSS relational pseudo-class Not supported by default in Firefox
+    @-moz-document url-prefix() {
+        &:hover {
+            text-decoration: underline;
+
+            button {
+                text-decoration: none;
+            }
+        }
+    }
+}

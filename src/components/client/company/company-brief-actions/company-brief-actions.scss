@@ -1,0 +1,13 @@
+.company-brief-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+
+    button:first-child {
+        width: 148px;
+        justify-content: center;
+    }
+    .flag-button {
+        height: 36px;
+    }
+}

@@ -1,0 +1,11 @@
+.order-details-drawer {
+    form {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 24px 16px;
+
+        .inspection-type-radio-group {
+            grid-column: 1/3;
+        }
+    }
+}

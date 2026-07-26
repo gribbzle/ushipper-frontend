@@ -1,0 +1,22 @@
+.move-balance-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &__account {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        white-space: nowrap;
+        color: var(--color-table-text-default);
+
+        &:not(&--disabled) {
+            cursor: pointer;
+
+            &:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+        }
+    }
+}

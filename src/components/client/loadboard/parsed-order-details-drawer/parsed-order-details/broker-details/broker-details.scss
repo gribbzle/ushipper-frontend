@@ -1,0 +1,45 @@
+.broker-details {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    height: fit-content;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__broker-name {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+    }
+
+    &__strong {
+        font-weight: 700;
+    }
+
+    &__description {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-table-text-default);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

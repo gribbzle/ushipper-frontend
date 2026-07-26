@@ -1,0 +1,14 @@
+{
+    "pending": "Pending",
+    "not-paid": "Not Paid",
+    "paid": "Paid/Charged",
+    "pending-documents": "Documents Requested",
+    "damage-claim": "Damage Claim",
+    "pending-approval": "Documents Submitted",
+    "action-required": "Action Required",
+    "factoring-requested": "Sent to Factoring",
+    "factoring-confirmed": "Approved by Factoring",
+    "ready-for-factoring": "Ready for Factoring",
+    "pending-delivery": "Awaiting Delivery",
+    "awaiting-confirmation": "Awaiting Confirmation"
+}

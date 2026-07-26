@@ -1,0 +1,28 @@
+.fuel-transactions-table {
+    &__created-at {
+        min-width: 115px;
+    }
+
+    &__happened-at {
+        min-width: 125px;
+    }
+
+    &__driver {
+        min-width: 225px;
+    }
+
+    &__link {
+        color: var(--color-primary);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__card-number {
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+    }
+}

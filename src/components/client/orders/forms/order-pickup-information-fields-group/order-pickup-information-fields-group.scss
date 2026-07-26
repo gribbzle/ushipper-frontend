@@ -1,0 +1,17 @@
+.order-pickup-information-fields-group {
+    &__notes-field,
+    &__contact-address,
+    &__contact-details {
+        grid-column: 1 / 4;
+    }
+
+    &__scheduled-pickup-date-field,
+    &__buyer-number-field {
+        grid-column: 1 / 2;
+    }
+
+    &__date-type {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}

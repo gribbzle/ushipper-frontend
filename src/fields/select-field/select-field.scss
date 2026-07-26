@@ -1,0 +1,7 @@
+.react-select-container {
+    width: 100%;
+
+    &--errored .react-select__control:not(.react-select__control--menu-is-open) {
+        border-color: var(--color-danger);
+    }
+}

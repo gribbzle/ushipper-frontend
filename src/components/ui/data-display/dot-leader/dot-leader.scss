@@ -1,0 +1,27 @@
+.dot-leader {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    padding: 4px 0;
+
+    &__title {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    &__divider {
+        flex: 1;
+        box-sizing: border-box;
+        border-bottom: 1px dashed var(--color-border-default);
+    }
+
+    &__value {
+        text-align: end;
+        color: var(--color-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,20 @@
+.contacts-page {
+    display: block;
+
+    &__head {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-left: 8px;
+
+            svg {
+                margin-right: 6px;
+            }
+        }
+    }
+
+    .empty-layout {
+        min-height: 700px;
+    }
+}

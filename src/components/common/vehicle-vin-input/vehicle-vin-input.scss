@@ -1,0 +1,14 @@
+.vehicle-vin-input {
+    .input-wrapper__input-control {
+        text-transform: uppercase;
+
+        &::placeholder {
+            text-transform: none;
+        }
+    }
+
+    &-loader {
+        margin-right: 10px;
+        color: var(--color-black);
+    }
+}

@@ -1,0 +1,19 @@
+.wallet-table {
+    &__empty {
+        .empty-layout {
+            min-height: 700px;
+        }
+    }
+
+    &__preloader {
+        .table-loader {
+            min-height: 600px;
+        }
+    }
+
+    &__type-and-description {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}

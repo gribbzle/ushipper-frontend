@@ -1,0 +1,19 @@
+.assign-item {
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:not(:hover) &__assign-btn {
+        display: none;
+    }
+
+    &:hover {
+        background: #f6f7f8;
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+}

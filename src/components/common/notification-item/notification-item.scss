@@ -1,0 +1,51 @@
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid var(--color-border-table);
+    background: var(--color-internal-note-background);
+    border-radius: 8px;
+    gap: 8px;
+
+    &__header {
+        display: flex;
+        gap: 12px;
+        position: relative;
+
+        &.info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            margin-right: 36px;
+            min-width: 0;
+
+            & > p {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &.user-name {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            color: var(--color-text-default);
+        }
+
+        &.date {
+            font-size: 12px;
+            font-weight: 510;
+            line-height: 14px;
+            color: var(--color-table-text-default);
+        }
+
+        & > .dropdown {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.tracking-page .main-layout__body {
+    padding: 0;
+    display: flex;
+
+    .carrier-tracking-page {
+        &--noDrivers {
+            position: static;
+        }
+
+        &__switch-container {
+            display: flex;
+            align-items: center;
+        }
+
+        &__drivers-list {
+            color: var(--color-text-default);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+}
+

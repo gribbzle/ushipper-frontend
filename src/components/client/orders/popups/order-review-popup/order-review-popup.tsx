@@ -1,0 +1,83 @@
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { useRouter } from 'next/router';
+
+import { AlertBlock, Button, Link, OrderReviewForm, Popup } from '@components';
+import { useMeShipper } from '@hooks';
+import { useAppDispatch, useAppSelector } from '@store';
+import { orderReviewPopupPropsSelector, reviewActions } from '@store/client';
+import { Rating } from '@ui';
+import { classname, translateByNamespace, translateCompanyType } from '@utils';
+
+import './order-review-popup.scss';
+
+const cn = classname('order-review-popup');
+const t = translateByNamespace('client:order-review:popup');
+const formId = 'orderReviewForm';
+
+export const OrderReviewPopup = () => {
+    const isMeShipper = useMeShipper();
+    const router = useRouter();
+    const dispatch = useAppDispatch();
+    const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
+    const { isVisible, company, review } = useAppSelector(orderReviewPopupPropsSelector);
+
+    const handleClose = useCallback(() => {
+        dispatch(reviewActions.setOrderReviewPopupProps({ isVisible: false, review: null, company: null }));
+    }, [dispatch]);
+
+    useEffect(() => {
+        review ? setIsSubmitDisabled(false) : setIsSubmitDisabled(true);
+    }, [review]);
+
+    const handleChangeRating = useCallback((value?: string) => (value ? setIsSubmitDisabled(false) : setIsSubmitDisabled(true)), []);
+
+    const actions = useMemo(
+        () => (
+            <>
+                <Button type='submit' size='small' view='primary' disabled={isSubmitDisabled} form={formId}>
+                    {t('submit-btn-label')}
+                </Button>
+                <Button size='small' onClick={handleClose} type='button'>
+                    {t('cancel-btn-label')}
+                </Button>
+            </>
+        ),
+        [handleClose, isSubmitDisabled],
+    );
+
+    const description = useMemo(
+        () => (
+            <>
+                <AlertBlock>
+                    {t('alert-text', {
+                        companyType: isMeShipper ? translateCompanyType('carrier') : translateCompanyType('shipper'),
+                    })}{' '}
+                    {company?.publicId && (
+                        <Link href={`${router.basePath}/client/companies/${company.publicId}`} target='_blank' rel='noopener noreferrer'>
+                            {t('link-label')}
+                        </Link>
+                    )}
+                </AlertBlock>
+                <OrderReviewForm onAfterFormSubmit={handleClose} formId={formId} onChangeRating={handleChangeRating} review={review} />
+            </>
+        ),
+        [isMeShipper, company?.publicId, router.basePath, handleClose, handleChangeRating, review],
+    );
+
+    const title = useMemo(
+        () => (
+            <>
+                {company?.name}
+                <div className={cn('rating-total')}>
+                    <Rating initialValue={company?.rating ?? 0} />
+                    <span className={cn('reviews-total')}>
+                        {(company?.rating ?? 0).toFixed(1)} {t('reviews-total-label', { count: company?.reviewsTotal ?? 0 })}
+                    </span>
+                </div>
+            </>
+        ),
+        [company],
+    );
+
+    return <Popup className={cn()} isOpen={isVisible} description={description} title={title} actions={actions} onClose={handleClose} />;
+};

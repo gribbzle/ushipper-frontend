@@ -1,0 +1,10 @@
+.edit-fuel-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 100px;
+
+    .form-control {
+        gap: 6px;
+    }
+}

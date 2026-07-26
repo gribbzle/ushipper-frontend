@@ -1,0 +1,35 @@
+.companies-fees-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__alert {
+        width: 298px;
+        border-radius: 8px;
+        border: 2px solid #53bffc;
+    }
+
+    &__fees {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 70px;
+    }
+
+    &__company,
+    &__title {
+        font-weight: 700;
+        color: var(--color-table-text-default);
+        text-transform: uppercase;
+    }
+
+    &__company {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

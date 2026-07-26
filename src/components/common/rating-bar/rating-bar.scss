@@ -1,0 +1,35 @@
+.rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &__label {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        min-width: 45px;
+    }
+
+    &__outer {
+        border-radius: 8px;
+        background: var(--color-bar-outer);
+        width: 100%;
+        max-width: 160px;
+        height: 5px;
+    }
+
+    &__inner {
+        height: 5px;
+        border-radius: 10px;
+        background: var(--color-maize);
+    }
+
+    &__count {
+        color: var(--color-gray-label);
+        text-align: right;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}

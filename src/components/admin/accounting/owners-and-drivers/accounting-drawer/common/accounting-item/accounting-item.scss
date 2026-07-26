@@ -1,0 +1,22 @@
+.accounting-item {
+    border: 1px solid var(--color-table-border);
+    border-radius: 8px;
+
+    &__header {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__footer {
+        background-color: var(--color-panel-highlighted);
+        padding: 8px 12px;
+    }
+}

@@ -1,0 +1,39 @@
+$icon-size: 16px;
+
+.vehicles-tooltip {
+    &__car-icon-container {
+        width: $icon-size;
+        height: $icon-size;
+        flex-shrink: 0;
+    }
+
+    &__vehicle {
+        white-space: nowrap;
+        text-transform: lowercase;
+
+        &--value {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+
+            &:not(&--disabled):hover {
+                cursor: pointer;
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+        }
+
+        &--primary {
+            cursor: pointer;
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

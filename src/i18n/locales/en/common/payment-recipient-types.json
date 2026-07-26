@@ -1,0 +1,10 @@
+{
+    "recipient-company-paid": "Company Paid",
+    "recipient-company-declined": "Company Declined",
+    "recipient-company": "Company",
+    "recipient-driver": "Driver",
+    "driver-view-recipient-driver": "Me",
+    "driver-view-recipient-company": "Carrier Company",
+    "driver-view-recipient-company-paid": "Carrier Company",
+    "driver-view-recipient-company-declined": "Carrier Company"
+}

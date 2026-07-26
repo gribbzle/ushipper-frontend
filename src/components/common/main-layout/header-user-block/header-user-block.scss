@@ -1,0 +1,115 @@
+@import 'src/pages/breakpoints';
+
+.header-user-block {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 16px;
+
+    &__messages-button,
+    &__notifications-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        position: relative;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+
+        span {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            height: 20px;
+            border-radius: 12px;
+            background-color: var(--color-danger);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-white);
+            box-sizing: border-box;
+            border: 1px solid var(--color-white);
+            padding: 0 5px;
+        }
+
+        span:last-child {
+            position: relative;
+            opacity: 0;
+            height: 0;
+        }
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    &__messages-button {
+        &:hover {
+            cursor: pointer;
+            path {
+                fill: var(--color-primary);
+            }
+        }
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    &__notifications-button {
+        &:hover {
+            cursor: pointer;
+            path {
+                stroke: var(--color-primary);
+            }
+        }
+    }
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px;
+    }
+
+    &__user-info:hover {
+        cursor: pointer;
+        border-radius: 8px;
+        background: rgba(233, 237, 241, 0.5);
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__user-details {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            color: var(--color-text-default);
+        }
+
+        &-company {
+            color: var(--color-table-text-default);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+
+    @include breakpoint(0, $tablet-max-width) {
+        &__user-details {
+            display: none;
+        }
+    }
+}

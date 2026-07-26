@@ -1,0 +1,10 @@
+.shipper-tracking-filters-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}

@@ -1,0 +1,45 @@
+.empty-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-table-text-default)
+  }
+
+  &__sub-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-text-muted);
+  }
+
+  &__link-btn-to-lb {
+    width: 233px;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "user": "User",
+    "order": "Order",
+    "order-expense": "Order Expense",
+    "order-vehicle": "Order Vehicle",
+    "order-internal-note": "Order Internal Note",
+    "order-inspection": "Order Inspection",
+    "order-inspection-photo": "Order Inspection Photo",
+    "order-inspection-schematic-photo": "Order Inspection Schematic Photo",
+    "order-bol": "Order BOL",
+    "chat-message": "Chat Message",
+    "order-invoice": "Order Invoice",
+    "signature": "Signature",
+    "company": "Company",
+    "account": "Account",
+    "invitation": "Invitation",
+    "job-offer": "Job Offer",
+    "accounting-profile-document": "Accounting Profile Document",
+    "accounting-profile": "Accounting Profile",
+    "balance": "Balance",
+    "order-requested-document": "Order Requested Document",
+    "fee": "Fee"
+}

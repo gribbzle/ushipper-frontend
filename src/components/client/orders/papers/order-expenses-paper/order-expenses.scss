@@ -1,0 +1,63 @@
+.expenses-paper {
+    font-size: 14px;
+    color: var(--color-table-text-default);
+
+    & > .paper__body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__header,
+    &__row {
+        display: grid;
+        grid-template-columns: 14fr 11fr 13fr 20fr 17fr 25fr;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__header > * {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--color-table-text-default);
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__type,
+    &__file,
+    &__date {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__type,
+    &__price {
+        color: var(--color-text-default);
+    }
+
+    &__type {
+        font-weight: 700;
+    }
+
+    &__price {
+        font-weight: 600;
+    }
+
+    &__file {
+        text-decoration: underline;
+    }
+
+    &__deduct-from-driver-pay {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & > *:first-child {
+            margin-right: auto;
+        }
+    }
+}

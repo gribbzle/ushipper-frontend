@@ -1,0 +1,45 @@
+.job-offer-status-tag {
+    display: flex;
+    box-sizing: border-box;
+    width: fit-content;
+    height: 28px;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+
+    text-align: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border-radius: 6px;
+
+    svg {
+        $size: 16px;
+
+        width: $size;
+        height: $size;
+    }
+
+    &--view {
+        &-new {
+            color: var(--color-primary);
+            background-color: var(--color-pale-blue);
+        }
+
+        &-accepted {
+            color: var(--color-done-label);
+            background-color: var(--color-done-background);
+        }
+
+        &-declined {
+            color: var(--color-text-light);
+            background-color: var(--color-morning-mist);
+        }
+
+        &-canceled {
+            color: var(--color-error-label);
+            background: var(--color-error-background);
+        }
+    }
+}

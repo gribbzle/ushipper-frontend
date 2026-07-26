@@ -1,0 +1,6 @@
+{
+    "shipper": "Shipper",
+    "carrier": "Carrier",
+    "dispatcher": "Dispatcher",
+    "driver": "Driver"
+}

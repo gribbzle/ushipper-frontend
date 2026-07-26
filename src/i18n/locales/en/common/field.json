@@ -1,0 +1,10 @@
+{
+    "default-placeholder": "Please input something",
+    "default-short-placeholder": "Please input",
+    "address-placeholder": "Type address",
+    "state-region-placeholder": "Input City, State, Region or ZIP",
+    "states-group-label": "States",
+    "regions-group-label": "Regions",
+    "cities-group-label": "Cities",
+    "all-placeholder": "All"
+}

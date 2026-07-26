@@ -1,0 +1,17 @@
+.commodity-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    padding: 12px;
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-end;
+        align-self: flex-start;
+    }
+}

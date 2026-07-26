@@ -1,0 +1,67 @@
+.payment-details-dropdown-menu {
+    position: relative;
+    list-style-type: none;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__inner-wrap {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+
+        &--open {
+            visibility: visible;
+        }
+    }
+
+    &__menu-item {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--color-table-text-default);
+
+        cursor: pointer;
+        white-space: nowrap;
+
+        &--hover {
+            text-decoration: underline;
+            color: var(--color-primary);
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        background-color: var(--color-white);
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid var(--color-table-border);
+        text-decoration: none;
+
+        margin: 0;
+        list-style-type: none;
+
+        .payment-details-menu__menu-item {
+            justify-content: flex-start;
+        }
+    }
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

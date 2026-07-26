@@ -1,0 +1,37 @@
+.text-message {
+    &__details {
+        position: absolute;
+        bottom: 4px;
+        right: 11px;
+        display: flex;
+        justify-content: flex-end;
+        height: 13px;
+        gap: 4px;
+    }
+
+    &__time {
+        &-value {
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 13px;
+            color: var(--color-text-light);
+
+            .chat-message-wrapper--mine & {
+                color: #cce5ff;
+            }
+        }
+
+        &-icon {
+            $size: 11px;
+
+            width: $size;
+            height: $size;
+            align-self: flex-end;
+            color: #cce5ff;
+
+            &--error {
+                color: var(--color-danger);
+            }
+        }
+    }
+}

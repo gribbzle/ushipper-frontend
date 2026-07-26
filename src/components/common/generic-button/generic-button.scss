@@ -1,0 +1,254 @@
+/* stylelint-disable */
+
+$primary: #409eff;
+$primary-hover: #66b1ff;
+$primary-focus: #3a8ee6;
+$primary-disabled: #b3d8ff;
+
+$gray: #313338;
+$gray-hover: #8a8f9d;
+$gray-focus: #4f5157;
+$gray-disabled: #202126;
+
+$accent: #00a28a;
+$accent-hover: #28b7a2;
+$accent-focus: #027a68;
+$accent-disabled: #085850;
+$accent-circle-hover: #0b3434;
+$accent-circle-icon-disabled: #185151;
+
+$danger: #f56c6c;
+$danger-hover: #f78989;
+$danger-focus: #dd6161;
+$danger-disabled: #dd6161;
+
+$blue: #1d1a28;
+$blue-hover: #343043;
+
+.generic-button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &--square {
+        border-radius: 6px;
+
+        &.generic-button--medium {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+
+            svg {
+                height: 19px;
+            }
+        }
+    }
+
+    &--circle {
+        border-radius: 50%;
+
+        svg {
+            height: 14px;
+        }
+
+        &.generic-button--medium {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &.generic-button--large {
+            width: 36px;
+            min-width: 36px;
+            height: 36px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &.generic-button--small {
+            height: 24px;
+            width: 24px;
+            min-width: 24x;
+            background-color: transparent;
+
+            &.generic-button--accent {
+                &:focus {
+                    background-color: $accent !important;
+
+                    svg {
+                        path {
+                            stroke: white !important;
+                        }
+                    }
+                }
+
+                &:hover:not(:disabled) {
+                    background-color: $accent-circle-hover;
+
+                    svg {
+                        path {
+                            stroke: $accent;
+                        }
+                    }
+                }
+
+                &:disabled {
+                    svg {
+                        path {
+                            stroke: $accent-circle-icon-disabled;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        svg {
+            opacity: 0.5;
+        }
+    }
+
+    &--gray {
+        background-color: $gray;
+
+        &:hover {
+            background-color: $gray-hover;
+        }
+
+        &:focus {
+            background-color: $gray-focus;
+        }
+
+        &:disabled {
+            background-color: $gray-disabled;
+        }
+    }
+
+    &--primary {
+        background-color: var(--color-white);
+        border: 1px solid $primary;
+        color: $primary;
+
+        &:hover,
+        &:disabled,
+        &:focus {
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &:focus {
+            background-color: $primary-focus;
+            border: 1px solid $primary-focus;
+        }
+
+        &:disabled {
+            border: 1px solid $primary-hover;
+            background-color: $primary-hover;
+        }
+    }
+
+    &--accent {
+        background-color: $accent;
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+
+        &:focus {
+            background-color: $accent-focus;
+        }
+
+        &:disabled {
+            background-color: $accent-disabled;
+        }
+    }
+
+    &--danger {
+        background-color: $danger;
+
+        &:hover {
+            background-color: $danger-hover;
+        }
+
+        &:focus {
+            background-color: $danger-focus;
+        }
+
+        &:disabled {
+            background-color: $danger-disabled;
+        }
+    }
+
+    &--blue {
+        background-color: $blue;
+
+        &:hover {
+            background-color: $blue-hover;
+        }
+    }
+
+    &--white {
+        background-color: var(--color-white);
+        border: 1px solid $accent;
+        color: $accent;
+
+        &:hover,
+        &:disabled,
+        &:focus {
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+
+        &:focus {
+            background-color: $accent-focus;
+            border: 1px solid $accent-focus;
+        }
+
+        &:disabled {
+            border: 1px solid $accent-hover;
+            background-color: $accent-hover;
+        }
+    }
+
+    &--green {
+        background-color: var(--color-primary-green);
+        color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-primary-green-hover);
+            color: var(--color-white);
+        }
+
+        &:focus {
+            background-color: var(--color-primary-green-focus);
+        }
+
+        &:disabled {
+            background-color: var(--color-primary-green-hover);
+        }
+    }
+}

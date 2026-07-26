@@ -1,0 +1,26 @@
+.active-request-timeline-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--color-text-primary);
+
+    &__date {
+        &--warning {
+            color: var(--color-danger);
+        }
+    }
+
+    &__ellipse {
+        color: var(--color-border-default);
+        margin-top: 2px;
+
+        &--warning {
+            color: var(--color-danger);
+            fill: var(--color-danger);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "recipient-driver-form": "Payment Form was Submitted",
+    "recipient-company-form": "Payment Form was Submitted",
+    "recipient-company-paid-form": "Payment Form was Accepted",
+    "recipient-company-declined-form": "Payment Form was Declined",
+    "action-required": "Action Required"
+}

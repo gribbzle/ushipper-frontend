@@ -1,0 +1,16 @@
+.order-status-info {
+    display: flex;
+    gap: 4px;
+
+    &--status {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__time {
+        line-height: 16px;
+        font-size: 12px;
+        color: var(--color-table-text-default);
+    }
+}

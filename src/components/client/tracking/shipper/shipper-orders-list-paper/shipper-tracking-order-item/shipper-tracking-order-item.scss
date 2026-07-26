@@ -1,0 +1,102 @@
+.shipper-tracking-order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__wrapper {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--color-primary);
+        }
+
+        &--focus {
+            border-color: var(--color-primary);
+        }
+    }
+
+    &__title {
+        color: var(--color-text-primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+
+        p {
+            max-width: 160px;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &__details {
+        display: flex;
+        gap: 2px;
+        justify-content: space-between;
+
+        &-price {
+            align-self: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 20px;
+            color: var(--color-primary);
+        }
+
+        &-actions {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--column {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-no-padding-top {
+            padding-top: 8px !important;
+        }
+
+        .carrier-info {
+            margin-top: 12px;
+        }
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-text-secondary);
+        text-wrap: nowrap;
+    }
+
+    &__value {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-text-primary);
+        text-wrap: nowrap;
+
+        &--column {
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        &--start {
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "auction": "Auction",
+    "auction-dealer": "Auction / Dealer",
+    "broker": "Broker",
+    "broker-carrier": "Broker / Carrier",
+    "corp-relocation": "Corp. Relocation",
+    "dealer": "Dealer",
+    "dealer-import-export": "Dealer (Import / Export)",
+    "dealer-manufacturer": "Dealer (Manufacturer)",
+    "dealer-rental-agency": "Dealer (Rental Agency)",
+    "dealer-salvage": "Dealer (Salvage)",
+    "import-export": "Import / Export",
+    "manufacturer": "Manufacturer",
+    "rental-agency": "Rental Agency",
+    "salvage": "Salvage",
+    "import-export-salvage": "Import / Export / Salvage",
+    "shipper": "Shipper",
+    "carrier": "Carrier"
+}

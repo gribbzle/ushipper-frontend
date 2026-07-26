@@ -1,0 +1,17 @@
+.dispatcher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__bio {
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--color-table-text-default);
+        white-space: pre-line;
+    }
+    &__tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,52 @@
+import React, { useCallback, useMemo } from 'react';
+
+import { Avatar, Badge } from '@/components/common';
+import { DriverIcon } from '@icons';
+import { Driver, TrackingDriver, User } from '@store/client';
+import { checkIsGPSStatusRecentlyUpdated, classname, stringAvatar } from '@utils';
+
+import './driver-order-pin.scss';
+
+const cn = classname('driver-order-pin');
+
+interface DriverOrderPinProps {
+    driver: Driver | User | TrackingDriver;
+    isDisabled?: boolean;
+    className?: string;
+    onPress?: () => void;
+    isActive?: boolean;
+}
+
+export const DriverOrderPin = ({ driver, isDisabled, className, onPress, isActive = false }: DriverOrderPinProps) => {
+    const isGPSStatusRecentlyUpdated = useMemo(
+        (): boolean => (driver.latestLocation ? Boolean(checkIsGPSStatusRecentlyUpdated(driver.latestLocation.createdAt)) : false),
+        [driver],
+    );
+
+    const handleClickDriverPin = useCallback(
+        (e: React.MouseEvent): void => {
+            e.stopPropagation();
+
+            if (!isDisabled) {
+                onPress?.();
+            }
+        },
+        [isDisabled, onPress],
+    );
+
+    return (
+        <div className={cn('', [className])}>
+            <DriverIcon className={cn('marker-icon', { active: isActive })} />
+            <Badge
+                className={cn('icon-wrapper')}
+                variant='dot'
+                size='mini'
+                color={isGPSStatusRecentlyUpdated ? 'success' : 'danger'}
+                withBorder={true}
+                onClick={handleClickDriverPin}
+            >
+                <Avatar src={driver.avatar?.url}>{driver.avatar?.url ? '' : stringAvatar(driver.name)}</Avatar>
+            </Badge>
+        </div>
+    );
+};

@@ -1,0 +1,29 @@
+.offer-action-modal {
+    .popup__title {
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        p {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__action-btns {
+        display: flex;
+        column-gap: 6px;
+    }
+
+    .popup {
+        &__description {
+            width: 100%;
+        }
+    }
+}

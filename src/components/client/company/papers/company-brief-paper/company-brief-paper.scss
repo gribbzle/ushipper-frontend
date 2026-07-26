@@ -1,0 +1,92 @@
+.company-brief-paper {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__name {
+        color: var(--color-gray-label);
+        word-break: break-all;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+
+        svg {
+            $size: 24px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__avatar {
+        $size: 200px;
+
+        width: $size;
+        height: $size;
+        border-radius: 20px;
+        align-self: center;
+    }
+
+    .avatar {
+        & > img {
+            object-fit: cover;
+        }
+    }
+
+    &__address {
+        color: var(--color-misty-silver);
+
+        svg {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__details {
+        display: flex;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    &__hours {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        padding: 12px 0;
+        text-align: center;
+        color: var(--color-text-light);
+    }
+    &__languages {
+        display: flex;
+        justify-content: center;
+        margin-top: -12px;
+        margin-bottom: 12px;
+    }
+    &__stats {
+        margin-bottom: 12px;
+    }
+
+    &__footer {
+        background-color: var(--color-panel-highlighted);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}

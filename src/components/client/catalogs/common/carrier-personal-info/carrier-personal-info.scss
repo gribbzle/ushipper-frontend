@@ -1,0 +1,19 @@
+.carrier-personal-info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+
+    &__logo {
+        $size: 88px;
+
+        width: $size;
+        height: $size;
+
+        img {
+            width: $size;
+            height: $size;
+        }
+
+        margin: auto 0;
+    }
+}

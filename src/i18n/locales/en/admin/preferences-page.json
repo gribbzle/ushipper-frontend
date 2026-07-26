@@ -1,0 +1,42 @@
+{
+    "head-title": "Preferences Managment | {{ projectName }}",
+    "title": "Preferences",
+    "save-label": "Save",
+    "registration": {
+        "title": "Registration",
+        "registration-type": {
+            "label": "Registration Type"
+        },
+        "confirmation-methods": {
+            "shipper-label": "Confirmation method for Shippers",
+            "carrier-label": "Confirmation method for Carriers",
+            "dispatcher-label": "Confirmation method for Dispatchers",
+            "driver-label": "Confirmation method for Drivers"
+        }
+    },
+    "fuel-cards": {
+        "title": "Fuel Cards",
+        "auto-fuel-card-transactions-processing-label": "Auto Fuel Card Transactions Processing",
+        "default-rate-new-label": "Default Fuel Limit Rate (New Orders)",
+        "default-rate-picked-up-label": "Default Fuel Limit Rate (Picked Up Orders)",
+        "default-rate-def-label": "Default Fuel Limit Rate (DEF)",
+        "ulsd-conversion-rate-label": "Conversion Rate for ULSD",
+        "def-conversion-rate-label": "Conversion Rate for DEF"
+    },
+    "transaction": {
+        "title": "Transaction",
+        "cashin-accounting-system-label": "Cash In Accounting System",
+        "cashout-accounting-system-label": "Cash Out Accounting System",
+        "perform-transaction-event-label": "MassPay Transaction Trigger",
+        "accounting-system-test-accounts-label": "MassPay Drivers",
+        "all": "All"
+    },
+    "notifications": {
+        "update-registration-success-notification": "Registration preferences has been successfully updated.",
+        "update-registration-error-notification": "An error occurred while updating registration preferences.",
+        "update-fuel-cards-success-notification": "Fuel preferences has been successfully updated.",
+        "update-fuel-cards-error-notification": "An error occurred while updating fuel preferences.",
+        "update-transaction-success-notification": "Transaction preferences has been successfully updated.",
+        "update-transaction-error-notification": "An error occurred while updating transaction preferences."
+    }
+}

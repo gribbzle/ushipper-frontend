@@ -1,0 +1,42 @@
+@import 'src/pages/breakpoints';
+
+.parsed-loadboard-item {
+    .paper__body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 6px;
+    }
+
+    &__wrapper {
+        display: flex;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        margin: -1px;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid var(--color-primary);
+        }
+
+        &--flagged {
+            border: 1px solid var(--color-red);
+        }
+
+        &--tagged {
+            background-color: var(--color-loadboard-item-tagged);
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(170px, 0.5fr) minmax(226px, 0.5fr) minmax(290px, 0.85fr) 210px;
+        gap: 16px;
+        padding: 16px;
+
+        @include breakpoint($large-desktop-min-width) {
+            grid-template-columns: minmax(170px, 1fr) minmax(200px, 1fr) minmax(290px, 2fr) 210px;
+        }
+    }
+}

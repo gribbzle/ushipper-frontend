@@ -1,0 +1,53 @@
+.paginate {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-table-text-default);
+    height: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    li {
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+
+        svg {
+            margin-top: 5px;
+        }
+
+        &:not(.disabled) {
+            svg path {
+                stroke: var(--color-table-text-default);
+            }
+
+            &:hover {
+                svg path {
+                    stroke: #0599fc;
+                }
+            }
+        }
+
+        /* stylelint-disable-next-line no-descending-specificity */
+        &:not(.selected):not(.disabled) {
+            cursor: pointer;
+
+            &:hover {
+                color: #0599fc;
+            }
+        }
+
+        &.selected {
+            color: #0599fc;
+        }
+
+        &.next {
+            svg {
+                transform: scale(-1, 1);
+            }
+        }
+    }
+}

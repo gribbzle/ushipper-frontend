@@ -1,0 +1,41 @@
+.checking-contract-popup {
+    .popup__title {
+        width: 100%;
+    }
+
+    &--large {
+        width: 475px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__empty {
+        text-align: center;
+        color: var(--color-table-text-default);
+
+        .dots {
+            font-size: 28px;
+        }
+    }
+
+    &__head {
+        display: grid;
+        grid-template-columns: 1fr 16px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        line-height: 24px;
+    }
+
+    &__close {
+        cursor: pointer;
+        margin-top: 2px;
+        width: 16px;
+        height: 16px;
+        color: var(--color-button-text-default);
+    }
+}

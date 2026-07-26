@@ -1,0 +1,13 @@
+{
+    "incoming": "Top Up",
+    "outgoing": "Withdraw",
+    "context-incoming": "Top Up {{ context }} Wallet",
+    "context-outgoing": "Withdraw from  {{ context }} Wallet",
+    "internal-user-wallet": "Internal",
+    "factoring-wallet": "Factoring",
+    "ushipper-wallet": "Ushipper",
+    "dispatch-wallet": "Dispatch",
+    "cod-wallet": "COD",
+    "broker-wallet": "Broker Fee",
+    "custom-internal-wallet": "Custom"
+}

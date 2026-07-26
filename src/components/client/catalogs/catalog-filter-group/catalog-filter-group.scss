@@ -1,0 +1,42 @@
+.catalog-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__header {
+        display: flex;
+        gap: 6px;
+
+        color: var(--color-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        .icon-button {
+            padding: 0;
+        }
+
+        .icon-button:not(:hover) {
+            color: var(--color-text-default);
+        }
+    }
+
+    &__sub-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: var(--color-input-background-disabled);
+        padding: 16px 28px;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    &__sup-title {
+        font-size: 13px;
+        color: var(--color-text-default);
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,11 @@
+.order-contact-details {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > .divider,
+    &__full-name-field,
+    &__copy-contact {
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,35 @@
+.owners-and-drivers-table {
+    &__account-balance,
+    &__latest-location,
+    &__payment-details,
+    &__orders {
+        min-width: 150px;
+    }
+
+    &__fees {
+        min-width: 125px;
+    }
+
+    &__device-information {
+        min-width: 120px;
+    }
+
+    &__created-at,
+    &__updated-at {
+        min-width: 115px;
+    }
+
+    &__rating {
+        min-width: 200px;
+    }
+
+    .company-rating-with-review-count {
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    .phone-email-info__value {
+        white-space: nowrap;
+    }
+}

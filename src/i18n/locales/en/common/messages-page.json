@@ -1,0 +1,36 @@
+{
+    "head-title": "Messages | {{ projectName }}",
+    "title": "Messages",
+    "new-chat-button": "New Chat",
+    "chat-participant-info": {
+        "user-details-title": "User Details",
+        "user-name-label": "Username",
+        "mobile-label": "Mobile",
+        "email-label": "E-mail",
+        "no-phone-label": "No phone number",
+        "no-email-label": "Email details missing",
+        "active-orders-title": "Active Orders",
+        "no-orders-label": "No active orders yet"
+    },
+    "chat-block": {
+        "today": "Today"
+    },
+    "driver-chat-selector-popup": {
+        "title": "Select a Driver to Start a New Chat",
+        "driver-label": "Driver",
+        "start-chat": "Start Chat"
+    },
+    "delete-chat-message-popup": {
+        "title": "This action is irreversible and the message can't be restored.<br/>Delete this message?",
+        "delete-message": "Delete",
+        "close-popup": "Cancel"
+    },
+    "update-chat-message-popup": {
+        "title": "Edit your message",
+        "update-message": "Save Changes",
+        "close-popup": "Cancel"
+    },
+    "notifications": {
+        "choose-driver-chat-selector-error": "Failed to create or retrieve the chat with the selected driver."
+    }
+}

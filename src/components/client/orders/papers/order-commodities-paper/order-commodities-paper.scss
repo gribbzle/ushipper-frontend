@@ -1,0 +1,30 @@
+@import 'src/pages/breakpoints';
+
+.order-commodities-paper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--color-input-background-disabled);
+    border-radius: 8px;
+    padding: 16px;
+
+    &__header {
+        text-align: left;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__commodities-title {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__counter {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

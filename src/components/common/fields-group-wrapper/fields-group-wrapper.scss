@@ -1,0 +1,22 @@
+.fields-group-wrapper {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid var(--color-table-border);
+    border-radius: 8px;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        color: var(--color-table-text-default);
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}

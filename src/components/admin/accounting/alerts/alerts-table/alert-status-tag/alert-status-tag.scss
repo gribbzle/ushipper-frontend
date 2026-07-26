@@ -1,0 +1,23 @@
+.alert-status-tag {
+    &__dropdown-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .dropdown {
+            align-self: flex-start;
+        }
+    }
+
+    &__time {
+        line-height: 16px;
+        font-size: 12px;
+        color: var(--color-text-light);
+        font-weight: 400;
+    }
+}

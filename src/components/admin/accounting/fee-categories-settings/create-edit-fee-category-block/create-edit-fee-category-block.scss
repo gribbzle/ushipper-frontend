@@ -1,0 +1,52 @@
+.create-edit-fee-category-block {
+    width: 100%;
+    max-width: 764px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .form-control {
+            gap: 6px;
+
+            .input-label__text {
+                line-height: 16px;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__action,
+    &__default-value {
+        align-self: flex-start;
+    }
+
+    &__default-value {
+        width: 140px;
+    }
+
+    &__default-limit,
+    &__default-value--fixed {
+        width: 170px;
+
+        .currency-percentage-field__input {
+            width: 140px;
+        }
+
+        .currency-percentage-field__select {
+            width: 32px;
+
+            .react-select__value-container {
+                padding-left: 8px;
+            }
+        }
+    }
+}

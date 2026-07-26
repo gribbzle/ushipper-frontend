@@ -1,0 +1,32 @@
+.offer-vehicles {
+    &__vehicles {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        & > * {
+            display: flex;
+            gap: 12px;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__vehicle-title {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--color-table-text-default);
+    }
+
+    &__vehicle-vin {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--color-table-text-default);
+
+        span {
+            color: var(--color-text-default);
+            text-transform: uppercase;
+        }
+    }
+}

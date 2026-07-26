@@ -1,0 +1,23 @@
+.full-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+
+    &--error {
+        padding: 16px;
+        background: var(--color-error-background);
+        border: 1px solid var(--color-danger);
+        border-left: 5px solid var(--color-danger);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &--reverse {
+            flex-direction: column-reverse;
+        }
+    }
+}

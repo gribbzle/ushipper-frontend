@@ -1,0 +1,9 @@
+.mark-as-documents-requested-popup {
+    gap: 24px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

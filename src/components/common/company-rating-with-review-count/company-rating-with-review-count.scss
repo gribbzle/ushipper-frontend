@@ -1,0 +1,27 @@
+.company-rating-with-review-count {
+    display: flex;
+    gap: 4px;
+    color: var(--color-table-text-default);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+
+    .rating {
+        justify-content: flex-start;
+        gap: 4px;
+
+        &__empty-star:not(:last-child),
+        &__filled-star:not(:last-child) {
+            margin-right: 2px;
+        }
+    }
+
+    &--view {
+        &-old {
+            svg * {
+                color: var(--color-success);
+                fill: var(--color-success);
+            }
+        }
+    }
+}

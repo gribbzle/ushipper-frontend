@@ -1,0 +1,15 @@
+.alert-type-info {
+    color: var(--color-primary);
+
+    cursor: pointer;
+
+    &--disabled {
+        cursor: auto;
+        color: var(--color-table-text-default);
+        text-decoration: none;
+    }
+
+    &:not(&--disabled):hover {
+        text-decoration: underline;
+    }
+}

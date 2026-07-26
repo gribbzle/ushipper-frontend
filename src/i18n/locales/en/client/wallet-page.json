@@ -1,0 +1,37 @@
+{
+    "page-title": "Wallet Management | {{ projectName }}",
+    "header": "Wallet",
+    "wallet-empty-label": "You have no Wallet yet.",
+    "cash-out-button": "Cash Out",
+    "wallet-table": {
+        "no-data-description": "Try to add new or contact support",
+        "no-data-title": "You have no transactions yet",
+        "transaction-time-column-title": "Transaction Time",
+        "amount-column-title": "Amount",
+        "description-column-title": "Description",
+        "status-column-title": "Status"
+    },
+    "wallet-statistic-counter": {
+        "total-balance": "Total balance",
+        "pending-deposit": "Pending Deposit",
+        "pending-withdrawal": "Pending Withdrawal"
+    },
+    "filters": {
+        "all": "All",
+        "date-start": "Date start",
+        "date-end": "Date end",
+        "company": "Company",
+        "user": "User",
+        "transaction-type": "Transaction Type"
+    },
+    "cash-out-transaction-popup": {
+        "title": "Cash Out",
+        "amount": "Amount",
+        "to-financial-account": "To Financial Account",
+        "save-btn": "Save",
+        "cancel-btn": "Cancel"
+    },
+    "notifications": {
+        "upload-transactions-error": "An Error occurred while uploading the transactions."
+    }
+}

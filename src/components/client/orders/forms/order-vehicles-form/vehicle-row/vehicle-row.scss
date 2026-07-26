@@ -1,0 +1,18 @@
+.vehicle-row {
+    & > button {
+        margin: 8px 0 8px auto;
+        height: 24px;
+    }
+
+    & > .checkbox {
+        margin: 10px 0;
+    }
+
+    &__tip {
+        max-width: 200px;
+    }
+
+    &__tip-icon {
+        display: flex;
+    }
+}

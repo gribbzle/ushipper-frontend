@@ -1,0 +1,20 @@
+{
+    "add-contact-button": "Add Contact",
+    "save-contact-button": "Save",
+    "name-field-label": "Name",
+    "field-placeholder": "Please input something",
+    "address-field-label": "Address",
+    "city-field-label": "City",
+    "state-field-label": "State",
+    "zip-field-label": "ZIP",
+    "contact-name-field-label": "Contact Name",
+    "email-field-label": "Email",
+    "phone-field-label": "Phone",
+    "delete-contact-button": "Delete Contact",
+    "notes-field-label": "Internal Notes",
+    "my-orders-block-label": "Contact Details",
+    "edit-contact-head": "Edit Contact",
+    "admin-contact-head": "Contact Details",
+    "add-contact-head": "Add Contact",
+    "no-placeholder": ""
+}

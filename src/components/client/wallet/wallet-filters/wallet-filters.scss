@@ -1,0 +1,9 @@
+.wallet-filters {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+
+    & > * {
+        flex: 1;
+    }
+}

@@ -1,0 +1,19 @@
+.account-change-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &__label {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-text-light);
+    }
+
+    .react-select__value-container {
+        padding: 2px 8px;
+    }
+}

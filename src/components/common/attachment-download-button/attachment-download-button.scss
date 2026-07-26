@@ -1,0 +1,12 @@
+.attachment-download-button {
+    max-width: 160px;
+    border: 1px solid var(--color-table-border) !important;
+
+    &__label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 400;
+        color: var(--color-table-text-default);
+    }
+}

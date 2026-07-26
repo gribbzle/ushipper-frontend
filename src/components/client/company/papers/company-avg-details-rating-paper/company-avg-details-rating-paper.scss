@@ -1,0 +1,33 @@
+.company-avg-details-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .paper__body {
+        padding: 24px;
+    }
+
+    &__row {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-count {
+            color: var(--color-graphite-gray);
+        }
+    }
+
+    &__label {
+        color: var(--color-table-text-default);
+    }
+}

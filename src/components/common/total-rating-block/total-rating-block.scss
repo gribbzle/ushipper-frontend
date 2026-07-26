@@ -1,0 +1,30 @@
+.total-rating-block {
+    display: flex;
+    align-items: flex-start;
+    background: var(--color-input-background-disabled);
+
+    &--size {
+        &-default {
+            padding: 6px 12px;
+            gap: 8px;
+            justify-content: center;
+            border-radius: 18px;
+        }
+
+        &-large {
+            padding: 12px 16px;
+            justify-content: space-between;
+            align-self: stretch;
+            border-radius: 8px;
+        }
+    }
+
+    &__reviews-total {
+        display: flex;
+        gap: 8px;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+}

@@ -1,0 +1,57 @@
+.incoming-calling {
+    position: fixed;
+    top: calc(50vh - 170px);
+    left: calc(50vw - 150px);
+    padding: 8px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 4;
+
+    &__body {
+        position: relative;
+    }
+
+    &__text {
+        color: var(--color-text-dark);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__name {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__phone {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 8px 0;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+
+        button {
+            flex: 1;
+            justify-content: center;
+        }
+    }
+
+    &__close {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -20px;
+        right: -8px;
+    }
+}

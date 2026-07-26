@@ -1,0 +1,27 @@
+.parsed-order-details-drawer {
+    .drawer__body {
+        background-color: var(--color-page-background);
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        & > *:last-child {
+            position: sticky;
+            top: -16px;
+            flex: 1;
+        }
+    }
+
+    &__no-order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        color: var(--color-text-light);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+}

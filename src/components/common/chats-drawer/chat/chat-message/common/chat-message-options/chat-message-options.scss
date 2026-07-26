@@ -1,0 +1,12 @@
+.chat-message-options {
+    position: absolute;
+    background-color: transparent;
+    right: 0;
+    display: none;
+    z-index: 999;
+
+    &--open {
+        display: flex;
+        gap: 4px;
+    }
+}

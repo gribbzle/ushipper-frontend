@@ -1,0 +1,30 @@
+.loadboard-item-right-block {
+    display: flex;
+    gap: 12px;
+
+    &__buttons {
+        display: flex;
+        column-gap: 6px;
+    }
+
+    &__driver-request {
+        &-canceled,
+        &-send {
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 6px;
+        }
+
+        &-canceled {
+            color: var(--color-table-text-default);
+            font-weight: 400;
+        }
+
+        &-send {
+            color: var(--color-warning);
+            font-weight: 600;
+        }
+    }
+}

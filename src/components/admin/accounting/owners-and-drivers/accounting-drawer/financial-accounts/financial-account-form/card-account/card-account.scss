@@ -1,0 +1,9 @@
+.card-account {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    &__card-number {
+        grid-column: 1/3;
+    }
+}

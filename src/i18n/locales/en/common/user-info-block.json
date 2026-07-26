@@ -1,0 +1,4 @@
+{
+    "balance-label": "Balance: {{ balance }}",
+    "no-user-balance": "User has no Wallet!"
+}

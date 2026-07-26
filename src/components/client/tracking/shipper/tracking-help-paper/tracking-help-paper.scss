@@ -1,0 +1,140 @@
+.help-paper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    position: absolute;
+    bottom: 32px;
+    right: 16px;
+    z-index: 99;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.28);
+        border-radius: 50%;
+        color: var(--color-white);
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 8px;
+            height: 16px;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.32);
+        }
+
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.44);
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        &--hide.paper {
+            display: none;
+        }
+
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-sizing: border-box;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--color-text-default);
+        }
+
+        &-close {
+            cursor: pointer;
+            flex-shrink: 0;
+            align-self: center;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &-icon {
+            width: 11px;
+            height: 10px;
+
+            &--color {
+                &-secondary {
+                    color: var(--color-text-secondary);
+                }
+
+                &-sapphire {
+                    color: var(--color-sapphire);
+                }
+
+                &-lemon {
+                    color: var(--color-lemon);
+                }
+
+                &-gray {
+                    color: var(--color-border-default);
+                }
+
+                &-golden {
+                    color: var(--color-golden-rod);
+                }
+
+                &-green {
+                    color: var(--color-primary-green);
+                    fill: var(--color-primary-green);
+                }
+            }
+        }
+
+        &-block,
+        &-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-block {
+            gap: 20px;
+        }
+
+        &-details {
+            gap: 8px;
+
+            h4 {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+                color: var(--color-text-secondary);
+            }
+
+            &-legend {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                color: var(--color-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+
+                svg {
+                    width: 11px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import 'src/pages/breakpoints';
+
+.commodity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-text-default);
+
+    &--inline {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__name {
+        font-weight: 700;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        text-wrap: nowrap;
+
+        @include breakpoint(0, $tablet-portrait-max-width) {
+            max-width: 120px;
+        }
+    }
+
+    &__type {
+        font-weight: 600;
+        color: var(--color-table-text-default);
+    }
+
+    &__value {
+        color: var(--color-table-text-default);
+    }
+
+    &__ellipse {
+        width: 4px;
+        height: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-border-default);
+    }
+
+    span {
+        text-wrap: nowrap;
+    }
+}

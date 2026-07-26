@@ -1,0 +1,89 @@
+import React from 'react';
+import { toKebabCase } from 'js-convert-case';
+
+import { InspectionType, OrderStatus } from '@/enums';
+import { getOrderPriceWithTerms } from '@/utils/order';
+import { Button, Link, OrderTag } from '@components';
+import { useMeDriverRelated } from '@hooks';
+import { FlagIcon } from '@icons';
+import { classname, isFreightX, translateByNamespace, translateOrderStatus, translateShipperCancelledOrderStatus } from '@utils';
+
+import { DriverPayInfo } from './driver-pay-info/driver-pay-info';
+import { DriverOrderPrice } from './driver-order-price';
+import { useOrderItemHeader } from './hooks';
+import { OrderItemHeaderProps } from './types';
+
+const translateOrderItem = translateByNamespace('client:orders-page:order-item');
+const cn = classname('order-item');
+
+export const OrderItemHeader = ({
+    orderId,
+    inspectionType,
+    status,
+    paymentInformation,
+    Tag,
+    fundsTransferStatus,
+    instantTermPaymentType,
+    orderPublicId,
+    isFlagged,
+    shipperOrder,
+    driverFeeCharge,
+    driverDelayedPayment,
+    externalContractChangedAt,
+    driverOrderPrice,
+}: OrderItemHeaderProps) => {
+    const { totalAmount, delayedTerms, terms, isCarrier, handleUnFlaggedClick } = useOrderItemHeader({ paymentInformation, orderPublicId });
+    const isDriver = useMeDriverRelated();
+
+    return (
+        <div className={cn('order-info')}>
+            <Link
+                href={{
+                    pathname: '/client/orders/[order-id]',
+                    query: { ['order-id']: orderPublicId },
+                }}
+                as={`/orders/${orderPublicId}`}
+            >
+                {/*{TODO STYLE LINK AND REMOVE BUTTON }*/}
+                <Button size='small'>
+                    {translateOrderItem('order-id-label')}: {orderId ?? 'None'}
+                </Button>
+            </Link>
+
+            {!isFreightX && inspectionType === InspectionType.ADVANCED && (
+                <OrderTag view='advanced'>{translateOrderItem('advanced-inspection-type-label')}</OrderTag>
+            )}
+            {Tag || <OrderTag view={toKebabCase(status)}>{translateOrderStatus(status)}</OrderTag>}
+            {isCarrier && shipperOrder?.status === OrderStatus.CANCELED && (
+                <OrderTag view={toKebabCase(shipperOrder.status)}>{translateShipperCancelledOrderStatus()}</OrderTag>
+            )}
+            {isCarrier && externalContractChangedAt && <OrderTag view='source-danger'>{translateOrderItem('changed-by-broker')}</OrderTag>}
+            {!isDriver && (
+                <>
+                    {totalAmount > 0 && (terms || delayedTerms) && <p className={cn('price')}>{getOrderPriceWithTerms(totalAmount, [terms, delayedTerms])}</p>}
+                    <DriverPayInfo
+                        status={status}
+                        fundsTransferStatus={fundsTransferStatus}
+                        driverFeeCharge={driverFeeCharge}
+                        driverDelayedPayment={driverDelayedPayment}
+                        paymentInformation={paymentInformation}
+                        instantTermPaymentType={instantTermPaymentType}
+                    />
+                </>
+            )}
+            {isDriver && (
+                <DriverOrderPrice
+                    paymentInformation={paymentInformation}
+                    driverDelayedPayment={driverDelayedPayment}
+                    orderPrice={driverOrderPrice}
+                    instantTermPaymentType={instantTermPaymentType}
+                />
+            )}
+            {isFlagged && (
+                <div className={cn('flag-wrapper', { flagged: isFlagged })} onClick={handleUnFlaggedClick}>
+                    <FlagIcon />
+                </div>
+            )}
+        </div>
+    );
+};

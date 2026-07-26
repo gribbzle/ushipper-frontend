@@ -1,0 +1,18 @@
+.loadboard-page-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &__save-filters-btn {
+        margin-left: 12px;
+    }
+
+    &__form {
+        display: none;
+        gap: 12px;
+
+        &--show {
+            display: flex;
+        }
+    }
+}

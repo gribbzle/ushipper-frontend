@@ -1,0 +1,23 @@
+{
+    "required": "This field is required",
+    "phone-number": "Phone number is invalid",
+    "email": "Email is invalid",
+    "link": "Link is invalid",
+    "passwords-do-not-match": "Passwords do not match",
+    "invalid-date": "Date is invalid",
+    "date-not-after-today": "The date must be a date after today.",
+    "date-not-before-today": "The date must be a date before today.",
+    "end-date-must-be-after-start-date": "The end date must be later than or equal to the start date.",
+    "tax-id": "Tax ID must contain exactly nine digits",
+    "required-all-address": "All {{ type }} address fields are required if one is filled",
+    "account-number": "Account numbers must match",
+    "expiry-length": "The expiration date must be in the format MM/YYYY.",
+    "expiry-format": "Please enter a valid expiration date in the format {{ format }}.",
+    "expiry-past": "The expiration date cannot be in the past.",
+    "range-length": "The value  must be between {{ min }} and {{ max }}.",
+    "invalid-card-number": "Card Number is invalid.",
+    "name": "The field can only contain letters and dashes",
+    "name-with-spaces": "The field can only contain letters, dashes and spaces.",
+    "name-with-numbers-spaces": "The field can only contain letters, dashes, spaces and numbers",
+    "positive-number": "The value must be a positive number"
+}

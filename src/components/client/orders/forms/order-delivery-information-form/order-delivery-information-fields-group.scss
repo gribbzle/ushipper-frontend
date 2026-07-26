@@ -1,0 +1,16 @@
+.order-delivery-information-fields-group {
+    &__scheduled-delivery-at-field {
+        grid-column: 1 / 2;
+    }
+
+    &__date-type {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    &__notes-field,
+    &__contact-address,
+    &__contact-details {
+        grid-column: 1 / 4;
+    }
+}

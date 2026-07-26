@@ -1,0 +1,81 @@
+.accordion {
+    position: relative;
+    border: 1px solid var(--color-button-border-default);
+    border-radius: 4px;
+
+    &__head {
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        .accordion--open > & {
+            border-bottom: 1px solid var(--color-button-border-default);
+        }
+
+        &--reverse {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+
+        &-carret {
+            display: flex;
+            margin-right: 16px;
+            align-items: center;
+            transition: 0.3s;
+
+            svg {
+                $size: 14px;
+
+                width: $size;
+                height: $size;
+            }
+
+            &--size {
+                &-large {
+                    svg {
+                        $size: 24px;
+
+                        width: $size;
+                        height: $size;
+                    }
+                }
+            }
+
+            &--open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &-right-addon {
+            position: absolute;
+            right: 16px;
+        }
+    }
+
+    &__body {
+        max-height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+
+        .accordion--open > & {
+            max-height: 2000px;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        &-margin {
+            padding: 24px;
+        }
+
+        &--on-top {
+            position: absolute;
+            top: auto; 
+            bottom: 100%; 
+            min-width: 100%;
+        }
+    }
+}

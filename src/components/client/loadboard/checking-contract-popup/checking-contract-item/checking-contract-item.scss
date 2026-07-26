@@ -1,0 +1,62 @@
+.checking-contract-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-table-border);
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(235, 238, 245, 0.3);
+
+    &__content {
+        padding: 12px 16px;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            p {
+                line-height: 18px;
+            }
+        }
+
+        &-order {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: var(--color-text-light);
+        }
+    }
+
+    &__signed {
+        padding-top: 12px;
+        color: var(--color-success);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__footer {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        background-color: var(--color-input-background-disabled);
+        padding: 8px 16px;
+    }
+
+    .parsed-order-route__route-details-wrapper {
+        width: 178px !important;
+    }
+}

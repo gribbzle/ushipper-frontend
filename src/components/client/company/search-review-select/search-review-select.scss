@@ -1,0 +1,27 @@
+.search-review-select {
+    .custom-rating {
+        justify-content: left;
+        gap: 0;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &--label {
+            color: var(--color-table-text-default);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+
+    .react-select__option--is-selected .search-review-select {
+        &__option {
+            &--label {
+                color: var(--color-primary);
+            }
+        }
+    }
+}

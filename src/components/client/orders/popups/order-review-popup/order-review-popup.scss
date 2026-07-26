@@ -1,0 +1,39 @@
+.order-review-popup {
+    .popup__title,
+    .popup__description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .popup__description {
+        gap: 24px;
+    }
+
+    &__rating-total {
+        display: flex;
+        padding: 6px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 18px;
+        background: var(--color-input-background-disabled);
+    }
+
+    &__reviews-total {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    &__alert {
+        display: flex;
+        gap: 4px;
+    }
+}
+
+.popup.order-review-popup {
+    gap: 32px;
+    width: 494px;
+}

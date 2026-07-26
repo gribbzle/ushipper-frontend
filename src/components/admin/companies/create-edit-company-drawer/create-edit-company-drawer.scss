@@ -1,0 +1,19 @@
+.create-edit-company-drawer {
+    form {
+        width: 100%;
+
+        & > div {
+            margin-bottom: 16px;
+        }
+    }
+
+    .drawer__body {
+        display: block;
+    }
+
+    &__action-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

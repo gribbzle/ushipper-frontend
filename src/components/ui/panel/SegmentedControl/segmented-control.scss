@@ -1,0 +1,72 @@
+.segmented-control {
+    --highlight-width: auto;
+    --highlight-x-pos: 0;
+
+    display: flex;
+
+    &__controls {
+        display: inline-flex;
+        justify-content: space-between;
+        background: var(--color-table-border);
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30);
+        border-radius: 32px;
+        padding: 4px;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: var(--color-white);
+            border-radius: 22px;
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
+            width: var(--highlight-width);
+            transform: translateX(var(--highlight-x-pos));
+            box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.04);
+            position: absolute;
+            top: 4px;
+            bottom: 4px;
+            left: 0;
+            z-index: 0;
+        }
+
+        &.ready::before {
+            transition: transform 0.3s ease, width 0.3s ease;
+        }
+
+        input {
+            opacity: 0;
+            margin: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            cursor: pointer;
+            height: 100%;
+        }
+    }
+
+    &__segment {
+        min-width: 156px;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+
+        &--auto-w {
+            min-width: initial;
+            padding: 0 8px !important;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 8px;
+            color: var(--color-button-text-default);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+    }
+}

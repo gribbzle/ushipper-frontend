@@ -1,0 +1,45 @@
+.full-checking-contract-offer-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__text {
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--color-table-text-default);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .react-select__menu {
+            height: 100px;
+            overflow-y: auto;
+        }
+
+        &--sd-content {
+            .react-select__menu {
+                height: unset;
+            }
+        }
+
+        &--reverse {
+            flex-direction: column-reverse;
+
+            .react-select__menu {
+                height: unset;
+                max-height: unset;
+            }
+        }
+
+        &-scroll {
+            padding-right: 6px;
+            max-height: 54vh;
+            box-sizing: border-box;
+            flex: 1 1;
+            overflow-y: auto;
+        }
+    }
+}

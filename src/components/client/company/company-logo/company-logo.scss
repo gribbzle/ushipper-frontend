@@ -1,0 +1,14 @@
+.company-logo {
+    $size: 200px;
+
+    position: relative;
+    margin: auto;
+    width: $size;
+    height: $size;
+
+    img {
+        object-fit: contain;
+        width: $size;
+        height: $size;
+    }
+}

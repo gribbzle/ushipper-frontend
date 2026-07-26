@@ -1,0 +1,52 @@
+{
+    "page-title": "Black List | {{ projectName }}",
+    "header": "Black List",
+    "header-add-company-btn": "Add Company",
+    "search-by-name-filter-placeholder": "Search by Name or MC Number",
+    "table": {
+        "columns": {
+            "name": "Name",
+            "mc": "MC",
+            "terms": "Terms",
+            "notes": "Notes",
+            "created-at": "Created At",
+            "updated-at": "Updated At"
+        },
+        "actions": {
+            "delete": "Delete",
+            "edit": "Edit"
+        },
+        "empty-message": "The companies black list is empty.",
+        "empty-terms": "None"
+    },
+    "create-edit-drawer": {
+        "add-drawer-title": "Add Company to Black-List",
+        "actions": {
+            "save": "Save",
+            "delete": "Delete"
+        },
+        "fields": {
+            "name-label": "Name",
+            "mc-label": "MC Number",
+            "notes-label": "Notes",
+            "terms-switch-label": "Hide from Loadboard using specific terms",
+            "terms-label": "Terms",
+            "roles-switch-label": "Hide from Loadboard for specific Roles",
+            "roles-label": "Roles",
+            "drivers-option-label": "Drivers",
+            "dispatchers-option-label": "Dispatchers"
+        }
+    },
+    "delete-popup": {
+        "title": "Delete {{ name }}?",
+        "delete-action": "Delete",
+        "cancel-action": "Cancel"
+    },
+    "notifications": {
+        "created-successfully": "The company has been successfully created",
+        "updated-successfully": "The company has been successfully updated",
+        "deleted-successfully": "The company has been successfully updated",
+        "update-failed": "An Error occurred when saving this company",
+        "delete-failed": "An Error occurred when deleting this company"
+    }
+}

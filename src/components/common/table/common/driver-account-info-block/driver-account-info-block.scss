@@ -1,0 +1,75 @@
+.driver-info-block {
+    display: flex;
+    flex-direction: column;
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__role {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-table-text-default);
+    }
+
+    &__role-and-link {
+        display: flex;
+        gap: 4px;
+    }
+
+    &__name-and-button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: 160px;
+
+        &--margin {
+            margin-bottom: 2px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-table-text-default);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &--hovered {
+            color: var(--color-primary);
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+
+        &--disabled {
+            cursor: auto;
+            color: var(--color-table-text-default);
+            text-decoration: none;
+        }
+
+        &--owner {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    &__driver-owner {
+        display: flex;
+        gap: 4px;
+        margin-left: 48px;
+        min-width: 190px;
+    }
+}

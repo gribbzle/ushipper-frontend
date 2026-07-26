@@ -1,0 +1,32 @@
+.order-driver-assign-item {
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-text-default);
+    }
+
+    &__phone,
+    &__vehicles {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+
+        svg {
+            $size: 14px;
+
+            height: $size;
+            width: $size;
+        }
+    }
+
+    .assign-item__content {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

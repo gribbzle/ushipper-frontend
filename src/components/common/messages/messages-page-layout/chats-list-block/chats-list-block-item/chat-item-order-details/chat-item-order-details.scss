@@ -1,0 +1,32 @@
+.chat-item-order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--color-text-default);
+
+    &__row {
+        display: flex;
+        gap: 4px;
+        max-width: 235px;
+    }
+
+    &__details {
+        color: var(--color-table-text-default);
+        font-weight: 600;
+    }
+
+    &__order {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .order-tag {
+        display: inline-flex;
+    }
+}

@@ -1,0 +1,39 @@
+.driver-parent-info {
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--color-text-light);
+
+        &--success:not(&--disabled) {
+            color: var(--color-success);
+        }
+
+        &--awaiting:not(&--disabled) {
+            color: var(--color-warning);
+        }
+
+        &--danger:not(&--disabled) {
+            color: var(--color-red);
+        }
+
+        &--size-small {
+            font-size: 12px;
+        }
+    }
+
+    &__parent {
+        &--hover:not(&--disabled) {
+            color: var(--color-primary);
+        }
+
+        &--hover:not(&--disabled),
+        &--disabled {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

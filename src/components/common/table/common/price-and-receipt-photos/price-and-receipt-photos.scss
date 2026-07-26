@@ -1,0 +1,12 @@
+.price-and-receipt-photos {
+    &__price {
+        &:not(&--disabled) {
+            color: var(--color-primary);
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

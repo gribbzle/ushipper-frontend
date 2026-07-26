@@ -1,0 +1,11 @@
+.company-overall-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__rating-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

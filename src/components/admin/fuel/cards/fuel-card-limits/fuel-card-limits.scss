@@ -1,0 +1,9 @@
+.fuel-card-limits {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .row-item__value {
+        text-wrap: nowrap;
+    }
+}

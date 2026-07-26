@@ -1,0 +1,17 @@
+.dispatcher-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+
+    &__business-hours {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--color-text-light);
+    }
+
+    .info-list-body__tags {
+        gap: 12px;
+    }
+}

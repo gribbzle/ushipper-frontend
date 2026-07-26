@@ -1,0 +1,18 @@
+.load-board-order-commodities-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__view-more {
+        background: none;
+        width: fit-content;
+        color: var(--color-primary);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        border: none;
+        padding: 0;
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+}

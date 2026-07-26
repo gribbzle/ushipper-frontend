@@ -1,0 +1,152 @@
+.offer-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .order-item-info-column {
+        gap: 6px;
+    }
+
+    .offer-vehicles__vehicle-title {
+        color: var(--color-text-default);
+    }
+
+    .offer-vehicles__vehicle-vin span {
+        color: var(--color-table-text-default);
+    }
+
+    .commodity-details__name {
+        max-width: 150px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .chat {
+            flex: 1;
+            height: auto;
+            width: auto;
+            box-shadow: none;
+            border: 1px solid var(--color-table-border);
+
+            .chat__info {
+                display: none;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 16px;
+
+        & > * {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
+    &__title {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--color-table-text-default);
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__order {
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__payment-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__payment {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-text-default);
+    }
+
+    &__distance {
+        margin-top: -6px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+    }
+
+    &__price-distance {
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--color-table-text-default);
+    }
+
+    &__to-carrier {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--color-primary);
+    }
+
+    &__carrier-info {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--color-table-text-default);
+
+        svg {
+            width: 12px;
+            height: 12px;
+            padding: 3px 0;
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__carrier-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__to-carrier:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__value {
+        font-size: 14px;
+        line-height: 18px;
+
+        a {
+            text-decoration: none;
+            color: var(--color-table-text-default);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

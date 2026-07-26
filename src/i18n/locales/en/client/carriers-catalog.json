@@ -1,0 +1,5 @@
+{
+    "page-title": "Carriers Management | {{ projectName }}",
+    "header": "Carriers",
+    "empty": "There are no Carriers <br/> matching your search criteria."
+}

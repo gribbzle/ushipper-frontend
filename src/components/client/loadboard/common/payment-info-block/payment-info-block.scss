@@ -1,0 +1,25 @@
+.payment-info-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .order-item-info-column {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-text-default);
+    }
+
+    &__payment-per-distance {
+        color: var(--color-table-text-default);
+        font-size: 12px;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+    }
+}

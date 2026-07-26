@@ -1,0 +1,92 @@
+.switch-input {
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+
+    &__warning {
+        width: 100%;
+        margin-top: 4px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-danger);
+    }
+
+    &__control {
+        display: inline-block;
+        background: var(--color-border-default);
+        border-radius: 16px;
+        width: 40px;
+        height: 20px;
+        position: relative;
+        vertical-align: middle;
+        transition: background 0.25s;
+        flex-shrink: 0;
+
+        &::before,
+        &::after {
+            content: '';
+        }
+
+        &::before {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+            display: block;
+            background: var(--color-white);
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: left 0.25s;
+        }
+    }
+
+    input[type='checkbox'] {
+        position: absolute;
+        visibility: hidden;
+        margin: 0;
+
+        &:not(:disabled):checked + span {
+            background: var(--color-primary);
+        }
+
+        &:disabled:checked + span {
+            background: #a0cfff;
+        }
+
+        &:checked + span::before {
+            left: 22px;
+        }
+    }
+
+    &__label {
+        display: inline;
+        color: var(--color-text-default);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        user-select: none;
+        background: transparent;
+
+        &--disabled {
+            color: rgba(31, 47, 61, 0.3);
+        }
+    }
+
+    &--view-primary-green {
+        input[type='checkbox'] {
+            &:not(:disabled):checked + span {
+                background: var(--color-primary-green);
+            }
+
+            &:disabled:checked + span {
+                background: var(--color-primary-green-hover);
+            }
+        }
+    }
+}

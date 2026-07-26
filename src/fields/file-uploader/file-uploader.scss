@@ -1,0 +1,106 @@
+.file-uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 24px 32px;
+    border: 1px dashed var(--color-border-default);
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.24s ease-in-out, background-color 0.24s ease-in-out;
+
+    &:hover {
+        border-color: var(--color-primary);
+        background: var(--color-primary-button-background-plain);
+        cursor: pointer;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-primary);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+
+        svg {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+        }
+    }
+
+    &__arrow-icon {
+        &--rotate {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__show-more-btn {
+        padding: 0 20px;
+    }
+
+    &__file {
+        padding: 4px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: var(--color-table-text-default);
+        font-size: 14px;
+        border-radius: 4px;
+
+        & > svg {
+            $size: 16px;
+
+            width: $size;
+            height: $size;
+            flex-shrink: 0;
+        }
+
+        & > button {
+            padding: 0;
+            margin-left: auto;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: var(--color-input-background-disabled);
+            color: var(--color-primary);
+
+            svg {
+                path {
+                    stroke: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    &__label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__hint {
+        color: var(--color-input-placeholder);
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__success-icon {
+        color: var(--color-text-success);
+    }
+}

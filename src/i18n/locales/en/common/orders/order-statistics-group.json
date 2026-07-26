@@ -1,0 +1,12 @@
+{
+    "aging-orders": "Aging Orders",
+    "delayed-pick-ups": "Delayed Pick Ups",
+    "delayed-deliveries": "Delayed Deliveries",
+    "to-pick-up-today": "To Pick Up Today",
+    "to-deliver-today": "To Deliver Today",
+    "aging-orders-tooltip": "Orders created more than 5 days ago and have not been assigned to any driver",
+    "delayed-pick-ups-tooltip": "Orders assigned to a driver and scheduled pickup date has already passed",
+    "delayed-deliveries-tooltip": "Orders assigned to a driver and scheduled delivery date has already passed",
+    "to-pick-up-today-tooltip": "Orders scheduled to be picked up today",
+    "to-deliver-today-tooltip": "Orders scheduled to be delivered today"
+}

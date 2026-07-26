@@ -1,0 +1,13 @@
+.address-input {
+    width: 100%;
+
+    .autocomplete-input__suggestions-container {
+        width: 270px;
+    }
+
+    &--large {
+        .autocomplete-input__suggestions-container {
+            width: 296px;
+        }
+    }
+}
