@@ -172,7 +172,7 @@ export const usersApi = apiSlice.injectEndpoints({
             query: params => ({
                 url: 'users/tracking',
                 method: 'GET',
-                params,
+                params: Object.fromEntries(Object.entries(params ?? {}).filter(([, value]) => value !== '' && value !== undefined && value !== null)),
             }),
             transformResponse: (response: AxiosResponse<PaginatedResponse<UserTracking[]>>): UserTracking[] => {
                 const userTracking = response.data.data;
