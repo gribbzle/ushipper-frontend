@@ -1,14 +1,17 @@
-version: '3.7'
-
 services:
   client:
-    image: node:16.14-alpine
-    command: sh -c "${NODE_COMMAND}"
+    build: .
     container_name: client
-    working_dir: /app
-    volumes:
-      - ./:/app/
     ports:
       - "3000:3000"
     environment:
-      - NODE_OPTIONS=--max-old-space-size=4096
+      - NODE_ENV=development
+      - NODE_COMMAND=${NODE_COMMAND}
+      - API_BASE_URL=${API_BASE_URL}
+      - MAPBOX_TOKEN=${MAPBOX_TOKEN}
+      - PROJECT_NAME=${PROJECT_NAME}
+    volumes:
+      - ./src:/application/src
+      - ./server:/application/server
+      - ./public:/application/public
+    restart: unless-stopped

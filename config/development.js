@@ -1,5 +1,5 @@
 const port = process.env.PORT || 3000;
-const apiBaseUrl = process.env.API_BASE_URL || 'https://api.ushipper.generals-soft.com/';
+const apiBaseUrl = process.env.API_BASE_URL;
 
 module.exports = {
     client: {

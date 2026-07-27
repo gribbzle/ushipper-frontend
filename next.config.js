@@ -4,7 +4,7 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 const { withSentryConfig } = require('@sentry/nextjs');
 
 const uShipperConfig = {
-    name: 'Ushipper',
+    name: 'uShipper',
     productMapping: {
         dataField: 'vehicles',
         components: {
@@ -68,7 +68,7 @@ const nextConfig = {
         productMapping: projectConfig.productMapping,
     },
     images: {
-        domains: ['api.ushipper.generals-soft.com'],
+        domains: [],
     },
     webpack(config) {
         // TURN FCKNG OFF THE CSS MODULES
@@ -111,7 +111,7 @@ const nextConfig = {
 };
 
 const sentryWebpackPluginOptions = {
-    org: 'general-soft',
+    org: 'gribbzle',
     project: `${projectName}-frontend`,
     silent: true,
     widenClientFileUpload: true,
