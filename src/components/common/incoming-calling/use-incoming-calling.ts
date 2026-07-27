@@ -1,17 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { useAppDispatch, useAppSelector } from '@store';
-import { useGetTokenQuery } from '@store/api/twilio-api';
+import { useAppDispatch } from '@store';
 import { loadboardActions } from '@store/client/loadboard';
 import { twilioActions } from '@store/common/twilio';
-import { authorizedUserSelector } from '@store/global';
 import { Call, Device } from '@twilio/voice-sdk';
 
 import { IncomingCallParameters } from './incoming-calling.types';
 
 export const useIncomingCalling = () => {
-    const user = useAppSelector(authorizedUserSelector);
-    const { data: twilioToken } = useGetTokenQuery(undefined, { skip: !user });
+    // const user = useAppSelector(authorizedUserSelector);
+    const twilioToken = undefined;
+    // const { data: twilioToken } = useGetTokenQuery(undefined, { skip: !user });
     const dispatch = useAppDispatch();
     const [isPopupVisible, setIsPopupVisible] = useState(false);
     const [phoneNumber, setPhoneNumber] = useState('');

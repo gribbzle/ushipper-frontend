@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import { useCreateParsedOrderCall } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
-import { useGetTokenQuery } from '@store/api/twilio-api';
 import { loadboardActions } from '@store/client/loadboard/slice';
 import { authorizedUserSelector } from '@store/global';
 import { Call, Device } from '@twilio/voice-sdk';
@@ -17,7 +16,7 @@ const t = translateByNamespace('client:loadboard:calling');
 export const useTwilioCall = (loadBoardFilters: LoadBoardFilters | null) => {
     const dispatch = useAppDispatch();
     const user = useAppSelector(authorizedUserSelector);
-    const { data: twilioToken } = useGetTokenQuery(undefined, { skip: !user });
+    const twilioToken = undefined;
     const { formattedDuration, handleStop, handleStart } = useDuration();
     const createParsedOrderCall = useCreateParsedOrderCall();
 
