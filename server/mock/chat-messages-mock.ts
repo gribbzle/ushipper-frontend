@@ -9,7 +9,7 @@ export const registerChatMessagesMock = (server: FastifyInstance) => {
                     system_message_type: null,
                     creator: {
                         name: 'Sarah Davis',
-                        avatar: 'http://ushipper.local/default-images/avatar.jpg',
+                        avatar: 'http://localhost:80/default-images/avatar.jpg',
                         role_name: 'ShipperAdmin',
                     },
                     content: 'Good idea',
@@ -18,13 +18,13 @@ export const registerChatMessagesMock = (server: FastifyInstance) => {
                     attachments: [
                         {
                             public_id: '9915f471-6599-42f5-82f3-ff51128bff01',
-                            url: 'http://ushipper.local/default-images/image.png',
+                            url: 'http://localhost:80/default-images/image.png',
                             name: 'image.png',
                             extension: 'png',
                             size: 1048576,
                             creator: {
                                 name: 'Sarah Davis',
-                                avatar: 'http://ushipper.local/default-images/avatar.jpg',
+                                avatar: 'http://localhost:80/default-images/avatar.jpg',
                                 role_name: 'ShipperAdmin',
                             },
                             created_at: '2023-04-29T16:57:48Z',
@@ -34,11 +34,11 @@ export const registerChatMessagesMock = (server: FastifyInstance) => {
                 },
             ],
             links: {
-                prev: 'http://ushipper.local/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
-                next: 'http://ushipper.local/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
+                prev: 'http://localhost:80/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
+                next: 'http://localhost:80/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
             },
             meta: {
-                path: 'http://ushipper.local/api/something',
+                path: 'http://localhost:80/api/something',
                 per_page: 1,
                 next_cursor: 'eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9',
                 prev_cursor: 'eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9',

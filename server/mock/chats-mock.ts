@@ -17,7 +17,7 @@ export const registerChatsMock = (server: FastifyInstance) => {
                         system_message_type: null,
                         creator: {
                             name: 'Sarah Davis',
-                            avatar: 'http://ushipper.local/default-images/avatar.jpg',
+                            avatar: 'http://localhost:80/default-images/avatar.jpg',
                             role_name: 'ShipperAdmin',
                         },
                         content: 'Good idea',
@@ -27,11 +27,11 @@ export const registerChatsMock = (server: FastifyInstance) => {
                 },
             ],
             links: {
-                prev: 'http://ushipper.local/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
-                next: 'http://ushipper.local/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
+                prev: 'http://localhost:80/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
+                next: 'http://localhost:80/api/something?cursor=eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9&other_parameters',
             },
             meta: {
-                path: 'http://ushipper.local/api/something',
+                path: 'http://localhost:80/api/something',
                 per_page: 1,
                 next_cursor: 'eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9',
                 prev_cursor: 'eyJoaXN0b3J5X2l0ZW1zLmlkIjoxLCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9',
