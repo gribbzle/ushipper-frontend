@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { ExpenseTypesSelect } from '@/components/common/expense-types-select/expense-types-select';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { ExpenseTypeEnum } from '@/enums';
-import { ExpenseTypesSelect, IconButton } from '@components';
 import { CheckboxInput, DatePicker, FieldPrefix, FormControl, PrefixedField, SimpleFileUploader, TextField } from '@fields';
 import { TrashIcon } from '@icons';
 import { OrderFormState } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './expense.scss';

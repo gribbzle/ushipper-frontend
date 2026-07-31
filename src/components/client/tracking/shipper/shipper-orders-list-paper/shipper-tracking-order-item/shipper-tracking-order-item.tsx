@@ -10,18 +10,12 @@ import { useDeliveryMetrics } from '@hooks';
 import { HorizontalDotsIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, ShipperTrackingOrder, trackingActions, User } from '@store/client';
-import {
-    classname,
-    formatToCurrency,
-    getFormattedAverageSpeed,
-    getFormattedDeliveryTime,
-    getTrackingDriverAverageSpeed,
-    isFreightX,
-    isTrackingOrderNotDispatched,
-    isTrackingOrderPickedUp,
-    isUshipper,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { isFreightX, isUshipper } from '@utils/project-config';
+import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
+import { getFormattedAverageSpeed, getFormattedDeliveryTime, getTrackingDriverAverageSpeed } from '@utils/tracking/tracking-driver-helpers';
 
 import { ActiveRequests } from '../../active-requests';
 import { CommoditiesTotalInfo } from '../../commodities-total-info';

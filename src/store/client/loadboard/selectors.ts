@@ -1,5 +1,9 @@
-import { AppState } from '@store';
-import { BetweenPhonesChatDrawerState, CheckingContractPopup, LoadboardList, LoadboardNoticePopup, SavedSearches } from '@store/client/loadboard';
+type AppState = {
+    client: {
+        loadboard: any;
+    };
+};
+import { BetweenPhonesChatDrawerState, CheckingContractPopup, LoadboardList, LoadboardNoticePopup, SavedSearches } from './types';
 
 const loadboardSelector = (state: AppState) => state.client.loadboard;
 

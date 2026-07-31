@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useUpdateUserFormDataMutation } from '@store/api/users-api';
 import { authorizedUserSelector, globalActions } from '@store/global';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { PersonalInfoFormType as PersonalInfoFormState } from './personal-info-form.types';
 

@@ -1,9 +1,15 @@
 import React, { useCallback, useMemo } from 'react';
 import { format } from 'date-fns';
 
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@components';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { Ellipse } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './request-dates.scss';
 

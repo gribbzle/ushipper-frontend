@@ -6,12 +6,13 @@ import { toast } from 'react-toastify';
 import { TransactionStatusesEnum } from '@/enums';
 import { RequestError } from '@/shared';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { CancelRollbackTransactionFormState } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, cancelRollbackTransactionPopupPropsSelector } from '@store/admin';
 import { balancesApi } from '@store/api/balances-api';
 import { transactionsApi, useUpdateTransactionMutation } from '@store/api/transactions-api';
-import { translateTransactionStatusError, translateTransactionStatusSuccess } from '@utils';
+import { translateTransactionStatusError, translateTransactionStatusSuccess } from '@utils/translate/accounting/notification-translations';
+
+import { CancelRollbackTransactionFormState } from './cancel-rollback-transaction-popup-types';
 
 export const useCancelRollbackTransactionPopup = () => {
     const dispatch = useAppDispatch();

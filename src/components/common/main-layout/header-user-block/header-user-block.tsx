@@ -2,13 +2,14 @@ import React, { useCallback, useMemo, useRef } from 'react';
 import JsCookie from 'js-cookie';
 import { useSelector } from 'react-redux';
 
-import { Avatar } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
 import { UserRoleType } from '@/enums';
 import { useAppDispatch } from '@store';
 import { backToAdminSubmit } from '@store/client';
 import { notificationsActions } from '@store/common';
 import { authorizedUserSelector, revokeTokenAction } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Dropdown } from '../../dropdown';
 

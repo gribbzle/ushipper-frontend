@@ -4,7 +4,8 @@ import { Button } from '@/components/common/button';
 import { PencilWithLineIcon, TrashIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { deleteMessageRequestStatusSelector, messagesActions, sendMessageRequestStatusSelector } from '@store/common';
-import { classname, RequestStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { RequestStatus } from '@utils/redux';
 
 import './chat-message-options.scss';
 

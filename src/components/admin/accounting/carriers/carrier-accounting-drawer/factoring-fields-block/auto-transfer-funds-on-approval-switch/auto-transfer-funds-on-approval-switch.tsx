@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FormControl, NativeSwitch, NativeSwitchProps, PrefixedField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer:factoring');
 

@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { Button, Popup } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AddFuelCardToDriverForm } from './add-fuel-card-to-driver-form';
 import { useAddFuelCardToDriverPopup } from './use-add-fuel-card-to-driver-popup';

@@ -1,6 +1,6 @@
 import { CompanyType, OrderSortingDirection } from '@/enums';
-import { Review } from '@store/client';
-import { PaginatedResponse } from '@utils';
+import { Review } from '@store/client/review/types';
+import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

@@ -1,14 +1,17 @@
 import React, { ReactNode, RefObject, useMemo, useRef } from 'react';
 
-import { Avatar, Dropdown } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { SystemIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { chatExternalNumberSelector } from '@store/client';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { authorizedUserAccountPublicIdSelector } from '@store/global';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { ChatMessageOptions } from '../chat-message-options';
 import { ChatMessageOrder } from '../chat-message-order';

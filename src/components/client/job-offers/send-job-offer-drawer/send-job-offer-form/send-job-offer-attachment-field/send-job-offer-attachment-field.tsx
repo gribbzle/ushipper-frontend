@@ -1,11 +1,14 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
+import { FileItem, FileUploaderField } from '@/fields/file-uploader/file-uploader-field';
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { Button, Popup } from '@components';
-import { FileItem, FileUploaderField } from '@fields';
 import { BinIcon } from '@icons';
-import { classname, convertBytesToMB, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertBytesToMB } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useSendJobOfferAttachmentField } from './use-send-job-offer-attachment-field';
 

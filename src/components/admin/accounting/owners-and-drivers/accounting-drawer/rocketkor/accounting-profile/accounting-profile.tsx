@@ -1,11 +1,12 @@
 import React, { useMemo } from 'react';
 
-import { AccountingInfoRow } from '@/components/admin/accounting';
+import { AccountingInfoRow } from '@/components/admin/accounting/common/accounting-info-row/accounting-info-row';
 import { File } from '@/components/client';
 import { Button } from '@/components/common';
 import { useDriversActionsPermission } from '@hooks';
 import { PencilWithLineIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountingItem } from '../../common';
 

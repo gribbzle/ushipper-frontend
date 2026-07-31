@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const messages = ['order', 'pickup', 'delivery', 'vehicles', 'payment', 'broker'];
 

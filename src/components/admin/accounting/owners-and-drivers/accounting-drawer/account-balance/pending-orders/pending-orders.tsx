@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Button } from '@/components/common';
 import { OrderProvider } from '@providers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountTransactionsBlock } from '../account-transactions-block';
 import { PendingOrderItem } from '../pending-order-item';

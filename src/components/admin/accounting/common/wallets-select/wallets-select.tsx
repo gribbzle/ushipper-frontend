@@ -1,22 +1,15 @@
 import React, { useMemo } from 'react';
-import { FieldRenderProps } from 'react-final-form';
 
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { BalanceType } from '@/enums';
-import { AlertBlock } from '@components';
 import { AsyncSelectField, SelectField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useWalletsSelect } from './use-wallets-select';
+import { WalletsSelectProps } from './wallets-select-types';
 
 import './wallets-select.scss';
-
-type CustomWalletsSelectProps = {
-    hasExternalCardWallets?: boolean;
-    onlyCustomInternalWallets?: boolean;
-    showSelectedWalletDetails?: boolean;
-};
-
-export type WalletsSelectProps = FieldRenderProps<string> & CustomWalletsSelectProps;
 
 const cn = classname('wallets-select');
 const t = translateByNamespace('admin:accounting:factoring-balance:create-transaction-popup:form');

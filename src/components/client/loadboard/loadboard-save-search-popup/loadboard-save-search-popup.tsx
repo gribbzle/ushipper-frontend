@@ -1,14 +1,17 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { SavedLoadboardSearch } from '@/api/loadboard';
+import { Button } from '@/components/common/button/button';
+import { Input } from '@/components/common/input/input';
+import { Popup } from '@/components/common/popup/popup';
 import Select from '@/components/common/select-new/select';
 import { SelectOption } from '@/shared';
-import { Button, Input, Popup } from '@components';
 import { FormControl, InputLabel } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createLoadboardSearch, updateLoadboardSearch } from '@store/client/loadboard/actions';
 import { loadboardListSelector } from '@store/client/loadboard/selectors';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './loadboard-save-search-popup.scss';
 

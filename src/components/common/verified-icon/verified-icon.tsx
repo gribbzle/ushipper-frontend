@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { TickIcon, XCircleIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './verified-icon.scss';
 

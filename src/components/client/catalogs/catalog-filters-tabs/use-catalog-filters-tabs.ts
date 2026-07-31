@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 
+import { CatalogFiltersFormState } from '@/components/client/catalogs/catalog-filters-form/catalog-filters-form.types';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { CatalogListTabsEnum, CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
-import { CatalogFiltersFormState, TabItemBase } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DeviceInformation } from '@store/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './app-and-device-info.scss';
 

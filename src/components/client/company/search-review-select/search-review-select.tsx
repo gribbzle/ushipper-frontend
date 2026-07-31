@@ -7,7 +7,8 @@ import { SelectField } from '@fields';
 import { useAppSelector } from '@store';
 import { companyRatingsReviewCountArraySelector, companyReviewsTotalSelector } from '@store/admin';
 import { Rating } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './search-review-select.scss';
 

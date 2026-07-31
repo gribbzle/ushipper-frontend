@@ -1,20 +1,20 @@
 import React, { useMemo } from 'react';
 
+import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer/order-chat-drawer';
+import { Button } from '@/components/common/button/button';
+import { InfoTag } from '@/components/common/info-tag/info-tag';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import useElementSize from '@/hooks/use-element-size';
-import {
-    Button,
-    InfoTag,
-    OrderChatDrawer,
-    Paper,
-    Timeline,
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineItem,
-    TimelineSeparator,
-} from '@components';
 import { LineBrokenIcon } from '@icons';
-import { classname, formatMetersToMiles, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatMetersToMiles } from '@utils/numbers';
 
 import { OrderDeliveryInformationBlock } from './order-delivery-information-block';
 import { OrderMapBlock } from './order-map-block';

@@ -2,13 +2,23 @@ import React, { MouseEvent, useCallback, useMemo, useState } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import Link from 'next/link';
 
-import { Button, Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { getOrderDeliveryAddress, getOrderPickupAddress, hasOrderDeliveryAddress, hasOrderPickupAddress } from '@/utils/order';
 import { getPaymentMethodTranslate } from '@/utils/payment';
 import { useDriverTrackingMap, useMeShipper, useOrderTracking, useTracking, useUserTracking } from '@hooks';
 import { useAppDispatch } from '@store';
 import { chatsActions, openChatByOrderIdAction } from '@store/common';
-import { CheckIsOutdated, classname, formatMetersToMiles, formatToCurrency, getShortDate, translateByNamespace, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { CheckIsOutdated, getShortDate } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatMetersToMiles, formatToCurrency } from '@utils/numbers';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import { OrderTag } from '../../orders';
 

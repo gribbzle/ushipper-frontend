@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
-import { Button, Popup } from '@components';
-import { translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useDeleteFinancialAccountPopup } from './use-delete-financial-account-popup';
 

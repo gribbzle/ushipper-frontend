@@ -3,7 +3,8 @@ import Joi from 'joi';
 
 import { DeliveryInformation, OrderCommodity, OrderVehicle, PaymentInformation, PickupInformation } from '@store/api/orders-api';
 import { Load } from '@store/client';
-import { isFreightX, isUshipper, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX, isUshipper } from '@utils/project-config';
 
 const t = translateByNamespace('client:order:validation');
 const vehicleSchema = Joi.array()

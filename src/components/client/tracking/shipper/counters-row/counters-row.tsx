@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './counters-row.scss';
 

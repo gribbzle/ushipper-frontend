@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Tag } from '@/components/common';
+import { Tag } from '@/components/common/info-tag/info-tag';
 import { GeoLocationIcon } from '@icons';
-import { classname, getCompanyTypeTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
 
 import { CompanyTypeAddressBlockProps } from './company-type-address-block.types';
 import { useCompanyTypeAddressBlock } from './use-company-type-address-block';

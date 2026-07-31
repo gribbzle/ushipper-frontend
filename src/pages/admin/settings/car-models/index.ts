@@ -1,5 +1,5 @@
 import { carModelsSettingsActions } from '@store/admin/car-models-settings/slice';
-import { adminOnlyGetServerSideProps } from '@utils';
+import { adminOnlyGetServerSideProps } from '@utils/auth';
 
 export const getServerSideProps = adminOnlyGetServerSideProps(store => async ({ query }) => {
     if (query.carMakerId && typeof query.carMakerId === 'string') {

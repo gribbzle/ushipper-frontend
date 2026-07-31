@@ -1,11 +1,11 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
 
+import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
 import { createGeocoding, getAddressByName, getAddressName } from '@/utils/geocoding';
-import { AutocompleteSuggestion } from '@components';
-import { useCountriesAndStates } from '@hooks';
+import { useCountriesAndStates } from '@hooks/use-countries-and-states';
 import { GeocodingFeature } from '@mapbox/search-js-core';
 import { useGetRegionsQuery } from '@store/api/regions-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { createDivider, createRegionSuggestion, createStateSuggestion } from './utils';
 

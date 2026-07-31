@@ -1,10 +1,15 @@
 import { MouseEvent, useCallback, useMemo, useState } from 'react';
 import React from 'react';
 
-import { Avatar, Badge, DriverOrders } from '@/components';
+import { DriverOrders } from '@/components/client/tracking/driver-orders/driver-orders';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
 import { useDriverTrackingMap, useTracking, useUserTracking } from '@hooks';
 import { ArrowDownIcon } from '@icons';
-import { checkIsGPSStatusRecentlyUpdated, classname, stringAvatar, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { checkIsGPSStatusRecentlyUpdated } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { stringAvatar } from '@utils/string-avatar';
 
 import './driver-row.scss';
 

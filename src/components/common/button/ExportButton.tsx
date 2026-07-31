@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Button, ButtonProps } from '@/components/common';
 import { DownloadIcon, LoaderIcon } from '@icons';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+
+import { Button, ButtonProps } from './button';
 
 type ExportButtonProps = Omit<ButtonProps, 'children'> & {
     isLoading: boolean;

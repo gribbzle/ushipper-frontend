@@ -4,7 +4,8 @@ import { useMeAdmin } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { messagesActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Button } from '../../button';
 

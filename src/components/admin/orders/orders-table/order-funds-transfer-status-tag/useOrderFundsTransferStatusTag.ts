@@ -4,7 +4,9 @@ import { DropdownDividerOption, DropdownOption } from '@/components/common';
 import { useFundsTransferStatusOptions, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers, useOrdersActionsPermission } from '@/hooks/order';
 import { FundsTransferStatusView } from '@enums';
 import { useOpenTransactionsPage } from '@hooks';
-import { diffForHumans, getAwaitingDeliveryLabel, translateByNamespace, translateFundsTransferStatus } from '@utils';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { getAwaitingDeliveryLabel, translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 import { FUNDS_TRANSFER_STATUS_VIEW } from './constants';
 

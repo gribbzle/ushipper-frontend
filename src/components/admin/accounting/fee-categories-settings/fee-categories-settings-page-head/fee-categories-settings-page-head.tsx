@@ -1,9 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { Button, PageHeader } from '@components';
+import { Button } from '@/components/common/button/button';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { PlusCircleIcon } from '@icons';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import { useFeeCategoriesTable } from '../fee-categories-table/use-fee-categories-table';
 

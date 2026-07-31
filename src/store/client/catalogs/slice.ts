@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { CatalogFiltersValue } from '@components';
-
+import { CatalogFiltersValue } from './types';
 import { CatalogsSliceState } from './types';
 
 const initState: CatalogsSliceState = {

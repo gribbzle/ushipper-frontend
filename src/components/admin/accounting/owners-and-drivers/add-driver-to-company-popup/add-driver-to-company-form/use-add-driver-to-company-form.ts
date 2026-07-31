@@ -8,7 +8,8 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { addDriverToCompanyPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { useInviteUserMutation } from '@store/api/invite-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AddDriverToCompanyFormProps, AddDriverToCompanyFormState } from './add-driver-to-company-form.types';
 

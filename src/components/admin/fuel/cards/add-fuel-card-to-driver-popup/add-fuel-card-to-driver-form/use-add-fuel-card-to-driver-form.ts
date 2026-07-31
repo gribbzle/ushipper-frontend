@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '@store';
 import { addFuelCardToDriverPopupPropsSelector } from '@store/admin';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { AddFuelCardToDriverFormProps, AddFuelCardToDriverFormState } from './add-fuel-card-to-driver-form';
+import { AddFuelCardToDriverFormProps, AddFuelCardToDriverFormState } from './add-fuel-card-to-driver-form.types';
 
 const t = translateByNamespace('admin:fuel:cards-page:notifications');
 

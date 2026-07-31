@@ -12,7 +12,10 @@ import {
     isCreateEditContactModalVisibleSelector,
 } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, getProjectName, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './contacts.scss';
 

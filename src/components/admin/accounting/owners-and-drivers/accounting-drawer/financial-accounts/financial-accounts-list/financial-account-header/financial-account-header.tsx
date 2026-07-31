@@ -3,7 +3,8 @@ import { toKebabCase } from 'js-convert-case';
 
 import { OrderTag } from '@/components/client';
 import { BalanceType } from '@/enums';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './financial-account-header.scss';
 

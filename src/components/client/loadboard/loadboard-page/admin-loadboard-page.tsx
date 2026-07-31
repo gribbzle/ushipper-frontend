@@ -1,22 +1,20 @@
 import React from 'react';
 import { AxiosError, AxiosResponse } from 'axios';
 
+import { CheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/checking-contract-popup';
+import { LoadboardFilterTabs } from '@/components/client/loadboard/loadboard-filter-tabs/loadboard-filter-tabs';
+import { LoadboardNoticePopup } from '@/components/client/loadboard/loadboard-notice-popup/loadboard-notice-popup';
+import { LoadboardSaveSearchPopup } from '@/components/client/loadboard/loadboard-save-search-popup/loadboard-save-search-popup';
+import { OrderRequestDrawer } from '@/components/client/loadboard/order-request-drawer/order-request-drawer';
+import { ParsedOrderDetailsDrawer } from '@/components/client/loadboard/parsed-order-details-drawer/parsed-order-details-drawer';
 import DeclineModal from '@/components/client/offers/decline-modal/decline-modal';
 import OfferDrawer from '@/components/client/offers/offer-drawer/offer-drawer';
+import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer/order-chat-drawer';
+import { BetweenPhonesChatDrawer } from '@/components/common/between-phones-chat-drawer/between-phones-chat-drawer';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import {
-    BetweenPhonesChatDrawer,
-    CheckingContractPopup,
-    LoadboardFilterTabs,
-    LoadboardNoticePopup,
-    LoadboardSaveSearchPopup,
-    OrderChatDrawer,
-    OrderRequestDrawer,
-    ParsedOrderDetailsDrawer,
-} from '@components';
 import { useLoadboard } from '@hooks';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { LoadboardContent } from '../loadboard-content';
 import { LoadboardPageHeader } from '../loadboard-page-header';

@@ -3,7 +3,9 @@ import React, { useMemo } from 'react';
 import { Button, ParsedOrderRoute } from '@/components/common';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOfferData } from '@store/client/loadboard';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { useCheckingOfferItem } from './use-checking-offer-item';
 

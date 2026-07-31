@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { BusinessTypesEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getBusinessTypeTranslate } from '@utils';
+import { getBusinessTypeTranslate } from '@utils/translate/get-business-type-translate';
 
 export const BusinessTypesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

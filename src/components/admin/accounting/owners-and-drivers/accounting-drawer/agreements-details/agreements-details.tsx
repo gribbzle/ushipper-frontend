@@ -6,7 +6,8 @@ import { Button, Divider } from '@/components/common';
 import { ContractorTypesEnum, FeesRule } from '@/enums';
 import { FormControl, InputLabel } from '@fields';
 import { PlusIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AgreementsDetailsFormState } from './agreements-details.types';
 import { AssignedCompaniesBlock } from './assigned-companies-block';

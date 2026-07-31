@@ -55,6 +55,7 @@ export * from './funds-transfer-calculated-status';
 export * from './driver-loadboard-payment-terms-enum';
 export * from './instant-term-payment-type';
 export * from './vehicle-type';
+export * from './mapbox-style';
 export * from './communication-type';
 
 export * from './account';

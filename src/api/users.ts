@@ -1,7 +1,8 @@
 import { toSnakeCase } from 'js-convert-case';
 
-import { CreateEditUserData } from '@store/client';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
+
+import { CreateEditUserData } from '../store/common/staff/types';
 
 export const createEditUser = async (mode: 'create' | 'edit', user: CreateEditUserData, isAvatarDeleted: boolean) => {
     const formData = new FormData();

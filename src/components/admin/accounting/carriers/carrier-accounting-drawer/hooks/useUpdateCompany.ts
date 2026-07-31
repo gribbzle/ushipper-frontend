@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 
 import { usePublicId } from '@hooks';
 import { usePathCompanyJSONMutation } from '@store/api/company-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

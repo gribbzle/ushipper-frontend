@@ -2,10 +2,10 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { Field } from 'react-final-form';
 
+import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
 import { ContractorTypesEnum } from '@/enums';
-import { SelectionButtonOption } from '@components';
 import { SelectionButtonGroupInput } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:agreements');
 

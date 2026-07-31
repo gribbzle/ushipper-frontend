@@ -2,10 +2,11 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { debounce } from 'debounce';
 import { FieldRenderProps } from 'react-final-form';
 
+import { AutocompleteInput, AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
 import { getAddressName } from '@/utils/geocoding';
-import { AutocompleteInput, AutocompleteSuggestion } from '@components';
 import { CoordinatesWithName } from '@store/api/loadboard-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useAddressSuggestions } from './use-address-suggestions';
 

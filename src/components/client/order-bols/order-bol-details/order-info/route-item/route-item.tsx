@@ -3,7 +3,8 @@ import { format } from 'date-fns';
 import has from 'has-values';
 
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname, getObjectWithoutEmptyFields } from '@utils';
+import { classname } from '@utils/classname';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './route-item.scss';
 

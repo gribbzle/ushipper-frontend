@@ -5,7 +5,8 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, deleteFinancialAccountPopupPropsSelector, FinancialBalanceData } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { balancesApi, useDeleteBalanceMutation } from '@store/api/balances-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OffersListTabsEnum } from '@/enums';
-import { TabItemBase } from '@components';
 import { useMeDispatcher } from '@hooks';
 import { OffersStatistic } from '@store/api/order-offers';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order-offers:filters');
 

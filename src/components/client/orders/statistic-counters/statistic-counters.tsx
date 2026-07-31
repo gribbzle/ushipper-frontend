@@ -1,10 +1,11 @@
 import React, { useCallback, useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
+import { StatisticCounter } from '@/components/common/statistic-counter/statistic-counter';
 import { OrderStatisticsGroup } from '@/enums';
-import { StatisticCounter } from '@components';
 import { StatisticsCounters } from '@store/api/orders-api';
-import { classname, translateOrderStatisticsGroup, translateOrderStatisticsGroupTooltip } from '@utils';
+import { classname } from '@utils/classname';
+import { translateOrderStatisticsGroup, translateOrderStatisticsGroupTooltip } from '@utils/translate/order/translations';
 
 import { ORDER_STATISTICS_GROUP_COLOR } from './constants';
 

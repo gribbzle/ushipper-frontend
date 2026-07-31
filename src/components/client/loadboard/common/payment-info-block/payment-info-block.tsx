@@ -1,13 +1,14 @@
 import React, { useMemo } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
+import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip';
 import { OrderSourcesEnum } from '@/enums';
 import { getOrderPriceWithTerms, getParsedOrderPriceWithTermsAndMethods } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
-import { MileCostTooltip } from '@components';
 import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
 import { OrderPaymentInformation } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './payment-info-block.scss';
 

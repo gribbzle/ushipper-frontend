@@ -4,7 +4,9 @@ import { Field, Form } from 'react-final-form';
 import { StringInput } from '@fields';
 import { useDriverTrackingMap } from '@hooks';
 import { SearchIcon, XBigIcon } from '@icons';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import './styles.scss';
 

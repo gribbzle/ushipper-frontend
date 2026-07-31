@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
 import { useAppDispatch } from '@store';
 import { ShipperTrackingFiltersFormState, trackingActions } from '@store/client';
-import { convertToStringArray } from '@utils';
+import { convertToStringArray } from '@utils/converter';
 
 export const useShipperTrackingFiltersForm = () => {
     const dispatch = useAppDispatch();

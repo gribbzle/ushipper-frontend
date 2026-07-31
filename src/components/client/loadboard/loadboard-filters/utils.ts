@@ -2,11 +2,13 @@ import { toKebabCase } from 'js-convert-case';
 
 import { Filters, LoadboardFiltersForUrlParams, LoadboardFiltersFromUrlParams } from '@/components/client/loadboard/loadboard-filters/types';
 import { RADS } from '@/components/common/radius-select/radius-select';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { SelectOption } from '@/shared';
-import { SortSelectValue } from '@components';
 import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
 import { CoordinatesWithName, SavedLoadBoardFilters } from '@store/api/loadboard-api';
-import { getObjectWithoutEmptyFields, translateByNamespace, translateOrderSource } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { translateOrderSource } from '@utils/translate/order/translate-order-source';
 
 const tVehicleTypes = translateByNamespace('common:vehicle-types');
 const tPaymentTerms = translateByNamespace('common:payment-terms');

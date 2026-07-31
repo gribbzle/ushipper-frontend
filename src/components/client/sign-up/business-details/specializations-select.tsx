@@ -2,7 +2,7 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { CheckboxMultiSelectInput, FormControl, InputLabel } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { requiredArray } from '@validators';
 
 import { useSpecializationSelect } from './use-specializations-select';

@@ -1,4 +1,4 @@
-import { TablePaginationProps } from '@/components/common';
+import { TablePaginationProps } from '@/components/common/table/table.types';
 import { User } from '@store/client';
 
 import { StaffTableView } from '../staff-filters/staff-filters.types';

@@ -1,5 +1,5 @@
-import { User } from '@store/common';
-import { CursorPagination } from '@utils';
+import { User } from '@/store/common/staff/types';
+import { CursorPagination } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

@@ -3,11 +3,16 @@ import { toCamelCase, toSnakeCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 import { formatPhoneNumberIntl } from 'react-phone-number-input';
 
-import { Link, Table, TableColumn, TableRowMenu } from '@/components/common';
+import { Link } from '@/components/common/link/link';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Contact, contactsFiltersSelector } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, formatDateOrGetDash, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import './contact-table.scss';
 

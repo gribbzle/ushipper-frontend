@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { FieldsGroupWrapper } from '@/components/common';
 import { FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
 import { EmailServerCredentialType } from '@types';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 type EmailCredentialsFieldsProps = {

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:orders-page:notifications');
 

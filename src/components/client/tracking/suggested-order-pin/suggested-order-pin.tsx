@@ -1,11 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 
+import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip';
+import { PulseMarker } from '@/components/common/pulse-marker/pulse-marker';
 import { calculateTotalPayment } from '@/utils/payment';
-import { MileCostTooltip, PulseMarker } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
 import { OrderPaymentInformation, selectedSuggestedOrderIdSelector, trackingActions } from '@store/client';
-import { classname, formatToCurrency } from '@utils';
+import { classname } from '@utils/classname';
+import { formatToCurrency } from '@utils/numbers';
 
 import './suggested-order-pin.scss';
 

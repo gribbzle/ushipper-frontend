@@ -2,10 +2,9 @@ import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import * as loadboardApi from '@/api/loadboard';
-import { AppState } from '@store';
 import { loadboardActions } from '@store/client/loadboard/slice';
 import { CreateSearchPayload, RemoveSearchPayload, UpdateSearchPayload } from '@store/client/loadboard/types';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = (key: string) => translateByNamespace('client:loadboard-filters')(key);
 
@@ -13,7 +12,7 @@ export const createLoadboardSearch = createAsyncThunk<loadboardApi.SavedLoadboar
     'loadboard/createLoadboardSearch',
     async (payload, { rejectWithValue, dispatch, getState }) => {
         try {
-            const state = getState() as AppState;
+            const state = getState() as any;
             const result = await loadboardApi.createLoadBoardSearch(payload.name, payload.filters);
 
             dispatch(
@@ -35,7 +34,7 @@ export const updateLoadboardSearch = createAsyncThunk<loadboardApi.SavedLoadboar
     'loadboard/updateLoadboardSearch',
     async (payload, { rejectWithValue, dispatch, getState }) => {
         try {
-            const state = getState() as AppState;
+            const state = getState() as any;
             const result = await loadboardApi.updateLoadboardSearch(payload.id, payload.name, payload.filters);
             const searches = state.client.loadboard.savedSearches.searches;
 
@@ -58,7 +57,7 @@ export const removeLoadboardSearch = createAsyncThunk<void, RemoveSearchPayload>
     'loadboard/removeLoadboardSearch',
     async (payload, { rejectWithValue, dispatch, getState }) => {
         try {
-            const state = getState() as AppState;
+            const state = getState() as any;
             const searches = state.client.loadboard.savedSearches.searches;
 
             await loadboardApi.removeLoadboardSearch(payload.id);

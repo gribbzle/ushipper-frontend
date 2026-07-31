@@ -2,10 +2,12 @@ import React from 'react';
 
 import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-popup/choose-phone-popup';
 import { LoadboardItemProps } from '@/components/client/loadboard/loadboard-item/loadboard-item.types';
+import { Button } from '@/components/common/button/button';
+import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { UserOrderStatus } from '@/enums';
-import { Button, Dropdown } from '@components';
 import { ActionsIcon, PhoneIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ParsedOrderChatButton } from './parsed-order-chat-button';
 import { useParsedOrderActions } from './use-parsed-order-actions';

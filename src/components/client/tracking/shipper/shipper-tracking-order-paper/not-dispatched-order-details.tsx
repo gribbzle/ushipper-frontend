@@ -4,7 +4,9 @@ import { format } from 'date-fns';
 import { calculateTotalPayment, getPaymentPerDistanceWithoutCurrency } from '@/utils/payment';
 import { CarIcon2, DollarCircleIcon, ScheduleWithoutCheckIcon } from '@icons';
 import { ShipperTrackingOrder } from '@store/client';
-import { classname, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
 
 import { CommoditiesTotalInfo } from '../commodities-total-info';
 

@@ -1,7 +1,11 @@
 import React from 'react';
 
-import { ParsedOrderActions } from '@components';
-import { classname, diffForHumans, formatToCurrency, getCompanyTypeTranslate, translateByNamespace } from '@utils';
+import { ParsedOrderActions } from '@/components/common/parsed-order-actions/parsed-order-actions';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { LoadboardItemProps } from '../../loadboard-item.types';
 

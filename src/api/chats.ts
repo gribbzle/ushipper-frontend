@@ -1,6 +1,7 @@
 import { ChatTypesEnum } from '@/enums';
 import { ChatMessage, ChatShortInfo } from '@store/common/chats/types';
-import { axios, CursorPagination } from '@utils';
+import { axios } from '@utils/axios';
+import { CursorPagination } from '@utils/redux';
 
 export const fetchChats = async (query: string | null, cursor: string | null, type?: ChatTypesEnum) => {
     const result = await axios.get('/api/chats', { params: { query, cursor, type } });

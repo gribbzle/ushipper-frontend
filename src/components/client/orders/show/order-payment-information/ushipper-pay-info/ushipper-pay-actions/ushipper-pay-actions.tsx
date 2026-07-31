@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Button } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useUshipperPayActions } from './useUshipperPayActions';
 

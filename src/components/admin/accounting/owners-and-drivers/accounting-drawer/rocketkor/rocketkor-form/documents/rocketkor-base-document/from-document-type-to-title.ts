@@ -1,5 +1,5 @@
 import { DocumentType } from '@store/api/accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:rocketkor');
 

@@ -6,7 +6,7 @@ import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import { FormControl } from '@fields';
 import { useAppSelector } from '@store';
 import { roleTypesSelector } from '@store/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { excludedPermissions } from '../use-create-update-role-block';
 import { filterPermissions, formatPermissions } from '../utils';

@@ -1,7 +1,7 @@
 import React, { ReactNode, useMemo } from 'react';
 
-import { Accordion } from '@/components';
-import { classname } from '@utils';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { classname } from '@utils/classname';
 
 import './driver-item-tab.scss';
 

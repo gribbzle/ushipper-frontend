@@ -1,7 +1,10 @@
 import { CompanyType } from '@/enums';
-import { Company } from '@store/admin';
+import { Company } from '@store/admin/companies/types';
 import { apiSlice } from '@store/api/api-slice';
-import { GenericSpecialization, PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
+import { GenericSpecialization } from '@utils/specialization';
+
+import { CompanyTotalRating } from './company-rating-types';
 
 export type CompanyPathData = Partial<
     Omit<Company, 'logo' | 'birthYear' | 'specializations' | 'businessHours'> & {
@@ -17,28 +20,6 @@ export type CompanyContactPathData = Partial<{
     phones: string | null;
     emails: string | null;
 }>;
-
-type PerCentage = number; // float, max 100, min 0
-type Rating = number; // float, max 5, min 0
-type ReviewsTotal = number; // float,  min 0
-
-type ScoreDetail = {
-    rating: Rating;
-    count: number;
-    percentage: PerCentage;
-};
-
-type AverageItem = {
-    title: string;
-    rating: Rating;
-};
-
-export type CompanyTotalRating = {
-    rating: Rating;
-    reviewsTotal: ReviewsTotal;
-    perScore: ScoreDetail[];
-    itemsAvg: AverageItem[];
-};
 
 export type CompanyFMCSAAddressInfo = {
     addressCity: string | null;

@@ -1,13 +1,21 @@
 import React, { useMemo } from 'react';
 import { useForm } from 'react-final-form';
 
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
+import { VehicleMakerInput } from '@/components/common/vehicle-maker-input/vehicle-maker-input';
+import { VehicleModelInput } from '@/components/common/vehicle-model-input/vehicle-model-input';
+import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
+import { VehicleVinInput } from '@/components/common/vehicle-vin-input/vehicle-vin-input';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { IconButton, Tooltip, TooltipContent, TooltipTrigger, VehicleMakerInput, VehicleModelInput, VehicleTypesSelect, VehicleVinInput } from '@components';
 import { CheckboxInput, FieldPrefix, FormControl, PrefixedField, TextField } from '@fields';
 import { TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderFormState } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './vehicle-row.scss';

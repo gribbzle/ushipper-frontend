@@ -1,9 +1,14 @@
 import React from 'react';
 
-import { DispatcherLanguages, FlagButton, InfoListBody, PillTag } from '@/components/common';
+import { DispatcherLanguages } from '@/components/common/dispatcher-languages/dispatcher-languages';
+import { FlagButton } from '@/components/common/flag-button/flag-button';
+import { InfoListBody } from '@/components/common/info-list/info-list-body/info-list-body';
+import { PillTag } from '@/components/common/pill-tag/pill-tag';
 import { useShowCompanyPage } from '@hooks';
 import { DispatcherCatalogInfo } from '@store/client';
-import { classname, getTransportServiceTranslate, getWorkingTimeTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getWorkingTimeTranslate } from '@utils/get-working-time-translate';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 import { DispatcherPersonalInfo } from '../../common';
 

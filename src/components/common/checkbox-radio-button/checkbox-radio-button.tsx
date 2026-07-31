@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useCallback } from 'react';
 
 import { CheckIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './checkbox-radio-button.scss';
 

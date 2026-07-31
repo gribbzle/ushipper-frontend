@@ -8,9 +8,9 @@ import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useFuelTransactionsActionsPermission } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fuelCardsApi, usePartiallyUpdateFuelTransactionMutation } from '@store/api/fuel-cards-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { FuelTransactionStatusTagProps } from './fuel-transaction-status-tag';
+import { FuelTransactionStatusTagProps } from './fuel-transaction-status-tag.types';
 
 const t = translateByNamespace('admin:fuel:transactions-page:table');
 const tNot = translateByNamespace('admin:fuel:transactions-page:notifications');

@@ -5,9 +5,10 @@ import { AttachmentType, InstantTermPaymentType } from '@/enums';
 import { useAppDispatch } from '@store';
 import { ordersApi, useCreateOrderAttachmentMutation, useRemoveOrderAttachmentMutation, useUpdateOrderMutation } from '@store/api/orders-api';
 import { OrderDriverPaymentFormState } from '@store/client';
-import { isOrderCheckDeclined, isOrderCheckDriver, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { isOrderCheckDeclined, isOrderCheckDriver } from '@utils/orders/order-payment-helpers';
 
-import { OrderDriverPaymentFormProps } from './order-driver-payment-form';
+import { OrderDriverPaymentFormProps } from './order-driver-payment-form.types';
 
 const t = translateByNamespace('client:order:notifications');
 

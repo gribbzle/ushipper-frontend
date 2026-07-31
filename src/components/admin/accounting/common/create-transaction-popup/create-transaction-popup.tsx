@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { Button, Popup } from '@/components/common';
 import { useAppSelector } from '@store';
 import { isCreateTransactionLoadingSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CreateTransactionForm, CreateTransactionFormProps } from './create-transaction-form';
 import { useCreateTransactionPopup } from './use-create-transaction-popup';

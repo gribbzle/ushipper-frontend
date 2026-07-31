@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
+import { OrderDriverPaymentFormAlert } from '@/components/client/orders/alerts/order-driver-payment-form-alert/order-driver-payment-form-alert';
 import { useOrderPaymentTerms } from '@/hooks/order';
-import { OrderDriverPaymentFormAlert } from '@components';
 import { OrderStatus } from '@enums';
 import { useHasPartnerCompanies, useMeDriverRelated } from '@hooks';
 import { useAppSelector } from '@store';

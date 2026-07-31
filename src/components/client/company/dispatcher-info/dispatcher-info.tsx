@@ -1,13 +1,16 @@
 import React, { useMemo } from 'react';
 
+import { DispatcherLanguages } from '@/components/common/dispatcher-languages/dispatcher-languages';
 import { InfoList } from '@/components/common/info-list/info-list';
 import { InfoListBody } from '@/components/common/info-list/info-list-body/info-list-body';
-import { DispatcherLanguages, Paper } from '@components';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useIsDriverOwnerPage } from '@hooks';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';
-import { classname, getTransportServiceTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 import { DispatcherStats } from '../dispatcher-stats/dispatcher-stats';
 

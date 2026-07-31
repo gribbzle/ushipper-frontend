@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useMeCarrier } from '@/hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { orderShipperOrderSelector } from '@store/client';
 

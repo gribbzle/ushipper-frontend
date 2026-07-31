@@ -1,12 +1,15 @@
 import React, { RefObject, useMemo } from 'react';
 
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum } from '@/enums';
-import { AlertBlock } from '@components';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
-import { classname, formatDuration, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDuration } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useChatMessageOrders } from '../../chat-message-orders/use-chat-message-orders';
-import { ChatMessageHeader, ChatMessageWrapper } from '../common';
+import { ChatMessageHeader } from '../chat-message-header/chat-message-header';
+import { ChatMessageWrapper } from '../chat-message-wrapper/chat-message-wrapper';
 
 import { CallMessageIcon } from './call-message-icon/call-message-icon';
 

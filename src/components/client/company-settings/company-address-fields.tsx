@@ -2,7 +2,8 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { StringInput } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const cn = classname('create-edit-contacts-drawer');
 const t = translateByNamespace('common:create-edit-contact-drawer');

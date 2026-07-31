@@ -3,14 +3,17 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import parseValidationFields from '@/utils/parse-validation-fields';
-import { Button, Paper } from '@components';
 import { StringInput } from '@fields';
 import { useGetCompanyData } from '@hooks';
 import { useAppSelector } from '@store';
 import { CompanyContactPathData, usePathCompanyContactMutation } from '@store/api/company-api';
 import { authorizedUserSelector } from '@store/global';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator } from '@validators';
 
 const loadboardT = translateByNamespace('client:loadboard-filters');

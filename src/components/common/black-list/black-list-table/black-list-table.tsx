@@ -2,7 +2,9 @@ import React, { useCallback, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useSelector } from 'react-redux';
 
-import { Paper, Table, TableLoader } from '@components';
+import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
+import { Table } from '@/components/common/table/table';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useEffectOnce, usePagination, useTable } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
@@ -15,7 +17,9 @@ import {
 } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
 import { authorizedUserCompanyPublicIdSelector } from '@store/global';
-import { classname, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 
 import { useBlackListTableColumns } from './use-black-list-table-columns';
 

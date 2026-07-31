@@ -1,12 +1,17 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { Button } from '@/components/common/button/button';
+import { Link } from '@/components/common/link/link';
 import { InspectionType, OrderStatus } from '@/enums';
 import { getOrderPriceWithTerms } from '@/utils/order';
-import { Button, Link, OrderTag } from '@components';
 import { useMeDriverRelated } from '@hooks';
 import { FlagIcon } from '@icons';
-import { classname, isFreightX, translateByNamespace, translateOrderStatus, translateShipperCancelledOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
+import { translateOrderStatus, translateShipperCancelledOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import { DriverPayInfo } from './driver-pay-info/driver-pay-info';
 import { DriverOrderPrice } from './driver-order-price';

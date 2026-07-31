@@ -24,7 +24,9 @@ import {
 import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@hooks';
 import { PlusCircleIcon, UploadIcon } from '@icons';
 import { Load } from '@store/client';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:orders-page');
 const cn = classname('orders-page');

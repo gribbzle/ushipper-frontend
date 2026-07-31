@@ -1,7 +1,10 @@
 import React from 'react';
 
-import { RowItem } from '@components';
-import { classname, formatToCurrency, getGallonsTranslate, translateByNamespace } from '@utils';
+import { RowItem } from '@/components/common/table/common/row-item/row-item';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';
 
 import './fuel-card-limits.scss';
 

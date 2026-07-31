@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Button, CloseButton, Popup } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { LinkFuelCardForm } from './link-fuel-card-form';
 import { useLinkFuelCardPopup } from './use-link-fuel-card-popup';

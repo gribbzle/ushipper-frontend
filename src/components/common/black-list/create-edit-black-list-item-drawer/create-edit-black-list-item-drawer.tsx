@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Drawer } from '@/components';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { nameWithSpacesValidator, required } from '@validators';
 
 import { TermTypesSelect } from '../../terms-select/terms-select';

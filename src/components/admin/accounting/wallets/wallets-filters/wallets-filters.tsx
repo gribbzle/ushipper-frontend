@@ -3,20 +3,17 @@ import { Field, Form } from 'react-final-form';
 
 import { Paper } from '@/components/common';
 import { FormControl, InputLabel, TextField } from '@fields';
-import { BalanceAmountType } from '@store/admin';
-import { classname, FormValuesSpy, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 
 import { useWalletsFilters } from './use-wallets-filters';
 import { WalletAmountTypeSelect } from './wallet-amount-type-select';
 import { WalletTypeSelect } from './wallet-type-select';
+import { WalletsFiltersFormState } from './wallets-filters.types';
 
 import './wallets-filters.scss';
-
-export type WalletsFiltersFormState = {
-    search: string;
-    balanceAmountType: BalanceAmountType;
-    type: 'custom' | 'system';
-};
 
 const t = translateByNamespace('admin:accounting:wallets-page:filters');
 const tAll = translateByNamespace('admin:accounting:filters');

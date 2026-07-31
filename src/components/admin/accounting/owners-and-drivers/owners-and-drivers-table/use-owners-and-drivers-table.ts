@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import { OrderSortingDirection } from '@/enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { GetAccountingAccountsParams, useGetAccountingAccountsQuery } from '@store/api/accounting-accounts-api';
-import { convertToStringArray, translateByNamespace } from '@utils';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useOnRowClickHandler } from './use-on-row-click-handler';
 import { useOwnersAndDriversColumns } from './use-owners-and-drivers-columns';

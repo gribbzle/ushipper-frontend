@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { ShipperTrackingOrderRouteProps } from './shipper-tracking-order-route';
+import { ShipperTrackingOrderRouteProps } from './shipper-tracking-order-route.types';
 
 const t = translateByNamespace('client:loadboard:parsed-order-route');
 

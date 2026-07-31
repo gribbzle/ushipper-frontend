@@ -12,7 +12,8 @@ import {
     getMainLayout,
     TransactionsFilters,
 } from '@components';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('admin:accounting:dispatch-balance');
 

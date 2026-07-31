@@ -2,7 +2,8 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { CurrencyInput, FieldPrefix, FormControl, InputLabel, NativeSwitch, NativeSwitchProps, PrefixedField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, positiveNumberValidator, requiredCurrency } from '@validators';
 
 import { PreferencesFormPaper } from '../preferences-form-paper';

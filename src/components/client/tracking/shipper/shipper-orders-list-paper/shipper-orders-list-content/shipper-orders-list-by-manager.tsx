@@ -4,7 +4,8 @@ import { TrackingOrderStatus } from '@/enums';
 import { useAppSelector } from '@store';
 import { TrackingOrdersByDispatcherData } from '@store/api/tracking-api';
 import { isShipperOrdersTrackingLoadingSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ManagerInfo } from '../../manager-info';
 import { ShipperOrdersTab } from '../shipper-tracking-orders-tab';

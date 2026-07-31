@@ -5,7 +5,8 @@ import type { MapRef } from 'react-map-gl/mapbox';
 import { Map as MapGL, Marker } from 'react-map-gl/mapbox';
 
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { MapMarker } from './map-marker';
 

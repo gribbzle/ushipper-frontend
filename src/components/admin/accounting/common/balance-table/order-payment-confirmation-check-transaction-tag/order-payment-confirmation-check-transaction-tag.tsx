@@ -3,7 +3,7 @@ import React from 'react';
 import { CodCopOrdersActionTag } from '@/components/common';
 import { BalanceValue } from '@store/admin';
 import { useGetOrderQuery } from '@store/api/orders-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 const cn = classname('balance-table');
 

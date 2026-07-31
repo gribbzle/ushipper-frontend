@@ -1,4 +1,4 @@
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { PhoneItemProps } from './phone-item.types';
 

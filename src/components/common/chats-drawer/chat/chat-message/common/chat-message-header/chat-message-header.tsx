@@ -4,7 +4,8 @@ import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum } from '@/enums';
 import { useAppSelector } from '@store';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { authorizedUserAccountPublicIdSelector } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './chat-message-header.scss';
 

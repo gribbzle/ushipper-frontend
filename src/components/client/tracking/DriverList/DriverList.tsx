@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { DriverRow } from '@components';
+import { DriverRow } from '@/components/client/tracking/driver-row/driver-row';
 import { useUsersTracking } from '@hooks';
 import { UserTrackingProvider } from '@providers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './styles.scss';
 

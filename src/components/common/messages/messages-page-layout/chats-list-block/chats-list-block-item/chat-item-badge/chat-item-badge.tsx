@@ -1,13 +1,14 @@
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
 import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
-import { Avatar, Badge } from '@components';
 import { useMeAdmin } from '@hooks';
 import { DefaultOrderIcon, DefaultPhoneIcon, SystemIcon } from '@icons';
 import { selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './chat-item-badge.scss';
 

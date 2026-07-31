@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { SelectOption } from '@/shared';
 import { SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:wallets-page:table');
 

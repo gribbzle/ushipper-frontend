@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useCallback, useEffect, useRef, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 const cn = classname('payment-details-dropdown-menu');
 
 type Props = {

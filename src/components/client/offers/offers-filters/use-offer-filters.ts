@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OfferSortingName, OfferStatusesEnum, OrderSortingDirection } from '@/enums';
-import { TabItemBase } from '@components';
 import { OffersFiltersParams } from '@store/api/order-offers';
 
 import { OffersFiltersTypes } from './offers-filters.types';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useGetPaymentInformationValues } from './use-get-payment-information-values';
 import { useTermsFieldSelected } from './use-terms-field-selected';

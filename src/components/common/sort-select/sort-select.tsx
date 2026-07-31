@@ -1,10 +1,10 @@
 import React, { useEffect, useId, useState } from 'react';
 import { ActionMeta, components, default as ReactSelect, DropdownIndicatorProps, MultiValue, OptionProps, SingleValue } from 'react-select';
 
-import { Divider } from '@/components';
+import { Divider } from '@/components/common/divider/divider';
 import { OfferSortingName, OrderSortingDirection, OrderSortingName } from '@/enums';
 import { ArrowDownIcon, CheckIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './sort-select.scss';
 

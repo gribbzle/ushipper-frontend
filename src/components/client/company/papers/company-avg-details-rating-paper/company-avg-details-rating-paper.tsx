@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 
-import { Divider, Paper } from '@/components';
+import { Divider } from '@/components/common/divider/divider';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useAppSelector } from '@store';
 import { companyAvgDetailsRatingSelector } from '@store/admin';
 import { Rating } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-avg-details-rating-paper.scss';
 

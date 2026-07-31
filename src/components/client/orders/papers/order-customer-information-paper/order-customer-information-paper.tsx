@@ -1,12 +1,16 @@
 import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 
+import { OrderCustomerInformationDrawer } from '@/components/client/orders/drawers/order-customer-information-drawer/order-customer-information-drawer';
+import { OrderInformationList } from '@/components/client/orders/order-information-list/order-information-list';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
-import { OrderCustomerInformationDrawer, OrderInformationList, ZoneButton } from '@components';
 import { useMeCarrier, useMeDriverRelated } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderCustomerInformation, orderCustomerInformationSelector, ordersActions } from '@store/client';
-import { classname, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './order-customer-information-paper.scss';
 const t = translateByNamespace('client:order:customer-information');

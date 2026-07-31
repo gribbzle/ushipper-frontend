@@ -2,8 +2,10 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 
+import { ChatsSearch } from '@/components/common/chats-drawer/chats-search/chats-search';
+import { EmptyChatsList } from '@/components/common/chats-drawer/empty-chats-list/empty-chats-list';
+import { Loader } from '@/components/common/loader/loader';
 import { ChatTypesEnum } from '@/enums';
-import { ChatsSearch, EmptyChatsList, Loader } from '@components';
 import { useDebouncedGetChats, useMeAdmin, useMeDriverRelated } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
@@ -16,7 +18,9 @@ import {
 } from '@store/client';
 import { ChatsDrawerSliceState } from '@store/common/chats/types';
 import { MessagesSliceState } from '@store/common/messages/types';
-import { classname, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 
 import { SupportChat } from './driver-support-chat/driver-support-chat';
 import { ChatListBlockItem } from './chats-list-block-item';

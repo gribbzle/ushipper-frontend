@@ -1,4 +1,4 @@
-import { SortSelectValue } from '@components';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { FundsTransferCalculatedStatus, InstantTermPaymentType, OrderStatisticsStatus } from '@enums';
 import { AdminFormOrdersFilters } from '@types';
 

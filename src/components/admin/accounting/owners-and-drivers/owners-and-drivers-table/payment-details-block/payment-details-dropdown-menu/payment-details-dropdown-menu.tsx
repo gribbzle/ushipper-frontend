@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { AccountingInfoRow } from '@/components/admin/accounting';
+import { AccountingInfoRow } from '@/components/admin/accounting/common/accounting-info-row/accounting-info-row';
 import { AccountingAccountBalanceData } from '@store/api/accounting-accounts-api';
-import { classname, getFullNameOfUser, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { getFullNameOfUser } from '@utils/get-full-name-of-user';
+import { translateByNamespace } from '@utils/i18n';
 
 import { MenuItem } from './menu-item';
 

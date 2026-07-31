@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { SignInErrorMessages } from '@/enums';
-import { AlertBlock } from '@components';
-import { renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
+
+import { AlertBlock } from '../alert-block';
 
 const t = translateByNamespace('common:sign-in-page');
 

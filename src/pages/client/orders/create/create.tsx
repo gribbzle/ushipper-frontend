@@ -6,7 +6,9 @@ import { getMainLayout, OrderGeneralForm } from '@components';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:order:create-page');
 const cn = classname('order-create-page');

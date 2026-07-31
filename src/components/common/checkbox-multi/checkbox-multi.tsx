@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SelectOption } from '@/shared';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CheckboxOption } from './checkbox-option';
 

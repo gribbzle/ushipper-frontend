@@ -7,7 +7,7 @@ import { useOrdersActionsPermission } from '@/hooks/order';
 import { useCompanyPage, useQueryFilters, useTable } from '@hooks';
 import { useGetOrdersQuery, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { Load } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AssignedInfoBlock } from './assigned-info-block';
 import { OrderDetailsBlock } from './order-details-block';

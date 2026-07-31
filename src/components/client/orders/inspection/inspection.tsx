@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Inspection as InspectionType } from '@store/client/order-BOL';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { InspectionItems } from './inspection-items';
 import { InspectionPhotos } from './inspection-photos';

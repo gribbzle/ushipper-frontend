@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { GenericButton } from '@components';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { SearchIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { openShipperTrackingFiltersSelector, trackingActions } from '@store/client';

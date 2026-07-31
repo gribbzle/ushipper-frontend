@@ -19,7 +19,8 @@ import {
     TransactionsTable,
     UnassignDriverFromFuelCardPopup,
 } from '@components';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('admin:accounting:transactions-page');
 

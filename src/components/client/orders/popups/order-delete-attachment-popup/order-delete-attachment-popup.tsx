@@ -1,11 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useRemoveOrderAttachmentMutation } from '@store/api/orders-api';
 import { deleteOrderAttachmentPopupSelector, ordersActions } from '@store/client';
-import { classname, convertBytesToMB, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertBytesToMB } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-delete-attachment-popup.scss';
 

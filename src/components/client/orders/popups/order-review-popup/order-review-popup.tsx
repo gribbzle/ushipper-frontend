@@ -1,12 +1,18 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import { AlertBlock, Button, Link, OrderReviewForm, Popup } from '@components';
+import { OrderReviewForm } from '@/components/client/orders/forms/order-review-form/order-review-form';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { Link } from '@/components/common/link/link';
+import { Popup } from '@/components/common/popup/popup';
 import { useMeShipper } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderReviewPopupPropsSelector, reviewActions } from '@store/client';
 import { Rating } from '@ui';
-import { classname, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import './order-review-popup.scss';
 

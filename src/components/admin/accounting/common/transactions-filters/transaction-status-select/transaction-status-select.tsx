@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { TransactionStatusesEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getTransactionStatusTranslate } from '@utils';
+import { getTransactionStatusTranslate } from '@utils/translate/get-transaction-status-translate';
 
 export const TransactionStatusSelect = (props: FieldRenderProps<string>) => {
     const options = Object.values(TransactionStatusesEnum).map(status => ({

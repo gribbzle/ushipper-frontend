@@ -6,7 +6,11 @@ import { AlertBlock, AuthPageHeader, ControlsActions, getProductInfoLayout, GoTo
 import { StringInput } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { requestResetFormErrorSelector, requestResetFormSubmit, requestResetFormSubmitStatusSelector, RequestResetPasswordData } from '@store/common';
-import { classname, getProjectName, renderTextWithBreakLines, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { renderTextWithBreakLines } from '@utils/render';
+import { getProjectName } from '@utils/translate/get-project-name';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import './password-recovery.scss';

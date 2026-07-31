@@ -1,6 +1,6 @@
 import { Attachment } from '@/shared';
-import { Load } from '@store/client';
 import { ParsedOrderData } from '@store/client/loadboard';
+import { Load } from '@store/common/orders/types';
 
 import { apiSlice } from './api-slice';
 

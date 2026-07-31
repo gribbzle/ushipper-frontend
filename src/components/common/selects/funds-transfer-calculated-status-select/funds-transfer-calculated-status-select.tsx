@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FundsTransferCalculatedStatus } from '@/enums';
 import { SelectField } from '@fields';
-import { translateFundsTransferCalculatedStatus } from '@utils';
+import { translateFundsTransferCalculatedStatus } from '@utils/translate/order/translate-funds-transfer-calculated-status';
 
 const ALLOWED_STATUSES: FundsTransferCalculatedStatus[] = [
     FundsTransferCalculatedStatus.PENDING,

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { useAppDispatch } from '@store';
 import { chatsActions, getChatByBetweenPhonesAction } from '@store/client';
 import { ChatShortInfo } from '@store/common/chats/types';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:chats');
 

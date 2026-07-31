@@ -5,7 +5,8 @@ import { convertBytesToMB } from '@/utils/converter';
 import { ImageProvider } from '@providers';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { ImageView } from '@ui';
-import { classname, isFileImage } from '@utils';
+import { classname } from '@utils/classname';
+import { isFileImage } from '@utils/files';
 
 import './chat-message-content.scss';
 

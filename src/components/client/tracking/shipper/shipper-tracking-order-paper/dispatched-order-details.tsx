@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { Loader } from '@/components/common';
+import { Loader } from '@/components/common/loader/loader';
 import { useDeliveryMetrics } from '@hooks';
 import { HourGlassStartIcon, RacingTruckIcon, RoutingIcon } from '@icons';
 import { ShipperTrackingOrder } from '@store/client';
+import { classname } from '@utils/classname';
+import { isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
 import {
-    classname,
     getFormattedAverageSpeed,
     getFormattedDeliveryTime,
     getFormattedDrivingDistance,
     getTrackingDriverAverageSpeed,
-    isTrackingOrderPickedUp,
-} from '@utils';
+} from '@utils/tracking/tracking-driver-helpers';
 
 import './shipper-tracking-order-paper.scss';
 

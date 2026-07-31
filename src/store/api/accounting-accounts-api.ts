@@ -1,9 +1,12 @@
 import { AccountStatusesEnum } from '@enums';
-import { accountingActions, BalanceResource, BalanceValue, BillingAddress, Company, FinancialBalanceData, MaskedBankAccount, MaskedCard } from '@store/admin';
-import { DeviceInformation, LatestLocation } from '@store/client';
-import { AccountData, AccountProfileData, AccountSuperiorUser, AccountUser, ParentData } from '@store/client/accounts';
+import { BillingAddress, FinancialBalanceData, MaskedBankAccount, MaskedCard } from '@store/admin/accounting/balance-data-types';
+import { BalanceResource, BalanceValue } from '@store/admin/accounting/balance-types';
+import { Company } from '@store/admin/companies/types';
+import { AccountData, AccountProfileData, AccountSuperiorUser, AccountUser, ParentData } from '@store/client/accounts/types';
+import { LatestLocation } from '@store/client/tracking/types';
+import { DeviceInformation } from '@store/common/staff/types';
 import { Fee } from '@types';
-import { PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 
@@ -106,7 +109,7 @@ export const accountingAccountsApi = apiSlice.injectEndpoints({
                     const accounts = data.data;
 
                     accounts.forEach(account => {
-                        dispatch(accountingActions.updateSelectedAccount(account));
+                        dispatch({ type: 'accounting/updateSelectedAccount', payload: account });
                     });
                 });
             },

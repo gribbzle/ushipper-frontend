@@ -6,7 +6,8 @@ import { getMainLayout, OrderSendOfferToCarrierDrawer, OrdersList, OrdersPageLay
 import { useMeShipper } from '@hooks';
 import { useAppDispatch } from '@store';
 import { Load, ordersActions } from '@store/client';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:requests-page');
 

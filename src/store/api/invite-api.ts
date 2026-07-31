@@ -1,5 +1,5 @@
 import { InviteUserFormData } from '@/components/client/staff/invite-user-drawer/invite-user-drawer.types';
-import { InvitationAction } from '@store/client';
+import { InvitationAction } from '@store/client/sign-up/types';
 
 import { apiSlice } from './api-slice';
 

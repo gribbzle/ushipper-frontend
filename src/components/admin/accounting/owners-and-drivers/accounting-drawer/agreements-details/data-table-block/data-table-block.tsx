@@ -3,7 +3,8 @@ import React, { useMemo } from 'react';
 import { AlertBlock, Button, Table, TableColumn } from '@/components/common';
 import { FormControl, InputLabel } from '@fields';
 import { PlusIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './data-table-block.scss';
 

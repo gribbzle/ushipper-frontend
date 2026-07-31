@@ -1,7 +1,10 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Drawer, Link, OrderDispatcherAssignItem } from '@components';
+import { OrderDispatcherAssignItem } from '@/components/client/orders/order-dispatcher-assign-item/order-dispatcher-assign-item';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { Link } from '@/components/common/link/link';
 import { TextField } from '@fields';
 import { ExternalLinkIcon, UserMinusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
@@ -10,7 +13,9 @@ import { Dispatcher, GetDispatchersParams, useGetDispatchersQuery } from '@store
 import { orderFormSubmitAction, ordersActions, orderSetDispatcherDrawerPropsSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';
 import { List } from '@ui';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-set-dispatcher-drawer.scss';
 

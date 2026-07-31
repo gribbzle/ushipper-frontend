@@ -1,7 +1,8 @@
 import React, { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch } from '@store';
 import { deleteContactAction, deleteContactPopupPropsSelector } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';

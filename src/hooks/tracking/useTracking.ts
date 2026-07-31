@@ -5,7 +5,8 @@ import { OrderStatus } from '@enums';
 import { useAppSelector } from '@store';
 import { Driver, fetchedIsDriversListShownSelector, OrderCoordinate, OrderTracking } from '@store/client';
 import { Coordinate, DirectionsResponse, Geo, Location, TripsResponse } from '@types';
-import { axios, pointsToBounds } from '@utils';
+import { axios } from '@utils/axios';
+import { pointsToBounds } from '@utils/tracking';
 
 const PADDING_VERTICAL = 100;
 const PADDING_HORIZONTAL = 40;

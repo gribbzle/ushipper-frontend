@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { useAppDispatch } from '@store';
 import { loadboardActions } from '@store/client/loadboard';
-import { getTranslateParsedOrderNotification } from '@utils';
+import { getTranslateParsedOrderNotification } from '@utils/translate/get-translate-parsed-order-notification';
 
 type Props = {
     publicOrderId: string;

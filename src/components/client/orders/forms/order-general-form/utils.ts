@@ -6,7 +6,7 @@ import isEqual from 'lodash.isequal';
 import { ExpenseTypeEnum, VehicleType } from '@enums';
 import { OrderExpense } from '@store/api/order-expenses-api';
 import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
-import { hasNonUnitCommodityFields } from '@utils';
+import { hasNonUnitCommodityFields } from '@utils/commodity';
 
 export const prepareCommodities = (commodities?: Array<Partial<OrderCommodity>>): Array<Partial<OrderCommodity>> => {
     if (!commodities) return [];

@@ -1,8 +1,10 @@
 import React from 'react';
 import { toCamelCase } from 'js-convert-case';
 
-import { CollapseTable, Paper } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { Paper } from '@/components/common/paper/paper';
+import { CollapseTable } from '@/components/common/table/collapse-table/collapse-table';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { StaffTreeProps } from '../staff-table.types';
 

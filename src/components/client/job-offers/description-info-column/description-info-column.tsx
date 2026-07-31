@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { OrderItemInfoColumn, TextAccordion } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
+import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './description-info-column.scss';
 

@@ -1,12 +1,20 @@
 import React, { useMemo } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { ViewOrderRouteButton } from '@/components/client/orders/view-order-route-button/view-order-route-button';
+import { LoadBoardOrderBrokerColumn } from '@/components/common/load-board-order-broker-column/load-board-order-broker-column';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OfferStatusesEnum } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { getFinalPaymentAmount } from '@/utils/payment';
-import { LoadBoardOrderBrokerColumn, OrderRoute, OrderTag, Paper, ViewOrderRouteButton } from '@components';
 import { useMeCarrier, useMeShipper } from '@hooks';
-import { classname, diffForHumans, formatToCurrency, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { LoadboardItemCommoditiesColumn, LoadboardItemRightBlock, LoadboardItemVehiclesColumn } from './common';
 import { LoadboardItemProps } from './loadboard-item.types';

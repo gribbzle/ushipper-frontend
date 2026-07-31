@@ -1,11 +1,13 @@
-import React, { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
+import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncDriverAccountsSelect } from '@components';
+import { AsyncDriverAccountsSelect } from '@/components/common/selects/async-driver-accounts-select/async-driver-accounts-select';
 import { FormControl, InputLabel } from '@fields';
-import { classname, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 
+import { DriverSelectorFormState, DriverSelectorFormStateProps } from './driver-chat-selector-form.types';
 import { useDriverChatSelectorForm } from './use-driver-chat-selector-form';
 
 import './driver-chat-selector-form.scss';
@@ -13,14 +15,7 @@ import './driver-chat-selector-form.scss';
 const t = translateByNamespace('common:messages-page:driver-chat-selector-popup');
 const cn = classname('driver-chat-selector-form');
 
-export type DriverSelectorFormState = {
-    driverId: string;
-};
-
-export type DriverSelectorFormStateProps = {
-    onAfterSubmit: () => void;
-    formRef: MutableRefObject<FormApi<DriverSelectorFormState> | undefined>;
-};
+export { DriverSelectorFormState, DriverSelectorFormStateProps };
 
 export const DriverSelectorForm = ({ formRef, onAfterSubmit }: DriverSelectorFormStateProps) => {
     const { onSubmit, setSelectedDriverName } = useDriverChatSelectorForm({ onAfterSubmit });

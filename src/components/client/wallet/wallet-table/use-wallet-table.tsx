@@ -1,14 +1,20 @@
 import React, { useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { AmountInfoBlock, DescriptionInfoBlock, PriceAndReceiptPhotos, TableColumn, TransactionStatusTag, TransactionTimeInfoBlock } from '@/components/common';
+import { AmountInfoBlock } from '@/components/common/table/common/amount-info-block/amount-info-block';
+import { DescriptionInfoBlock } from '@/components/common/table/common/description-info-block/description-info-block';
+import { PriceAndReceiptPhotos } from '@/components/common/table/common/price-and-receipt-photos/price-and-receipt-photos';
+import { TransactionStatusTag } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag';
+import { TransactionTimeInfoBlock } from '@/components/common/table/common/transaction-time-info-block/transaction-time-info-block';
+import { TableColumn } from '@/components/common/table/table.types';
 import { OrderSortingDirection, PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { useAppSelector } from '@store';
 import { Transaction } from '@store/admin';
 import { useGetTransactionsQuery } from '@store/api/transactions-api';
 import { authorizedUserDefaultBalanceSelector } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:wallet-page:wallet-table');
 const tNotification = translateByNamespace('client:wallet-page:notifications');

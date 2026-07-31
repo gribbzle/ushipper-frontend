@@ -1,7 +1,8 @@
 import { toSnakeCase } from 'js-convert-case';
 
-import { ContactsFilters, CreateEditContactData, FetchedContacts } from '@store/client';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
+
+import { ContactsFilters, CreateEditContactData, FetchedContacts } from '../store/common/contacts/types';
 
 export const fetchContacts = async (filters: ContactsFilters) => {
     const result = await axios.get('/api/contacts', { params: filters });

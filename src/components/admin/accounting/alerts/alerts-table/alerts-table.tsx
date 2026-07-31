@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { EmptyLayout, Table, TableLoader } from '@/components/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { IssueDataWithOrder, useAlertsTable } from './use-alerts-table';
 import { useAlertsTableColumns } from './useAlertsTableColumns';

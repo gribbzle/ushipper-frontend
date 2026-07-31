@@ -6,7 +6,8 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { useUpdateUserJSONMutation } from '@store/api/users-api';
 import { UserFormState } from '@store/common';
 import { authorizedUserPublicIdSelector, authorizedUserSelector, globalActions } from '@store/global';
-import { transformFormValuesToSpecializations, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { transformFormValuesToSpecializations } from '@utils/specialization';
 
 import { BusinessInfoFormState, CategoryFields } from './business-info-form.types';
 

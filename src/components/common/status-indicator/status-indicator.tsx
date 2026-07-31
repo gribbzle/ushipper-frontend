@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DoneIcon, ErrorIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './status-indicator.scss';
 

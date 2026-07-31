@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 
+import { RadioOption } from '@/components/common/radio-button-group/radio-button-group';
 import { InspectionType } from '@/enums';
-import { RadioOption } from '@components';
 import { FormControl, InputLabel, PrefixedField, RadioGroupInput } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './inspection-type-radio-group.scss';
 

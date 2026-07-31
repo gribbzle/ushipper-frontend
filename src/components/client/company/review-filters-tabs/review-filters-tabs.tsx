@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
 
+import { TabItemBase } from '@/components/common/tabs/tabs';
+import { Tabs } from '@/components/common/tabs/tabs';
 import { ReviewTabsEnum } from '@/enums';
-import { TabItemBase, Tabs } from '@components';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 type FiltersReviewTabsProps = {
     onTabClick: (tab: TabItemBase) => void;

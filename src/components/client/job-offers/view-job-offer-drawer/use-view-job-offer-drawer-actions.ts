@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { OfferStatusesEnum } from '@/enums';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { jobOffersApi, usePartiallyUpdateJobOfferMutation } from '@store/api/job-offers';
 
 import { useOpenSendJobOfferDrawer } from '../send-job-offer-drawer';

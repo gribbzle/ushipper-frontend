@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 
+import { useJobOffersFilters } from '@/components/client/job-offers/job-offers-filters/use-job-offer-filters';
 import { OffersListTabsEnum } from '@/enums';
-import { useJobOffersFilters } from '@components';
 import { useGetJobOffersQuery, useGetJobOffersStatisticQuery } from '@store/api/job-offers';
 import { OffersStatistic } from '@store/api/order-offers';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useUserRoleGroup } from '../use-user-role-group';
 

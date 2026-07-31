@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { CommodityTypesEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getCommodityTypeTranslate } from '@utils';
+import { getCommodityTypeTranslate } from '@utils/translate/commodity/get-commodity-type-translate';
 
 export const CommodityTypesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

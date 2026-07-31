@@ -1,11 +1,12 @@
 import React, { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch } from '@store';
 import { deleteBlackListItemAction, deleteBlackListItemPopupPropsSelector } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:black-list-page:delete-popup');
 

@@ -5,9 +5,9 @@ import { useAppDispatch } from '@store';
 import { chatsActions } from '@store/client';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { getSupportChatAction } from '@store/common/messages/actions';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { DriverSelectorFormState, DriverSelectorFormStateProps } from './driver-chat-selector-form';
+import { DriverSelectorFormState, DriverSelectorFormStateProps } from './driver-chat-selector-form.types';
 
 const t = translateByNamespace('common:messages-page:notifications');
 

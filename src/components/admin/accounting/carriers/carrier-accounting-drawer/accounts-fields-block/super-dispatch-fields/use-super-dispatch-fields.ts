@@ -10,7 +10,8 @@ import {
     useCreateCompanyExternalServiceSettingsConfirmLoginMutation,
     useCreateCompanyExternalServiceSettingsLoginMutation,
 } from '@store/api/company-external-service-settings';
-import { handleError, translateExternalSettingsSuccess } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateExternalSettingsSuccess } from '@utils/translate/accounting/notification-translations';
 
 import { CarrierAccountingDrawerFormValue } from '../../carrier-accounting-drawer.types';
 import { useCloseCarrierAccountingDrawer, useUpdateCompany } from '../../hooks';

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DriverOrdersTab } from '../driver-orders-tab';
 

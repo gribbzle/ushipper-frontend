@@ -2,23 +2,24 @@ import React, { ReactElement, useCallback, useMemo } from 'react';
 import has from 'has-values';
 import { toKebabCase } from 'js-convert-case';
 
+import { OfferVehicles } from '@/components/client/offers/offer-vehicles/offer-vehicles';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
+import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { getDestination } from '@/utils/driving';
 import { getOrderId, getPaymentTermsTranslate } from '@/utils/order';
 import { getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { CompanyRatingWithReviewCount, OfferVehicles, OrderRoute, OrderTag } from '@components';
-import { useMeCarrier, useMeShipper } from '@hooks';
 import { UserIcon } from '@icons';
 import { OrderOffer } from '@store/api/order-offers';
-import {
-    classname,
-    formatToCurrency,
-    getObjectWithoutEmptyFields,
-    getOrderProducts,
-    numWords,
-    renderProjectSpecificComponent,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { numWords } from '@utils/num-words';
+import { formatToCurrency } from '@utils/numbers';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { getOrderProducts } from '@utils/orders/get-order-products';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { OfferCommodities } from '../../offer-commodities';
 

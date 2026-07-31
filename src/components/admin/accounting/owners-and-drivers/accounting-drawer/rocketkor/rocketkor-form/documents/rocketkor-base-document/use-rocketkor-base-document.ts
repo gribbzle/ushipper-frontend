@@ -5,9 +5,11 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, savedDocumentsSelector } from '@store/admin';
 import { accountsApi, DocumentType, useDeleteAccountingProfileDocumentMutation } from '@store/api/accounts-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
-import { useGetAccountingProfile, useGetAccountingProfileDocuments } from '../../../../hooks';
+import { useGetAccountingProfile } from '../../../../hooks/use-get-accounting-profile';
+import { useGetAccountingProfileDocuments } from '../../../../hooks/use-get-accounting-profile-documents';
 
 import { fromDocumentTypeToOpenPopupProps } from './from-document-type-to-open-popup-props';
 

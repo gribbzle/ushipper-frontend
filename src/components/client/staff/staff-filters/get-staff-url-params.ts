@@ -1,6 +1,6 @@
 import { ParsedUrlQuery } from 'querystring';
 
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { StaffFiltersFormState, StaffQueryParams } from './staff-filters.types';
 

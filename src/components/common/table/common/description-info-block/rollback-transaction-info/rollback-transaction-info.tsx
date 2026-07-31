@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { PaymentConfirmationType } from '@/enums';
 import { RollbackTransaction } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DriverInfo } from '../driver-info';
 import { useFeesInfo, usePaymentConfirmationText } from '../hooks';

@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 import { useCheckPermission, useIsPartnerCompany, useMeCarrierDriver } from '@hooks';
 import { useAppSelector } from '@store';
 import { accountsUsersSelector } from '@store/client/accounts';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Route } from '../sidebar.types';
 

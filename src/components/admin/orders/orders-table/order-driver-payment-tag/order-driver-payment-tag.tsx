@@ -1,8 +1,13 @@
 import React from 'react';
 
-import { FloatingDropdown, HelperText, OrderTag, Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { ArrowDownIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useOrderDriverPaymentTag } from './useOrderDriverPaymentTag';
 

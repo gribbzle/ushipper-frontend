@@ -6,7 +6,9 @@ import { useTimeoutManager } from '@hooks';
 import { AttachIcon, SendFilledIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { sendMessageAction } from '@store/common';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import './message-controls.scss';
 

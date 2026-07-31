@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CoordsData, getDistanceAndDirection } from '@/utils/geocoding';
 import { CoordinatesWithRange } from '@store/api/loadboard-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './distance-direction-info.scss';
 

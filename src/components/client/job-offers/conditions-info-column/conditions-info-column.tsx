@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { OrderItemInfoColumn } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ConditionsInfoColumnProps } from './conditions-info-column.types';
 import { useConditionsInfoColumn } from './use-conditions-info-column';

@@ -3,7 +3,7 @@ import React, { MouseEvent, useCallback } from 'react';
 import { useAppDispatch } from '@store';
 import { OrderRequest } from '@store/api/order-requests-api';
 import { ShipperTrackingOrder, trackingActions } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ManagerInfo } from '../../manager-info';
 import { ActiveRequestTimelinePrice } from '../active-request-timeline-price';

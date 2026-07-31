@@ -1,6 +1,6 @@
 import { FuelCardStatus, FuelTransactionStatus } from '@/enums';
 import { FuelCard, FuelTransaction } from '@store/admin';
-import { PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

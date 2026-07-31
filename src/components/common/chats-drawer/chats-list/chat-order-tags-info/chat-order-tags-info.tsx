@@ -1,11 +1,12 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderTag } from '@/components/client';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { OrderStatus } from '@/enums';
 import { useMeCarrier, useMeShipper } from '@hooks';
 import { ChatShortInfo } from '@store/common/chats/types';
-import { translateByNamespace, translateCarrierPostedOrderStatus, translateOrderStatus } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCarrierPostedOrderStatus, translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 const t = translateByNamespace('common:chats');
 

@@ -3,9 +3,12 @@ import React, { DetailedHTMLProps, InputHTMLAttributes, TextareaHTMLAttributes, 
 import has from 'has-values';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FormHelperText, InputAdornment } from '@/fields';
+import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
+import { InputAdornment } from '@/fields/text-field/input-adornment/input-adornment';
 import { LoaderIcon } from '@icons';
-import { checkIfValidNumberInput, classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { checkIfValidNumberInput } from '@utils/numbers';
 
 import './text-field.scss';
 

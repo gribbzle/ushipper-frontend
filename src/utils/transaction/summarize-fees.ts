@@ -1,5 +1,6 @@
 import { Fee } from '@types';
-import { isFeeValueTypeFixed, isFeeValueTypePercent } from '@utils';
+
+import { isFeeValueTypeFixed, isFeeValueTypePercent } from '../fees';
 
 export const summarizeFees = (fees: Fee[]) => {
     const { percentSum, fixedSum } = fees.reduce(

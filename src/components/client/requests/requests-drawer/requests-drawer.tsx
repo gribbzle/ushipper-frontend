@@ -1,11 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import DrawerBody from '@/components/client/requests/requests-drawer/drawer-body';
-import { Drawer, OrderTag } from '@components';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { useGetRequestsQuery } from '@store/api/order-requests-api';
 import { useGetOrderQuery } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './requests-drawer.scss';
 

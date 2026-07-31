@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { SelectionGroupProps } from './selection-group.types';
 

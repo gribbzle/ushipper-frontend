@@ -1,5 +1,6 @@
 import { INotification, NotificationStatus } from '@store/common/notifications/types';
-import { axios, CursorPagination } from '@utils';
+import { axios } from '@utils/axios';
+import { CursorPagination } from '@utils/redux';
 
 export const fetchNotifications = async (userId: string, status: NotificationStatus, cursor: string | null) => {
     const result = await axios.get(`/api/users/${userId}/notifications`, {

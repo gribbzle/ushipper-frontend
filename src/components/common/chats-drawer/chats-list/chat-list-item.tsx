@@ -2,14 +2,18 @@ import React, { useCallback, useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { useSelector } from 'react-redux';
 
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
 import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
 import useMessageContent from '@/hooks/chat/use-message-content';
-import { Avatar, Badge } from '@components';
 import { SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { chatsActions, selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
-import { classname, diffForHumans, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { ChatAttachmentsInfo } from './chat-attachments-info';
 import { ChatOrderTagsInfo } from './chat-order-tags-info';

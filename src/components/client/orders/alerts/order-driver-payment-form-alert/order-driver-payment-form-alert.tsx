@@ -1,22 +1,20 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { DeclineOrPayToDriverPopup } from '@/components/admin';
-import { AlertBlock, Button, CodCopOrdersActionTag } from '@/components/common';
+import { DeclineOrPayToDriverPopup } from '@/components/admin/accounting/cod-orders/declined-or-pay-to-driver-popup';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { CodCopOrdersActionTag } from '@/components/common/table/common/cod-cop-order-action-tag/cod-cop-order-action-tag';
 import { InstantTermPaymentType } from '@/enums';
 import { useInstantPaymentAttachments, useOpenDriverPaymentFormDrawer, useOrdersActionsPermission } from '@/hooks/order';
+import { classname } from '@/utils/classname';
+import { convertBytesToMB } from '@/utils/converter';
+import { translateByNamespace } from '@/utils/i18n';
+import { convertAmountToCurrency, convertPriceToCurrency } from '@/utils/numbers';
+import { getOrderCheckStatuses } from '@/utils/orders/order-payment-helpers';
 import { getPaymentMethodTranslate } from '@/utils/payment';
-import {
-    classname,
-    convertAmountToCurrency,
-    convertBytesToMB,
-    convertPriceToCurrency,
-    getDriverPaymentRecipientTranslate,
-    getOrderCheckStatuses,
-    renderTextWithBreakLines,
-    translateActionRequired,
-    translateByNamespace,
-    translatePaymentForm,
-} from '@utils';
+import { renderTextWithBreakLines } from '@/utils/render';
+import { getDriverPaymentRecipientTranslate } from '@/utils/translate/get-payment-recipient-translate';
+import { translateActionRequired, translatePaymentForm } from '@/utils/translate/order/instant-term-payment-type-translations';
 
 import { ORDER_DRIVER_PAYMENT_FORM_ALERT_VIEW } from './constants';
 import { OrderDriverPaymentFormAlertProps, OrderDriverPaymentFormAlertViewVariant } from './order-driver-payment-form-alert.types';

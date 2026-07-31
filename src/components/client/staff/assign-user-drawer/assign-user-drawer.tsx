@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { Drawer } from '@/components/common';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 import { AssignUserList } from './assign-user-list/assign-user-list';
 import { AssignUserSearch } from './assign-user-search/assign-user-search';

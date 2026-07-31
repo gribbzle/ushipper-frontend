@@ -4,7 +4,7 @@ import { TabItemBase } from '@/components/common';
 import { CarrierAccountingDrawerTab } from '@/enums';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, carrierAccountingDrawerPropsSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer:tabs');
 

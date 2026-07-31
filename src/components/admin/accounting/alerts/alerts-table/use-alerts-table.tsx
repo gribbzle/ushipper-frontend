@@ -6,7 +6,8 @@ import { IssueReasonTypesEnum, OrderSortingDirection } from '@enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { GetIssuesParams, IssueData, useGetIssuesQuery } from '@store/api/issues-api';
 import { Load } from '@store/client';
-import { convertToStringArray, translateByNamespace } from '@utils';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 export type IssueDataWithOrder = IssueData & {
     order?: Load;

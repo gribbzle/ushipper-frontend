@@ -1,13 +1,10 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { createEditBlackListItem, deleteBlackListItem, fetchBlackListItem, fetchBlackListItems } from '@api';
-import { AppState } from '@store';
-
+import * as blackListApi from '../../../api/black-list-items';
 import { translateByNamespace } from '../../../utils/i18n';
 
 import { blackListItemsFiltersSelector, createEditBlackListItemModalModeSelector } from './selectors';
-import { blackListActions } from './slice';
 import { CreateEditBlackListItemData, FetchedBlackListItems, TBlackListItemsFilters } from './types';
 
 const notificationsT = translateByNamespace('common:black-list-page:notifications');
@@ -15,20 +12,21 @@ const notificationsT = translateByNamespace('common:black-list-page:notification
 export const fetchBlackListItemsAction = createAsyncThunk<FetchedBlackListItems, void>(
     'blackList/fetchBlackListItems',
     async (_data, { rejectWithValue, getState, dispatch }) => {
-        const state = getState() as AppState;
+        const state = getState() as any;
         const filters = blackListItemsFiltersSelector(state) as TBlackListItemsFilters;
 
         try {
-            const result = await fetchBlackListItems(filters);
+            const result = await blackListApi.fetchBlackListItems(filters);
 
-            dispatch(
-                blackListActions.setFilters({
+            dispatch({
+                type: 'blackList/setFilters',
+                payload: {
                     lastPage: result.meta.lastPage,
                     to: result.meta.to,
                     from: result.meta.from,
                     total: result.meta.total,
-                }),
-            );
+                },
+            });
 
             return result;
         } catch (error) {
@@ -40,14 +38,14 @@ export const fetchBlackListItemsAction = createAsyncThunk<FetchedBlackListItems,
 export const createEditBlackListItemFormSubmit = createAsyncThunk<void, CreateEditBlackListItemData>(
     'blackList/createEditBlackListItemFormSubmit',
     async (data, { rejectWithValue, dispatch, getState }) => {
-        const state = getState() as AppState;
+        const state = getState() as any;
         const mode = createEditBlackListItemModalModeSelector(state);
 
         try {
-            const result = await createEditBlackListItem(mode as 'create' | 'edit', data);
+            const result = await blackListApi.createEditBlackListItem(mode as 'create' | 'edit', data);
 
             toast.success(notificationsT<string>(`${mode === 'create' ? 'created' : 'updated'}-successfully`));
-            dispatch(blackListActions.setCreateEditModalProps({ isVisible: false, mode: null, blackListPublicId: null }));
+            dispatch({ type: 'blackList/setCreateEditModalProps', payload: { isVisible: false, mode: null, blackListPublicId: null } });
 
             dispatch(fetchBlackListItemsAction());
 
@@ -62,7 +60,7 @@ export const createEditBlackListItemFormSubmit = createAsyncThunk<void, CreateEd
 
 export const fetchBlackListItemAction = createAsyncThunk<any, string>('blackList/fetchBlackListItem', async (blackListPublicId, { rejectWithValue }) => {
     try {
-        return await fetchBlackListItem(blackListPublicId);
+        return await blackListApi.fetchBlackListItem(blackListPublicId);
     } catch (error) {
         return rejectWithValue(error);
     }
@@ -72,10 +70,10 @@ export const deleteBlackListItemAction = createAsyncThunk<any, string>(
     'blackList/deleteBlackListItem',
     async (blackListPublicId, { rejectWithValue, dispatch }) => {
         try {
-            const result = await deleteBlackListItem(blackListPublicId);
+            const result = await blackListApi.deleteBlackListItem(blackListPublicId);
 
-            dispatch(blackListActions.setDeleteBlackListItemPopupProps({ isVisible: false, blackListPublicId: null, blackListName: null }));
-            dispatch(blackListActions.setCreateEditModalProps({ isVisible: false, blackListPublicId: null, mode: null }));
+            dispatch({ type: 'blackList/setDeleteBlackListItemPopupProps', payload: { isVisible: false, blackListPublicId: null, blackListName: null } });
+            dispatch({ type: 'blackList/setCreateEditModalProps', payload: { isVisible: false, blackListPublicId: null, mode: null } });
             dispatch(fetchBlackListItemsAction());
 
             toast(notificationsT<string>('deleted-successfully'));

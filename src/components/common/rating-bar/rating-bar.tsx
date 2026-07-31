@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { classname, formatToOneDecimalPercentage, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToOneDecimalPercentage } from '@utils/numbers';
 
 import './rating-bar.scss';
 

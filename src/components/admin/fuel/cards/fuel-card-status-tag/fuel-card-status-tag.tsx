@@ -1,17 +1,15 @@
 import React from 'react';
 
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { FuelCardStatus } from '@/enums';
-import { FloatingDropdown, StatusBlock, StatusBlockView } from '@components';
 import { useFuelCardsActionsPermission } from '@hooks';
 import { ArrowDownIcon } from '@icons';
-import { getFuelCardStatusTranslate } from '@utils';
+import { getFuelCardStatusTranslate } from '@utils/translate/fuel/get-fuel-card-status-translate';
 
+import { FuelCardStatusTagProps } from './fuel-card-status-tag.types';
 import { useFuelCardStatusTag } from './use-fuel-card-status-tag';
-
-export type FuelCardStatusTagProps = {
-    status: FuelCardStatus;
-    id: number;
-};
 
 const statusViewMap: Record<FuelCardStatus, StatusBlockView> = {
     active: 'success',

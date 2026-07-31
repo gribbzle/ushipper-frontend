@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useCallback } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './selection-button.scss';
 

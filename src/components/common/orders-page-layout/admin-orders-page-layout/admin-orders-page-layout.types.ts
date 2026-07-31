@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { TablePaginationProps } from '@components';
+import type { TablePaginationProps } from '@/components/common/table/table.types';
 import { OrderType } from '@enums';
 import { GetOrdersData } from '@store/api/orders-api';
 import { Load } from '@store/client';

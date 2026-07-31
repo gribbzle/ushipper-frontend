@@ -1,9 +1,13 @@
 import React, { useMemo } from 'react';
 
-import { FloatingDropdown, StatusBlock, Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { ArrowDownIcon, TickIcon, XCircleIcon } from '@icons';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
-import { classname, getAccountStatusTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getAccountStatusTranslate } from '@utils/translate/get-account-status-translate';
 
 import { useVerifiedStatusInfo } from './use-verified-status-info';
 

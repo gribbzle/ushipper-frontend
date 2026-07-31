@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { cashOutTransactionPopupPropsSelector, walletActions } from '@store/client';
 
-import { CashOutTransactionFormState } from './cash-out-transaction-form';
+import { CashOutTransactionFormState } from './cash-out-transaction-form/cash-out-transaction-form.types';
 
 export const useCashOutTransactionPopup = () => {
     const { isPopupOpened } = useAppSelector(cashOutTransactionPopupPropsSelector);

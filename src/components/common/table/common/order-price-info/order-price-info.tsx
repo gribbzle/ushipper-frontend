@@ -3,7 +3,9 @@ import React, { useMemo } from 'react';
 import { useOrder, useOrderPaymentTerms } from '@/hooks/order';
 import { getOrderTermWithMethod } from '@/utils/order';
 import { calculateTotalPayment, getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
-import { classname, formatToCurrency, preparePaymentInformation } from '@utils';
+import { classname } from '@utils/classname';
+import { formatToCurrency } from '@utils/numbers';
+import { preparePaymentInformation } from '@utils/orders/prepare-payment-information';
 
 import './order-price-info.scss';
 

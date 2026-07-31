@@ -3,7 +3,9 @@ import React, { useCallback, useMemo } from 'react';
 import { Button } from '@/components/common';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, ReportType, selectedAccountSelector } from '@store/admin';
-import { classname, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
 
 import './accounting-drawer-header.scss';
 

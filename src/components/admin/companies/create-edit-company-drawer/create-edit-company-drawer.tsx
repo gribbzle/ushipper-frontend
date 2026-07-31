@@ -4,7 +4,9 @@ import { Field, Form } from 'react-final-form';
 import { Button, CompanyTypesSelect, Divider, Drawer } from '@/components/common';
 import { SwitchInput } from '@/fields/switch-input';
 import { FormControl, ImageFileInput, InputLabel, PasswordField, PhoneNumberInput, TextField } from '@fields';
-import { classname, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 import { composeValidators, emailValidator, passwordValidator, phoneValidator, required } from '@validators';
 
 import { CreateEditFormState } from './create-edit-company-drawer..types';

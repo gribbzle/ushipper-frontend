@@ -1,12 +1,17 @@
 import React, { useCallback, useState } from 'react';
 import Head from 'next/head';
 
+import { useBalanceTable } from '@/components/admin/accounting/common/balance-table/use-balance-table';
+import { useCreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/use-create-transaction-popup';
+import { BackLink } from '@/components/common/back-link/back-link';
+import { Button } from '@/components/common/button/button';
+import { ExportButton } from '@/components/common/button/ExportButton';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { BalanceType, TransactionTypeGroup } from '@/enums';
 import { useExportTransactions } from '@/hooks/useDownload';
-import { BackLink, Button, ExportButton, PageHeader, useBalanceTable, useCreateTransactionPopup } from '@components';
 import { useIsTransactionsPage, useTransactionActionsPermission } from '@hooks';
 import { PlusCircleIcon } from '@icons';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 type Props = {
     title: string;

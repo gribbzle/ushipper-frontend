@@ -1,5 +1,6 @@
-import { Load, OrderFormState, OrderSendBOLFormState } from '@store/client';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
+
+import { Load, OrderFormState, OrderSendBOLFormState } from '../store/common/orders/types';
 
 export const fetchOrder = async (publicId: string) => {
     const result = await axios.get<{ data: Load }>(`/api/orders/${publicId}`);

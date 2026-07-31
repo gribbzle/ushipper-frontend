@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { OrderItemInfoColumn } from '@components';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { useMeCarrier } from '@hooks';
-import { classname, diffForHumans, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { JobOfferStatusInfoColumnProps } from './job-offer-status-info-column.types';
 import { JobOfferStatusTag } from './job-offer-status-tag';

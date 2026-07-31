@@ -1,10 +1,13 @@
 import React, { useMemo } from 'react';
 
+import { Button } from '@/components/common/button/button';
+import { FlagButton } from '@/components/common/flag-button/flag-button';
+import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { OfferStatusesEnum } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
-import { Button, FlagButton, PaymentInfo } from '@components';
 import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@hooks';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useLoadboardItemActions } from '../../hooks';
 import { LoadboardItemProps } from '../../loadboard-item.types';

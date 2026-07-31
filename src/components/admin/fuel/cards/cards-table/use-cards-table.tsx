@@ -1,22 +1,22 @@
 import React, { useCallback, useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import {
-    AddFuelCardToDriverButton,
-    DateInfo,
-    FuelCardLatestTransaction,
-    FuelCardStatusTag,
-    TableColumn,
-    TableRowMenu,
-    useOpenEditFuelCardPopup,
-    UserInfoBlock,
-} from '@components';
+import { AddFuelCardToDriverButton } from '@/components/admin/fuel/cards/add-fuel-card-to-driver-button/add-fuel-card-to-driver-button';
+import { useOpenEditFuelCardPopup } from '@/components/admin/fuel/cards/edit-fuel-card-popup/use-open-edit-fuel-card-popup';
+import { FuelCardLatestTransaction } from '@/components/admin/fuel/cards/fuel-card-latest-transaction/fuel-card-latest-transaction';
+import { FuelCardStatusTag } from '@/components/admin/fuel/cards/fuel-card-status-tag/fuel-card-status-tag';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { OrderSortingDirection } from '@enums';
 import { useFuelCardsActionsPermission, useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';
 import { GetFuelCardParams, useGetFuelCardsQuery } from '@store/api/fuel-cards-api';
-import { classname, convertToStringArray, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FuelCardLimits } from '../fuel-card-limits';
 

@@ -1,8 +1,7 @@
 import { toSnakeCase } from 'js-convert-case';
 
-import { CompaniesFilters, CreateCompanyData, FetchedCompanies } from '@store/admin/companies';
-import { EditCompanyData } from '@store/admin/companies/types';
-import { axios } from '@utils';
+import { CompaniesFilters, CreateCompanyData, EditCompanyData, FetchedCompanies } from '@store/admin/companies/types';
+import { axios } from '@utils/axios';
 
 export const fetchCompanies = async (filters: Partial<CompaniesFilters>) => {
     const result = await axios.get('/api/companies', { params: filters });

@@ -3,13 +3,15 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { NullableFields } from '@/shared';
-import { Button, Popup } from '@components';
 import { StringInput } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderInternalNote, useCreateOrderInternalNoteMutation, useUpdateOrderInternalNoteMutation } from '@store/api/order-internal-notes-api';
 import { createEditInternalNotePopupPropsSelector, ordersActions } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './create-edit-order-internal-note-popup.scss';
 

@@ -1,9 +1,11 @@
 import React, { FC, MouseEvent, SVGProps, useCallback, useRef, useState } from 'react';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { TrackingOrderStatus } from '@/enums';
 import { CloseIcon, Ellipse, LikeIcon, QuestionIcon } from '@icons';
-import { classname, getTrackingOrderStatusTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import './tracking-help-paper.scss';
 

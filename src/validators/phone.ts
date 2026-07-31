@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 
-import { isString } from '@/shared';
+import { isString } from '../shared/type-guards';
 
 import { FieldValidator } from './types';
 

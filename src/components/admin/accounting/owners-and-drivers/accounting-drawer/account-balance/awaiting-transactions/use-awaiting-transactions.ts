@@ -5,7 +5,7 @@ import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';
 import { useGetTransactionsQuery } from '@store/api/transactions-api';
-import { calculateAwaitingBalance } from '@utils';
+import { calculateAwaitingBalance } from '@utils/calculate-awaiting-balance';
 
 const DEFAULT_PARAMS = {
     perPage: 3,

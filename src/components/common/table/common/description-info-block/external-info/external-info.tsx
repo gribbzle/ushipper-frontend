@@ -4,7 +4,10 @@ import { toHeaderCase } from 'js-convert-case';
 
 import { Ellipse } from '@icons';
 import { ExternalInfo } from '@store/admin';
-import { classname, getObjectWithoutEmptyFields, getTransactionSystemTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { getTransactionSystemTranslate } from '@utils/translate/preferences/get-transaction-system-translate';
 
 import './external-info.scss';
 

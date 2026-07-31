@@ -3,7 +3,9 @@ import React, { ReactNode } from 'react';
 import { Button } from '@/components/common';
 import { FeeCategoryValueType } from '@/enums';
 import { PlusCircleIcon } from '@icons';
-import { classname, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
 
 import './fees-fields-wrapper.scss';
 

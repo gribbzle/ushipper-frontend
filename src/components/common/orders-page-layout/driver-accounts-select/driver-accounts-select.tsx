@@ -6,7 +6,7 @@ import { UserRoleType } from '@/enums';
 import { SelectOption } from '@/shared';
 import { AsyncSelectField } from '@fields';
 import { GetAccountsParams, useLazyGetAccountsQuery } from '@store/api/accounts-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { Loader } from '../../loader';
 

@@ -2,11 +2,13 @@ import React, { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch } from '@store';
 import { useDeleteOrderInternalNoteMutation } from '@store/api/order-internal-notes-api';
 import { deleteInternalNotePopupPropsSelector, ordersActions } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './delete-order-internal-note-popup.scss';
 

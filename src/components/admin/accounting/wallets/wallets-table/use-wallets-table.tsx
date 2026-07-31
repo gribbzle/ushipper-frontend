@@ -9,7 +9,8 @@ import { useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions, FinancialBalanceData, FinancialBalanceFilters } from '@store/admin';
 import { useGetBalancesWithPaginateQuery } from '@store/api/balances-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { WalletAmountBlock } from './wallet-amount-block';
 

@@ -1,26 +1,24 @@
 import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import cleanDeep from 'clean-deep';
 import arrayMutators from 'final-form-arrays';
-import has from 'has-values';
+import { has } from 'lodash';
 import { useRouter } from 'next/router';
 import { Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import {
-    AttachmentsForm,
-    ContactFooterContextProvider,
-    CreateEditContactDrawer,
-    OrderCommoditiesFormPaper,
-    OrderCustomerInformationFieldsGroup,
-    OrderDeliveryInformationFieldsGroup,
-    OrderDetailsFieldsGroup,
-    OrderExpensesFormPaper,
-    OrderPaymentInformationFieldsGroup,
-    OrderPickupInformationFieldsGroup,
-    OrderVehiclesFormPaper,
-    Paper,
-    RouterContext,
-} from '@/components';
+import { CreateEditContactDrawer } from '@/components/client/contacts/creat-edit-contact-drawer/create-edit-contacts-drawer';
+import { AttachmentsForm } from '@/components/client/orders/forms/attachments-form/attachments-form';
+import { ContactFooterContextProvider } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
+import { OrderCustomerInformationFieldsGroup } from '@/components/client/orders/forms/order-customer-information-fields-group/order-customer-information-fields-group';
+import { OrderDeliveryInformationFieldsGroup } from '@/components/client/orders/forms/order-delivery-information-form/order-delivery-information-fields-group';
+import { OrderDetailsFieldsGroup } from '@/components/client/orders/forms/order-details-fields-group/order-details-fields-group';
+import { OrderPaymentInformationFieldsGroup } from '@/components/client/orders/forms/order-payment-information-fields-group/order-payment-information-fields-group';
+import { OrderPickupInformationFieldsGroup } from '@/components/client/orders/forms/order-pickup-information-fields-group/order-pickup-information-fields-group';
+import { OrderCommoditiesFormPaper } from '@/components/client/orders/papers/order-commodities-form-paper/order-commodities-form-paper';
+import { OrderExpensesFormPaper } from '@/components/client/orders/papers/order-expenses-form-paper/order-expenses-form-paper';
+import { OrderVehiclesFormPaper } from '@/components/client/orders/papers/order-vehicles-form-paper/order-vehicles-form-paper';
+import { RouterContext } from '@/components/common/router-provider/router-provider';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { Attachment } from '@/shared';
@@ -41,7 +39,12 @@ import { useUpdateOrderPaymentMutation } from '@store/api/order-payment-api';
 import { ordersApi, useCreateOrderAttachmentMutation, useCreateOrderMutation, useUpdateOrderMutation } from '@store/api/orders-api';
 import { isCreateEditContactModalVisibleSelector, OrderFormEnum, OrderFormState, OrderPaymentInformation } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, isFreightX, preparePaymentInformation, renderProjectSpecificComponent, scrollToFirstErrorField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { preparePaymentInformation } from '@utils/orders/prepare-payment-information';
+import { isFreightX } from '@utils/project-config';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
+import { scrollToFirstErrorField } from '@utils/scroll-to-error-filed';
 
 import { getDifferences, prepareCommodities, prepareExpenses, prepareVehicles } from './utils';
 

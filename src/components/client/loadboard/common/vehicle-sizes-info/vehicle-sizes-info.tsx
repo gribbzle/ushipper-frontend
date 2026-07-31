@@ -3,7 +3,8 @@ import has from 'has-values';
 
 import { getSizesOfVehicle } from '@/utils/vehicle';
 import { OrderVehicle } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './vehicle-sizes-info.scss';
 

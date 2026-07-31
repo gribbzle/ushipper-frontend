@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 
-import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
-import { TabItemBase } from '@/components/common';
-import { translateByNamespace } from '@utils';
+import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-tabs-enum';
+import { TabItemBase } from '@/components/common/tabs/tabs';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order-offers');
 

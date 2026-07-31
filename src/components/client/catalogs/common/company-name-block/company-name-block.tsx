@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useShowCompanyPage } from '@hooks';
 import { CheckGearIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './company-name-block.scss';
 

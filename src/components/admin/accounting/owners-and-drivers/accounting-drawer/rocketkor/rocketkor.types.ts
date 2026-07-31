@@ -1,13 +1,5 @@
 import { NullableFields } from '@/shared';
-
-export type Address = {
-    addressLine1: string;
-    addressLine2: string;
-    city: string;
-    state: string;
-    zipCode: string;
-    country: string;
-};
+import { Address } from '@types';
 
 export type MailingAddress = NullableFields<Address>;
 

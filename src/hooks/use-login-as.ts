@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
 
-import { useRouterForAccountChange } from '@hooks';
 import { useAppDispatch } from '@store';
 import { changeAccountSubmit } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+
+import { useRouterForAccountChange } from './use-router-for-account-change';
 
 const t = translateByNamespace('common:sidebar.notification');
 

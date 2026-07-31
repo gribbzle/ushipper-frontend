@@ -8,7 +8,7 @@ import { useEffectOnce, useIsPartnerCompany, useMeAdmin, useMeOwner } from '@hoo
 import { useAppDispatch, useAppSelector } from '@store';
 import { createEditUserFormSubmit, createEditUserModalModeSelector, fetchedUserSelector, fetchUserRolesAction, userRolesSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CreateEditFormState, CreateEditStaffDrawerProps } from './create-edit-staff-drawer.types';
 

@@ -1,4 +1,4 @@
-import { RequestStatus } from '@utils';
+import { RequestStatus } from '@utils/redux';
 
 export type DriverChatSelectorPopupPropsState = {
     isPopupOpened: boolean;

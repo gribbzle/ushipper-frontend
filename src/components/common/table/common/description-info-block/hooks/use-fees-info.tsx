@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 
 import { Transaction } from '@store/admin';
-import { formatFeesWithPeriod, renderTextWithBreakLines } from '@utils';
+import { renderTextWithBreakLines } from '@utils/render';
+import { formatFeesWithPeriod } from '@utils/transaction/format-used-fees';
 
 type useFeesInfoProps = Pick<Transaction, 'metadata' | 'createdAt'>;
 

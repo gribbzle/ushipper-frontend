@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { FundsTransferStatus } from '@/enums';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:orders-page:notifications');
 

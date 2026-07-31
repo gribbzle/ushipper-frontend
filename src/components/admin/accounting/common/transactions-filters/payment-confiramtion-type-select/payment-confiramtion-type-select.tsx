@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { PaymentConfirmationType } from '@/enums';
 import { SelectField } from '@fields';
-import { getPaymentConfirmationTypeTranslate } from '@utils';
+import { getPaymentConfirmationTypeTranslate } from '@utils/get-payment-confirmation-type-translate';
 
 type PaymentConfirmationTypeSelectProps = FieldRenderProps<string> & {
     additionalOptions?: { label: string; value: string }[];

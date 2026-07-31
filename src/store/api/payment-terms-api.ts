@@ -1,4 +1,4 @@
-import { PaymentTerm } from '@store/common';
+import { PaymentTerm } from '@/store/common/payment-terms/types';
 import { paymentTermsActions } from '@store/common/payment-terms/slice';
 
 import { apiSlice } from './api-slice';

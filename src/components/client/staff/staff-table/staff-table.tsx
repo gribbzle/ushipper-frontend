@@ -6,7 +6,7 @@ import { useGetUsersQuery } from '@store/api/users-api';
 import { usersFiltersSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';
 import { authorizedUserPublicIdSelector } from '@store/global';
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { StaffList } from './staff-list/staff-list';
 import { StaffTree } from './staff-tree/staff-tree';

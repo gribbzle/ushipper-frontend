@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react';
 
-import { Button } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+
+import { Button } from '../../button';
 
 import './assign-item.scss';
 

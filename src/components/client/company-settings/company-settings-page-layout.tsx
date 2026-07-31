@@ -4,9 +4,11 @@ import Head from 'next/head';
 import CompanyCard from '@/components/client/company-settings/company-card';
 import CompanySettingsHeader from '@/components/client/company-settings/company-settings-header';
 import ContactCard from '@/components/client/company-settings/contact-card';
-import { getMainLayout } from '@components';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useMeCarrier } from '@hooks';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import { BusinessInfoCard } from './business-info-card';
 

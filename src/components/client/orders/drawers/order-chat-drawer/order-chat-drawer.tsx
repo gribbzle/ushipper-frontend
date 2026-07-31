@@ -1,9 +1,12 @@
 import React, { useMemo } from 'react';
 
-import { Button, Drawer, OrderChat } from '@components';
+import { OrderChat } from '@/components/client/orders/show/order-chat/order-chat';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { useMeDriverRelated } from '@hooks';
 import { GeoLocationIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useOrderChatDrawer } from './use-order-chat-drawer';
 

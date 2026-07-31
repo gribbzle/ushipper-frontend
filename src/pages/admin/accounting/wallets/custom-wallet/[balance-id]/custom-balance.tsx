@@ -17,7 +17,8 @@ import {
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, fetchedBalanceSelector } from '@store/admin';
 import { useGetBalanceQuery } from '@store/api/balances-api';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('admin:accounting:custom-balance');
 

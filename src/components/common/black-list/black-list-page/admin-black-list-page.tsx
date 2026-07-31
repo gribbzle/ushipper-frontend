@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getMainLayout } from '@components';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 
 import { BlackListPageHead } from '../black-list-head';
 import { BlackListPageLayout } from '../black-list-page-layout';

@@ -6,9 +6,11 @@ import { useDefaultAccountBalance, useTransactionActionsPermission } from '@hook
 import { PlusIcon } from '@icons';
 import { BalanceValue } from '@store/admin';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
-import { useCreateTransactionPopup } from '../..';
+import { useCreateTransactionPopup } from '../create-transaction-popup';
 
 import './account-balance-info.scss';
 

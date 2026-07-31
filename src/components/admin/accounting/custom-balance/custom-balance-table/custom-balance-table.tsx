@@ -3,7 +3,7 @@ import React from 'react';
 import { EmptyLayout } from '@/components/common';
 import { useAppSelector } from '@store';
 import { fetchedBalanceSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { BalanceTable, useBalanceTable } from '../../common';
 

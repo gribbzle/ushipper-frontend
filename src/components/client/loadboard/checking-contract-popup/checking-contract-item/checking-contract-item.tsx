@@ -4,7 +4,10 @@ import { Button, ParsedOrderRoute } from '@/components/common';
 import { DownloadIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOrderData } from '@store/client/loadboard';
-import { classname, diffForHumans, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { useCheckingContractItem } from './use-checking-contract-item';
 

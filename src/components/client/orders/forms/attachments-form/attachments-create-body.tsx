@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { PROJECT_KEY_NAME } from '@constants';
-import { classname, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
 
 import { FieldOrEmptyZone } from './attachments-field-or-empty-zone';
 import { useAttachmentsForm } from './useAttachmentsForm';

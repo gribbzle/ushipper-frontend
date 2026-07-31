@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 
 import { PersonIcon } from '@icons';
-import { classname, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './contact-info.scss';
 

@@ -1,8 +1,4 @@
 import { CatalogListTabsEnum, CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
-import { BaseCatalogFiltersParams } from '@store/client';
-
-import { CategoryFields } from '../../profile-settings';
-import { CatalogFiltersFormState } from '../catalog-filters-form';
 
 export type CatalogFiltersForUrlParams = Partial<{
     statisticsStatus: CatalogListTabsEnum;
@@ -17,12 +13,3 @@ export type CatalogFiltersForUrlParams = Partial<{
     languages: string[];
     name: string;
 }>;
-
-export type CatalogFiltersValue = Omit<BaseCatalogFiltersParams, 'perPage'> &
-    Partial<{
-        statisticsStatus: CatalogListTabsEnum;
-        orderName: CatalogSortingNameEnum;
-        orderDirection: OrderSortingDirection;
-        page: number;
-    }> &
-    Omit<CatalogFiltersFormState, keyof CategoryFields | 'sortBy'>;

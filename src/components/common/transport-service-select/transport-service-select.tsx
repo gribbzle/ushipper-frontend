@@ -4,7 +4,8 @@ import { FieldRenderProps } from 'react-final-form';
 import { SelectOption } from '@/shared';
 import { SelectField } from '@fields';
 import { useGetSpecializationsQuery } from '@store/api/specializations-api';
-import { classname, getTransportServiceTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 import './transport-service-select.scss';
 

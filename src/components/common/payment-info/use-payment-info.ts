@@ -5,7 +5,7 @@ import { getOrderTermWithMethod } from '@/utils/order';
 import { calculateTotalPayment, getPaymentTermTranslate, getShortPaymentTermTranslate } from '@/utils/payment';
 import { useMeDriverRelated } from '@hooks';
 import { Load } from '@store/client';
-import { formatToCurrency } from '@utils';
+import { formatToCurrency } from '@utils/numbers';
 
 export const usePaymentInfo = (order: Load, view?: 'small') => {
     const isDriver = useMeDriverRelated();

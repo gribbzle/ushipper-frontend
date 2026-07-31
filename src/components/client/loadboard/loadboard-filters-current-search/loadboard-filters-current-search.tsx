@@ -1,12 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Tag } from '@/components/common';
+import { Tag } from '@/components/common/info-tag/info-tag';
 import { useLoadboard } from '@hooks';
 import { XIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { isSearchAlongRouteSelector, loadboardListSelector } from '@store/client/loadboard/selectors';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { getFilterValue } from './utils';
 

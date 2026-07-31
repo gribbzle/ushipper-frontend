@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 
 import { InstantTermPaymentType } from '@/enums';
 import { useCodCopOrderOptions } from '@/hooks/order';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { CodCopOrdersActionTagProps } from './cod-cop-order-action-tag';
+import { CodCopOrdersActionTagProps } from './cod-cop-order-action-tag.types';
 
 const hasOptionsSet = new Set([
     InstantTermPaymentType.RECIPIENT_COMPANY,

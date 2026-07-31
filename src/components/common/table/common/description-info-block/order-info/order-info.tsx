@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Link } from '@components';
+import { Link } from '@/components/common/link/link';
 import { useMeAdmin } from '@hooks';
 import { Transaction } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:balance-table');
 

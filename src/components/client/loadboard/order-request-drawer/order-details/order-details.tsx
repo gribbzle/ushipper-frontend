@@ -1,9 +1,13 @@
 import React, { useCallback } from 'react';
 
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
+import { ContactInfo } from '@/components/common/contact-info/contact-info';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { getOrderId } from '@/utils/order';
-import { CompanyRatingWithReviewCount, ContactInfo, Paper } from '@components';
 import { Load } from '@store/client';
-import { classname, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { BrokerDetailsBlock, CommoditiesDetailsBlock, OrderRouteDetails, PaymentInfoBlock, VehiclesDetailsBlock } from '../../common';
 

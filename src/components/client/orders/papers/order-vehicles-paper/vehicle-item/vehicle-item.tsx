@@ -2,14 +2,21 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 import { useRouter } from 'next/router';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { getVehicleTypeTranslation } from '@/utils/vehicle';
-import { IconButton, OrderTag, Tooltip, TooltipContent, TooltipTrigger } from '@components';
 import { PencilIcon, TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderVehicle } from '@store/api/orders-api';
-import { classname, formatToCurrency, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './vehicle-item.scss';
 

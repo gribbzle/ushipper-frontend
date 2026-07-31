@@ -2,12 +2,15 @@ import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useDeleteOrderVehicleMutation } from '@store/api/order-vehicle-api';
 import { ordersApi } from '@store/api/orders-api';
 import { deleteOrderVehiclePopupSelector, orderPublicIdSelector, ordersActions } from '@store/common';
-import { classname, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './delete-order-vehicle-popup.scss';
 

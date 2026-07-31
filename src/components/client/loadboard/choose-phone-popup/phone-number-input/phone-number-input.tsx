@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { DarkInput } from '@/fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:calling');
 

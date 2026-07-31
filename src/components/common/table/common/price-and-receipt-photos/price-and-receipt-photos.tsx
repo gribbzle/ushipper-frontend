@@ -1,9 +1,10 @@
 import React, { useCallback } from 'react';
 
-import { AttachmentsImagesBlock } from '@/components/common';
+import { AttachmentsImagesBlock } from '@/components/common/table/common/attachments-images-block/attachments-images-block';
 import { getPaymentsTermsTranslate } from '@/utils/order';
 import { useGetOrderQuery } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './price-and-receipt-photos.scss';
 

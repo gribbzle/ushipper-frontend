@@ -1,12 +1,13 @@
 import React from 'react';
 
+import { Button } from '@/components/common/button/button';
 import { getArchiveOfInspectionCarBodyPhotos } from '@api';
-import { Button } from '@components';
 import { DownloadIcon } from '@icons';
 import { ImageProvider } from '@providers';
 import { InspectionPhoto } from '@store/client/order-BOL';
 import { ImageView } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './inspection-photos.scss';
 

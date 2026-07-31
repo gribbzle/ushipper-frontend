@@ -2,9 +2,10 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
-import { AddressInput, AddressValue } from '@/components/common';
+import { AddressInput, AddressValue } from '@/components/common/address-input/address-input';
 import { FormControl, InputLabel } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './loadboard-filter-waypoints.scss';
 import Nullable = Cypress.Nullable;

@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
+import { Link } from '@/components/common/link/link';
 import { TransactionStatusGroupEnum } from '@/enums';
 import { useOrder, usePendingOrderLabel } from '@/hooks/order';
-import { Link } from '@components';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { TransactionStatusGroupTag } from '../transaction-status-group-tag';
 

@@ -1,11 +1,14 @@
 import React, { MouseEvent, useCallback, useMemo, useState } from 'react';
 
-import { Accordion, Button, Loader } from '@/components';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { Button } from '@/components/common/button/button';
+import { Loader } from '@/components/common/loader/loader';
 import { OfferToRequestStatusesEnum, RequestStatusesEnum } from '@/enums';
 import { ArrowDownIcon } from '@icons';
 import { useGetRequestsQuery } from '@store/api/order-requests-api';
 import { ShipperTrackingOrder } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ActiveRequestItem } from './active-request-item';
 

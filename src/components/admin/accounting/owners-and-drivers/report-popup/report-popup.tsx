@@ -3,19 +3,16 @@ import { Field, Form } from 'react-final-form';
 
 import { Button, Popup } from '@/components/common';
 import { DatePicker, FormControl, InputLabel } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, required } from '@validators';
 
 import { HasPeriodRadioGroup } from './has-period-type-radio-group';
+import { ReportFormValue } from './report-popup.types';
 import { useReportPopup } from './use-report-popup';
 
 import './report-popup.scss';
-
-export type ReportFormValue = {
-    hasPeriod: 'custom' | 'last_cash_out';
-    startDate: string;
-    endDate: string;
-};
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:report-popup');
 const cn = classname('report-popup');

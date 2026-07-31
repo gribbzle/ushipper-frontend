@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { driverChatSelectorPopupPropsSelector, getSupportChatRequestSelector, messagesActions } from '@store/common/messages';
 
-import { DriverSelectorFormState } from './driver-chat-selector-form';
+import { DriverSelectorFormState } from './driver-chat-selector-form/driver-chat-selector-form.types';
 
 export const useDriverChatSelectorPopup = () => {
     const { isPopupOpened } = useAppSelector(driverChatSelectorPopupPropsSelector);

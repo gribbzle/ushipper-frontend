@@ -4,3 +4,4 @@ export * from './fee-category';
 export * from './tracking';
 export * from './transactions';
 export * from './order';
+export * from './address';

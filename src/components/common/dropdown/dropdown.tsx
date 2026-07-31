@@ -2,7 +2,7 @@ import React, { MouseEvent, useCallback, useEffect, useMemo, useRef, useState } 
 import { debounce } from 'debounce';
 
 import useOutsideCLick from '@/hooks/use-outside-cLick';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { Divider } from '../divider';
 

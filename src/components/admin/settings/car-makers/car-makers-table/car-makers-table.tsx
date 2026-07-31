@@ -7,7 +7,8 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { CarMaker } from '@store/admin';
 import { carMakersFiltersSelector, carMakersSelector } from '@store/admin/car-makers-settings/selectors';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';
-import { classname, formatDateOrGetDash } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDateOrGetDash } from '@utils/dates';
 
 import './car-makers-table.scss';
 

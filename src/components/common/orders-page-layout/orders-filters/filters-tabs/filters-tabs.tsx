@@ -1,12 +1,15 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
+import { Dropdown } from '@/components/common/dropdown/dropdown';
 import DropdownArrow from '@/components/common/main-layout/header-user-block/dropdown-arrow.svg';
+import { Tabs } from '@/components/common/tabs/tabs';
 import { OrderStatisticsStatus } from '@/enums';
 import { isString } from '@/shared';
-import { Dropdown, Tabs } from '@components';
 import { StatisticsCounters } from '@store/api/orders-api';
-import { classname, translateByNamespace, translateOrderStatisticsStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatisticsStatus } from '@utils/translate/order/translations';
 
 import { useTabsNames } from './useTabsNames';
 import { getCounterValue } from './utils';

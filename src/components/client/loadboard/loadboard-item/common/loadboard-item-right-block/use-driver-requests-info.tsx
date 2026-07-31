@@ -2,7 +2,11 @@ import React, { useMemo } from 'react';
 
 import { useMeCarrier, useMeCarrierDriver, useMeDispatcher, useMeDriverRelated } from '@hooks';
 import { OrderRequest } from '@store/api/order-requests-api';
-import { classname, diffForHumans, formatToCurrency, getCompanyTypeTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { LoadboardItemProps } from '../../loadboard-item.types';
 

@@ -5,7 +5,8 @@ import { toast } from 'react-toastify';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import { useGetCompanyData } from '@hooks';
 import { CompanyPathData, usePathCompanyJSONMutation } from '@store/api/company-api';
-import { transformFormValuesToSpecializations, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { transformFormValuesToSpecializations } from '@utils/specialization';
 
 import { BusinessInfoCardFormType } from './business-info-card.types';
 

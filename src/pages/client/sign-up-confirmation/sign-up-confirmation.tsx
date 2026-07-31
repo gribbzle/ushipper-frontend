@@ -7,7 +7,12 @@ import { AlertBlock, Button, getProductInfoLayout, GoToSignInButton, Link } from
 import { wrapper } from '@store';
 import { signUpConfirmationStatusSelector } from '@store/client';
 import { signUpActions } from '@store/client/sign-up/slice';
-import { axios, classname, getProjectName, renderTextWithBreakLines, RequestStatus, translateByNamespace } from '@utils';
+import { axios } from '@utils/axios';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { renderTextWithBreakLines } from '@utils/render';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './sign-up-confirmation.scss';
 

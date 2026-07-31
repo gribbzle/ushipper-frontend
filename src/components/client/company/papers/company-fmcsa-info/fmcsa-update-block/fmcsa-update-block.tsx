@@ -2,9 +2,10 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { format } from 'date-fns';
 import { toast } from 'react-toastify';
 
-import { Link } from '@/components';
+import { Link } from '@/components/common/link/link';
 import { useUpdateCompanyFMCSARecordMutation } from '@store/api/company-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './fmcsa-update-block.scss';
 

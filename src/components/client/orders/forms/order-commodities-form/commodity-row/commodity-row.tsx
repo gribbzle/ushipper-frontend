@@ -1,13 +1,15 @@
 import React from 'react';
 import { useFormState } from 'react-final-form';
 
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { CommodityTypesSelect } from '@/components/common/selects/commodity/commodity-types-select/commodity-types-select';
+import { FreightClassesSelect } from '@/components/common/selects/commodity/freight-classes-select/freight-classes-select';
 import { CommodityDimensionUnitEnum, CommodityWeightUnitEnum } from '@/enums';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { CommodityTypesSelect, FreightClassesSelect, IconButton } from '@components';
 import { FieldPrefix, PrefixedField, TextField } from '@fields';
 import { TrashIcon } from '@icons';
 import { OrderFieldsGroup, OrderFormState } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './commodity-row.scss';
 

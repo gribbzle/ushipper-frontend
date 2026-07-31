@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import has from 'has-values';
 
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { getOrderCustomerAddress } from '@/utils/order';
-import { Paper } from '@components';
 import { ClockIcon, EmailIcon, ExternalLinkIcon, GeoLocationIcon, PersonIcon, PhoneIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ExternalBrokerRating, HiddenExternalBrokerTooltip } from '../../../common';
 import { DetailItem } from '../../detail-item';

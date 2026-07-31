@@ -1,4 +1,5 @@
-import { MapboxStyle } from './enums';
+import { MapboxStyle } from '@enums';
+
 import { MapboxStyleDefinition } from './types';
 
 export const DEFAULT_STYLE: MapboxStyleDefinition = { key: MapboxStyle.STREETS, uri: 'mapbox://styles/mapbox/streets-v11' };

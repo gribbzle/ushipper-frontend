@@ -1,10 +1,12 @@
 import React from 'react';
 import has from 'has-values';
 
+import { VehicleEnclosedTag } from '@/components/common/vehicle-enclosed-tag/vehicle-enclosed-tag';
+import { VehicleInopTag } from '@/components/common/vehicle-inop-tag/vehicle-inop-tag';
 import { getFullNameOfVehicle, getVehicleTypeTranslation } from '@/utils/vehicle';
-import { VehicleEnclosedTag, VehicleInopTag } from '@components';
 import { OrderVehicle } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { VehicleSizesInfo } from '../../common/vehicle-sizes-info';
 

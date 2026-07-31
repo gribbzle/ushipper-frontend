@@ -4,12 +4,18 @@ import { toCamelCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 import { formatPhoneNumberIntl } from 'react-phone-number-input';
 
-import { Button, StatusBlock, StatusBlockView, TableColumn, TableRowMenu, UserInfoBlock } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { StatusBlock, StatusBlockView } from '@/components/common/status-block/status-block';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { User } from '@store/common';
 import { staffActions } from '@store/common/staff/slice';
-import { classname, formatDateOrGetDash, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { UseStaffTreeProps } from '../staff-table.types';
 import { useStaffTable } from '../use-staff-table';

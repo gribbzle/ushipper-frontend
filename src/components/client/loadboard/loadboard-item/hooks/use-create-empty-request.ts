@@ -6,7 +6,8 @@ import { toast } from 'react-toastify';
 import loadboardApi from '@store/api/loadboard-api';
 import { useCreateRequestMutation } from '@store/api/order-requests-api';
 import { loadboardActions } from '@store/client/loadboard';
-import { getTranslateParsedOrderNotification, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTranslateParsedOrderNotification } from '@utils/translate/get-translate-parsed-order-notification';
 
 const tNotification = translateByNamespace('client:loadboard:notifications');
 

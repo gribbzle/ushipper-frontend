@@ -1,20 +1,15 @@
 import React, { useMemo } from 'react';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
-import { TrackingOrdersByDispatcherData, TrackingOrdersByStatusData } from '@store/api/tracking-api';
 import { isShipperOrdersListShownSelector } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ShippersOrdersListContent } from './shipper-orders-list-content';
 import { ShippersOrdersListHead } from './shipper-orders-list-head';
+import { ShippersOrdersListPaperProps } from './shipper-orders-list-paper.types';
 
 import './shipper-orders-list-paper.scss';
-
-export type ShippersOrdersListPaperProps = {
-    totalCounter?: number;
-    groupedOrders?: (TrackingOrdersByStatusData | TrackingOrdersByDispatcherData)[];
-};
 
 const cn = classname('shipper-orders-list-paper');
 

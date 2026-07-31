@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { Button, Popup } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AddDriverToCompanyForm } from './add-driver-to-company-form';
 import { useAddDriverToCompanyPopup } from './use-add-driver-to-company-popup';

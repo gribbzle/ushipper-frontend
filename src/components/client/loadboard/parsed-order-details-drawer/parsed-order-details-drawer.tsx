@@ -1,8 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { Drawer, LoadboardDrawerMap } from '@components';
+import { LoadboardDrawerMap } from '@/components/client/loadboard/loadboard-drawer-map/loadboard-drawer-map';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ParsedOrderDetails } from './parsed-order-details';
 import { useParsedOrderDetailsDrawer } from './use-parsed-order-details-drawer';

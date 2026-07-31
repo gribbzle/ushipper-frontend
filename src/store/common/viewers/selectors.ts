@@ -1,4 +1,8 @@
-import { AppState } from '@store';
+type AppState = {
+    common: {
+        viewers: any;
+    };
+};
 
 const viewersSelector = (state: AppState) => state.common.viewers;
 

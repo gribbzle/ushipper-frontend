@@ -1,9 +1,13 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Paper, TransportServiceSelect } from '@components';
+import { Button } from '@/components/common/button/button';
+import { TransportServiceSelect } from '@/components/common/transport-service-select/transport-service-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { FormControl, InputLabel, TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useBusinessInfoCard } from './use-business-info-card';
 import { useInitialValuesBusinessInfoCard } from './use-initial-values-business-info-card';

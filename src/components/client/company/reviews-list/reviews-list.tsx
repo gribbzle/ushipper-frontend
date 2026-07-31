@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 
 import { Review } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { OrderReviewPopup } from '../../orders';
 import { ReviewItem } from '../review-item';

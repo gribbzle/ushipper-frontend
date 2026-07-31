@@ -2,14 +2,19 @@ import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { OrderOfferDetails } from '@/components/client/orders/forms/common/order-offer-details/order-offer-details';
+import { RequestItem } from '@/components/client/requests/request-item/request-item';
 import { RequestOrderInfo } from '@/components/client/requests/requests-drawer/request-order-info';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { getFinalPaymentAmount } from '@/utils/payment';
-import { Button, OrderOfferDetails, Paper, RequestItem } from '@components';
 import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
 import { useCreateOfferMutation } from '@store/api/order-offers';
 import { OrderRequest } from '@store/api/order-requests-api';
 import { Load, SendOfferToCarrierFormState } from '@store/client';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 import { required } from '@validators';
 
 const requestForm = translateByNamespace('client:loadboard:request-form');

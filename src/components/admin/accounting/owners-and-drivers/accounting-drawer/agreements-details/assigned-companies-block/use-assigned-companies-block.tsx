@@ -8,7 +8,7 @@ import { accountingActions, selectedAccountSelector } from '@store/admin';
 import { accountingAccountsApi, AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { useUpdateUserJSONMutation } from '@store/api/users-api';
 import { staffActions } from '@store/common/staff/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

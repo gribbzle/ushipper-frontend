@@ -1,9 +1,10 @@
 import React from 'react';
 import { useFormState } from 'react-final-form';
 
-import { Link } from '@components';
+import { Link } from '@/components/common/link/link';
 import { useGetSpecializationsQuery } from '@store/api/specializations-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CategoriesSelect } from './categories-select';
 import { SpecializationSelect } from './specializations-select';

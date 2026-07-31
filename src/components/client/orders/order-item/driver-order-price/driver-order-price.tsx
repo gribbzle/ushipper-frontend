@@ -5,7 +5,11 @@ import { useOrderPaymentTerms } from '@/hooks/order';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import { BalanceValue } from '@store/admin';
 import { OrderPaymentInformation } from '@store/client';
-import { classname, formatToCurrency, getProjectOrderPayText, preparePaymentInformation, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { preparePaymentInformation } from '@utils/orders/prepare-payment-information';
+import { getProjectOrderPayText } from '@utils/translate/order/get-project-order-pay-text';
 
 import './driver-order-price.scss';
 

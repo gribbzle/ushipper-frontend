@@ -6,7 +6,8 @@ import { useHasPartnerCompanies, useIsPartnerCompany, useMeDriverRelated } from 
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { Load } from '@store/client';
 
-import { useOrderTotalAmount, useTabValueFromUrl } from '.';
+import { useOrderTotalAmount } from './use-order-total-amount';
+import { useTabValueFromUrl } from './use-tab-value-from-url';
 
 //TODO rewrite using useOrder and useOrderHelpers
 export const useOrderItem = (order: Load) => {

@@ -17,9 +17,10 @@ import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { AccountingAccountData, accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { usePartiallyUpdateAccountMutation } from '@store/api/accounts-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
-import { AccountBalanceInfo, AddDriverToCompanyButton, CompaniesUsersInfo, VerifiedStatusInfo } from '../..';
+import { AccountBalanceInfo, AddDriverToCompanyButton, CompaniesUsersInfo, VerifiedStatusInfo } from '../../common';
 
 import { CustomFeesInfo } from './custom-fees-info';
 import { LatestLocationInfo } from './latest-location-block';

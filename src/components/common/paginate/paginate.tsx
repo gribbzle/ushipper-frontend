@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPaginate from 'react-paginate';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import ArrowIcon from './arrow.svg';
 

@@ -70,7 +70,8 @@ const nextConfig = {
     images: {
         domains: [],
     },
-    webpack(config) {
+    swcMinify: true,
+    webpack(config, { dev }) {
         // TURN FCKNG OFF THE CSS MODULES
         config.module.rules.forEach(rule => {
             const { oneOf } = rule;
@@ -104,7 +105,12 @@ const nextConfig = {
             ],
         });
 
-        config.plugins.push(new StylelintPlugin());
+        if (dev) {
+            // stylelint is slow in dev
+            // config.plugins.push(new StylelintPlugin());
+        } else {
+            config.plugins.push(new StylelintPlugin());
+        }
 
         return config;
     },

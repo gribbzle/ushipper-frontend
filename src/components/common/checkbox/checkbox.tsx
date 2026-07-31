@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import CheckIconDefault from './check-default.svg';
 import CheckIconMini from './check-mini.svg';

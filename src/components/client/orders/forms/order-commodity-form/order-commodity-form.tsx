@@ -3,14 +3,22 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { Divider } from '@/components/common/divider/divider';
+import { CommodityTypesSelect } from '@/components/common/selects/commodity/commodity-types-select/commodity-types-select';
+import { FreightClassesSelect } from '@/components/common/selects/commodity/freight-classes-select/freight-classes-select';
+import { HazmatClassesSelect } from '@/components/common/selects/commodity/hazmat-classes-select/hazmat-classes-select';
+import { PackingGroupSelect } from '@/components/common/selects/commodity/packing-group-select/packing-group-select';
 import { CommodityDimensionUnitEnum, CommodityTemperatureUnitEnum, CommodityWeightUnitEnum } from '@/enums';
-import { CommodityTypesSelect, Divider, FreightClassesSelect, HazmatClassesSelect, PackingGroupSelect } from '@components';
 import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useCreateOrderCommodityMutation, useGetOrderCommodityQuery, useUpdateOrderCommodityMutation } from '@store/api/order-commodity-api';
 import { ordersApi } from '@store/api/orders-api';
 import { CommodityFormState, orderPublicIdSelector } from '@store/common';
-import { classname, getObjectWithoutEmptyFields, hasNonUnitCommodityFields, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { hasNonUnitCommodityFields } from '@utils/commodity';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { parseField } from '@utils/parse-field';
 
 import './order-commodity-form.scss';
 

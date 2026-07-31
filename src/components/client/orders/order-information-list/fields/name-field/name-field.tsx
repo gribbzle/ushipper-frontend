@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { IconButton } from '@/components';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { PencilIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './name-field.scss';
 

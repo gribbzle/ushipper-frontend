@@ -2,7 +2,9 @@ import React, { useCallback, useMemo } from 'react';
 
 import { RowItem } from '@/components/common';
 import { AccountingAccountTransactionsData } from '@store/api/accounting-accounts-api';
-import { classname, convertCentsToInteger, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertCentsToInteger } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import './transactions-info-block.scss';
 

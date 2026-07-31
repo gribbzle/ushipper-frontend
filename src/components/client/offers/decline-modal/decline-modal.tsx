@@ -4,14 +4,15 @@ import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { OfferActionModal } from '@/components';
+import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
 import { OfferStatusesEnum } from '@/enums';
 import { DeclinationReasonsEnum } from '@/enums/declination-reasons-enum';
 import { FormControl, InputLabel, LabeledCheckboxInput, TextField } from '@fields';
 import { useAppDispatch } from '@store';
 import loadboardApi from '@store/api/loadboard-api';
 import { usePartiallyUpdateOfferMutation } from '@store/api/order-offers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './decline-modal.scss';

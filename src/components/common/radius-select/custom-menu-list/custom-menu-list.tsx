@@ -1,7 +1,8 @@
 import React, { LegacyRef, useCallback, useEffect, useRef } from 'react';
 import { components, MenuListProps } from 'react-select';
 
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Button } from '../../button';
 

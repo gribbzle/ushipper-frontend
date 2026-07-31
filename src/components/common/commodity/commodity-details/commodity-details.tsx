@@ -4,7 +4,9 @@ import has from 'has-values';
 import { CommodityWeightUnitEnum } from '@/enums';
 import { Ellipse } from '@icons';
 import { OrderCommodity } from '@store/api/orders-api';
-import { classname, getCommodityTypeTranslate, getFullNameOfCommodity, getSizesOfCommodity } from '@utils';
+import { classname } from '@utils/classname';
+import { getFullNameOfCommodity, getSizesOfCommodity } from '@utils/commodity';
+import { getCommodityTypeTranslate } from '@utils/translate/commodity/get-commodity-type-translate';
 
 import './commodity-details.scss';
 

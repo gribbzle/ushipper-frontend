@@ -3,14 +3,17 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
-import { Button, Divider, Drawer } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { Drawer } from '@/components/common/drawer/drawer';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import { PhoneNumberInput, StringInput } from '@fields';
 import { CheckIcon, TrashIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { createEditContactFormSubmit, createEditContactModalModeSelector, fetchedContactSelector } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, phoneValidator } from '@validators';
 
 import { AddressFields } from '../../company-settings';

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
 
-import { AlertsFiltersFormState } from './alerts-filters';
+import { AlertsFiltersFormState } from './alerts-filters.types';
 
 export const useAlertsFilters = () => {
     const {

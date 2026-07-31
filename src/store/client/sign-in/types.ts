@@ -1,5 +1,5 @@
 import { UserRoleType } from '@/enums';
-import { AuthorizedUserInfo } from '@store/global/types';
+import { AuthorizedUserInfo } from '@store/global/shared-types';
 
 export type SignInFormData = {
     login: string;
@@ -21,12 +21,6 @@ export type Token = {
     token: string;
     userId: string;
     accountId: string;
-};
-
-export type AccountToken = {
-    userId: string;
-    companyId: string;
-    token: string;
 };
 
 export type AuthTokenData = {

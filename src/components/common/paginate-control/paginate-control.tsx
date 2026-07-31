@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { classname, numberWithCommas, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { numberWithCommas } from '@utils/numbers';
 
 import { Paginate } from '../paginate/paginate';
 

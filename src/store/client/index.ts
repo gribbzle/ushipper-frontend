@@ -17,6 +17,7 @@ import { walletReducer } from './wallet';
 
 export * from './sign-in';
 export * from './sign-up';
+export * from './accounts';
 export * from '../common/staff';
 export * from '../common/contacts';
 export * from '../common';

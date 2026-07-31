@@ -1,5 +1,6 @@
 import { Attachment } from '@/shared';
-import { isFilePdf } from '@utils';
+
+import { isFilePdf } from './files';
 
 export type SplitAttachmentsResult = {
     pdfFiles: Attachment[];

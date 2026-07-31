@@ -7,7 +7,10 @@ import {} from '@hooks';
 import { useAppSelector } from '@store';
 import { orderDriverDelayedPaymentSelector, orderDriverFeeChargeSelector, orderFullPriceSelector, orderPriceSelector, orderSelector } from '@store/client';
 import { DotLeader } from '@ui';
-import { convertCentsToDollars, convertCentsToInteger, formatToCurrency, getProjectOrderPayText, translateByNamespace } from '@utils';
+import { convertCentsToDollars, convertCentsToInteger } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getProjectOrderPayText } from '@utils/translate/order/get-project-order-pay-text';
 
 import { BlockWrapper } from '../block-wrapper';
 import { DriverChargedFeeAlert } from '../driver-charged-fee-alert';

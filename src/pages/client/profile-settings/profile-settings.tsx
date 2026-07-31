@@ -5,7 +5,9 @@ import { BusinessInfo, Button, getMainLayout, PersonalInfoForm } from '@componen
 import { ExternalLinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './profile-settings.scss';
 

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Paper } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './wallet-empty-layout.scss';
 

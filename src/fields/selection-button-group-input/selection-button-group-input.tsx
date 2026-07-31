@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectionButtonGroup, SelectionButtonOption } from '@components';
-import { classname } from '@utils';
+import { SelectionButtonGroup, SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
+import { classname } from '@utils/classname';
 
 import './selection-button-group-input.scss';
 

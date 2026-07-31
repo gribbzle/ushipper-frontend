@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 
 import { HistoryItemEventName, OrderStatus } from '@/enums';
 import { ColorValueHex } from '@/shared';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './timeline-dot.scss';
 

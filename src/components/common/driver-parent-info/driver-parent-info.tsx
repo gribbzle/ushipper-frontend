@@ -2,7 +2,10 @@ import React, { useCallback } from 'react';
 
 import { useIsAdminPage } from '@hooks';
 import { DriverParent } from '@store/common';
-import { classname, formatToCurrency, getBalanceInfo, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getBalanceInfo } from '@utils/orders/get-balance-info';
 
 import './driver-parent-info.scss';
 

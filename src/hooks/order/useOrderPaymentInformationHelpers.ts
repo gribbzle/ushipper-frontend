@@ -2,7 +2,8 @@ import { useMemo } from 'react';
 
 import { PaymentMethod } from '@/enums';
 import { calculateTotalPayment } from '@/utils/payment';
-import { formatToCurrency, preparePaymentInformation } from '@utils';
+import { formatToCurrency } from '@utils/numbers';
+import { preparePaymentInformation } from '@utils/orders/prepare-payment-information';
 
 import { usePaymentTerm } from './use-order-payment-terms';
 import { useOrder } from './useOrder';

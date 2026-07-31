@@ -1,4 +1,19 @@
-import { AppState } from '@store';
+type AppState = {
+    client: {
+        orderBOL: {
+            data: {
+                order: {
+                    publicId: string;
+                    order: any;
+                    details: any;
+                    status: any;
+                    pickupInformation: any;
+                    deliveryInformation: any;
+                } | null;
+            };
+        };
+    };
+};
 
 export const OrderBOLSelector = (state: AppState) => state.client.orderBOL.data;
 

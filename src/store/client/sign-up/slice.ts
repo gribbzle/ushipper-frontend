@@ -1,7 +1,7 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { composeBuilder, requestInitial, RequestStatus } from '@utils';
+import { composeBuilder, requestInitial, RequestStatus } from '@utils/redux';
 
 import { fetchSignUpConfigAction, requestUSDOTVerifyFormSubmit, signUpFormSubmit } from './actions';
 import { SignUpSliceState } from './types';

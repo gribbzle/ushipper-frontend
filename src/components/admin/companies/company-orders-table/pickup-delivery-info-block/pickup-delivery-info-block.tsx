@@ -3,7 +3,9 @@ import { toKebabCase } from 'js-convert-case';
 
 import { OrderRoute, OrderTag } from '@/components/client';
 import { Load } from '@store/client';
-import { classname, translateFundsTransferStatus, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import './pickup-delivery-info-block.scss';
 

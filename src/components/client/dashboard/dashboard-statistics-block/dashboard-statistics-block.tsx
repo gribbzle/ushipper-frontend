@@ -2,14 +2,19 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import randomColor from 'randomcolor';
 import { Field, FieldRenderProps, Form } from 'react-final-form';
 
+import { Button } from '@/components/common/button/button';
+import { ChartData } from '@/components/common/stacked-area-chart/stacked-area-chart';
+import { StackedAreaChart } from '@/components/common/stacked-area-chart/stacked-area-chart';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { SelectOption } from '@/shared';
-import { Button, ChartData, Paper, StackedAreaChart } from '@components';
 import { SelectField } from '@fields';
 import { useAppSelector } from '@store';
 import { GetStatisticParams, StatisticInformation, useLazyGetStatisticsQuery } from '@store/api/users-api';
 import { accountsUsersSelector, AccountUser } from '@store/client/accounts';
 import { authorizedUserPublicIdSelector } from '@store/global';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DashboardEmptyBlock } from '../empty-block';
 

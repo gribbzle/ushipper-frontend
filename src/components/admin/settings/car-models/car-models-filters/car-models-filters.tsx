@@ -10,7 +10,9 @@ import { useEffectOnce } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { carModelStatusesSelector, filterSearchCarMakersAction, filterSearchCarMakersSelector } from '@store/admin';
 import { carModelsSettingsActions } from '@store/admin/car-models-settings/slice';
-import { classname, FormValuesSpy, getObjectWithoutEmptyFields } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './car-models-filters.scss';
 

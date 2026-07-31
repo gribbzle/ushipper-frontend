@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { StatusBlock, StatusBlockView } from '@/components/common';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { CompanyStatusEnum } from '@/enums';
-import { getCompanyStatusTranslate } from '@utils';
+import { getCompanyStatusTranslate } from '@utils/get-company-status-translate';
 
 const statusViewMap = {
     [CompanyStatusEnum.BLOCKED]: 'danger',

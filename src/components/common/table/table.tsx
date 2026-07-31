@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { Checkbox } from '../checkbox';
 
+import { getId } from './get-row-id';
 import { useSelectRowHandler, useVisibleColumns } from './hooks';
 import { TableComponent } from './table.types';
 import { TableColumnBody } from './table-column-body';
@@ -14,8 +15,6 @@ import './table.scss';
 
 const OFFSET = 24;
 const PAGINATION_HEIGHT = 48;
-
-export const getId: <T extends Record<string, unknown>>(row: T) => string = row => (row.id || row.publicId) as string;
 
 const cn = classname('table');
 

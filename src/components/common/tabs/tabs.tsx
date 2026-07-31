@@ -1,7 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 import { isNumber } from '@/shared';
-import { classname, isClientSide } from '@utils';
+import { classname } from '@utils/classname';
+import { isClientSide } from '@utils/nextjs';
 
 import './tabs.scss';
 

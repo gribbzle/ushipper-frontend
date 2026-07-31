@@ -1,9 +1,10 @@
 import { useMemo } from 'react';
 
 import { FinancialBalanceData } from '@store/admin';
-import { getFullNameOfUser, getObjectWithoutEmptyFields } from '@utils';
+import { getFullNameOfUser } from '@utils/get-full-name-of-user';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
-import { useGetAccountingProfile } from '../../../hooks';
+import { useGetAccountingProfile } from '../../../hooks/use-get-accounting-profile';
 
 export const useFinancialAccountContent = (balance: FinancialBalanceData) => {
     const { billingAddress, card, bankAccount } = balance;

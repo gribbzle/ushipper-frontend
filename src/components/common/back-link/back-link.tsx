@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { ArrowLeftIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { RouterContext } from '../router-provider';
 

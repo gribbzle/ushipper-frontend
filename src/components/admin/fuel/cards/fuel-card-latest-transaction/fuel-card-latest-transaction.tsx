@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DateInfo } from '@components';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
 import { FuelCardRawData } from '@store/admin';
 
 export const FuelCardLatestTransaction = ({ rawData }: { rawData: FuelCardRawData }) => {

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { Load } from '@store/client';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useCreateEmptyRequest } from './use-create-empty-request';
 import { useSendRequestConditions } from './use-send-request-conditions';

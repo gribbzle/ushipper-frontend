@@ -1,20 +1,15 @@
 import React, { useMemo } from 'react';
 
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { TransactionStatusesEnum } from '@/enums';
-import { FloatingDropdown, Tooltip, TooltipContent, TooltipTrigger } from '@components';
 import { useTransactionActionsPermission } from '@hooks';
-import { Transaction } from '@store/admin';
 import { StatusTag, StatusTagView } from '@ui';
-import { renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
+import { TransactionStatusTagProps } from './transaction-status-tag-types';
 import { useTransactionStatusTag } from './use-transaction-status-tag';
-
-export type TransactionStatusTagProps = Pick<
-    Transaction,
-    'amount' | 'status' | 'publicId' | 'destinationBalance' | 'sourceBalance' | 'type' | 'externalProvider'
-> & {
-    isClickable?: boolean;
-};
 
 const statusViewMap: Record<TransactionStatusesEnum, StatusTagView> = {
     [TransactionStatusesEnum.NEW]: 'new',

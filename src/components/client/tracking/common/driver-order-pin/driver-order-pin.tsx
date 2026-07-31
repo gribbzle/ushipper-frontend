@@ -1,9 +1,12 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Avatar, Badge } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
 import { DriverIcon } from '@icons';
 import { Driver, TrackingDriver, User } from '@store/client';
-import { checkIsGPSStatusRecentlyUpdated, classname, stringAvatar } from '@utils';
+import { classname } from '@utils/classname';
+import { checkIsGPSStatusRecentlyUpdated } from '@utils/dates';
+import { stringAvatar } from '@utils/string-avatar';
 
 import './driver-order-pin.scss';
 

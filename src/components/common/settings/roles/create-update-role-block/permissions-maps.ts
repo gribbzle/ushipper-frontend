@@ -1,4 +1,4 @@
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 export const t = translateByNamespace('common:create-update-role-block');
 const shipperTranslate = translateByNamespace('common:create-update-role-block.shipper');

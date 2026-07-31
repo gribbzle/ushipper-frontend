@@ -2,11 +2,13 @@ import React, { useCallback } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useDeleteOrderExpenseMutation } from '@store/api/order-expenses-api';
 import { deleteOrderExpensePopupSelector, orderPublicIdSelector, ordersActions } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './delete-order-expense-popup.scss';
 

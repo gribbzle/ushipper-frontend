@@ -1,18 +1,18 @@
 import React from 'react';
 
-import {
-    BackLink,
-    CreateEditOrderInternalNotePopup,
-    DeleteOrderPopup,
-    MarkAsNewPopup,
-    OrderDriverPaymentFormDrawer,
-    OrderMarkAsPaidDrawer,
-    OrdersEmptyTabPanel,
-    OrderSendInvoiceDrawer,
-    StatisticCounters,
-} from '@components';
+import { OrderDriverPaymentFormDrawer } from '@/components/client/orders/drawers/order-driver-payment-form-drawer/order-driver-payment-form-drawer';
+import { OrderMarkAsPaidDrawer } from '@/components/client/orders/drawers/order-mark-as-paid-drawer/order-mark-as-paid-drawer';
+import { OrderSendInvoiceDrawer } from '@/components/client/orders/drawers/order-send-invoice-drawer/order-send-invoice-drawer';
+import { MarkAsNewPopup } from '@/components/client/orders/mark-as-new-popup/mark-as-new-popup';
+import { OrdersEmptyTabPanel } from '@/components/client/orders/orders-empty-tab-panel/orders-empty-tab-panel';
+import { CreateEditOrderInternalNotePopup } from '@/components/client/orders/popups/create-edit-order-internal-note-popup/create-edit-order-internal-note-popup';
+import { DeleteOrderPopup } from '@/components/client/orders/popups/delete-order-popup/delete-order-popup';
+import { StatisticCounters } from '@/components/client/orders/statistic-counters/statistic-counters';
+import { BackLink } from '@/components/common/back-link/back-link';
 import { useMeDriverRelated } from '@hooks';
-import { classname, translateByNamespace, translateOrderStatisticsGroup } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatisticsGroup } from '@utils/translate/order/translations';
 
 import { EmptyOrdersPanel } from '../empty-orders-panel';
 import { OrdersFilters } from '../orders-filters';

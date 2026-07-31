@@ -2,7 +2,9 @@ import { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { JobOffer } from '@store/client';
-import { getTermConditionTranslate, getWorkingTimeTranslate, translateByNamespace } from '@utils';
+import { getTermConditionTranslate } from '@utils/get-term-condition-translate';
+import { getWorkingTimeTranslate } from '@utils/get-working-time-translate';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:job-offers-page.job-offer.conditions');
 

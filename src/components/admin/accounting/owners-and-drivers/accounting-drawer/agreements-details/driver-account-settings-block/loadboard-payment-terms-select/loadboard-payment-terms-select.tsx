@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { DriverLoadboardPaymentTermEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getDriverLoadboardPaymentTermTranslate } from '@utils';
+import { getDriverLoadboardPaymentTermTranslate } from '@utils/translate/get-driver-loadboard-payment-terms-translate';
 
 export const LoadboardPaymentTermsSelect = (props: FieldRenderProps<string>) => {
     const options = Object.values(DriverLoadboardPaymentTermEnum).map(term => ({

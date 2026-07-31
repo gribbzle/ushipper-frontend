@@ -1,5 +1,9 @@
-import { CatalogFiltersValue } from '@components';
-import { AppState } from '@store';
+import { CatalogFiltersValue } from './types';
+type AppState = {
+    client: {
+        catalogs: any;
+    };
+};
 
 import { CatalogsSliceState } from './types';
 

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import loadboardApi from '@store/api/loadboard-api';
 import { usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const translateRequest = translateByNamespace('client:loadboard:request-form');
 

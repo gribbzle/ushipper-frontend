@@ -1,19 +1,17 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button, Paper } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/common/paper/paper';
 import { getOrderId } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
 import { useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector } from '@store/client';
-import {
-    classname,
-    formatToCurrency,
-    getTrackingOrderStatusTranslate,
-    isTrackingOrderNotDispatched,
-    isTrackingOrderPickedUp,
-    mapOrderStatusToTrackingStatus,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { mapOrderStatusToTrackingStatus } from '@utils/tracking/map-order-status-to-tracking-order-status';
+import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
+import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import { ActiveRequests } from '../active-requests';
 import { ShipperTrackingOrderRoute } from '../shipper-tracking-order-route';

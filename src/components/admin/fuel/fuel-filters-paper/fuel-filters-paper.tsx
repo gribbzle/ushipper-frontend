@@ -4,8 +4,8 @@ import { Form } from 'react-final-form';
 
 import { Paper } from '@/components/common';
 import { AppFilters } from '@hooks';
-import { classname } from '@utils';
-import { FormValuesSpy } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
 
 import './fuel-filters-paper.scss';
 

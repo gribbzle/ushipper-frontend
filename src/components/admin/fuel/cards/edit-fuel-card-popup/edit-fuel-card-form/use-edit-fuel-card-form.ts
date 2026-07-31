@@ -5,9 +5,9 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { editFuelCardPopupPropsSelector, fuelActions } from '@store/admin';
 import { useGetAdminConfigQuery } from '@store/api/admin-configuration';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { EditFuelCardFormState, EditFuelCardToDriverFormProps } from './edit-fuel-card-form';
+import { EditFuelCardFormState, EditFuelCardToDriverFormProps } from './edit-fuel-card-form.types';
 
 const t = translateByNamespace('admin:fuel:cards-page:notifications');
 

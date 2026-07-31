@@ -1,12 +1,18 @@
 import React, { useCallback, useEffect } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AuthPageHeader, Button, Link, SignInErrorAlert } from '@components';
+import { AuthPageHeader } from '@/components/common/auth-page-header';
+import { Button } from '@/components/common/button';
+import { Link } from '@/components/common/link';
+import { SignInErrorAlert } from '@/components/common/sign-in-error-alert';
+import { classname } from '@/utils/classname';
+import { translateByNamespace } from '@/utils/i18n';
+import { getProjectName } from '@/utils/project-config';
+import { RequestStatus } from '@/utils/redux';
 import { FormControl, InputLabel, PasswordField, TextField } from '@fields';
 import { useMeDispatcher, useMeDriver, useRouterForAccountChange } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { SignInFormData, signInFormSubmit, signInFormSubmitErrorMessageSelector, signInFormSubmitStatusSelector } from '@store/client';
-import { classname, getProjectName, RequestStatus, translateByNamespace } from '@utils';
 import { required } from '@validators';
 
 import SignInIcon from './sign-in.svg';

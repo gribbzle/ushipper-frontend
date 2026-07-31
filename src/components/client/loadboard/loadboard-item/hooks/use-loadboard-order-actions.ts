@@ -7,7 +7,7 @@ import loadboardApi from '@store/api/loadboard-api';
 import { OrderOffer } from '@store/api/order-offers';
 import { useCreateOrderFlagMutation, useDeleteOrderFlagMutation } from '@store/api/orders-api';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OfferTabsEnum } from '../../../offers/offer-drawer/offer-drawer';
 import { LoadboardItemProps } from '../loadboard-item.types';

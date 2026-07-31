@@ -5,9 +5,11 @@ import { AttachmentType } from '@/enums';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, rocketkorDocumentsPopupsPropsSelector, RocketkorDocumentsPopupsState } from '@store/admin';
 import { accountsApi, DocumentType, useSendAccountingProfileDocumentMutation, useUpdateAccountingProfileDocumentMutation } from '@store/api/accounts-api';
-import { getObjectWithoutEmptyFields, handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
-import { useGetAccountingProfile } from '../../../hooks';
+import { useGetAccountingProfile } from '../../../hooks/use-get-accounting-profile';
 import { DocumentFormValue } from '../document-form';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:rocketkor');

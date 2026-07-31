@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button, Popup } from '@/components/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useDeleteFeeCategoryPopup } from './use-delete-fee-category-popup';
 

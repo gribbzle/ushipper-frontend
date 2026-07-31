@@ -3,9 +3,9 @@ import { DocumentFormValue } from '@/components/admin/accounting/owners-and-driv
 import { AccountStatusesEnum, DriverLoadboardPaymentTermEnum, MassPayUserTypesEnum, OrderSourcesEnum, UserRoleType } from '@/enums';
 import { Attachment } from '@/shared';
 import { toFormData } from '@/utils/to-form-data';
-import { BalanceValue } from '@store/admin';
+import { BalanceValue } from '@store/admin/accounting/balance-types';
 import { AccountData, AccountProfileData } from '@store/client/accounts';
-import { PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

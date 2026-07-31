@@ -1,9 +1,12 @@
 import React from 'react';
 
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { getOrderId } from '@/utils/order';
-import { OrderItemInfoColumn, Paper } from '@components';
 import { Load } from '@store/client';
-import { classname, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { CommoditiesDetailsBlock, OrderRouteDetails, PaymentInfoBlock, VehiclesDetailsBlock } from '../../../common';
 

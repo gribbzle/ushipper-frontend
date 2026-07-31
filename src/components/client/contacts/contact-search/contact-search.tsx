@@ -7,7 +7,8 @@ import { useDebounce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fetchContactsAction } from '@store/common';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './contact-search.scss';
 

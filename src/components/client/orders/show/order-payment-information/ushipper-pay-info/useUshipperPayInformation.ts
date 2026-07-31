@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { useOrder, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
-import { getProjectOrderPayText } from '@utils';
+import { getProjectOrderPayText } from '@utils/translate/order/get-project-order-pay-text';
 
 export const useUshipperPayInformation = () => {
     const { driverFeeCharge, driverDelayedPayment } = useOrder();

@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { useAppSelector } from '@store';
 import { useGetTrackingDriverQuery } from '@store/api/tracking-api';
 import { fetchedSelectedDriverIdSelector } from '@store/client';
-import { getTrackingDriverAverageSpeed } from '@utils';
+import { getTrackingDriverAverageSpeed } from '@utils/tracking/tracking-driver-helpers';
 
 export const useShipperTrackingDriver = () => {
     const driverPublicId = useAppSelector(fetchedSelectedDriverIdSelector);

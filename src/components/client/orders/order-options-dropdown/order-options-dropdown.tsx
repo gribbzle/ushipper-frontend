@@ -1,15 +1,16 @@
 import React, { ReactNode, useCallback, useMemo } from 'react';
 
+import { Dropdown, DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
 import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import { downloadFileUsingAnchorElement } from '@/utils/files';
-import { Dropdown, DropdownDividerOption, DropdownOption } from '@components';
 import { OrderPaymentStatus, OrderStatisticsStatus, OrderStatus } from '@enums';
 import { useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { useAppDispatch } from '@store';
 import { useCreateOrderInvoiceMutation, useLazyGetOrderInvoiceQuery } from '@store/api/order-invoice-api';
 import { Load, ordersActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useTabValueFromUrl } from '../order-item/hooks';
 

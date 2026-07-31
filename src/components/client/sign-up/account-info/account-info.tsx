@@ -1,9 +1,10 @@
 import React from 'react';
 import { Field, useField } from 'react-final-form';
 
-import { Link } from '@components';
+import { Link } from '@/components/common/link/link';
 import { FormControl, InputLabel, PasswordField, PhoneNumberInput, SwitchInput, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, passwordValidator, phoneValidator, required } from '@validators';
 
 type Props = {

@@ -1,11 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { CancelButton, DownloadButton, Popup } from '@/components/common';
+import { CancelButton } from '@/components/common/button/CancelButton';
+import { DownloadButton } from '@/components/common/button/DownloadButton';
+import { Popup } from '@/components/common/popup/popup';
 import { ImageProvider } from '@providers';
 import { useAppDispatch, useAppSelector } from '@store';
 import { imageViewerPopupSelector, viewersActions } from '@store/common/viewers';
 import { ImageView } from '@ui';
-import { classname, downloadFileUsingFetch } from '@utils';
+import { classname } from '@utils/classname';
+import { downloadFileUsingFetch } from '@utils/files';
 
 import './image-viewer-popup.scss';
 

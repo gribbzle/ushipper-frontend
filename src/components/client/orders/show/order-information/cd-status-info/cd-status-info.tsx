@@ -1,12 +1,15 @@
 import React, { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { useMeCarrier } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { orderPublicIdSelector, ordersActions } from '@store/client';
-import { classname, diffForHumans, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

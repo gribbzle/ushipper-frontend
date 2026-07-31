@@ -1,10 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { Button } from '@components';
+import { Button } from '@/components/common/button/button';
 import { PhoneIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { loadboardActions } from '@store/client/loadboard';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './call-button-block.scss';
 

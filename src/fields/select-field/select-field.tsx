@@ -15,11 +15,12 @@ import AsyncSelect from 'react-select/async';
 import { GroupBase, MenuPlacement, MultiValue as MultiValueType, SingleValue } from 'react-select/dist/declarations/src/types';
 import { AsyncProps } from 'react-select/dist/declarations/src/useAsync';
 
-import { FormHelperText } from '@/fields';
+import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
 import { SelectOption } from '@/shared';
 import { CSSObject } from '@emotion/serialize';
 import { ArrowDownIcon, PlusIcon, TickIcon, XCircleIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './select-field.scss';
 

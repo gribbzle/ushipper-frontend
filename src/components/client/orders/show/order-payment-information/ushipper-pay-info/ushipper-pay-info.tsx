@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { useMeAdmin } from '@hooks';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { BlockWrapper } from '../block-wrapper';
 import { DriverPayDotLeader } from '../driver-pay-dot-leader';

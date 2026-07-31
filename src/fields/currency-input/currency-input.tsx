@@ -3,7 +3,7 @@ import has from 'has-values';
 import { FieldRenderProps } from 'react-final-form';
 import { NumericFormat, NumericFormatProps } from 'react-number-format';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { FormHelperText } from '../form-helper-text';
 import { InputAdornment } from '../text-field';

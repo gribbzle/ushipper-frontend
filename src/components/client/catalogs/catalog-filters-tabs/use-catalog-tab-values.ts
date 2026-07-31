@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { CatalogListTabsEnum } from '@/enums';
-import { TabItemBase } from '@components';
 import { CatalogStatistic } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:catalogs:tabs');
 

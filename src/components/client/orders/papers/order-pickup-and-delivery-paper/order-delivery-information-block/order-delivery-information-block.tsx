@@ -1,11 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 
-import { OrderDeliveryInformationDrawer, OrderInformationList, ZoneButton } from '@/components';
+import { OrderDeliveryInformationDrawer } from '@/components/client/orders/drawers/order-delivery-information-drawer/order-delivery-information-drawer';
+import { OrderInformationList } from '@/components/client/orders/order-information-list/order-information-list';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDeliveredAtSelector, orderDeliveryInformationSelector, ordersActions } from '@store/client';
-import { getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 const t = translateByNamespace('client:order:delivery-information');
 

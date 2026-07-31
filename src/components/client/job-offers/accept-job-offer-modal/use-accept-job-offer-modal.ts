@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 import { OfferStatusesEnum } from '@/enums';
 import { useGetJobOfferQuery, usePartiallyUpdateJobOfferMutation } from '@store/api/job-offers';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AcceptJobOfferFormValue } from './accept-job-offer-modal.types';
 

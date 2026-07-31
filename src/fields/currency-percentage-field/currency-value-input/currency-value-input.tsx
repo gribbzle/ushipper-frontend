@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CurrencyInput } from '@fields';
+import { CurrencyInput } from '@/fields/currency-input/currency-input';
 
 import { useCurrencyValueInput } from './use-currency-value-input';
 

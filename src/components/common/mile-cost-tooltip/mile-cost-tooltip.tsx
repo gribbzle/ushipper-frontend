@@ -1,19 +1,12 @@
 import React from 'react';
 
-import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
-import { OrderPaymentInformation } from '@store/client';
-import { renderProjectSpecificComponent } from '@utils';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { CommoditiesMileCostTooltip } from './commodities-mile-cost-tooltip';
+import { MileCostTooltipProps } from './mile-cost-tooltip.types';
 import { VehiclesMileCostTooltip } from './vehicles-mile-cost-tooltip';
 
-export type MileCostTooltipProps = {
-    drivingDistance?: number;
-    paymentInformation: OrderPaymentInformation;
-    vehicles?: OrderVehicle[];
-    commodities?: OrderCommodity[];
-    classNameTitle?: string;
-};
+export { MileCostTooltipProps };
 
 export const MileCostTooltip = ({ drivingDistance, paymentInformation, vehicles = [], commodities = [], classNameTitle }: MileCostTooltipProps) => {
     if (!drivingDistance) {

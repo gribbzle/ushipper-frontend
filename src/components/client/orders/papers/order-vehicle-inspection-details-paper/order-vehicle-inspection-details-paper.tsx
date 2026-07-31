@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { OrderInspection } from '@/components';
-import { Paper } from '@/components/common';
+import { OrderInspection } from '@/components/client/orders/order-inspection/order-inspection';
+import { Paper } from '@/components/common/paper/paper';
 import { useGetOrderVehiclesQuery } from '@store/api/order-vehicle-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-vehicle-inspection-details-paper.scss';
 

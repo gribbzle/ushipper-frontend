@@ -5,8 +5,8 @@ import { useDispatch } from 'react-redux';
 
 import { LoadboardFiltersFromUrlParams } from '@/components/client/loadboard/loadboard-filters/types';
 import { getLoadboardFiltersForUrlParams, getLoadboardFiltersFromUrlParams } from '@/components/client/loadboard/loadboard-filters/utils';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { areFiltersEqual } from '@/utils/filters';
-import { TabItemBase } from '@components';
 import { LoadboardTab } from '@enums';
 import { useAppSelector } from '@store';
 import { LoadBoardFilters, SavedLoadBoardFilters, useGetLoadboardItemsQuery, useGetLoadboardStatisticQuery } from '@store/api/loadboard-api';

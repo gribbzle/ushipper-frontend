@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, accountingDrawerPropsSelector } from '@store/admin';
 
-import { useGetAccountingProfile } from '../hooks';
+import { useGetAccountingProfile } from '../hooks/use-get-accounting-profile';
 
 export const useRocketkor = () => {
     const dispatch = useAppDispatch();

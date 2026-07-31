@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { TextField } from '../text-field';
 

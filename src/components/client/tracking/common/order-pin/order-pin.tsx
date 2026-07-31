@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 
+import { PulseMarker } from '@/components/common/pulse-marker/pulse-marker';
 import { OrderStatus } from '@/enums';
-import { PulseMarker } from '@components';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './order-pin.scss';
 

@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { Attachment } from '@/shared';
-import { OrderItemInfoColumn } from '@components';
 import { FileIcon } from '@icons';
-import { classname, convertBytesToMB, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertBytesToMB } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FileProps } from './attachments-info-column.types';
 

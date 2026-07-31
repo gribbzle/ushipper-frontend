@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import { DEFAULT_COD_COP_ORDERS_PARAMS } from '@constants';
 import { useQueryFilters, useTable } from '@hooks';
 import { GetOrdersData, useGetOrdersQuery } from '@store/api/orders-api';
-import { convertToStringArray, translateByNamespace } from '@utils';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:orders-page:notifications');
 

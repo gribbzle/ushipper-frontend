@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EmptyLayout, Table } from '@/components/common';
 import { FuelTransaction } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useTransactionsTable } from './use-transactions-table';
 

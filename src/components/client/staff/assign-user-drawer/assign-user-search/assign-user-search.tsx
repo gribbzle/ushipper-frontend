@@ -2,7 +2,9 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AssignUserSearchProps, AssignUserSearchState } from './assign-user-search.types';
 import { useAssignUserSearch } from './use-assign-user-search';

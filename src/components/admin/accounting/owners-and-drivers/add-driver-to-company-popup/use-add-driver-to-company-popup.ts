@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, addDriverToCompanyPopupPropsSelector } from '@store/admin';
 
-import { AddDriverToCompanyFormState } from './add-driver-to-company-form';
+import { AddDriverToCompanyFormState } from './add-driver-to-company-form/add-driver-to-company-form.types';
 
 export const useAddDriverToCompanyPopup = () => {
     const { isPopupOpened, name } = useAppSelector(addDriverToCompanyPopupPropsSelector);

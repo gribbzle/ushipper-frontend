@@ -1,11 +1,13 @@
 import React, { useMemo } from 'react';
 
+import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip';
 import { getPaymentTermsTranslate } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
-import { MileCostTooltip } from '@components';
 import { useAppSelector } from '@store';
 import { orderCommoditiesSelector, orderDrivingDistanceSelector, orderPaymentInformationSelector, orderVehiclesSelector } from '@store/client';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

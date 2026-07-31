@@ -1,11 +1,12 @@
 import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { Attachment, Creator, NullableFields } from '@/shared';
+import { OrderVehicle } from '@/shared';
 import {
-    CompanyStatusEnum,
     DateTypes,
     FundsTransferStatus,
     InspectionType,
     InstantTermPaymentType,
+    OfferStatusesEnum,
     OrderPaymentStatus,
     OrderSourcesEnum,
     OrderStatus,
@@ -14,16 +15,42 @@ import {
     PaymentTerm,
     TransportTypeEnum,
 } from '@enums';
-import { BalanceValue, Company } from '@store/admin';
+import { BalanceValue } from '@store/admin/accounting/balance-types';
+import { Company } from '@store/admin/companies/types';
+import { OrderCommodity } from '@store/api/order-commodity-types';
 import { OrderExpense } from '@store/api/order-expenses-api';
 import { OrderInternalNote } from '@store/api/order-internal-notes-api';
-import { OrderOffer } from '@store/api/order-offers';
-import { OrderRequest } from '@store/api/order-requests-api';
-import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
-import { Avatar, User } from '@store/common';
+import { OrderRequest } from '@store/api/order-requests-types';
+import { User } from '@store/common/staff/types';
 import { Fee } from '@types';
 
-import { Rating, Review } from '../../client/review';
+import { Review } from '../../client/review/types';
+
+import { UserCompany } from './user-company-types';
+
+export type OrderOffer = {
+    acceptedAt?: string;
+    declineComment?: string | null;
+    declineReasons?: string[];
+    pickupDateType: DateTypes;
+    declinedAt?: string;
+    deliveryDateType: DateTypes;
+    orderRequest: OrderRequest | null;
+    creator: Creator;
+    deliveryAt: string;
+    createdAt: string;
+    order: Load;
+    paymentTerms: PaymentTerm;
+    delayedTerms: PaymentTerm | null;
+    paymentPrice: number;
+    delayedPayment: number | null;
+    brokerFee: number | null;
+    pickupAt: string;
+    publicId: string;
+    status: OfferStatusesEnum;
+    carrierCompany: Company;
+    shipperCompany: Company;
+};
 
 export type ExternalCompanyContact = NullableFields<{
     contact: string;
@@ -251,30 +278,7 @@ export type OrderPayment = {
     paymentTerms: string;
 };
 
-export type UserCompanyOwner = {
-    name: string;
-    avatar: Avatar | null;
-    role: string;
-};
-
-//TODO remove and use Company
-export type UserCompany = {
-    id: number;
-    publicId: string;
-    name: string;
-    email: string;
-    phone: string;
-    type: 'carrier' | 'shipper';
-    owner: UserCompanyOwner;
-    status: CompanyStatusEnum;
-    createdAt: string;
-    updatedAt: string;
-    rating: Rating | null;
-    reviewsTotal: number;
-    address: string;
-    state: string;
-    city: string;
-} & Pick<Company, 'contact' | 'isPartner'>;
+export type { UserCompany, UserCompanyOwner } from './user-company-types';
 
 export type ShipperOrder = {
     publicId: string;

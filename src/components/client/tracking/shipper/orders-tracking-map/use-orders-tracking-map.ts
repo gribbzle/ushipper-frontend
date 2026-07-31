@@ -12,7 +12,7 @@ import {
     TrackingDriver,
 } from '@store/client';
 
-import { OrdersTrackingMapProps } from './orders-tracking-map';
+import { OrdersTrackingMapProps } from './orders-tracking-map.types';
 
 export const useOrdersTrackingMap = ({ orders }: OrdersTrackingMapProps) => {
     const mapRef = useRef<MapRef>(null);

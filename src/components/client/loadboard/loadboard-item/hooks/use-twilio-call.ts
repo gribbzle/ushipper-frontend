@@ -7,7 +7,7 @@ import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { loadboardActions } from '@store/client/loadboard/slice';
 import { authorizedUserSelector } from '@store/global';
 import { Call, Device } from '@twilio/voice-sdk';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useDuration } from './use-duration';
 

@@ -4,7 +4,9 @@ import { FieldRenderProps } from 'react-final-form';
 import { AlertBlock, Button, FieldsGroupWrapper, SaveButton } from '@/components/common';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import { getExternalServiceFieldPrefix } from '../../utils';

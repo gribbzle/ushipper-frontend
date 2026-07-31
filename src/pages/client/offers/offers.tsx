@@ -7,7 +7,9 @@ import { OffersListTabsEnum } from '@/enums';
 import { EmptyLayout, getMainLayout, OfferItem, OffersFilters, Paginate, useOffersFilters } from '@components';
 import { useMeShipper, useUserRoleGroup } from '@hooks';
 import { OffersStatistic, useGetOffersQuery, useGetOffersStatisticQuery } from '@store/api/order-offers';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './offers.scss';
 

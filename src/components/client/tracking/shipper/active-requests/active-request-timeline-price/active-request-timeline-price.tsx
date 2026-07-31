@@ -5,7 +5,8 @@ import { calculateTotalPayment } from '@/utils/payment';
 import { Ellipse } from '@icons';
 import { OrderRequest } from '@store/api/order-requests-api';
 import { ShipperTrackingOrder } from '@store/client';
-import { classname, formatToCurrency } from '@utils';
+import { classname } from '@utils/classname';
+import { formatToCurrency } from '@utils/numbers';
 
 import './active-request-timeline-price.scss';
 

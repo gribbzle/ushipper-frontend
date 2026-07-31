@@ -4,15 +4,15 @@ import { FuelCardLimits, FuelCardStatusTag, useOpenEditFuelCardPopup } from '@/c
 import { HelperText, TableColumn, TableRowMenu } from '@/components/common';
 import { useFuelCardsActionsPermission, useFuelCardsViewPermission } from '@hooks';
 import { FuelCard } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DataTableBlock } from '../data-table-block';
 
+import { FuelCardsBlockProps } from './fuel-cards-block.types';
 import { useFuelCardsBlock } from './use-fuel-cards-block';
 
 import './fuel-cards-block.scss';
-
-export type FuelCardsBlockProps = { accountId: string; accountName: string };
 
 const cn = classname('fuel-cards-block');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:agreements:fuel-cards-table');

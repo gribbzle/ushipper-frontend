@@ -1,34 +1,36 @@
 import React, { useEffect, useState } from 'react';
+import { AxiosError, AxiosResponse } from 'axios';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
+import { OrderDriverPaymentFormDrawer } from '@/components/client/orders/drawers/order-driver-payment-form-drawer/order-driver-payment-form-drawer';
+import { OrderSendBOLDrawer } from '@/components/client/orders/drawers/order-send-bol-drawer/order-send-bol-drawer';
+import { AttachmentsForm } from '@/components/client/orders/forms/attachments-form/attachments-form';
+import { ContactFooterContextProvider } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
+import { OrderActions } from '@/components/client/orders/order-actions/order-actions';
+import { OrderActivityPaper } from '@/components/client/orders/papers/order-activity-paper/order-activity-paper';
+import { OrderAdditionalDocumentsPaper } from '@/components/client/orders/papers/order-additional-documents-paper/order-additional-documents-paper';
+import { OrderDetailsPaper } from '@/components/client/orders/papers/order-details-paper/order-details-paper';
+import { OrderExpenses } from '@/components/client/orders/papers/order-expenses-paper/order-expenses';
+import { OrderInternalNotesPaper } from '@/components/client/orders/papers/order-internal-notes-paper/order-internal-notes-paper';
+import { OrderPickupAndDeliveryPaper } from '@/components/client/orders/papers/order-pickup-and-delivery-paper/order-pickup-and-delivery-paper';
+import { OrderReviewPaper } from '@/components/client/orders/papers/order-review-paper/order-review-paper';
 import PageHead from '@/components/client/orders/show/header';
+import { OrderInformation } from '@/components/client/orders/show/order-information/order-information';
+import { OrderInspectionsPaper } from '@/components/client/orders/show/order-inspections-paper/order-inspections-paper';
+import { RecalculateTransactionsPopup } from '@/components/client/orders/show/recalculate-order-transactions-popup/recalculate-order-transactions-popup';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrderStatus } from '@/enums';
 import { useOrdersActionsPermission } from '@/hooks/order';
-import {
-    AttachmentsForm,
-    ContactFooterContextProvider,
-    getMainLayout,
-    OrderActions,
-    OrderActivityPaper,
-    OrderAdditionalDocumentsPaper,
-    OrderDetailsPaper,
-    OrderDriverPaymentFormDrawer,
-    OrderExpenses,
-    OrderInformation,
-    OrderInspectionsPaper,
-    OrderInternalNotesPaper,
-    OrderPickupAndDeliveryPaper,
-    OrderReviewPaper,
-    OrderSendBOLDrawer,
-    RecalculateTransactionsPopup,
-} from '@components';
 import { useScrollTop } from '@hooks';
 import { useAppDispatch } from '@store';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { ordersActions } from '@store/client';
-import { classname, getProjectName, isFreightX, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX, isUshipper } from '@utils/project-config';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './admin-show-order-page.scss';
 
@@ -106,7 +108,7 @@ const AdminShowOrderPage = () => {
                         <OrderDriverPaymentFormDrawer />
                     </div>
                 )}
-                {isError && (error as any).status === 403 && <AccessForbiddenBlock />}
+                {isError && (error as AxiosResponse<AxiosError>).status === 403 && <AccessForbiddenBlock />}
             </ContactFooterContextProvider>
             <RecalculateTransactionsPopup />
         </>

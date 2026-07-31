@@ -3,7 +3,8 @@ import React from 'react';
 import { FieldsGroupWrapper } from '@/components/common';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import { EMAIL_SERVER_TYPES } from '../constants';

@@ -7,7 +7,9 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions } from '@store/client';
 import { messagesActions } from '@store/common/messages';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { Button } from '../../button';
 

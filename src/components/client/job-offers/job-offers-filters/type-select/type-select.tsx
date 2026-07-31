@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { SelectField } from '@fields';
 import { useMeCarrier } from '@hooks';
 import { JobOffer } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:job-offers-page');
 

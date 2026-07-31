@@ -1,11 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-final-form';
 
+import { OrderCommoditiesForm } from '@/components/client/orders/forms/order-commodities-form/order-commodities-form';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { Button, OrderCommoditiesForm, Paper } from '@components';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order:commodities');
 

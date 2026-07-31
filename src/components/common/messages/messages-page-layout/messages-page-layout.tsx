@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Paper, ParsedOrderDetailsDrawer } from '@components';
+import { ParsedOrderDetailsDrawer } from '@/components/client/loadboard/parsed-order-details-drawer/parsed-order-details-drawer';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useMeAdmin } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedChatIdSelector } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ChatBlock } from './chat-block';
 import { ChatParticipantInfo } from './chat-participant-info';

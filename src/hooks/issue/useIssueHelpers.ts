@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { IssueChangedByData } from '@store/api/issues-api';
-import { isIssueDeclined, isIssueResolved } from '@utils';
+import { isIssueDeclined, isIssueResolved } from '@utils/issue/helpers';
 import { validateIssueChangesInfoDetails } from '@validators';
 
 import { useIssue } from './useIssue';

@@ -1,7 +1,11 @@
 import React, { MouseEvent, useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { ActiveRequestTimelinePrice, Avatar, Button, RatingBar, ShipperOrderTag } from '@/components';
+import { ActiveRequestTimelinePrice } from '@/components/client/tracking/shipper/active-requests/active-request-timeline-price/active-request-timeline-price';
+import { ShipperOrderTag } from '@/components/client/tracking/shipper/shipper-tracking-order-tag/shipper-tracking-order-tag';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Button } from '@/components/common/button/button';
+import { RatingBar } from '@/components/common/rating-bar/rating-bar';
 import { TrackingOrderStatus } from '@/enums';
 import { isNumber } from '@/shared';
 import { LikeIcon } from '@icons';
@@ -17,15 +21,15 @@ import {
 } from '@store/client';
 import { requestsSliceActions } from '@store/client/requests/slice';
 import { RatingOneStarIcon } from '@ui';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isUshipper } from '@utils/project-config';
 import {
-    classname,
     getFormattedTrackingDriverAverageSpeed,
     getTrackingDriverRating,
     getTrackingDriverReviewsTotal,
     getTrackingDriverTruckLoadPercentage,
-    isUshipper,
-    translateByNamespace,
-} from '@utils';
+} from '@utils/tracking/tracking-driver-helpers';
 
 import { CountersRow } from '../counters-row';
 

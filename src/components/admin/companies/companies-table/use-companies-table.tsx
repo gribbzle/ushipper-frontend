@@ -7,7 +7,8 @@ import { useAppDispatch } from '@store';
 import { Company, fetchCompanyAction } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';
 import { useGetCompaniesQuery } from '@store/api/company-api';
-import { formatDateOrGetDash, translateByNamespace } from '@utils';
+import { formatDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:companies-page:table');
 

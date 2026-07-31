@@ -13,9 +13,10 @@ import {
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, reportPopupPropsSelector, ReportType } from '@store/admin';
-import { downloadFileUsingAnchorElement, translateByNamespace } from '@utils';
+import { downloadFileUsingAnchorElement } from '@utils/files';
+import { translateByNamespace } from '@utils/i18n';
 
-import { ReportFormValue } from './report-popup';
+import { ReportFormValue } from './report-popup.types';
 
 const tVal = translateByNamespace('common:validators');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:report-popup');

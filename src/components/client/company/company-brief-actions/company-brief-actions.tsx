@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { Button, FlagButton } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
 import { HireIcon, MessageTextLeftIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useOpenSendJobOfferDrawer } from '../../job-offers';
 

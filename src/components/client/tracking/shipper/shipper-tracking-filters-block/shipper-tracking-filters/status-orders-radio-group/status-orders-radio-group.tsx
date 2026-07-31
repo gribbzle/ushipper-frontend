@@ -4,7 +4,8 @@ import { Field } from 'react-final-form';
 import { RadioOption } from '@/components/common';
 import { TrackingOrderStatus } from '@/enums';
 import { RadioGroupInput } from '@fields';
-import { getTrackingOrderStatusTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import { ShipperTrackingFieldWrapper } from '../shipper-tracking-field-wrapper';
 

@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { useMeAdmin } from '@hooks';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './support-chat-header.scss';
 

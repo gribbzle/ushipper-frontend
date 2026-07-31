@@ -1,16 +1,18 @@
 import React, { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
+import { ChatAttachmentsInfo } from '@/components/common/chats-drawer/chats-list/chat-attachments-info/chat-attachments-info';
 import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
 import useMessageContent from '@/hooks/chat/use-message-content';
-import { ChatAttachmentsInfo } from '@components';
 import { useMeAdmin } from '@hooks';
 import { ThumbtackIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { authorizedUserAccountPublicIdSelector } from '@store/global';
-import { classname, diffForHumans, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ChatItemBadge } from './chat-item-badge';
 import { ChatItemExternalNumber } from './chat-item-external-number';

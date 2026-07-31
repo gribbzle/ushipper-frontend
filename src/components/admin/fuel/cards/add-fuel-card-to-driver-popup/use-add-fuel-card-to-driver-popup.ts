@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { addFuelCardToDriverPopupPropsSelector, fuelActions } from '@store/admin';
 
-import { AddFuelCardToDriverFormState } from './add-fuel-card-to-driver-form';
+import { AddFuelCardToDriverFormState } from './add-fuel-card-to-driver-form/add-fuel-card-to-driver-form.types';
 
 export const useAddFuelCardToDriverPopup = () => {
     const { fuelCard, isPopupOpened } = useAppSelector(addFuelCardToDriverPopupPropsSelector);

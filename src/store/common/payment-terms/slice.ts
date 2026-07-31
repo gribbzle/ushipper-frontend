@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { composeBuilder } from '@utils';
+import { composeBuilder } from '@utils/redux';
 
 import { PaymentTerm, PaymentTermsSliceState } from './types';
 

@@ -2,12 +2,13 @@ import React, { useCallback } from 'react';
 import { useForm } from 'react-final-form';
 import { FieldArray } from 'react-final-form-arrays';
 
-import { FeesFieldsWrapper } from '@/components/admin/accounting/common';
+import { FeesFieldsWrapper } from '@/components/admin/accounting/common/fees-fields-wrapper';
 import { Button } from '@/components/common';
 import { FeeCategoryValueType, FeePeriod } from '@/enums';
 import { useDriversActionsPermission } from '@hooks';
 import { PlusCircleIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { EditRecurringFeeItem } from './edit-recurring-fee-item';
 

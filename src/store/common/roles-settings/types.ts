@@ -1,8 +1,8 @@
-import { ClickedRowId } from '@components';
-import { Permissions } from '@store/global/types';
-import { RequestWithStatus } from '@utils';
+import { ClickedRowId } from '@components/common/table/table.types';
+import { Permissions } from '@store/global/shared-types';
+import { RequestWithStatus } from '@utils/redux';
 
-import { UserRole } from '../staff';
+import { UserRole } from '../staff/types';
 
 export type RolesSettingsSliceState = {
     fetchRoles: RequestWithStatus<UserRole[]>;

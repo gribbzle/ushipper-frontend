@@ -3,9 +3,11 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { OrderOfferDetails } from '@/components/client/orders/forms/common/order-offer-details/order-offer-details';
 import { OrderCarrierCompanyAssignItem } from '@/components/client/orders/order-carrier-company-assign-item';
+import { Divider } from '@/components/common/divider/divider';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { OrderStatus } from '@/enums';
-import { Divider, Drawer, OrderOfferDetails } from '@components';
 import { TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Company, fetchCompaniesAction, fetchedCompaniesSelector } from '@store/admin';
@@ -14,7 +16,9 @@ import { useCreateOfferMutation } from '@store/api/order-offers';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { ordersActions, orderSendOfferToCarrierPropsSelector, SendOfferToCarrierFormState } from '@store/client';
 import { List } from '@ui';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-send-offer-to-carrier-drawer.scss';
 

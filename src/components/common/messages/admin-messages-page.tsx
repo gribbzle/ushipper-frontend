@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import { getMainLayout } from '../main-layout';
 

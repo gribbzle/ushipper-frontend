@@ -1,9 +1,9 @@
 import { CompanyType, OrderSortingDirection } from '@enums';
-import { CompanyTotalRating } from '@store/api/company-api';
-import { Avatar, Rating } from '@store/client';
-import { Specialization } from '@store/common';
+import { CompanyTotalRating } from '@store/api/company-rating-types';
+import { Specialization } from '@store/common/specialization/types';
+import { Avatar } from '@store/common/staff/avatar-types';
 import { Fee } from '@types';
-import { PaginatedResponse, RequestWithStatus } from '@utils';
+import { PaginatedResponse, RequestWithStatus } from '@utils/redux';
 
 type CompanyLogo = {
     publicId: string;
@@ -34,7 +34,7 @@ export type Company = {
     birthYear?: number;
     drivers?: number;
     trailers?: number;
-    rating: Rating | null;
+    rating: number | null;
     reviewsTotal: number;
     createdAt: string;
     updatedAt: string | null;

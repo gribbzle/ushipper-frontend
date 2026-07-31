@@ -4,7 +4,7 @@ import { AxiosResponse } from 'axios';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { useInitiateAccountPaymentMethodsMutation } from '@store/api/accounts-api';
-import { handleError } from '@utils';
+import { handleError } from '@utils/handle-error';
 
 type HandleTransactionErrorParams = {
     accountPublicId?: string | null;

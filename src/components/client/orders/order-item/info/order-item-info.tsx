@@ -5,7 +5,7 @@ import { toKebabCase } from 'js-convert-case';
 import { OrderStatus } from '@/enums';
 import { getOrderInformation } from '@/utils/order';
 import { OrderInformation } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './order-item-info.scss';
 

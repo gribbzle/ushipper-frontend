@@ -10,7 +10,6 @@ import { Provider } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
-import RouterProvider from '@/components/common/router-provider/router-provider';
 import {
     fetchedAccountUserToken,
     fetchedAuthorizedAccount,
@@ -18,12 +17,13 @@ import {
     fetchedDriverPaymentRequestCounter,
     fetchedIssuesCounter,
     fetchedUserPermissions,
-} from '@api';
-import { wrapper } from '@store';
-import { AccountToken } from '@store/client';
-import { AccountData, AccountUser } from '@store/client/accounts';
-import { globalActions } from '@store/global';
-import { AuthorizedUserInfo, Permissions } from '@store/global/types';
+} from '@/api';
+import RouterProvider from '@/components/common/router-provider/router-provider';
+import { wrapper } from '@/store';
+import { AccountData, AccountUser } from '@/store/client/accounts/types';
+import { AccountToken } from '@/store/client/sign-in/token-types';
+import { globalActions } from '@/store/global/index';
+import { AuthorizedUserInfo, Permissions } from '@/store/global/types';
 
 import './globals.scss';
 import 'react-toastify/dist/ReactToastify.css';
@@ -82,6 +82,22 @@ const App = ({ Component, ...rest }: AppPropsWithLayout) => {
     const { store, props } = wrapper.useWrappedStore(rest);
 
     useEffect(() => setupListeners(store.dispatch), [store]);
+
+    useEffect(() => {
+        const initialData = props.pageProps?.initialData;
+
+        if (initialData) {
+            Object.entries(initialData).forEach(([key, value]) => {
+                if (value !== undefined) {
+                    const action = actionMap[key as keyof InitialData];
+
+                    if (action) {
+                        store.dispatch(action(value));
+                    }
+                }
+            });
+        }
+    }, [props.pageProps?.initialData, store]);
 
     return (
         <Provider store={store}>
@@ -198,21 +214,11 @@ App.getInitialProps = wrapper.getInitialAppProps(store => async appContext => {
         initialData.fetchUserStatus = 401;
     }
 
-    Object.entries(initialData).forEach(([key, value]) => {
-        if (value !== undefined) {
-            const action = actionMap[key as keyof InitialData];
-
-            if (action) {
-                store.dispatch(action(value));
-            }
-        }
-    });
-
     if (req.cookies.language) {
         await i18next.changeLanguage(req.cookies.language);
     }
 
-    return appProps;
+    return { ...appProps, pageProps: { ...appProps.pageProps, initialData } };
 });
 
 export default App;

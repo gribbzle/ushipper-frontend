@@ -9,7 +9,9 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi } from '@store/api/orders-api';
 import { ReviewAspect, ReviewFormValues, useCreateReviewMutation, useUpdateReviewMutation } from '@store/api/review';
 import { orderPublicIdSelector, orderReviewPopupPropsSelector, Review } from '@store/client';
-import { classname, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import { ReviewItemsFields } from './review-items-fields';
 

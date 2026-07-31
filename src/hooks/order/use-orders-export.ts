@@ -3,7 +3,7 @@ import { toSnakeCase } from 'js-convert-case';
 import { toast } from 'react-toastify';
 
 import { GetOrdersData } from '@store/api/orders-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useTextFileDownloader } from '../useDownload';
 

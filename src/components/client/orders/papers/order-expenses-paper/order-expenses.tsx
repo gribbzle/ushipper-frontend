@@ -2,13 +2,18 @@ import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 import { useRouter } from 'next/router';
 
+import { OrderExpenseDrawer } from '@/components/client/orders/drawers/order-expense-drawer/order-expense-drawer';
+import { DeleteOrderExpensePopup } from '@/components/client/orders/popups/delete-order-expense-popup/delete-order-expense-popup';
+import { Button } from '@/components/common/button/button';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useCanManageOrder } from '@/hooks/order';
-import { Button, DeleteOrderExpensePopup, OrderExpenseDrawer, Paper, ZoneButton } from '@components';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderExpense, useGetOrderExpensesQuery } from '@store/api/order-expenses-api';
 import { ordersActions } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderExpenseItem } from './order-expense-item';
 

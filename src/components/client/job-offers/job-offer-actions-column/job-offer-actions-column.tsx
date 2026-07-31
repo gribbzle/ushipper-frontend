@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useMeCarrier } from '@hooks';
 import { JobOffer } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { JobOfferActionsInfo } from './job-offer-actions-info';
 import { JobOfferItemActions } from './job-offer-item-actions';

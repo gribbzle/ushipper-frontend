@@ -3,7 +3,8 @@ import React, { RefObject, useMemo } from 'react';
 import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
 import { ExclamationCircleIcon, TickIcon } from '@icons';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ChatMessageContent, ChatMessageWrapper } from '../common';
 

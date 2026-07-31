@@ -3,7 +3,12 @@ import { format } from 'date-fns';
 import { formatInTimeZone } from 'date-fns-tz';
 import { toKebabCase } from 'js-convert-case';
 
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@/components/common';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { OrderStatus } from '@/enums';
 import { useAppSelector } from '@store';
 import {
@@ -12,7 +17,10 @@ import {
     orderBOLOrderPickupInformationSelector,
     orderBOLOrderSelector,
 } from '@store/client/order-BOL';
-import { classname, getShortDate, translateByNamespace, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { getShortDate } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import './activity.scss';
 

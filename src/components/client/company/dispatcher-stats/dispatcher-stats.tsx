@@ -1,9 +1,11 @@
 import React from 'react';
 import { format } from 'date-fns';
 
-import { StatisticCard } from '@/components/common';
+import { StatisticCard } from '@/components/common/statistic-card/statistic-card';
 import { AuthorizedUserInfo } from '@store/global/types';
-import { classname, formatToCurrency, numberWithCommas, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency, numberWithCommas } from '@utils/numbers';
 
 import './dispatcher-stats.scss';
 

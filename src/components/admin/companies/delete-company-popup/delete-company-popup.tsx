@@ -5,7 +5,7 @@ import { Button, Popup } from '@/components/common';
 import { useAppDispatch } from '@store';
 import { deleteCompanyAction, deleteCompanyPopupPropsSelector } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:companies-page:delete-company-popup');
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { User } from '@store/common';
 import { List } from '@ui';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { AssignUserItem } from '../assign-user-item/assign-user-item';
 

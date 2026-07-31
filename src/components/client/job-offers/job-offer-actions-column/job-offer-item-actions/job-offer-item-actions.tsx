@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
-import { Button } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useJobOfferActions } from './use-job-offer-actions';
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { UserInfoBlock } from '@/components/common';
 import { useIssue } from '@hooks';
 import { useGetUserQuery } from '@store/api/users-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './processed-by-info.scss';
 

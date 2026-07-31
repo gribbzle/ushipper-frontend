@@ -2,14 +2,16 @@ import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { debounce } from 'debounce';
 
 import { ChatTypesEnum } from '@/enums';
-import { useTimeoutManager } from '@hooks';
+import { useTimeoutManager } from '@/hooks/use-timeout-manager';
 import { AttachIcon, SendMessageIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatExternalNumberSelector, sendMessageAction } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
-import { ChatProps } from '../chat';
+import { ChatProps } from '../chat.types';
 
 import './chat-controls.scss';
 

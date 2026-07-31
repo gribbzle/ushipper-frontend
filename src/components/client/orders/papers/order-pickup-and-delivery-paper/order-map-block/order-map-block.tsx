@@ -3,11 +3,14 @@ import mapboxgl from 'mapbox-gl';
 import type { MapRef } from 'react-map-gl/mapbox';
 import { Map, Marker } from 'react-map-gl/mapbox';
 
+import { DriverOrderPin } from '@/components/client/tracking/common/driver-order-pin/driver-order-pin';
+import { MapOrderRoute } from '@/components/client/tracking/common/map-order-route/map-order-route';
+import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
 import { ColorValueHex } from '@/shared';
-import { DriverOrderPin, MapOrderRoute, OrderMarker } from '@components';
 import { useAppSelector } from '@store';
 import { orderDriverSelector, orderSelector } from '@store/client';
-import { classname, getOrderTrackingPoints } from '@utils';
+import { classname } from '@utils/classname';
+import { getOrderTrackingPoints } from '@utils/tracking/get-order-tracking-points';
 
 import './order-map-block.scss';
 

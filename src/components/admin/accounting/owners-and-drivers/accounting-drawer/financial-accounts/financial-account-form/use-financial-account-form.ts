@@ -5,9 +5,10 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, editFinancialAccountPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { balancesApi, useCreateFinancialAccountMutation, useGetBalanceQuery, usePartiallyUpdateBalanceMutation } from '@store/api/balances-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
-import { useGetAccountingProfile } from '../../hooks';
+import { useGetAccountingProfile } from '../../hooks/use-get-accounting-profile';
 
 import { FinancialAccountFormValue } from './financial-account-form.types';
 import { getFinancialAccountInitialValues, prepareCreateFinancialAccountData, prepareEditFinancialAccountData } from './utils';

@@ -3,7 +3,7 @@ import React from 'react';
 import { OrderStatus } from '@/enums';
 import { getAddress, getScheduledAtInfo } from '@/utils/order';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 const cn = classname('orders-table');
 

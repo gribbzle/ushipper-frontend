@@ -2,6 +2,8 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { OrderSortingDirection } from '@/enums';
 import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
+import { isUshipper } from '@utils/project-config';
+
 import {
     BetweenPhonesChatDrawerState,
     CallingPopupState,
@@ -11,8 +13,7 @@ import {
     RequestDrawer,
     SavedSearches,
     SaveSearchDrawer,
-} from '@store/client/loadboard';
-import { isUshipper } from '@utils';
+} from './types';
 
 export const INITIAL_FILTERS: SavedLoadBoardFilters = {
     sortNames: ['post_date', 'pickup_location'],

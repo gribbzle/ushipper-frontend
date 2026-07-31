@@ -2,15 +2,17 @@ import React, { useEffect, useMemo, useState } from 'react';
 
 import { SavedLoadboardSearch } from '@/api/loadboard';
 import TrashCanIcon from '@/assets/icons/trash-can.svg';
-import { Tag } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Tag } from '@/components/common/info-tag/info-tag';
+import { Popup } from '@/components/common/popup/popup';
 import { areFiltersEqual } from '@/utils/filters';
-import { Button, Popup } from '@components';
 import { ArrowDownIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { removeLoadboardSearch } from '@store/client/loadboard/actions';
 import { loadboardListSelector, loadboardSavedSearchesSelector } from '@store/client/loadboard/selectors';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './loadboard-saved-filters.scss';
 

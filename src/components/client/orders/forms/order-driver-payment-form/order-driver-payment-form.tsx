@@ -1,34 +1,24 @@
 import React from 'react';
-import { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 
-import { DriverInstantTermPaymentTypeSelect, PaymentMethodsSelect } from '@/components/common';
+import { PaymentMethodsSelect } from '@/components/common/payment-methods-select/payment-methods-select';
+import { DriverInstantTermPaymentTypeSelect } from '@/components/common/selects/driver-instant-term-payment-type-select/driver-instant-term-payment-type-select';
 import { InstantTermPaymentType, PaymentMethod, PaymentTerm } from '@/enums';
-import { Attachment } from '@/shared';
 import { FileUploaderField, FormControl, InputLabel } from '@fields';
-import { InstantTermPaymentMethod, OrderDriverPaymentFormState } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { OrderDriverPaymentFormState } from '@store/client';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { AttachmentsDropzone } from '../attachments-form/attachments-dropzone';
 
+import { OrderDriverPaymentFormProps } from './order-driver-payment-form.types';
 import { useOrderDriverPaymentForm } from './use-order-driver-payment-form';
 
 import './order-driver-payment-form.scss';
 
 const t = translateByNamespace('client:order:driver-payment-form:fields');
-
 const cn = classname('order-driver-payment-form');
-
-export type OrderDriverPaymentFormProps = {
-    instantTermPaymentType: InstantTermPaymentType | null;
-    instantTermPaymentMethod?: InstantTermPaymentMethod | null;
-    orderId: string | null;
-    file: Attachment | null;
-    formRef: MutableRefObject<FormApi<OrderDriverPaymentFormState> | undefined>;
-    onAfterFormSubmit: () => void;
-};
 
 export const OrderDriverPaymentForm = ({
     formRef,

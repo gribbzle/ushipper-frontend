@@ -4,7 +4,8 @@ import has from 'has-values';
 import { OrderSourcesEnum } from '@/enums';
 import { OctothorpeIcon, PhoneIcon } from '@icons';
 import { ExternalCDShipper, ExternalSDShipper } from '@store/client';
-import { classname, getObjectWithoutEmptyFields } from '@utils';
+import { classname } from '@utils/classname';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { ExternalBrokerRating, HiddenExternalBrokerTooltip } from '../../../common';
 

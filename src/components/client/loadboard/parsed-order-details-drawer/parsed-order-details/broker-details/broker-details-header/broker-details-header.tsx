@@ -4,7 +4,8 @@ import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-pop
 import { Button, ParsedOrderChatButton } from '@/components/common';
 import { useMeAdmin, useMeDriverRelated } from '@hooks';
 import { PhoneIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { BrokerDetailsHeaderProps } from './broker-details-header.types';
 

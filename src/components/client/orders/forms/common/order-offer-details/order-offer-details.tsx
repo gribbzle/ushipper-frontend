@@ -1,11 +1,15 @@
 import React from 'react';
 import { Field, useFormState } from 'react-final-form';
 
+import { PaymentBrokerFeeAlert } from '@/components/client/orders/forms/common/payment-broker-fee-alert/payment-broker-fee-alert';
+import { TotalPaymentAlert } from '@/components/client/orders/forms/common/total-payment-alert/total-payment-alert';
+import { DateTypesSelect } from '@/components/client/orders/selects/date-types-select/date-types-select';
+import { Divider } from '@/components/common/divider/divider';
 import { PaymentMethod, PaymentTerm } from '@/enums';
 import { getOrderTermWithMethod } from '@/utils/order';
-import { DateTypesSelect, Divider, PaymentBrokerFeeAlert, TotalPaymentAlert } from '@components';
 import { CurrencyInput, DatePicker, FormControl, InputLabel } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-offer-details.scss';

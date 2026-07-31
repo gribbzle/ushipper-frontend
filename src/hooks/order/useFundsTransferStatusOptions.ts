@@ -1,9 +1,11 @@
 import { useMemo } from 'react';
 
+import { useOpenMarkAsDocumentsRequestedPopup } from '@/components/admin/orders/mark-as-documents-requested-popup/useOpenMarkAsDocumentsRequestedPopup';
 import { FundsTransferStatus } from '@/enums';
-import { useOrder, useUpdateFundsTransferStatus } from '@/hooks/order';
-import { useOpenMarkAsDocumentsRequestedPopup } from '@components';
-import { translateFundsTransferStatusAction } from '@utils';
+import { translateFundsTransferStatusAction } from '@utils/translate/order/translate-funds-transfer-status-action';
+
+import { useUpdateFundsTransferStatus } from './use-update-funds-transfer-status';
+import { useOrder } from './useOrder';
 
 const DOCUMENTS_OPTIONS = [FundsTransferStatus.DOCUMENTS_REQUESTED, FundsTransferStatus.DOCUMENTS_SUBMITTED];
 

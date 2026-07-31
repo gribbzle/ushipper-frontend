@@ -2,7 +2,7 @@ import React from 'react';
 
 import { RegistrationTypesSelect } from '@/components/common/registration-types-select';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { PreferencesFormPaper } from '../preferences-form-paper';

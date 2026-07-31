@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOfferData, ParsedOrderData } from '@store/client/loadboard';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AssignDriverForm } from '../assign-driver-form';
 import { CheckingContractAlert } from '../checking-contract-alert';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { format } from 'date-fns';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { HelperText } from '../helper-text';
 

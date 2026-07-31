@@ -1,9 +1,11 @@
 import React, { useCallback, useMemo } from 'react';
 
+import { OrderSetDispatcherDrawer } from '@/components/client/orders/drawers/order-set-dispatcher-drawer/order-set-dispatcher-drawer';
+import { OrderSetDriverDrawer } from '@/components/client/orders/drawers/order-set-driver-drawer/order-set-driver-drawer';
 import { UserInfo } from '@/components/client/orders/show/order-information/user-info';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderSourcesEnum, UserRoleGroup, UserRoleType } from '@/enums';
 import { useCanManageOrder } from '@/hooks/order';
-import { OrderSetDispatcherDrawer, OrderSetDriverDrawer, Paper } from '@components';
 import { useIsPartnerCompany, useMeDriverRelated, useUserRoleGroup } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
@@ -15,7 +17,7 @@ import {
     orderSelector,
     orderShipperOrderSelector,
 } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CDStatusInfo } from './cd-status-info';
 import { OrderCreatedInfo } from './order-created-info';

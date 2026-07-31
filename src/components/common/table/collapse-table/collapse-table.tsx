@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { User } from '@store/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useVisibleColumns } from '../hooks';
 import { TableProps } from '../table.types';

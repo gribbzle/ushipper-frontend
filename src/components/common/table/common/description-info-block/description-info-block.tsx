@@ -4,7 +4,11 @@ import { PaymentConfirmationType } from '@/enums';
 import { useDestinationAccountingNumber } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions, Transaction } from '@store/admin';
-import { classname, getCompanyTypeTranslate, isCashOut, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
+import { isCashOut } from '@utils/transaction/get-is-cash-in-cash-out';
 
 import { DriverInfo } from './driver-info';
 import { ExternalInfoBlock } from './external-info';

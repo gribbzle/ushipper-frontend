@@ -1,36 +1,18 @@
-import {
-    AttachmentType,
-    CommodityDimensionUnitEnum,
-    CommodityHazmatClassEnum,
-    CommodityPackingGroupEnum,
-    CommodityTemperatureUnitEnum,
-    CommodityTypesEnum,
-    CommodityVolumeUnitEnum,
-    CommodityWeightUnitEnum,
-    DateTypes,
-    FreightClassesEnum,
-    FundsTransferCalculatedStatus,
-    InspectionType,
-    InstantTermPaymentType,
-    OrderPaymentStatus,
-    OrderSortingDirection,
-    OrderSortingName,
-    OrderStatisticsGroup,
-    OrderStatisticsStatus,
-    OrderStatus,
-    OrderType,
-    TransportTypeEnum,
-} from '@/enums';
-import { Attachment, NullableFields } from '@/shared';
-import { BalanceValue } from '@store/admin';
+import { AttachmentType, DateTypes, InspectionType, OrderPaymentStatus, OrderSortingDirection, OrderStatus, TransportTypeEnum } from '@/enums';
+import { Attachment, NullableFields, OrderVehicle } from '@/shared';
+import { BalanceValue } from '@store/admin/accounting/balance-types';
+import { OrderCommodity } from '@store/api/order-commodity-types';
 import { OrderExpense } from '@store/api/order-expenses-api';
-import { ExternalCompany, Load, OrderFormState, OrderPaymentInformation, ordersActions, OrderSignature } from '@store/client';
-import { CursorPagination, PaginatedResponse } from '@utils';
+import { ExternalCompany, Load, OrderFormState, OrderPaymentInformation, OrderSignature } from '@store/common/orders/types';
+import { GetOrdersData, OrderFilters } from '@types/order';
+import { CursorPagination, PaginatedResponse } from '@utils/redux';
 
-import { User } from '../common';
+import { User } from '../common/staff/types';
 
 import { apiSlice } from './api-slice';
 import { OrderInternalNote } from './order-internal-notes-api';
+
+export type { OrderCommodity };
 
 export type DeliveryInformation = NullableFields<{
     businessName: string;
@@ -63,58 +45,6 @@ export type CustomerInformation = NullableFields<{
 }>;
 
 export type PaymentInformation = OrderPaymentInformation;
-
-export type OrderVehicle = {
-    id: number;
-    vin: string | null;
-    year: number | null;
-    make: string | null;
-    model: string | null;
-    type: string;
-    color: string | null;
-    lotNumber: string | null;
-    price: number | null;
-    inop: boolean;
-    enclosed: boolean;
-    schematicPhoto: string;
-    weight: number | null;
-    height: number | null;
-    length: number | null;
-    width: number | null;
-};
-
-export type OrderCommodity = {
-    publicId: string;
-    freightClass: FreightClassesEnum;
-    type: CommodityTypesEnum | null;
-    weight: number | null;
-    weightUnit: CommodityWeightUnitEnum | null;
-    volume: string | null;
-    volumeUnit: CommodityVolumeUnitEnum | null;
-    linearFeet: number | null;
-    length: number | null;
-    width: number | null;
-    height: number | null;
-    dimensionUnit: CommodityDimensionUnitEnum | null;
-    minTemperature: number | null;
-    maxTemperature: number | null;
-    temperatureUnit: CommodityTemperatureUnitEnum | null;
-    packingGroup: CommodityPackingGroupEnum | null;
-    hazmatClass: CommodityHazmatClassEnum | null;
-    name: string | null;
-    description: string | null;
-    nmfcCode: string | null;
-    stackable: boolean;
-    hazardous: boolean;
-    quantity: number | null;
-    pieces: number | null;
-    skuNumber: string | null;
-    properShippingName: string | null;
-    emergencyContact: string | null;
-    unNumber: number | null;
-    createdAt: string;
-    updatedAt: string;
-};
 
 export type OrderVehicleParam = Partial<OrderVehicle>;
 
@@ -180,37 +110,6 @@ export type StatisticsCounters = {
     groupCounters: Record<string, number>;
     statusCounters: StatusCounters;
 };
-
-type OrderFilters = Partial<{
-    searchSubject: string;
-    search: string;
-    dispatchers: string[];
-    driverAccountId: string[];
-    ownerAccountId: string;
-}>;
-
-export type FundsTransferCalculatedStatusesType = 'pending' | 'not_paid' | 'pending_documents' | 'damage_claim' | 'paid';
-
-export type GetOrdersData = OrderFilters &
-    Partial<{
-        page: number;
-        perPage: number;
-        orderName: OrderSortingName;
-        orderDirection: OrderSortingDirection;
-        statisticsGroup: OrderStatisticsGroup;
-        statisticsStatus: OrderStatisticsStatus | OrderStatisticsStatus[];
-        hasOrderRequests: number;
-        companyPublicId: string;
-        type: OrderType;
-        fundsTransferStatus: string;
-        createdAtFrom: string;
-        createdAtTo: string;
-        fundsTransferCalculatedStatus: FundsTransferCalculatedStatus;
-        drivers: string[];
-        instantTermPaymentType: InstantTermPaymentType;
-        instantTermPaymentTypeSet: boolean;
-        statuses: OrderStatus[];
-    }>;
 
 type GetOrderAttachmentsData = GetOrderAttachmentsParams &
     Partial<{
@@ -423,16 +322,6 @@ export const ordersApi = apiSlice.injectEndpoints({
                     method: 'patch',
                     data: body,
                 };
-            },
-            onQueryStarted: (arg, { queryFulfilled, dispatch }) => {
-                queryFulfilled
-                    .then(({ data }) => {
-                        // TODO: reconcile types and/or get rid of async thunks in favour to rtk query
-                        dispatch(ordersActions.setOrderData(data as unknown as Load));
-                    })
-                    .catch(err => {
-                        console.log(err);
-                    });
             },
             transformResponse: (response: { data: Order }) => response.data,
             invalidatesTags: [{ type: 'Orders', id: 'LIST' }, { type: 'OrdersStatisticsCounters' }],

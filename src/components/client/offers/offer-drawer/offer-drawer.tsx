@@ -4,25 +4,28 @@ import { useRouter } from 'next/router';
 
 import DetailsBody from '@/components/client/offers/offer-drawer/details-body/details-body';
 import { OfferChat } from '@/components/client/offers/offer-drawer/offer-chat';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-drawer-tabs';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OfferStatusesEnum } from '@/enums';
-import { Button, Drawer, OfferDrawerTabs, TabItemBase } from '@components';
-import { useMeCarrier, useMeShipper } from '@hooks';
+import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi from '@store/api/loadboard-api';
 import { useCancelOfferMutation, useGetOfferQuery, usePartiallyUpdateOfferMutation } from '@store/api/order-offers';
 import { isNotificationsDrawerOpenSelector } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+
+import { OfferTabsEnum } from './offer-tabs-enum';
 
 import './offer-drawer.scss';
 
 const t = translateByNamespace('client:order-offers');
 const cn = classname('offer-drawer');
 
-export enum OfferTabsEnum {
-    message = 'message',
-    details = 'details',
-}
+export { OfferTabsEnum };
 export default function OfferDrawer() {
     const dispatch = useAppDispatch();
     const router = useRouter();

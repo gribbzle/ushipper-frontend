@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ParsedOrderRouteProps } from './parsed-order-route.types';
 import { formatAddressLine } from './utils';

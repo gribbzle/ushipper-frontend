@@ -1,11 +1,13 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { Button, PageHeader } from '@components';
+import { Button } from '@/components/common/button/button';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('admin:accounting:wallets-page');
 

@@ -2,9 +2,10 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { LinkIcon, PrinterIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-BOL-header-buttons.scss';
 

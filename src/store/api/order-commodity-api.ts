@@ -1,4 +1,4 @@
-import { CommodityFormState } from '@store/common';
+import { CommodityFormState } from '@/store/common/orders/types';
 
 import { apiSlice } from './api-slice';
 import { OrderCommodity } from './orders-api';

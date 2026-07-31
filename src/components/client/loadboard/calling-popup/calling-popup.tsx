@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import Draggable from 'react-draggable';
 
-import { GenericButton, Loader, Paper } from '@components';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
+import { Loader } from '@/components/common/loader/loader';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { ChatsIcon, EndCallIcon, KeyboardIcon, MicrophoneDisabledIcon, MicrophoneIcon, UserCircle } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { formatPhoneNumber } from '../choose-phone-popup/format-phone-number';
 import { useTwilioCall } from '../loadboard-item';

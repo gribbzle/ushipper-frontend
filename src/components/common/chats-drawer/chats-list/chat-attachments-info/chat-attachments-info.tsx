@@ -2,7 +2,8 @@ import React from 'react';
 
 import { ChatMessageTypesEnum } from '@/enums';
 import { ChatMessage } from '@store/common/chats/types';
-import { isFileImage, translateByNamespace } from '@utils';
+import { isFileImage } from '@utils/files';
+import { translateByNamespace } from '@utils/i18n';
 
 const tCall = translateByNamespace('common:chats');
 

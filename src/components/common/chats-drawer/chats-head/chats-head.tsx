@@ -6,7 +6,9 @@ import { CallIcon, MessageTextRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions } from '@store/client';
 import { authorizedUserSelector } from '@store/global';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { Avatar } from '../../avatar';
 

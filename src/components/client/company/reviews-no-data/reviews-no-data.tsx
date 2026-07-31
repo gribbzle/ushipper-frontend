@@ -1,8 +1,11 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import { getAllFiltersFromUrlParams, Paper } from '@components';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { getAllFiltersFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 import './reviews-no-data.scss';
 

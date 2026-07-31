@@ -11,7 +11,8 @@ import { useLazyGetOrderBolQuery } from '@store/api/order-bol-api';
 import { useCancelOfferMutation } from '@store/api/order-offers';
 import { ordersApi, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { Load, ordersActions } from '@store/client';
-import { downloadFileUsingAnchorElement, translateByNamespace } from '@utils';
+import { downloadFileUsingAnchorElement } from '@utils/files';
+import { translateByNamespace } from '@utils/i18n';
 
 const translateActions = translateByNamespace('client:order-actions');
 

@@ -2,10 +2,13 @@ import React from 'react';
 import { format } from 'date-fns';
 import { toKebabCase } from 'js-convert-case';
 
-import { IconButton, OrderTag } from '@components';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { PencilIcon, TrashIcon } from '@icons';
 import { OrderExpense } from '@store/api/order-expenses-api';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 const t = translateByNamespace('common:expense-types');
 const cn = classname('expenses-paper');

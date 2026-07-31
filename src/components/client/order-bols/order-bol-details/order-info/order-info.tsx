@@ -2,7 +2,14 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { RouteItem } from '@/components/client/order-bols/order-bol-details/order-info/route-item/route-item';
-import { CommodityDetails, OrderTag, Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@components';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { useAppSelector } from '@store';
 import {
     orderBOLOrderCommoditiesSelector,
@@ -12,7 +19,10 @@ import {
     orderBOLOrderStatusSelector,
     orderBOLOrderVehiclesSelector,
 } from '@store/client/order-BOL';
-import { classname, renderProjectSpecificComponent, translateByNamespace, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import './order-info.scss';
 

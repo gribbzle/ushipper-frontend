@@ -1,4 +1,4 @@
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from './use-effect-once';
 
 export const useScrollTop = (querySelector: string) => {
     useEffectOnce(() => {

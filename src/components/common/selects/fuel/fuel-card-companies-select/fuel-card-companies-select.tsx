@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { SelectField } from '@fields';
 import { useGetFuelCardCompaniesQuery } from '@store/api/fuel-card-companies-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:field');
 

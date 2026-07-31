@@ -1,11 +1,14 @@
 import React, { useCallback, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { getOrderIdLabel } from '@/utils/order';
-import { Button, Popup } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { markAsDocumentsRequestedPopupSelector, ordersActions } from '@store/client';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 import { DocumentsRequestedAlert } from './documents-requested-alert';
 import { DocumentsRequestedFormState, MarkAsDocumentsRequestedForm } from './mark-as-documents-requested-form';

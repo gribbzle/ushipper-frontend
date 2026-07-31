@@ -5,8 +5,8 @@ import { SelectOption } from '@/shared';
 import { CheckboxMultiSelectInput, FormControl, InputLabel } from '@fields';
 import { useAppSelector } from '@store';
 import { specializationByIdSelector } from '@store/common';
-import { translateByNamespace } from '@utils';
-import { getTransportCategoryTranslate } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransportCategoryTranslate } from '@utils/specialization';
 import { requiredArray } from '@validators';
 
 type CategoriesSelectProps = {

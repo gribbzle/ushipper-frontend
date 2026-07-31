@@ -1,13 +1,14 @@
 import React from 'react';
 import { useFormState } from 'react-final-form';
 
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { PaymentTermsSelect } from '@/components/common/payment-terms-select/payment-terms-select';
 import { DelayedPaymentTerm } from '@/enums';
-import { IconButton, PaymentTermsSelect } from '@components';
 import { CurrencyInput, FormControl, InputLabel, PrefixedField } from '@fields';
 import { useDisableCarrierChanging, useIsPartnerCompany } from '@hooks';
 import { TrashIcon } from '@icons';
 import { OrderFormState } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { useGetPaymentInformationValues, useHandleDelayedFieldsDelete } from './hooks';

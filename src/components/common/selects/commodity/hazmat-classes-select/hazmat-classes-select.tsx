@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { CommodityHazmatClassEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getHazmatClassTranslate } from '@utils';
+import { getHazmatClassTranslate } from '@utils/translate/commodity/get-hazmat-class-translate';
 
 export const HazmatClassesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

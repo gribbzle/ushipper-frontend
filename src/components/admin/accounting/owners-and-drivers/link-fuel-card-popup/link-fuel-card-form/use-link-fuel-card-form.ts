@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '@store';
 import { linkFuelCardPopupPropsSelector } from '@store/admin';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { LinkFuelCardFormProps, LinkFuelCardFormState } from './link-fuel-card-form';
+import { LinkFuelCardFormProps, LinkFuelCardFormState } from './link-fuel-card-form.types';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

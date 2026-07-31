@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CentralDispatchFields } from './central-dispatch-fields';
 import { SuperDispatchFields } from './super-dispatch-fields';

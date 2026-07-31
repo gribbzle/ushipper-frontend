@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, initiateAccountPaymentMethodsPopupPropsSelector } from '@store/admin';
 import { MassPayAttribute, useCreateAccountPaymentMethodsMutation } from '@store/api/accounts-api';
 import { transactionsApi } from '@store/api/transactions-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { InitiateAccountPaymentMethodsFormProps, InitiateAccountPaymentMethodsFormState } from './initiate-account-payment-methods-form.types';
 

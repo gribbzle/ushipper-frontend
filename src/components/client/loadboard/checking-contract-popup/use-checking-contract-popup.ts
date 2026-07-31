@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi, { LoadBoardFilters } from '@store/api/loadboard-api';
 import { checkingContractPopupSelector } from '@store/client/loadboard';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:checking-contract-popup');
 

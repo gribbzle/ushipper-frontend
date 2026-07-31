@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { FileWithClipIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './file-clip-button.scss';
 

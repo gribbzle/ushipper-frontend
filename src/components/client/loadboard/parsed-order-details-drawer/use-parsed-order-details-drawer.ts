@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import { getOrderId } from '@/utils/order';
 import { useGetLoadboardItemQuery } from '@store/api/loadboard-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:request-drawer');
 const tOrderDetails = translateByNamespace('client:loadboard:load-details');

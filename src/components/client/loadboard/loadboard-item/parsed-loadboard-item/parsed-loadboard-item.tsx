@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { Paper, ParsedOrderRoute } from '@components';
+import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useOpenParsedOrderDetailsDrawer } from '@hooks';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ParsedLoadboardItemPaymentBlock, ParsedLoadboardItemRightBlock, ParsedLoadBoardOrderBrokerColumn, ParsedOrderStatusBlock } from '../common';
 import { LoadboardItemProps } from '../loadboard-item.types';

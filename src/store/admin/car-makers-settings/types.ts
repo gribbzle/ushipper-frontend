@@ -1,5 +1,5 @@
 import { Creator } from '@/shared';
-import { PaginatedData, RequestWithStatus } from '@utils';
+import { PaginatedData, RequestWithStatus } from '@utils/redux';
 
 export type CarMakersFilters = {
     page: number;

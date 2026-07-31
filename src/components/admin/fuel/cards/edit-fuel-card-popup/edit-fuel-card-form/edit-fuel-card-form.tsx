@@ -1,25 +1,17 @@
-import React, { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
+import React from 'react';
 import { Field, FieldRenderProps, Form } from 'react-final-form';
 
 import { CurrencyInput, FormControl, InputLabel, NativeSwitch, NativeSwitchProps } from '@fields';
-import { classname, formatToCurrency, getGallonsTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';
 import { requiredCurrency } from '@validators';
 
+import { EditFuelCardFormState, EditFuelCardToDriverFormProps } from './edit-fuel-card-form.types';
 import { useEditFuelCardForm } from './use-edit-fuel-card-form';
 
 import './edit-fuel-card-form.scss';
-
-export type EditFuelCardFormState = {
-    limit?: number;
-    limitDef?: number;
-    hasLimit: boolean;
-};
-
-export type EditFuelCardToDriverFormProps = {
-    onAfterSubmit: () => void;
-    formRef: MutableRefObject<FormApi<EditFuelCardFormState> | undefined>;
-};
 
 const t = translateByNamespace('admin:fuel:cards-page:edit-fuel-card-popup');
 const cn = classname('edit-fuel-card-form');

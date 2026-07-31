@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { editFuelCardPopupPropsSelector, fuelActions } from '@store/admin';
 
-import { EditFuelCardFormState } from './edit-fuel-card-form';
+import { EditFuelCardFormState } from './edit-fuel-card-form/edit-fuel-card-form.types';
 
 export const useEditFuelCardPopup = () => {
     const { fuelCard, isPopupOpened, isLoading } = useAppSelector(editFuelCardPopupPropsSelector);

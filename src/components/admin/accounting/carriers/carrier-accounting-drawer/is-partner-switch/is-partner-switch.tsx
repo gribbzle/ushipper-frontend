@@ -3,7 +3,7 @@ import { Field, FieldRenderProps } from 'react-final-form';
 
 import { NativeSwitch, NativeSwitchProps } from '@/fields/switch-input/native-switch';
 import { FormControl } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useIsPartnerSwitch } from './use-is-partner-switch';
 

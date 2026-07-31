@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Paginate } from '@/components/common';
+import { Paginate } from '@/components/common/paginate/paginate';
 import { CatalogListTabsEnum } from '@/enums';
 import { CatalogStatistic } from '@store/client';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { LoadboardNoData } from '../../loadboard';
 import { CatalogFiltersForm } from '../catalog-filters-form';

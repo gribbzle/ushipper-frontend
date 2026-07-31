@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { EmptyRocketkor } from '@/components/admin/accounting/common';
+import { EmptyRocketkor } from '@/components/admin/accounting/common/empty-rocketkor';
 import { AlertBlock } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useEmptyAccountBalanceBlock } from './use-empty-balance-block';
 

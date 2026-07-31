@@ -1,15 +1,21 @@
 import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 
+import { OrderCommodityDrawer } from '@/components/client/orders/drawers/order-commodity-drawer/order-commodity-drawer';
+import { DeleteOrderCommodityPopup } from '@/components/client/orders/popups/delete-order-commodity-popup/delete-order-commodity-popup';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { AlertBlock, Button, DeleteOrderCommodityPopup, OrderCommodityDrawer, ZoneButton } from '@components';
 import { useMeShipper } from '@hooks';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderCommodity } from '@store/api/orders-api';
 import { ordersActions } from '@store/common';
-import { classname, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import { CommodityItem } from './commodity-item';
 

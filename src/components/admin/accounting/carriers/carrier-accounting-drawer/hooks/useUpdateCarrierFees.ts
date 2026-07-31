@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 
 import { FeeCategoryTermType } from '@/enums';
 import { useHandleCreateEditCompanyFees, useHandleDeleteFees, usePublicId } from '@hooks';
-import { filterValidFeeDataList, translateByNamespace } from '@utils';
+import { filterValidFeeDataList } from '@utils/format-fee-for-form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CarrierAccountingDrawerFormValue, CreateDeleteFeesArgs } from '../carrier-accounting-drawer.types';
 import { prepareCarrierFees } from '../utils';

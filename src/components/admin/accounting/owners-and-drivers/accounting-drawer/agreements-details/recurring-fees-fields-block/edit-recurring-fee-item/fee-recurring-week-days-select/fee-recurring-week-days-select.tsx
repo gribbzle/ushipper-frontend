@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FeeRecurringWeekDay } from '@/enums';
 import { SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:fee-recurring-week-days');
 

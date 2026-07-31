@@ -5,7 +5,7 @@ import { useFuelCardsActionsPermission } from '@hooks';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:fuel:cards-page:add-fuel-card-to-driver-popup');
 

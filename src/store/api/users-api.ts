@@ -2,10 +2,11 @@ import { AxiosResponse } from 'axios';
 import randomColor from 'randomcolor';
 
 import { UserStatusEnum } from '@enums';
-import { UserTracking } from '@store/client';
-import { Avatar, StaffFilters, User, UserFormState } from '@store/common';
-import { AuthorizedUserInfo } from '@store/global/types';
-import { CursorPagination, PaginatedData, PaginatedResponse } from '@utils';
+import { UserTracking } from '@store/client/tracking/types';
+import { Avatar } from '@store/common/staff/avatar-types';
+import { StaffFilters, User, UserFormState } from '@store/common/staff/types';
+import { AuthorizedUserInfo } from '@store/global/shared-types';
+import { CursorPagination, PaginatedData, PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

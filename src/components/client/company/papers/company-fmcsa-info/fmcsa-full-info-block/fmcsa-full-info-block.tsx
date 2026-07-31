@@ -2,7 +2,9 @@ import React from 'react';
 
 import StatusIndicator from '@/components/common/status-indicator/status-indicator';
 import { CompanyFMCSARecord } from '@store/api/company-api';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { AddressBlock } from '../address-block';
 import { AuthorityBlock } from '../authority-block';

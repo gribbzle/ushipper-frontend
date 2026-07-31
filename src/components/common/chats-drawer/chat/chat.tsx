@@ -2,7 +2,10 @@ import React, { Fragment, useCallback, useEffect, useMemo, useRef } from 'react'
 import { useSelector } from 'react-redux';
 
 import { ChatTypesEnum } from '@/enums';
-import { useDebouncedGetChatInfo, useDebouncedGetChatMessages, useDebouncedGetChatReadMessages, useDebouncedGetChatUnreadMessages } from '@hooks';
+import { useDebouncedGetChatInfo } from '@/hooks/chat/use-debounced-get-chat-info';
+import { useDebouncedGetChatMessages } from '@/hooks/chat/use-debounced-get-chat-messages';
+import { useDebouncedGetChatReadMessages } from '@/hooks/chat/use-debounced-get-chat-read-messages';
+import { useDebouncedGetChatUnreadMessages } from '@/hooks/chat/use-debounced-get-chat-unread-messages';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     chatInfoSelector,
@@ -16,28 +19,22 @@ import {
 } from '@store/common';
 import { ChatFullInfo, ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
-import { classname, RequestStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { RequestStatus } from '@utils/redux';
 
 import { ChatMessage } from './chat-message/chat-message';
+import { ChatProps } from './chat.types';
 import { ChatControls } from './chat-controls';
 import { ChatEmptyBlock } from './chat-empty-block';
 import { ChatHead } from './chat-head';
 import { ChatMessageDelimiter, ChatUnreadMessageDelimiter } from './chat-message-delimiter';
 import { useFetchChatBetweenPhones } from './use-fetch-chat-between-phones';
 
+export type { ChatProps } from './chat.types';
+
 import './chat.scss';
 
 const cn = classname('chat');
-
-export type ChatProps = {
-    chatId: string | null;
-    mode?: 'drawer' | 'order-page';
-    isNeedInitialize?: boolean;
-    hideControls?: boolean;
-    headerComponent?: React.ReactNode;
-    externalPhone?: string | null;
-    callback?: (value: string | null) => void;
-};
 
 export const Chat = ({ chatId, mode = 'drawer', hideControls, isNeedInitialize = true, headerComponent, externalPhone, callback }: ChatProps) => {
     const dispatch = useAppDispatch();

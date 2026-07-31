@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { classname, formatToCurrency } from '@utils';
+import { classname } from '@utils/classname';
+import { formatToCurrency } from '@utils/numbers';
 
 import './amount-info-block.scss';
 

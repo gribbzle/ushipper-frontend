@@ -8,7 +8,10 @@ import { FormControl, InputLabel, TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, declineOrPayToDriverPopupPropsSelector } from '@store/admin';
 import { ordersApi, useUpdateOrderMutation } from '@store/api/orders-api';
-import { classname, isOrderCheckCompanyPaid, translateByNamespace, translateDriverPayoutStatusError, translateDriverPayoutStatusSuccess } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isOrderCheckCompanyPaid } from '@utils/orders/order-payment-helpers';
+import { translateDriverPayoutStatusError, translateDriverPayoutStatusSuccess } from '@utils/translate/accounting/notification-translations';
 import { required } from '@validators';
 
 import './declined-or-pay-to-driver-popup.scss';

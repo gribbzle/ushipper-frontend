@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { InstantTermPaymentType } from '@/enums';
 import { SelectField } from '@fields';
 import { useMeAdmin } from '@hooks';
-import { getDriverPaymentRecipientTranslate, getPaymentRecipientTranslate } from '@utils';
+import { getDriverPaymentRecipientTranslate, getPaymentRecipientTranslate } from '@utils/translate/get-payment-recipient-translate';
 
 export const DriverInstantTermPaymentTypeSelect = (props: FieldRenderProps<string>) => {
     const isMeAdmin = useMeAdmin();

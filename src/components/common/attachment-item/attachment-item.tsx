@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { ThumbnailImage } from '@/components/common';
+import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-image';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
 import { FileClipButton } from '@ui';
-import { isFileImage, isFilePdf } from '@utils';
+import { isFileImage, isFilePdf } from '@utils/files';
 
 import { AttachmentItemProps } from './attachment-item.types';
 

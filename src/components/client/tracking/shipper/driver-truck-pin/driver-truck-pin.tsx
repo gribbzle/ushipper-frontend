@@ -3,7 +3,7 @@ import React from 'react';
 import { GoldTruckIcon, LikeIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { fetchedSelectedDriverIdSelector, TrackingDriver } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './driver-truck-pin.scss';
 

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
-import { OrderItemInfoColumn } from '@/components/client';
-import { classname } from '@utils';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
+import { classname } from '@utils/classname';
 
 import './info-list.scss';
 

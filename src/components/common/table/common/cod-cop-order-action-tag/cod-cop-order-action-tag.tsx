@@ -1,30 +1,21 @@
 import React from 'react';
 
-import { FloatingDropdown } from '@/components/common';
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { InstantTermPaymentType } from '@/enums';
 import { useTransactionActionsPermission } from '@hooks';
-import { User } from '@store/client';
 import { StatusTag, StatusTagView } from '@ui';
-import { classname, diffForHumans, getOrderCheckStatuses, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { getOrderCheckStatuses } from '@utils/orders/order-payment-helpers';
 
+import { CodCopOrdersActionTagProps } from './cod-cop-order-action-tag.types';
 import { useCodCopOrdersActionTag } from './use-cod-cop-order-action-tag';
 
 import './cod-cop-order-action-tag.scss';
 
 const cn = classname('cod-cop-order-action-tag');
 const t = translateByNamespace('admin:orders-page:cod-cop-order-action-tag');
-
-export type CodCopOrdersActionTagProps = {
-    publicId: string;
-    driver: User | null;
-    driverPay?: number | null;
-    instantTermPaymentType: InstantTermPaymentType;
-    declinedAt?: string | null;
-    paidAt?: string | null;
-    instantTermPaymentDeclineReason?: string | null;
-    className?: string;
-    inline?: boolean;
-};
 
 const statusViewMap: Partial<Record<InstantTermPaymentType, StatusTagView>> = {
     [InstantTermPaymentType.RECIPIENT_COMPANY]: 'pending',

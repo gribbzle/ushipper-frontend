@@ -2,7 +2,8 @@ import React from 'react';
 
 import { CompanyType } from '@/enums';
 import { Load } from '@store/client';
-import { classname, getCompanyTypeTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
 
 import './assigned-info-block.scss';
 

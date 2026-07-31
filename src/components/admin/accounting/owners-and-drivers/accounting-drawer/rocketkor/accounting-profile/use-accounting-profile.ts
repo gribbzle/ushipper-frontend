@@ -2,10 +2,10 @@ import { useMemo } from 'react';
 
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { useCountriesAndStates } from '@hooks';
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
-import { useGetAccountingProfile } from '../../hooks';
-import { useGetAccountingProfileDocuments } from '../../hooks';
+import { useGetAccountingProfile } from '../../hooks/use-get-accounting-profile';
+import { useGetAccountingProfileDocuments } from '../../hooks/use-get-accounting-profile-documents';
 import { useLegalEntityTypes } from '../use-legal-entity-types';
 
 export const useAccountingProfile = () => {

@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createWalletPopupPropsSelector } from '@store/admin';
 
-import { CreateWalletFormState } from './create-wallet-form';
+import { CreateWalletFormState } from './create-wallet-form/create-wallet-form.types';
 
 export const useWalletPopup = () => {
     const { isPopupOpened } = useAppSelector(createWalletPopupPropsSelector);

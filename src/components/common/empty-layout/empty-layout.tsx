@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Button, Paper } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { MagnifyingGlassIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { EmptyLayoutProps } from './empty-layout.types';
 import { useEmptyLayout } from './use-empty-layout';

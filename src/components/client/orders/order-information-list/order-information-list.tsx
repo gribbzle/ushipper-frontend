@@ -3,11 +3,14 @@ import { enUS } from 'date-fns/locale';
 import { formatInTimeZone } from 'date-fns-tz';
 import has from 'has-values';
 
-import { ContactInfo } from '@/components';
+import { ContactInfo } from '@/components/common/contact-info/contact-info';
 import { BusinessTypesEnum } from '@/enums';
 import { BriefcaseIcon, GeoLocationIcon, NotesIcon, ScheduleIcon } from '@icons';
 import { OrderInformation } from '@store/client';
-import { classname, getBusinessTypeTranslate, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { getBusinessTypeTranslate } from '@utils/translate/get-business-type-translate';
 
 import { ItemField, NameField, ScheduledAtField } from './fields';
 

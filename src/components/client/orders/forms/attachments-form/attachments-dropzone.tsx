@@ -2,14 +2,17 @@ import React, { useCallback, useState } from 'react';
 import Dropzone from 'react-dropzone';
 import { Transition } from 'react-transition-group';
 
-import { Button, ZoneButton } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { Attachment } from '@/shared';
 import { FileItem, FormHelperText } from '@fields';
 import { ArrowDownIcon, BinIcon, UploadIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
-import { classname, isFileImage, isFilePdf, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { isFileImage, isFilePdf } from '@utils/files';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AttachmentDropzoneProps } from './attachments-form.types';
 

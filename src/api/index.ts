@@ -1,9 +1,9 @@
-import JsCookie from 'js-cookie';
+import { axios } from '@utils/axios';
 
-import { AcceptInvitation, AuthorizedUserData, AuthTokenData, ChangeAccountFormData, SignInFormData, SignUpFormData } from '@store/client';
-import { AccountData } from '@store/client/accounts';
-import { RequestResetPasswordData, ResetPasswordData } from '@store/common';
-import { axios } from '@utils';
+import { AccountData } from '../store/client/accounts/types';
+import { AcceptInvitation, AuthorizedUserData, AuthTokenData, ChangeAccountFormData, SignInFormData } from '../store/client/sign-in/types';
+import { SignUpFormData } from '../store/client/sign-up/types';
+import { RequestResetPasswordData, ResetPasswordData } from '../store/common/password-recovery/types';
 
 export * from './roles';
 export * from './usdot';
@@ -165,13 +165,4 @@ export const signUpConfirm = async (code: string) => {
     return result.data;
 };
 
-export const revokeToken = async () => {
-    const token = JsCookie.get('TokenId');
-
-    await axios.delete(`/api/tokens/${token}`);
-
-    JsCookie.remove('Authorization');
-    JsCookie.remove('PublicUserId');
-    JsCookie.remove('TokenId');
-    JsCookie.remove('PublicAccountId');
-};
+export * from './auth';

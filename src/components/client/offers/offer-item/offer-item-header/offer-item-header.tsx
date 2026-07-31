@@ -3,12 +3,15 @@ import { toKebabCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { Button } from '@/components/common/button/button';
 import { getOrderId, getPaymentTermsTranslate } from '@/utils/order';
 import { getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { Button, OrderTag } from '@components';
 import { useMeCarrier } from '@hooks';
 import { OrderOffer } from '@store/api/order-offers';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import './offer-item-header.scss';
 

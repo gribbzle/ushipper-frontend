@@ -1,13 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useRedirectToOrder } from '@/hooks/order';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { Button, Popup } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useDeleteOrderMutation } from '@store/api/orders-api';
 import { deleteOrderPopupSelector, ordersActions } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:orders-page:delete-order-popup');
 

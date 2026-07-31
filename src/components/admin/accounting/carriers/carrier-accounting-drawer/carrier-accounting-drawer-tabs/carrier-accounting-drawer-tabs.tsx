@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Tabs } from '@components';
-import { classname } from '@utils';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { classname } from '@utils/classname';
 
 import { useCarrierAccountingDrawerTabs } from './useCarrierAccountingDrawerTabs';
 

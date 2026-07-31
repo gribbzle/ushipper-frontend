@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { AlertBlock } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useDriverUshipperFeeAlert } from './use-driver-ushipper-fee-alert';
 

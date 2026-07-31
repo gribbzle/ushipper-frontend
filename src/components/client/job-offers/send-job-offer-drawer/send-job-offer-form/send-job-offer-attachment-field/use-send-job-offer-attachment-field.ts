@@ -1,7 +1,8 @@
 import { useCallback, useState } from 'react';
 
 import { Attachment } from '@/shared';
-import { useSendJobOfferDrawer } from '@components';
+
+import { useSendJobOfferDrawer } from '../use-send-job-offer-drawer';
 
 export const useSendJobOfferAttachmentField = () => {
     const { loadedAttachmentsRef } = useSendJobOfferDrawer();

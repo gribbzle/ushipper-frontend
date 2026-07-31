@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { Avatar } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
 import { ActionsIcon, SystemIcon } from '@icons';
-import { INotification, NotificationStatus } from '@store/common/notifications';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Button } from '../../button';
 import { Dropdown } from '../../dropdown';
 
+import { NotificationProps } from './notification.types';
 import { useNotification } from './use-notification';
 
 import './notification.scss';
@@ -16,9 +17,7 @@ const t = translateByNamespace('common:notifications');
 const activityT = translateByNamespace('client:order:activity');
 const cn = classname('notification');
 
-export type NotificationProps = INotification & {
-    activeTab: NotificationStatus;
-};
+export { NotificationProps };
 
 export const Notification = (props: NotificationProps) => {
     const { creator, type, readAt, pinnedAt } = props;

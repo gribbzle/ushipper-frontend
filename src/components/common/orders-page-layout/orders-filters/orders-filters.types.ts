@@ -1,4 +1,4 @@
-import { SortSelectValue } from '@components';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { OrderStatisticsStatus } from '@enums';
 import { StatisticsCounters } from '@store/api/orders-api';
 import { FormOrdersFilters } from '@types';

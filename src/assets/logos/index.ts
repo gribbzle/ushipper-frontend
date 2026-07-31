@@ -1,4 +1,4 @@
-import { isFreightX } from '@utils';
+import { isFreightX } from '@utils/project-config';
 
 import * as freightXLogos from './freightx';
 import * as uShipperLogos from './ushipper';

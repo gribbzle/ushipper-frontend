@@ -1,11 +1,13 @@
 import React, { memo, useMemo } from 'react';
 
-import { OrderTag } from '@/components/client';
+import { OrderTag } from '@/components/client/orders/order-tag';
 import { OrderStatus, SidebarCountsEnum } from '@/enums';
 import { useMeShipper } from '@hooks';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector, driverPaymentRequestsCounterSelector, issuesCounterSelector } from '@store/global';
-import { classname, translateByNamespace, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import { ItemBadgeCountProps } from '../../sidebar.types';
 

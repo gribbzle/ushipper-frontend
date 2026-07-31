@@ -1,10 +1,14 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { OfferActionModal } from '@/components';
+import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
 import { DeclinationJobOfferReasonsEnum } from '@/enums/declination-reasons-enum';
-import { FormControl, InputLabel, LabeledCheckboxInput, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { LabeledCheckboxInput } from '@/fields/checkbox-input/checkbox-input';
+import { FormControl } from '@/fields/form-control/form-control';
+import { InputLabel } from '@/fields/input-label/input-label';
+import { TextField } from '@/fields/text-field/text-field';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { DeclineJobOfferFormState } from './decline-job-offer-modal.types';

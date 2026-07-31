@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { toCamelCase, toSnakeCase } from 'js-convert-case';
 
-import { CreateUpdateRoleFormState } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetRolesQuery } from '@store/api/roles-api';
 import {
@@ -14,8 +13,10 @@ import {
 } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';
 import { authorizedUserCompanyPublicIdSelector } from '@store/global';
-import { isFreightX, RequestStatus } from '@utils';
+import { isFreightX } from '@utils/project-config';
+import { RequestStatus } from '@utils/redux';
 
+import { CreateUpdateRoleFormState } from './create-update-role-block.types';
 import { AdminRoleTypesMap, CarrierRoleTypesMap, ShipperRoleTypesMap } from './permissions-maps';
 import { areAllPermissionsSelected, arePermissionsEqual, filterPermissions, formatPermissions } from './utils';
 

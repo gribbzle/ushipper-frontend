@@ -1,12 +1,17 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { DriversSelect, Paper, TrackingMap, useTrackingDisplayedPathsOnMap } from '@components';
+import { useTrackingDisplayedPathsOnMap } from '@/components/client/tracking/drivers-tracking-map/hooks';
+import { TrackingMap } from '@/components/client/tracking/shipper/orders-tracking-map/orders-tracking-map';
+import { DriversSelect } from '@/components/common/drivers-select/drivers-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { FormControl } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetTrackingQuery, useLazyGetDriversQuery } from '@store/api/users-api';
 import { fetchedSelectedDriverIdSelector, selectedDriverOrderIdSelector, trackingActions } from '@store/client';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DashboardEmptyBlock } from '../empty-block';
 

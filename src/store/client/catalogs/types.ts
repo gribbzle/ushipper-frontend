@@ -1,7 +1,13 @@
-import { CatalogFiltersValue } from '@/components/client/catalogs/catalog-filters-tabs/catalog-filters-tabs.types';
-import { CarriersCatalogListTabsEnum, DispatcherCatalogListTabsEnum, SidebarCountsEnum } from '@/enums';
+import {
+    CarriersCatalogListTabsEnum,
+    CatalogListTabsEnum,
+    CatalogSortingNameEnum,
+    DispatcherCatalogListTabsEnum,
+    OrderSortingDirection,
+    SidebarCountsEnum,
+} from '@/enums';
 import { Company } from '@store/admin';
-import { AuthorizedUserInfo } from '@store/global/types';
+import { AuthorizedUserInfo } from '@store/global/shared-types';
 
 export type BaseCatalogFiltersParams = {
     page?: number;
@@ -12,6 +18,22 @@ export type BaseCatalogFiltersParams = {
     type?: string;
     [key: string]: any;
 };
+
+type RatingOrDispatchFeeFilter = { from: number; to: number };
+type SpecializationsFilter = { id: number; categories?: { id: number }[] };
+
+export type CatalogFiltersValue = Omit<BaseCatalogFiltersParams, 'perPage'> &
+    Partial<{
+        statisticsStatus: CatalogListTabsEnum;
+        orderName: CatalogSortingNameEnum;
+        orderDirection: OrderSortingDirection;
+        page: number;
+        ratings: RatingOrDispatchFeeFilter[];
+        specializations: SpecializationsFilter[];
+        country: string;
+        dispatchFees: RatingOrDispatchFeeFilter[];
+        languages: string[];
+    }>;
 
 export type DispatcherCatalogInfo = Omit<
     AuthorizedUserInfo,

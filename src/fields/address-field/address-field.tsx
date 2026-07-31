@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { AddressInput, AddressValue } from '@/components/common';
+import { AddressInput, AddressValue } from '@/components/common/address-input/address-input';
 
 type Props = FieldRenderProps<AddressValue>;
 

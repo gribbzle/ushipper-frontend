@@ -3,11 +3,11 @@ import { toast } from 'react-toastify';
 
 import { useIsPartnerCompany, useMeCarrier } from '@hooks';
 import { useDeleteOrderFlagMutation } from '@store/api/orders-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderItemHeaderProps } from '../types';
 
-import { useOrderTotalAmount } from '.';
+import { useOrderTotalAmount } from './use-order-total-amount';
 
 const translateOrderNotification = translateByNamespace('client:order');
 

@@ -1,10 +1,10 @@
 import React, { useCallback, useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { GenericButton } from '@components';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { DarkInput } from '@fields';
 import { CloseIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CallingKeyboardFormValue, CallingKeyboardProps } from './calling-keyboard.types';
 

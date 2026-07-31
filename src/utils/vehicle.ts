@@ -1,9 +1,9 @@
 import has from 'has-values';
 import { toKebabCase } from 'js-convert-case';
 
+import { OrderVehicle } from '@/shared';
 import { translateByNamespace } from '@/utils/i18n';
 import { getObjectWithoutEmptyFields } from '@/utils/objects';
-import { OrderVehicle } from '@store/api/orders-api';
 
 const vehicleTranslate = translateByNamespace('common:vehicle');
 const vehiclesTypeTranslate = translateByNamespace('common:vehicle-types');

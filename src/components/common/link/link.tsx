@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { default as NextLink, LinkProps } from 'next/link';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './link.scss';
 

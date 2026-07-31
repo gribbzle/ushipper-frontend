@@ -5,7 +5,8 @@ import { useAppSelector } from '@store';
 import { useGetDriversCatalogQuery, useGetDriversCatalogStatisticQuery } from '@store/api/catalogs-api';
 import { DispatcherCatalogStatistic } from '@store/client';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
-import { numberWithCommas, transformCatalogFiltersForQuery } from '@utils';
+import { transformCatalogFiltersForQuery } from '@utils/catalogs/transform-catalog-filters-for-query';
+import { numberWithCommas } from '@utils/numbers';
 
 export const useDriversCatalogPage = () => {
     const filters = useAppSelector(catalogsSelectedFiltersSelector);

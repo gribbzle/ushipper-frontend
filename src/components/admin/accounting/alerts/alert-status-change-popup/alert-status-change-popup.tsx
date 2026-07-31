@@ -5,14 +5,11 @@ import { Button, Popup } from '@/components/common';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, alertStatusChangePopupPropsSelector } from '@store/admin';
 import { issuesApi, usePartiallyUpdateIssueMutation } from '@store/api/issues-api';
-import {
-    classname,
-    isIssueResolved,
-    renderTextWithBreakLines,
-    translateAlertErrorNotification,
-    translateAlertSuccessNotification,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isIssueResolved } from '@utils/issue/helpers';
+import { renderTextWithBreakLines } from '@utils/render';
+import { translateAlertErrorNotification, translateAlertSuccessNotification } from '@utils/translate/accounting/notification-translations';
 
 import './alert-status-change-popup.scss';
 

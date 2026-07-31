@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { ExternalCompanyContact } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DetailItem } from '../detail-item';
 

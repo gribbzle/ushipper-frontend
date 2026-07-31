@@ -4,7 +4,8 @@ import { InputLabel, RatingField } from '@fields';
 import { useAppSelector } from '@store';
 import { useLazyGetReviewItemsQuery } from '@store/api/review';
 import { orderReviewPopupPropsSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './review-items-fields.scss';
 

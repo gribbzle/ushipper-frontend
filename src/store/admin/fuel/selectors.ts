@@ -1,4 +1,8 @@
-import { AppState } from '@store';
+type AppState = {
+    admin: {
+        fuel: any;
+    };
+};
 
 import {
     AddFuelCardToDriverPopupPropsState,

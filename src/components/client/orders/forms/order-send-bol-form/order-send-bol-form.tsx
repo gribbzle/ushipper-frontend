@@ -4,7 +4,8 @@ import { Field, Form } from 'react-final-form';
 import { StringInput } from '@fields';
 import { useAppDispatch } from '@store';
 import { OrderFormEnum, orderSendBOLAction, OrderSendBOLFormState } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import './order-send-bol-form.scss';

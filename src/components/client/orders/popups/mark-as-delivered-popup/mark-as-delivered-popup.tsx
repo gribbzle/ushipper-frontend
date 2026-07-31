@@ -1,12 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { OrderStatus } from '@/enums';
-import { Button, Popup } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { markAsDeliveredPopupSelector, orderPublicIdSelector, ordersActions } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const translateOrder = translateByNamespace('client:order');
 const t = translateByNamespace('client:orders-page:mark-as-delivered-popup');

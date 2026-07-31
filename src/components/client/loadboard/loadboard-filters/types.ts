@@ -1,7 +1,7 @@
 import { LocationFilterValue } from '@/components/client/loadboard/loadboard-filter-location/loadboard-filter-location';
 import { WaypointsValue } from '@/components/client/loadboard/loadborad-filter-waypoints/loadboard-filter-waypoints';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { SelectOption } from '@/shared';
-import { SortSelectValue } from '@components';
 import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
 
 export interface Filters {

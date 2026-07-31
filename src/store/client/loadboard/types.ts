@@ -1,7 +1,8 @@
 import { SavedLoadboardSearch } from '@/api/loadboard';
 import { LoadBoardFilters, SavedLoadBoardFilters } from '@store/api/loadboard-api';
 import { OrderVehicle } from '@store/api/orders-api';
-import { Avatar, Load, OrderDeliveryInformation, OrderPaymentInformation, OrderPickupInformation } from '@store/client';
+import { Load, OrderDeliveryInformation, OrderPaymentInformation, OrderPickupInformation } from '@store/common/orders/types';
+import { Avatar } from '@store/common/staff/avatar-types';
 import { Call } from '@twilio/voice-sdk';
 
 export type RequestDrawer = {

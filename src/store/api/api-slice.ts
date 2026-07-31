@@ -2,7 +2,7 @@ import { AxiosError, AxiosRequestConfig } from 'axios';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { createApi } from '@reduxjs/toolkit/query/react';
 
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
 
 export const axiosBaseQuery =
     ({ baseUrl }: { baseUrl: string } = { baseUrl: '' }): BaseQueryFn<AxiosRequestConfig> =>

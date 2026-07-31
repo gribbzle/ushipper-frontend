@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { getId } from '../table';
+import { getId } from '../get-row-id';
 import { TableProps } from '../table.types';
 
 export const useSelectRowHandler = <T extends Record<string, unknown>>({ data, onSelect }: Pick<TableProps<T>, 'data' | 'onSelect'>) => {

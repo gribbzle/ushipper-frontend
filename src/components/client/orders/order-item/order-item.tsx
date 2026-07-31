@@ -2,11 +2,16 @@ import React from 'react';
 import { format } from 'date-fns';
 import has from 'has-values';
 
+import { OrderDriverPaymentFormAlert } from '@/components/client/orders/alerts/order-driver-payment-form-alert/order-driver-payment-form-alert';
+import { OrderActions } from '@/components/client/orders/order-actions/order-actions';
 import { OrderItemHeader } from '@/components/client/orders/order-item/order-item-header';
-import { OrderActions, OrderDriverPaymentFormAlert, Paper } from '@components';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useIsPartnerCompany, useMeAdmin, useMeDriverRelated } from '@hooks';
 import { Load } from '@store/client';
-import { classname, getOrderProducts, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getOrderProducts } from '@utils/orders/get-order-products';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { OrderAdditionalDocumentsAlert } from '../alerts';
 import { OrderItemCommoditiesList } from '../order-item-commodities-list';

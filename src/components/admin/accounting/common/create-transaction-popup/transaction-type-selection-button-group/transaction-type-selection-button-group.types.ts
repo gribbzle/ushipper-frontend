@@ -2,7 +2,7 @@ import { FieldValidator } from 'final-form';
 
 import { TransactionTypesEnum } from '@/enums';
 
-import { LimitedBalanceTypesEnum } from '../create-transaction-form';
+import { LimitedBalanceTypesEnum } from '../create-transaction-form.types';
 
 export type TransactionTypeSelectionButtonGroupProps = {
     name: string;

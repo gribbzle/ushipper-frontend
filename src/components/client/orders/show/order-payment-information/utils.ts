@@ -1,4 +1,5 @@
-import { formatToCurrency, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 const t = translateByNamespace('client:order:payment-information');
 

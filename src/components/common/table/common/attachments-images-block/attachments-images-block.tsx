@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 
+import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-image';
 import { useInstantPaymentAttachments } from '@/hooks/order';
-import { ThumbnailImage } from '@components';
 import { ImageProvider } from '@providers';
 import { FileClipButton } from '@ui';
-import { classname, getLastVisibleAttachmentOverlayText, SplitAttachmentsResult, splitAttachmentsWithPdfLimit, translateByNamespace } from '@utils';
+import { getLastVisibleAttachmentOverlayText, SplitAttachmentsResult, splitAttachmentsWithPdfLimit } from '@utils/attachments';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './attachments-images-block.scss';
 

@@ -3,9 +3,9 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useQueryFilters } from '@hooks';
 import { TrackingOrdersByDispatcherData, TrackingOrdersByStatusData } from '@store/api/tracking-api';
 import { ShipperTrackingFiltersFormState } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
-import { ShippersOrdersListPaperProps } from '../shipper-orders-list-paper';
+import { ShippersOrdersListPaperProps } from '../shipper-orders-list-paper.types';
 
 import { ShippersOrdersListByManager } from './shipper-orders-list-by-manager';
 import { ShippersOrdersListByStatus } from './shipper-orders-list-by-status';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AccountingZoneButton } from '@/components/admin/accounting/common';
+import { AccountingZoneButton } from '@/components/admin/accounting/common/accounting-zone-button';
 
 import { fromDocumentTypeToTitle } from './from-document-type-to-title';
 import { RocketkorBaseDocumentProps } from './rocketkor-base-document.types';

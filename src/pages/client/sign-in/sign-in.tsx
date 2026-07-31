@@ -1,10 +1,13 @@
 import React from 'react';
 
-import { UserRoleGroup, UserRoleType } from '@/enums';
-import { getProductInfoLayout, SignInForm, SignUpBlock } from '@components';
-import { wrapper } from '@store';
-import { authorizedUserSelector } from '@store/global';
-import { classname } from '@utils';
+import { SignInForm } from '@/components/client/sign-in/sign-in-form/sign-in-form';
+import { SignUpBlock } from '@/components/client/sign-in/sign-up-block/sign-up-block';
+import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
+import { wrapper } from '@/store';
+import { authorizedUserSelector } from '@/store/global/selectors';
+import { classname } from '@/utils/classname';
 
 import './sign-in.scss';
 

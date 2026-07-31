@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 
 import { TransactionTypesEnum } from '@/enums';
 import { CurrencyInput, FormControl, InputLabel, TextField } from '@fields';
-import { classname, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
 import { required } from '@validators';
 
 import { WalletsSelect } from '../../wallets-select';

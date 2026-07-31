@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { Button, Link } from '@components';
 import { ArrowRightIcon } from '@icons';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+
+import { Button } from '../button';
+import { Link } from '../link';
 
 const t = translateByNamespace('common:go-to-sign-in-button');
 

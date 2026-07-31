@@ -1,9 +1,11 @@
 import React from 'react';
 import { toCamelCase } from 'js-convert-case';
 
-import { Paper, Table } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
+import { Table } from '@/components/common/table/table';
 import { User } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { StaffListProps } from '../staff-table.types';
 

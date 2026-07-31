@@ -1,10 +1,14 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
+import { AsyncCompanySelect } from '@/components/common/company-select/async-company-select';
+import { AsyncUserSelect } from '@/components/common/user-select/async-user-select';
 import { CompanyType } from '@/enums';
-import { AsyncCompanySelect, AsyncUserSelect } from '@components';
 import { FormControl, InputLabel, SelectField, TextField } from '@fields';
-import { classname, FormValuesSpy, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import { AddDriverToCompanyFormProps, AddDriverToCompanyFormState } from './add-driver-to-company-form.types';

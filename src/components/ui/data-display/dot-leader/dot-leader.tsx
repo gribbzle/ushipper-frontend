@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Link } from '@components';
-import { classname } from '@utils';
+import { Link } from '@/components/common/link/link';
+import { classname } from '@utils/classname';
 
 import './dot-leader.scss';
 

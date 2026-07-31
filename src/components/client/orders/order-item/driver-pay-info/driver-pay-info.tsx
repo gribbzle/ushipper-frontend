@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
-import { OrderItemHeaderProps } from '../types';
-
+import { DriverPayInfoProps } from './driver-pay-info.types';
 import { useDriverPayInfo } from './use-driver-pay-info';
 
 import './driver-pay-info.scss';
@@ -11,11 +11,6 @@ import './driver-pay-info.scss';
 const translateOrderItem = translateByNamespace('client:orders-page:order-item');
 
 const cn = classname('driver-pay-info');
-
-export type DriverPayInfoProps = Pick<
-    OrderItemHeaderProps,
-    'fundsTransferStatus' | 'paymentInformation' | 'status' | 'driverFeeCharge' | 'driverDelayedPayment' | 'instantTermPaymentType'
->;
 
 export const DriverPayInfo = ({
     fundsTransferStatus,

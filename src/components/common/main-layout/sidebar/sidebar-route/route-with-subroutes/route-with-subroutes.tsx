@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ArrowIcon } from '../../icons';
 import { RouteWithSubRoutesProps } from '../../sidebar.types';

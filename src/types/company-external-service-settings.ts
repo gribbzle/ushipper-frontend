@@ -1,5 +1,4 @@
 import { ExternalServiceType, FactoringProvider } from '@enums';
-import { Company } from '@store/admin';
 
 export type CompanyExternalServiceParams = {
     companyId: string;
@@ -34,7 +33,10 @@ export type FactoringEmailsData = {
 export type FactoringEmailSettingsRequest = CompanyExternalServiceParams & FactoringEmailsData;
 
 export type CompanyExternalServiceSettings = {
-    company: Pick<Company, 'publicId' | 'name'>;
+    company: {
+        publicId: string;
+        name: string;
+    };
     type: ExternalServiceType;
     payload: ExternalServiceData | FactoringEmailsData;
 };

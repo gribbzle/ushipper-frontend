@@ -1,9 +1,16 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AddressFields, Button, CountriesSelect, Divider, Paper } from '@components';
+import { CountriesSelect } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/common/countries-select/countries-select';
+import { AddressFields } from '@/components/client/company-settings/company-address-fields';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { FormControl, ImageFileInput, InputLabel, PhoneNumberInput, TextField } from '@fields';
-import { classname, FormValuesSpy, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 import { composeValidators, emailValidator, phoneValidator, required } from '@validators';
 
 import { usePersonalInfoForm } from './use-personal-info-form';

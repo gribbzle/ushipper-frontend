@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 import { enUS } from 'date-fns/locale';
 import { formatInTimeZone } from 'date-fns-tz';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './date-info.scss';
 

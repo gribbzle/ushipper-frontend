@@ -16,9 +16,9 @@ import {
     OfferRequestNotificationPayload,
     OrderNotificationPayload,
 } from '@store/common/notifications';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { NotificationProps } from './notification';
+import { NotificationProps } from './notification.types';
 
 const t = translateByNamespace('common:notifications');
 

@@ -4,10 +4,10 @@ import mapboxgl from 'mapbox-gl';
 import type { MapRef } from 'react-map-gl/mapbox';
 import { Layer, Map as MapGL, Marker, Source } from 'react-map-gl/mapbox';
 
+import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
 import { fetchRouteGeoJSON } from '@api';
-import { OrderMarker } from '@components';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './loadboard-drawer-map.scss';

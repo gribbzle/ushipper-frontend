@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { AttachmentDownloadButton } from '@/components/common/attachment-download-button/attachment-download-button';
 import { Attachment } from '@/shared';
-import { AlertBlock, AttachmentDownloadButton } from '@components';
 import { Ellipse } from '@icons';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './documents-requested-alert.scss';
 

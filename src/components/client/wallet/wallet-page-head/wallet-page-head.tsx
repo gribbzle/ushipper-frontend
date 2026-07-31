@@ -1,11 +1,13 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { Button, PageHeader } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { CreditCardIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { walletActions } from '@store/client';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:wallet-page');
 

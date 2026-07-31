@@ -4,7 +4,9 @@ import Head from 'next/head';
 import { useAppDispatch, useAppSelector } from '@store';
 import { isCreateEditBlackListItemModalVisibleSelector } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import { BlackListTable } from '../black-list-table';
 import { CreateEditBlackListItemDrawer } from '../create-edit-black-list-item-drawer';

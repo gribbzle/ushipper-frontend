@@ -7,7 +7,9 @@ import { ImageProvider } from '@providers';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
 import { FileClipButton } from '@ui';
-import { classname, convertBytesToMB, isFileImage, isFilePdf } from '@utils';
+import { classname } from '@utils/classname';
+import { convertBytesToMB } from '@utils/converter';
+import { isFileImage, isFilePdf } from '@utils/files';
 
 import './check-attachment-info.scss';
 

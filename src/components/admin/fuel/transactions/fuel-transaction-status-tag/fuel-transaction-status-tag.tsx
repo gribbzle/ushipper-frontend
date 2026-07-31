@@ -1,16 +1,14 @@
 import React from 'react';
 
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { FuelTransactionStatus } from '@/enums';
-import { FloatingDropdown, StatusBlock, StatusBlockView } from '@components';
 import { ArrowDownIcon } from '@icons';
-import { getFuelTransactionStatusTranslate } from '@utils';
+import { getFuelTransactionStatusTranslate } from '@utils/translate/fuel/get-fuel-transaction-status-translate';
 
+import { FuelTransactionStatusTagProps } from './fuel-transaction-status-tag.types';
 import { useFuelTransactionStatusTag } from './use-fuel-transaction-status-tag';
-
-export type FuelTransactionStatusTagProps = {
-    status: FuelTransactionStatus;
-    transactionId: number;
-};
 
 const statusViewMap: Record<FuelTransactionStatus, StatusBlockView> = {
     pending: 'warning',

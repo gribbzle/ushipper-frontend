@@ -4,7 +4,8 @@ import { useMap } from 'react-map-gl/mapbox';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fetchedIsDriversListShownSelector, trackingActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './carrier-tracking-page-head.scss';
 

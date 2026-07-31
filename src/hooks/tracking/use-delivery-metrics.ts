@@ -1,9 +1,10 @@
 import { useMemo } from 'react';
 
 import { isNumber } from '@/shared';
-import { useDrivingMetrics } from '@hooks';
 import { LatestLocation, ShipperTrackingOrder } from '@store/client';
-import { isTrackingOrderPickedUp } from '@utils';
+import { isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
+
+import { useDrivingMetrics } from './use-driving-metrics';
 
 type UseDeliveryMetricsProps = {
     order: ShipperTrackingOrder | null;

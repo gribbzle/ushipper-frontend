@@ -3,7 +3,8 @@ import { FormApi } from 'final-form';
 import { FieldArray } from 'react-final-form-arrays';
 
 import { PROJECT_KEY_NAME } from '@constants';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { EditFeeItem, FeesFieldsWrapper, getFeeTermTypesFieldsOfProject, renderAddButton } from '../../../common';
 import { CarrierAccountingDrawerFormValue } from '../carrier-accounting-drawer.types';

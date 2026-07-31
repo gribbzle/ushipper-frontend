@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { OrderTag } from '@components';
-import { translateByNamespace } from '@utils';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:vehicle');
 

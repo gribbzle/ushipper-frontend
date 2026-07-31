@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Tabs } from '@components';
-import { classname } from '@utils';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { classname } from '@utils/classname';
 
 import { AccountingDrawerTabsProps } from './accounting-drawer-tabs.types';
 import { useAccountingDrawerTabs } from './use-accounting-drawer-tabs';

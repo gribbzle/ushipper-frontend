@@ -4,7 +4,11 @@ import { formatInTimeZone } from 'date-fns-tz';
 import { toSentenceCase } from 'js-convert-case';
 
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
-import { classname, formatToCurrency, getPaymentRecipientTranslate, translateByNamespace, translateFundsTransferStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getPaymentRecipientTranslate } from '@utils/translate/get-payment-recipient-translate';
+import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 const t = translateByNamespace('client:order:activity:activity-details-drawer');
 const cn = classname('order-activity-details-drawer');

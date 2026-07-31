@@ -1,8 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { Divider, Inspection, InspectionStub } from '@components';
+import { Inspection } from '@/components/client/orders/inspection/inspection';
+import { InspectionStub } from '@/components/client/orders/inspection/inspection-stub/inspection-stub';
+import { Divider } from '@/components/common/divider/divider';
 import { OrderBOLVehicle } from '@store/api/order-bol-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-bol-inspections.scss';
 

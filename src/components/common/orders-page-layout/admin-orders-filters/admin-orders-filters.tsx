@@ -1,18 +1,18 @@
 import React, { memo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import {
-    AsyncCompanySelect,
-    DispatchersSelect,
-    FundsTransferCalculatedStatusSelect,
-    Paper,
-    ReceiptStatusSelect,
-    SearchSubjectsSelect,
-    SortBySelect,
-} from '@components';
+import { AsyncCompanySelect } from '@/components/common/company-select/async-company-select';
+import { DispatchersSelect } from '@/components/common/dispatchers-select/dispatchers-select';
+import { SearchSubjectsSelect } from '@/components/common/search-subjects-select/search-subjects-select';
+import { FundsTransferCalculatedStatusSelect } from '@/components/common/selects/funds-transfer-calculated-status-select/funds-transfer-calculated-status-select';
+import { ReceiptStatusSelect } from '@/components/common/selects/receipt-status-select/receipt-status-select';
+import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderSortingName } from '@enums';
 import { DatePicker, FormControl, InputLabel, TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DriverAccountsSelect } from '../driver-accounts-select';
 

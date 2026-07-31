@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, supportChatDrawerPropsSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { getSupportChatAction } from '@store/common/messages/actions';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:chats');
 

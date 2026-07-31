@@ -1,8 +1,7 @@
 import { TrackingDriverStatus, TrackingOrderStatus } from '@/enums';
 import { apiSlice } from '@store/api/api-slice';
-import { ShipperTrackingOrder, TrackingDriver, User } from '@store/client';
-
-export type TrackingOrderGrouping = 'status' | 'dispatcher';
+import { ShipperTrackingOrder, TrackingDriver, TrackingOrderGrouping } from '@store/client/tracking/types';
+import { User } from '@store/common/staff/types';
 
 export type TrackingOrdersFilters = Partial<{
     search: string;

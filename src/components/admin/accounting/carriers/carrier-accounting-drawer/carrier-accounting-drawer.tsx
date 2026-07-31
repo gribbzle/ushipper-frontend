@@ -4,7 +4,8 @@ import { Form } from 'react-final-form';
 
 import { Drawer, SaveButton } from '@/components/common';
 import { CarrierAccountingDrawerTab } from '@enums';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountsFieldsBlock } from './accounts-fields-block';
 import { CarrierAccountingDrawerFormValue } from './carrier-accounting-drawer.types';

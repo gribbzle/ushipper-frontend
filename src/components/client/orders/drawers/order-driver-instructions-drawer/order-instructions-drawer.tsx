@@ -3,13 +3,16 @@ import { FormApi } from 'final-form';
 import { FormSpy } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
-import { Button, Drawer, OrderForm } from '@components';
+import { OrderForm } from '@/components/client/orders/order-form/order-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { useMeShipper } from '@hooks';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, OrderFieldsGroup, OrderFormState, ordersActions, orderSetDriverInstructionsDrawerPropsSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order:details:fields');
 const tSubmitBtn = translateByNamespace('client:order:details');

@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { FieldsGroupWrapper, SaveButton } from '@/components/common';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { getExternalServiceFieldPrefix } from '../../utils';

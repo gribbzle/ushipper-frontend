@@ -9,7 +9,9 @@ import { useEffectOnce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fetchBlackListItemsAction } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import './black-list-items-filters.scss';
 

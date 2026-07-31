@@ -2,11 +2,12 @@ import React, { ReactNode, useCallback, useEffect, useMemo, useState } from 'rea
 import Dropzone from 'react-dropzone';
 import { FieldRenderProps } from 'react-final-form';
 
+import { Button } from '@/components/common/button/button';
+import { useHover } from '@/hooks/use-hover';
 import { convertBytesToMB } from '@/utils/converter';
-import { Button } from '@components';
-import { useHover } from '@hooks';
 import { CheckCircleIcon, FileIcon, UploadIcon, XSmallIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FormHelperText } from '../form-helper-text';
 

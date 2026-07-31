@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 
 import { InspectionItem as InspectionItemType, InspectionItems as InspectionItemsType } from '@store/client/order-BOL';
 import { DotLeader } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './inspection-items.scss';
 

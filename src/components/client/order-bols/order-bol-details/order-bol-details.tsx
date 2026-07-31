@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
-import { AlertBlock, Paper } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderStatus } from '@/enums';
 import { useAppSelector } from '@store';
 import {
@@ -10,7 +11,8 @@ import {
     orderBOLOrderSelector,
     orderBOLOrderStatusSelector,
 } from '@store/client/order-BOL';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Activity } from './activity';
 import { Map } from './map';

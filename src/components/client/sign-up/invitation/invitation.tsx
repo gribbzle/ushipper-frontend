@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { CompanyBriefPaper } from '@/components/client';
-import { Link } from '@components';
+import { CompanyBriefPaper } from '@/components/client/company/papers/company-brief-paper';
+import { Link } from '@/components/common/link/link';
 import { InvitationAction } from '@store/client';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 type Props = {
     invitation: InvitationAction;

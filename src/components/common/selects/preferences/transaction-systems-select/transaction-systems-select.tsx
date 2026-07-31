@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { TransactionSystemEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getTransactionSystemTranslate } from '@utils';
+import { getTransactionSystemTranslate } from '@utils/translate/preferences/get-transaction-system-translate';
 
 export const TransactionSystemSelect = ({ ...props }: FieldRenderProps<string>) => {
     const options = useMemo(

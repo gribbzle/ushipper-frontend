@@ -9,7 +9,8 @@ import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { balanceStatisticsApi } from '@store/api/balance-statistic-api';
 import { balancesApi, useGetBalancesQuery } from '@store/api/balances-api';
 import { transactionsApi, useCreateTransactionMutation } from '@store/api/transactions-api';
-import { convertDollarsToCents, translateByNamespace } from '@utils';
+import { convertDollarsToCents } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CreateTransactionFormProps, CreateTransactionFormState } from './create-transaction-form.types';
 

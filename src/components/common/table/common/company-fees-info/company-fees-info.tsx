@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 
 import { FeeCategoryTermType } from '@enums';
 import { Fee } from '@types';
-import { classname, formatFeeValueType, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatFeeValueType } from '@utils/fees';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-fees-info.scss';
 

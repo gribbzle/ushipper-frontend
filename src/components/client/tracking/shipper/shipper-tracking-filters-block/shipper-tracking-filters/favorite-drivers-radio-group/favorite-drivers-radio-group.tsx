@@ -3,7 +3,7 @@ import { Field } from 'react-final-form';
 
 import { RadioOption } from '@/components/common';
 import { RadioGroupInput } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ShipperTrackingFieldWrapper } from '../shipper-tracking-field-wrapper';
 

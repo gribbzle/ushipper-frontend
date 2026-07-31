@@ -3,11 +3,12 @@ import React, { useCallback, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';
+import { CatalogFiltersValue } from '@store/client/catalogs/types';
 import { specializationByIdSelector } from '@store/common';
-import { getTransportServiceTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
-import { SpecializationsFilter } from '../catalog-filters-form';
-import { CatalogFiltersValue } from '../catalog-filters-tabs';
+import { SpecializationsFilter } from '../catalog-filters-form/catalog-filters-form.types';
 
 const t = translateByNamespace('client:catalogs.filters');
 const tSelected = translateByNamespace('client:loadboard-filters');

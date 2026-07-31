@@ -2,11 +2,16 @@ import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
 import CompanySelect from '@/components/common/company-select/company-select';
+import { SearchSubjectsSelect } from '@/components/common/search-subjects-select/search-subjects-select';
+import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OfferSortingName } from '@/enums';
-import { Paper, SearchSubjectsSelect, SortBySelect, Tabs } from '@components';
 import { FormControl, InputLabel, StringInput } from '@fields';
 import { useMeShipper } from '@hooks';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OffersFiltersProps, OffersFiltersTypes } from './offers-filters.types';
 import { useOffersFiltersTabs } from './use-offer-filters-tabs';

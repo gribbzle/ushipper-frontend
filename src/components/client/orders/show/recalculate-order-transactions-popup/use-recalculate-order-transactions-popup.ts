@@ -2,11 +2,11 @@ import { useCallback, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
-import { CancelRollbackTransactionFormState } from '@components';
+import { CancelRollbackTransactionFormState } from '@/components/admin/accounting/common/cancel-rollback-transaction-popup/cancel-rollback-transaction-popup-types';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi, useRecalculateOrderTransactionsMutation } from '@store/api/orders-api';
 import { ordersActions, recalculateOrderTransactionsPopupSelector } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order:payment-information:recalculate-order-transactions-popup');
 

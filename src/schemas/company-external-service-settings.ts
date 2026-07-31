@@ -1,7 +1,8 @@
 import Joi from 'joi';
 
 import { ExternalServiceData, FactoringEmailsData } from '@types';
-import { factoringProviderValidator, requiredBooleanValidator, requiredStringValidator } from '@validators';
+
+import { factoringProviderValidator, requiredBooleanValidator, requiredStringValidator } from '../validators/jois';
 
 export const externalServiceValidationSchema = Joi.object<ExternalServiceData>({
     login: requiredStringValidator,

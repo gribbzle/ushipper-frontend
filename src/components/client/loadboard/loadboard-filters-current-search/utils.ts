@@ -2,7 +2,8 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
-import { translateByNamespace, translateOrderSource } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderSource } from '@utils/translate/order/translate-order-source';
 
 const t = translateByNamespace('client:loadboard-filters');
 const tVehicleTypes = translateByNamespace('common:vehicle-types');

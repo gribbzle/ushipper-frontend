@@ -1,11 +1,16 @@
 import React, { useMemo } from 'react';
 
+import { useShipperOrderActions } from '@/components/client/orders/order-actions/use-shipper-order-actions';
+import { Button } from '@/components/common/button/button';
+import { Dropdown } from '@/components/common/dropdown/dropdown';
+import { DropdownDividerOption } from '@/components/common/dropdown/dropdown';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { OrderPaymentStatus, OrderStatus } from '@/enums';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
-import { Button, Dropdown, DropdownDividerOption, DropdownOption, useShipperOrderActions } from '@components';
 import { HorizontalDotsIcon } from '@icons';
 import { Load } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const translateOrder = translateByNamespace('client:order');
 const actionsTranslate = translateByNamespace('client:order-actions');

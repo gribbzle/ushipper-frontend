@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { AlertBlock } from '@/components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { OrderStatus } from '@/enums';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const tAlert = translateByNamespace('client:order:payment-information:alert');
 

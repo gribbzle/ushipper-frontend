@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, initiateAccountPaymentMethodsPopupPropsSelector } from '@store/admin';
 
-import { InitiateAccountPaymentMethodsFormState } from './initiate-account-payment-methods-form';
+import { InitiateAccountPaymentMethodsFormState } from './initiate-account-payment-methods-form/initiate-account-payment-methods-form.types';
 
 export const useInitiateAccountPaymentMethodsPopup = () => {
     const { isPopupOpened, data: initiatePaymentMethodInfo } = useAppSelector(initiateAccountPaymentMethodsPopupPropsSelector);

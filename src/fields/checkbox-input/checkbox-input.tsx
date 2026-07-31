@@ -1,8 +1,8 @@
 import React, { ReactNode, useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { Checkbox } from '@components';
-import { classname } from '@utils';
+import { Checkbox } from '@/components/common/checkbox/checkbox';
+import { classname } from '@utils/classname';
 
 import './checkbox-input.scss';
 

@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { Rating } from '@ui';
-import { classname, formatToOneDecimal, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToOneDecimal } from '@utils/numbers';
 
 import './total-rating-block.scss';
 

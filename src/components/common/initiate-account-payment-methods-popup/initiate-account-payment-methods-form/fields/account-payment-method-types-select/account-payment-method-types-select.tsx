@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { SelectField } from '@fields';
 import { AccountPaymentMethod } from '@store/api/accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const ACCOUNT_PAYMENT_METHODS: readonly AccountPaymentMethod[] = ['masspay', 'fluidpay'] as const;
 

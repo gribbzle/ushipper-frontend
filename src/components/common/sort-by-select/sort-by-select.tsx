@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
+import { SortSelectOptions, SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { CatalogSortingNameEnum, JobOfferSortingName, OfferSortingName, OrderSortingDirection, OrderSortingName } from '@/enums';
 import { translateSortingOption } from '@/utils/translations';
-import { SortSelectOptions, SortSelectValue } from '@components';
 import { SortSelectInput } from '@fields';
 
 type Props = {

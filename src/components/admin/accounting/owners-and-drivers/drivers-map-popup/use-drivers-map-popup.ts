@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 
-import { getTrackingDisplayedPathsOnMap, useTrackingOrderColors } from '@/components';
+import { getTrackingDisplayedPathsOnMap } from '@/components/client/tracking/drivers-tracking-map/hooks';
+import { useTrackingOrderColors } from '@/components/client/tracking/drivers-tracking-map/hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, driversMapPopupPropsSelector } from '@store/admin';
 import { useGetTrackingQuery } from '@store/api/users-api';

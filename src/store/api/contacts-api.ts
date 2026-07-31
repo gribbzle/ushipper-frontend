@@ -1,5 +1,5 @@
 import { OrderSortingDirection } from '@/enums';
-import { PaginatedData } from '@utils';
+import { PaginatedData } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

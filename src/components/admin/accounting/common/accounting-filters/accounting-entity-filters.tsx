@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Paper } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { AccountingEntityFiltersForm } from './accounting-entity-filters-form';
 

@@ -1,10 +1,14 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AlertBlock, Button, Drawer } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { UserRoleType } from '@/enums';
 import { FormControl, ImageFileInput, InputLabel, PasswordField, PhoneNumberInput, SelectField, StringInput, SwitchInput, TextField } from '@fields';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 import { composeValidators, emailValidator, passwordValidator, phoneValidator, required } from '@validators';
 
 import { CreateEditFormState, CreateEditStaffDrawerProps } from './create-edit-staff-drawer.types';

@@ -1,32 +1,29 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { ordersApi } from '@store/api/orders-api';
-import {
-    DeleteOrderCommodityPopupState,
-    Load,
-    MarkAsDocumentsRequestedPopupState,
-    OrderActivityDetailsDrawerState,
-    OrderCommodityDrawerState,
-    OrderDriverPaymentFormDrawerDrawerState,
-    RecalculateOrderTransactionsPopupState,
-} from '@store/client';
 
 import {
     BaseOrderPopupState,
     CreateEditInternalNotePopupState,
     DeleteInternalNotePopupState,
     DeleteOrderAttachmentPopupState,
+    DeleteOrderCommodityPopupState,
     DeleteOrderExpensePopupState,
     DeleteOrderPopupState,
     DeleteOrderVehiclePopupState,
+    Load,
     MarkAsDeliveredPopupState,
+    MarkAsDocumentsRequestedPopupState,
     MarkAsNewPopupState,
     MarkAsPickedUpPopupState,
+    OrderActivityDetailsDrawerState,
     OrderChatDrawerState,
+    OrderCommodityDrawerState,
     OrderCustomerInformationDrawerState,
     OrderDeliveryInformationDrawerState,
     OrderDetailsDrawerState,
     OrderDriverInstructionsDrawerState,
+    OrderDriverPaymentFormDrawerDrawerState,
     OrderExpenseDrawerState,
     OrderMarkAsPaidDrawerState,
     OrderPaymentInformationDrawerState,
@@ -38,6 +35,7 @@ import {
     OrderSetDriverDrawerState,
     OrdersSliceState,
     OrderVehicleDrawerState,
+    RecalculateOrderTransactionsPopupState,
     RestoreOrderPopupState,
     UnasignDriverPopupState,
 } from './types';
@@ -320,6 +318,9 @@ const ordersSlice = createSlice({
         });
         builder.addMatcher(ordersApi.endpoints.updateOrder.matchFulfilled, (state, { payload }) => {
             state.order = payload;
+        });
+        builder.addMatcher(ordersApi.endpoints.updateDriver.matchFulfilled, (state, { payload }) => {
+            state.order = payload as unknown as Load;
         });
     },
 });

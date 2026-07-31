@@ -1,9 +1,10 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FormControl, FormHelperText } from '@/fields';
+import { FormControl } from '@/fields/form-control/form-control';
+import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './switch-input.scss';
 

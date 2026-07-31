@@ -1,9 +1,12 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Divider, DriversSelect } from '@components';
+import { Divider } from '@/components/common/divider/divider';
+import { DriversSelect } from '@/components/common/drivers-select/drivers-select';
 import { FormControl, InputLabel, NativeSwitch, TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { SDDriversSelect } from './sd-drivers-select';
 import { AssignDriverFormState, useAssignDriverForm } from './use-assign-driver-form';

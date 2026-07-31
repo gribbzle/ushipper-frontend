@@ -5,7 +5,8 @@ import { calculateElapsedTime, formatDrivingDistance } from '@/utils/driving';
 import { useDrivingMetrics, useShipperTrackingDriver } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector } from '@store/client';
-import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
 
 const t = translateByNamespace('client:tracking-page:order-pin');
 

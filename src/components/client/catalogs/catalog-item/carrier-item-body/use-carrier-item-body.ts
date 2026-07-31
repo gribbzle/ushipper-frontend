@@ -5,7 +5,7 @@ import { CompanyType } from '@/enums';
 import { useAppDispatch } from '@store';
 import { apiSlice } from '@store/api/api-slice';
 import { useCreateCompanyFlagMutation, useDeleteCompanyFlagMutation } from '@store/api/company-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:catalogs.notifications');
 

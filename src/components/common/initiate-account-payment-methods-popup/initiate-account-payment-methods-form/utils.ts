@@ -5,7 +5,7 @@ import { isString } from '@/shared';
 import { FieldValidator } from '@/validators/types';
 import { TextField } from '@fields';
 import { MassPayUserAttributeDTO } from '@store/api/accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import {
     AccountPaymentMethodTypesSelect,

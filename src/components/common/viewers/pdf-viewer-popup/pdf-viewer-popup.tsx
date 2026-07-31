@@ -1,10 +1,16 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 
-import { CancelButton, DownloadButton, Loader, Paginate, Popup } from '@/components/common';
+import { CancelButton } from '@/components/common/button/CancelButton';
+import { DownloadButton } from '@/components/common/button/DownloadButton';
+import { Loader } from '@/components/common/loader/loader';
+import { Paginate } from '@/components/common/paginate/paginate';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { pdfViewerPopupSelector, viewersActions } from '@store/common/viewers';
-import { classname, DownloadFile, downloadFileUsingAnchorElement, downloadFileUsingFetch, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { DownloadFile, downloadFileUsingAnchorElement, downloadFileUsingFetch } from '@utils/files';
+import { translateByNamespace } from '@utils/i18n';
 
 import './pdf-viewer-popup.scss';
 

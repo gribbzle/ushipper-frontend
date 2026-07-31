@@ -1,9 +1,9 @@
 import React, { MouseEvent, useCallback } from 'react';
 
-import { Button } from '@components';
+import { Button } from '@/components/common/button/button';
 import { useAppDispatch } from '@store';
 import { chatsActions, openChatByOrderIdAction } from '@store/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:requests-page:drawer:request-item');
 

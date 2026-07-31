@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
 
-import { IconButton } from '@/components/common';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { MinusIcon, PlusIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CatalogFiltersGroupProps } from './catalog-filter-group.types';
 

@@ -1,10 +1,12 @@
 import { useMemo } from 'react';
 
-import { useParsedOrderActions } from '@components';
+import { useParsedOrderActions } from '@/components/common/parsed-order-actions/use-parsed-order-actions';
 import { useMeCarrier, useMeCarrierDriver, useMeDispatcher, useMeDriverRelated } from '@hooks';
 import { useAppSelector } from '@store';
 import { authorizedUserPublicIdSelector } from '@store/global';
-import { diffForHumans, translateByNamespace, translateCompanyType } from '@utils';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import { LoadboardItemProps } from '../../loadboard-item.types';
 import { getOrderSource } from '../parsed-loadboard-item-payment-block/utils';

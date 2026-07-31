@@ -1,10 +1,13 @@
 import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { OrderStatus } from '@/enums';
-import { OrderTag } from '@components';
 import { Load } from '@store/client';
-import { classname, diffForHumans, translateByNamespace, translateOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

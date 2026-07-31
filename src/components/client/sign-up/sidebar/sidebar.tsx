@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Link } from '@/components';
+import { Link } from '@/components/common/link/link';
 import { SignUpStep } from '@/enums';
 import CheckIcon from '@/pages/client/sign-up/check.svg';
 import logos from '@logo';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:sign-up-page');
 const cn = classname('sign-up-page');

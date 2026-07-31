@@ -2,22 +2,19 @@ import React, { useCallback, useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { Button } from '@/components/common/button/button';
 import { ChatTypesEnum, OrderStatus } from '@/enums';
+import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { getPaymentTermTranslate } from '@/utils/payment';
-import { Button, OrderTag } from '@components';
-import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@hooks';
 import { GeoLocationIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
-import {
-    classname,
-    formatExternalPhoneNumber,
-    formatInternationalPhoneNumber,
-    translateByNamespace,
-    translateCarrierPostedOrderStatus,
-    translateOrderStatus,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatExternalPhoneNumber, formatInternationalPhoneNumber } from '@utils/phone';
+import { translateCarrierPostedOrderStatus, translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 import { CallButtonBlock } from '../call-button-block';
 import { ChatMessageOrders } from '../chat-message-orders';

@@ -2,10 +2,10 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { Field, Form } from 'react-final-form';
 
-import { Link } from '@/components/common';
+import { Link } from '@/components/common/link/link';
 import { MassPayUserTypesEnum } from '@/enums';
 import { FormControl, InputLabel } from '@fields';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 import { composeValidators, required } from '@validators';
 
 import { InitiateAccountPaymentMethodsFormProps, InitiateAccountPaymentMethodsFormState } from './initiate-account-payment-methods-form.types';

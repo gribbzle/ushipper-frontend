@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { AlertBlock } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { useMeShipper } from '@hooks';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import './payment-broker-fee-alert.scss';
 

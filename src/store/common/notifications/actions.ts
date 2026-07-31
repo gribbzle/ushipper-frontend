@@ -1,9 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { deleteNotification, fetchNotifications, updateNotificationStatus } from '@api';
-import { AppState } from '@store';
-import { authorizedUserSelector } from '@store/global';
-import { RequestStatus } from '@utils';
+import { deleteNotification, fetchNotifications, updateNotificationStatus } from '@api/notifications';
+import { authorizedUserSelector } from '@store/global/selectors';
+import { RequestStatus } from '@utils/redux';
 
 import { notificationsNextCursorSelector } from './selectors';
 import { notificationsActions } from './slice';
@@ -16,7 +15,7 @@ export const getNotificationsAction = createAsyncThunk<any, { status: Notificati
 
         try {
             dispatch(setRequestStatus(RequestStatus.PROCESSING));
-            const state = getState() as AppState;
+            const state = getState() as any;
             const authorizedUser = authorizedUserSelector(state);
             const nextCursor = notificationsNextCursorSelector(state);
 
@@ -46,7 +45,7 @@ export const changeNotificationStatusAction = createAsyncThunk<INotification, { 
 
         try {
             dispatch(setRequestStatus(RequestStatus.PROCESSING));
-            const state = getState() as AppState;
+            const state = getState() as any;
             const authorizedUser = authorizedUserSelector(state);
             const result = await updateNotificationStatus(authorizedUser?.publicId as string, notificationPublicId, status);
 
@@ -69,7 +68,7 @@ export const deleteNotificationAction = createAsyncThunk<void, string>(
 
         try {
             dispatch(setRequestStatus(RequestStatus.PROCESSING));
-            const state = getState() as AppState;
+            const state = getState() as any;
             const authorizedUser = authorizedUserSelector(state);
             const result = await deleteNotification(authorizedUser?.publicId as string, notificationPublicId);
 

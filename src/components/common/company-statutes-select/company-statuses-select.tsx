@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { CompanyStatusEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getCompanyStatusTranslate } from '@utils';
+import { getCompanyStatusTranslate } from '@utils/get-company-status-translate';
 
 export const CompanyStatusesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

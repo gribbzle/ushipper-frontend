@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { Button, Popup, RocketkorCompleteForm } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { RocketkorCompleteForm } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/rocketkor/rocketkor';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useEditRocketkorProfilePopup } from './use-edit-rocketkor-profile-popup';
 

@@ -1,12 +1,17 @@
 import React, { ReactNode, useCallback, useMemo, useState } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { Accordion, Button, Loader } from '@/components';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { Button } from '@/components/common/button/button';
+import { Loader } from '@/components/common/loader/loader';
 import { TrackingOrderStatus } from '@/enums';
 import { ArrowDownIcon, Ellipse } from '@icons';
 import { useAppSelector } from '@store';
 import { isShipperOrdersTrackingLoadingSelector, ShipperTrackingOrder } from '@store/client';
-import { classname, getTrackingOrderStatusTranslate, mapOrderStatusToTrackingStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { mapOrderStatusToTrackingStatus } from '@utils/tracking/map-order-status-to-tracking-order-status';
+import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import { ShipperTrackingOrderItem } from '../shipper-tracking-order-item';
 

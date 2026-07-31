@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { PillTag } from '@/components/common';
+import { PillTag } from '@/components/common/pill-tag/pill-tag';
 import { Specialization } from '@store/common';
-import { classname, getTransportServiceTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 import { CatalogInfoWrapper } from '../catalog-info-wrapper';
 

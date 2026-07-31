@@ -2,10 +2,11 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { DatePicker, FormControl, InputLabel, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, required, validateDateBeforeToday, validateDateNotBeforeToday } from '@validators';
 
-import { CountriesSelect } from '../../../common';
+import { CountriesSelect } from '../../../common/countries-select';
 import { StatesSelect } from '../states-select';
 
 import './document-form.scss';

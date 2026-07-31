@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { useDriverTrackingMap } from '@hooks';
 import { SegmentedControl } from '@ui';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:tracking-page');
 

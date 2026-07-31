@@ -1,6 +1,6 @@
 import { OrderSortingDirection } from '@/enums';
 import { CarMaker, CarMakersFilters } from '@store/admin';
-import { PaginatedData } from '@utils';
+import { PaginatedData } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

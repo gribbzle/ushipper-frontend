@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Button } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './dashboard-empty-block.scss';
 

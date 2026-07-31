@@ -1,16 +1,17 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { OrderOptionsDropdown } from '@/components';
+import { OrderOptionsDropdown } from '@/components/client/orders/order-options-dropdown/order-options-dropdown';
+import { Button } from '@/components/common/button/button';
 import { OrderPaymentStatus, OrderStatus } from '@/enums';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
-import { Button } from '@components';
 import { useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { HorizontalDotsIcon, UserPlusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { Load, orderPublicIdSelector, ordersActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-actions.scss';
 

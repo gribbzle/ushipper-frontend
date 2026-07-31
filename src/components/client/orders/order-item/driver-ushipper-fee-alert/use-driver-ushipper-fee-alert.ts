@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { Load } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import './driver-ushipper-fee-alert.scss';
 

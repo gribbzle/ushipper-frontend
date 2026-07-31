@@ -1,7 +1,7 @@
 import { FloatingArrow, FloatingPortal, useMergeRefs } from '@floating-ui/react';
 import * as React from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { TooltipContext, useTooltipContext } from './context';
 import { TooltipOptions, useTooltip } from './use-tooltip';

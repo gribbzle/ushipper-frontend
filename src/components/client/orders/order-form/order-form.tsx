@@ -7,7 +7,9 @@ import { useAppSelector } from '@store';
 import { useUpdateOrderPaymentMutation } from '@store/api/order-payment-api';
 import { useUpdateOrderMutation } from '@store/api/orders-api';
 import { OrderFormState, orderPublicIdSelector } from '@store/client';
-import { classname, preparePaymentInformation, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { preparePaymentInformation } from '@utils/orders/prepare-payment-information';
 
 const cn = classname('order-form');
 const t = translateByNamespace('client:order:notifications');

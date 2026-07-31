@@ -3,7 +3,8 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { TransactionTypeGroup } from '@/enums';
 import { SelectField } from '@fields';
-import { getTransactionTypeGroupTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransactionTypeGroupTranslate } from '@utils/translate/get-transaction-type-group-translate';
 
 const t = translateByNamespace('common:transaction-type-group');
 

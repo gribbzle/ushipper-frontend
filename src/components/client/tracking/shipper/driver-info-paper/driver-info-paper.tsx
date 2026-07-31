@@ -2,11 +2,14 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Draggable from 'react-draggable';
 import { toast } from 'react-toastify';
 
-import { Loader, Paper } from '@/components';
+import { Loader } from '@/components/common/loader/loader';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useShipperTrackingDriver } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, trackingActions } from '@store/client';
-import { classname, isTrackingOrderNotDispatched, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';
 
 import { DriverInfoContent } from './driver-info-content';
 

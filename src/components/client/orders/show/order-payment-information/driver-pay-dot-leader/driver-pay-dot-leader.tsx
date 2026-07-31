@@ -5,14 +5,14 @@ import { useAppSelector } from '@store';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { orderSelector } from '@store/client';
 import { DotLeader } from '@ui';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isOrderCheckApproval } from '@utils/orders/order-payment-helpers';
 import {
-    classname,
     getAwaitingDeliveryLabel,
-    isOrderCheckApproval,
-    translateByNamespace,
     translateFundsTransferStatus,
     translateShortFundsTransferStatus,
-} from '@utils';
+} from '@utils/translate/order/funds-transfer-status-translations';
 
 import './driver-pay-dot-leader.scss';
 

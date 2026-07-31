@@ -1,6 +1,6 @@
 import { translateByNamespace } from '@/utils/i18n';
 import { IssueStatus } from '@enums';
-import { CancelRollbackTransactionMode } from '@store/admin';
+import { CancelRollbackTransactionMode } from '@store/admin/accounting/types';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

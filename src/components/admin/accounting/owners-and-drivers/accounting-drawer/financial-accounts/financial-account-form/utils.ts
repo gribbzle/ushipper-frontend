@@ -2,8 +2,8 @@ import has from 'has-values';
 
 import { AccountSubTypesEnum, BalanceType } from '@/enums';
 import { BillingAddress, CreateFinancialAccountValues, FinancialBalanceData, UpdateFinancialBalanceValues } from '@store/admin';
-import { getObjectWithoutEmptyFields } from '@utils';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { FinancialAccountFormValue } from './financial-account-form.types';
 

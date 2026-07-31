@@ -3,7 +3,8 @@ import { useMemo } from 'react';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector } from '@store/admin';
 
-import { useGetAccountingProfile, useGetFinancialBalances } from '../hooks';
+import { useGetAccountingProfile } from '../hooks/use-get-accounting-profile';
+import { useGetFinancialBalances } from '../hooks/use-get-financial-balances';
 
 export const useFinancialAccounts = () => {
     const { isFinancialFormVisible } = useAppSelector(accountingDrawerPropsSelector);

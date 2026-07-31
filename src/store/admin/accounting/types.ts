@@ -1,5 +1,4 @@
-import { Address } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/rocketkor';
-import { AccountingTab } from '@components';
+import { AccountingTab } from '@components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer-tabs/accounting-tab-enum';
 import {
     AccountSubTypesEnum,
     BalanceType,
@@ -15,63 +14,14 @@ import {
 } from '@enums';
 import { AccountingAccountData, AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { AccountingProfileDocument, AccountInitiatePaymentMethod } from '@store/api/accounts-api';
-import { User } from '@store/common';
+import { User } from '@store/common/staff/types';
 import { Fee, FeeCategory } from '@types';
 
 import { Company } from '../companies';
 import { FuelTransactionLocation, FuelTransactionRawData } from '../fuel';
 
-export type BalanceValue = {
-    amount: string;
-    currency: string;
-    formatted: string;
-};
-
-export type BalanceResource = {
-    publicId: string;
-    name: string;
-    type: BalanceType;
-    balance: BalanceValue;
-    pendingWithdrawal: BalanceValue;
-    pendingDeposit: BalanceValue;
-    pendingOrdersDeposit?: BalanceValue;
-    displayedBalance: BalanceValue;
-    isDefault: boolean;
-    createdAt: string;
-};
-
-export type BankAccount = {
-    bankName: string;
-    routingNo: string;
-    accountNumber: string;
-    nameOnAccount: string;
-};
-
-export type MaskedBankAccount = BankAccount & { maskedAccountNumber: string };
-
-export type Card = {
-    firstName: string;
-    middleName: string;
-    lastName: string;
-    number: string;
-    expiry: string;
-};
-
-export type MaskedCard = Card & { maskedNumber: string };
-
-export type BillingAddress = Address & { addressLine3: string };
-
-export type FinancialBalanceData = BalanceResource & {
-    accountingProfileId: string;
-    accountId: string;
-    accountName: string;
-    availableBalance: BalanceValue;
-    accountSubtype: AccountSubTypesEnum;
-    bankAccount: MaskedBankAccount;
-    card: MaskedCard;
-    billingAddress: BillingAddress;
-    feeCategories: FeeCategory[];
-};
+import { BankAccount, BillingAddress, Card, FinancialBalanceData } from './balance-data-types';
+import { BalanceValue } from './balance-types';
 
 export type BalanceAmountType = 'positive' | 'negative';
 

@@ -10,9 +10,13 @@ import {
     useSendAccountingProfileDocumentMutation,
     useUpdateAccountingProfileMutation,
 } from '@store/api/accounts-api';
-import { getObjectWithoutEmptyFields, handleError, splitName, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { splitName } from '@utils/split-name';
 
-import { useGetAccountingProfile, useHandleCloseAccountingDrawer } from '../../hooks';
+import { useGetAccountingProfile } from '../../hooks/use-get-accounting-profile';
+import { useHandleCloseAccountingDrawer } from '../../hooks/use-handle-close-accounting-drawer';
 import { RocketkorFormValue } from '../rocketkor.types';
 
 import { compareAddresses, getMailingAddressValues } from './utils';

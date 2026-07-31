@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 
 import { TrackingOrderStatus } from '@/enums';
 import { CheckFullCircleIcon, ExclamationFullCircleIcon, PlusFullCircleIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './shipper-tracking-order-tag.scss';
 

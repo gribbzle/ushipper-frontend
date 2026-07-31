@@ -1,4 +1,4 @@
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const ALREADY_FORMATTED_PHONE_NUMBER_LENGTH = 14;
 const BY_PHONE_CODE = '+375';

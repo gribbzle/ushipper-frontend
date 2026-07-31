@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 import PhoneInput from 'react-phone-number-input';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import 'react-phone-number-input/style.css';
 import './phone-number-input.scss';

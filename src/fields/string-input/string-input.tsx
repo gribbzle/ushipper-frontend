@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { Input } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { Input } from '@/components/common/input/input';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './string-input.scss';
 

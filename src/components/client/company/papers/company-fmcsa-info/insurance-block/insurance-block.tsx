@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { CollapsibleSection } from '@/components';
+import { CollapsibleSection } from '@/components/common/collapsible-section/collapsible-section';
 import { CompanyFMCSAInsuranceInfo, CompanyFMCSARecord } from '@store/api/company-api';
 import { DotLeader } from '@ui';
-import { formatToCurrency, translateBooleanOrFormatValue, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { translateBooleanOrFormatValue } from '@utils/translations';
 
 type Props = {
     info: CompanyFMCSARecord;

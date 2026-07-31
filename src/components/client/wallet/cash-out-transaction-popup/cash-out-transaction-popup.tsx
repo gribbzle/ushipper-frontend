@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { Button, InitiateAccountPaymentMethodsPopup, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { InitiateAccountPaymentMethodsPopup } from '@/components/common/initiate-account-payment-methods-popup/initiate-account-payment-methods-popup';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppSelector } from '@store';
 import { isCreateTransactionLoadingSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CashOutTransactionForm } from './cash-out-transaction-form';
 import { useCashOutTransactionPopup } from './use-cash-out-transaction-popup';

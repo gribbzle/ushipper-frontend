@@ -1,11 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-final-form';
 
+import { OrderExpensesForm } from '@/components/client/orders/forms/order-expenses-form/order-expenses-form';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { ExpenseTypeEnum } from '@/enums';
-import { Button, OrderExpensesForm, Paper } from '@components';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order:expenses');
 

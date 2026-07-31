@@ -10,15 +10,10 @@ import { useAppDispatch } from '@store';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';
 import { viewersActions } from '@store/common/viewers';
 import { FileClipButton } from '@ui';
-import {
-    classname,
-    getLastVisibleAttachmentOverlayText,
-    isFilePdf,
-    isFreightX,
-    isUshipper,
-    SplitAttachmentsResult,
-    splitAttachmentsWithPdfLimit,
-} from '@utils';
+import { getLastVisibleAttachmentOverlayText, SplitAttachmentsResult, splitAttachmentsWithPdfLimit } from '@utils/attachments';
+import { classname } from '@utils/classname';
+import { isFilePdf } from '@utils/files';
+import { isFreightX, isUshipper } from '@utils/project-config';
 
 import { AttachmentsInfoProps } from './attachments-info.types';
 

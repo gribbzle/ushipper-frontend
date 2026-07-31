@@ -1,6 +1,6 @@
 import { FundsTransferStatus, HistoryItemEventName } from '@/enums';
-import { User } from '@store/client';
-import { CursorPagination } from '@utils';
+import { User } from '@store/common/staff/types';
+import { CursorPagination } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { Loader, Popup } from '@/components/common';
+import { Loader } from '@/components/common/loader/loader';
+import { Popup } from '@/components/common/popup/popup';
 import { CloseIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
-import { classname, renderTextWithBreakLines } from '@utils';
+import { classname } from '@utils/classname';
+import { renderTextWithBreakLines } from '@utils/render';
 
 import { FullCheckingContractOfferBlock } from './full-checking-contract-offer-block';
 import { useCheckingContractPopup } from './use-checking-contract-popup';

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { useMeAdmin, useMeCarrier, useMeDispatcher, useMeDriver, useMeShipper } from '@hooks';
 import logos from '@logo';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 const cn = classname('main-layout-sidebar');
 

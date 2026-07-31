@@ -1,5 +1,6 @@
 import { AttachmentType } from '@/enums';
-import { Avatar } from '@store/common';
+
+import { Avatar } from '../store/common/staff/avatar-types';
 
 export type SelectOption<T = unknown> = {
     label: string;
@@ -45,10 +46,23 @@ export type Creator = {
 
 export type ColorValueHex = `#${string}`;
 
-export type NullableFields<T> = { [K in keyof T]: T[K] | null };
-
-export type NonNullableFields<T> = {
-    [P in keyof T]: NonNullable<T[P]>;
+export type OrderVehicle = {
+    id: number;
+    vin: string | null;
+    year: number | null;
+    make: string | null;
+    model: string | null;
+    type: string;
+    color: string | null;
+    lotNumber: string | null;
+    price: number | null;
+    inop: boolean;
+    enclosed: boolean;
+    schematicPhoto: string;
+    weight: number | null;
+    height: number | null;
+    length: number | null;
+    width: number | null;
 };
 
 export type RequestError = {

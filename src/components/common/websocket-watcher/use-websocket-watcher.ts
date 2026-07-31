@@ -11,7 +11,7 @@ import { issuesApi } from '@store/api/issues-api';
 import { ordersActions } from '@store/client';
 import { chatsActions } from '@store/common';
 import { globalActions, isDriverPayCounterInitSelector, isIssuesCounterInitSelector } from '@store/global';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const tOrder = translateByNamespace('client:order:order-information');
 

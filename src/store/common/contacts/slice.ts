@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { OrderSortingDirection } from '@/enums';
-import { composeBuilder, requestInitial } from '@utils';
+import { composeBuilder, requestInitial } from '@utils/redux';
 
 import { createEditContactFormSubmit, deleteContactAction, fetchContactAction, fetchContactsAction } from './actions';
 import { ContactsFilters, ContactsSliceState, CreateEditContactModalState, DeleteContactPopupState } from './types';

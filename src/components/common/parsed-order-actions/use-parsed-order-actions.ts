@@ -2,9 +2,9 @@ import { MouseEvent, useCallback, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { useCancelRequest, useCreateEmptyRequest, useLoadboardItemActions, useSendRequestAction } from '@/components/client/loadboard/loadboard-item';
+import { useCancelRequest, useCreateEmptyRequest, useLoadboardItemActions, useSendRequestAction } from '@/components/client/loadboard/loadboard-item/hooks';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { OrderSourcesEnum, OrderStatus, RequestStatusesEnum, UserOrderStatus } from '@/enums';
-import { DropdownOption } from '@components';
 import { useCreateParsedOrderCall, useMeDriverRelated, useOpenParsedOrderDetailsDrawer } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi, { LoadBoardFilters } from '@store/api/loadboard-api';
@@ -13,7 +13,7 @@ import { accountsUsersSelector } from '@store/client/accounts';
 import { loadboardActions } from '@store/client/loadboard';
 import { Load } from '@store/common';
 import { authorizedUserNameSelector } from '@store/global';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useHandleCheckContract } from './use-handle-check-contract';
 import { useHandleCheckSDOffer } from './use-handle-check-sd-offer';

@@ -1,8 +1,8 @@
+import { CreateTransactionFormState } from '@/components/admin/accounting/common/create-transaction-popup/create-transaction-form/create-transaction-form.types';
 import { BalanceType, TransactionStatusGroupEnum, TransactionTypeGroup } from '@/enums';
-import { CreateTransactionFormState } from '@components';
 import { Transaction } from '@store/admin';
 import { apiSlice } from '@store/api/api-slice';
-import { CursorPagination, PaginatedResponse } from '@utils';
+import { CursorPagination, PaginatedResponse } from '@utils/redux';
 
 type UpdateTransactionsParams = Pick<Transaction, 'status' | 'notes' | 'cancellationNotes'>;
 

@@ -1,11 +1,15 @@
 import React, { useMemo } from 'react';
 
-import { Accordion, ParsedOrderActions, ParsedOrderRoute, PaymentInfo } from '@/components';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { ParsedOrderActions } from '@/components/common/parsed-order-actions/parsed-order-actions';
+import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
+import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { UserOrderStatus } from '@/enums';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { GetOrdersData } from '@store/api/orders-api';
 import { Load } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useDriverOrdersTab } from './use-driver-orders-tab';
 

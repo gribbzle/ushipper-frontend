@@ -7,7 +7,8 @@ import { useAppDispatch } from '@store';
 import { OrderSendInvoiceFormState, useCreateOrderInvoiceMutation, useSendOrderInvoiceMutation } from '@store/api/order-invoice-api';
 import { ordersApi } from '@store/api/orders-api';
 import { OrderFormEnum } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import './order-send-invoice-form.scss';

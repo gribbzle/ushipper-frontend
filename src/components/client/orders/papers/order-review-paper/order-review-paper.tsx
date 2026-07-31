@@ -2,15 +2,19 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { format } from 'date-fns';
 import has from 'has-values';
 
+import { OrderReviewPopup } from '@/components/client/orders/popups/order-review-popup/order-review-popup';
+import { Button } from '@/components/common/button/button';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { CompanyType } from '@/enums';
-import { Button, IconButton, OrderReviewPopup } from '@components';
 import { useMeDriverRelated, useMeShipper } from '@hooks';
 import { CloseIcon, PencilWithLineIcon, StarIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderCarrierOrderSelector, orderShipperOrderSelector, reviewActions } from '@store/client';
 import { authorizedUserCompanyPublicIdSelector } from '@store/global';
 import { Card, CardContent, CardHeader, Paper, Rating, RatingStarIcon } from '@ui';
-import { classname, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import './order-review-paper.scss';
 

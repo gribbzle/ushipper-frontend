@@ -3,7 +3,9 @@ import React from 'react';
 import { AlertBlock, Loader } from '@/components/common';
 import { isNumber } from '@/shared';
 import { DotLeader } from '@ui';
-import { classname, getPercentTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getPercentTranslate } from '@utils/translate/get-units-of-measurement-translate';
 
 import './global-fuel-cards-settings-block.scss';
 

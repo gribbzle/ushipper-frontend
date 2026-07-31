@@ -7,7 +7,7 @@ import { StringInput } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createEditCarMakerDrawerPropsSelector, createEditCarMakerFormSubmit, fetchedCarMakerSelector } from '@store/admin';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 import { required } from '@validators';
 
 import './create-update-car-maker-drawer.scss';

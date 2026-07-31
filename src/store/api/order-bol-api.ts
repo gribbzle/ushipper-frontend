@@ -1,8 +1,8 @@
 import { OrderStatus } from '@/enums';
 import { Attachment } from '@/shared';
 import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
-import { OrderDeliveryInformation, OrderDetails, OrderPickupInformation } from '@store/client';
-import { Inspections } from '@store/client/order-BOL';
+import { Inspections } from '@store/client/order-BOL/types';
+import { OrderDeliveryInformation, OrderDetails, OrderPickupInformation } from '@store/common/orders/types';
 
 import { apiSlice } from './api-slice';
 

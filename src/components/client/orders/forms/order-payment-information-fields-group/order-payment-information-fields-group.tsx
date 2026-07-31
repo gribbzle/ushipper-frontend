@@ -1,14 +1,22 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-final-form';
 
+import { PaymentBrokerFeeAlert } from '@/components/client/orders/forms/common/payment-broker-fee-alert/payment-broker-fee-alert';
+import { TotalPaymentAlert } from '@/components/client/orders/forms/common/total-payment-alert/total-payment-alert';
+import { OrderMarkAsPaidFormContent } from '@/components/client/orders/forms/order-mark-as-paid-form/order-mark-as-paid-form';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { PaymentTermsSelect } from '@/components/common/payment-terms-select/payment-terms-select';
 import { OrderPaymentStatus, PaymentTerm } from '@/enums';
-import { Button, Divider, IconButton, OrderMarkAsPaidFormContent, PaymentBrokerFeeAlert, PaymentTermsSelect, TotalPaymentAlert } from '@components';
 import { CurrencyInput, FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { useDisableCarrierChanging, useIsPartnerCompany, useMeShipper } from '@hooks';
 import { PlusIcon, TrashIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { OrderFieldsGroup, orderPaymentStatusSelector } from '@store/client';
-import { classname, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { CarrierPaymentInfoFields } from './carrier-payment-info-fields';
 import { FreightXCarrierPaymentInfoFields } from './freightx-carrier-payment-info-fields';

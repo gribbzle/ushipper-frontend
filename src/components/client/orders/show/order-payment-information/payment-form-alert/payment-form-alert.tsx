@@ -1,7 +1,7 @@
 import React from 'react';
 
+import { OrderDriverPaymentFormAlert } from '@/components/client/orders/alerts/order-driver-payment-form-alert/order-driver-payment-form-alert';
 import { useOrder, useOrderHelpers } from '@/hooks/order';
-import { OrderDriverPaymentFormAlert } from '@components';
 
 export const PaymentFormAlert = ({ context }: { context?: 'admin' | 'driver' }) => {
     const order = useOrder();

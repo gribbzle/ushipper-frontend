@@ -7,7 +7,8 @@ import { accountingActions } from '@store/admin';
 import { balancesApi } from '@store/api/balances-api';
 import { transactionsApi, useCreateTransactionMutation } from '@store/api/transactions-api';
 import { authorizedUserAccountPublicIdSelector, authorizedUserDefaultBalanceSelector } from '@store/global';
-import { convertDollarsToCents, translateByNamespace } from '@utils';
+import { convertDollarsToCents } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CashOutTransactionFormProps, CashOutTransactionFormState } from './cash-out-transaction-form.types';
 

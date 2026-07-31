@@ -1,9 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { PageHeader } from '@/components';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { useCompanyPage } from '@hooks';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:company-page:head');
 

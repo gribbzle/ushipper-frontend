@@ -3,7 +3,9 @@ import Head from 'next/head';
 
 import { CreateEditStaffDrawer, DeleteUserPopup, getMainLayout, StaffFiltersForm, StaffTable } from '@components';
 import { useHasPermission, useUsersPage } from '@hooks';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './users.scss';
 

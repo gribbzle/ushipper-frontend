@@ -1,6 +1,7 @@
 import { PaymentTerm } from '@/enums';
 import { NullableFields } from '@/shared';
-import { PaginatedResponse, RequestWithStatus } from '@utils';
+
+import { PaginatedResponse, RequestWithStatus } from '../../../utils/redux';
 
 export type BlackListItem = {
     publicId: string;

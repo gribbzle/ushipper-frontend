@@ -2,7 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 
 import { BetweenPhonesChatDrawer, DriversList, getMainLayout, LoadboardNoticePopup, OrderChatDrawer, ParsedOrderDetailsDrawer } from '@components';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './drivers-plan.scss';
 

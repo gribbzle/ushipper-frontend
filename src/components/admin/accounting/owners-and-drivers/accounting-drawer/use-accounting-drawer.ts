@@ -5,13 +5,13 @@ import { TabItemBase } from '@/components/common';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, accountingDrawerPropsSelector, selectedAccountSelector } from '@store/admin';
 import { useLazyGetAccountingAccountQuery } from '@store/api/accounting-accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
+import { useHandleCloseAccountingDrawer } from './hooks/use-handle-close-accounting-drawer';
 import { useRocketkorForm } from './rocketkor/rocketkor-form/use-rocketkor-form';
 import { AccountingTab } from './accounting-drawer-tabs';
 import { useAgreementsDetails } from './agreements-details';
 import { useFinancialAccountForm } from './financial-accounts';
-import { useHandleCloseAccountingDrawer } from './hooks';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

@@ -4,7 +4,9 @@ import Head from 'next/head';
 import { Button, CompaniesFilters as CompaniesFiltersComponent, CompaniesTable, CreateEditCompanyDrawer, DeleteCompanyPopup, getMainLayout } from '@components';
 import { useCompaniesActionsPermission, useOpenCreateCompanyDrawer } from '@hooks';
 import { PlusCircleIcon } from '@icons';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './companies.scss';
 

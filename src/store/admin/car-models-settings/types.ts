@@ -1,7 +1,7 @@
 import { Creator } from '@/shared';
-import { PaginatedData, RequestWithStatus } from '@utils';
+import { PaginatedData, RequestWithStatus } from '@utils/redux';
 
-import { CarMaker } from '../car-makers-settings';
+import { CarMaker } from '../car-makers-settings/types';
 
 export type CarModel = {
     id: number;

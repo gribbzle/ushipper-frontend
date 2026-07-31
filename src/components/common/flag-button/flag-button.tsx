@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Button } from '@/components/common';
 import { FlagIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
+
+import { Button } from '../button';
 
 import { FlagButtonProps } from './flag-button.types';
 

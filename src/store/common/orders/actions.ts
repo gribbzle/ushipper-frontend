@@ -2,9 +2,11 @@ import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import { createOrder, fetchOrder, sendOrderBOL, updateOrder } from '@api';
-import { Load, OrderFormState, ordersActions, OrderSendBOLFormState } from '@store/client';
 
 import { translateByNamespace } from '../../../utils/i18n';
+
+import { ordersActions } from './slice';
+import { Load, OrderFormState, OrderSendBOLFormState } from './types';
 
 const t = (key: string) => translateByNamespace('client:order')(key);
 

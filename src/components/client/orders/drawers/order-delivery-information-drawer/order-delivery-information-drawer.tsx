@@ -3,11 +3,15 @@ import { FormApi } from 'final-form';
 import { FormSpy } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
-import { Button, Drawer, OrderDeliveryInformationFieldsGroup, OrderForm } from '@components';
+import { OrderDeliveryInformationFieldsGroup } from '@/components/client/orders/forms/order-delivery-information-form/order-delivery-information-fields-group';
+import { OrderForm } from '@/components/client/orders/order-form/order-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDeliveryInformationDrawerPropsSelector, orderDeliveryInformationSelector, OrderFormState, ordersActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-delivery-information-drawer.scss';
 

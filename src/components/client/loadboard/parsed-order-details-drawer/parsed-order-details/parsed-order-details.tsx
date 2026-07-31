@@ -2,7 +2,7 @@ import React from 'react';
 
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { BrokerDetails } from './broker-details';
 import { OrderDetails } from './order-details';

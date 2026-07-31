@@ -3,9 +3,11 @@ import { FormApi } from 'final-form';
 import { Form, FormSpy } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { Button, Paper } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { RegistrationSettings, useGetAdminConfigQuery, usePostAdminConfigMutation } from '@store/api/admin-configuration';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './preferences-form-paper.scss';
 

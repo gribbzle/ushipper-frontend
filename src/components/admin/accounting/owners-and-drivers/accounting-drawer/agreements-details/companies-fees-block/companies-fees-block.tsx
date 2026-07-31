@@ -6,7 +6,10 @@ import { FeeCategoryTermType } from '@enums';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee } from '@types';
 import { DotLeader } from '@ui';
-import { classname, isFreightX, summarizeFees, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
+import { summarizeFees } from '@utils/transaction/summarize-fees';
 
 import { useCompaniesFeesBlock } from './use-companies-fees-block';
 

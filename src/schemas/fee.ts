@@ -1,6 +1,7 @@
 import Joi from 'joi';
 
 import { FeeData } from '@types';
+
 import {
     feeCategoryTermTypeValidator,
     feeCategoryValueTypeValidator,
@@ -10,7 +11,7 @@ import {
     optionalNumberValidator,
     recurringIntervalTypeValidator,
     requiredNumberValidator,
-} from '@validators';
+} from '../validators/jois';
 
 export const feeDataSchema = Joi.object<FeeData>({
     feeId: optionalNumberValidator,

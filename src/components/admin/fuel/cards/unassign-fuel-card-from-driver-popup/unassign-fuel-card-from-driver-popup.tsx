@@ -5,7 +5,9 @@ import { Button, CloseButton, Popup } from '@/components/common';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fuelActions, unassignDriverFromFuelCardPopupPropsSelector } from '@store/admin';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
-import { getCompanyTypeTranslate, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 const t = translateByNamespace('admin:fuel:cards-page:unassign-driver-from-fuel-card-popup');
 const tNot = translateByNamespace('admin:fuel:cards-page:notifications');

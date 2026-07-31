@@ -1,7 +1,7 @@
 import React from 'react';
 import { Head, Html, Main, NextScript } from 'next/document';
 
-import { isFreightX } from '@utils';
+import { isFreightX } from '@utils/project-config';
 
 export default function Document() {
     return (

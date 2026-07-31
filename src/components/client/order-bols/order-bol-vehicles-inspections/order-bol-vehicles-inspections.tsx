@@ -1,11 +1,12 @@
 import React, { useCallback } from 'react';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
 import { useAppSelector } from '@store';
 import { OrderBOLVehicle } from '@store/api/order-bol-api';
 import { orderBOLOrderVehiclesSelector } from '@store/client/order-BOL';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderBolInspections } from './order-bol-inspections';
 

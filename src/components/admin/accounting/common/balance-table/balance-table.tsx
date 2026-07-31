@@ -1,17 +1,12 @@
 import React from 'react';
 
 import { Table } from '@/components/common';
-import { BalanceType } from '@/enums';
 import { Transaction } from '@store/admin';
 
+import { BalanceTableProps } from './balance-table.types';
 import { useBalanceTable } from './use-balance-table';
 
 import './balance-table.scss';
-
-export type BalanceTableProps = {
-    balanceType?: BalanceType;
-    balanceId?: string;
-};
 
 export const BalanceTable = ({ balanceType, balanceId }: BalanceTableProps) => {
     const {

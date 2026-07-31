@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { OrderInspection } from '@/components';
-import { Paper } from '@/components/common';
+import { OrderInspection } from '@/components/client/orders/order-inspection/order-inspection';
+import { Paper } from '@/components/common/paper/paper';
 import { CarrierOrder } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './shipper-order-vehicle-inspection-details-paper.scss';
 

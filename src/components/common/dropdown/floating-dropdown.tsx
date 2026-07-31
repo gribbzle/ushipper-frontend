@@ -14,7 +14,7 @@ import {
 } from '@floating-ui/react';
 import React, { MouseEvent, useCallback, useEffect, useId, useMemo, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { Divider } from '../divider';
 

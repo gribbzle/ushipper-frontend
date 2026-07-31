@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { CatalogFiltersCurrentSearch, Paper, Tabs } from '@components';
+import { CatalogFiltersCurrentSearch } from '@/components/client/catalogs/catalog-filters-current-search/catalog-filters-current-search';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { CatalogStatistic } from '@store/client';
 
 import { useCatalogFiltersTabs } from './use-catalog-filters-tabs';

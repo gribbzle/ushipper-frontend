@@ -8,9 +8,9 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, assignDispatcherToDriverPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { useUpdateUserJSONMutation } from '@store/api/users-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
-import { AssignDispatcherFormState } from './assign-dispatcher-to-driver-popup';
+import { AssignDispatcherFormState } from './assign-dispatcher-to-driver-popup.types';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

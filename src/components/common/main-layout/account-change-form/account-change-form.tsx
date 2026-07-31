@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 
 import { useAppSelector } from '@store';
 import { authorizedUserPublicIdSelector } from '@store/global';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountChangeFormState } from './account-change-form.types';
 import { AccountSelect } from './account-select';

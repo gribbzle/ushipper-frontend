@@ -1,4 +1,5 @@
-import { SortSelectValue, TabItemBase } from '@components';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OffersFiltersParams, OffersStatistic } from '@store/api/order-offers';
 
 export type OffersFiltersTypes = {

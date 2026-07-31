@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { classname, formatExternalPhoneNumber } from '@utils';
+import { classname } from '@utils/classname';
+import { formatExternalPhoneNumber } from '@utils/phone';
 
 import './chat-item-external-number.scss';
 

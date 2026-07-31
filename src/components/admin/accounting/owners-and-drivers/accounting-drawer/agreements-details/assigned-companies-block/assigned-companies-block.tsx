@@ -4,7 +4,8 @@ import { CompanyNameIsPartnerInfo, DateInfo, TableColumn, TableRowMenu, UserInfo
 import { UserRoleType } from '@/enums';
 import { useDriversActionsPermission } from '@hooks';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DataTableBlock } from '../data-table-block';
 

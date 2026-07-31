@@ -1,5 +1,6 @@
-import { CreateEditBlackListItemData, FetchedBlackListItems, TBlackListItemsFilters } from '@store/common';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
+
+import { CreateEditBlackListItemData, FetchedBlackListItems, TBlackListItemsFilters } from '../store/common/black-list/types';
 
 export const fetchBlackListItems = async (filters: TBlackListItemsFilters) => {
     const result = await axios.get('/api/blacklist-items', { params: filters });

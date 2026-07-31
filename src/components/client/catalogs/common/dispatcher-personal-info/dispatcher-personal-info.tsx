@@ -1,13 +1,16 @@
 import React, { useMemo } from 'react';
 
-import { Avatar } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
 import { CompanyType, UserRoleType } from '@/enums';
 import { useIsDriversCatalogPage } from '@hooks';
 import { DispatcherCatalogInfo } from '@store/client';
 import { AuthorizedUserInfo } from '@store/global/types';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
-import { CatalogInfoWrapper, CompanyNameInfoBlock, CompanyRatingBlock, CompanyTypeAddressBlock } from '..';
+import { CatalogInfoWrapper } from '../catalog-info-wrapper';
+import { CompanyNameInfoBlock } from '../company-name-block';
+import { CompanyRatingBlock } from '../company-rating-block';
+import { CompanyTypeAddressBlock } from '../company-type-address-block';
 
 import './dispatcher-personal-info.scss';
 

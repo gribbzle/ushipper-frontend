@@ -1,7 +1,8 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { deleteRoleAction, deleteRolePopupPropsSelector } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';

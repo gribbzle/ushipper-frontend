@@ -3,7 +3,7 @@ import React from 'react';
 import { CashOutTransactionPopup, getMainLayout, WalletEmptyLayout, WalletFilters, WalletPageHead, WalletStatisticCounter, WalletTable } from '@components';
 import { useAppSelector } from '@store';
 import { authorizedUserDefaultBalanceSelector } from '@store/global';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './wallet.scss';
 

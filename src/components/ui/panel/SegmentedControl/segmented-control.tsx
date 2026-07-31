@@ -1,6 +1,6 @@
 import React, { createRef, RefObject, useEffect, useRef, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { SegmentedControlProps } from './types';
 

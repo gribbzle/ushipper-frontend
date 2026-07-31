@@ -1,12 +1,15 @@
 import React, { Fragment, useCallback, useMemo } from 'react';
 
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { PaymentTerm } from '@/enums';
 import { getPaymentTermTranslate } from '@/utils/payment';
-import { TableColumn, TableRowMenu, UserInfoBlock } from '@components';
 import { useAppDispatch } from '@store';
 import { BlackListItem, fetchBlackListItemAction } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
-import { formatDateOrGetDash, translateByNamespace } from '@utils';
+import { formatDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:black-list-page');
 const columnsT = translateByNamespace('common:black-list-page:table:columns');

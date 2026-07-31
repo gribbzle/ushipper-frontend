@@ -19,7 +19,11 @@ import {
     signUpFormSubmit,
     signUpFormSubmitStatusSelector,
 } from '@store/client';
-import { classname, getErrors, getProjectName, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { getErrors } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './sign-up.scss';
 

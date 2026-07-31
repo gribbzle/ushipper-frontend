@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:black-list-page:create-edit-drawer:fields');
 

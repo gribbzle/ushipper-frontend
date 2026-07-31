@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './broker-details-block.scss';
 

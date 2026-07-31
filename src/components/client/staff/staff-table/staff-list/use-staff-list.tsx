@@ -3,13 +3,20 @@ import { useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 import { formatPhoneNumberIntl } from 'react-phone-number-input';
 
-import { AppAndDeviceInfo, DateInfo, Link, StatusBlock, StatusBlockView, TableColumn, TableRowMenu, UserInfoBlock } from '@/components/common';
+import { Link } from '@/components/common/link/link';
+import { StatusBlock, StatusBlockView } from '@/components/common/status-block/status-block';
+import { AppAndDeviceInfo } from '@/components/common/table/common/app-and-device-info/app-and-device-info';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { UserRoleType } from '@/enums';
 import { useLoginAs } from '@hooks';
 import { useAppDispatch } from '@store';
 import { User } from '@store/common';
 import { staffActions } from '@store/common/staff/slice';
-import { formatDateOrGetDash, translateByNamespace } from '@utils';
+import { formatDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { UseStaffListProps } from '../staff-table.types';
 import { useStaffTable } from '../use-staff-table';

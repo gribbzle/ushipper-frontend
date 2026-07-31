@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 
 import { CompanyFMCSARecord, CompanyFMCSATotalInfo } from '@store/api/company-api';
 import { DotLeader } from '@ui';
-import { classname, translateBooleanOrFormatValue, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateBooleanOrFormatValue } from '@utils/translations';
 
 import './fmcsa-total-info-block.scss';
 

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { Button, Popup } from '@/components/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CreateWalletForm } from './create-wallet-form';
 import { useWalletPopup } from './use-create-wallet-popup';

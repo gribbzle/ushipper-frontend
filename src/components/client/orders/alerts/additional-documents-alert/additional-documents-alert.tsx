@@ -1,11 +1,15 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { AttachmentDownloadButton } from '@/components/common/attachment-download-button/attachment-download-button';
+import { Button } from '@/components/common/button/button';
 import { FundsTransferStatus } from '@/enums';
-import { AlertBlock, AttachmentDownloadButton, Button } from '@components';
 import { MultiFileUploader } from '@fields';
 import { Ellipse } from '@icons';
-import { classname, removeFieldPrefix, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { removeFieldPrefix } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AdditionalDocumentsAlertProps, AdditionalDocumentsAlertRowPropsRowProps, AdditionalDocumentsFormValues } from './additional-documents-alert.types';
 import { useAdditionalDocumentsAlert } from './use-additional-documents-alert';

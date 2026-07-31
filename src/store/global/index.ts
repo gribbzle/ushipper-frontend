@@ -1,9 +1,8 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { AccountToken } from '@store/client';
-import { AccountData, AccountUser } from '@store/client/accounts';
-import { composeBuilder } from '@utils';
+import { AccountToken } from '@store/client/sign-in/token-types';
+import { composeBuilder } from '@utils/redux';
 
 import { revokeTokenAction } from './actions';
 import { GlobalSliceState } from './types';
@@ -33,13 +32,13 @@ export const globalSlice = createSlice({
         setToken: (state, action: PayloadAction<string>) => {
             state.token = action.payload;
         },
-        setAccount: (state, action: PayloadAction<AccountData>) => {
+        setAccount: (state, action: PayloadAction<any>) => {
             state.account = action.payload;
         },
         setAccountTokens: (state, action: PayloadAction<AccountToken[]>) => {
             state.tokens = action.payload;
         },
-        setAccountUser: (state, action: PayloadAction<AccountUser>) => {
+        setAccountUser: (state, action: PayloadAction<any>) => {
             state.accountUser = Object.assign({}, action.payload);
         },
         setCountOfNewRequests: (state, action) => {

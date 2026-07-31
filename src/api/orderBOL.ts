@@ -1,7 +1,7 @@
 import { saveAs } from 'file-saver';
 
 import { OrderBOL } from '@store/api/order-bol-api';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
 
 export const fetchOrderBOL = async (orderId: string) => {
     const result = await axios.get(`/api/orders/${orderId}/bol`);

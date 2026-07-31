@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 
 import { RowItem } from '@/components/common';
 import { FuelTransactionLineItem } from '@store/admin';
-import { getGallonsTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';
 
 import { FuelTransactionInfoWrapper } from '../fuel-transaction-info-wrapper';
 

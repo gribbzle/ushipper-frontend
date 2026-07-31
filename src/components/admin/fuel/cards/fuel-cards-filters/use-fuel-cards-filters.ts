@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
 
-import { FuelCardsFiltersFormState } from './fuel-cards-filters';
+import { FuelCardsFiltersFormState } from './fuel-cards-filters.types';
 
 export const useFuelCardsFilters = () => {
     const {

@@ -1,8 +1,9 @@
 import React from 'react';
 
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
-import { EmptyLayout } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DriverItem } from '../driver-item';
 

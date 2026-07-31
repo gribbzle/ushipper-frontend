@@ -1,11 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 
+import { OrderSendBOLForm } from '@/components/client/orders/forms/order-send-bol-form/order-send-bol-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { useHandleViewBol } from '@/hooks/order';
-import { Button, Drawer, OrderSendBOLForm } from '@components';
 import { EyeIcon, SendIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderFormEnum, ordersActions, orderSendBOLDrawerPropsSelector } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-send-bol-drawer.scss';
 

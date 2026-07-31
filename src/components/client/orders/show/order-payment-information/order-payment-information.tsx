@@ -4,7 +4,7 @@ import { useHasPartnerCompanies, useIsPartnerCompany, useMeAdmin, useMeCarrier, 
 import { OrderProvider } from '@providers';
 import { useAppSelector } from '@store';
 import { orderDriverSelector, orderSelector } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { DriverRateInformation } from './driver-rate-info';
 import { RateInformation } from './rate-info';

@@ -1,9 +1,12 @@
 import React, { useMemo } from 'react';
 
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-drawer-tabs';
 import { OfferStatusesEnum } from '@/enums';
-import { Button, Drawer, OfferDrawerTabs } from '@components';
 import { CheckIcon, CloseIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OfferTabsEnum } from '../../offers/offer-drawer/offer-drawer';
 

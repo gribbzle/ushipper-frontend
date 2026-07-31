@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { DropdownDividerOption, DropdownOption, FloatingDropdown } from '@components';
+import { DropdownDividerOption, DropdownOption, FloatingDropdown } from '@/components/common/dropdown/dropdown';
 import { ActionsIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './table-row-menu.scss';
 

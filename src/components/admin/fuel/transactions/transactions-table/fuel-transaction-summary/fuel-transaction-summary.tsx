@@ -2,7 +2,8 @@ import React from 'react';
 
 import { RowItem } from '@/components/common';
 import { FuelTransactionLineItem } from '@store/admin';
-import { formatToCurrency, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { FuelTransactionInfoWrapper } from '../fuel-transaction-info-wrapper';
 

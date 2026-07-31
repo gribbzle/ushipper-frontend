@@ -1,3 +1,3 @@
-export { emptyClientOnlyGetServerSideProps as getServerSideProps } from '@utils';
+export { emptyClientOnlyGetServerSideProps as getServerSideProps } from '@utils/auth';
 
 export { default } from './contacts';

@@ -1,24 +1,16 @@
-import React, { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
+import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncFuelCardsSelect } from '@components';
+import { AsyncFuelCardsSelect } from '@/components/common/selects/fuel/async-fuel-cards-select/async-fuel-cards-select';
 import { FormControl, InputLabel } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
+import { LinkFuelCardFormProps, LinkFuelCardFormState } from './link-fuel-card-form.types';
 import { useLinkFuelCardForm } from './use-link-fuel-card-form';
 
 import './link-fuel-card-form.scss';
-
-export type LinkFuelCardFormState = {
-    fuelCardId: number;
-};
-
-export type LinkFuelCardFormProps = {
-    onAfterSubmit: () => void;
-    formRef: MutableRefObject<FormApi<LinkFuelCardFormState> | undefined>;
-};
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:link-fuel-card-popup');
 const cn = classname('link-fuel-card-form');

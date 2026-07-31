@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 type State = {
     hasError?: boolean;

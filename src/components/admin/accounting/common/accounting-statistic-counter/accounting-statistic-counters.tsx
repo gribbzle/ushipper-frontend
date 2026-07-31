@@ -4,7 +4,7 @@ import { StatisticCounter } from '@/components/common/statistic-counter';
 import { BalanceType } from '@/enums';
 import { FinancialBalanceData } from '@store/admin';
 import { useGetBalancesQuery } from '@store/api/balances-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import './accounting-statistic-counters.scss';
 

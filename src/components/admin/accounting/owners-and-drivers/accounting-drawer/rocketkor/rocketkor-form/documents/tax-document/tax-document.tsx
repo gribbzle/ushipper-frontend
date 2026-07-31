@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { accountingActions } from '@store/admin';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { RocketkorBaseDocument } from '../rocketkor-base-document';
 

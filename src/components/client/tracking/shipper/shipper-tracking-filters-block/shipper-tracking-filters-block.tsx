@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useAppSelector } from '@store';
 import { openShipperTrackingFiltersSelector } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ShipperTrackingFilters } from './shipper-tracking-filters';
 import { ShipperTrackingSearchButton } from './shipper-tracking-search-button';

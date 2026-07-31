@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { useCreateAcceptExternalContractMutation, useCreateImportExternalContractMutation } from '@store/api/external-orders-api';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { checkingContractPopupSelector, loadboardActions } from '@store/client/loadboard';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useCheckingContractPopup } from '../use-checking-contract-popup';
 import { handleParsedOrderError } from '../utils';

@@ -1,7 +1,9 @@
 import React, { useCallback, useMemo } from 'react';
 import { format } from 'date-fns';
 
-import { IconButton, LabeledText, OrderPaymentInformationDrawer } from '@/components';
+import { OrderPaymentInformationDrawer } from '@/components/client/orders/drawers/order-payment-information-drawer/order-payment-information-drawer';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { LabeledText } from '@/components/common/labeled-text/labeled-text';
 import { useCanManageOrder, useOrderPaymentTerms } from '@/hooks/order';
 import { preparePaymentInformation } from '@/utils/orders';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
@@ -10,7 +12,10 @@ import { PencilIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersActions, orderSelector } from '@store/client';
 import { DotLeader } from '@ui';
-import { classname, formatDateWithMonthInWords, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDateWithMonthInWords } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { BlockWrapper } from '../block-wrapper';
 

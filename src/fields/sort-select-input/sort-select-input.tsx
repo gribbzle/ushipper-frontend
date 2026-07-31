@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SortSelect, SortSelectOptions, SortSelectValue } from '@components';
-import { classname } from '@utils';
+import { SortSelect, SortSelectOptions, SortSelectValue } from '@/components/common/sort-select/sort-select';
+import { classname } from '@utils/classname';
 
 import './sort-select-input.scss';
 

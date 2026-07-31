@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ChatMessageExternalStatusesEnum } from '@/enums';
 import { CallLinesIcon, CrossIcon, HorizontalDotsIcon, PhoneFilledIcon, TickIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './call-message-icon.scss';
 

@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Avatar } from '@components';
+import { Avatar } from '@/components/common/avatar/avatar';
 import { User } from '@store/common';
-import { classname, getCompanyTypeTranslate } from '@utils';
+import { classname } from '@utils/classname';
+import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
 
 import './user-details.scss';
 

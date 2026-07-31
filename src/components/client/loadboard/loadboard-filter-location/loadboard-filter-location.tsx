@@ -2,11 +2,12 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
-import { AddressInput, AddressValue, isCoordinatesEqual } from '@/components/common';
+import { AddressInput, AddressValue, isCoordinatesEqual } from '@/components/common/address-input/address-input';
 import RadiusSelect, { RADS } from '@/components/common/radius-select/radius-select';
 import { FormControl, InputLabel } from '@fields';
 import { CoordinatesWithRangeRegion } from '@store/api/loadboard-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './loadboard-filter-location.scss';
 

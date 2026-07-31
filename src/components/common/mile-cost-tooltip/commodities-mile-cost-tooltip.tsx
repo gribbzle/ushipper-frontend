@@ -1,8 +1,12 @@
 import React from 'react';
 
-import { MileCostTooltipProps, Tooltip, TooltipContent, TooltipTrigger } from '@/components/common';
+import { MileCostTooltipProps } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip.types';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { calculateTotalPayment, getPaymentPerDistanceDetails } from '@/utils/payment';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './mile-cost-tooltip.scss';
 

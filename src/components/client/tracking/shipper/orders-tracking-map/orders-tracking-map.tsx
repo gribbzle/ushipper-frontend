@@ -3,20 +3,17 @@ import { Marker } from 'react-map-gl/mapbox';
 
 import { OrderStatus } from '@/enums';
 import { useAppSelector } from '@store';
-import { selectedShipperTrackingOrderSelector, ShipperTrackingOrder } from '@store/client';
-import { isTrackingOrderNotDispatched } from '@utils';
+import { selectedShipperTrackingOrderSelector } from '@store/client';
+import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';
 
 import { OrderPin, TrackingMap } from '../../common';
 import { DriverInfoPaper } from '../driver-info-paper';
 
 import { DriversMarkers } from './driver-markers';
+import { OrdersTrackingMapProps } from './orders-tracking-map.types';
 import { SelectedOrderRoute } from './selected-order-route';
 import { useOrdersTrackingMap } from './use-orders-tracking-map';
 import { useSelectedOrderPickupText } from './use-selected-order-pickup-text';
-
-export type OrdersTrackingMapProps = {
-    orders?: ShipperTrackingOrder[];
-};
 
 export const OrdersTrackingMap = ({ orders }: OrdersTrackingMapProps) => {
     const { mapRef, bounds, driverPaperPosition, isOrdersListShown, handleOrderMarkerClick, handleDriverTruckMarkerClick } = useOrdersTrackingMap({

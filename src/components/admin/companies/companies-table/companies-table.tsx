@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Paper, Table, TableLoader } from '@/components/common';
 import { Company } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useCompaniesTable } from './use-companies-table';
 

@@ -3,8 +3,9 @@
 import React, { useRef, useState } from 'react';
 import { useCallback } from 'react';
 
-import { Button } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import DefaultAvatarIcon from './default-avatar.svg';
 

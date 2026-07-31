@@ -1,11 +1,14 @@
 import React, { useMemo } from 'react';
 
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip';
 import { getDestination } from '@/utils/driving';
 import { getOrderId } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
-import { MileCostTooltip, OrderRoute } from '@components';
 import { Load } from '@store/client';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 const t = translateByNamespace('client:requests-page:drawer');
 const cn = classname('requests-drawer');

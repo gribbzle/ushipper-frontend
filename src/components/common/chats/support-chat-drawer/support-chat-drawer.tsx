@@ -1,9 +1,12 @@
 import React, { useMemo } from 'react';
 
-import { Drawer, VerifiedIcon } from '@components';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { VerifiedIcon } from '@/components/common/verified-icon/verified-icon';
 import { useAppSelector } from '@store';
 import { chatInfoSelector, selectedChatIdSelector } from '@store/client';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { SupportChat } from './support-chat/support-chat';
 import { useSupportChatDrawer } from './use-support-chat-drawer';

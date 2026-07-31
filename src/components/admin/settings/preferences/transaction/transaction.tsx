@@ -6,7 +6,7 @@ import { DriverAccountsSelect } from '@/components/common/orders-page-layout/dri
 import { TransactionSystemEnum } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
 import { RegistrationSettings } from '@store/api/admin-configuration';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { PreferencesFormPaper } from '../preferences-form-paper';

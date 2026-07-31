@@ -3,8 +3,9 @@ import { debounce } from 'debounce';
 import { toKebabCase } from 'js-convert-case';
 import { useForm } from 'react-final-form';
 
-import { AutocompleteSuggestion, IconButton } from '@/components';
 import { ContactFooterContext } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
+import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import AddressInputAutocompleteField from '@/fields/address-field/address-input-autocomplete-field';
 import { getCopyToCustomerState } from '@/utils/order';
 import { AutocompleteStringInput, FieldPrefixContext, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
@@ -14,7 +15,8 @@ import { useAppDispatch } from '@store';
 import { Contact, useGetContactsByNameQuery, useLazyGetContactByIdQuery } from '@store/api/contacts-api';
 import { fetchContactAction, OrderFieldsGroup } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-contact-address.scss';

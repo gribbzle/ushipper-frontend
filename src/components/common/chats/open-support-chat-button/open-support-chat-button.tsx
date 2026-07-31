@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { MessageTextRightIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { chatsActions } from '@store/client';

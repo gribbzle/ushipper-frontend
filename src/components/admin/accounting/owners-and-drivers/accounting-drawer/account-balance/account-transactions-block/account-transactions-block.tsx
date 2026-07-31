@@ -1,12 +1,13 @@
 import React, { useCallback } from 'react';
 
-import { useCreateTransactionPopup } from '@/components/admin/accounting';
+import { useCreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/use-create-transaction-popup';
 import { Button } from '@/components/common';
 import { useOpenTransactionsPage, useTransactionActionsPermission } from '@hooks';
 import { CreditCardIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, internalUserWalletFromSelectedAccountSelector } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountTransactionsBlockProps } from './account-transactions-block.types';
 

@@ -1,11 +1,12 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useUpdateDriverMutation } from '@store/api/orders-api';
 import { ordersActions, unassignDriverPopupSelector } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:orders-page:unassign-driver-popup');
 

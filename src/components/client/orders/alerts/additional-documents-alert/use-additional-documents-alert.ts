@@ -4,7 +4,9 @@ import { toast } from 'react-toastify';
 import { FundsTransferStatus } from '@/enums';
 import { useAppDispatch } from '@store';
 import { ordersApi, useCreateOrderRequestedDocumentsMutation, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
-import { handleError, removeFieldPrefix, translateByNamespace } from '@utils';
+import { removeFieldPrefix } from '@utils/form';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AdditionalDocumentsAlertProps, AdditionalDocumentsFormValues } from './additional-documents-alert.types';
 

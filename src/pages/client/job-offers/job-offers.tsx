@@ -13,7 +13,9 @@ import {
     ViewJobOfferDrawer,
 } from '@components';
 import { useJobOffers } from '@hooks';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './job-offers.scss';
 

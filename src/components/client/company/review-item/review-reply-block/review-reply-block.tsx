@@ -1,12 +1,14 @@
 import React, { useCallback } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders';
-import { Button, UserInfoBlock } from '@components';
+import { Button } from '@/components/common/button/button';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { PencilWithLineIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { reviewActions, ReviewReply } from '@store/client';
 import { authorizedUserNameSelector } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './review-reply-block.scss';
 

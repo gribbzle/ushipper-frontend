@@ -1,10 +1,14 @@
 import React, { useMemo } from 'react';
 
+import { Button } from '@/components/common/button/button';
+import { Link } from '@/components/common/link/link';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderStatisticsGroup, OrderStatisticsStatus } from '@/enums';
-import { Button, Link, Paper } from '@components';
 import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@hooks';
 import { MagnifyingGlassIcon, PlusCircleIcon } from '@icons';
-import { classname, translateByNamespace, translateOrderStatisticsGroup, translateOrderStatisticsStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateOrderStatisticsGroup, translateOrderStatisticsStatus } from '@utils/translate/order/translations';
 
 import './orders-empty-tab-panel.scss';
 

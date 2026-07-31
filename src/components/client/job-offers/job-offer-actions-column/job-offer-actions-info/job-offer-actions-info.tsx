@@ -2,7 +2,9 @@ import React from 'react';
 
 import { OfferStatusesEnum } from '@/enums';
 import { useShowCompanyPage } from '@hooks';
-import { classname, diffForHumans, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { JobOfferActionsInfoProps } from './job-offer-actions-info.types';
 import { useJobOfferActionsInfo } from './use-job-offer-actions-info';

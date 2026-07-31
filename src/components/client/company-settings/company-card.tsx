@@ -4,13 +4,18 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { AddressFields } from '@/components/client/company-settings/company-address-fields';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import parseValidationFields from '@/utils/parse-validation-fields';
-import { AddressFields, Button, Divider, Paper } from '@components';
 import { ImageFileInput, StringInput } from '@fields';
 import { useGetCompanyData, useMeCarrier } from '@hooks';
 import { Company } from '@store/admin';
 import { usePatchCompanyMutation } from '@store/api/company-api';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:company-settings');
 const tPlaceholder = translateByNamespace('client:company-settings:fields');

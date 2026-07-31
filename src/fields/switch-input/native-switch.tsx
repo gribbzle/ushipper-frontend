@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 const cn = classname('switch-input');
 
 export type NativeSwitchProps = {

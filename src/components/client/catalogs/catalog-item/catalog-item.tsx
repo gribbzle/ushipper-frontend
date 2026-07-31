@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
-import { Paper } from '@components';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { CarriersCatalogInfo, DispatcherCatalogInfo } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CarrierItemBody } from './carrier-item-body';
 import { DispatcherItemBody } from './dispatcher-item-body';

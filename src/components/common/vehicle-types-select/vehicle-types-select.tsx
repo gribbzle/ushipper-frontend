@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 
 import { VehicleType } from '@enums';
 import { SelectField, SelectFieldProps } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 type Props = SelectFieldProps & {
     showOptionAll?: boolean;

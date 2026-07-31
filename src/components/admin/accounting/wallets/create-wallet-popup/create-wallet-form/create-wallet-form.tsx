@@ -1,23 +1,15 @@
-import React, { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
+import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { FormControl, InputLabel, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
+import { CreateWalletFormProps, CreateWalletFormState } from './create-wallet-form.types';
 import { useCreateWalletForm } from './use-create-wallet-form';
 
 import './create-wallet-form.scss';
-
-export type CreateWalletFormState = {
-    name: string;
-};
-
-export type CreateWalletFormProps = {
-    formRef: MutableRefObject<FormApi<CreateWalletFormState> | undefined>;
-    onAfterSubmit: () => void;
-};
 
 const t = translateByNamespace('admin:accounting:wallets-page:create-wallet-popup');
 const cn = classname('create-wallet-form');

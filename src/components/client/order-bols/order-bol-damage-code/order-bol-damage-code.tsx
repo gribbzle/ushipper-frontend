@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Accordion } from '@/components/common';
+import { Accordion } from '@/components/common/accordion/accordion';
 import { DamageCode } from '@/enums';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-bol-damage-code.scss';
 

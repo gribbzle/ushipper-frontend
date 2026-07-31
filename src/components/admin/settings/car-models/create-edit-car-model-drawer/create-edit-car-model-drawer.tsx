@@ -14,7 +14,8 @@ import {
     fetchedCarModelSelector,
 } from '@store/admin';
 import { carModelsSettingsActions } from '@store/admin/car-models-settings/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './create-edit-car-model-drawer.scss';

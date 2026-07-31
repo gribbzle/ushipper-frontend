@@ -3,7 +3,9 @@ import React, { useCallback } from 'react';
 import { OfferStatusesEnum } from '@/enums';
 import { useMeCarrier } from '@hooks';
 import { OrderOffer } from '@store/api/order-offers';
-import { classname, diffForHumans, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OfferItemActions } from './offer-item-actions';
 

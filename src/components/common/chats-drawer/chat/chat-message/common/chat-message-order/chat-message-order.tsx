@@ -2,7 +2,8 @@ import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
 
 import { MessageOrder } from '@store/common/chats/types';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './chat-message-order.scss';
 

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { TermCondition } from '@store/client';
-import { getTermConditionTranslate } from '@utils';
+import { getTermConditionTranslate } from '@utils/get-term-condition-translate';
 
 export const useTermsOptions = () => {
     const terms: TermCondition[] = useMemo(

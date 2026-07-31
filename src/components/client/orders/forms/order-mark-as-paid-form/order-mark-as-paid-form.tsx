@@ -2,14 +2,15 @@ import React, { useCallback, useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { PaymentMethodsSelect } from '@/components/common/payment-methods-select/payment-methods-select';
 import { PaymentTerm } from '@/enums';
-import { PaymentMethodsSelect } from '@components';
 import { CurrencyInput, DatePicker, FormControl, InputLabel, PrefixedField, StringInput, TextField } from '@fields';
 import { useAppDispatch } from '@store';
 import { OrderMarkAsPaidFormState, useCreateOrderPaymentMutation } from '@store/api/order-payment-api';
 import { ordersApi } from '@store/api/orders-api';
 import { OrderFormEnum } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-mark-as-paid-form.scss';

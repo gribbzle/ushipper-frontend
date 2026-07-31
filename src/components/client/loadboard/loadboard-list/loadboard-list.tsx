@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OrderSourcesEnum, UserOrderStatus } from '@enums';
 import { useLoadboardTabSelection } from '@hooks';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { LoadboardItem, ParsedLoadboardItem } from '../loadboard-item';
 

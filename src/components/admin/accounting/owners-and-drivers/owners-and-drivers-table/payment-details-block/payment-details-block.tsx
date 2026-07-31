@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AccountingAccountBalanceData } from '@store/api/accounting-accounts-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { PaymentDetailsDropdownMenu } from './payment-details-dropdown-menu';
 

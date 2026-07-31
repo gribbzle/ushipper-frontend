@@ -2,7 +2,7 @@ import React from 'react';
 import { formatPhoneNumberIntl } from 'react-phone-number-input';
 
 import { TickIcon, XCircleIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './phone-email-info.scss';
 

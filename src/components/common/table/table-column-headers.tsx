@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import ArrowDownIcon from './arrow-down.svg';
 import { useOnOrderChangeHandler, useStickyColumnOffsets } from './hooks';

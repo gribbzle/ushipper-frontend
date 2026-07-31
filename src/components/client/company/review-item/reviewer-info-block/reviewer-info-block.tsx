@@ -3,7 +3,8 @@ import React, { useCallback } from 'react';
 import { OrderItemInfoColumn } from '@/components/client/orders';
 import { CreatorCompanyInfo } from '@/shared';
 import { convertCityToAbbreviation } from '@/utils/converter';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './reviewer-info-block.scss';
 

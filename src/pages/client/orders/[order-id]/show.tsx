@@ -39,7 +39,10 @@ import { useIsPartnerCompany, useMeCarrier, useMeDriverRelated, useScrollTop } f
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { orderDeletedAtSelector, ordersActions, orderSourceSelector, orderStatusSelector } from '@store/client';
-import { classname, getProjectName, isFreightX, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './show.scss';
 

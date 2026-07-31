@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '@/components/common';
 import { ExternalLinkIcon } from '@icons';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:load-details');
 

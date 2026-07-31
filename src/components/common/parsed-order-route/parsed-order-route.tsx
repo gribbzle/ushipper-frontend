@@ -1,12 +1,18 @@
 import React from 'react';
 import { formatInTimeZone } from 'date-fns-tz';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { Timeline } from '@/components/common/timeline/timeline/timeline';
+import { TimelineArrow } from '@/components/common/timeline/timeline-arrow/timeline-arrow';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TransportTypeEnum } from '@/enums';
-import { OrderTag, Timeline, TimelineArrow, TimelineDot } from '@components';
 import { LineBrokenIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { loadboardListSelector } from '@store/client/loadboard';
-import { classname, formatMetersToMiles, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatMetersToMiles } from '@utils/numbers';
+import { isUshipper } from '@utils/project-config';
 
 import { DistanceDirectionInfo } from './distance-direction-info';
 import { ParsedOrderRouteProps } from './parsed-order-route.types';

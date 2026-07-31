@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createTransactionPopupPropsSelector } from '@store/admin';
 
-import { CreateTransactionFormState } from './create-transaction-form';
+import { CreateTransactionFormState } from './create-transaction-form/create-transaction-form.types';
 
 export const useCreateTransactionPopup = () => {
     const { isPopupOpened, disabledSourceWallet } = useAppSelector(createTransactionPopupPropsSelector);

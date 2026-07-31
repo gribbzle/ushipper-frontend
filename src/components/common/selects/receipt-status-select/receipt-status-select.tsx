@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { InstantTermPaymentType } from '@/enums';
 import { SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:orders-page:cod-cop-order-action-tag');
 

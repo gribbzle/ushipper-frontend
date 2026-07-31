@@ -4,7 +4,7 @@ import { useForm, useFormState } from 'react-final-form';
 import { SelectOption } from '@/shared';
 import { useAppSelector } from '@store';
 import { fetchedSpecializationsSelector } from '@store/common';
-import { getTransportServiceTranslate } from '@utils';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 export const useSpecializationSelect = () => {
     const specializations = useAppSelector(fetchedSpecializationsSelector);

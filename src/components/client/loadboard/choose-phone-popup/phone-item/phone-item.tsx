@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { GenericButton } from '@components';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { MessageOutlinedIcon, PhoneOutlinedIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { fromPhoneTypeToTranslation } from './from-phone-type-to-translation';
 import { PhoneItemProps } from './phone-item.types';

@@ -1,15 +1,21 @@
 import React, { ReactNode, useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { CompanyBriefActions, Paper } from '@/components';
-import { CompanyBriefStatistics, CompanyLogo, CompanyTotalRatingInfo } from '@/components/client';
 import { useCompanyTypeAddressBlock } from '@/components/client/catalogs/common/company-type-address-block/use-company-type-address-block';
-import { Avatar, DispatcherLanguages, Tag } from '@/components/common';
+import { CompanyBriefActions } from '@/components/client/company/company-brief-actions/company-brief-actions';
+import { CompanyBriefStatistics } from '@/components/client/company/company-brief-statistics/company-brief-statistics';
+import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
+import { CompanyTotalRatingInfo } from '@/components/client/company/company-total-rating-info/company-total-rating-info';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { DispatcherLanguages } from '@/components/common/dispatcher-languages/dispatcher-languages';
+import { Tag } from '@/components/common/info-tag/info-tag';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage, useIsRatingPanel } from '@hooks';
 import { CheckGearIcon, GeoLocationIcon } from '@icons';
 import { Company } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DispatcherStats } from '../../dispatcher-stats';
 

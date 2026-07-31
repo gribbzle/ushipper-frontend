@@ -6,7 +6,8 @@ import { OrderStatisticsStatus, OrderStatus } from '@enums';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector } from '@store/admin';
 import { useGetOrdersQuery, useGetOrdersStatisticsCountersQuery } from '@store/api/orders-api';
-import { buildQueryString, classname } from '@utils';
+import { classname } from '@utils/classname';
+import { buildQueryString } from '@utils/urls';
 
 const cn = classname('pending-orders');
 

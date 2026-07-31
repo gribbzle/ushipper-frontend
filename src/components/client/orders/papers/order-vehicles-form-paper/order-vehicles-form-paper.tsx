@@ -1,12 +1,14 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-final-form';
 
+import { OrderVehiclesForm } from '@/components/client/orders/forms/order-vehicles-form/order-vehicles-form';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { Button, OrderVehiclesForm, Paper } from '@components';
 import { VehicleType } from '@enums';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order:vehicles');
 

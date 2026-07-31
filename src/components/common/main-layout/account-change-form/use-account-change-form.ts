@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { changeAccountSubmit } from '@store/client';
 import { accountsUsersSelector } from '@store/client/accounts';
 import { authorizedUserPublicIdSelector } from '@store/global';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountChangeFormState } from './account-change-form.types';
 

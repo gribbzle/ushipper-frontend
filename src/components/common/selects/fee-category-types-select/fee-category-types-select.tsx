@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FeeCategoryType } from '@/enums';
 import { SelectField } from '@fields';
-import { getFeeCategoryTypeTranslate } from '@utils';
+import { getFeeCategoryTypeTranslate } from '@utils/translate/get-fee-category-type-translate';
 
 export const FeeCategoryTypesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

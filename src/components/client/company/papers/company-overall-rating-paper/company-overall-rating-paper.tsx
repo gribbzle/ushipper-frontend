@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 
-import { CompanyTotalRatingInfo, Paper } from '@/components';
-import { RatingBar } from '@components';
+import { CompanyTotalRatingInfo } from '@/components/client/company/company-total-rating-info/company-total-rating-info';
+import { RatingBar } from '@/components/common/rating-bar/rating-bar';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useAppSelector } from '@store';
 import { companyTotalRatingSelector } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-overall-rating-paper.scss';
 

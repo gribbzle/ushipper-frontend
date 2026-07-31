@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
+import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
 import { TransactionTypesEnum } from '@/enums';
-import { SelectionButtonOption } from '@components';
 import { SelectionButtonGroupInput } from '@fields';
-import { getTransactionTypeTranslate } from '@utils';
+import { getTransactionTypeTranslate } from '@utils/get-transaction-type-translate';
 
 import { TransactionTypeSelectionButtonGroupProps } from './transaction-type-selection-button-group.types';
 

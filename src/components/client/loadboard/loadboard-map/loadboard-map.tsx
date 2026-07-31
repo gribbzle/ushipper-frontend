@@ -6,7 +6,7 @@ import { Map, MapRef, Marker } from 'react-map-gl/mapbox';
 import { InspectionSubtype, LoadboardTab } from '@enums';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { LoadboardList } from '../loadboard-list';
 

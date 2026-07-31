@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { SelectField } from '@fields';
 import { useGetUserStatusesQuery } from '@store/api/user-statuses-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:staff-filters:user-statuses-labels');
 

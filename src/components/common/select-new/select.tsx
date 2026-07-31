@@ -14,7 +14,8 @@ import VendorSelect, {
 import { SelectOption } from '@/shared';
 import { CSSObject } from '@emotion/serialize';
 import { ArrowDownIcon, TickIcon, XCircleIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 type SelectValue<T, isMulti extends boolean> = isMulti extends true ? T[] : T;
 

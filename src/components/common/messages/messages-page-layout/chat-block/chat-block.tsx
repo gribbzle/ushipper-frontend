@@ -17,7 +17,9 @@ import {
 } from '@store/common';
 import { ChatFullInfo, ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
-import { classname, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 
 import { MessageControls } from './message-controls';
 

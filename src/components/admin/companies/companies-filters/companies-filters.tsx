@@ -4,8 +4,10 @@ import { Field, Form } from 'react-final-form';
 import { CompanyStatusesSelect, CompanyTypesSelect } from '@/components/common';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
-import { classname, parseField, translateByNamespace } from '@utils';
-import { FormValuesSpy } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 
 import './companies-filters.scss';
 

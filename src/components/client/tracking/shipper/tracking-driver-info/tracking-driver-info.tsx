@@ -1,11 +1,12 @@
 import React, { useCallback } from 'react';
 
-import { Avatar, GenericButton } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { LetterIcon2, LikeIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { Avatar as AvatarType, ordersActions } from '@store/client';
 import { RatingOneStarIcon } from '@ui';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './tracking-driver-info.scss';
 

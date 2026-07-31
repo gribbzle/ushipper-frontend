@@ -5,29 +5,32 @@ import LoadboardFiltersGroup from '@/components/client/loadboard/loadboard-filte
 import { LoadboardFilterLocation } from '@/components/client/loadboard/loadboard-filter-location/loadboard-filter-location';
 import { Filters } from '@/components/client/loadboard/loadboard-filters/types';
 import LoadboardFilterWaypoints from '@/components/client/loadboard/loadborad-filter-waypoints/loadboard-filter-waypoints';
+import { Divider } from '@/components/common/divider/divider';
+import { FieldCurrencyPrepend } from '@/components/common/field-currency-prepend/field-currency-prepend';
+import { OrderSourceSelect } from '@/components/common/order-source-select/order-source-select';
+import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { TermTypesSelect } from '@/components/common/terms-select/terms-select';
 import { TransportTypeSelect } from '@/components/common/transport-type-select/transport-type-select';
+import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderSortingName } from '@/enums';
 import { AddressField } from '@/fields/address-field/address-field';
 import RadiusField from '@/fields/radius-field/radius-field';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { Divider, FieldCurrencyPrepend, OrderSourceSelect, Paper, SortBySelect, VehicleTypesSelect } from '@components';
 import { FormControl, InputLabel, SelectField, SwitchInput, TextField } from '@fields';
 import { useHasPartnerCompanies, useIsPartnerCompany, useMeDriver, useMeDriverRelated } from '@hooks';
-import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
-import { classname, FormValuesSpy, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { isUshipper } from '@utils/project-config';
 
+import { LoadboardFiltersProps } from './loadboard-filters.types';
 import { useLoadboardFilters } from './use-loadboard-filters';
 import { useLoadboardFiltersOptions } from './use-loadboard-filters-options';
 
 import './loadboard-filters.scss';
 
 const cn = classname('loadboard-filters');
-
-export type LoadboardFiltersProps = {
-    filters: SavedLoadBoardFilters;
-    filtersChanged: (e: SavedLoadBoardFilters) => void;
-};
 
 const t = translateByNamespace('client:loadboard-filters');
 

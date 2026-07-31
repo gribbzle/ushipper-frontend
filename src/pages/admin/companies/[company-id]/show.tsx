@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CompanyOrdersTable, CompanyPageHead, getMainLayout } from '@components';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './show.scss';
 

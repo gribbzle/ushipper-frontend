@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { ChatFullInfo, ChatMessage, ChatShortInfo, SupportChatDrawerPropsState } from '@store/common/chats/types';
-import { RequestStatus } from '@utils';
+import { RequestStatus } from '@utils/redux';
 
 import { ChatsDrawerSliceState } from './types';
 

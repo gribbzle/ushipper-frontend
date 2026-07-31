@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
 import { isSearchAlongRouteSelector, loadboardActions } from '@store/client/loadboard';
 
-import { LoadboardFiltersProps } from './loadboard-filters';
+import { LoadboardFiltersProps } from './loadboard-filters.types';
 import { convertToExternalFilters, convertToInnerFilters, updateLocationFields } from './utils';
 
 export const useLoadboardFilters = ({ filters, filtersChanged }: LoadboardFiltersProps) => {

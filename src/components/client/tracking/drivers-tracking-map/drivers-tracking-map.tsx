@@ -1,13 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import { useMap } from 'react-map-gl/mapbox';
 
-import { DriverList, MapBox } from '@components';
+import { DriverList } from '@/components/client/tracking/DriverList/DriverList';
+import { MapBox } from '@/components/common/MapBox/MapBox';
 import { useDriverTrackingMap } from '@hooks';
 import { UsersTrackingProvider, UserTrackingProvider } from '@providers';
 import { useAppSelector } from '@store';
 import { useGetTrackingQuery } from '@store/api/users-api';
 import { fetchedIsDriversListShownSelector, UserTracking } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { OptimizedDirections, OrderDirection, OrderDirections } from './Directions';
 import { DriverMarker, DriverMarkers } from './DriverMakers';

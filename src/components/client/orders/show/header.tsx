@@ -2,7 +2,13 @@ import React, { ReactElement, useCallback, useContext, useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
-import { BackLink, Button, IconButton, OrderTag, PageHeader, PageTitle, RouterContext } from '@/components';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { BackLink } from '@/components/common/back-link/back-link';
+import { Button } from '@/components/common/button/button';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { PageHeader } from '@/components/common/page-header/page-header';
+import { PageTitle } from '@/components/common/page-title/page-title';
+import { RouterContext } from '@/components/common/router-provider/router-provider';
 import { InspectionType, OrderStatus } from '@/enums';
 import { useCanManageOrder, useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
@@ -11,7 +17,10 @@ import { useIsAdminPage, useMeCarrier } from '@hooks';
 import { PencilIcon, PrinterIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Load, ordersActions, orderSelector } from '@store/client';
-import { classname, isFreightX, translateByNamespace, translateDeletedOrderStatus, translateShipperCancelledOrderStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX } from '@utils/project-config';
+import { translateDeletedOrderStatus, translateShipperCancelledOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
 const inspectionTypeTranslate = translateByNamespace('common:inspection-types');
 

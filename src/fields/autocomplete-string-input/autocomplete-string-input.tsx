@@ -1,9 +1,12 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FormControl, FormHelperText, InputLabel, NativeInputProps } from '@/fields';
-import { AutocompleteInput, AutocompleteSuggestion } from '@components';
-import { translateByNamespace } from '@utils';
+import { AutocompleteInput, AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
+import { FormControl } from '@/fields/form-control/form-control';
+import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
+import { InputLabel } from '@/fields/input-label/input-label';
+import { NativeInputProps } from '@/fields/text-field/text-field';
+import { translateByNamespace } from '@utils/i18n';
 
 type Props = NativeInputProps & {
     input: FieldRenderProps<string>['input'];

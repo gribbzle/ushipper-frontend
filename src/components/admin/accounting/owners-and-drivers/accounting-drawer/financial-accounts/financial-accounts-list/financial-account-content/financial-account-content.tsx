@@ -1,9 +1,10 @@
 import React from 'react';
 import has from 'has-values';
 
-import { AccountingInfoRow } from '@/components/admin/accounting';
+import { AccountingInfoRow } from '@/components/admin/accounting/common/accounting-info-row/accounting-info-row';
 import { FinancialBalanceData } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useFinancialAccountContent } from './use-financial-account-content';
 

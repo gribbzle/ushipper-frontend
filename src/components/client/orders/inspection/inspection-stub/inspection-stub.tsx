@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { LockIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './inspection-stub.scss';
 

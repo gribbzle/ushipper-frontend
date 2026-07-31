@@ -1,6 +1,6 @@
 import { OrderSortingName } from '@enums';
 import { FormOrdersFilters } from '@types';
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { OrdersFiltersFormState } from './orders-filters.types';
 

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
 
-import { WalletsFiltersFormState } from './wallets-filters';
+import { WalletsFiltersFormState } from './wallets-filters.types';
 
 export const useWalletsFilters = () => {
     const {

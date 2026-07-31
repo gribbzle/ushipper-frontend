@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Paginate } from '@components';
+import { Paginate } from '@/components/common/paginate/paginate';
 import { useIsAdminPage } from '@hooks';
 import { Load } from '@store/client';
-import { PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
 
 type OrdersPaginatorProps = {
     ordersPaginatedData?: PaginatedResponse<Load[]>;

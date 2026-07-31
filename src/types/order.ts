@@ -6,8 +6,39 @@ import {
     OrderStatisticsGroup,
     OrderStatisticsStatus,
     OrderStatus,
+    OrderType,
 } from '@enums';
-import { GetOrdersData } from '@store/api/orders-api';
+
+export type OrderFilters = Partial<{
+    searchSubject: string;
+    search: string;
+    dispatchers: string[];
+    driverAccountId: string[];
+    ownerAccountId: string;
+}>;
+
+export type FundsTransferCalculatedStatusesType = 'pending' | 'not_paid' | 'pending_documents' | 'damage_claim' | 'paid';
+
+export type GetOrdersData = OrderFilters &
+    Partial<{
+        page: number;
+        perPage: number;
+        orderName: OrderSortingName;
+        orderDirection: OrderSortingDirection;
+        statisticsGroup: OrderStatisticsGroup;
+        statisticsStatus: OrderStatisticsStatus | OrderStatisticsStatus[];
+        hasOrderRequests: number;
+        companyPublicId: string;
+        type: OrderType;
+        fundsTransferStatus: string;
+        createdAtFrom: string;
+        createdAtTo: string;
+        fundsTransferCalculatedStatus: FundsTransferCalculatedStatus;
+        drivers: string[];
+        instantTermPaymentType: InstantTermPaymentType;
+        instantTermPaymentTypeSet: boolean;
+        statuses: OrderStatus[];
+    }>;
 
 export type OrdersFiltersValue = Omit<GetOrdersData, 'perPage' | 'statisticsStatus'> & { requestsOrderId?: string; statisticsStatus?: OrderStatisticsStatus };
 

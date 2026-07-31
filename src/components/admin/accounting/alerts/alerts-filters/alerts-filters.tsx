@@ -2,19 +2,16 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { AlertStatusSelect, AlertTypeSelect, Paper } from '@/components/common';
-import { IssueStatus, IssueType } from '@enums';
 import { FormControl, InputLabel } from '@fields';
-import { classname, FormValuesSpy, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 
+import { AlertsFiltersFormState } from './alerts-filters.types';
 import { useAlertsFilters } from './use-alerts-filters';
 
 import './alerts-filters.scss';
-
-export type AlertsFiltersFormState = {
-    orderId: string;
-    statuses: IssueStatus[];
-    types: IssueType[];
-};
 
 const t = translateByNamespace('admin:accounting:filters');
 const cn = classname('alerts-filters');

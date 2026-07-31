@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
 import { TransactionsFiltersState } from '@types';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:filters');
 

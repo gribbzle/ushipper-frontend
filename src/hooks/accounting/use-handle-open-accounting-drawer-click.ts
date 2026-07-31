@@ -1,10 +1,10 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { AccountingTab } from '@components';
+import { AccountingTab } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer-tabs/accounting-tab-enum';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:notifications');
 

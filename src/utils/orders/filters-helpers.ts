@@ -1,6 +1,7 @@
 import { OrderSortingDirection, OrderSortingName, SearchSubjectsEnum } from '@enums';
 import { AdminOrdersFiltersValue, FormOrdersFilters, OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams, OrdersFiltersValue } from '@types';
-import { getObjectWithoutEmptyFields } from '@utils';
+
+import { getObjectWithoutEmptyFields } from '../objects';
 
 const toArray = <T>(value?: T | T[]): T[] | undefined => (value ? (Array.isArray(value) ? value : [value]) : undefined);
 

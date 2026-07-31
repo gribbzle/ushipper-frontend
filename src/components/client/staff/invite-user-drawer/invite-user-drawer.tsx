@@ -3,7 +3,8 @@ import { Field, Form } from 'react-final-form';
 
 import { Button, Drawer } from '@/components/common';
 import { FormControl, InputLabel, SelectField, StringInput } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import { InviteUserFormData } from './invite-user-drawer.types';

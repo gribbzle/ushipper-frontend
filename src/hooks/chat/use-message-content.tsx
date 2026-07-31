@@ -9,7 +9,8 @@ import {
     OrderDriverUpdatedSystemMessagePayload,
     OrderOfferRequestSysMessage,
 } from '@store/common/chats/types';
-import { formatToCurrency, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 const systemMessages = translateByNamespace('client:order:system-messages');
 const externalStatusMessages = translateByNamespace('client:order:external-status-messages');

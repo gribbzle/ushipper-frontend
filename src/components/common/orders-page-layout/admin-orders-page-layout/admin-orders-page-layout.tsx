@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { OrdersEmptyTabPanel } from '@components';
-import { classname } from '@utils';
+import { OrdersEmptyTabPanel } from '@/components/client/orders/orders-empty-tab-panel/orders-empty-tab-panel';
+import { classname } from '@utils/classname';
 
 import { AdminOrdersFilters } from '../admin-orders-filters';
 import { EmptyOrdersPanel } from '../empty-orders-panel';

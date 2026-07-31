@@ -3,15 +3,19 @@ import React, { useState } from 'react';
 import { enUS } from 'date-fns/locale';
 import { formatInTimeZone } from 'date-fns-tz';
 
-import { Accordion, AlertBlock, Tabs } from '@/components/common';
+import { Inspection } from '@/components/client/orders/inspection/inspection';
+import { InspectionStub } from '@/components/client/orders/inspection/inspection-stub/inspection-stub';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Tabs } from '@/components/common/tabs/tabs';
 import { InspectionSubtype } from '@/enums';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
-import { Inspection, InspectionStub } from '@components';
 import { useAppSelector } from '@store';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderVehicle } from '@store/api/orders-api';
 import { orderDeliveryInformationSelector, orderDriverSelector, orderPickupInformationSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-inspection.scss';
 

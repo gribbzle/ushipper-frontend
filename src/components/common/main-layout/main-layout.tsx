@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import { BetweenPhonesChatDrawer, ChatsDrawer, ImageViewerPopup, PDFViewerPopup } from '@/components';
-import { WebsocketWatcher } from '@/components';
+import { BetweenPhonesChatDrawer } from '@/components/common/between-phones-chat-drawer/between-phones-chat-drawer';
+import { ChatsDrawer } from '@/components/common/chats-drawer/chats-drawer';
 import { ErrorBoundary } from '@/components/common/error-boundary/error-boundary';
+import { ImageViewerPopup } from '@/components/common/viewers/image-viewer-popup/image-viewer-popup';
+import { PDFViewerPopup } from '@/components/common/viewers/pdf-viewer-popup/pdf-viewer-popup';
+import { WebsocketWatcher } from '@/components/common/websocket-watcher/websocket-watcher';
 import { Permission, useCheckPermission, useMeDispatcher } from '@hooks';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { DeleteChatMessagePopup } from '../messages/delete-chat-message-popup';
 import { UpdateChatMessagePopup } from '../messages/update-chat-message-popup';

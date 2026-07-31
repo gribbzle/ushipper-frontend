@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import { createPortal } from 'react-dom';
 
+import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer/order-send-offer-to-carrier-drawer';
 import OrderItemValidationPopup from '@/components/client/orders/order-item-validation-popup/order-item-validation-popup';
 import ShipperOptionsDropdown from '@/components/client/orders/order-options-dropdown/shipper-options-dropdown';
+import { Button } from '@/components/common/button/button';
 import { OrderStatus } from '@/enums';
-import { Button, OrderSendOfferToCarrierDrawer } from '@components';
 import { Load } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useShipperOrderActions } from './use-shipper-order-actions';
 

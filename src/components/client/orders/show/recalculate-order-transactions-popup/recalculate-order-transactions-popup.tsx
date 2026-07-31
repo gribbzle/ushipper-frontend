@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, CloseButton, Popup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { CloseButton } from '@/components/common/button/CloseButton';
+import { Popup } from '@/components/common/popup/popup';
 import { FormControl, InputLabel, TextField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { useRecalculateOrderTransactionsPopup } from './use-recalculate-order-transactions-popup';

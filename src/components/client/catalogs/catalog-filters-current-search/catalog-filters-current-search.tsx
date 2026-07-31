@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { FiltersCurrentSearch } from '@/components/common';
-import { translateByNamespace } from '@utils';
-
-import { CatalogFiltersValue } from '../catalog-filters-tabs';
+import { FiltersCurrentSearch } from '@/components/common/filters-current-search/filters-current-search';
+import { CatalogFiltersValue } from '@store/client/catalogs/types';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useCatalogFiltersCurrentSearch } from './use-catalog-filters-current-search';
 

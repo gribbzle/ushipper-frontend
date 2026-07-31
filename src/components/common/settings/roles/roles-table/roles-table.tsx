@@ -1,12 +1,15 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Table, TableColumn, TableRowMenu } from '@/components/common';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
 import { UserRoleType } from '@/enums';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { clickedRowIdSelector, fetchedRolesSelector, fetchRoleAction, fetchRolesAction, UserRole } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './roles-table.scss';
 

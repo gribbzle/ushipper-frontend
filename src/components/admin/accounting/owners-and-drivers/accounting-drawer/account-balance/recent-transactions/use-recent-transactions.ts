@@ -5,7 +5,7 @@ import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';
 import { useGetTransactionsQuery } from '@store/api/transactions-api';
-import { formatToCurrency } from '@utils';
+import { formatToCurrency } from '@utils/numbers';
 
 const DEFAULT_PARAMS = {
     perPage: 5,

@@ -1,10 +1,11 @@
 import React, { useCallback, useMemo } from 'react';
 
+import { Button } from '@/components/common/button/button';
 import { getDestination } from '@/utils/driving';
 import { getOrderDeliveryAddress, getOrderPickupAddress, hasAddress } from '@/utils/order';
-import { Button } from '@components';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './view-order-route-button.scss';
 

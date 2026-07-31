@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FeeCategoryValueType } from '@/enums';
-import { SelectField } from '@fields';
-import { classname } from '@utils';
+import { SelectField } from '@/fields/select-field/select-field';
+import { classname } from '@utils/classname';
 
 import './currency-percentage-select.scss';
 

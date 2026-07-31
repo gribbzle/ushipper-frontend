@@ -5,7 +5,8 @@ import { useDebouncedGetChats } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { drawerChatsSelector, getChatsRequestSelector, isChatsDrawerOpenSelector, selectedChatIdSelector } from '@store/common';
 import { ChatsDrawerSliceState } from '@store/common/chats/types';
-import { classname, RequestStatus } from '@utils';
+import { classname } from '@utils/classname';
+import { RequestStatus } from '@utils/redux';
 
 import { ChatsSearch } from '../chats-search';
 import { EmptyChatsList } from '../empty-chats-list';

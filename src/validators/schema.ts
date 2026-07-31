@@ -1,8 +1,12 @@
 import { Schema } from 'joi';
 
-import { changesInfoDetailsSchema, externalServiceValidationSchema, factoringEmailsValidationSchema, feeDataSchema } from '@schemas';
-import { ChangesInfoDetails } from '@store/api/issues-api';
-import { ExternalServiceData, FactoringEmailsData, FeeData } from '@types';
+import { ExternalServiceData, FactoringEmailsData } from '@types';
+
+import { externalServiceValidationSchema, factoringEmailsValidationSchema } from '../schemas/company-external-service-settings';
+import { changesInfoDetailsSchema } from '../schemas/issue';
+import { ChangesInfoDetails } from '../store/api/issues-api';
+
+import { validateFeeData } from './fee';
 
 const validateOrUndefined = <T>(data: unknown, schema: Schema<T>): T | undefined => {
     const { error, value } = schema.validate(data);
@@ -10,7 +14,7 @@ const validateOrUndefined = <T>(data: unknown, schema: Schema<T>): T | undefined
     return error ? undefined : value;
 };
 
+export { validateFeeData };
 export const validateExternalServicePayload = (data: unknown): ExternalServiceData | undefined => validateOrUndefined(data, externalServiceValidationSchema);
 export const validateFactoringEmailsPayload = (data: unknown): FactoringEmailsData | undefined => validateOrUndefined(data, factoringEmailsValidationSchema);
-export const validateFeeData = (data: unknown): FeeData | undefined => validateOrUndefined(data, feeDataSchema);
 export const validateIssueChangesInfoDetails = (data: unknown): ChangesInfoDetails | undefined => validateOrUndefined(data, changesInfoDetailsSchema);

@@ -1,8 +1,8 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 
+import { NativeInput, NativeInputProps } from '@/fields/text-field/text-field';
 import useOutsideCLick from '@/hooks/use-outside-cLick';
-import { NativeInput, NativeInputProps } from '@fields';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './autocomplete-input.scss';
 

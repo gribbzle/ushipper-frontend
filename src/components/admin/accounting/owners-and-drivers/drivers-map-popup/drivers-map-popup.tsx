@@ -1,13 +1,16 @@
 import React, { useMemo } from 'react';
 
-import { Button, MapBox, Popup } from '@/components';
 import { DriverMarker } from '@/components/client/tracking/drivers-tracking-map/DriverMakers';
+import { Button } from '@/components/common/button/button';
+import { MapBox } from '@/components/common/MapBox/MapBox';
+import { Popup } from '@/components/common/popup/popup';
 import { DriverTrackingMapProvider, UserTrackingProvider } from '@providers';
 import { useAppSelector } from '@store';
 import { driversMapPopupPropsSelector } from '@store/admin';
 import { useGetTrackingQuery } from '@store/api/users-api';
 import { UserTracking } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useDriversMapPopup } from './use-drivers-map-popup';
 

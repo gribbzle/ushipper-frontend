@@ -3,7 +3,8 @@ import React from 'react';
 import { useOrder, useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
 import { DotLeader } from '@ui';
-import { formatToCurrency, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 
 import { DriverChargedFeeAlert } from '../../driver-charged-fee-alert';
 import { DriverPayDotLeader } from '../../driver-pay-dot-leader';

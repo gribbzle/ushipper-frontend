@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DocumentForm } from '../../document-form/document-form';
 import { RocketkorDocumentPopup } from '../rocketkor-document-popup';

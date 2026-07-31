@@ -3,7 +3,8 @@ import React, { useCallback, useMemo } from 'react';
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
 import { ShipperTrackingFiltersFormState } from '@store/client';
 import { SegmentedControl } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './shipper-orders-list-head.scss';
 

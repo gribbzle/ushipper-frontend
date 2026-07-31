@@ -1,9 +1,15 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, LanguagesSelect, Paper, TransportServiceSelect, WorkingTimeSelectionButtonGroup } from '@components';
+import { Button } from '@/components/common/button/button';
+import { LanguagesSelect } from '@/components/common/languages-select/languages-select';
+import { TransportServiceSelect } from '@/components/common/transport-service-select/transport-service-select';
+import { WorkingTimeSelectionButtonGroup } from '@/components/common/working-time-selection-button-group/working-time-selection-button-group';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { FormControl, InputLabel, StringInput, TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { BusinessInfoFormState } from './business-info-form.types';

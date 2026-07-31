@@ -5,7 +5,9 @@ import { useMeAdmin } from '@hooks';
 import { useAppSelector } from '@store';
 import { ChatAccountInfo } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
-import { classname, formatInternationalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { CallButtonBlock } from '../call-button-block';
 

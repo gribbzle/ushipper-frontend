@@ -4,7 +4,7 @@ import { Button } from '@/components/common';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, isCreateAccountingProfileLoadingSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountingTab } from '../accounting-drawer-tabs';
 import { useAccountingDrawer } from '../use-accounting-drawer';

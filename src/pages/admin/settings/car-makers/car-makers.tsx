@@ -9,7 +9,10 @@ import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarMakersFilters, carMakersFiltersSelector, fetchCarMakerAction, fetchCarMakersAction } from '@store/admin';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';
-import { classname, getObjectWithoutEmptyFields, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './car-makers.scss';
 

@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 import { useOrder, useOrderFees, useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { FundsTransferStatus } from '@enums';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FormattedFee } from './admin-ushipper-pay-details.types';
 import { getFormattedFees } from './utils';

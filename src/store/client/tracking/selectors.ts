@@ -1,6 +1,10 @@
-import { AppState } from '@store';
-
 import { SelectedActiveRequest, SelectedShipperTrackingOrder } from './types';
+
+type AppState = {
+    client: {
+        tracking: any;
+    };
+};
 
 const trackingPageSelector = (state: AppState) => state.client.tracking;
 

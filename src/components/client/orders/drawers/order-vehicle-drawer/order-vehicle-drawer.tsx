@@ -1,10 +1,13 @@
 import React, { useCallback } from 'react';
 
-import { Button, Drawer, OrderVehicleForm } from '@components';
+import { OrderVehicleForm } from '@/components/client/orders/forms/order-vehicle-form/order-vehicle-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersActions, orderVehicleDrawerPropsSelector } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const formId = 'orderPickupInformationForm';
 const t = translateByNamespace('client:order:vehicles');

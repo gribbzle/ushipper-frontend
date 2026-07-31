@@ -1,10 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { Link } from '@/components/common/link/link';
 import { useOrder } from '@/hooks/order';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
-import { Link } from '@components';
-import { classname, getFullNameOfCommodity, isFreightX, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { getFullNameOfCommodity } from '@utils/commodity';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX, isUshipper } from '@utils/project-config';
 
 import './admin-order-id-info.scss';
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Paper, TransactionTypeSelect } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
+import { TransactionTypeSelect } from '@/components/common/transaction-type-select/transaction-type-select';
 import { DatePicker, FormControl, InputLabel } from '@fields';
-import { classname, FormValuesSpy, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 
 import { useWalletFilters } from './use-wallet-filters';
 import { WalletFiltersState } from './wallet-filters.types';

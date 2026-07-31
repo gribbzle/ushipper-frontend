@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { FeeCategoryTermType } from '@enums';
 import { Fee } from '@types';
-import { formatFeeValueType } from '@utils';
+import { formatFeeValueType } from '@utils/fees';
 
 export const useCompaniesFeesBlock = (fees: Fee[]) => {
     const { delayedFees, instantFees } = useMemo(() => {

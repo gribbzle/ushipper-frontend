@@ -7,7 +7,9 @@ import { AccessForbiddenBlock } from '@/components/common/main-layout/access-for
 import { getMainLayout, OrderGeneralForm } from '@components';
 import { useIsPartnerCompany } from '@hooks';
 import { useGetOrderQuery } from '@store/api/orders-api';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './edit.scss';
 

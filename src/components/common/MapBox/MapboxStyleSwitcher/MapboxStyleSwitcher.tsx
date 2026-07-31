@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { SegmentedControl, SegmentedControlOption } from '@ui';
-import { classname, translateMapBoxStyle } from '@utils';
+import { classname } from '@utils/classname';
+import { translateMapBoxStyle } from '@utils/translations';
 
 import { DEFAULT_STYLE, DEFAULT_STYLES } from './constants';
 

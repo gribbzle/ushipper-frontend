@@ -1,7 +1,7 @@
 import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
 import { apiSlice } from '@store/api/api-slice';
-import { Load } from '@store/client';
-import { PaginatedResponse } from '@utils';
+import { Load } from '@store/common/orders/types';
+import { PaginatedResponse } from '@utils/redux';
 
 export interface LoadBoardFilters {
     origins?: string[];

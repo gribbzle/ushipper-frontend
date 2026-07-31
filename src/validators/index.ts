@@ -11,6 +11,7 @@ export * from './number';
 export * from './link';
 export * from './date';
 export * from './card';
+export * from './fee';
 export * from './schema';
 
 export const composeValidators = (...validators: Array<FieldValidator | null>) => {

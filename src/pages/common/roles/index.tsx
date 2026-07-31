@@ -7,7 +7,9 @@ import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fetchRoleTypesAction } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './roles.scss';
 

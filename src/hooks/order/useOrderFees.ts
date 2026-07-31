@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 
 import { FeeCategoryTermType } from '@enums';
-import { calculateTotalFees, formatToCurrency } from '@utils';
+import { formatToCurrency } from '@utils/numbers';
+import { calculateTotalFees } from '@utils/orders/order-payment-helpers';
 
 import { useOrder } from './useOrder';
 import { useOrderPaymentInformationHelpers } from './useOrderPaymentInformationHelpers';

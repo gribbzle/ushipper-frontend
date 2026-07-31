@@ -9,20 +9,12 @@ import { getDistanceMatrix } from '@api';
 import { useDeliveryMetrics, useShipperTrackingDriver } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, TrackingMapPoint } from '@store/client';
-import {
-    classname,
-    createTrackingMapPoint,
-    findOptimalPath,
-    getDeliveryPoint,
-    getDriverPoint,
-    getOrderStatusForTracking,
-    getPickupPoint,
-    getPointsDistanceMatrix,
-    isPickupPoint,
-    isTrackingOrderNotDispatched,
-    isTrackingOrderPickedUp,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { createTrackingMapPoint, getDeliveryPoint, getDriverPoint, getPickupPoint } from '@utils/tracking/get-order-tracking-points';
+import { getOrderStatusForTracking } from '@utils/tracking/map-order-status-to-tracking-order-status';
+import { findOptimalPath, getPointsDistanceMatrix, isPickupPoint } from '@utils/tracking/optimal-route-finder';
+import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
 
 import { DriverOrderPin, MapOrderRoute, OrderMarker, OrderPin } from '../../../common';
 

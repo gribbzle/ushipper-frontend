@@ -5,7 +5,8 @@ import { ReviewsFilterEnum } from '@/enums';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import { LabeledCheckboxInput } from '@fields';
 import { Rating } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useRatingCheckBoxGroup } from './use-rating-checkbox-group';
 

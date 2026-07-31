@@ -1,13 +1,15 @@
 import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
+import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { AccountStatusesEnum } from '@/enums';
-import { DropdownOption, StatusBlockView } from '@components';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppDispatch } from '@store';
 import { AccountingAccountData, accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { usePartiallyUpdateAccountMutation } from '@store/api/accounts-api';
-import { getAccountStatusTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getAccountStatusTranslate } from '@utils/translate/get-account-status-translate';
 
 const statusViewMap: Record<AccountStatusesEnum, StatusBlockView> = {
     [AccountStatusesEnum.ACTIVE]: 'success',

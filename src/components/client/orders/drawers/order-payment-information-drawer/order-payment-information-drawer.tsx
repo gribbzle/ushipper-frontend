@@ -3,7 +3,10 @@ import { FormApi } from 'final-form';
 import { FormSpy } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
-import { Button, Drawer, OrderForm, OrderPaymentInformationFieldsGroup } from '@components';
+import { OrderPaymentInformationFieldsGroup } from '@/components/client/orders/forms/order-payment-information-fields-group/order-payment-information-fields-group';
+import { OrderForm } from '@/components/client/orders/order-form/order-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
@@ -14,7 +17,8 @@ import {
     orderPublicIdSelector,
     ordersActions,
 } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-payment-information-drawer.scss';
 

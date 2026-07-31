@@ -4,7 +4,8 @@ import { Field } from 'react-final-form';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import { LabeledCheckboxInput } from '@fields';
 import { useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';
-import { getTransportServiceTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransportServiceTranslate } from '@utils/specialization';
 
 import { SpecializationCategoriesCheckBoxGroup } from '../specialization-categories-checkbox-group';
 

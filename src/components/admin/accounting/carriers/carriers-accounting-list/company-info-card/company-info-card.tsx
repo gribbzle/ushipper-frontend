@@ -9,7 +9,10 @@ import { PROJECT_KEY_NAME } from '@constants';
 import { useCarriersActionsPermission } from '@hooks';
 import { CheckGearIcon, MoneyBagIcon, NoPhotoIcon } from '@icons';
 import { Company } from '@store/admin';
-import { classname, isFreightX, numberWithCommas, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { numberWithCommas } from '@utils/numbers';
+import { isFreightX } from '@utils/project-config';
 
 import { CompanyActionsCard } from '../company-actions-card';
 

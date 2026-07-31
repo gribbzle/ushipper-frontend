@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Paper } from '@components';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderOffer } from '@store/api/order-offers';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { OfferItemContent } from './offer-item-content';
 import { OfferItemHeader } from './offer-item-header';

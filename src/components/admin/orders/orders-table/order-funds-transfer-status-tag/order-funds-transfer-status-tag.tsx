@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { FloatingDropdown, HelperText, OrderTag } from '@components';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
+import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
 import { ArrowDownIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useOrderFundsTransferStatusTag } from './useOrderFundsTransferStatusTag';
 

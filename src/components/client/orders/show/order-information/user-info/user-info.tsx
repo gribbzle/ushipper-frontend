@@ -1,12 +1,18 @@
 import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
+import { Button } from '@/components/common/button/button';
+import { DriverParentInfo } from '@/components/common/driver-parent-info/driver-parent-info';
 import { UserRoleType } from '@/enums';
-import { Avatar, Badge, Button, DriverParentInfo } from '@components';
 import { useIsAdminPage, useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { UserPlusIcon } from '@icons';
 import { User } from '@store/common';
-import { classname, formatToCurrency, getBalanceInfo, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getBalanceInfo } from '@utils/orders/get-balance-info';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

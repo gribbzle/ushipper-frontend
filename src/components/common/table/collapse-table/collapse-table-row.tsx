@@ -2,7 +2,8 @@ import React, { MouseEvent, useCallback } from 'react';
 
 import { ArrowDownIcon, MinusCircleIcon, PlusCircleIcon } from '@icons';
 import { User } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Button } from '../../button';
 import { useGetUsersWithCursorPagination, useOpenTableCollapse } from '../hooks';

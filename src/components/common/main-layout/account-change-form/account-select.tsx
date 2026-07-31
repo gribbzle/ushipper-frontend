@@ -5,7 +5,7 @@ import { CompanyType } from '@/enums';
 import { SelectField } from '@fields';
 import { useAppSelector } from '@store';
 import { accountsUsersSelector } from '@store/client/accounts';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:sidebar');
 

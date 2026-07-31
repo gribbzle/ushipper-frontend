@@ -6,8 +6,8 @@ import {
     CarriersCatalogStatisticsCounters,
     DispatcherCatalogInfo,
     DispatcherCatalogStatisticsCounters,
-} from '@store/client';
-import { PaginatedResponse } from '@utils';
+} from '@store/client/catalogs/types';
+import { PaginatedResponse } from '@utils/redux';
 
 export const catalogsApi = apiSlice.injectEndpoints({
     endpoints: builder => ({

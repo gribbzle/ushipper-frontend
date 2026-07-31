@@ -3,16 +3,15 @@ import { Field, Form } from 'react-final-form';
 
 import { AsyncUserSelect, Button, Popup } from '@/components/common';
 import { FormControl, InputLabel } from '@fields';
-import { classname, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 import { required } from '@validators';
 
+import { AssignDispatcherFormState } from './assign-dispatcher-to-driver-popup.types';
 import { useAssignDispatcherToDriverPopup } from './use-assign-dispatcher-to-driver-popup';
 
 import './assign-dispatcher-to-driver-popup.scss';
-
-export type AssignDispatcherFormState = {
-    superiorUserPublicId?: string;
-};
 
 const cn = classname('assign-dispatcher-to-driver-popup');
 const t = translateByNamespace('admin:accounting:assign-dispatcher-to-driver-popup');

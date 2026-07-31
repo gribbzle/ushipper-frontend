@@ -6,14 +6,16 @@ import { Field, Form } from 'react-final-form';
 import { FieldArray } from 'react-final-form-arrays';
 import { toast } from 'react-toastify';
 
+import { Button } from '@/components/common/button/button';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { FundsTransferStatus } from '@/enums';
 import { RequestError } from '@/shared';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { Button, IconButton } from '@components';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { PlusIcon, TrashIcon } from '@icons';
 import { CreateRequestedDocumentPayload, useCreateRequestedDocumentsMutation, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './mark-as-documents-requested-form.scss';
 

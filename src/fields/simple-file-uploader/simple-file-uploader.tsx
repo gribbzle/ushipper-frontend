@@ -3,11 +3,14 @@ import has from 'has-values';
 import { useDropzone } from 'react-dropzone';
 import { FieldRenderProps } from 'react-final-form';
 
+import { Button } from '@/components/common/button/button';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
+import { useHover } from '@/hooks/use-hover';
 import { Attachment } from '@/shared';
-import { Button, IconButton, ZoneButton } from '@components';
-import { useHover } from '@hooks';
 import { TrashIcon, UploadIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './simple-file-uploader.scss';
 

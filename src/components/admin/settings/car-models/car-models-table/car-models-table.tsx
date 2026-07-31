@@ -7,7 +7,7 @@ import { Table, TableColumn, TableRowMenu } from '@/components/common/table';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarModel, carModelsFiltersSelector, carModelsSelector } from '@store/admin';
 import { carModelsSettingsActions } from '@store/admin/car-models-settings/slice';
-import { formatDateOrGetDash } from '@utils';
+import { formatDateOrGetDash } from '@utils/dates';
 
 type CarModelsTableProps = {
     onPageChange: () => void;

@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 
-import { TabItemBase } from '@components';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { LoadboardTab } from '@enums';
 import { useIsPartnerCompany, useLoadboard, useLoadboardTabSelection, useMeDriverRelated } from '@hooks';
 import { useAppSelector } from '@store';
 import { loadboardSavedSearchesSelector } from '@store/client/loadboard';
-import { translateLoadboardTab } from '@utils';
+import { translateLoadboardTab } from '@utils/translate/loadboard';
 
 import { DRIVER_RESTRICTED_TABS, NON_PARTNER_RESTRICTED_TABS } from './constants';
 import { formatLoadboardTabCounter } from './utils';

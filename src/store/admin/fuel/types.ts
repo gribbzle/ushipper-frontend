@@ -1,8 +1,9 @@
 import { FuelCardStatus, FuelTransactionStatus } from '@/enums';
 import { NullableFields } from '@/shared';
-import { Avatar, DriverParent } from '@store/client';
+import { Avatar } from '@/store/common/staff/avatar-types';
+import { DriverParent } from '@/store/common/staff/types';
 
-import { BalanceResource } from '../accounting';
+import { BalanceResource } from '../accounting/balance-types';
 
 export type FuelCardAccount = {
     publicId: string;

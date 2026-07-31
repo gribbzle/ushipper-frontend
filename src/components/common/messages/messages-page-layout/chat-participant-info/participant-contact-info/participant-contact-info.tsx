@@ -1,7 +1,9 @@
 import React, { useCallback } from 'react';
 
 import { ChatAccountInfo } from '@store/common/chats/types';
-import { classname, formatExternalPhoneNumber, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatExternalPhoneNumber } from '@utils/phone';
 
 import './participant-contact-info.scss';
 

@@ -32,7 +32,9 @@ import { fetchCompanyAction, fetchedCompanySelector } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';
 import { useGetCompanyRatingQuery } from '@store/api/company-api';
 import { GetReviewData, useGetReviewsQuery } from '@store/api/review';
-import { classname, isClientSide, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isClientSide } from '@utils/nextjs';
 
 import CompanyPageHead from './company-page-head';
 

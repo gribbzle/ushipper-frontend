@@ -1,14 +1,15 @@
 import React, { useMemo } from 'react';
 
-import { Drawer, Loader } from '@components';
-import { classname } from '@utils';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { Loader } from '@/components/common/loader/loader';
+import { classname } from '@utils/classname';
 
+import { useAccountingDrawerActions } from './hooks/use-accounting-drawer-actions';
 import { AccountBalance } from './account-balance';
 import { AccountingDrawerHeader } from './accounting-drawer-header';
 import { AccountingDrawerTabs, AccountingTab } from './accounting-drawer-tabs';
 import { AgreementsDetails } from './agreements-details';
 import { FinancialAccounts } from './financial-accounts';
-import { useAccountingDrawerActions } from './hooks';
 import { Rocketkor } from './rocketkor';
 import { useAccountingDrawer } from './use-accounting-drawer';
 

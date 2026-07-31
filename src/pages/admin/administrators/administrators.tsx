@@ -7,7 +7,9 @@ import { useUsersPage } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './administrators.scss';
 

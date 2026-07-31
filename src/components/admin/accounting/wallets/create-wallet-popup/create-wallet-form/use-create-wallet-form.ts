@@ -5,9 +5,10 @@ import { BalanceType } from '@/enums';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createWalletPopupPropsSelector } from '@store/admin';
 import { balancesApi, useCreateFinancialAccountMutation, usePartiallyUpdateBalanceMutation } from '@store/api/balances-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
-import { CreateWalletFormProps, CreateWalletFormState } from './create-wallet-form';
+import { CreateWalletFormProps, CreateWalletFormState } from './create-wallet-form.types';
 
 const t = translateByNamespace('admin:accounting:wallets-page:create-wallet-popup');
 

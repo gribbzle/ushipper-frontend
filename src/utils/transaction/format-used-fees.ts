@@ -1,7 +1,8 @@
 import { addMonths, addWeeks, format } from 'date-fns';
 
 import { Fee } from '@types';
-import { formatFeeValueType } from '@utils';
+
+import { formatFeeValueType } from '../fees';
 
 import { isRecurringFeeMonthIntervalType, isRecurringFeeWeekIntervalType } from './get-is-recurring-fee-interval-type';
 

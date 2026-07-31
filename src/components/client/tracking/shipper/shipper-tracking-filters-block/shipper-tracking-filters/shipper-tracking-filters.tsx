@@ -1,10 +1,13 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { DispatchersSelect, Paper } from '@components';
+import { DispatchersSelect } from '@/components/common/dispatchers-select/dispatchers-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { CloseIcon } from '@icons';
 import { ShipperTrackingFiltersFormState } from '@store/client';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FavoriteDriversRadioGroup } from './favorite-drivers-radio-group';
 import { ShipperTrackingFieldWrapper } from './shipper-tracking-field-wrapper';

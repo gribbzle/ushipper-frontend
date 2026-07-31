@@ -3,7 +3,7 @@ import React from 'react';
 import { Avatar } from '@/components/common/avatar';
 import { Badge } from '@/components/common/badge';
 import { ChatAccountInfo, ChatUserInfo } from '@store/common/chats/types';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './participant-profile-header.scss';
 

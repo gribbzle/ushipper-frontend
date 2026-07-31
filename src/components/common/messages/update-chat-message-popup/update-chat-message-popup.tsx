@@ -3,11 +3,13 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { FormControl, TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { messagesActions, sendMessageRequestStatusSelector, updateChatMessagePopupPropsSelector, updateMessageAction } from '@store/client';
-import { RequestStatus, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 import { required } from '@validators';
 
 const t = translateByNamespace('common:messages-page:update-chat-message-popup');

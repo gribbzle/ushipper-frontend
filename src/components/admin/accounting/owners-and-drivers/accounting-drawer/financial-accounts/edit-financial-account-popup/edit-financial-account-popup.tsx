@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { Button, FinancialAccountForm, Popup } from '@components';
-import { classname, translateByNamespace } from '@utils';
+import { FinancialAccountForm } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/financial-accounts/financial-account-form/financial-account-form';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useEditFinancialAccountPopup } from './use-edit-financial-account-popup';
 

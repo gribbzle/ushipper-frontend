@@ -1,6 +1,7 @@
 import { InstantTermPaymentType } from '@enums';
 import { Fee } from '@types';
-import { isFeeValueTypePercent } from '@utils';
+
+import { isFeeValueTypePercent } from '../fees';
 
 export const isReceiptlessOrder = (instantTermPaymentType?: InstantTermPaymentType | null): boolean =>
     !instantTermPaymentType || instantTermPaymentType === InstantTermPaymentType.RECIPIENT_DRIVER;

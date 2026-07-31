@@ -2,7 +2,9 @@ import { useMemo } from 'react';
 
 import { OrderStatus } from '@/enums';
 import { Load } from '@store/client';
-import { getAwaitingDeliveryLabel, getOrderCheckStatuses, translateByNamespace, translateFundsTransferStatus } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getOrderCheckStatuses } from '@utils/orders/order-payment-helpers';
+import { getAwaitingDeliveryLabel, translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 const t = translateByNamespace('common:order');
 

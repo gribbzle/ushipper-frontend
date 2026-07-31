@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Rating } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-total-rating-info.scss';
 

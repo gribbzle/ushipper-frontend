@@ -3,7 +3,8 @@ import React from 'react';
 import { Button } from '@/components/common';
 import { useDriversActionsPermission } from '@hooks';
 import { PencilWithLineIcon, TrashIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountingItem } from '../../common';
 import { DeleteFinancialAccountPopup } from '../delete-financial-account-popup';

@@ -1,4 +1,8 @@
-import { AppState } from '@store';
+type AppState = {
+    common: {
+        rolesSettings: any;
+    };
+};
 
 const rolesSettingsPageSelector = (state: AppState) => state.common.rolesSettings;
 

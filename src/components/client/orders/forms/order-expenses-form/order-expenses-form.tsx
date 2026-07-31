@@ -4,7 +4,8 @@ import { FieldArray } from 'react-final-form-arrays';
 import { ExpenseTypeEnum } from '@/enums';
 import { InputLabel } from '@fields';
 import { OrderFieldsGroup } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Expense } from './expense';
 

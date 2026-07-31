@@ -1,6 +1,9 @@
 import React, { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 
-import { Button, CheckingContractPopup, MapBox, useTrackingDisplayedPathsOnMap } from '@/components';
+import { CheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/checking-contract-popup';
+import { useTrackingDisplayedPathsOnMap } from '@/components/client/tracking/drivers-tracking-map/hooks';
+import { Button } from '@/components/common/button/button';
+import { MapBox } from '@/components/common/MapBox/MapBox';
 import { OrderSourcesEnum } from '@enums';
 import { SearchIcon } from '@icons';
 import { useAppDispatch } from '@store';
@@ -8,7 +11,8 @@ import { LoadBoardFilters, useGetLoadboardItemsQuery } from '@store/api/loadboar
 import { useGetTrackingQuery } from '@store/api/users-api';
 import { trackingActions } from '@store/client';
 import { User } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DriverItemTab } from '../driver-item-tab';
 

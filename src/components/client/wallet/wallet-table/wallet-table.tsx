@@ -1,8 +1,11 @@
 import React from 'react';
 
-import { EmptyLayout, Table, TableLoader } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
+import { Table } from '@/components/common/table/table';
 import { Transaction } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useWalletTable } from './use-wallet-table';
 

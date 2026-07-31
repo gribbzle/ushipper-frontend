@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { NullableFields } from '@/shared';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useCreateReviewReplyMutation, useUpdateReviewReplyMutation } from '@store/api/review-reply-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 const t = translateByNamespace('client:company-page:review-reply-drawer');

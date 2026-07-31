@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { Load } from '@store/client';
-import { classname, isFreightX, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isFreightX, isUshipper } from '@utils/project-config';
 
 import './order-details-block.scss';
 

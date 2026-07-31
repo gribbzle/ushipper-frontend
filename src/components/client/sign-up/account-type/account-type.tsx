@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
+import { Link } from '@/components/common/link/link';
 import { CompanyType } from '@/enums';
-import { Link } from '@components';
 import { RadioPanelInput } from '@fields';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 import { required } from '@validators';
 
 const t = translateByNamespace('client:sign-up-page');

@@ -1,6 +1,6 @@
 import React, { FC, ReactNode, SVGProps } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './driver-details-wrapper.scss';
 

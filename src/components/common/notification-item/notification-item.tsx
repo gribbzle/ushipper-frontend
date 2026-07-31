@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
-import { Avatar } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
 import { User } from '@store/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './notification-item.scss';
 

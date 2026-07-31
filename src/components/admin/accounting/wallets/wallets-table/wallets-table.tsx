@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EmptyLayout, Table } from '@/components/common';
 import { FinancialBalanceData } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useWalletsTable } from './use-wallets-table';
 

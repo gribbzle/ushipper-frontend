@@ -1,8 +1,11 @@
 import React from 'react';
 
-import { OfferVehicles, OrderRoute, ViewOrderRouteButton } from '@components';
+import { OfferVehicles } from '@/components/client/offers/offer-vehicles/offer-vehicles';
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { ViewOrderRouteButton } from '@/components/client/orders/view-order-route-button/view-order-route-button';
 import { Load } from '@store/client';
-import { classname, renderProjectSpecificComponent } from '@utils';
+import { classname } from '@utils/classname';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { OfferCommodities } from '../../offer-commodities';
 

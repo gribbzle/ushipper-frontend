@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 
-import { LoadboardFiltersCurrentSearch, LoadboardSavedFilters, Paper, Tabs } from '@components';
+import { LoadboardFiltersCurrentSearch } from '@/components/client/loadboard/loadboard-filters-current-search/loadboard-filters-current-search';
+import { LoadboardSavedFilters } from '@/components/client/loadboard/loadboard-saved-filters/loadboard-saved-filters';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useLoadboardTabSelection } from '@hooks';
 import { useAppDispatch } from '@store';
 import { getLoadboardSearches } from '@store/client/loadboard/actions';

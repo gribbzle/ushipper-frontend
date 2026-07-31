@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Loader } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { EmptyBalanceBlock } from '../common';
-import { useGetAccountingProfile } from '../hooks';
+import { useGetAccountingProfile } from '../hooks/use-get-accounting-profile';
 
 import { AwaitingTransactions } from './awaiting-transactions';
 import { PendingOrders } from './pending-orders';

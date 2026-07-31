@@ -5,7 +5,9 @@ import { useRouter } from 'next/router';
 import { ExportButton, PageHeader } from '@/components/common';
 import { useOrdersActionsPermission, useOrdersExport } from '@/hooks/order';
 import { OrderType } from '@enums';
-import { getAllAminOrdersFiltersFromUrlParams, getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getAllAminOrdersFiltersFromUrlParams } from '@utils/orders/filters-helpers';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 type Props = {
     ordersType: OrderType;

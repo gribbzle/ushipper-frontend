@@ -1,4 +1,4 @@
-import { TabItemBase } from '@components';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 
 export type LoadboardFilterTabsProps = {
     onSelectTab: (tab: TabItemBase) => void;

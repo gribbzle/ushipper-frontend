@@ -7,7 +7,8 @@ import { useAppSelector } from '@store';
 import { ExternalOfferValues, useCreateAcceptExternalOfferMutation } from '@store/api/external-orders-api';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { checkingContractPopupSelector } from '@store/client/loadboard';
-import { getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { useCheckingContractPopup } from '../use-checking-contract-popup';
 import { handleParsedOrderError } from '../utils';

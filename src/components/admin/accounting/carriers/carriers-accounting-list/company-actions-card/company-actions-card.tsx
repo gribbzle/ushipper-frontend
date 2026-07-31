@@ -5,7 +5,7 @@ import { CarrierAccountingDrawerTab } from '@/enums';
 import { useLoginAs, useOpenDeleteCompanyPopup } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions, Company } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:company-card-info');
 

@@ -1,6 +1,7 @@
 import { FeePeriod } from '@enums';
 import { Fee, FeeData, RecurringFeeData } from '@types';
-import { validateFeeData } from '@validators';
+
+import { validateFeeData } from '../validators/fee';
 
 export const formatFeeForForm = ({
     id,

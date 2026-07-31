@@ -1,11 +1,13 @@
 import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { FuelCardStatusTagProps } from '@/components/admin/fuel/cards/fuel-card-status-tag/fuel-card-status-tag.types';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { FuelCardStatus } from '@/enums';
-import { DropdownOption, FuelCardStatusTagProps } from '@components';
 import { useAppDispatch } from '@store';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
-import { getFuelCardStatusOptionTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getFuelCardStatusOptionTranslate } from '@utils/translate/fuel/get-fuel-card-status-translate';
 
 const t = translateByNamespace('admin:fuel:cards-page:notifications');
 

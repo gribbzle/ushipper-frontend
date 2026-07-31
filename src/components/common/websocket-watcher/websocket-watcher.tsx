@@ -10,7 +10,7 @@ import { chatsActions, drawerChatsSelector } from '@store/common';
 import { ChatMessage } from '@store/common/chats/types';
 import { INotification, notificationsActions } from '@store/common/notifications';
 import { authorizedUserSelector, globalActions, isUserAuthorizedSelector } from '@store/global';
-import { isClientSide } from '@utils';
+import { isClientSide } from '@utils/nextjs';
 
 import { useWebsocketWatcher } from './use-websocket-watcher';
 

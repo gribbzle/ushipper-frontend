@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { MileCostTooltip } from '../mile-cost-tooltip';
 

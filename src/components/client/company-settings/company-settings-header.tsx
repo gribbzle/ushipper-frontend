@@ -1,10 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { Button } from '@components';
+import { Button } from '@/components/common/button/button';
 import { ExternalLinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:company-settings');
 const cn = classname('company-settings-page');

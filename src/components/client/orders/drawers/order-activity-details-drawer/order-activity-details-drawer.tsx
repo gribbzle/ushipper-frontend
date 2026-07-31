@@ -2,11 +2,14 @@ import React, { useCallback, useMemo } from 'react';
 import { format } from 'date-fns';
 import { toKebabCase } from 'js-convert-case';
 
+import { Drawer } from '@/components/common/drawer/drawer';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
 import { ChangeDetails, ChangeLog } from '@/shared';
-import { Drawer, Table, TableColumn } from '@components';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderActivityDetailsDrawerPropsSelector, ordersActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { renderValue } from './utils';
 

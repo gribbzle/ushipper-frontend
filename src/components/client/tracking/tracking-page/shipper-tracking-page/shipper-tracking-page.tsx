@@ -1,14 +1,17 @@
 import React, { useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { OrderChatDrawer, OrderSendOfferToCarrierDrawer } from '@/components/client/orders';
+import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer';
+import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests';
 import { TrackingOrderStatus } from '@/enums';
 import { useQueryFilters } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetTrackingOrdersQuery } from '@store/api/tracking-api';
 import { isShipperOrdersListShownSelector, ShipperTrackingFiltersFormState, trackingActions } from '@store/client';
-import { classname, convertToStringArray, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrdersTrackingMap, ShippersOrdersListPaper, ShipperTrackingFiltersBlock, ShipperTrackingOrderPaper, TrackingHelpPaper } from '../../shipper';
 

@@ -2,15 +2,22 @@ import React, { useCallback } from 'react';
 import { useForm } from 'react-final-form';
 import { FieldArray } from 'react-final-form-arrays';
 
-import { EditFeeItem, FeesFieldsWrapper, FeeTermTypeFields, getFeeTermTypesFieldsOfProject, renderAddButton } from '@/components/admin/accounting/common';
+import { EditFeeItem } from '@/components/admin/accounting/common/edit-fee-item';
+import {
+    FeesFieldsWrapper,
+    FeeTermTypeFields,
+    getFeeTermTypesFieldsOfProject,
+    renderAddButton,
+} from '@/components/admin/accounting/common/fees-fields-wrapper';
 import { AlertBlock } from '@/components/common';
 import { PROJECT_KEY_NAME } from '@constants';
 import { useDriversActionsPermission } from '@hooks';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee, FeeData } from '@types';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
-import { useDriversCompaniesFees } from '../../../hooks';
+import { useDriversCompaniesFees } from '../../../hooks/use-drivers-companies-fees';
 
 import './custom-fees-fields-array.scss';
 

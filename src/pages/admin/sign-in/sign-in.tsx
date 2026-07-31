@@ -9,7 +9,10 @@ import { FormControl, InputLabel, PasswordField, TextField } from '@fields';
 import { useAppDispatch, useAppSelector, wrapper } from '@store';
 import { SignInFormData, signInFormSubmit, signInFormSubmitErrorMessageSelector, signInFormSubmitStatusSelector } from '@store/client';
 import { authorizedUserSelector } from '@store/global';
-import { classname, getProjectName, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { getProjectName } from '@utils/translate/get-project-name';
 import { required } from '@validators';
 
 import './sign-in.scss';

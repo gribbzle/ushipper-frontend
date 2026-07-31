@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { Link } from '@/components';
+import { classname } from '@/utils/classname';
+import { translateByNamespace } from '@/utils/i18n';
 import { Rectangle68, Rectangle69 } from '@images';
 import logos from '@logo';
-import { classname, translateByNamespace } from '@utils';
+
+import { Link } from '../link';
 
 import './product-info-layout.scss';
 
@@ -32,7 +34,13 @@ export const ProductInfoLayout = (props: Props) => {
                 <div className={cn('content')}>
                     <LogoWhiteDefaultAll />
                     <div className={cn('preview-wrapper')}>
-                        <Image src='/sign-in-background.png' alt='background' fill={true} />
+                        <Image
+                            src='/sign-in-background.png'
+                            alt='background'
+                            fill={true}
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                            priority={true}
+                        />
                     </div>
                     <div className={cn('caption')}>
                         <h1>{t('header')}</h1>

@@ -1,24 +1,17 @@
-import React, { MutableRefObject } from 'react';
-import { FormApi } from 'final-form';
+import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncDriverAccountsSelect } from '@components';
+import { AsyncDriverAccountsSelect } from '@/components/common/selects/async-driver-accounts-select/async-driver-accounts-select';
 import { FormControl, InputLabel } from '@fields';
-import { classname, parseField, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { parseField } from '@utils/parse-field';
 import { required } from '@validators';
 
+import { AddFuelCardToDriverFormProps, AddFuelCardToDriverFormState } from './add-fuel-card-to-driver-form.types';
 import { useFuelCardToDriverForm } from './use-add-fuel-card-to-driver-form';
 
 import './add-fuel-card-to-driver-form.scss';
-
-export type AddFuelCardToDriverFormState = {
-    accountId: string;
-};
-
-export type AddFuelCardToDriverFormProps = {
-    onAfterSubmit: () => void;
-    formRef: MutableRefObject<FormApi<AddFuelCardToDriverFormState> | undefined>;
-};
 
 const t = translateByNamespace('admin:fuel:cards-page:add-fuel-card-to-driver-popup');
 const cn = classname('add-fuel-card-to-driver-form');

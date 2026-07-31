@@ -1,8 +1,11 @@
 import React from 'react';
 
-import { Button, Link, Paper } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Link } from '@/components/common/link/link';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { ExternalLinkIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './empty-orders-panel.scss';
 

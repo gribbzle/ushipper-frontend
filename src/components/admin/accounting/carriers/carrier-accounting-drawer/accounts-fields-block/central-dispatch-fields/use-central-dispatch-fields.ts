@@ -7,7 +7,8 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { companyApi } from '@store/api/company-api';
 import { useCreateCompanyExternalServiceSettingsMutation } from '@store/api/company-external-service-settings';
-import { handleError, translateExternalSettingsSuccess } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateExternalSettingsSuccess } from '@utils/translate/accounting/notification-translations';
 
 import { CarrierAccountingDrawerFormValue } from '../../carrier-accounting-drawer.types';
 import { useUpdateCompany } from '../../hooks';

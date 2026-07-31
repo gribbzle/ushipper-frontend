@@ -2,12 +2,13 @@ import React, { useCallback, useContext } from 'react';
 import { useForm } from 'react-final-form';
 
 import { ContactFooterContext } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
+import { Divider } from '@/components/common/divider/divider';
 import { getCopyToCustomerState } from '@/utils/order';
-import { Divider } from '@components';
 import { FieldPrefixContext, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { useDisableCarrierChanging } from '@hooks';
 import { OrderFieldsGroup } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator } from '@validators';
 
 import './order-contact-details.scss';

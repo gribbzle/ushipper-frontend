@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { ExpenseTypeEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:expense-types');
 

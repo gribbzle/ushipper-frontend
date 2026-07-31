@@ -1,11 +1,12 @@
 import { toSnakeCase } from 'js-convert-case';
 
+import { JobOffersFiltersParams, JobOfferStatisticsCounters } from '@/components/client/job-offers/job-offers-filters/job-offers-filters.types';
+import { SendJobOfferFormValue } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-form/send-job-offer-form.types';
 import { OfferStatusesEnum } from '@/enums';
 import { Attachment } from '@/shared';
-import { JobOffersFiltersParams, JobOfferStatisticsCounters, SendJobOfferFormValue } from '@components';
 import { apiSlice } from '@store/api/api-slice';
-import { JobOffer } from '@store/client';
-import { PaginatedResponse } from '@utils';
+import { JobOffer } from '@store/client/job-offers/types';
+import { PaginatedResponse } from '@utils/redux';
 
 type CreateJobOfferDto = SendJobOfferFormValue & {
     receiverId?: string;

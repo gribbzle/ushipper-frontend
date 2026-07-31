@@ -1,5 +1,6 @@
 import { Fee } from '@types';
-import { formatToCurrency, isFeeValueTypePercent } from '@utils';
+import { isFeeValueTypePercent } from '@utils/fees';
+import { formatToCurrency } from '@utils/numbers';
 
 import { FormattedFee } from './admin-ushipper-pay-details.types';
 

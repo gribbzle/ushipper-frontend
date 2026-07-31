@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Link } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { Link } from '@/components/common/link/link';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-name-is-partner-info.scss';
 

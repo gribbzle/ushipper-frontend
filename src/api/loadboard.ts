@@ -2,7 +2,8 @@ import { toSnakeCase } from 'js-convert-case';
 
 import { SavedSearch } from '@/api/types';
 import { CoordinatesWithRangeRegion, SavedLoadBoardFilters } from '@store/api/loadboard-api';
-import { axios, PaginatedRequest, PaginatedResponse } from '@utils';
+import { axios } from '@utils/axios';
+import { PaginatedRequest, PaginatedResponse } from '@utils/redux';
 
 export type SavedLoadboardSearch = SavedSearch<'load_board', SavedLoadBoardFilters>;
 

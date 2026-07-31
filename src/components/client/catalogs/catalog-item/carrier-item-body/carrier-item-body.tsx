@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { FlagButton } from '@/components/common';
+import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { useShowCompanyPage } from '@hooks';
 import { CarriersCatalogInfo } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CarrierPersonalInfo, CarrierSpecializationBlock, CompanyContactsBlock } from '../../common';
 

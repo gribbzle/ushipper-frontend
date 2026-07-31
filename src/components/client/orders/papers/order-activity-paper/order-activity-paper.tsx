@@ -1,27 +1,27 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { format } from 'date-fns';
-import has from 'has-values';
 import { toKebabCase } from 'js-convert-case';
+import { has } from 'lodash';
 import { useRouter } from 'next/router';
 
-import {
-    Avatar,
-    Button,
-    OrderActivityDetailsDrawer,
-    Paper,
-    Timeline,
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineItem,
-    TimelineSeparator,
-} from '@/components';
+import { OrderActivityDetailsDrawer } from '@/components/client/orders/drawers/order-activity-details-drawer/order-activity-details-drawer';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Button } from '@/components/common/button/button';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineContent } from '@/components/common/timeline/timeline-content/timeline-content';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
+import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { HistoryItemEventName } from '@/enums';
 import { ArrowDownIcon, SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { FundsTransferPayload, OrderActivity, orderActivityApi, useGetOrderActivityQuery } from '@store/api/order-activity-api';
 import { ordersActions } from '@store/client';
-import { classname, translateActivityFundsTransferStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateActivityFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 import './order-activity-paper.scss';
 

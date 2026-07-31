@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CommonRouteProps } from '../../sidebar.types';
 import { ItemBadgeCount } from '../item-badge-count';

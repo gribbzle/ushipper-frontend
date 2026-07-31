@@ -4,17 +4,26 @@ import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { RequestDates } from '@/components/client/requests/request-dates/request-dates';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OfferToRequestStatusesEnum, OrderStatus } from '@/enums';
 import { RequestStatusesEnum } from '@/enums';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { calculateTotalPayment, getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { AlertBlock, Button, CompanyRatingWithReviewCount, OrderTag, Paper, RequestDates } from '@components';
 import { Ellipse, UserIcon } from '@icons';
 import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
 import { OrderRequest, orderRequestsApi, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
 import { Load } from '@store/client';
 import { requestsSliceActions } from '@store/client/requests/slice';
-import { classname, diffForHumans, formatToCurrency, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { translateCompanyType } from '@utils/translations';
 
 import { MessageButton } from './message-button';
 

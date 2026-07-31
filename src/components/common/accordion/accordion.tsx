@@ -1,7 +1,7 @@
 import React, { MouseEvent, ReactNode, useCallback, useState } from 'react';
 
 import { CarrentIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './accordion.scss';
 

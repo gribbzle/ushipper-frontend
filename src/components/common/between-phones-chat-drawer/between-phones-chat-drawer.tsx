@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { Chat } from '@/components/common/chats-drawer/chat';
-import { Drawer } from '@components';
-import { classname, formatInternationalPhoneNumber } from '@utils';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { classname } from '@utils/classname';
+import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import { useBetweenPhonesChatDrawer } from './use-between-phones-chat-drawer';
 

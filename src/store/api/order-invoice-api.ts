@@ -1,5 +1,5 @@
 import { Attachment, NullableFields } from '@/shared';
-import { PaginatedResponse } from '@utils';
+import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 import { CustomerInformation, DeliveryInformation, OrderVehicle, PaymentInformation, PickupInformation } from './orders-api';

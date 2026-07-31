@@ -4,7 +4,7 @@ import { FormApi } from 'final-form';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, linkFuelCardPopupPropsSelector } from '@store/admin';
 
-import { LinkFuelCardFormState } from './link-fuel-card-form';
+import { LinkFuelCardFormState } from './link-fuel-card-form/link-fuel-card-form.types';
 
 export const useLinkFuelCardPopup = () => {
     const { isPopupOpened, driverName } = useAppSelector(linkFuelCardPopupPropsSelector);

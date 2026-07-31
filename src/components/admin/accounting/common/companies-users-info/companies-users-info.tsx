@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { CompanyType } from '@/enums';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './companies-users-info.scss';
 

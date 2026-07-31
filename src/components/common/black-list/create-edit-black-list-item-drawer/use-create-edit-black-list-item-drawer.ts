@@ -12,7 +12,7 @@ import {
 } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';
 import { authorizedUserCompanyPublicIdSelector } from '@store/global';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useTermsSelectOptions } from '../../terms-select/use-terms-select-options';
 

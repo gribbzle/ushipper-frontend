@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react';
 
 import { VehicleSizesInfo } from '@/components/client/loadboard/common/vehicle-sizes-info';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { CarIcon2 } from '@icons';
 import { OrderVehicle } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ParsedOrderRouteProps } from '../parsed-order-route.types';
 

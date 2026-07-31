@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { apiSlice } from '@store/api/api-slice';
 import { useUpdateUserJSONMutation } from '@store/api/users-api';
 import { assignDrawerSelector } from '@store/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:staff-table');
 

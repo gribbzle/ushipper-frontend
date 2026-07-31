@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './catalog-info-wrapper.scss';
 

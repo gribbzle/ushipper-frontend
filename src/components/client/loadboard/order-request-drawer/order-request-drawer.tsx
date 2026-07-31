@@ -1,13 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { LoadboardDrawerMap } from '@/components/client/loadboard/loadboard-drawer-map/loadboard-drawer-map';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { OrderSourcesEnum } from '@/enums';
-import { Drawer, LoadboardDrawerMap } from '@components';
 import { useMeCarrier } from '@hooks';
 import { AppState } from '@store';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ParsedOrderDetails } from '../parsed-order-details-drawer';
 

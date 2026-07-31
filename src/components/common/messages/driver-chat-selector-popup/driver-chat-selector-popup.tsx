@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { Button, Popup } from '@/components/common';
-import { classname, RequestStatus, translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 
 import { DriverSelectorForm } from './driver-chat-selector-form';
 import { useDriverChatSelectorPopup } from './use-driver-chat-selector-popup';

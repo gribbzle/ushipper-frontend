@@ -1,6 +1,6 @@
 import i18next from 'i18next';
 
-import { isString } from '@/shared';
+import { isString } from '../shared/type-guards';
 
 import { FieldValidator } from './types';
 

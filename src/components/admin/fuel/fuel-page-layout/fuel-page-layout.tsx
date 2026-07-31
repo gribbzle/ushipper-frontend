@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SupportChatDrawer } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './fuel-page-layout.scss';
 

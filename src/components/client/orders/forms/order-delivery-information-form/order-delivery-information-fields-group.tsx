@@ -1,11 +1,14 @@
 import React from 'react';
 
 import ContactInfoFooter from '@/components/client/orders/contact-info-footer/contact-info-footer';
-import { DateTypesSelect, OrderContactAddress, OrderContactDetails } from '@components';
+import { OrderContactAddress } from '@/components/client/orders/forms/common/order-contact-address/order-contact-address';
+import { OrderContactDetails } from '@/components/client/orders/forms/common/order-contact-details/order-contact-details';
+import { DateTypesSelect } from '@/components/client/orders/selects/date-types-select/date-types-select';
 import { DatePicker, FieldPrefix, FormControl, InputLabel, PrefixedField, StringInput } from '@fields';
 import { useMeShipper } from '@hooks';
 import { OrderFieldsGroup } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-delivery-information-fields-group.scss';
 

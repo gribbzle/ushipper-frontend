@@ -1,7 +1,7 @@
 import { CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
-import { RatingOrDispatchFeeFilter, SpecializationsFilter } from '../catalog-filters-form';
+import { RatingOrDispatchFeeFilter, SpecializationsFilter } from '../catalog-filters-form/catalog-filters-form.types';
 
 import { CatalogFiltersForUrlParams, CatalogFiltersValue } from './catalog-filters-tabs.types';
 

@@ -1,23 +1,13 @@
-import { NullableFields } from '@/shared';
 import { CompanyStatusEnum, UserRoleGroup, UserRoleType } from '@enums';
-import { BalanceResource } from '@store/admin';
-import { LatestLocation, TrackingDriverRatings } from '@store/client';
-import { AuthorizedUserInfo, Language } from '@store/global/types';
-import { Fee } from '@types';
-import { RequestWithStatus } from '@utils';
 
-type PreviewImage = {
-    url: string;
-    extension: string;
-};
+import { NullableFields } from '../../../shared/types';
+import { Fee } from '../../../types/fee';
+import { RequestWithStatus } from '../../../utils/redux';
+import { BalanceResource } from '../../admin/accounting/balance-types';
+import { LatestLocation, TrackingDriverRatings } from '../../client/tracking/location-types';
+import { AuthorizedUserInfo, Language } from '../../global/shared-types';
 
-export type Avatar = {
-    url: string;
-    name: string;
-    extension: string;
-    size: number;
-    previewImages: PreviewImage[];
-};
+import { Avatar } from './avatar-types';
 
 export type DeviceInformation = NullableFields<{
     applicationBuildVersion: string;

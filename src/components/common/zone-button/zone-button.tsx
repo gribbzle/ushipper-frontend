@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PlusIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './zone-button.scss';
 

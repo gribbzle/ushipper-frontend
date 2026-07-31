@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 
 import { OrderSortingDirection } from '@/enums';
-import { getObjectWithoutEmptyFields } from '@utils';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 export type AppFilters = {
     page: number;

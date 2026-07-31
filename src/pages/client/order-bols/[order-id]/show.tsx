@@ -6,7 +6,10 @@ import { getFreeAccessLayout, Link, OrderBolDamageCode, OrderBolDetails, OrderBO
 import { useAppSelector } from '@store';
 import { useGetOrderBolQuery } from '@store/api/order-bol-api';
 import { OrderBOLSelector } from '@store/client/order-BOL';
-import { classname, getProjectName, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './show.scss';
 

@@ -3,7 +3,8 @@ import { format } from 'date-fns';
 
 import { useCountriesAndStates } from '@hooks';
 import { AccountingProfileDocument } from '@store/api/accounts-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './extended-document-body.scss';
 

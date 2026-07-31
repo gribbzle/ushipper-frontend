@@ -1,7 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { OrderSortingDirection } from '@/enums';
-import { composeBuilder, requestInitial } from '@utils';
+
+import { composeBuilder, requestInitial } from '../../../utils/redux';
 
 import { createEditBlackListItemFormSubmit, deleteBlackListItemAction, fetchBlackListItemAction, fetchBlackListItemsAction } from './actions';
 import { BlackListSliceState, CreateEditBlackListItemModalState, DeleteBlackListItemPopupState, TBlackListItemsFilters } from './types';

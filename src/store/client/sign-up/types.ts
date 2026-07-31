@@ -1,6 +1,6 @@
 import { CompanyType, GrantTypeEnum, RegistrationType, UserRoleType } from '@/enums';
-import { Company } from '@store/admin';
-import { RequestStatus, RequestWithStatus } from '@utils';
+import { Company } from '@store/admin/companies/types';
+import { RequestStatus, RequestWithStatus } from '@utils/redux';
 
 export type SignUpSliceState = {
     signUpFormSubmit: RequestWithStatus;

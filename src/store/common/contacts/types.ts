@@ -1,4 +1,4 @@
-import { RequestWithStatus } from '@utils';
+import { RequestWithStatus } from '@utils/redux';
 
 export type Contact = {
     id: number;

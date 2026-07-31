@@ -12,10 +12,11 @@ import { accountingDrawerPropsSelector, selectedAccountSelector } from '@store/a
 import { accountingAccountsApi, AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { useGetAccountConfigQuery } from '@store/api/accounts-api';
 import { staffActions } from '@store/common/staff/slice';
-import { formatFeeForForm, formatRecurringFeeForForm, translateByNamespace } from '@utils';
+import { formatFeeForForm, formatRecurringFeeForForm } from '@utils/format-fee-for-form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountingTab } from '../accounting-drawer-tabs';
-import { useHandleCloseAccountingDrawer } from '../hooks';
+import { useHandleCloseAccountingDrawer } from '../hooks/use-handle-close-accounting-drawer';
 
 import { AgreementsDetailsFormState, FeeFields } from './agreements-details.types';
 import { useHandleAgreementsSubmitTasks } from './use-handle-agreements-submit-tasks';

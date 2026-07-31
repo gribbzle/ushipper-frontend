@@ -1,7 +1,7 @@
 import { useCallback, useContext } from 'react';
 import Router from 'next/router';
 
-import { RouterContext } from '@components';
+import { RouterContext } from '@/components/common/router-provider/router-provider';
 
 export const useOnBack = (redirectWithoutPrevRouter?: () => Promise<void>) => {
     const { prevRouter } = useContext(RouterContext);

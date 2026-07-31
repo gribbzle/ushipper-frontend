@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { AssignItem } from '@components';
+import { AssignItem } from '@/components/common/assign/assign-item/assign-item';
 import { CarIcon, PhoneIcon } from '@icons';
-import { classname, isUshipper } from '@utils';
+import { classname } from '@utils/classname';
+import { isUshipper } from '@utils/project-config';
 
 import './order-driver-assign-item.scss';
 

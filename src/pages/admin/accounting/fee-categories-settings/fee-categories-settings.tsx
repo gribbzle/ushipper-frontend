@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CreateEditFeeCategoryBlock, DeleteFeeCategoryPopup, FeeCategoriesSettingsPageHead, FeeCategoriesTable, getMainLayout } from '@components';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './fee-categories-settings-page.scss';
 

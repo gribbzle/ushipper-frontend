@@ -13,7 +13,7 @@ import {
     usePartiallyUpdateOrderMutation,
 } from '@store/api/orders-api';
 import { Load, ModeStateEnum, OrderDetails, OrderFormState, ordersActions } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:orders-page:order-options-dropdown');
 const translateOrder = translateByNamespace('client:order');

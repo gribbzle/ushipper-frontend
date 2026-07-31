@@ -1,8 +1,8 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { FormHelperText } from '@fields';
-import { classname } from '@utils';
+import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
+import { classname } from '@utils/classname';
 import { required, requiredCurrency } from '@validators';
 
 import { CurrencyPercentageFieldProps } from './currency-percentage-field.types';

@@ -1,12 +1,14 @@
 import React from 'react';
 import { FieldArray } from 'react-final-form-arrays';
 
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { InputLabel } from '@fields';
 import { useMeShipper } from '@hooks';
 import { OrderFieldsGroup } from '@store/client';
-import { classname, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateCompanyType } from '@utils/translations';
 
 import { VehicleRow } from './vehicle-row';
 

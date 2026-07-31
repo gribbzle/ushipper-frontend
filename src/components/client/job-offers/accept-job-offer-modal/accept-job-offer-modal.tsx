@@ -2,10 +2,10 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 
-import { OfferActionModal } from '@/components';
+import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
 import { UserRoleType } from '@/enums';
 import { FormControl, SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { useRolesOptions } from '../send-job-offer-drawer/send-job-offer-form/use-roles-options';

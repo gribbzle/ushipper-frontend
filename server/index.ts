@@ -13,7 +13,7 @@ import '../src/i18n';
 
 const mocksEnabled = process.env.MOCK;
 
-const fastifyServer = fastify({ pluginTimeout: 120000 });
+const fastifyServer = fastify({ pluginTimeout: 300000 });
 const port = config.get<number>('server.port');
 const apiBaseUrl = config.get<number>('server.apiBaseUrl');
 

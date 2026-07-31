@@ -1,7 +1,14 @@
 import { toast } from 'react-toastify';
 
-import { RequestError } from '@/shared';
 import { translateByNamespace } from '@/utils/i18n';
+
+type RequestError = {
+    status: number;
+    data: {
+        message: string;
+    };
+};
+
 const t = translateByNamespace('common:notifications');
 
 export default function parseAndShowAxiosError(error: RequestError | Record<string, any>, defaultErrorText = '') {

@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { File } from '@/components/client';
-import { Button } from '@/components/common';
+import { File } from '@/components/client/job-offers/attachments-info-column';
+import { Button } from '@/components/common/button';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { PencilWithLineIcon, TrashIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { fromDocumentTypeToTitle } from '../from-document-type-to-title';
 

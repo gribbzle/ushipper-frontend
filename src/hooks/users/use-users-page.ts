@@ -1,9 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
+import { getUserFiltersFromUrlParams } from '@/components/client/staff/staff-table/utils';
 import { UserRoleGroup } from '@/enums';
-import { getUserFiltersFromUrlParams } from '@components';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@hooks/use-effect-once';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fetchUserAction, fetchUserRolesAction, isCreateEditUserModalVisibleSelector, StaffFilters } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';

@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, ReactNode } from 'react';
 import has from 'has-values';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './order-item-info-column.scss';
 

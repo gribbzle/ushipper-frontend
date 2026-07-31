@@ -1,10 +1,11 @@
 import React from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { ViewOrderRouteButton } from '@/components/client/orders/view-order-route-button/view-order-route-button';
 import { getDestination } from '@/utils/driving';
-import { OrderRoute, ViewOrderRouteButton } from '@components';
 import { Load } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-route-details.scss';
 

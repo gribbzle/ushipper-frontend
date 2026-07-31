@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { CommodityPackingGroupEnum } from '@/enums';
 import { SelectField } from '@fields';
-import { getPackingGroupTranslate } from '@utils';
+import { getPackingGroupTranslate } from '@utils/translate/commodity/get-packing-group-translate';
 
 export const PackingGroupSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

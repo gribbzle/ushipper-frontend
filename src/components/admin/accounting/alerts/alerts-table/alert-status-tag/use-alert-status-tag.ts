@@ -5,7 +5,7 @@ import { IssueStatus } from '@enums';
 import { useIssue, useIssueHelpers } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ISSUE_STATUS_TAG_VIEW } from './constants';
 

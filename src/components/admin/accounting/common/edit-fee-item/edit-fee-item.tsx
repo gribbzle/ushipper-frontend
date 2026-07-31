@@ -4,7 +4,8 @@ import { Field } from 'react-final-form';
 import { IconButton } from '@/components/common';
 import { CurrencyPercentageField, FormControl, InputLabel } from '@fields';
 import { TrashIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { FeeCategorySelect } from './fee-category-select/fee-category-select';

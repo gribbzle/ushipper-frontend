@@ -8,9 +8,12 @@ import { useIsTransactionsPage, useQueryFilters, useTable } from '@hooks';
 import { Transaction } from '@store/admin';
 import { TransactionsFiltersParams, useGetTransactionsQuery } from '@store/api/transactions-api';
 import { TransactionsFiltersState } from '@types';
-import { classname, isCashIn, isCashOut, translateByNamespace, translateCompanyType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isCashIn, isCashOut } from '@utils/transaction/get-is-cash-in-cash-out';
+import { translateCompanyType } from '@utils/translations';
 
-import { BalanceTableProps } from './balance-table';
+import { BalanceTableProps } from './balance-table.types';
 import { MoveBalanceInfoBlock } from './move-balance-info-block';
 import { StatusColumn } from './status-column';
 

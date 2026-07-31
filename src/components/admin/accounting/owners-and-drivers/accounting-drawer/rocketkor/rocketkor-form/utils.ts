@@ -1,6 +1,7 @@
 import hasValue from 'has-values';
 
-import { getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { Address, MailingAddress, RocketkorFormValue } from '../rocketkor.types';
 

@@ -7,12 +7,17 @@ import { OrderItemHeader } from '@/components/client/orders/order-item/order-ite
 import { OrderItemProps } from '@/components/client/orders/order-item/types';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
 import { OrderItemVehiclesList } from '@/components/client/orders/order-item-vehicles-list';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OrderStatus } from '@/enums';
 import { getOrderPriceWithTerms } from '@/utils/order';
 import { calculateTotalPayment, getPaymentTermTranslate } from '@/utils/payment';
-import { Paper } from '@components';
 import { OrderPaymentInformation } from '@store/client';
-import { classname, diffForHumans, formatToCurrency, getOrderProducts, renderProjectSpecificComponent, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getOrderProducts } from '@utils/orders/get-order-products';
+import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { OrderItemCommoditiesList } from '../order-item-commodities-list';
 

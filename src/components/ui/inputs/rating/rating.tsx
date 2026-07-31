@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Rating as StarRating, RatingProps } from 'react-simple-star-rating';
 
 import { StarIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './rating.scss';
 

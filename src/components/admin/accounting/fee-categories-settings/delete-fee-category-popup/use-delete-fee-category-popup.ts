@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, deleteFeeCategoryPopupSelector } from '@store/admin';
 import { useDeleteFeeCategoryMutation } from '@store/api/fee-categories-api';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useFeeCategoriesTable } from '../fee-categories-table/use-fee-categories-table';
 

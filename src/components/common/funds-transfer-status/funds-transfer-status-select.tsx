@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FundsTransferStatus } from '@/enums';
 import { SelectField } from '@fields';
-import { translateFundsTransferStatus } from '@utils';
+import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 export const FundsTransferStatusSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

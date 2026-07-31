@@ -4,7 +4,7 @@ import { useForm } from 'react-final-form';
 
 import { AlertBlock } from '@/components/common';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AgreementsDetailsFormState } from '../agreements-details.types';
 import { CustomFeesFieldsArray } from '../custom-fees-fields-array';

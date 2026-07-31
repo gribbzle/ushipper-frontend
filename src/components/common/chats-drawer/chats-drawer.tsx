@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import { useIsPartnerCompany } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, isChatsDrawerOpenSelector, selectedChatIdSelector } from '@store/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { Drawer } from '../drawer';
 

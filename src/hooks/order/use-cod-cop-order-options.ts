@@ -1,11 +1,13 @@
 import { useCallback, useMemo } from 'react';
 
-import { DropdownOption } from '@/components/common';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { InstantTermPaymentType } from '@/enums';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { Load } from '@store/client';
-import { formatToCurrency, getOrderCheckStatuses, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { getOrderCheckStatuses } from '@utils/orders/order-payment-helpers';
 
 export type UseCodCopOrderOptionsProps = Pick<Load, 'publicId' | 'driver' | 'instantTermPaymentType'> & {
     driverPay?: number | null;

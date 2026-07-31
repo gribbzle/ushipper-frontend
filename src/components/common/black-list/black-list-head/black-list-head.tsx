@@ -1,10 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { Button } from '@components';
+import { Button } from '@/components/common/button/button';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { blackListActions } from '@store/common/black-list/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { BlackListItemsFilters } from '../black-list-items-filters';
 

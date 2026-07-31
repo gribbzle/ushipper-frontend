@@ -2,12 +2,13 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
+import { Button } from '@/components/common/button/button';
 import { OfferStatusesEnum } from '@/enums';
-import { Button } from '@components';
 import { useMeCarrier } from '@hooks';
 import { useAppDispatch } from '@store';
 import { OrderOffer, orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './offer-item-actions.scss';
 

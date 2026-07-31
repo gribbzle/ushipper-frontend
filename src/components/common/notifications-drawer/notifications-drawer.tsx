@@ -16,7 +16,9 @@ import {
     NotificationStatus,
 } from '@store/common/notifications';
 import { authorizedUserSelector } from '@store/global';
-import { classname, RequestStatus, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
 
 import { Drawer } from '../drawer';
 import { TabItemBase, Tabs } from '../tabs';

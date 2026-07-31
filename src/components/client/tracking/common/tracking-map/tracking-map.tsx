@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import type { MapRef } from 'react-map-gl/mapbox';
 import { Map } from 'react-map-gl/mapbox';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './tracking-map.scss';

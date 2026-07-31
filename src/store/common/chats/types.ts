@@ -1,8 +1,8 @@
 import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum, ChatTypesEnum, OfferStatusesEnum, OrderStatus, PaymentTerm } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { SystemMessagesTypesEnum } from '@/enums/system-messages-type';
-import { Avatar } from '@store/common';
-import { RequestStatus } from '@utils';
+import { Avatar } from '@store/common/staff/avatar-types';
+import { RequestStatus } from '@utils/redux';
 
 export type OrderDriverAddedSystemMessagePayload = {
     driver: {

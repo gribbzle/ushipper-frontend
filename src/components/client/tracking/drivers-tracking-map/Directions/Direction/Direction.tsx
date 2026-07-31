@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { GeoJSON } from 'geojson';
 import { Marker } from 'react-map-gl/mapbox';
 
-import { OrderMarker } from '@components';
+import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
 import { useOrderTracking, useTracking } from '@hooks';
 import { Coordinate } from '@types';
 

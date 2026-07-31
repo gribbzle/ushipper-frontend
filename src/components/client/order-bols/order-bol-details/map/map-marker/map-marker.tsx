@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import React from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './map-marker.scss';
 

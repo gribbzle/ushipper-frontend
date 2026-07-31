@@ -4,7 +4,7 @@ import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@/components/co
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 type AddDriverToCompanyButtonProps = {
     disabled: boolean;

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { RequestStatus } from '@utils';
+import { RequestStatus } from '@utils/redux';
 
 import { DeleteChatMessagePopupPropsState, DriverChatSelectorPopupPropsState, MessagesSliceState, UpdateChatMessagePopupPropsState } from './types';
 

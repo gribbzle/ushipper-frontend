@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { IssueType } from '@enums';
 import { SelectField } from '@fields';
-import { translateIssueType } from '@utils';
+import { translateIssueType } from '@utils/translate/issue/translate-issue-type';
 
 export const AlertTypeSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

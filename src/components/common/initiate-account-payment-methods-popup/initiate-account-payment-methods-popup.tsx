@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { Button, Divider, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppSelector } from '@store';
 import { isCreateAccountPaymentMethodsLoadingSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { InitiateAccountPaymentMethodsForm } from './initiate-account-payment-methods-form';
 import { InitiatePaymentMethodInfo } from './initiate-payment-method-info';

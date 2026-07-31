@@ -2,13 +2,19 @@ import React, { useState } from 'react';
 import { Field, Form } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
+import { WorkingTimeSelectionButtonGroup } from '@/components/common/working-time-selection-button-group/working-time-selection-button-group';
 import { UserRoleType } from '@/enums';
+import { DatePicker } from '@/fields/datepicker/datepicker';
+import { FormControl } from '@/fields/form-control/form-control';
+import { InputLabel } from '@/fields/input-label/input-label';
+import { SelectField } from '@/fields/select-field/select-field';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { WorkingTimeSelectionButtonGroup } from '@components';
-import { DatePicker, FormControl, InputLabel, SelectField, TextField } from '@fields';
-import { useIsDriverOwnerPage, useMeDispatcher, useMeDriver } from '@hooks';
+import { TextField } from '@/fields/text-field/text-field';
+import { useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
+import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { sendJobOfferDrawerSelector } from '@store/client/job-offers/selectors';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { SendJobOfferAttachmentField } from './send-job-offer-attachment-field';

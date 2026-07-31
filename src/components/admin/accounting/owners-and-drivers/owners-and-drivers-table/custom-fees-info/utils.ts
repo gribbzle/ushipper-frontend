@@ -1,5 +1,6 @@
 import { Fee } from '@types';
-import { isRecurringFeeMonthIntervalType, isRecurringFeeWeekIntervalType, summarizeFees } from '@utils';
+import { isRecurringFeeMonthIntervalType, isRecurringFeeWeekIntervalType } from '@utils/transaction/get-is-recurring-fee-interval-type';
+import { summarizeFees } from '@utils/transaction/summarize-fees';
 
 export const formatRecurringFees = (fees: Fee[]) => {
     const weeklyFees = fees.filter(({ recurringWeekDay, intervalType }) => recurringWeekDay || isRecurringFeeWeekIntervalType(intervalType));

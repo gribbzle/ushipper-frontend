@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { RadioButtonGroup, RadioOption } from '@components';
-import { classname } from '@utils';
+import { RadioButtonGroup, RadioOption } from '@/components/common/radio-button-group/radio-button-group';
+import { classname } from '@utils/classname';
 
 import './radio-group-input.scss';
 

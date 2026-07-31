@@ -2,26 +2,25 @@ import React from 'react';
 import { toCamelCase } from 'js-convert-case';
 import { Field, Form } from 'react-final-form';
 
-import { Accordion, Button, Divider, Loader, RolesSelect } from '@/components/common';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
+import { Loader } from '@/components/common/loader/loader';
+import { RolesSelect } from '@/components/common/selects/roles-select/roles-select';
 import { UserRoleType } from '@/enums';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { SelectOption } from '@/shared';
 import { FormControl, InputLabel, SelectField, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
+import { CreateUpdateRoleFormState } from './create-update-role-block.types';
 import { AdminPermissionGroupsMap, AdminPermissionsMap, ClientPermissionGroupsMap, ClientPermissionMap } from './permissions-maps';
 import { SelectAllPermissionsSwitch } from './select-all-permissions-switch';
 import { excludedPermissions, useCreateUpdateRoleBlock } from './use-create-update-role-block';
 import { filterPermissions } from './utils';
 
 import './create-update-role-block.scss';
-
-export type CreateUpdateRoleFormState = {
-    name: string;
-    roleType: UserRoleType | null;
-    subordinateRoleIds?: SelectOption[];
-};
 
 const t = translateByNamespace('common:create-update-role-block');
 const cn = classname('create-update-role-block');

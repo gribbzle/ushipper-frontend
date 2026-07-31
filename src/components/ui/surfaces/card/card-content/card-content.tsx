@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './card-content.scss';
 

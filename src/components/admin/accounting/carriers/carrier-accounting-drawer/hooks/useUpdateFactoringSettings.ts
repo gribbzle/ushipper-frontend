@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import { ExternalServiceType } from '@enums';
 import { usePublicId } from '@hooks';
 import { useCreateCompanyExternalServiceSettingsMutation } from '@store/api/company-external-service-settings';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CarrierAccountingDrawerFormValue } from '../carrier-accounting-drawer.types';
 

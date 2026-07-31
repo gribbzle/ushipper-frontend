@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, deleteAccountPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';
 import { useDeleteAccountMutation } from '@store/api/accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:delete-account-popup');
 const tActions = translateByNamespace('common:file-uploader');

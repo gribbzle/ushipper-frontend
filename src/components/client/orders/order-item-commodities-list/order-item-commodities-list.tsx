@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CommodityDetails } from '@/components/common';
 import { OrderCommodity } from '@store/api/orders-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './order-item-commodities-list.scss';
 

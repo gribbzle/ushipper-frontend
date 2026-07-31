@@ -1,7 +1,9 @@
 import React from 'react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-import { classname, formatToCurrency, getShortDate } from '@utils';
+import { classname } from '@utils/classname';
+import { getShortDate } from '@utils/dates';
+import { formatToCurrency } from '@utils/numbers';
 
 import './stacked-area-chart.scss';
 

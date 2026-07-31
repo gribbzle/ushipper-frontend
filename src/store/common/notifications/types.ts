@@ -1,8 +1,8 @@
 import { OrdersCountEvent } from '@/components/common/websocket-watcher/types';
 import { OrderSourcesEnum } from '@/enums';
-import { RequestStatus } from '@utils';
+import { RequestStatus } from '@utils/redux';
 
-import { Avatar } from '../staff';
+import { Avatar } from '../staff/avatar-types';
 
 export type NotificationStatus = 'read' | 'unread' | 'pinned' | '';
 

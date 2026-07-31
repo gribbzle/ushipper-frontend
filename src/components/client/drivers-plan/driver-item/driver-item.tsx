@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 
-import { Accordion } from '@/components';
-import { Paper } from '@/components/common';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { Paper } from '@/components/common/paper/paper';
 import { User } from '@store/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { DriverItemHeader } from './driver-item-header/driver-item-header';
 import { DriverOrdersAccordion } from './driver-orders-accordion';

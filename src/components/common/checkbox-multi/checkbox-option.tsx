@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 type CheckboxOptionProps = {
     name: string;

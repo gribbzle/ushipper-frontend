@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { debounce } from 'debounce';
 import { Field, FieldRenderProps } from 'react-final-form';
 
-import { AutocompleteSuggestion } from '@/components';
+import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
 import { AutocompleteStringInput } from '@fields';
 import { useGetCarModelsByNameQuery } from '@store/api/car-models-api';
 

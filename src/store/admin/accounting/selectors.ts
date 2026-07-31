@@ -1,6 +1,11 @@
 import { BalanceType } from '@/enums';
-import { AppState } from '@store';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
+
+type AppState = {
+    admin: {
+        accounting: any;
+    };
+};
 
 import {
     AccountingDrawerPropsState,

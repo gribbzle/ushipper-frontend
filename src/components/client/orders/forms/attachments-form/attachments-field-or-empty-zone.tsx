@@ -1,9 +1,10 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { OrderItemInfoColumn, ZoneButton } from '@components';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { FileUploaderField, InputLabel } from '@fields';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 import { requiredFile } from '@validators';
 
 import { FieldOrEmptyZoneProps } from './attachments-form.types';

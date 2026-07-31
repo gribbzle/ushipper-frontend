@@ -4,7 +4,9 @@ import Head from 'next/head';
 import { CatalogList, CatalogPageHeader, CatalogPageLayout, DispatcherItem, getMainLayout } from '@components';
 import { useDriversCatalogPage } from '@hooks';
 import { DispatcherCatalogInfo } from '@store/client';
-import { classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const cn = classname('catalog-page');
 const t = translateByNamespace('client:drivers-catalog');

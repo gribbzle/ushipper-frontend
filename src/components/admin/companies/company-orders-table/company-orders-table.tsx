@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Paginate, Table } from '@/components/common';
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { useCompanyOrdersTable } from './use-company-orders-table';
 

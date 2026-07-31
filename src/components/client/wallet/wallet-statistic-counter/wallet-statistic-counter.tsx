@@ -3,7 +3,8 @@ import React, { useMemo } from 'react';
 import { StatisticCounter } from '@/components/common/statistic-counter';
 import { useAppSelector } from '@store';
 import { authorizedUserDefaultBalanceSelector } from '@store/global';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './wallet-statistic-counter.scss';
 

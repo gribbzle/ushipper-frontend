@@ -3,7 +3,8 @@ import { formatInTimeZone } from 'date-fns-tz';
 
 import { useAppSelector } from '@store';
 import { orderCreateAtSelector, orderCreatorSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

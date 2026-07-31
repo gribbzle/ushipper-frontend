@@ -4,7 +4,8 @@ import { Field, FieldRenderProps, Form } from 'react-final-form';
 import { Divider } from '@/components/common';
 import { DatePicker, FieldPrefix, FormControl, InputLabel, NativeSwitch, NativeSwitchProps, PhoneNumberInput, TextField } from '@fields';
 import { useFormSubmit } from '@hooks';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, linkValidator, required, taxIdValidator, validateDateBeforeToday } from '@validators';
 
 import { AddressForm, CountriesSelect } from '../../common';

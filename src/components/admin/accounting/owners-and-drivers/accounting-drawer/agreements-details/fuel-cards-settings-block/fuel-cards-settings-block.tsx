@@ -4,7 +4,8 @@ import { useForm } from 'react-final-form';
 import { FuelCardsRule } from '@/enums';
 import { CurrencyInput, FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
 import { useGetAdminConfigQuery } from '@store/api/admin-configuration';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { requiredCurrency } from '@validators';
 
 import { AgreementsDetailsFormState } from '../agreements-details.types';

@@ -1,9 +1,12 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button, Drawer, ReviewReplyForm } from '@components';
+import { ReviewReplyForm } from '@/components/client/company/review-reply-form/review-reply-form';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { useAppDispatch, useAppSelector } from '@store';
 import { reviewActions, reviewReplyDrawerPropsSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './review-reply-drawer.scss';
 

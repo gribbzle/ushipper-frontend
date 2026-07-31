@@ -3,9 +3,10 @@ import { useMemo } from 'react';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';
-import { renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
-import { useHandleEmptyRocketkorClick } from '../../hooks';
+import { useHandleEmptyRocketkorClick } from '../../hooks/use-handle-empty-rocketkor-click';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:account-balance');
 const tDefault = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer');

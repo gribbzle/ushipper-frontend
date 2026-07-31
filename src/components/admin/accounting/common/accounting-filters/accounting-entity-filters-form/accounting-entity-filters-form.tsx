@@ -4,8 +4,9 @@ import { Field, Form } from 'react-final-form';
 import { AsyncMultiCompanySelect, CompanyStatusesSelect, CompanyTypesSelect } from '@/components/common';
 import { parseField } from '@/utils/parse-field';
 import { FormControl, InputLabel, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
-import { FormValuesSpy } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountStatusesSelect } from '../account-statuses-select';
 

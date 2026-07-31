@@ -2,7 +2,8 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { CurrencyInput, FormControl, InputLabel } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { UserExternalWalletsSelect } from '../user-external-wallets-select';

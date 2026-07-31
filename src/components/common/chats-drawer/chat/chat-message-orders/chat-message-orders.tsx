@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
 
-import { Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { MessageOrder } from '@store/common/chats/types';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useChatMessageOrders } from './use-chat-message-orders';
 

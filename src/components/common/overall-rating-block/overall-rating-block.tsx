@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react';
 import { format } from 'date-fns';
 
-import { OrderItemInfoColumn } from '@components';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { Review } from '@store/client';
 import { Rating } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './overall-rating-block.scss';
 

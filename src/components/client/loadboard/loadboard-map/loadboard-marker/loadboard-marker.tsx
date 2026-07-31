@@ -2,7 +2,7 @@ import React from 'react';
 
 import { InspectionSubtype, RouteMarkerType } from '@/enums';
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './loadboard-marker.scss';
 

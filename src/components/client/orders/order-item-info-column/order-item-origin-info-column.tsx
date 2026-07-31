@@ -5,7 +5,8 @@ import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-
 import { NonNullableFields } from '@/shared';
 import { useMeShipper } from '@hooks';
 import { Order } from '@store/api/orders-api';
-import { getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 const translateOrderItem = translateByNamespace('client:orders-page:order-item');
 const dateTypesT = translateByNamespace('common:date-types');

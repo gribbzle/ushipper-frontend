@@ -4,7 +4,9 @@ import { useQueryFilters } from '@hooks';
 import { useAppSelector } from '@store';
 import { TrackingOrdersByStatusData } from '@store/api/tracking-api';
 import { isShipperOrdersTrackingLoadingSelector, ShipperTrackingFiltersFormState } from '@store/client';
-import { classname, getTrackingOrderStatusTranslate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import { ShipperOrdersTab } from '../shipper-tracking-orders-tab';
 

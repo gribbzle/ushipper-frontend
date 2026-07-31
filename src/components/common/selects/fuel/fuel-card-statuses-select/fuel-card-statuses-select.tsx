@@ -3,7 +3,8 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FuelCardStatus } from '@/enums';
 import { SelectField } from '@fields';
-import { getFuelCardStatusTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getFuelCardStatusTranslate } from '@utils/translate/fuel/get-fuel-card-status-translate';
 
 const t = translateByNamespace('common:field');
 

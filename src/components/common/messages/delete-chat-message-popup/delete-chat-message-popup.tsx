@@ -1,10 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { deleteChatMessagePopupPropsSelector, deleteMessageAction, deleteMessageRequestStatusSelector, messagesActions } from '@store/client';
-import { renderTextWithBreakLines, RequestStatus, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestStatus } from '@utils/redux';
+import { renderTextWithBreakLines } from '@utils/render';
 
 const t = translateByNamespace('common:messages-page:delete-chat-message-popup');
 const tNotification = translateByNamespace('common:chats');

@@ -2,7 +2,10 @@ import React from 'react';
 
 import { useOrder, useOrderFees, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { DotLeader } from '@ui';
-import { classname, formatToCurrency, summarizeFees, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { summarizeFees } from '@utils/transaction/summarize-fees';
 
 import { DriverChargedFeeAlert } from '../../driver-charged-fee-alert';
 import { DriverPayDotLeader } from '../../driver-pay-dot-leader';

@@ -1,11 +1,15 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { AlertBlock, Link } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Link } from '@/components/common/link/link';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useAppSelector } from '@store';
 import { usdotVerifyFormSubmitErrorCodeSelector, usdotVerifyFormSubmitErrorDataSelector } from '@store/client';
-import { classname, renderTextWithBreakLines, RequestErrorCode, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { RequestErrorCode } from '@utils/redux';
+import { renderTextWithBreakLines } from '@utils/render';
 import { composeValidators, required, usDotValidator } from '@validators';
 
 const t = (key: string) => translateByNamespace('client:sign-up-page')(`form.usdot-verification-step.${key}`);

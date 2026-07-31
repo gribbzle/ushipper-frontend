@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 
-import { useChatsPermission } from '@hooks';
+import { useChatsPermission } from '@/hooks/chat/use-chats-permission';
 import { BalanceResource } from '@store/admin';
 import { Avatar as AvatarType, DriverParent } from '@store/common';
-import { classname, getBalanceInfo, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getBalanceInfo } from '@utils/orders/get-balance-info';
 
 import { Avatar } from '../avatar';
 import { OpenSupportChatButton } from '../chats';

@@ -1,15 +1,17 @@
 import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { TransactionStatusesEnum, TransactionSystemEnum } from '@/enums';
-import { DropdownOption } from '@components';
 import { useHandleTransactionError } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { transactionsApi, useUpdateTransactionMutation } from '@store/api/transactions-api';
-import { getTransactionStatusOptionTranslate, getTransactionStatusTranslate, isCashOut, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { isCashOut } from '@utils/transaction/get-is-cash-in-cash-out';
+import { getTransactionStatusOptionTranslate, getTransactionStatusTranslate } from '@utils/translate/get-transaction-status-translate';
 
-import { TransactionStatusTagProps } from './transaction-status-tag';
+import { TransactionStatusTagProps } from './transaction-status-tag-types';
 
 const t = translateByNamespace('admin:accounting:transactions-page');
 

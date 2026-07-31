@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { convertCityToAbbreviation } from '@utils';
+import { convertCityToAbbreviation } from '@utils/converter';
 
 import { CompanyTypeAddressBlockProps } from './company-type-address-block.types';
 

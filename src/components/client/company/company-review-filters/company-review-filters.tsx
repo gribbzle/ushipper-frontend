@@ -2,9 +2,13 @@ import React, { memo, useCallback, useMemo, useRef } from 'react';
 import cleanDeep from 'clean-deep';
 import { Field, Form } from 'react-final-form';
 
+import { ReviewFiltersTabs } from '@/components/client/company/review-filters-tabs/review-filters-tabs';
+import { SearchReviewSelect } from '@/components/client/company/search-review-select/search-review-select';
+import { TabItemBase } from '@/components/common/tabs/tabs';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { ReviewsFilterEnum, ReviewTabsEnum } from '@/enums';
-import { Paper, ReviewFiltersTabs, SearchReviewSelect, TabItemBase } from '@components';
-import { classname, FormValuesSpy } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
 
 import './company-review-filters.scss';
 

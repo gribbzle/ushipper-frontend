@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { useGetAccountQuery } from '@store/api/accounts-api';
 import { accountsActions, accountsUsersSelector } from '@store/client/accounts';
 import { authorizedUserAccountPublicIdSelector } from '@store/global';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { AccountChangeForm } from '../account-change-form';
 

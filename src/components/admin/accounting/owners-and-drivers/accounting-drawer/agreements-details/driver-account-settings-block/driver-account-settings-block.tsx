@@ -4,7 +4,8 @@ import { useForm } from 'react-final-form';
 import { Divider } from '@/components/common';
 import { ContractorTypesEnum } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, PrefixedFieldArray, SwitchInput } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required, requiredArray } from '@validators';
 
 import { AgreementsDetailsFormState } from '../agreements-details.types';

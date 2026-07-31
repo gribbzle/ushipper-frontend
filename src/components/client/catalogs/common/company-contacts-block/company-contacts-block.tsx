@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ClockIcon, GeoLocationIcon, PhoneIcon } from '@icons';
 import { CarriersCatalogInfo } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { CatalogInfoWrapper } from '../catalog-info-wrapper';
 import { useCompanyTypeAddressBlock } from '../company-type-address-block/use-company-type-address-block';

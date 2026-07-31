@@ -6,7 +6,7 @@ import { BalanceType } from '@/enums';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AccountingTab } from './accounting-tab-enum';
 

@@ -4,7 +4,8 @@ import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { LatestLocation } from '@store/client';
-import { classname, diffForHumans } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
 
 import './latest-location-block.scss';
 

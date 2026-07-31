@@ -4,7 +4,9 @@ import { Field, Form } from 'react-final-form';
 import { Button, FeeCategoryTypesSelect, Paper } from '@/components/common';
 import { FeeCategoryType } from '@/enums';
 import { CurrencyPercentageField, FormControl, InputLabel, TextField } from '@fields';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { WalletsSelect } from '../../common';

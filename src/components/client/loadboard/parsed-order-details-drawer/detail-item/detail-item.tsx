@@ -1,7 +1,8 @@
 import React, { FC, ReactNode, SVGProps } from 'react';
 import has from 'has-values';
 
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './detail-item.scss';
 

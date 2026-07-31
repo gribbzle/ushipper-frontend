@@ -1,10 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { Button, PageHeader } from '@components';
+import { Button } from '@/components/common/button/button';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { useCompaniesActionsPermission, useOpenCreateCompanyDrawer } from '@hooks';
 import { PlusCircleIcon } from '@icons';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('admin:accounting');
 const tBtn = translateByNamespace('admin:companies-page');

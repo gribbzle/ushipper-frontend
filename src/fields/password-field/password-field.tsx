@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { Field } from 'react-final-form';
 
-import { TextField } from '@fields';
+import { TextField } from '@/fields/text-field/text-field';
 import { EyeClosedIcon, EyeIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './password-field.scss';
 

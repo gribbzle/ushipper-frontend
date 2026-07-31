@@ -1,12 +1,14 @@
 import React, { MouseEvent, useCallback } from 'react';
 
-import { DriverOrder } from '@/components/client';
-import { Button } from '@/components/common';
+import { DriverOrder } from '@/components/client/tracking/driver-order/driver-order';
+import { Button } from '@/components/common/button/button';
 import { UserRoleGroup } from '@enums';
 import { useDriverTrackingMap, useTracking, useUserRoleGroup, useUserTracking } from '@hooks';
 import { LineBrokenIcon } from '@icons';
 import { OrderTrackingProvider } from '@providers';
-import { classname, formatMetersToMiles, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatMetersToMiles } from '@utils/numbers';
 
 import './driver-orders.scss';
 

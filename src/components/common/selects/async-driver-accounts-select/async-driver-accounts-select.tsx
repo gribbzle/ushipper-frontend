@@ -5,7 +5,7 @@ import { UserRoleType } from '@/enums';
 import { AsyncSelectField } from '@fields';
 import { useAsyncSelect } from '@hooks';
 import { useLazyGetAccountQuery, useLazyGetAccountsQuery } from '@store/api/accounts-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:field');
 

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { EmptyLayout, Table } from '@/components/common';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { useOwnersAndDriversTable } from './use-owners-and-drivers-table';
 

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { isNumber } from '@/shared';
 import { FuelTransactionLocation, FuelTransactionRawData, Transaction } from '@store/admin';
-import { getGallonsTranslate } from '@utils';
+import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';
 
 export type FuelTransactionInfoProps = Pick<Transaction, 'metadata'>;
 

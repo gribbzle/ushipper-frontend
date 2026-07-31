@@ -1,6 +1,6 @@
 import React, { FC, SVGProps } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './timeline-icon.scss';
 

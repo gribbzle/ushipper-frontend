@@ -4,7 +4,10 @@ import { useForm } from 'react-final-form';
 
 import { AlertBlock } from '@/components/common';
 import { CurrencyInput, FormControl, InputLabel, PrefixedField } from '@fields';
-import { classname, formatToCurrency, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { renderTextWithBreakLines } from '@utils/render';
 import { requiredCurrency } from '@validators';
 
 import { AgreementsDetailsFormState } from '../../agreements-details.types';

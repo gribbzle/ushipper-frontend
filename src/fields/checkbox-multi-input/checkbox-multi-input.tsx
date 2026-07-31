@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
+import { CheckboxMultiSelect } from '@/components/common/checkbox-multi/checkbox-multi';
 import { SelectOption } from '@/shared';
-import { CheckboxMultiSelect } from '@components';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { FormHelperText } from '../form-helper-text';
 

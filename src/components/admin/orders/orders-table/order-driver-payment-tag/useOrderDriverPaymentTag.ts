@@ -11,7 +11,9 @@ import {
 } from '@/hooks/order';
 import { getFormattedToCurrencyTotalPayment } from '@/utils/payment';
 import { InstantTermPaymentType } from '@enums';
-import { diffForHumans, translateActionRequired, translateByNamespace, translateDriverPaymentTagLabel } from '@utils';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { translateActionRequired, translateDriverPaymentTagLabel } from '@utils/translate/order/instant-term-payment-type-translations';
 
 import { INSTANT_TERM_PAYMENT_TYPE_TAG_VARIANT } from './constants';
 

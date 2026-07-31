@@ -5,7 +5,7 @@ import { useAsyncSelect } from '@hooks';
 import { FinancialBalanceData } from '@store/admin';
 import { useLazyGetBalanceQuery, useLazyGetBalancesQuery } from '@store/api/balances-api';
 
-import { UserExternalWalletsSelectProps } from './user-external-wallets-select';
+import { UserExternalWalletsSelectProps } from './user-external-wallets-select.types';
 
 const DEFAULT_PARAMS = {
     orderName: 'created_at',

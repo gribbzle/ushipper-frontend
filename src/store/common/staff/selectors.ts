@@ -1,4 +1,8 @@
-import { AppState } from '@store';
+type AppState = {
+    common: {
+        staff: any;
+    };
+};
 
 const staffPageSelector = (state: AppState) => state.common.staff;
 

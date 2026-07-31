@@ -3,14 +3,21 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { Divider, FieldCurrencyPrepend, VehicleMakerInput, VehicleModelInput, VehicleTypesSelect, VehicleVinInput } from '@components';
+import { Divider } from '@/components/common/divider/divider';
+import { FieldCurrencyPrepend } from '@/components/common/field-currency-prepend/field-currency-prepend';
+import { VehicleMakerInput } from '@/components/common/vehicle-maker-input/vehicle-maker-input';
+import { VehicleModelInput } from '@/components/common/vehicle-model-input/vehicle-model-input';
+import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
+import { VehicleVinInput } from '@/components/common/vehicle-vin-input/vehicle-vin-input';
 import { VehicleType } from '@enums';
 import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useCreateOrderVehicleMutation, useGetOrderVehiclesQuery, useUpdateOrderVehicleMutation } from '@store/api/order-vehicle-api';
 import { ordersApi } from '@store/api/orders-api';
 import { orderPublicIdSelector, VehicleFormState } from '@store/common';
-import { classname, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 import { required } from '@validators';
 
 import './order-vehicle-form.scss';

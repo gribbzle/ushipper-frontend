@@ -1,13 +1,17 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { IconButton, OrderInstructionsDrawer, TextAccordion, ZoneButton } from '@/components';
+import { OrderInstructionsDrawer } from '@/components/client/orders/drawers/order-driver-instructions-drawer/order-instructions-drawer';
+import { IconButton } from '@/components/common/icon-button/icon-button';
+import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { UserRoleGroup } from '@/enums';
 import { useCanManageOrder } from '@/hooks/order';
 import { useUserRoleGroup } from '@hooks';
 import { PencilIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, ordersActions } from '@store/common';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-driver-instructions-paper.scss';
 

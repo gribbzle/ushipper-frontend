@@ -2,9 +2,11 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
-import { CommodityDetails } from '@/components/common';
+import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
 import { OrderCommodity } from '@store/api/orders-api';
-import { calculateTotalQuantitiesOfCommodities, calculateTotalWeightOfCommodities, classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { calculateTotalQuantitiesOfCommodities, calculateTotalWeightOfCommodities } from '@utils/commodity';
+import { translateByNamespace } from '@utils/i18n';
 
 import './commodities-details-block.scss';
 

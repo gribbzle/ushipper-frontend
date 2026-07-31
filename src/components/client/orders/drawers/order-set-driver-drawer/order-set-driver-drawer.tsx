@@ -2,8 +2,11 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
+import { OrderDriverAssignItem } from '@/components/client/orders/order-driver-assign-item/order-driver-assign-item';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { Link } from '@/components/common/link/link';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { Button, Drawer, Link, OrderDriverAssignItem } from '@components';
 import { TextField } from '@fields';
 import { ExternalLinkIcon, UserMinusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
@@ -12,7 +15,9 @@ import { Driver, GetDriversParams, useGetDriversQuery } from '@store/api/users-a
 import { orderFormSubmitAction, ordersActions, orderSetDriverDrawerPropsSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';
 import { List } from '@ui';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-set-driver-drawer.scss';
 

@@ -1,13 +1,17 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button, OverallRatingBlock, Paper, TextAccordion } from '@components';
+import { Button } from '@/components/common/button/button';
+import { OverallRatingBlock } from '@/components/common/overall-rating-block/overall-rating-block';
+import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { MessageTextLeftIcon, PencilWithLineIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Review } from '@store/client';
 import { reviewActions } from '@store/client';
 import { authorizedUserCompanyPublicIdSelector, authorizedUserNameSelector } from '@store/global';
 import { RatingOneStarIcon } from '@ui';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderItemInfoColumn } from '../../orders/order-item-info-column';
 

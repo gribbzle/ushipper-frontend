@@ -15,8 +15,8 @@ import {
     sendMessage,
     updateMessage,
 } from '@api';
-import { AppState } from '@store';
-import { cleanPhoneNumber, RequestStatus } from '@utils';
+import { cleanPhoneNumber } from '@utils/phone';
+import { RequestStatus } from '@utils/redux';
 
 import { translateByNamespace } from '../../../utils/i18n';
 
@@ -43,7 +43,7 @@ export const getChatsAction = createAsyncThunk<ChatShortInfo[], { searchText?: s
             dispatch(chatsActions.setGetChatsRequestStatus(RequestStatus.PROCESSING));
             const { searchText, isNeedReset, type } = params;
 
-            const state = getState() as AppState;
+            const state = getState() as any;
             const nextCursor = isNeedReset ? null : chatsNextCursorSelector(state);
             const result = await fetchChats(searchText || '', nextCursor, type);
 
@@ -86,7 +86,7 @@ export const getChatMessagesAction = createAsyncThunk<void, { chatId: string; is
     'chatsDrawer/getChatMessages',
     async ({ chatId, isRead }, { rejectWithValue, dispatch, getState }) => {
         try {
-            const state = getState() as AppState;
+            const state = getState() as any;
             const getRequestStatus = (isRead ? chatMessagesRequestSelector : chatUnreadMessagesRequestSelector)(chatId)(state);
 
             if (getRequestStatus?.status === RequestStatus.PROCESSING) {
@@ -138,7 +138,7 @@ export const sendMessageAction = createAsyncThunk<void, { chatId: string; conten
     async ({ chatId, content, files, type }, { rejectWithValue, dispatch, getState }) => {
         try {
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.PROCESSING }));
-            const state = getState() as AppState;
+            const state = getState() as any;
 
             const result = await sendMessage(chatId, content, files, type);
 
@@ -185,7 +185,7 @@ export const updateMessageAction = createAsyncThunk<void, { chatId: string; cont
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.PROCESSING }));
 
             const result = await updateMessage({ chatId, messagePublicId, content });
-            const state = getState() as AppState;
+            const state = getState() as any;
             const drawerChats = state.common.chats.drawerChats;
 
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.SUCCESS }));
@@ -291,7 +291,7 @@ export const openChatByChatId = createAsyncThunk<
         needToAppend: boolean;
     }
 >('chatsDrawer/openChatByChatId', async (meta, { dispatch, getState }) => {
-    const state = getState() as AppState;
+    const state = getState() as any;
     const chatId = meta.chatId;
 
     if (meta.needToAppend) {
@@ -316,7 +316,7 @@ export const openChatByChatId = createAsyncThunk<
 export const openChatByOrderOfferIdAction = createAsyncThunk<string | null, string>(
     'chatsDrawer/getChatIdByOrderOfferId',
     async (offerPublicId, { dispatch, getState }) => {
-        const state = getState() as AppState;
+        const state = getState() as any;
         const drawerChats = drawerChatsSelector(state);
 
         const fetchChatIdResponse = await dispatch(getChatIdByOrderOfferIdAction(offerPublicId));
@@ -340,7 +340,7 @@ export const openChatByOrderOfferIdAction = createAsyncThunk<string | null, stri
 export const openChatByJobOfferIdAction = createAsyncThunk<string | null, string>(
     'chatsDrawer/getChatIdByJobOfferId',
     async (jobOfferPublicId, { dispatch, getState }) => {
-        const state = getState() as AppState;
+        const state = getState() as any;
         const drawerChats = drawerChatsSelector(state);
 
         const fetchChatIdResponse = await dispatch(getChatIdByJobOfferIdAction(jobOfferPublicId));
@@ -365,7 +365,7 @@ export const openChatByOrderIdAction = createAsyncThunk<string | null, string>(
     'chatsDrawer/getChatIdByOrderId',
     async (orderPublicId, { rejectWithValue, dispatch, getState }) => {
         try {
-            const state = getState() as AppState;
+            const state = getState() as any;
             const drawerChats = drawerChatsSelector(state);
             let newSelectedChatId;
 

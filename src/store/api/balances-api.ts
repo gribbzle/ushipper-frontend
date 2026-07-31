@@ -1,5 +1,5 @@
 import { CreateFinancialAccountValues, FinancialBalanceData, FinancialBalanceFilters, UpdateFinancialBalanceValues } from '@store/admin';
-import { CursorPagination, PaginatedResponse } from '@utils';
+import { CursorPagination, PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
 

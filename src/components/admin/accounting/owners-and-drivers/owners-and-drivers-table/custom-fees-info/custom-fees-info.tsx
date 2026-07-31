@@ -1,19 +1,18 @@
 import React, { useMemo } from 'react';
 
-import { Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { PROJECT_KEY_NAME } from '@constants';
 import { CompanyType, FeeCategoryTermType } from '@enums';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee } from '@types';
-import {
-    classname,
-    formatFeeValueType,
-    isRecurringFeeMonthIntervalType,
-    isRecurringFeeWeekIntervalType,
-    isUshipper,
-    summarizeFees,
-    translateByNamespace,
-} from '@utils';
+import { classname } from '@utils/classname';
+import { formatFeeValueType } from '@utils/fees';
+import { translateByNamespace } from '@utils/i18n';
+import { isUshipper } from '@utils/project-config';
+import { isRecurringFeeMonthIntervalType, isRecurringFeeWeekIntervalType } from '@utils/transaction/get-is-recurring-fee-interval-type';
+import { summarizeFees } from '@utils/transaction/summarize-fees';
 
 import { useDriversCompaniesFees } from '../../hooks';
 

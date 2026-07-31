@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EmptyLayout } from '@/components/common';
 import { BalanceType } from '@/enums';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { BalanceTable, useBalanceTable } from '../../common';
 

@@ -1,10 +1,7 @@
-import { DateTypes, OffersListTabsEnum, OfferSortingName, OfferStatusesEnum, OrderSortingDirection, PaymentTerm } from '@/enums';
-import { Creator } from '@/shared';
-import { Company } from '@store/admin';
+import { OffersListTabsEnum, OfferSortingName, OfferStatusesEnum, OrderSortingDirection } from '@/enums';
 import { apiSlice } from '@store/api/api-slice';
-import { OrderRequest } from '@store/api/order-requests-api';
-import { Load } from '@store/client';
-import { PaginatedResponse } from '@utils';
+import { OrderOffer } from '@store/common/orders/types';
+import { PaginatedResponse } from '@utils/redux';
 
 type CreateOfferParams = {
     orderId: string;
@@ -18,30 +15,6 @@ type CreateOfferParams = {
     pickupAt: string;
     deliveryAt: string;
     contactName: string;
-};
-
-export type OrderOffer = {
-    acceptedAt?: string;
-    declineComment?: string | null;
-    declineReasons?: string[];
-    pickupDateType: DateTypes;
-    declinedAt?: string;
-    deliveryDateType: DateTypes;
-    orderRequest: OrderRequest | null;
-    creator: Creator;
-    deliveryAt: string;
-    createdAt: string;
-    order: Load;
-    paymentTerms: PaymentTerm;
-    delayedTerms: PaymentTerm | null;
-    paymentPrice: number;
-    delayedPayment: number | null;
-    brokerFee: number | null;
-    pickupAt: string;
-    publicId: string;
-    status: OfferStatusesEnum;
-    carrierCompany: Company;
-    shipperCompany: Company;
 };
 
 export type OffersFiltersParams = {

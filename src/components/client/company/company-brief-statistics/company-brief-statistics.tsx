@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
-import { StatisticCard } from '@/components/common';
+import { StatisticCard } from '@/components/common/statistic-card/statistic-card';
 import { Company } from '@store/admin';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './company-brief-statistics.scss';
 

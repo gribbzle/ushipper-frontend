@@ -1,9 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { Button, Drawer } from '@components';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { sendJobOfferDrawerSelector } from '@store/client/job-offers/selectors';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { SendJobOfferForm } from './send-job-offer-form/send-job-offer-form';
 import { useSendJobOfferDrawer } from './send-job-offer-form/use-send-job-offer-drawer';

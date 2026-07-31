@@ -2,7 +2,8 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Loader } from '@/components/common/loader';
 import { useGetOrdersStatisticsCountersQuery } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './participant-orders-info.scss';
 

@@ -2,10 +2,13 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { FieldRenderProps } from 'react-final-form';
 
+import { Button } from '@/components/common/button/button';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { Attachment } from '@/shared';
-import { Button, IconButton } from '@components';
 import { TrashIcon, UploadIcon } from '@icons';
-import { classname, convertBytesToMB, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertBytesToMB } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import './multi-file-uploader.scss';
 

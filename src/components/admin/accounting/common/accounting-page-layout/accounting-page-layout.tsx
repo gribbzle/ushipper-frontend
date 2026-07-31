@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { InitiateAccountPaymentMethodsPopup, SupportChatDrawer } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
-import { ReportPopup } from '../../owners-and-drivers';
+import { ReportPopup } from '../../owners-and-drivers/report-popup';
 
 import './accounting-page-layout.scss';
 

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Button, ButtonProps } from '@/components/common';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+
+import { Button, ButtonProps } from './button';
 
 const t = translateByNamespace('common:components:button');
 

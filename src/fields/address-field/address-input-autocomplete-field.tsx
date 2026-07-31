@@ -2,8 +2,8 @@ import React, { useCallback, useContext, useMemo, useRef, useState } from 'react
 import { debounce } from 'debounce';
 import { useForm } from 'react-final-form';
 
+import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
 import { createGeocoding, getAddressByName } from '@/utils/geocoding';
-import { AutocompleteSuggestion } from '@components';
 import { AutocompleteStringInput, FieldPrefixContext, TextFieldProps } from '@fields';
 import { GeocodingFeature } from '@mapbox/search-js-core';
 import { GeocodingFeatureContext } from '@mapbox/search-js-core/dist/geocode/types';

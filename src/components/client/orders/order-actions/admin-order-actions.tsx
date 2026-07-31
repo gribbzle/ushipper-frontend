@@ -1,13 +1,16 @@
 import React, { useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { Dropdown, DropdownDividerOption, DropdownOption } from '@/components';
+import { Button } from '@/components/common/button/button';
+import { Dropdown } from '@/components/common/dropdown/dropdown';
+import { DropdownDividerOption } from '@/components/common/dropdown/dropdown';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { OrderStatus } from '@/enums';
 import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
-import { Button } from '@components';
 import { HorizontalDotsIcon } from '@icons';
 import { Load } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-actions.scss';
 

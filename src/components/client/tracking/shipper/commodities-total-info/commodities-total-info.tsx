@@ -2,7 +2,9 @@ import React, { useMemo } from 'react';
 
 import { BasketIcon, BoxIcon } from '@icons';
 import { OrderCommodity } from '@store/api/orders-api';
-import { calculateTotalQuantitiesOfCommodities, calculateTotalWeightOfCommodities, classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { calculateTotalQuantitiesOfCommodities, calculateTotalWeightOfCommodities } from '@utils/commodity';
+import { translateByNamespace } from '@utils/i18n';
 
 import './commodities-total-info.scss';
 

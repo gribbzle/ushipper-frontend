@@ -9,7 +9,8 @@ import { LinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';
-import { getProjectName, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 const t = translateByNamespace('client:company-page:head');
 const translateNotification = translateByNamespace('client:company-page:notification');

@@ -1,9 +1,10 @@
 import React from 'react';
 import has from 'has-values';
 
-import { CommodityDetails } from '@/components/common';
+import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
 import { OrderCommodity } from '@store/api/orders-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './load-board-order-commodities-column.scss';
 

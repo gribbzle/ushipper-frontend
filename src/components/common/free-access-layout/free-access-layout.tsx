@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logos from '@logo';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './free-access-layout.scss';
 

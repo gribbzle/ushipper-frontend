@@ -4,7 +4,7 @@ import { EmptyLayout, Paginate } from '@/components/common';
 import { CompanyType } from '@/enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { useGetCompaniesQuery } from '@store/api/company-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CompanyInfoCard } from './company-info-card';
 

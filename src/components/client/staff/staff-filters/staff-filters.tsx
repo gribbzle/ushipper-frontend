@@ -1,10 +1,15 @@
 import React, { memo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncCompanySelect, RolesSelect, SelectionGroup, UserStatusesSelect } from '@/components';
+import { AsyncCompanySelect } from '@/components/common/company-select/async-company-select';
+import { SelectionGroup } from '@/components/common/selection-group/selection-group';
+import { RolesSelect } from '@/components/common/selects/roles-select/roles-select';
+import { UserStatusesSelect } from '@/components/common/selects/user-statuses-select/user-statuses-select';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { ListIcon, TreeIcon } from '@icons';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { StaffFiltersFormProps, StaffFiltersFormState } from './staff-filters.types';
 import { useStaffFiltersForm } from './use-staff-filters-form';

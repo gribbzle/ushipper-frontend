@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { CommodityDetails, IconButton } from '@components';
 import { PencilIcon, TrashIcon } from '@icons';
 import { OrderCommodity } from '@store/api/orders-api';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './commodity-item.scss';
 

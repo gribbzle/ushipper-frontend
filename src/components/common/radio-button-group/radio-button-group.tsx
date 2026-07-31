@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { RadioButton } from '@components';
-import { classname } from '@utils';
+import { RadioButton } from '@/components/common/radio-button/radio-button';
+import { classname } from '@utils/classname';
 
 import { CheckboxRadioButton } from '../checkbox-radio-button';
 

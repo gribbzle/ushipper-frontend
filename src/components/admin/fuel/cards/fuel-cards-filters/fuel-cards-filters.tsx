@@ -2,21 +2,14 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { AsyncDriverAccountsSelect, FuelCardCompaniesSelect, FuelCardStatusesSelect } from '@/components/common';
-import { FuelCardStatus } from '@/enums';
 import { parseField } from '@/utils/parse-field';
 import { FormControl, InputLabel, TextField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FuelFiltersPaper } from '../../fuel-filters-paper';
 
+import { FuelCardsFiltersFormState } from './fuel-cards-filters.types';
 import { useFuelCardsFilters } from './use-fuel-cards-filters';
-
-export type FuelCardsFiltersFormState = {
-    number: string;
-    statuses: FuelCardStatus[];
-    accountId: string;
-    companyName: string;
-};
 
 const t = translateByNamespace('admin:fuel:filters');
 

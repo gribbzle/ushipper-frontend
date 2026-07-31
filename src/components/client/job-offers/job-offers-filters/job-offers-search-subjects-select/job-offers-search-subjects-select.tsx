@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { SelectOption } from '@/shared';
 import { SelectField } from '@fields';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { JobOffersSearchSubject } from './job-offers-search-subjects-select.types';
 

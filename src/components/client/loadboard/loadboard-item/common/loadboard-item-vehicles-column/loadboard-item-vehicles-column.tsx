@@ -1,12 +1,12 @@
 import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
+import { LoadBoardOrderVehiclesColumn } from '@/components/client/loadboard/load-board-order/load-board-order-vehicles-column/load-board-order-vehicles-column';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
 import { getOrderId } from '@/utils/order';
-import { LoadBoardOrderVehiclesColumn } from '@components';
 import { Load } from '@store/client';
 import { loadboardActions } from '@store/client/loadboard/slice';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:item');
 const translateRequestDrawer = translateByNamespace('client:loadboard:request-drawer');

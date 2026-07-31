@@ -5,11 +5,13 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
 import { CustomCheckContractError } from '@/components/common/parsed-order-actions/use-handle-check-contract';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { OfferStatusesEnum, OrderSourcesEnum } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { calculateTotalPayment, getPaymentPerDistance } from '@/utils/payment';
-import { AlertBlock, Button, Paper } from '@components';
 import { CurrencyInput, DatePicker, FormControl, InputLabel, SwitchInput, TextField } from '@fields';
 import { useMeCarrier, useParsedOrderSettingsError } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
@@ -18,7 +20,10 @@ import { OrderOffer } from '@store/api/order-offers';
 import { useCreateRequestMutation, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
 import { Load } from '@store/client';
 import { authorizedUserNameSelector } from '@store/global';
-import { classname, diffForHumans, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 import { required } from '@validators';
 
 import './request-form.scss';

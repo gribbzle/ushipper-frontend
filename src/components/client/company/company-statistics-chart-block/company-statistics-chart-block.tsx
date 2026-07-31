@@ -1,10 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
 
-import { Button, ChartData, Paper, StackedAreaChart } from '@components';
+import { Button } from '@/components/common/button/button';
+import { ChartData } from '@/components/common/stacked-area-chart/stacked-area-chart';
+import { StackedAreaChart } from '@/components/common/stacked-area-chart/stacked-area-chart';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { GetStatisticParams, StatisticInformation, useLazyGetStatisticsQuery } from '@store/api/users-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { DashboardEmptyBlock } from '../../dashboard/empty-block';
 

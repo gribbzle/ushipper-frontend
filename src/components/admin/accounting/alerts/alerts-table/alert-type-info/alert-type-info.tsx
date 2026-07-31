@@ -3,7 +3,9 @@ import React, { useCallback } from 'react';
 import { useIssue, useIssueHelpers } from '@hooks';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
-import { classname, translateByNamespace, translateIssueType } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateIssueType } from '@utils/translate/issue/translate-issue-type';
 
 import './alert-type-info.scss';
 

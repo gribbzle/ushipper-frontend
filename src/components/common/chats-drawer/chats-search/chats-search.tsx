@@ -1,7 +1,8 @@
 import React, { ChangeEvent } from 'react';
 
 import { CloseIcon, SearchIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Input } from '../../input';
 

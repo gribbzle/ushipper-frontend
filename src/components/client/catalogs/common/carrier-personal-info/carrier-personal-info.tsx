@@ -1,10 +1,13 @@
 import React from 'react';
 
-import { CompanyLogo } from '@/components/client/company';
+import { CompanyLogo } from '@/components/client/company/company-logo';
 import { CarriersCatalogInfo } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
-import { CatalogInfoWrapper, CompanyNameInfoBlock, CompanyRatingBlock, CompanyTypeAddressBlock } from '..';
+import { CatalogInfoWrapper } from '../catalog-info-wrapper';
+import { CompanyNameInfoBlock } from '../company-name-block';
+import { CompanyRatingBlock } from '../company-rating-block';
+import { CompanyTypeAddressBlock } from '../company-type-address-block';
 
 import './carrier-personal-info.scss';
 

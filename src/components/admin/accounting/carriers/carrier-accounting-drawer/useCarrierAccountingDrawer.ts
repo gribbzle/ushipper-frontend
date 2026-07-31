@@ -5,7 +5,7 @@ import { CarrierAccountingDrawerTab } from '@/enums';
 import { useAppDispatch, useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { companyApi } from '@store/api/company-api';
-import { handleError } from '@utils';
+import { handleError } from '@utils/handle-error';
 
 import { CarrierAccountingDrawerFormValue } from './carrier-accounting-drawer.types';
 import {

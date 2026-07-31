@@ -1,7 +1,10 @@
 import React from 'react';
 
-import { Avatar, Button, Paper } from '@/components/common';
-import { classname, translateByNamespace } from '@utils';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/common/paper/paper';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AssignUserItemProps } from './assign-user-item.types';
 import { useAssignUserItem } from './use-assign-user-item';

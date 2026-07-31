@@ -3,7 +3,9 @@ import has from 'has-values';
 
 import { MassPayCompanyDTO, MassPayPayerDTO } from '@store/api/accounts-api';
 import { DotLeader } from '@ui';
-import { classname, formatDate, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { formatDate } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import './initiate-payment-method-info.scss';
 

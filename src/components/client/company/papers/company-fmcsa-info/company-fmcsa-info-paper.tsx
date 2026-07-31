@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { Paper } from '@/components';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useGetCompanyFMCSARecordQuery } from '@store/api/company-api';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FMCSAFullInfoBlock } from './fmcsa-full-info-block';
 

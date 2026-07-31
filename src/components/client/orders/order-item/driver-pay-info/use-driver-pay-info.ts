@@ -2,11 +2,13 @@ import { useMemo } from 'react';
 
 import { FundsTransferStatus, InstantTermPaymentType, OrderStatisticsStatus, OrderStatus } from '@enums';
 import { useIsPartnerCompany } from '@hooks';
-import { formatToCurrency, translateByNamespace, translateFundsTransferStatus } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
+import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 import { useOrderTotalAmount, useTabValueFromUrl } from '../hooks';
 
-import { DriverPayInfoProps } from './driver-pay-info';
+import { DriverPayInfoProps } from './driver-pay-info.types';
 
 const t = translateByNamespace('client:orders-page:order-item:driver-alert');
 const tCheckApproval = translateByNamespace('common:order');

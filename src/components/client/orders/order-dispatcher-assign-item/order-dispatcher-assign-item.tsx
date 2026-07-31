@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { AssignItem } from '@components';
+import { AssignItem } from '@/components/common/assign/assign-item/assign-item';
 import { PhoneIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './order-dispatcher-assign-item.scss';
 

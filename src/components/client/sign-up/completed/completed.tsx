@@ -1,8 +1,11 @@
 import React from 'react';
 
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Link } from '@/components/common/link/link';
 import { RegistrationType } from '@/enums';
-import { AlertBlock, Link } from '@components';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 const t = translateByNamespace('client:sign-up-page');
 const cn = classname('sign-up-page');

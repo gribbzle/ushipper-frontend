@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { composeBuilder, requestInitial } from '@utils';
+import { composeBuilder, requestInitial } from '@utils/redux';
 
 import { requestResetFormSubmit, resetPasswordFormSubmit } from './actions';
 

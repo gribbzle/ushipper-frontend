@@ -1,11 +1,13 @@
 import React, { useMemo } from 'react';
 
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
+import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { OrderSourcesEnum } from '@/enums';
-import { OrderTag, PaymentInfo } from '@components';
 import { useMeDriverRelated } from '@hooks';
 import { ImportIcon, SuperDispatchImportIcon } from '@icons';
 import { Load } from '@store/client';
-import { classname, diffForHumans } from '@utils';
+import { classname } from '@utils/classname';
+import { diffForHumans } from '@utils/dates';
 
 import { getOrderSource } from './utils';
 

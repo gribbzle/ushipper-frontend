@@ -3,11 +3,12 @@ import { FieldRenderProps } from 'react-final-form';
 import { useForm } from 'react-final-form';
 
 import { ContactFooterContext } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
+import { Button } from '@/components/common/button/button';
 import { NativeSwitch, NativeSwitchProps } from '@/fields/switch-input/native-switch';
-import { Button } from '@components';
 import { FieldPrefixContext, FormControl, PrefixedField } from '@fields';
 import { OrderFieldsGroup } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './contact-info-footer.scss';
 

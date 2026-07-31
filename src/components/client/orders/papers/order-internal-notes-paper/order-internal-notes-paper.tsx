@@ -2,14 +2,21 @@ import React, { useCallback, useMemo, useState } from 'react';
 import has from 'has-values';
 import { useRouter } from 'next/router';
 
-import { CreateEditOrderInternalNotePopup, DeleteOrderInternalNotePopup, OrderInternalNoteForm } from '@/components';
-import { Button, Dropdown, NotificationItem, Paper, ZoneButton } from '@/components/common';
+import { OrderInternalNoteForm } from '@/components/client/orders/forms/order-internal-note-form/order-internal-note-form';
+import { CreateEditOrderInternalNotePopup } from '@/components/client/orders/popups/create-edit-order-internal-note-popup/create-edit-order-internal-note-popup';
+import { DeleteOrderInternalNotePopup } from '@/components/client/orders/popups/delete-order-internal-note-popup/delete-order-internal-note-popup';
+import { Button } from '@/components/common/button/button';
+import { Dropdown } from '@/components/common/dropdown/dropdown';
+import { NotificationItem } from '@/components/common/notification-item/notification-item';
+import { Paper } from '@/components/common/paper/paper';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { ActionsIcon, ArrowDownIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderInternalNote, useGetOrderInternalNotesQuery } from '@store/api/order-internal-notes-api';
 import { ModeStateEnum, ordersActions } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './order-internal-notes-paper.scss';
 

@@ -1,11 +1,13 @@
 import React, { useMemo } from 'react';
 
-import { InspectionTypeRadioGroup, TransportTypeSelect } from '@components';
+import { InspectionTypeRadioGroup } from '@/components/common/inspection-type-radio-group/inspection-type-radio-group';
+import { TransportTypeSelect } from '@/components/common/transport-type-select/transport-type-select';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { useDisableCarrierChanging, useMeCarrier, useMeShipper } from '@hooks';
 import { useAppSelector } from '@store';
 import { OrderFieldsGroup, orderPickedUpAtSelector, orderShipperOrderSelector } from '@store/client';
-import { isUshipper, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { isUshipper } from '@utils/project-config';
 import { required } from '@validators';
 
 const t = translateByNamespace('client:order:details:fields');

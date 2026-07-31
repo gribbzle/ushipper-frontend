@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { SelectOption } from '@/shared';
 import { OrderType } from '@enums';
 import { SelectField } from '@fields';
-import { translateOrderStatisticsStatus } from '@utils';
+import { translateOrderStatisticsStatus } from '@utils/translate/order/translations';
 
 import { ORDER_STATISTICS_STATUS_MAP } from './constants';
 

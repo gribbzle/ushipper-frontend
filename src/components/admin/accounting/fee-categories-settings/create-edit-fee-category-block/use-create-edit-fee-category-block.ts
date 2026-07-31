@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createEditFeeCategoryBlockPropsSelector } from '@store/admin';
 import { useGetBalancesQuery } from '@store/api/balances-api';
 import { useCreateFeeCategoryMutation, usePartiallyUpdateFeeCategoryMutation } from '@store/api/fee-categories-api';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CreateEditFeeCategoryFormState } from './create-edit-fee-category-block.types';
 

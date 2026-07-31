@@ -1,4 +1,4 @@
-import { isString } from '@/shared';
+import { isString } from '../shared/type-guards';
 
 import { FieldValidator } from './types';
 

@@ -1,18 +1,14 @@
 import { Creator } from '@/shared';
 
-import { UserCompany } from '../../common';
+import { UserCompany } from '../../common/orders/user-company-types';
+
+import { Rating } from './rating-types';
 
 export type OrderReviewPopupState = {
     isVisible: boolean;
     review: Review | null;
     company: UserCompany | null;
 };
-
-/**
- * Rating type.
- * Can be any number from 0 to 5, including fractional numbers.
- */
-export type Rating = number;
 
 export type ReviewsItems = {
     itemId: number;

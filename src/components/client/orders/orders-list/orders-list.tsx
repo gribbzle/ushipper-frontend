@@ -1,7 +1,7 @@
 import React, { memo, ReactElement } from 'react';
 
 import { Load } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './orders-list.scss';
 

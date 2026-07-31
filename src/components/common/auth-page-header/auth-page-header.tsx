@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { HelpPageLink } from '@/components/common';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
+
+import { HelpPageLink } from '../help-page-link';
 
 import './auth-page-header.scss';
 

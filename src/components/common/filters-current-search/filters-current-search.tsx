@@ -2,7 +2,8 @@ import React from 'react';
 
 import { CatalogListTabsEnum } from '@/enums';
 import { XIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { Tag } from '../tag';
 

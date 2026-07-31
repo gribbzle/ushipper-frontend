@@ -4,7 +4,7 @@ import { useAppDispatch } from '@store';
 import { accountingActions, fuelActions, FuelCard } from '@store/admin';
 import { useGetFuelCardsQuery } from '@store/api/fuel-cards-api';
 
-import { FuelCardsBlockProps } from './fuel-cards-block';
+import { FuelCardsBlockProps } from './fuel-cards-block.types';
 
 export const useFuelCardsBlock = ({ accountId, accountName }: FuelCardsBlockProps) => {
     const dispatch = useAppDispatch();

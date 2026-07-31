@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useAppSelector } from '@store';
 import { chatInfoSelector } from '@store/client';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { ParticipantContactInfo } from './participant-contact-info';
 import { ParticipantOrdersInfo } from './participant-orders-info';

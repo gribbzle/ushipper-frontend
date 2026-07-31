@@ -3,7 +3,8 @@ import React from 'react';
 import { UserRoleGroup, UserRoleType } from '@/enums';
 import { useHasPartnerCompanies, useMeDriverRelated, useUserRoleGroup } from '@hooks';
 import { User } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { UserInfo } from '../../show/order-information/user-info';
 

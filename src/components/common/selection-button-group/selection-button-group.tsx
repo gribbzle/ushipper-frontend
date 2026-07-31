@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { SelectionButton } from '@components';
-import { classname } from '@utils';
+import { SelectionButton } from '@/components/common/selection-button/selection-button';
+import { classname } from '@utils/classname';
 
 import './selection-button-group.scss';
 

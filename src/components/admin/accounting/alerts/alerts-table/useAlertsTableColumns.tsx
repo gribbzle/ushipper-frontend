@@ -1,8 +1,14 @@
 import React, { useMemo } from 'react';
 
-import { AdminOrderIdInfo, AttachmentItem, DateInfo, OrderPriceInfo, TableColumn, UserInfoBlock } from '@components';
+import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
+import { AdminOrderIdInfo } from '@/components/common/table/common/admin-order-id-info/admin-order-id-info';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { OrderPriceInfo } from '@/components/common/table/common/order-price-info/order-price-info';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { ImageProvider, IssueProvider, OrderProvider } from '@providers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { AlertStatusTag } from './alert-status-tag';
 import { AlertTypeInfo } from './alert-type-info';

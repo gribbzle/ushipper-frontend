@@ -1,6 +1,6 @@
 import { AxiosError } from 'axios';
 
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
 
 export type ReportParams = {
     accountId: string;

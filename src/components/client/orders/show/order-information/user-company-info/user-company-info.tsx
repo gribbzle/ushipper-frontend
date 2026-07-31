@@ -1,8 +1,11 @@
 import React, { useCallback } from 'react';
 
-import { Avatar, Badge, CompanyRatingWithReviewCount } from '@/components/common';
+import { Avatar } from '@/components/common/avatar/avatar';
+import { Badge } from '@/components/common/badge/badge';
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
 import { UserCompany } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 

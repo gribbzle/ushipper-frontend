@@ -3,13 +3,16 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 
+import { Button } from '@/components/common/button/button';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { Button } from '@components';
 import { useLoadboardTabSelection, useMeCarrier } from '@hooks';
 import { SaveIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { INITIAL_FILTERS, loadboardActions } from '@store/client/loadboard/slice';
-import { areFiltersEqual, classname, getProjectName, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { areFiltersEqual } from '@utils/filters';
+import { translateByNamespace } from '@utils/i18n';
+import { getProjectName } from '@utils/translate/get-project-name';
 
 import './loadboard-page-header.scss';
 import 'react-loading-skeleton/dist/skeleton.css';

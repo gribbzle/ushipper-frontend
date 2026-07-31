@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { TransactionStatusGroupTagProps } from './transaction-status-group-tag.types';
 

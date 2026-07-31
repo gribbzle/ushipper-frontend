@@ -1,11 +1,19 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
+import { CountriesSelect } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/common/countries-select/countries-select';
+import { CatalogFiltersGroup } from '@/components/client/catalogs/catalog-filter-group/catalog-filter-group';
+import { RatingCheckBoxGroup } from '@/components/client/catalogs/catalog-filters-form/common/rating-checkbox-group/rating-checkbox-group';
+import { Divider } from '@/components/common/divider/divider';
+import { LanguagesSelect } from '@/components/common/languages-select/languages-select';
+import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { CarriersCatalogSortingNameEnum, CatalogSortingNameEnum } from '@/enums';
-import { CatalogFiltersGroup, CountriesSelect, Divider, LanguagesSelect, Paper, RatingCheckBoxGroup, SortBySelect } from '@components';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useIsCarriersCatalogPage, useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';
-import { classname, FormValuesSpy, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
 
 import { SpecializationsCheckBoxGroup } from './common';
 import { useCatalogFiltersForm } from './use-catalog-filters-form';

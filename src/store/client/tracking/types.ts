@@ -1,9 +1,14 @@
 import { CommunicationType, TimeCondition } from '@/enums';
-import { ColorValueHex, NullableFields } from '@/shared';
-import { Company } from '@store/admin';
-import { Avatar, OrderDeliveryInformation, OrderDetails, OrderPaymentInformation, OrderPickupInformation } from '@store/common';
+import { OrderStatus } from '@/enums';
+import { ColorValueHex } from '@/shared';
+import { Company } from '@store/admin/companies/types';
+import { OrderRequest } from '@store/api/order-requests-types';
+import { Review } from '@store/client/review/types';
+import { LatestLocation, TrackingDriverRatings } from '@store/client/tracking/location-types';
+import { Load, OrderDeliveryInformation, OrderDetails, OrderPaymentInformation, OrderPickupInformation } from '@store/common/orders/types';
+import { Avatar } from '@store/common/staff/avatar-types';
 
-import { Load } from '../../common';
+export type TrackingOrderGrouping = 'status' | 'dispatcher';
 
 export type IsDriversListShown = boolean;
 
@@ -29,12 +34,6 @@ export type TrackingSliceState = {
     isShipperOrdersTrackingLoading: boolean;
     selectedActiveRequest: SelectedActiveRequest;
     selectedShipperTrackingOrder: SelectedShipperTrackingOrder;
-};
-
-export type LatestLocation = {
-    geoLatitude: number;
-    geoLongitude: number;
-    createdAt: string;
 };
 
 export type Driver = {
@@ -70,16 +69,6 @@ export type TrackingDriverOrder = {
     commoditiesCount: number; // integer
     status: OrderStatus;
 };
-
-export type TrackingDriverRatings = NullableFields<{
-    averageSpeed: number;
-    dispatcherRating: number;
-    dispatcherReviewsTotal: number;
-    driverRating: number;
-    driverReviewsTotal: number;
-    rating: number;
-    reviewsTotal: number;
-}> | null;
 
 export type TrackingDriver = {
     publicId: string;
@@ -168,11 +157,6 @@ export type OrderColors = {
     orderId: string;
     orderColor: ColorValueHex;
 }[];
-
-import { OrderStatus } from '@/enums';
-import { OrderRequest } from '@store/api/order-requests-api';
-import { TrackingOrderGrouping } from '@store/api/tracking-api';
-import { Review } from '@store/client';
 
 export type DistanceMatrix = { [key: string]: { [key: string]: number } };
 

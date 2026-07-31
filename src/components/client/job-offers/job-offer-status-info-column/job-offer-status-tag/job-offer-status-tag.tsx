@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OfferStatusesEnum } from '@/enums';
 import { SendSimpleIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import { JobOfferStatusTagProps } from './job-offer-status-tag.types';
 

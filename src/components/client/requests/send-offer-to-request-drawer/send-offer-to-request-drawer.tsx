@@ -2,10 +2,11 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { DrawerBody } from '@/components/client/requests/send-offer-to-request-drawer/drawer-body';
-import { Drawer } from '@components';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { AppState } from '@store';
 import { requestsSliceActions } from '@store/client/requests/slice';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './requests-send-offer.scss';
 

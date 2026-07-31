@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import { CompanyType } from '@/enums';
 import { useHandleFiltersChange, useIsCarriersAccountingBalancePage, useQueryFilters } from '@/hooks';
-import { convertToStringArray } from '@utils';
+import { convertToStringArray } from '@utils/converter';
 
 import { AccountingEntityFiltersFormState } from './accounting-filters-entity-form.types';
 

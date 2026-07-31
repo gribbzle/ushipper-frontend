@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { Divider } from '@components';
+import { Divider } from '@/components/common/divider/divider';
 import { CarIcon2, Flag2Icon, GeoLocationIcon, Truck } from '@icons';
 import { User } from '@store/common';
-import { classname, isUshipper, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { isUshipper } from '@utils/project-config';
 
 import { DriverDetailsWrapper } from './driver-details-wrapper';
 import { UserDetails } from './user-details';

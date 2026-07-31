@@ -2,11 +2,12 @@ import React from 'react';
 
 import AddressInputAutocompleteField from '@/fields/address-field/address-input-autocomplete-field';
 import { FormControl, InputLabel, PrefixedField, TextField } from '@fields';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required as requiredValidator } from '@validators';
 
 import { StatesSelect } from '../../rocketkor/rocketkor-form/states-select';
-import { CountriesSelect } from '..';
+import { CountriesSelect } from '../countries-select/countries-select';
 
 import { AddressFormProps } from './address-form.types';
 

@@ -2,12 +2,13 @@ import React, { useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { Button } from '@/components';
+import { Button } from '@/components/common/button/button';
 import { StringInput } from '@fields';
 import { useAppSelector } from '@store';
 import { OrderInternalNoteFormState, useCreateOrderInternalNoteMutation } from '@store/api/order-internal-notes-api';
 import { orderPublicIdSelector } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-internal-note-form.scss';

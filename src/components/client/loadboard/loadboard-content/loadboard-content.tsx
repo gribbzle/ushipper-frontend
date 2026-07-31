@@ -1,10 +1,16 @@
 import React, { useMemo } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-import { LoadboardFilters, LoadboardList, LoadboardMap, LoadboardNoData, Paginate } from '@components';
+import { LoadboardFilters } from '@/components/client/loadboard/loadboard-filters/loadboard-filters';
+import { LoadboardList } from '@/components/client/loadboard/loadboard-list/loadboard-list';
+import { LoadboardMap } from '@/components/client/loadboard/loadboard-map/loadboard-map';
+import { LoadboardNoData } from '@/components/client/loadboard/loadboard-no-data/loadboard-no-data';
+import { Paginate } from '@/components/common/paginate/paginate';
 import { LoadboardTab } from '@enums';
 import { useLoadboard, useLoadboardTabSelection } from '@hooks';
-import { classname, translateByNamespace, translateLoadboardTab } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { translateLoadboardTab } from '@utils/translate/loadboard';
 
 import './loadboard-content.scss';
 import 'react-loading-skeleton/dist/skeleton.css';

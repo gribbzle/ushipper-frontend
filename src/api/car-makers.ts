@@ -1,5 +1,5 @@
-import { CarMakersFilters } from '@store/admin';
-import { axios } from '@utils';
+import { CarMakersFilters } from '@store/admin/car-makers-settings/types';
+import { axios } from '@utils/axios';
 
 export const fetchCarMakers = async (filters: CarMakersFilters) => {
     const result = await axios.get('/api/car-makers', { params: filters });

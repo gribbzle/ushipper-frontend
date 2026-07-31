@@ -5,7 +5,8 @@ import { Divider } from '@/components/common';
 import { BalanceType } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, TextField } from '@fields';
 import { useFormSubmit } from '@hooks';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import { AddressForm } from '../../common';

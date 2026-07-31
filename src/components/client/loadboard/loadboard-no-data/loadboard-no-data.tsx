@@ -1,8 +1,11 @@
 import React from 'react';
 
 import RefreshIcon from '@/assets/icons/refresh.svg';
-import { Button, Paper } from '@components';
-import { classname, renderTextWithBreakLines, translateByNamespace } from '@utils';
+import { Button } from '@/components/common/button/button';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { renderTextWithBreakLines } from '@utils/render';
 
 import './loadboard-no-data.scss';
 

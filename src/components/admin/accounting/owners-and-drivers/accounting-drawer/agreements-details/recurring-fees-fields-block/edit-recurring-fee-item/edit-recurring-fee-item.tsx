@@ -6,7 +6,9 @@ import { FeeCategoryType, FeePeriod } from '@/enums';
 import { isNumber } from '@/shared';
 import { CurrencyPercentageField, FormControl, FormHelperText, InputLabel } from '@fields';
 import { TrashIcon } from '@icons';
-import { classname, formatToCurrency, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { formatToCurrency } from '@utils/numbers';
 import { required } from '@validators';
 
 import { FeeIntervalTypeSelect } from './fee-interval-type-select/fee-interval-type-select';

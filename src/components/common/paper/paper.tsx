@@ -1,7 +1,7 @@
 import React, { ReactNode, RefObject } from 'react';
 import has from 'has-values';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './paper.scss';
 

@@ -3,14 +3,16 @@ import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
 import { TimeCondition, UserRoleType } from '@/enums';
+import { useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
+import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { Attachment } from '@/shared';
-import { useIsDriverOwnerPage, useMeDispatcher, useMeDriver } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { jobOffersApi, useCreateJobOfferMutation, usePartiallyUpdateJobOfferMutation } from '@store/api/job-offers';
 import { TermCondition } from '@store/client';
 import { sendJobOfferDrawerSelector } from '@store/client/job-offers/selectors';
 import { setSendJobOfferDrawerProps } from '@store/client/job-offers/slice';
-import { handleError, translateByNamespace } from '@utils';
+import { handleError } from '@utils/handle-error';
+import { translateByNamespace } from '@utils/i18n';
 
 import { SendJobOfferFormValue } from './send-job-offer-form.types';
 

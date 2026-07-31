@@ -5,7 +5,8 @@ import { useAppSelector } from '@store';
 import { useGetDispatchersCatalogQuery, useGetDispatchersCatalogStatisticQuery } from '@store/api/catalogs-api';
 import { DispatcherCatalogStatistic } from '@store/client';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
-import { numberWithCommas, transformCatalogFiltersForQuery } from '@utils';
+import { transformCatalogFiltersForQuery } from '@utils/catalogs/transform-catalog-filters-for-query';
+import { numberWithCommas } from '@utils/numbers';
 
 export const useDispatchersCatalogPage = () => {
     const filters = useAppSelector(catalogsSelectedFiltersSelector);

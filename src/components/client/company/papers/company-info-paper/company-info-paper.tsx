@@ -1,11 +1,15 @@
 import React, { useMemo } from 'react';
 import has from 'has-values';
 
-import { LabeledText, Paper } from '@/components';
+import { LabeledText } from '@/components/common/labeled-text/labeled-text';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { DotLeader } from '@ui';
-import { classname, extractStreetAndNumber, formatAddress, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { extractStreetAndNumber, formatAddress } from '@utils/address';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './company-info-paper.scss';
 

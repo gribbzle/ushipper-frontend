@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
 
-import { FuelTransactionsFiltersFormState } from './fuel-transactions-filters';
+import { FuelTransactionsFiltersFormState } from './fuel-transactions-filters.types';
 
 export const useFuelTransactionsFilters = () => {
     const {

@@ -4,7 +4,7 @@ import { Field, useFormState } from 'react-final-form';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { useAppSelector } from '@store';
 import { editFinancialAccountPopupPropsSelector } from '@store/admin';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, lengthValidator, matchAccountNumber, required, taxIdValidator } from '@validators';
 
 import { AccountSubtypesSelect } from '../account-suptypes-select';

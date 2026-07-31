@@ -1,6 +1,6 @@
 import React, { forwardRef, InputHTMLAttributes, useCallback, useId, useState } from 'react';
 
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './input.scss';
 

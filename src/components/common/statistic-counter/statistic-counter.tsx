@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { QuestionCircleIcon } from '@icons';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './statistic-counter.scss';
 

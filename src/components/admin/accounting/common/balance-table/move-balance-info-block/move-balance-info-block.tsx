@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
 import { TransactionBalanceResource } from '@store/admin';
-import { classname } from '@utils';
+import { classname } from '@utils/classname';
 
 import './move-balance-info-block.scss';
 

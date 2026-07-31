@@ -3,7 +3,8 @@ import React, { useMemo } from 'react';
 import { DateTypes } from '@enums';
 import { useMeShipper } from '@hooks';
 import { ScheduleIcon } from '@icons';
-import { formatLongDateOrGetDash, translateByNamespace } from '@utils';
+import { formatLongDateOrGetDash } from '@utils/dates';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ItemField } from '../item-field';
 

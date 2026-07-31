@@ -3,7 +3,8 @@ import { PhotoView } from 'react-photo-view';
 
 import { EyeIcon } from '@icons';
 import { ImageProvider, ImageProviderContext } from '@providers';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ImageViewProps } from './image.types';
 

@@ -1,14 +1,20 @@
 import React, { useCallback, useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
+import { Link } from '@/components/common/link/link';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
+import { TableColumn } from '@/components/common/table/table.types';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { hasAddress } from '@/utils/order';
-import { DateInfo, HelperText, Link, TableColumn, UserInfoBlock } from '@components';
 import { OrderSortingDirection } from '@enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelTransaction } from '@store/admin';
 import { GetFuelTransactionsParams, useGetFuelTransactionsQuery } from '@store/api/fuel-cards-api';
-import { classname, convertToStringArray, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { convertToStringArray } from '@utils/converter';
+import { translateByNamespace } from '@utils/i18n';
 
 import { FuelTransactionStatusTag } from '../fuel-transaction-status-tag';
 

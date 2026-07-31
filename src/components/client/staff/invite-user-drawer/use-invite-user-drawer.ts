@@ -8,7 +8,7 @@ import { useAppSelector } from '@store';
 import { useInviteUserMutation } from '@store/api/invite-api';
 import { useGetUsersQuery } from '@store/api/users-api';
 import { userRolesSelector } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { InviteUserFormData } from './invite-user-drawer.types';
 

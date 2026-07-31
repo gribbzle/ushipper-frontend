@@ -1,8 +1,11 @@
 import React from 'react';
 
-import { Tooltip, TooltipContent, TooltipTrigger } from '@components';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { ExclamationCircleIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import './hidden-external-broker-tooltip.scss';
 

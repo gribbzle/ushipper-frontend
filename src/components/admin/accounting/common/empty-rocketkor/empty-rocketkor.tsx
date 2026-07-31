@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { AccountingZoneButton } from '@/components';
+import { AccountingZoneButton } from '@/components/admin/accounting/common/accounting-zone-button/accounting-zone-button';
 import { useDriversActionsPermission } from '@hooks';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { EmptyRocketkorProps } from './empty-rocketkor.types';
 

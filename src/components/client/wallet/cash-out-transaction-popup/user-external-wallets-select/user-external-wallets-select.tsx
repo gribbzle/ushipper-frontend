@@ -1,11 +1,9 @@
 import React from 'react';
-import { FieldRenderProps } from 'react-final-form';
 
 import { AsyncSelectField, SelectField } from '@fields';
 
 import { useUserExternalWalletsSelect } from './use-user-external-wallets-select';
-
-export type UserExternalWalletsSelectProps = FieldRenderProps<string> & { accountId?: string };
+import { UserExternalWalletsSelectProps } from './user-external-wallets-select.types';
 
 export const UserExternalWalletsSelect = ({ input, meta, accountId, ...rest }: UserExternalWalletsSelectProps) => {
     const { selectReady, errored, key, onChangeHandler, defaultSelectedOption, loadOptions } = useUserExternalWalletsSelect({

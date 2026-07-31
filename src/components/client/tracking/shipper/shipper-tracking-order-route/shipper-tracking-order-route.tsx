@@ -1,19 +1,17 @@
 import React from 'react';
 
-import { Timeline, TimelineConnector, TimelineDot, TimelineIcon } from '@components';
+import { Timeline } from '@/components/common/timeline/timeline';
+import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
+import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
+import { TimelineIcon } from '@/components/common/timeline/timeline-icon/timeline-icon';
 import { FullTruckIcon } from '@icons';
-import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
+import { ShipperTrackingOrderRouteProps } from './shipper-tracking-order-route.types';
 import { useShipperTrackingOrderRoute } from './use-shipper-tracking-order-route';
 
 import './shipper-tracking-order-route.scss';
-
-export type ShipperTrackingOrderRouteProps = {
-    pickupInformation?: Partial<OrderPickupInformation>;
-    deliveryInformation?: Partial<OrderDeliveryInformation>;
-    showTruck?: boolean;
-};
 
 const cn = classname('shipper-tracking-order-route');
 const t = translateByNamespace('client:loadboard:parsed-order-route');

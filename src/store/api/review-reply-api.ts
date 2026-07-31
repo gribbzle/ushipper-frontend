@@ -1,4 +1,4 @@
-import { ReviewReply } from '@store/client';
+import { ReviewReply } from '@store/client/review/types';
 
 import { apiSlice } from './api-slice';
 

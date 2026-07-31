@@ -1,11 +1,16 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
+import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
+import { Tabs } from '@/components/common/tabs/tabs';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { JobOfferSortingName, OrderSortingDirection } from '@/enums';
-import { Paper, SortBySelect, Tabs } from '@components';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useMeCarrier } from '@hooks';
-import { classname, FormValuesSpy, translateByNamespace, translateSortingOption } from '@utils';
+import { classname } from '@utils/classname';
+import { FormValuesSpy } from '@utils/form';
+import { translateByNamespace } from '@utils/i18n';
+import { translateSortingOption } from '@utils/translations';
 
 import { JobOffersFiltersProps, JobOffersFiltersTypes } from './job-offers-filters.types';
 import { useJobOffersFiltersTabs } from './job-offers-filters-tabs';

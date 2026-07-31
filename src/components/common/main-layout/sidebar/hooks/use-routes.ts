@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { useMeAdmin, useMeCarrierDriver, useMeDispatcher, useMeDriver, useMeShipper } from '@hooks';
-import { isFreightX } from '@utils';
+import { isFreightX } from '@utils/project-config';
 
 import { carrierRoutes, dispatcherRoutes, driverRoutes, freightXAdminRoutes, shipperRoutes, ushipperAdminRoutes } from '../routes';
 

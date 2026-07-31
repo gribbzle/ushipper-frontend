@@ -1,7 +1,8 @@
 import type { Feature } from 'geojson';
 
-import { UserTracking } from '@store/client';
-import { axios } from '@utils';
+import { axios } from '@utils/axios';
+
+import { UserTracking } from '../store/client/tracking/types';
 
 export const fetchTrackingInformation = async () => {
     const result = await axios.get('/api/users/tracking');

@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import { Field, useField } from 'react-final-form';
 
+import { TrailerCategoriesSelect } from '@/components/common/trailer-categories-select/trailer-categories-select';
 import { SelectOption } from '@/shared';
-import { TrailerCategoriesSelect } from '@components';
 import { FormControl, InputLabel } from '@fields';
 import { useAppSelector } from '@store';
 import { specializationByIdSelector } from '@store/common';
-import { getTransportCategoryTranslate, getTransportServiceTranslate, translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
+import { getTransportCategoryTranslate, getTransportServiceTranslate } from '@utils/specialization';
 import { requiredArray } from '@validators';
 
 type TrailerCategoriesSelectWrapperProps = {

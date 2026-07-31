@@ -3,7 +3,8 @@ import Draggable from 'react-draggable';
 
 import { formatPhoneNumber } from '@/components/client/loadboard/choose-phone-popup/format-phone-number';
 import { CloseIcon, EndCallIcon, PhoneFilledIcon } from '@icons';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import callingMP3 from '../../../../public/calling.mp3';
 import { Button } from '../button';

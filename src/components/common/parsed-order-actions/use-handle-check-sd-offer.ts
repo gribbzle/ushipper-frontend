@@ -1,14 +1,14 @@
 import { MouseEvent, useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { useCheckingContractPopup } from '@components';
+import { useCheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/use-checking-contract-popup';
 import { useParsedOrderSettingsError } from '@hooks';
 import { useAppDispatch } from '@store';
 import { useLazyGetExternalOffersQuery } from '@store/api/external-orders-api';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/client';
 import { loadboardActions } from '@store/client/loadboard';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { CustomCheckContractError } from './use-handle-check-contract';
 import { formattedParsedOrder } from './utils';

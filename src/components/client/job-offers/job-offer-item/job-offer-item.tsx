@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { DispatcherPersonalInfo, Paper } from '@components';
+import { DispatcherPersonalInfo } from '@/components/client/catalogs/common/dispatcher-personal-info/dispatcher-personal-info';
+import { Paper } from '@/components/ui/surfaces/paper/paper';
 import { useMeCarrier, useMeDispatcher, useMeDriver } from '@hooks';
 import { useGetUserQuery } from '@store/api/users-api';
 import { JobOffer } from '@store/client';
-import { classname, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
 
 import { ConditionsInfoColumn } from '../conditions-info-column';
 import { DispatcherDetailsInfoColumn } from '../dispatcher-details-info-column';

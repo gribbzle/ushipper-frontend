@@ -2,10 +2,10 @@ import React, { useMemo } from 'react';
 import { FieldValidator } from 'final-form';
 import { Field } from 'react-final-form';
 
+import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
 import { TimeCondition } from '@/enums';
-import { SelectionButtonOption } from '@components';
-import { SelectionButtonGroupInput } from '@fields';
-import { getWorkingTimeTranslate } from '@utils';
+import { SelectionButtonGroupInput } from '@/fields/selection-button-group-input/selection-button-group-input';
+import { getWorkingTimeTranslate } from '@utils/get-working-time-translate';
 
 type Props = {
     name: string;

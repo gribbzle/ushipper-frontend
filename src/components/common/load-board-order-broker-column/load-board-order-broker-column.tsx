@@ -1,10 +1,13 @@
 import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 
-import { CompanyRatingWithReviewCount } from '@/components/common';
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
 import { OctothorpeIcon, PhoneIcon } from '@icons';
 import { Load } from '@store/client';
-import { classname, formatPhoneNumber, getObjectWithoutEmptyFields, translateByNamespace } from '@utils';
+import { classname } from '@utils/classname';
+import { translateByNamespace } from '@utils/i18n';
+import { getObjectWithoutEmptyFields } from '@utils/objects';
+import { formatPhoneNumber } from '@utils/phone';
 
 import './load-board-order-broker-column.scss';
 

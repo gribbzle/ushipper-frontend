@@ -1,5 +1,5 @@
-import { OrderRequest } from '@store/api/order-requests-api';
-import { Load } from '@store/client';
+import { OrderRequest } from '@store/api/order-requests-types';
+import { Load } from '@store/common/orders/types';
 
 export type SendOfferDrawer = {
     isOpen: boolean;

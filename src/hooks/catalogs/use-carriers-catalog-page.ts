@@ -4,7 +4,8 @@ import { CarriersCatalogListTabsEnum } from '@/enums';
 import { useAppSelector } from '@store';
 import { useGetCarriersCatalogQuery, useGetCarriersCatalogStatisticQuery } from '@store/api/catalogs-api';
 import { CarriersCatalogStatistic, catalogsSelectedFiltersSelector } from '@store/client';
-import { numberWithCommas, transformCatalogFiltersForQuery } from '@utils';
+import { transformCatalogFiltersForQuery } from '@utils/catalogs/transform-catalog-filters-for-query';
+import { numberWithCommas } from '@utils/numbers';
 
 export const useCarriersCatalogPage = () => {
     const filters = useAppSelector(catalogsSelectedFiltersSelector);

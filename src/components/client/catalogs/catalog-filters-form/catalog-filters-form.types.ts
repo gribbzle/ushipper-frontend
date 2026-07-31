@@ -1,4 +1,4 @@
-import { SortSelectValue } from '@/components/common';
+import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
 
 import { CategoryFields } from '../../profile-settings';

@@ -4,7 +4,7 @@ import { useField, useForm } from 'react-final-form';
 import { DispatchFeeFilterEnum } from '@/enums';
 import { useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client';
-import { translateByNamespace } from '@utils';
+import { translateByNamespace } from '@utils/i18n';
 
 import { dispatchFeeRanges } from './dispatch-fee-checkbox-group.types';
 
