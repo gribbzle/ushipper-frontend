@@ -30,7 +30,7 @@ export const useCancelRequest = ({ publicOrderId, publicRequestId }: { publicOrd
                 );
             });
         }
-    }, [publicOrderId, publicRequestId, , dispatch, updateRequest]);
+    }, [publicOrderId, publicRequestId, dispatch, updateRequest]);
 
     return { handleCancelRequest };
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ContactInfo } from '@/components/common/contact-info/contact-info';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

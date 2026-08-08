@@ -33,7 +33,7 @@ export const LoadboardDrawerMap = ({ className, deliveryInformation, pickupInfor
             };
 
             setGeoJSON(featureCollection);
-        } catch (e) {
+        } catch {
             return null;
         }
     }, []);

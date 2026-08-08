@@ -8,6 +8,8 @@ import {
 } from '@/enums';
 import { Company } from '@store/admin';
 import { AuthorizedUserInfo } from '@store/global/shared-types';
+import { CatalogFiltersFormState } from "@/components/client/catalogs/catalog-filters-form/catalog-filters-form.types";
+import { CategoryFields } from "@/components/client/profile-settings/business-info/business-info-form.types";
 
 export type BaseCatalogFiltersParams = {
     page?: number;
@@ -19,21 +21,14 @@ export type BaseCatalogFiltersParams = {
     [key: string]: any;
 };
 
-type RatingOrDispatchFeeFilter = { from: number; to: number };
-type SpecializationsFilter = { id: number; categories?: { id: number }[] };
-
 export type CatalogFiltersValue = Omit<BaseCatalogFiltersParams, 'perPage'> &
     Partial<{
         statisticsStatus: CatalogListTabsEnum;
         orderName: CatalogSortingNameEnum;
         orderDirection: OrderSortingDirection;
         page: number;
-        ratings: RatingOrDispatchFeeFilter[];
-        specializations: SpecializationsFilter[];
-        country: string;
-        dispatchFees: RatingOrDispatchFeeFilter[];
-        languages: string[];
-    }>;
+    }> &
+        Omit<CatalogFiltersFormState, keyof CategoryFields | 'sortBy'>;
 
 export type DispatcherCatalogInfo = Omit<
     AuthorizedUserInfo,

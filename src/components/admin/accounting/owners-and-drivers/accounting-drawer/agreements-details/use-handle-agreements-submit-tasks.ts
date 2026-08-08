@@ -100,7 +100,7 @@ export const useHandleAgreementsSubmitTasks = (formRef: MutableRefObject<FormApi
             try {
                 await Promise.all(updateTasks);
             } catch (error) {
-                throw error;
+                throw new Error(`Failed: ${error}`);
             }
         },
         [account, formRef, updateAccount, updateAccountConfig, handleCreateEditAccountFees, handleDeleteAccountFees],

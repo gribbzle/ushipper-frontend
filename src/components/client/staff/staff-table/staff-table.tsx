@@ -21,7 +21,7 @@ export const StaffTable = memo(({ onRowClick, pageName, view, disabled }: StaffT
     const dispatch = useAppDispatch();
     const { onPageChangeHandler: onPageChange } = usePagination();
     const { onPerPageChangeHandler: onPerPageChange } = useTable();
-    const authorizedUserPUblicId = useAppSelector(authorizedUserPublicIdSelector);
+    const authorizedUserPublicId = useAppSelector(authorizedUserPublicIdSelector);
 
     const hasSpecificFilters = specificFilters.some(key => filters[key]);
 
@@ -35,7 +35,7 @@ export const StaffTable = memo(({ onRowClick, pageName, view, disabled }: StaffT
             page: filters.page ?? 1,
             phone: filters.phone?.replace(/\s+/g, ''),
         }),
-        ...(view === 'tree' ? { superiorUserPublicId: hasSpecificFilters ? authorizedUserPUblicId : '' } : {}),
+        ...(view === 'tree' ? { superiorUserPublicId: hasSpecificFilters ? authorizedUserPublicId : '' } : {}),
     });
 
     const onPageChangeHandler = useCallback(

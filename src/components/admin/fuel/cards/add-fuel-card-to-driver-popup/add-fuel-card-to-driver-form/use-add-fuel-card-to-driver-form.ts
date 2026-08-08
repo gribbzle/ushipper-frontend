@@ -35,7 +35,7 @@ export const useFuelCardToDriverForm = ({ onAfterSubmit }: Pick<AddFuelCardToDri
 
                     onAfterSubmit();
                     toast.success(t<string>(`${mode}-fuel-cards-to-driver-success`));
-                } catch (exception) {
+                } catch {
                     toast.error(t<string>(`${mode}-fuel-cards-to-driver-error`));
                 }
             }

@@ -53,7 +53,7 @@ export default function DeclineModal() {
 
     const declineOffer = useCallback(() => {
         if (formRef.current) {
-            const { values } = formRef.current?.getState();
+            const { values } = formRef.current.getState();
 
             decline({
                 publicOfferId: router.query.openDeclineOfferId as string,

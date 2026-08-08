@@ -1,8 +1,4 @@
-type AppState = {
-    client: {
-        wallet: any;
-    };
-};
+import { AppState } from "@store";
 
 import { CashOutTransactionPopupPropsState } from './types';
 

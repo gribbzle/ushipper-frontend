@@ -2,7 +2,7 @@ import React from 'react';
 import has from 'has-values';
 
 import { getFullNameOfVehicle } from '@/utils/vehicle';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
 
 import './offer-vehicles.scss';

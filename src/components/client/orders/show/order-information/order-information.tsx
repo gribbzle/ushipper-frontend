@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { OrderSetDispatcherDrawer } from '@/components/client/orders/drawers/order-set-dispatcher-drawer/order-set-dispatcher-drawer';
 import { OrderSetDriverDrawer } from '@/components/client/orders/drawers/order-set-driver-drawer/order-set-driver-drawer';
 import { UserInfo } from '@/components/client/orders/show/order-information/user-info';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderSourcesEnum, UserRoleGroup, UserRoleType } from '@/enums';
 import { useCanManageOrder } from '@/hooks/order';
 import { useIsPartnerCompany, useMeDriverRelated, useUserRoleGroup } from '@hooks';

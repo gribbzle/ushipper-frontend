@@ -19,14 +19,17 @@
         "incremental": true,
         "paths": {
             "@api": ["./src/api/index"],
+                        "@api/*": ["./src/api/*"],
             "@enums": ["./src/enums/index"],
             "@hooks": ["./src/hooks/index"],
+                        "@hooks/*": ["./src/hooks/*"],
             "@components": ["./src/components/index"],
             "@constants": ["./src/constants/index"],
             "@fields": ["./src/fields/index"],
             "@store": ["./src/store/index"],
             "@store/*": ["./src/store/*"],
             "@utils": ["./src/utils/index"],
+                        "@utils/*": ["./src/utils/*"],
             "@icons": ["./src/assets/icons/index"],
             "@images": ["./src/assets/images/index"],
             "@logo": ["./src/assets/logos/index"],
@@ -38,6 +41,6 @@
             "@/*": ["./src/*"]
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "include": ["next-env.d.ts", "src/**/*", "*.ts", "*.tsx"],
     "exclude": ["node_modules"]
 }

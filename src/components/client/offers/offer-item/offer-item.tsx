@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Paper } from '@/components/ui/surfaces/paper/paper';
-import { OrderOffer } from '@store/api/order-offers';
+import { Paper } from '@/components/common/paper/paper';
+import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 
 import { OfferItemContent } from './offer-item-content';

@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { GenericButton } from '@/components/common/generic-button/generic-button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import useOutsideCLick from '@/hooks/use-outside-cLick';
 import { MessageFilledIcon, PhoneFilledIcon, UserCircle } from '@icons';
 import { useAppDispatch } from '@store';

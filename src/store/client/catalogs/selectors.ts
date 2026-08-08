@@ -1,11 +1,5 @@
-import { CatalogFiltersValue } from './types';
-type AppState = {
-    client: {
-        catalogs: any;
-    };
-};
-
-import { CatalogsSliceState } from './types';
+import { CatalogFiltersValue, CatalogsSliceState } from './types';
+import { AppState } from "@store";
 
 export const catalogsSelector = (state: AppState): CatalogsSliceState => state.client.catalogs;
 

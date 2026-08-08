@@ -66,7 +66,7 @@ export const ParsedLoadboardItemRightBlock = ({ order, loadBoardFilters }: Omit<
                 {!contractFoundAt && !contractSignedAt && contractCheckedAt && showCheckContractButton && (
                     <span className={cn('time', [cn('checked')])}>{t('checked-time', { time: diffForHumans(new Date(contractCheckedAt), true) })}</span>
                 )}
-                {!contractFoundAt && contractFoundAt && <span className={cn('time', [cn('found'), cn('checked')])}>{t('contract-found')}</span>}
+                {/*{!contractFoundAt && contractFoundAt && <span className={cn('time', [cn('found'), cn('checked')])}>{t('contract-found')}</span>}*/}
                 {contractSignedAt && (
                     <span className={cn('time', [cn('found'), cn('checked')])}>
                         {t('contract-signed', { time: diffForHumans(new Date(contractSignedAt), true) })}

@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        twilio: any;
-    };
-};
+import { AppState } from "@store";
 
 const twilioSelector = (state: AppState) => state.common.twilio;
 

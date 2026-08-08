@@ -5,7 +5,7 @@ import has from 'has-values';
 import { OrderDriverPaymentFormAlert } from '@/components/client/orders/alerts/order-driver-payment-form-alert/order-driver-payment-form-alert';
 import { OrderActions } from '@/components/client/orders/order-actions/order-actions';
 import { OrderItemHeader } from '@/components/client/orders/order-item/order-item-header';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useIsPartnerCompany, useMeAdmin, useMeDriverRelated } from '@hooks';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

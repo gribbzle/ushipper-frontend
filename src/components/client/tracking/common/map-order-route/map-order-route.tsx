@@ -37,7 +37,7 @@ export const MapOrderRoute = ({ startPoint, endPoint, mapRef, bounds }: MapOrder
                 };
 
                 setGeoJSON(featureCollection);
-            } catch (e) {
+            } catch {
                 return null;
             }
         };

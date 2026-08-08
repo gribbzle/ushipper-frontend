@@ -15,8 +15,6 @@ import './driver-chat-selector-form.scss';
 const t = translateByNamespace('common:messages-page:driver-chat-selector-popup');
 const cn = classname('driver-chat-selector-form');
 
-export { DriverSelectorFormState, DriverSelectorFormStateProps };
-
 export const DriverSelectorForm = ({ formRef, onAfterSubmit }: DriverSelectorFormStateProps) => {
     const { onSubmit, setSelectedDriverName } = useDriverChatSelectorForm({ onAfterSubmit });
 

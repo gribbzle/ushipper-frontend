@@ -18,7 +18,7 @@ export const BalanceTable = ({ balanceType, balanceId }: BalanceTableProps) => {
         onOrderChangeHandler,
     } = useBalanceTable({ balanceType, balanceId });
 
-    if (!!transactionsPaginateData?.data.length) {
+    if (transactionsPaginateData?.data.length) {
         return (
             <>
                 {!!transactionsPaginateData?.data.length && (

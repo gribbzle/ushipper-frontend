@@ -2,7 +2,7 @@ import { VehicleFormState } from '@/store/common/orders/types';
 import { Inspections } from '@store/client/order-BOL';
 
 import { apiSlice } from './api-slice';
-import { OrderVehicle } from './orders-api';
+import { OrderVehicle } from '@/shared/types';
 
 const orderVehicleApi = apiSlice.injectEndpoints({
     endpoints: builder => ({

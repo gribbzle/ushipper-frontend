@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Joi from 'joi';
 
-import { DeliveryInformation, OrderCommodity, OrderVehicle, PaymentInformation, PickupInformation } from '@store/api/orders-api';
+import { DeliveryInformation, OrderCommodity, PaymentInformation, PickupInformation } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { Load } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX, isUshipper } from '@utils/project-config';

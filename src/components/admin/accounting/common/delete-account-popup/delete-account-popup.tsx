@@ -30,7 +30,7 @@ export const DeleteAccountPopup = () => {
                 dispatch(accountingAccountsApi.util.invalidateTags([{ type: 'AccountingAccounts', id: 'LIST' }]));
 
                 toast.success(t<string>('delete-account-success'));
-            } catch (error) {
+            } catch {
                 toast.error<string>(t('delete-account-error'));
             }
         }

@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { Button } from '@/components/common/button/button';
 import { OverallRatingBlock } from '@/components/common/overall-rating-block/overall-rating-block';
 import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { MessageTextLeftIcon, PencilWithLineIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Review } from '@store/client';

@@ -25,7 +25,7 @@ export const useLinkFuelCardForm = ({ onAfterSubmit }: Pick<LinkFuelCardFormProp
 
                     onAfterSubmit();
                     toast.success<string>(t('add-fuel-card-for-driver-success'));
-                } catch (exception) {
+                } catch {
                     toast.error<string>(t('add-fuel-card-for-driver-error'));
                 }
             }

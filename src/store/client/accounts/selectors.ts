@@ -1,8 +1,4 @@
-type AppState = {
-    client: {
-        accounts: any;
-    };
-};
+import { AppState } from "@store";
 
 const accountsSelector = (state: AppState) => state.client.accounts;
 

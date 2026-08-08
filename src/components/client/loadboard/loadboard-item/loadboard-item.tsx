@@ -5,7 +5,7 @@ import { OrderRoute } from '@/components/client/orders/order-route/order-route';
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { ViewOrderRouteButton } from '@/components/client/orders/view-order-route-button/view-order-route-button';
 import { LoadBoardOrderBrokerColumn } from '@/components/common/load-board-order-broker-column/load-board-order-broker-column';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OfferStatusesEnum } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { getFinalPaymentAmount } from '@/utils/payment';

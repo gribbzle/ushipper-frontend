@@ -7,7 +7,7 @@ import { OrderItemHeader } from '@/components/client/orders/order-item/order-ite
 import { OrderItemProps } from '@/components/client/orders/order-item/types';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
 import { OrderItemVehiclesList } from '@/components/client/orders/order-item-vehicles-list';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderStatus } from '@/enums';
 import { getOrderPriceWithTerms } from '@/utils/order';
 import { calculateTotalPayment, getPaymentTermTranslate } from '@/utils/payment';

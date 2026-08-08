@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ParsedOrderDetailsDrawer } from '@/components/client/loadboard/parsed-order-details-drawer/parsed-order-details-drawer';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useMeAdmin } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedChatIdSelector } from '@store/client';

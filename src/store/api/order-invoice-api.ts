@@ -2,7 +2,8 @@ import { Attachment, NullableFields } from '@/shared';
 import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';
-import { CustomerInformation, DeliveryInformation, OrderVehicle, PaymentInformation, PickupInformation } from './orders-api';
+import { CustomerInformation, DeliveryInformation, PaymentInformation, PickupInformation } from './orders-api';
+import { OrderVehicle } from '@/shared/types';
 
 type InvoiceCustomerInformation = Omit<CustomerInformation, 'fullName'>;
 

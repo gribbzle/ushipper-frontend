@@ -3,7 +3,8 @@ import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { RatingOrDispatchFeeFilter, SpecializationsFilter } from '../catalog-filters-form/catalog-filters-form.types';
 
-import { CatalogFiltersForUrlParams, CatalogFiltersValue } from './catalog-filters-tabs.types';
+import { CatalogFiltersForUrlParams } from './catalog-filters-tabs.types';
+import { CatalogFiltersValue } from '@store/client/catalogs/types';
 
 export const getCatalogFiltersForUrlParams = (filters: CatalogFiltersValue): CatalogFiltersForUrlParams => {
     const {

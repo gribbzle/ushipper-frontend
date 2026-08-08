@@ -73,8 +73,8 @@ export const fetchRouteGeoJSON = async (coordinates: [number, number][]) => {
         } as Feature;
 
         return routeGeoJSON;
-    } catch (e) {
-        throw e;
+    } catch (error) {
+        throw new Error(`Failed: ${error}`);
     }
 };
 

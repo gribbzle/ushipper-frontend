@@ -7,7 +7,7 @@ import { RatingCheckBoxGroup } from '@/components/client/catalogs/catalog-filter
 import { Divider } from '@/components/common/divider/divider';
 import { LanguagesSelect } from '@/components/common/languages-select/languages-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { CarriersCatalogSortingNameEnum, CatalogSortingNameEnum } from '@/enums';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useIsCarriersCatalogPage, useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';

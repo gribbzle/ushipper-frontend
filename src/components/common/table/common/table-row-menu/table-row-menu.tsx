@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { DropdownDividerOption, DropdownOption, FloatingDropdown } from '@/components/common/dropdown/dropdown';
+import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
+import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { ActionsIcon } from '@icons';
 import { classname } from '@utils/classname';
 

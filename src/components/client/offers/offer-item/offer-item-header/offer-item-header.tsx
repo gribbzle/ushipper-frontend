@@ -8,7 +8,7 @@ import { Button } from '@/components/common/button/button';
 import { getOrderId, getPaymentTermsTranslate } from '@/utils/order';
 import { getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
 import { useMeCarrier } from '@hooks';
-import { OrderOffer } from '@store/api/order-offers';
+import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

@@ -26,7 +26,7 @@ export const LoadboardMapRoute = () => {
                 };
 
                 setGeoJSON(featureCollection);
-            } catch (e) {
+            } catch {
                 return null;
             }
         };

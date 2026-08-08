@@ -47,7 +47,7 @@ export const useUpdateCarrierFees = () => {
                     await Promise.all(feePromises);
 
                     toast.success<string>(t('update-fees-success'));
-                } catch (error) {
+                } catch {
                     toast.error<string>(t('update-fees-error'));
                 }
             }

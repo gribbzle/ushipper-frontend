@@ -30,7 +30,7 @@ export const UnassignDriverFromFuelCardPopup = () => {
 
                 onCloseHandler();
                 toast.success(tNot<string>('unassign-driver-from-fuel-card-success'));
-            } catch (exception) {
+            } catch {
                 toast.error(tNot<string>('unassign-driver-from-fuel-card-error'));
             }
         }

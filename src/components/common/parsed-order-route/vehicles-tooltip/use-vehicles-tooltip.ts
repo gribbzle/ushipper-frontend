@@ -1,7 +1,7 @@
 import { MouseEvent, useCallback, useMemo } from 'react';
 
 import { getFullNameOfVehicle, getVehicleTypeTranslation } from '@/utils/vehicle';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 
 export const getVehicleLabel = (vehicle: OrderVehicle | string): string => {
     if (typeof vehicle === 'object') {

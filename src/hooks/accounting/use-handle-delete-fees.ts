@@ -9,7 +9,7 @@ export const useHandleDeleteFees = () => {
         try {
             await Promise.all(promises);
         } catch (error) {
-            throw error;
+            throw new Error(`Failed: ${error}`);
         }
     };
 

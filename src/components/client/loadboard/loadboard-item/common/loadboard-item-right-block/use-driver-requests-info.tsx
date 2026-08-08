@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { useMeCarrier, useMeCarrierDriver, useMeDispatcher, useMeDriverRelated } from '@hooks';
-import { OrderRequest } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';

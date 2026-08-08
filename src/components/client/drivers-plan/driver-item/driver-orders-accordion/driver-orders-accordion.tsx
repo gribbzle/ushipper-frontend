@@ -1,14 +1,12 @@
 import React, { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { CheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/checking-contract-popup';
-import { useTrackingDisplayedPathsOnMap } from '@/components/client/tracking/drivers-tracking-map/hooks';
 import { Button } from '@/components/common/button/button';
 import { MapBox } from '@/components/common/MapBox/MapBox';
 import { OrderSourcesEnum } from '@enums';
 import { SearchIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { LoadBoardFilters, useGetLoadboardItemsQuery } from '@store/api/loadboard-api';
-import { useGetTrackingQuery } from '@store/api/users-api';
 import { trackingActions } from '@store/client';
 import { User } from '@store/common';
 import { classname } from '@utils/classname';
@@ -23,7 +21,7 @@ import './driver-orders-accordion.scss';
 const cn = classname('driver-orders-accordion');
 const t = translateByNamespace('client:drivers-plan:driver-item:orders-tab');
 
-export const DriverOrdersAccordion = ({ driver: { name, publicId } }: { driver: User }) => {
+export const DriverOrdersAccordion = ({ driver: { publicId } }: { driver: User }) => {
     const [page, setPage] = useState<number>(1);
     const dispatch = useAppDispatch();
 
@@ -46,9 +44,9 @@ export const DriverOrdersAccordion = ({ driver: { name, publicId } }: { driver: 
         [setPage, page],
     );
 
-    const { data: tracking } = useGetTrackingQuery({ query: name });
+    // const { data: tracking } = useGetTrackingQuery({ query: name });
 
-    const displayedPathsOnMap = useTrackingDisplayedPathsOnMap(tracking, publicId, null);
+    // const displayedPathsOnMap = useTrackingDisplayedPathsOnMap(tracking, publicId, null);
 
     useEffect(() => {
         dispatch(trackingActions.setTestRoutePathLogic(true));

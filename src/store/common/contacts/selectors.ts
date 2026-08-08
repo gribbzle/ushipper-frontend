@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        contacts: any;
-    };
-};
+import { AppState } from "@store";
 
 const contactsPageSelector = (state: AppState) => state.common.contacts;
 

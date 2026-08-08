@@ -26,7 +26,7 @@ export const useOrdersExport = () => {
             const url = `/api/orders?x-response-format=csv&${queryString}`;
 
             await download(url, filename);
-        } catch (err) {
+        } catch {
             toast.error<string>(t('export-orders-error'));
         }
     };

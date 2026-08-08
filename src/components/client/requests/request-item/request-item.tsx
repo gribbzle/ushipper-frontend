@@ -9,14 +9,15 @@ import { RequestDates } from '@/components/client/requests/request-dates/request
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OfferToRequestStatusesEnum, OrderStatus } from '@/enums';
 import { RequestStatusesEnum } from '@/enums';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { calculateTotalPayment, getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
 import { Ellipse, UserIcon } from '@icons';
 import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
-import { OrderRequest, orderRequestsApi, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
+import { orderRequestsApi, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { Load } from '@store/client';
 import { requestsSliceActions } from '@store/client/requests/slice';
 import { classname } from '@utils/classname';

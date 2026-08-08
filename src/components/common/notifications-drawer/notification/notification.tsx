@@ -17,8 +17,6 @@ const t = translateByNamespace('common:notifications');
 const activityT = translateByNamespace('client:order:activity');
 const cn = classname('notification');
 
-export { NotificationProps };
-
 export const Notification = (props: NotificationProps) => {
     const { creator, type, readAt, pinnedAt } = props;
 

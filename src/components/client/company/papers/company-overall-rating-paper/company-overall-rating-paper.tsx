@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { CompanyTotalRatingInfo } from '@/components/client/company/company-total-rating-info/company-total-rating-info';
 import { RatingBar } from '@/components/common/rating-bar/rating-bar';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { companyTotalRatingSelector } from '@store/admin';
 import { classname } from '@utils/classname';

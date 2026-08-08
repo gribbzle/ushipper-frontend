@@ -52,7 +52,7 @@ export const useCarrierPaymentInfoLabels = () => {
     const addTermsLabel = useMemo(
         () =>
             isSelectedDelayedTermInInstantField || isSelectedDelayedTermInDelayedField ? t('fields.add-instant-term-btn') : t('fields.add-delayed-term-btn'),
-        [, isSelectedDelayedTermInInstantField, isSelectedDelayedTermInDelayedField],
+        [isSelectedDelayedTermInInstantField, isSelectedDelayedTermInDelayedField],
     );
 
     return { termLabel, delayedTermLabel, addTermsLabel };

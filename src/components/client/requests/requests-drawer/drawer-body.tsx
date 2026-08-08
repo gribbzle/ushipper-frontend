@@ -5,7 +5,7 @@ import { RequestItem } from '@/components/client/requests/request-item/request-i
 import { RequestOrderInfo } from '@/components/client/requests/requests-drawer/request-order-info';
 import { Button } from '@/components/common/button/button';
 import { ArrowDownIcon } from '@icons';
-import { OrderRequest } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

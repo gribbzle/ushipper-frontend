@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { AddressFields } from '@/components/client/company-settings/company-address-fields';
 import { Button } from '@/components/common/button/button';
 import { Divider } from '@/components/common/divider/divider';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import { ImageFileInput, StringInput } from '@fields';
 import { useGetCompanyData, useMeCarrier } from '@hooks';

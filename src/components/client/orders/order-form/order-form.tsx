@@ -46,7 +46,7 @@ const ReactFinalForm = ({ children, initialValues = {}, afterSubmit, ...rest }: 
                 await updateOrder({ ...orderValues, publicId: orderId }).unwrap();
                 toast.success(t<string>('updated'));
                 afterSubmit?.();
-            } catch (e) {
+            } catch {
                 toast.error(t<string>('update-error'));
             }
         },

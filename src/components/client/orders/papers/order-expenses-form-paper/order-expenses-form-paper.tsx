@@ -3,7 +3,7 @@ import { useForm } from 'react-final-form';
 
 import { OrderExpensesForm } from '@/components/client/orders/forms/order-expenses-form/order-expenses-form';
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { ExpenseTypeEnum } from '@/enums';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';

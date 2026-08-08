@@ -2,8 +2,8 @@ import hasValue from 'has-values';
 
 import { translateByNamespace } from '@utils/i18n';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
-
-import { Address, MailingAddress, RocketkorFormValue } from '../rocketkor.types';
+import { Address } from '@types';
+import { MailingAddress, RocketkorFormValue } from '../rocketkor.types';
 
 const t = translateByNamespace('common:validators');
 

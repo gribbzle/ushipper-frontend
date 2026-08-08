@@ -8,8 +8,8 @@ import { CompanyLogo } from '@/components/client/company/company-logo/company-lo
 import { CompanyTotalRatingInfo } from '@/components/client/company/company-total-rating-info/company-total-rating-info';
 import { Avatar } from '@/components/common/avatar/avatar';
 import { DispatcherLanguages } from '@/components/common/dispatcher-languages/dispatcher-languages';
-import { Tag } from '@/components/common/info-tag/info-tag';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Tag } from '@/components/common/tag/tag';
+import { Paper } from '@/components/common/paper/paper';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage, useIsRatingPanel } from '@hooks';
 import { CheckGearIcon, GeoLocationIcon } from '@icons';
 import { Company } from '@store/admin';

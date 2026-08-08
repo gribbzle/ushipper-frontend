@@ -55,7 +55,7 @@ export const diffForHumans = (date: Date, short = false) => {
 export const formatDate = (date: string) => {
     try {
         return format(new Date(date), 'dd/MM/yyyy HH:mm');
-    } catch (ex) {
+    } catch {
         return null;
     }
 };
@@ -67,7 +67,7 @@ export const formatLongDate = (value: string | Date) => {
         const date = typeof value === 'string' ? new Date(value) : value;
 
         return format(date, 'MMMM d, yyyy');
-    } catch (ex) {
+    } catch {
         return null;
     }
 };
@@ -77,7 +77,7 @@ export const formatLongDateOrGetDash = (value: string | Date) => (value ? format
 export const formatDateWithMonthInWords = (date: string) => {
     try {
         return format(new Date(date), 'dd MMM yyyy, HH:mm');
-    } catch (ex) {
+    } catch {
         return null;
     }
 };
@@ -87,7 +87,7 @@ export const getShortDate = (dateString: string) => {
         const date = new Date(dateString);
 
         return format(date, 'MMM d');
-    } catch (ex) {
+    } catch {
         return null;
     }
 };
@@ -100,7 +100,7 @@ export const checkIsGPSStatusRecentlyUpdated = (dateString: string) => {
         const oneHourInMilliseconds = 60 * 60 * 1000;
 
         return timeDifference < oneHourInMilliseconds;
-    } catch (ex) {
+    } catch {
         return null;
     }
 };
@@ -111,7 +111,7 @@ export const CheckIsOutdated = (scheduledDateString: string, actualDateString: n
         const scheduledDate = new Date(scheduledDateString);
 
         return actualDate > scheduledDate;
-    } catch (ex) {
+    } catch {
         return null;
     }
 };

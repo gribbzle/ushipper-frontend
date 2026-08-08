@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { DispatchersSelect } from '@/components/common/dispatchers-select/dispatchers-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { CloseIcon } from '@icons';
 import { ShipperTrackingFiltersFormState } from '@store/client';
 import { classname } from '@utils/classname';

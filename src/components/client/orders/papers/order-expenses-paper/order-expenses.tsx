@@ -6,7 +6,7 @@ import { OrderExpenseDrawer } from '@/components/client/orders/drawers/order-exp
 import { DeleteOrderExpensePopup } from '@/components/client/orders/popups/delete-order-expense-popup/delete-order-expense-popup';
 import { Button } from '@/components/common/button/button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useCanManageOrder } from '@/hooks/order';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';

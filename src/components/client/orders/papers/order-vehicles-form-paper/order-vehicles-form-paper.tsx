@@ -3,7 +3,7 @@ import { useForm } from 'react-final-form';
 
 import { OrderVehiclesForm } from '@/components/client/orders/forms/order-vehicles-form/order-vehicles-form';
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { VehicleType } from '@enums';
 import { PlusIcon } from '@icons';

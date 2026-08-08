@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 import { getAllFiltersFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { renderTextWithBreakLines } from '@utils/render';

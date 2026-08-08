@@ -5,7 +5,7 @@ import { Field, Form } from 'react-final-form';
 import { DispatchersSelect } from '@/components/common/dispatchers-select/dispatchers-select';
 import { SearchSubjectsSelect } from '@/components/common/search-subjects-select/search-subjects-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderSortingName } from '@/enums';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useMeCarrier, useMeDriverRelated } from '@hooks';

@@ -26,7 +26,7 @@ export const useFetchChatBetweenPhones = ({ internalPhone, externalPhone }: { in
             setFetchedChat(data);
 
             return data;
-        } catch (error) {
+        } catch {
             toast.error<string>(t('send-message-error-notification'));
 
             return null;

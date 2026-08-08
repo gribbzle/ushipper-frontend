@@ -1,11 +1,7 @@
 import { BalanceType } from '@/enums';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
-
-type AppState = {
-    admin: {
-        accounting: any;
-    };
-};
+import { FinancialBalanceData } from '@store/admin';
+import { AppState } from "@store";
 
 import {
     AccountingDrawerPropsState,
@@ -17,7 +13,6 @@ import {
     DeclineOrPayToDriverPopupPropsState,
     DeleteAccountPopupPropsState,
     DriversMapPopupPropsState,
-    FinancialBalanceData,
     InitiateAccountPaymentMethodsPopupPropsState,
     LinkFuelCardPopupPropsState,
     ReportPopupPropsState,

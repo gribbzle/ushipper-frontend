@@ -1,4 +1,4 @@
-import { ClickedRowId } from '@components/common/table/table.types';
+import { ClickedRowId } from '@/components/common/table/table.types';
 import { Permissions } from '@store/global/shared-types';
 import { RequestWithStatus } from '@utils/redux';
 

@@ -24,7 +24,7 @@ export const ShippersOrdersListHead = ({ counter }: { counter?: number }) => {
     const handleToggleOrdersFilter = useCallback(
         (value: string | number) => {
             if (value === 'status' || value === 'dispatcher') {
-                const { perPage, page, ...others } = filters;
+                const { perPage: _perPage, page: _page, ...others } = filters;
 
                 handleFiltersChange({ ...others, grouping: value }, true);
             }

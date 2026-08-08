@@ -14,7 +14,7 @@ const createErrorObj = (errorsObj: any) => {
         } else {
             return {};
         }
-    } catch (e) {
+    } catch {
         return {};
     }
 };

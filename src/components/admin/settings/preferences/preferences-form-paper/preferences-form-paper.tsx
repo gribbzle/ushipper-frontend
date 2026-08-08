@@ -4,7 +4,7 @@ import { Form, FormSpy } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { RegistrationSettings, useGetAdminConfigQuery, usePostAdminConfigMutation } from '@store/api/admin-configuration';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

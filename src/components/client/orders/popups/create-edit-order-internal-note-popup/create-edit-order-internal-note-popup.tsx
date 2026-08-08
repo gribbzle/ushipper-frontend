@@ -78,8 +78,8 @@ export const CreateEditOrderInternalNotePopup = ({ onEditComplete, onCreateCompl
         [createInternalNote, handleClose, internalNoteId, mode, onCreateComplete, onEditComplete, publicOrderId, updateOrderInternalNote],
     );
 
-    const handleChangeInternalNote = useCallback((value: string) => {
-        value ? setIsSubmitDisabled(true) : setIsSubmitDisabled(false);
+  const handleChangeInternalNote = useCallback((value: string) => {
+    setIsSubmitDisabled(!!value);
     }, []);
 
     const initialValues = useMemo(() => {

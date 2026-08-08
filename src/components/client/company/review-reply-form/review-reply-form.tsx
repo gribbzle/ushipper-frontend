@@ -43,7 +43,7 @@ export const ReviewReplyForm = ({ formId, initialValues, replyId, reviewId, comp
                         onAfterFormSubmit();
                         toast.success<string>(translateNotification('create-review-reply-success'));
                     })
-                    .catch(e => {
+                    .catch(() => {
                         toast.error<string>(translateNotification('create-review-reply-error'));
                     });
             } else if (reviewId && replyId) {
@@ -53,7 +53,7 @@ export const ReviewReplyForm = ({ formId, initialValues, replyId, reviewId, comp
                         onAfterFormSubmit();
                         toast.success<string>(translateNotification('edit-review-reply-success'));
                     })
-                    .catch(e => {
+                    .catch(() => {
                         toast.error<string>(translateNotification('edit-review-reply-error'));
                     });
             }

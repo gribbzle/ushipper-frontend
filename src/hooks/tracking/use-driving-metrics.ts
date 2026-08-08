@@ -49,7 +49,7 @@ export const useDrivingMetrics = (driverLocation?: Coordinates | null, targetLoc
 
                 setDrivingDistance(distance);
                 setTime(averageSpeed ? calculateDeliveryTime(distance, averageSpeed) : null);
-            } catch (error) {
+            } catch {
                 setDrivingDistance(null);
                 setTime(null);
             } finally {

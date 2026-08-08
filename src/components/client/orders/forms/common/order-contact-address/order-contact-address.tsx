@@ -107,7 +107,7 @@ export const OrderContactAddress = ({
                             change(`${prefix}.fullName`, name);
                             change(`${prefix}.email`, email);
 
-                            if (!!requiredFields.length) {
+                            if (requiredFields.length) {
                                 blur(`${prefix}.city`);
                                 blur(`${prefix}.state`);
                                 blur(`${prefix}.zip`);

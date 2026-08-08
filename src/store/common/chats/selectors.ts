@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        chats: any;
-    };
-};
+import { AppState } from "@store";
 import { RequestStatus } from '@utils/redux';
 
 import { SupportChatDrawerPropsState } from './types';

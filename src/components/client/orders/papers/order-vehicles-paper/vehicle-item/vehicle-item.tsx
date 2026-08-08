@@ -12,7 +12,7 @@ import { useDisableProductChanging } from '@/hooks/order/use-disable-product-cha
 import { getVehicleTypeTranslation } from '@/utils/vehicle';
 import { PencilIcon, TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

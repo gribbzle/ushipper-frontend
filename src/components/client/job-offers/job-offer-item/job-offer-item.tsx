@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DispatcherPersonalInfo } from '@/components/client/catalogs/common/dispatcher-personal-info/dispatcher-personal-info';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useMeCarrier, useMeDispatcher, useMeDriver } from '@hooks';
 import { useGetUserQuery } from '@store/api/users-api';
 import { JobOffer } from '@store/client';

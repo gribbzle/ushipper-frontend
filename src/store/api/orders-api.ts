@@ -4,7 +4,8 @@ import { BalanceValue } from '@store/admin/accounting/balance-types';
 import { OrderCommodity } from '@store/api/order-commodity-types';
 import { OrderExpense } from '@store/api/order-expenses-api';
 import { ExternalCompany, Load, OrderFormState, OrderPaymentInformation, OrderSignature } from '@store/common/orders/types';
-import { GetOrdersData, OrderFilters } from '@types/order';
+import { GetOrdersData, OrderFilters } from '@/types/order';
+export type { GetOrdersData };
 import { CursorPagination, PaginatedResponse } from '@utils/redux';
 
 import { User } from '../common/staff/types';

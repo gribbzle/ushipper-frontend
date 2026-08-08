@@ -40,7 +40,7 @@ const blackListSlice = createSlice({
     name: 'blackList',
     initialState,
     reducers: {
-        setCompanyPublicId: (state, action: PayloadAction<string | null>) => {
+        setCompanyPublicId: (_state, _action: PayloadAction<string | null>) => {
             // state.companyPublicId = action.payload;
         },
         setCreateEditModalProps: (state, action: PayloadAction<CreateEditBlackListItemModalState>) => {

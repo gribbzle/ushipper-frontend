@@ -13,7 +13,7 @@ export const useHandleCreateEditCompanyFees = () => {
             try {
                 await Promise.all(promises);
             } catch (error) {
-                throw error;
+                throw new Error(`Failed: ${error}`);
             }
         }
     };

@@ -5,6 +5,7 @@ import { convertMetersToMiles } from '@/utils/converter';
 import { translateByNamespace } from '@/utils/i18n';
 import { formatToCurrency } from '@/utils/numbers';
 import { getPaymentMethodTranslate } from '@/utils/payment-method-translate';
+import { OrderPaymentInformation } from '@store/client';
 
 import { isFreightX } from './project-config';
 
@@ -60,11 +61,7 @@ export const getFinalPaymentAmount = (payment?: number | null, delayedPayment?: 
     return paymentPrice + delayedPrice - preparedBrokerFee;
 };
 
-type CalculateTotalPaymentProps = {
-    payment?: number;
-    delayedPayment?: number;
-    brokerFee?: number;
-};
+type CalculateTotalPaymentProps = Partial<Pick<OrderPaymentInformation, 'payment' | 'delayedPayment' | 'brokerFee'>>;
 
 export const calculateTotalPayment = ({ payment, delayedPayment, brokerFee }: CalculateTotalPaymentProps) =>
     getFinalPaymentAmount(payment, delayedPayment, brokerFee);

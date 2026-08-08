@@ -1,8 +1,4 @@
-type AppState = {
-    client: {
-        review: any;
-    };
-};
+import { AppState } from "@store";
 
 const reviewSelector = (state: AppState) => state.client.review;
 

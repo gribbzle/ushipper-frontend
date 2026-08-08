@@ -3,7 +3,7 @@ import { BillingAddress, FinancialBalanceData, MaskedBankAccount, MaskedCard } f
 import { BalanceResource, BalanceValue } from '@store/admin/accounting/balance-types';
 import { Company } from '@store/admin/companies/types';
 import { AccountData, AccountProfileData, AccountSuperiorUser, AccountUser, ParentData } from '@store/client/accounts/types';
-import { LatestLocation } from '@store/client/tracking/types';
+import { LatestLocation } from '@store/client/tracking/location-types';
 import { DeviceInformation } from '@store/common/staff/types';
 import { Fee } from '@types';
 import { PaginatedResponse } from '@utils/redux';

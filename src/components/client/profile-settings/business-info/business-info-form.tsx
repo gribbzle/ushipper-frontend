@@ -5,7 +5,7 @@ import { Button } from '@/components/common/button/button';
 import { LanguagesSelect } from '@/components/common/languages-select/languages-select';
 import { TransportServiceSelect } from '@/components/common/transport-service-select/transport-service-select';
 import { WorkingTimeSelectionButtonGroup } from '@/components/common/working-time-selection-button-group/working-time-selection-button-group';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { FormControl, InputLabel, StringInput, TextField } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

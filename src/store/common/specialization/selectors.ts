@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        specializations: any;
-    };
-};
+import { AppState } from "@store";
 
 const specializationsStateSelector = (state: AppState) => state.common.specializations;
 

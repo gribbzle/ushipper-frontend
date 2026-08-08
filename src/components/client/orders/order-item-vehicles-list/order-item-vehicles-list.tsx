@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { getFullNameOfVehicle, getVehicleTypeTranslation } from '@/utils/vehicle';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

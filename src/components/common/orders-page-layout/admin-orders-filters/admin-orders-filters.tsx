@@ -7,7 +7,7 @@ import { SearchSubjectsSelect } from '@/components/common/search-subjects-select
 import { FundsTransferCalculatedStatusSelect } from '@/components/common/selects/funds-transfer-calculated-status-select/funds-transfer-calculated-status-select';
 import { ReceiptStatusSelect } from '@/components/common/selects/receipt-status-select/receipt-status-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderSortingName } from '@enums';
 import { DatePicker, FormControl, InputLabel, TextField } from '@fields';
 import { classname } from '@utils/classname';

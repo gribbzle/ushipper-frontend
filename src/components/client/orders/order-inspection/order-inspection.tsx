@@ -12,7 +12,7 @@ import { InspectionSubtype } from '@/enums';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
 import { useAppSelector } from '@store';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { orderDeliveryInformationSelector, orderDriverSelector, orderPickupInformationSelector } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

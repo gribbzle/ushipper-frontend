@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { AccountingAccountData, accountingAccountsApi } from '@store/api/accounting-accounts-api';
+import { FinancialBalanceData } from '@store/admin';
 
 import {
     AccountingDrawerPropsState,
@@ -19,7 +20,6 @@ import {
     DeleteFinancialAccountPopupPropsState,
     DriversMapPopupPropsState,
     EditFinancialAccountPopupPropsState,
-    FinancialBalanceData,
     InitiateAccountPaymentMethodsPopupPropsState,
     LinkFuelCardPopupPropsState,
     ReportPopupPropsState,

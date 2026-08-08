@@ -32,6 +32,15 @@ import 'react-photo-view/dist/react-photo-view.css';
 import '../i18n';
 import '../pdf-worker';
 
+interface RequestWithCookies extends FastifyRequest {
+    cookies: {
+        Authorization?: string;
+        PublicUserId?: string;
+        PublicAccountId?: string;
+        language?: string;
+    };
+}
+
 const CallingPopup = dynamic(() => import('../components/client/loadboard/calling-popup/calling-popup').then(exports => exports.CallingPopup), { ssr: false });
 const IncomingCalling = dynamic(() => import('../components/common/incoming-calling/incoming-calling').then(exports => exports.IncomingCalling), {
     ssr: false,
@@ -83,22 +92,6 @@ const App = ({ Component, ...rest }: AppPropsWithLayout) => {
 
     useEffect(() => setupListeners(store.dispatch), [store]);
 
-    useEffect(() => {
-        const initialData = props.pageProps?.initialData;
-
-        if (initialData) {
-            Object.entries(initialData).forEach(([key, value]) => {
-                if (value !== undefined) {
-                    const action = actionMap[key as keyof InitialData];
-
-                    if (action) {
-                        store.dispatch(action(value));
-                    }
-                }
-            });
-        }
-    }, [props.pageProps?.initialData, store]);
-
     return (
         <Provider store={store}>
             <RouterProvider>
@@ -121,7 +114,7 @@ const App = ({ Component, ...rest }: AppPropsWithLayout) => {
 
 App.getInitialProps = wrapper.getInitialAppProps(store => async appContext => {
     const appProps = { pageProps: await NextApp.getInitialProps(appContext) };
-    const req = appContext.ctx.req as FastifyRequest | undefined;
+    const req = appContext.ctx.req as RequestWithCookies | undefined;
 
     if (!req) {
         return appProps;
@@ -216,6 +209,18 @@ App.getInitialProps = wrapper.getInitialAppProps(store => async appContext => {
 
     if (req.cookies.language) {
         await i18next.changeLanguage(req.cookies.language);
+    }
+
+    if (initialData) {
+        Object.entries(initialData).forEach(([key, value]) => {
+            if (value !== undefined) {
+                const action = actionMap[key as keyof InitialData];
+
+                if (action) {
+                    store.dispatch(action(value));
+                }
+            }
+        });
     }
 
     return { ...appProps, pageProps: { ...appProps.pageProps, initialData } };

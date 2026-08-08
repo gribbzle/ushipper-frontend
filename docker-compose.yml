@@ -1,12 +1,13 @@
 services:
   client:
-    build: .
+    build:
+      context: .
+      network: host
     container_name: client
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=development
-      - NODE_COMMAND=${NODE_COMMAND}
       - API_BASE_URL=${API_BASE_URL}
       - MAPBOX_TOKEN=${MAPBOX_TOKEN}
       - PROJECT_NAME=${PROJECT_NAME}
@@ -14,4 +15,8 @@ services:
       - ./src:/application/src
       - ./server:/application/server
       - ./public:/application/public
+      - next-cache:/application/.next
     restart: unless-stopped
+
+volumes:
+  next-cache:

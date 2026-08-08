@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 import { calculateTotalPayment } from '@/utils/payment';
 import { Ellipse } from '@icons';
-import { OrderRequest } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';
 import { formatToCurrency } from '@utils/numbers';

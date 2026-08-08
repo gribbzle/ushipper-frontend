@@ -54,7 +54,7 @@ export const useAcceptJobOfferModal = () => {
 
                     handleClose();
                     toast.success(t<string>('accept-success'));
-                } catch (error) {
+                } catch {
                     toast.success(t<string>('accept-error'));
                 }
             }

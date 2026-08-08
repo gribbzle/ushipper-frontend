@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { DispatcherLanguages } from '@/components/common/dispatcher-languages/dispatcher-languages';
 import { InfoList } from '@/components/common/info-list/info-list';
 import { InfoListBody } from '@/components/common/info-list/info-list-body/info-list-body';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useIsDriverOwnerPage } from '@hooks';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';

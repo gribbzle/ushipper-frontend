@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        orders: any;
-    };
-};
+import { AppState } from "@store";
 import { DeleteOrderAttachmentPopupState, MarkAsDocumentsRequestedPopupState, OrderDriverPaymentFormDrawerDrawerState } from './types';
 
 const ordersPageSelector = (state: AppState) => state.common.orders;

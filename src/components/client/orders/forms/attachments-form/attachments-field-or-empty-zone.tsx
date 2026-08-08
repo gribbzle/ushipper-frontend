@@ -18,7 +18,7 @@ export const FieldOrEmptyZone = ({ disabled, name, label, emptyLabel, title, isM
         return <ZoneButton label={emptyLabel} onClick={() => undefined} disabled={disabled} />;
     }
 
-    if (!!title) {
+    if (title) {
         return (
             <OrderItemInfoColumn
                 title={

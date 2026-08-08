@@ -70,7 +70,7 @@ export const useCreateUpdateRoleBlock = () => {
             const currentPermissions = {
                 ...permissionState,
                 [group]: {
-                    ...(permissionState[group] || {}),
+                    ...permissionState[group],
                     [permissionName]: val,
                 },
             };
@@ -144,19 +144,22 @@ export const useCreateUpdateRoleBlock = () => {
             };
         }
 
-        const { name, type, permissions } = fetchedRole;
-        // const formattedPermissions = { ...permissions };
-
-        // setPermissionState(formatPermissions(formattedPermissions));
-        const filteredPermissions = filterPermissions(formatPermissions(permissions), excludedPermissions);
-
-        setPermissionState(filteredPermissions);
+        const { name, type } = fetchedRole;
 
         return {
             name,
             roleType: type,
             subordinateRoleIds: superiorRoles?.map(role => ({ label: role.name, value: role.id })),
         };
+    }, [fetchedRole, mode, superiorRoles]);
+
+    useEffect(() => {
+        if (fetchedRole && mode !== 'create') {
+            const { permissions } = fetchedRole;
+            const filteredPermissions = filterPermissions(formatPermissions(permissions), excludedPermissions);
+
+            setPermissionState(filteredPermissions);
+        }
     }, [fetchedRole, mode, superiorRoles]);
 
     const onDeleteClickHandler = useCallback(() => {

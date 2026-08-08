@@ -27,9 +27,9 @@ const convertISOFormatToDate = (isoString: string): string => {
 };
 
 export const prepareCreateFinancialAccountData = (values: FinancialAccountFormValue, accountingProfileId: string): CreateFinancialAccountValues => {
-    const { accountCategory, type, bankAccountType, cardAccountType, card, bankAccount, ...others } = values;
+    const { accountCategory: _accountCategory, type, bankAccountType, cardAccountType, card, bankAccount, ...others } = values;
     const isBankAccountSubtype = type === BalanceType.EXTERNAL_BANK_WALLET;
-    const { confirmAccountNumber, ...restOfBankAccount } = bankAccount ?? {};
+    const { confirmAccountNumber: _confirmAccountNumber, ...restOfBankAccount } = bankAccount ?? {};
     const { expiry, number, ...restOfCard } = card ?? {};
 
     return {
@@ -66,7 +66,7 @@ export const getFinancialAccountInitialValues = (balance?: FinancialBalanceData)
         const isBankAccountSubtype = type === BalanceType.EXTERNAL_BANK_WALLET;
 
         const { maskedAccountNumber, accountNumber, ...restOfBankAccount } = bankAccount ?? {};
-        const { maskedNumber, number, expiry, ...restOfCard } = card ?? {};
+        const { maskedNumber: _maskedNumber, number, expiry, ...restOfCard } = card ?? {};
 
         return {
             accountCategory: DEFAULT_ACCOUNT_CATEGORY,

@@ -22,7 +22,7 @@ export const useFuelCardStatusTag = ({ status, id }: FuelCardStatusTagProps) => 
 
                 dispatch(fuelCardsApi.util.invalidateTags([{ type: 'FuelCards', id: 'LIST' }]));
                 toast.success(t<string>('updated-fuel-card-status-success'));
-            } catch (exception) {
+            } catch {
                 toast.error(t<string>('updated-fuel-card-status-error'));
             }
         },

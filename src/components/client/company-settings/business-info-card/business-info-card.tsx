@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { TransportServiceSelect } from '@/components/common/transport-service-select/transport-service-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

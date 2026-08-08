@@ -12,7 +12,7 @@ import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select'
 import { TermTypesSelect } from '@/components/common/terms-select/terms-select';
 import { TransportTypeSelect } from '@/components/common/transport-type-select/transport-type-select';
 import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderSortingName } from '@/enums';
 import { AddressField } from '@/fields/address-field/address-field';
 import RadiusField from '@/fields/radius-field/radius-field';

@@ -23,7 +23,7 @@ export const useOrderItemHeader = ({ paymentInformation, orderPublicId }: Pick<O
             try {
                 await deleteOrderFlag({ publicOrderId: orderPublicId }).unwrap();
                 toast.success(translateOrderNotification<string>('unflagged-order-success-notification'));
-            } catch (error) {
+            } catch {
                 toast.error(translateOrderNotification<string>('update-error-notification'));
             }
         }

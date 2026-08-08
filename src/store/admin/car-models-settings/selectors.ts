@@ -1,8 +1,4 @@
-type AppState = {
-    admin: {
-        carModelsSettings: any;
-    };
-};
+import { AppState } from "@store";
 
 const carModelsSettingsPageSelector = (state: AppState) => state.admin.carModelsSettings;
 

@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import { StringInput } from '@fields';
 import { useGetCompanyData } from '@hooks';

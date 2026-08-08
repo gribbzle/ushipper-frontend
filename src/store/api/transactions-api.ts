@@ -79,7 +79,7 @@ export const transactionsApi = apiSlice.injectEndpoints({
                 };
             },
             serializeQueryArgs: ({ queryArgs, endpointName }) => {
-                const { cursor, ...rest } = queryArgs;
+                const { cursor: _cursor, ...rest } = queryArgs;
 
                 return `${endpointName}(${JSON.stringify(rest)})`;
             },

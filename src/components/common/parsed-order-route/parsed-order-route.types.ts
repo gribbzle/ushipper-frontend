@@ -1,5 +1,5 @@
 import { TransportTypeEnum } from '@/enums';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
 
 export type ParsedOrderRouteProps = {

@@ -27,12 +27,12 @@ export const ShipperTrackingPage = () => {
     } = useQueryFilters<ShipperTrackingFiltersFormState>();
     const isOrdersListShown = useAppSelector(isShipperOrdersListShownSelector);
 
-    const params = {
-        ...(status && status !== 'all' ? { status: [status as TrackingOrderStatus] } : {}),
-        ...{ grouping: grouping ?? 'status' },
-        ...(dispatchers ? { dispatchers: convertToStringArray(dispatchers) } : {}),
-        ...(driverFlagged && driverFlagged !== 'all' ? { driverFlagged: true } : {}),
-    };
+    const params = ({
+	...status && status !== 'all' ? { status: [status as TrackingOrderStatus] } : {},
+	grouping: grouping ?? 'status',
+	...dispatchers ? { dispatchers: convertToStringArray(dispatchers) } : {},
+	...driverFlagged && driverFlagged !== 'all' ? { driverFlagged: true } : {}
+});
 
     const { data: trackingOrdersData, isFetching, isError } = useGetTrackingOrdersQuery(params);
 

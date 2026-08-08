@@ -40,7 +40,7 @@ export const useUserExternalWalletsSelect = ({ input, meta, accountId }: UserExt
                     label: getAccountLabel(item),
                     value: item.publicId,
                 }));
-            } catch (error) {
+            } catch {
                 return [];
             }
         },

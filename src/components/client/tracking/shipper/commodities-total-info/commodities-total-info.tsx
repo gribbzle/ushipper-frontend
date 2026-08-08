@@ -33,7 +33,7 @@ export const CommoditiesTotalInfo = ({ commodities, isFull = true, showLabel = t
                 <>
                     {showIcon && <BoxIcon />}
                     {showLabel && <p className={cn('label')}>{t('total-quantity')}</p>}
-                    <h4>{!!quantities ? quantities : tNoDetails('no-details')}</h4>
+                    <h4>{quantities ? quantities : tNoDetails('no-details')}</h4>
                 </>
             )}
         </>

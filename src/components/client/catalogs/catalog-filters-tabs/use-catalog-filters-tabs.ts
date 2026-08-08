@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';
 
-import { CatalogFiltersValue } from './catalog-filters-tabs.types';
+import { CatalogFiltersValue } from '@store/client/catalogs/types';
 import { getCatalogFiltersForUrlParams } from './utils';
 
 export const useCatalogFiltersTabs = () => {

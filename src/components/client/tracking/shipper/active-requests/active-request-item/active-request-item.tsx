@@ -1,7 +1,7 @@
 import React, { MouseEvent, useCallback } from 'react';
 
 import { useAppDispatch } from '@store';
-import { OrderRequest } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { ShipperTrackingOrder, trackingActions } from '@store/client';
 import { classname } from '@utils/classname';
 

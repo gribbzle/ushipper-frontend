@@ -5,7 +5,8 @@ import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost
 import { OrderSourcesEnum } from '@/enums';
 import { getOrderPriceWithTerms, getParsedOrderPriceWithTermsAndMethods } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
-import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
+import { OrderCommodity } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { OrderPaymentInformation } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

@@ -32,7 +32,7 @@ export const getAllAminOrdersFiltersFromUrlParams = (filtersFromUrl: OrdersAminF
         searchSubject: searchSubject ?? SearchSubjectsEnum.ORDER_ID,
         orderName: orderName ?? OrderSortingName.CREATION_DATE,
         orderDirection: orderDirection ?? OrderSortingDirection.DESC,
-        perPage: Number(perPage) ?? 50,
+        perPage: perPage ?? 50,
         dispatchers: toArray(dispatchers),
         driverAccountId: toArray(driverAccountId),
         statisticsStatus: toArray(statisticsStatus),

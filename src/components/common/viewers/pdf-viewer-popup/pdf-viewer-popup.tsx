@@ -29,7 +29,7 @@ const checkFileAvailability = async (url: string): Promise<string | null> => {
         const fileBlobUrl = URL.createObjectURL(blob);
 
         return fileBlobUrl;
-    } catch (error) {
+    } catch {
         return null;
     }
 };

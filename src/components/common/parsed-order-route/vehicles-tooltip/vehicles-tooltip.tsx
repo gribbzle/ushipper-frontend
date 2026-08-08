@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import { VehicleSizesInfo } from '@/components/client/loadboard/common/vehicle-sizes-info';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { CarIcon2 } from '@icons';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

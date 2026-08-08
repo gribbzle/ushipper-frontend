@@ -63,7 +63,7 @@ export const useOrderDriverPaymentForm = ({
                     onAfterFormSubmit();
                     setHasAttachmentsDropzone(false);
                 }
-            } catch (error) {
+            } catch {
                 toast.error(t<string>('driver-payment-form-error-notification'));
             }
         },

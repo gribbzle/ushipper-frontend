@@ -4,7 +4,8 @@ import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost
 import { PulseMarker } from '@/components/common/pulse-marker/pulse-marker';
 import { calculateTotalPayment } from '@/utils/payment';
 import { useAppDispatch, useAppSelector } from '@store';
-import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
+import { OrderCommodity } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { OrderPaymentInformation, selectedSuggestedOrderIdSelector, trackingActions } from '@store/client';
 import { classname } from '@utils/classname';
 import { formatToCurrency } from '@utils/numbers';

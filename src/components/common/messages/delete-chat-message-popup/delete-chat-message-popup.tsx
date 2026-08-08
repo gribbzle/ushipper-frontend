@@ -37,7 +37,7 @@ export const DeleteChatMessagePopup = () => {
                 }),
             );
             onCloseHandler();
-        } catch (error) {
+        } catch {
             toast.error(tNotification<string>('delete-message-error'));
         }
     }, [chatId, dispatch, onCloseHandler, messagePublicId]);

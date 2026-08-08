@@ -50,7 +50,7 @@ export const useEditFuelCardForm = ({ onAfterSubmit }: Pick<EditFuelCardToDriver
 
                     onAfterSubmit();
                     toast.success(t<string>('edit-fuel-cards-success'));
-                } catch (exception) {
+                } catch {
                     toast.error(t<string>('edit-fuel-cards-error'));
                 }
             }

@@ -31,7 +31,7 @@ export const DriverAccountInfoBlock = ({ publicId, name, childrenCount, parent, 
         async (event: React.MouseEvent) => {
             event.stopPropagation();
 
-            if (!!childrenCount) {
+            if (childrenCount) {
                 window.open(`drivers?parentId=${publicId}`, '_blank');
             }
         },

@@ -1,4 +1,5 @@
-import { OrderCommodity, OrderVehicle } from '@store/api/orders-api';
+import { OrderCommodity } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { OrderPaymentInformation } from '@store/client';
 
 export type MileCostTooltipProps = {

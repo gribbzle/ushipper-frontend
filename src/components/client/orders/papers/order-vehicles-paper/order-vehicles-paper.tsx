@@ -11,7 +11,7 @@ import { useDisableProductChanging } from '@/hooks/order/use-disable-product-cha
 import { useMeShipper } from '@hooks';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
-import { OrderVehicle } from '@store/api/orders-api';
+import { OrderVehicle } from '@/shared/types';
 import { ordersActions } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

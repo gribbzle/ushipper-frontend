@@ -3,7 +3,7 @@ import { useForm } from 'react-final-form';
 
 import { OrderCommoditiesForm } from '@/components/client/orders/forms/order-commodities-form/order-commodities-form';
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';

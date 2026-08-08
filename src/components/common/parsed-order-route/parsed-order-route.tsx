@@ -2,7 +2,7 @@ import React from 'react';
 import { formatInTimeZone } from 'date-fns-tz';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
-import { Timeline } from '@/components/common/timeline/timeline/timeline';
+import { Timeline } from '@/components/common/timeline/timeline';
 import { TimelineArrow } from '@/components/common/timeline/timeline-arrow/timeline-arrow';
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TransportTypeEnum } from '@/enums';

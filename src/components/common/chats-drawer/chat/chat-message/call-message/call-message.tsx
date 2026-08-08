@@ -8,8 +8,8 @@ import { formatDuration } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';
 
 import { useChatMessageOrders } from '../../chat-message-orders/use-chat-message-orders';
-import { ChatMessageHeader } from '../chat-message-header/chat-message-header';
-import { ChatMessageWrapper } from '../chat-message-wrapper/chat-message-wrapper';
+import { ChatMessageHeader } from '../common/chat-message-header/chat-message-header';
+import { ChatMessageWrapper } from '../common/chat-message-wrapper/chat-message-wrapper';
 
 import { CallMessageIcon } from './call-message-icon/call-message-icon';
 

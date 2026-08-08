@@ -75,7 +75,7 @@ export const DriverAccountsSelect = ({ input, isClearable = true, isMulti = true
             }
         };
 
-        if (Boolean(input.value)) {
+        if (input.value) {
             loadItems(input.value);
         }
     }, [input, getSelectedItems, selectReady]);

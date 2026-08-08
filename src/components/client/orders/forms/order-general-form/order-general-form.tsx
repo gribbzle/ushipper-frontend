@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import cleanDeep from 'clean-deep';
 import arrayMutators from 'final-form-arrays';
-import { has } from 'lodash';
+import has from 'has-values';
 import { useRouter } from 'next/router';
 import { Form } from 'react-final-form';
 import { toast } from 'react-toastify';
@@ -18,7 +18,7 @@ import { OrderCommoditiesFormPaper } from '@/components/client/orders/papers/ord
 import { OrderExpensesFormPaper } from '@/components/client/orders/papers/order-expenses-form-paper/order-expenses-form-paper';
 import { OrderVehiclesFormPaper } from '@/components/client/orders/papers/order-vehicles-form-paper/order-vehicles-form-paper';
 import { RouterContext } from '@/components/common/router-provider/router-provider';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { Attachment } from '@/shared';
@@ -123,7 +123,7 @@ export const OrderGeneralForm = ({ initialValues, isFulled = false }: Props) => 
                     } else {
                         await router.push(ordersPath, `${asOrdersPath}`);
                     }
-                } catch (e) {
+                } catch {
                     toast.error(t<string>('notifications.update-error'));
                     setInitValue(values);
                 }
@@ -186,7 +186,7 @@ export const OrderGeneralForm = ({ initialValues, isFulled = false }: Props) => 
                             `${asOrdersPath}/${order.publicId}/edit`,
                         );
                     }
-                } catch (e) {
+                } catch {
                     toast.error(t<string>('notifications.create-error'));
                     setInitValue(values);
                 }
@@ -242,11 +242,11 @@ export const OrderGeneralForm = ({ initialValues, isFulled = false }: Props) => 
                 ...(initValue.details || { inspectionType: InspectionType.ADVANCED }),
             },
             deliveryInformation: {
-                ...(initValue.deliveryInformation || {}),
+                ...initValue.deliveryInformation,
                 createNewContact: false,
             },
             pickupInformation: {
-                ...(initValue.pickupInformation || {}),
+                ...initValue.pickupInformation,
                 createNewContact: false,
             },
             customerInformation: {

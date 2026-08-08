@@ -1,6 +1,6 @@
 import { axios } from '@utils/axios';
 
-import { UserRole } from '../store/common/roles-settings/types';
+import { UserRole } from '../store/common/staff/types';
 
 export const fetchRoles = async (companyPublicId?: string) => {
     const result = await axios.get('/api/roles', {

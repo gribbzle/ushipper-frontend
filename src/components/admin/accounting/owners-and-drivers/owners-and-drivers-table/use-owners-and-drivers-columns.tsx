@@ -123,7 +123,7 @@ export const useOwnersAndDriversColumns = () => {
                 cellRender: ({ row: { users, emailVerifiedAt, name, email } }) => {
                     const carrierUsers = users.filter(({ company }) => company && company.type === CompanyType.CARRIER);
 
-                    if (!!carrierUsers.length) {
+                    if (carrierUsers.length) {
                         return <CompaniesUsersInfo info={carrierUsers} isClickable={true} />;
                     }
 

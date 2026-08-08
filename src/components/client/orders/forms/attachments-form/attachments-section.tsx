@@ -79,7 +79,7 @@ export const AttachmentsSection = ({ orderId, type, title, label, isMultiFiles =
         [dispatch, orderId],
     );
 
-    if (!!title) {
+    if (title) {
         return (
             <OrderItemInfoColumn title={title} className={className}>
                 <AttachmentsDropzone

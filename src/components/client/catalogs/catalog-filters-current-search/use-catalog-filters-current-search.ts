@@ -104,7 +104,7 @@ export const useCatalogFiltersCurrentSearch = () => {
     const onResetFilter = useCallback(
         (prop: string) => {
             if (prop === 'specializationsCategories') {
-                const newSpecializations = filters.specializations.map((specialization: SpecializationsFilter) => ({
+                const newSpecializations = filters.specializations?.map((specialization: SpecializationsFilter) => ({
                     ...specialization,
                     categories: [],
                 }));

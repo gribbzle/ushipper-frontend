@@ -47,7 +47,7 @@ export const UpdateChatMessagePopup = () => {
                     }),
                 );
                 onCloseHandler();
-            } catch (error) {
+            } catch {
                 toast.error(tNotification<string>('update-message-error'));
             }
         },

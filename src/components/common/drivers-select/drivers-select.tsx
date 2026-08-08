@@ -64,7 +64,7 @@ export const DriversSelect = ({ ownerAccountId, ...props }: Props) => {
             }
         };
 
-        if (Boolean(props.input.value)) {
+        if (props.input.value) {
             loadItems(props.input.value);
         }
     }, [props.input, getSelectedDefaultDrivers, selectReady]);

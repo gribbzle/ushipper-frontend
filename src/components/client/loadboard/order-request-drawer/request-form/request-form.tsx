@@ -8,7 +8,7 @@ import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-dra
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { CustomCheckContractError } from '@/components/common/parsed-order-actions/use-handle-check-contract';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OfferStatusesEnum, OrderSourcesEnum } from '@/enums';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { calculateTotalPayment, getPaymentPerDistance } from '@/utils/payment';
@@ -16,7 +16,7 @@ import { CurrencyInput, DatePicker, FormControl, InputLabel, SwitchInput, TextFi
 import { useMeCarrier, useParsedOrderSettingsError } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi from '@store/api/loadboard-api';
-import { OrderOffer } from '@store/api/order-offers';
+import { OrderOffer } from '@store/common/orders/types';
 import { useCreateRequestMutation, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
 import { Load } from '@store/client';
 import { authorizedUserNameSelector } from '@store/global';

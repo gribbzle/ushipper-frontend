@@ -11,7 +11,7 @@ export const nameValidator =
             return null;
         }
 
-        if (!/^([a-z\-]+)$/gi.test(value)) {
+        if (!/^([a-z-]+)$/gi.test(value)) {
             return errorMessage || i18next.t('common:validators.name');
         }
 

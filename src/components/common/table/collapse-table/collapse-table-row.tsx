@@ -18,8 +18,10 @@ const tCursor = translateByNamespace('client:staff-page');
 export const CollapseTableRow = ({
     user,
     visibleColumns,
+    // oxc-disable-next-line only-used-in-recursion
     isRowClickable,
     onRowClick,
+    // oxc-disable-next-line only-used-in-recursion
     clickedRowId,
     isCollapseBodyRow,
     level = 0,
@@ -64,7 +66,7 @@ export const CollapseTableRow = ({
 
     return (
         <>
-            <tr className={cn('row', { clickable: true, clicked: false, collapse: isCollapseBodyRow })} onClick={() => onRowClick?.(user)}>
+          <tr className={cn('row', { clickable: true, clicked: false, collapse: isCollapseBodyRow })} onClick={() => onRowClick?.(user)}>
                 {renderCollapseIcon()}
                 <TableColumnBody onOpenCollapse={toggleCollapse} row={user} columns={visibleColumns} styles={transformStyle} enableStickyColumns={false} />
             </tr>

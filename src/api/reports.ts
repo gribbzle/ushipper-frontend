@@ -26,8 +26,8 @@ const fetchReport = async (url: string, { accountId, startDate, endDate }: Repor
                 const errorObject = JSON.parse(errorText);
 
                 throw errorObject;
-            } catch (parseError) {
-                throw parseError;
+            } catch (error) {
+                throw new Error(`Failed: ${error}`);
             }
         } else {
             const errorMessage = (error as Error).message;

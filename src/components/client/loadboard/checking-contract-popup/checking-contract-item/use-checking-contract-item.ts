@@ -96,7 +96,7 @@ export const useCheckingContractItem = (loadBoardFilters: LoadBoardFilters) => {
     );
 
     const handleCancelContract = useCallback(
-        async (orderId: string) => {
+        async () => {
             if (publicOrderId) {
                 try {
                     // TODO update api after the backend is ready

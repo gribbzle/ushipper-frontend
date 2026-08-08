@@ -2,7 +2,7 @@ import { Avatar } from '@/store/common/staff/avatar-types';
 import { CompanyStatusEnum } from '@enums';
 import { Company } from '@store/admin/companies/types';
 
-import { Rating } from '../review/rating-types';
+import { Rating } from '@store/client';
 
 export type UserCompanyOwner = {
     name: string;

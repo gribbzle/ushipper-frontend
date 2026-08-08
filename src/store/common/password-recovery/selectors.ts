@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        passwordRecovery: any;
-    };
-};
+import { AppState } from "@store";
 
 export const passwordRecoverySelector = (state: AppState) => state.common.passwordRecovery;
 

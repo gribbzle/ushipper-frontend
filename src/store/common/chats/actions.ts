@@ -2,6 +2,7 @@ import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import { ChatTypesEnum } from '@/enums';
+import { AppState } from "@store";
 import {
     createBetweenPhonesChat,
     deleteMessage,
@@ -138,7 +139,7 @@ export const sendMessageAction = createAsyncThunk<void, { chatId: string; conten
     async ({ chatId, content, files, type }, { rejectWithValue, dispatch, getState }) => {
         try {
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.PROCESSING }));
-            const state = getState() as any;
+            const state = getState() as AppState;
 
             const result = await sendMessage(chatId, content, files, type);
 
@@ -185,7 +186,7 @@ export const updateMessageAction = createAsyncThunk<void, { chatId: string; cont
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.PROCESSING }));
 
             const result = await updateMessage({ chatId, messagePublicId, content });
-            const state = getState() as any;
+            const state = getState() as AppState;
             const drawerChats = state.common.chats.drawerChats;
 
             dispatch(chatsActions.setSendMessageRequestStatus({ chatId, status: RequestStatus.SUCCESS }));

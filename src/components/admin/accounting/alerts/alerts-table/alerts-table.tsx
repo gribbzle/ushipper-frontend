@@ -22,7 +22,7 @@ export const AlertsTable = () => {
         return null;
     }
 
-    if (!!alerts.length) {
+    if (alerts.length) {
         return (
             <Table<IssueDataWithOrder>
                 columns={columns}

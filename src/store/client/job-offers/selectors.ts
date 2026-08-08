@@ -1,8 +1,4 @@
-type AppState = {
-    client: {
-        jobOffers: any;
-    };
-};
+import { AppState } from "@store";
 
 const jobOffersSelectors = (state: AppState) => state.client.jobOffers;
 

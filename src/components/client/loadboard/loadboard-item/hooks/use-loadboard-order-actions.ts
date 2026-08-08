@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import { useAppDispatch } from '@store';
 import loadboardApi from '@store/api/loadboard-api';
-import { OrderOffer } from '@store/api/order-offers';
+import { OrderOffer } from '@store/common/orders/types';
 import { useCreateOrderFlagMutation, useDeleteOrderFlagMutation } from '@store/api/orders-api';
 import { loadboardActions } from '@store/client/loadboard/slice';
 import { translateByNamespace } from '@utils/i18n';

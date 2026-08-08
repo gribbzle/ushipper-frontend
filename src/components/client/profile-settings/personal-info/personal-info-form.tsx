@@ -5,7 +5,7 @@ import { CountriesSelect } from '@/components/admin/accounting/owners-and-driver
 import { AddressFields } from '@/components/client/company-settings/company-address-fields';
 import { Button } from '@/components/common/button/button';
 import { Divider } from '@/components/common/divider/divider';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { FormControl, ImageFileInput, InputLabel, PhoneNumberInput, TextField } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

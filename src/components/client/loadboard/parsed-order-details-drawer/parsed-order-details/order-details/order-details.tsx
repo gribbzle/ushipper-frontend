@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { getOrderId } from '@/utils/order';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

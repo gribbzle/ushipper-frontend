@@ -51,7 +51,7 @@ export const AsyncMultiCompanySelect = ({ input, isClearable = true, ...rest }: 
             }
         };
 
-        if (Boolean(input.value)) {
+        if (input.value) {
             loadItems(input.value);
         }
     }, [input, getSelectedDefaultCompanies, selectReady]);

@@ -2,7 +2,7 @@ import { toast } from 'react-toastify';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { createUpdateRole, deleteRole, fetchRole, fetchRoles, fetchRoleTypes } from '@api';
-import { ClickedRowId } from '@components/common/table/table.types';
+import { ClickedRowId } from '@/components/common/table/table.types';
 import { authorizedUserSelector } from '@store/global/selectors';
 import { AuthorizedUserInfo } from '@store/global/shared-types';
 import { handleError } from '@utils/handle-error';

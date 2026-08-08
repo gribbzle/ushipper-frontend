@@ -20,7 +20,7 @@ export const filterRoutes = (routes: Route[], excludedNames: string[]): Route[] 
 
             return {
                 ...route,
-                permissions: !!updatedPermissions?.length ? updatedPermissions : undefined,
+                permissions: updatedPermissions?.length ? updatedPermissions : undefined,
                 routes: filteredSubroutes.length > 0 ? filteredSubroutes : undefined,
             };
         });

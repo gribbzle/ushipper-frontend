@@ -23,7 +23,7 @@ export const formatToOneDecimalPercentage = (value: number) => {
 };
 
 export const checkIfValidNumberInput = (event: KeyboardEvent) => {
-    const allowedCharacter = /^(\d*([\.])?\d*)$|(Backspace|Tab|Delete|ArrowLeft|ArrowRight)/;
+    const allowedCharacter = /^(\d*([.])?\d*)$|(Backspace|Tab|Delete|ArrowLeft|ArrowRight)/;
 
     return !event.key.match(allowedCharacter) && event.preventDefault();
 };

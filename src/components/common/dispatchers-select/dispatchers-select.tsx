@@ -57,7 +57,7 @@ export const DispatchersSelect = (props: FieldRenderProps<string[]>) => {
             }
         };
 
-        if (Boolean(props.input.value)) {
+        if (props.input.value) {
             loadItems(props.input.value);
         }
     }, [props.input, getSelectedItems, selectReady]);

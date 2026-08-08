@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 
 import { isNumber } from '@/shared';
-import { LatestLocation, ShipperTrackingOrder } from '@store/client';
+import { ShipperTrackingOrder } from '@store/client';
+import { LatestLocation } from '@store/client/tracking/location-types';
 import { isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
 
 import { useDrivingMetrics } from './use-driving-metrics';

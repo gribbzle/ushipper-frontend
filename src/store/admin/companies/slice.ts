@@ -75,7 +75,7 @@ export const fetchCompaniesAction = createAsyncThunk<FetchedCompanies, void>(
 
 export const createCompanyFormSubmit = createAsyncThunk<void, CreateCompanyData>(
     'companies/createEditCompanyFormSubmit',
-    async (data, { rejectWithValue, dispatch, getState }) => {
+    async (data, { rejectWithValue, dispatch }) => {
         try {
             await createCompany(data);
 

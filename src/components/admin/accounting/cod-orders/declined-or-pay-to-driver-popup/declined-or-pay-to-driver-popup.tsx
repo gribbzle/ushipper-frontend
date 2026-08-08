@@ -61,7 +61,7 @@ export const DeclineOrPayToDriverPopup = () => {
                 onClosePopupHandler();
 
                 toast.success(translateDriverPayoutStatusSuccess(isPayToDriver));
-            } catch (error) {
+            } catch {
                 toast.error(translateDriverPayoutStatusError(isPayToDriver));
             }
         }

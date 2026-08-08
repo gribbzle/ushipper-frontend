@@ -1,4 +1,4 @@
 {
-    "**/*.{ts,tsx}": "npm run-script eslint:fix",
+    "**/*.{ts,tsx}": "npm run-script lint:fix",
     "*.scss": "npm run-script stylelint:fix"
 }

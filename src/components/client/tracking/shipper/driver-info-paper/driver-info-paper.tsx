@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import { toast } from 'react-toastify';
 
 import { Loader } from '@/components/common/loader/loader';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useShipperTrackingDriver } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, trackingActions } from '@store/client';

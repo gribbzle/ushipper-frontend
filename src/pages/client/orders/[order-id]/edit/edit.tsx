@@ -26,7 +26,7 @@ export const EditOrderPage = () => {
 
     const form = useMemo(() => {
         if (!isLoading && order) {
-            const { cdContract, ...others } = order;
+            const { cdContract: _cdContract, ...others } = order;
 
             return <OrderGeneralForm initialValues={{ ...others }} isFulled={!isPartner} />;
         }

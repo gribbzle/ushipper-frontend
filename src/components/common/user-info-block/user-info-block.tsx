@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 
 import { useChatsPermission } from '@/hooks/chat/use-chats-permission';
 import { BalanceResource } from '@store/admin';
-import { Avatar as AvatarType, DriverParent } from '@store/common';
+import { DriverParent } from '@store/common';
+import { Avatar as AvatarType } from '@store/common/staff/avatar-types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getBalanceInfo } from '@utils/orders/get-balance-info';

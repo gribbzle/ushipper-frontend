@@ -102,7 +102,7 @@ export const useTwilioCall = (loadBoardFilters: LoadBoardFilters | null) => {
                                 createParsedOrderCall(publicOrderId, loadBoardFilters);
                             }
                         });
-                    } catch (error) {
+                    } catch {
                         toast.error(t<string>('microphone-access-required-error'));
                         stopCallAndResetState();
                     }

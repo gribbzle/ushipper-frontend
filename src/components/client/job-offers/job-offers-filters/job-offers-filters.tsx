@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Tabs } from '@/components/common/tabs/tabs';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { JobOfferSortingName, OrderSortingDirection } from '@/enums';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useMeCarrier } from '@hooks';

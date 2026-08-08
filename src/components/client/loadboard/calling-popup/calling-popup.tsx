@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 
 import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { Loader } from '@/components/common/loader/loader';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { ChatsIcon, EndCallIcon, KeyboardIcon, MicrophoneDisabledIcon, MicrophoneIcon, UserCircle } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

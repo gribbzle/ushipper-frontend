@@ -137,7 +137,7 @@ export const WebsocketWatcher = () => {
 
                             dispatch(
                                 chatsActions.setDrawersChats(
-                                    (drawerChats as { publicId: string; lastMessage?: { publicId: string } }[]).map(drawerChat => {
+                                    (drawerChats).map(drawerChat => {
                                         if (drawerChat.publicId === publicChatId && drawerChat.lastMessage?.publicId === preparedMessage?.publicId) {
                                             return {
                                                 ...drawerChat,

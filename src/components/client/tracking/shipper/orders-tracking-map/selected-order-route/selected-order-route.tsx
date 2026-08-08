@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import { MapRef, Marker } from 'react-map-gl/mapbox';
 
 import { OrderStatus } from '@/enums';
-import { ColorValueHex, isNumber } from '@/shared';
+import { isNumber } from '@/shared';
 import { formatDrivingDistance } from '@/utils/driving';
 import { getDistanceMatrix } from '@api';
 import { useDeliveryMetrics, useShipperTrackingDriver } from '@hooks';
@@ -13,8 +13,8 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { createTrackingMapPoint, getDeliveryPoint, getDriverPoint, getPickupPoint } from '@utils/tracking/get-order-tracking-points';
 import { getOrderStatusForTracking } from '@utils/tracking/map-order-status-to-tracking-order-status';
-import { findOptimalPath, getPointsDistanceMatrix, isPickupPoint } from '@utils/tracking/optimal-route-finder';
-import { isTrackingOrderNotDispatched, isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
+import { findOptimalPath, getPointsDistanceMatrix } from '@utils/tracking/optimal-route-finder';
+import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';
 
 import { DriverOrderPin, MapOrderRoute, OrderMarker, OrderPin } from '../../../common';
 
@@ -27,8 +27,8 @@ type SelectedOrderRouteProps = {
     bounds: mapboxgl.LngLatBounds;
 };
 
-const defaultColor = '#4F76FF';
-const ROUTE_COLORS: ColorValueHex[] = [defaultColor, '#b5b5c3'];
+// const defaultColor = '#4F76FF';
+// const ROUTE_COLORS: ColorValueHex[] = [defaultColor, '#b5b5c3'];
 
 const t = translateByNamespace('client:tracking-page:order-pin');
 const cn = classname('selected-order-route');
@@ -37,7 +37,7 @@ export const SelectedOrderRoute = ({ mapRef, bounds }: SelectedOrderRouteProps) 
     const selectedOrder = useAppSelector(selectedShipperTrackingOrderSelector);
 
     const isOrderNotDispatched = selectedOrder && isTrackingOrderNotDispatched(selectedOrder);
-    const isOrderPickedUp = selectedOrder && isTrackingOrderPickedUp(selectedOrder);
+    // const isOrderPickedUp = selectedOrder && isTrackingOrderPickedUp(selectedOrder);
 
     const { driver, latestLocation, averageSpeed } = useShipperTrackingDriver();
 
@@ -171,14 +171,14 @@ export const SelectedOrderRoute = ({ mapRef, bounds }: SelectedOrderRouteProps) 
             {routePoints.map((point, index) => {
                 if (index === routePoints.length - 1) return null;
 
-                const startPoint = point;
-                const endPoint = routePoints[index + 1];
+                // const startPoint = point;
+                // const endPoint = routePoints[index + 1];
 
-                let color = ROUTE_COLORS[0];
+                // let color = ROUTE_COLORS[0];
 
-                if (isOrderPickedUp && isDriverPoint(startPoint, driver) && isSelectedOrderPoint(endPoint, selectedOrder) && isPickupPoint(endPoint)) {
-                    color = ROUTE_COLORS[1];
-                }
+                // if (isOrderPickedUp && isDriverPoint(startPoint, driver) && isSelectedOrderPoint(endPoint, selectedOrder) && isPickupPoint(endPoint)) {
+                //     color = ROUTE_COLORS[1];
+                // }
 
                 return (
                     <MapOrderRoute

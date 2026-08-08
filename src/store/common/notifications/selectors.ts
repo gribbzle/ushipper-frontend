@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        notifications: any;
-    };
-};
+import { AppState } from "@store";
 
 export const notificationsStateSelector = (state: AppState) => state.common.notifications;
 

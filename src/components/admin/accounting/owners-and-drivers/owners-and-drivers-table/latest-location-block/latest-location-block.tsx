@@ -3,7 +3,7 @@ import React, { MouseEvent, useCallback, useMemo } from 'react';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { LatestLocation } from '@store/client';
+import { LatestLocation } from '@store/client/tracking/location-types';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 

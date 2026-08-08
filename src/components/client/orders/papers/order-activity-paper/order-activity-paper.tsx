@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { format } from 'date-fns';
 import { toKebabCase } from 'js-convert-case';
-import { has } from 'lodash';
+import has from 'has-values';
 import { useRouter } from 'next/router';
 
 import { OrderActivityDetailsDrawer } from '@/components/client/orders/drawers/order-activity-details-drawer/order-activity-details-drawer';
@@ -13,7 +13,7 @@ import { TimelineContent } from '@/components/common/timeline/timeline-content/t
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { HistoryItemEventName } from '@/enums';
 import { ArrowDownIcon, SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';

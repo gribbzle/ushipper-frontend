@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { CarriersCatalogInfo, DispatcherCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
 

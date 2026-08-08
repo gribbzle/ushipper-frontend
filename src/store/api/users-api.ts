@@ -123,9 +123,9 @@ export const usersApi = apiSlice.injectEndpoints({
             },
             transformResponse: (response: { data: CursorPagination<Driver[]> }) => response.data,
             serializeQueryArgs: ({ queryArgs, endpointName }) => {
-                const { cursor, ...rest } = queryArgs;
+                const { cursor: _cursor, ...rest } = queryArgs;
 
-                return !!Object.keys(rest).length ? `${endpointName}(${JSON.stringify(rest)})` : `${endpointName}({})`;
+                return Object.keys(rest).length ? `${endpointName}(${JSON.stringify(rest)})` : `${endpointName}({})`;
             },
             merge: (currentCache, newItems) => {
                 const existingIds = new Set(currentCache.data.map(item => item.publicId));
@@ -150,9 +150,9 @@ export const usersApi = apiSlice.injectEndpoints({
             }),
             transformResponse: (response: { data: CursorPagination<Dispatcher[]> }) => response.data,
             serializeQueryArgs: ({ queryArgs, endpointName }) => {
-                const { cursor, ...rest } = queryArgs;
+                const { cursor: _cursor, ...rest } = queryArgs;
 
-                return !!Object.keys(rest).length ? `${endpointName}(${JSON.stringify(rest)})` : `${endpointName}({})`;
+                return Object.keys(rest).length ? `${endpointName}(${JSON.stringify(rest)})` : `${endpointName}({})`;
             },
             merge: (currentCache, newItems) => {
                 const existingIds = new Set(currentCache.data.map(item => item.publicId));

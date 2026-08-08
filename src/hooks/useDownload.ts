@@ -67,7 +67,7 @@ export const useDownloadExternalContract = () => {
             const filename = `CD-Contract-${format(new Date(), 'dd.MM.yyyy-HH.mm')}.pdf`;
 
             await download(`/api/orders/${publicOrderId}/external-orders/${externalOrderId}/contract`, filename);
-        } catch (err) {
+        } catch {
             toast.error<string>(tExternalContract('not-found-contract-error-notification'));
         }
     };
@@ -114,7 +114,7 @@ export const useExportTransactions = () => {
             const url = `/api/transactions?x-response-format=csv&${queryString}`;
 
             await download(url, filename);
-        } catch (err) {
+        } catch {
             toast.error<string>(translateExportError('export-transactions-error'));
         }
     };

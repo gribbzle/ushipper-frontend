@@ -1,4 +1,4 @@
-import { AccountingTab } from '@components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer-tabs/accounting-tab-enum';
+import { AccountingTab } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer-tabs/accounting-tab-enum';
 import {
     AccountSubTypesEnum,
     BalanceType,
@@ -16,11 +16,12 @@ import { AccountingAccountData, AccountingAccountUserData } from '@store/api/acc
 import { AccountingProfileDocument, AccountInitiatePaymentMethod } from '@store/api/accounts-api';
 import { User } from '@store/common/staff/types';
 import { Fee, FeeCategory } from '@types';
+import { FinancialBalanceData } from '@store/admin';
 
 import { Company } from '../companies';
 import { FuelTransactionLocation, FuelTransactionRawData } from '../fuel';
 
-import { BankAccount, BillingAddress, Card, FinancialBalanceData } from './balance-data-types';
+import { BankAccount, BillingAddress, Card } from './balance-data-types';
 import { BalanceValue } from './balance-types';
 
 export type BalanceAmountType = 'positive' | 'negative';

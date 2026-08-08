@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { SavedLoadboardSearch } from '@/api/loadboard';
 import TrashCanIcon from '@/assets/icons/trash-can.svg';
 import { Button } from '@/components/common/button/button';
-import { Tag } from '@/components/common/info-tag/info-tag';
+import { Tag } from '@/components/common/tag/tag';
 import { Popup } from '@/components/common/popup/popup';
 import { areFiltersEqual } from '@/utils/filters';
 import { ArrowDownIcon } from '@icons';

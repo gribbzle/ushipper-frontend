@@ -55,7 +55,7 @@ export const updateLocationFields = (filters: SavedLoadBoardFilters, searchRoute
             }
         }
         if (newFilters.destinations && newFilters.destinations.length > 0) {
-            const { distance, region, state, ...pathEndLocation } = newFilters.destinations[0];
+            const { distance: _distance, region, state, ...pathEndLocation } = newFilters.destinations[0];
 
             if (!region && !state) {
                 newFilters.pathEndLocation = pathEndLocation;
@@ -271,7 +271,6 @@ export const getLoadboardFiltersFromUrlParams = (
         paymentTerms,
         vehiclesMinCount,
         sources,
-        drawerParsedOrderId,
         includeCompanyBlacklist,
         includeGlobalBlacklist,
         ...rest

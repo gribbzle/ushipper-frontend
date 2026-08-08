@@ -141,7 +141,7 @@ export const useStaffList = ({ onRowClick, pageName, disabled }: UseStaffListPro
                 key: 'actions',
                 name: '',
                 hide: disabled,
-                cellRender: ({ row: { publicId, name, roleType, accountPublicId } }) => {
+                cellRender: ({ row: { publicId, name, roleType } }) => {
                     const isOwner = roleType.includes('owner');
                     const canPerformActions = isMeAdmin || isMeOwner || !isOwner;
 

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { Link } from '@/components/common/link/link';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OrderStatisticsGroup, OrderStatisticsStatus } from '@/enums';
 import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@hooks';
 import { MagnifyingGlassIcon, PlusCircleIcon } from '@icons';

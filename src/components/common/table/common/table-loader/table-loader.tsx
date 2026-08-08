@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Loader } from '@/components/common/loader';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { classname } from '@utils/classname';
 
 import './table-loader.scss';

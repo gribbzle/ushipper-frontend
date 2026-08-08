@@ -32,7 +32,7 @@ export const OrderReviewPopup = () => {
     }, [dispatch]);
 
     useEffect(() => {
-        review ? setIsSubmitDisabled(false) : setIsSubmitDisabled(true);
+        setIsSubmitDisabled(!review);
     }, [review]);
 
     const handleChangeRating = useCallback((value?: string) => (value ? setIsSubmitDisabled(false) : setIsSubmitDisabled(true)), []);

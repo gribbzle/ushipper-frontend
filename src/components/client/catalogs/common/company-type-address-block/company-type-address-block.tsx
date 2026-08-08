@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tag } from '@/components/common/info-tag/info-tag';
+import { Tag } from '@/components/common/tag/tag';
 import { GeoLocationIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';

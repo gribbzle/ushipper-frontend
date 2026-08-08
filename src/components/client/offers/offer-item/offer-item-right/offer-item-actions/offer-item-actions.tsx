@@ -6,7 +6,8 @@ import { Button } from '@/components/common/button/button';
 import { OfferStatusesEnum } from '@/enums';
 import { useMeCarrier } from '@hooks';
 import { useAppDispatch } from '@store';
-import { OrderOffer, orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
+import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
+import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

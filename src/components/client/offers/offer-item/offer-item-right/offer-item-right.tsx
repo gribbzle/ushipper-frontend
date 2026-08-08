@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { OfferStatusesEnum } from '@/enums';
 import { useMeCarrier } from '@hooks';
-import { OrderOffer } from '@store/api/order-offers';
+import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

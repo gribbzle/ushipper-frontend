@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        messages: any;
-    };
-};
+import { AppState } from "@store";
 
 export const messagesSelector = (state: AppState) => state.common.messages;
 

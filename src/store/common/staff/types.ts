@@ -1,6 +1,6 @@
 import { CompanyStatusEnum, UserRoleGroup, UserRoleType } from '@enums';
 
-import { NullableFields } from '../../../shared/types';
+import { NullableFields } from '@/shared';
 import { Fee } from '../../../types/fee';
 import { RequestWithStatus } from '../../../utils/redux';
 import { BalanceResource } from '../../admin/accounting/balance-types';

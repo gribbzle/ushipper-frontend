@@ -5,7 +5,7 @@ import CompanySelect from '@/components/common/company-select/company-select';
 import { SearchSubjectsSelect } from '@/components/common/search-subjects-select/search-subjects-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Tabs } from '@/components/common/tabs/tabs';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { OfferSortingName } from '@/enums';
 import { FormControl, InputLabel, StringInput } from '@fields';
 import { useMeShipper } from '@hooks';

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
 import { Table } from '@/components/common/table/table';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useEffectOnce, usePagination, useTable } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

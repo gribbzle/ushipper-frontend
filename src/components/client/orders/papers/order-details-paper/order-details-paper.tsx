@@ -5,7 +5,7 @@ import { OrderCustomerInfo } from '@/components/client/orders/papers/order-custo
 import { OrderInstructions } from '@/components/client/orders/papers/order-driver-instructions-paper/order-instructions-paper';
 import { OrderVehiclesInfo } from '@/components/client/orders/papers/order-vehicles-paper/order-vehicles-paper';
 import { OrderPaymentInformation } from '@/components/client/orders/show/order-payment-information/order-payment-information';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { orderCommoditiesSelector, orderVehiclesSelector } from '@store/client';
 import { classname } from '@utils/classname';

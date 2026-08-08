@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import has from 'has-values';
 
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { getOrderCustomerAddress } from '@/utils/order';
 import { ClockIcon, EmailIcon, ExternalLinkIcon, GeoLocationIcon, PersonIcon, PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';

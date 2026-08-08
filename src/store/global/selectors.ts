@@ -1,10 +1,4 @@
-type AppState = {
-    global: {
-        user: any;
-        fetchUserStatus: number;
-        accountUser: any;
-    };
-};
+import { AppState } from '@store';
 
 export const authSelector = (state: AppState) => state.global;
 

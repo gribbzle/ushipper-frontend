@@ -6,8 +6,6 @@ import { CommoditiesMileCostTooltip } from './commodities-mile-cost-tooltip';
 import { MileCostTooltipProps } from './mile-cost-tooltip.types';
 import { VehiclesMileCostTooltip } from './vehicles-mile-cost-tooltip';
 
-export { MileCostTooltipProps };
-
 export const MileCostTooltip = ({ drivingDistance, paymentInformation, vehicles = [], commodities = [], classNameTitle }: MileCostTooltipProps) => {
     if (!drivingDistance) {
         return null;

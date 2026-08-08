@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

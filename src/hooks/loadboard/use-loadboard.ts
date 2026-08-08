@@ -70,7 +70,7 @@ export const useLoadboard = () => {
     const previousQuery = useRef<LoadboardFiltersFromUrlParams | null>(null);
 
     const filterQueryParams = useCallback((query: LoadboardFiltersFromUrlParams) => {
-        const { drawerParsedOrderId, ...filteredQuery } = query;
+        const { drawerParsedOrderId: _drawerParsedOrderId, ...filteredQuery } = query;
 
         return filteredQuery;
     }, []);

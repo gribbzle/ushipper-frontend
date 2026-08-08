@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 
 import { LabeledText } from '@/components/common/labeled-text/labeled-text';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { DotLeader } from '@ui';

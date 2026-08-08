@@ -6,11 +6,11 @@ import { OrderOfferDetails } from '@/components/client/orders/forms/common/order
 import { RequestItem } from '@/components/client/requests/request-item/request-item';
 import { RequestOrderInfo } from '@/components/client/requests/requests-drawer/request-order-info';
 import { Button } from '@/components/common/button/button';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { getFinalPaymentAmount } from '@/utils/payment';
 import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
 import { useCreateOfferMutation } from '@store/api/order-offers';
-import { OrderRequest } from '@store/api/order-requests-api';
+import { OrderRequest } from '@store/api/order-requests-types';
 import { Load, SendOfferToCarrierFormState } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

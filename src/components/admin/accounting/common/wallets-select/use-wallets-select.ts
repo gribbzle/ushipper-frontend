@@ -49,7 +49,7 @@ export const useWalletsSelect = ({ input, meta, hasExternalCardWallets, onlyCust
                 const initialBalanceId = input.name === 'sourceBalanceId' ? initialValues?.destinationBalanceId : initialValues?.sourceBalanceId;
 
                 return res?.data.filter(item => item.publicId !== initialBalanceId).map(item => ({ label: item.name, value: item.publicId }));
-            } catch (error) {
+            } catch {
                 return [];
             }
         },

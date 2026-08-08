@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { Divider } from '@/components/common/divider/divider';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { companyAvgDetailsRatingSelector } from '@store/admin';
 import { Rating } from '@ui';

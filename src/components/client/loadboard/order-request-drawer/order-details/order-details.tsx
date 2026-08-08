@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
 import { ContactInfo } from '@/components/common/contact-info/contact-info';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { getOrderId } from '@/utils/order';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

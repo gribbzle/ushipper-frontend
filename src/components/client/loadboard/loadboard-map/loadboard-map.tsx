@@ -64,13 +64,13 @@ export const LoadboardMap = ({ orders, searchParams, selectedTab, loadBoardFilte
 
     useEffect(() => {
         orders.forEach(order => {
-            order.pickupInformation.geoLongitude &&
-                order.pickupInformation.geoLatitude &&
+            if (order.pickupInformation.geoLongitude && order.pickupInformation.geoLatitude) {
                 bounds.extend([order.pickupInformation.geoLongitude, order.pickupInformation.geoLatitude]);
+            }
 
-            order.deliveryInformation.geoLongitude &&
-                order.deliveryInformation.geoLatitude &&
+            if (order.deliveryInformation.geoLongitude && order.deliveryInformation.geoLatitude) {
                 bounds.extend([order.deliveryInformation.geoLongitude, order.deliveryInformation.geoLatitude]);
+            }
 
             if (mapRef.current) {
                 mapRef.current.fitBounds(bounds, { padding: 80 });

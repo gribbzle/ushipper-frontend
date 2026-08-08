@@ -26,7 +26,7 @@ export const WalletsTable = () => {
         return null;
     }
 
-    if (!!walletsPaginateData?.data.length) {
+    if (walletsPaginateData?.data.length) {
         return (
             <Table<FinancialBalanceData>
                 columns={columns}

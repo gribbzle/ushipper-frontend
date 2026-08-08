@@ -9,7 +9,7 @@ import { TimelineContent } from '@/components/common/timeline/timeline-content/t
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import useElementSize from '@/hooks/use-element-size';
 import { LineBrokenIcon } from '@icons';
 import { classname } from '@utils/classname';

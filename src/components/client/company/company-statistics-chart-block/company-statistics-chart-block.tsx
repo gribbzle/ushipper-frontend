@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Button } from '@/components/common/button/button';
 import { ChartData } from '@/components/common/stacked-area-chart/stacked-area-chart';
 import { StackedAreaChart } from '@/components/common/stacked-area-chart/stacked-area-chart';
-import { Paper } from '@/components/ui/surfaces/paper/paper';
+import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { GetStatisticParams, StatisticInformation, useLazyGetStatisticsQuery } from '@store/api/users-api';

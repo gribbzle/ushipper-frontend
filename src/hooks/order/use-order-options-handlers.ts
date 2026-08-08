@@ -2,7 +2,6 @@ import { useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { useMeShipper } from '@hooks';
 import { useAppDispatch } from '@store';
 import { apiSlice } from '@store/api/api-slice';
 import {
@@ -21,7 +20,7 @@ const translateOrder = translateByNamespace('client:order');
 export default function useOrderOptionsHandlers(order: Load, itemsContext?: boolean) {
     const router = useRouter();
     const [duplicateOrder] = useDuplicateOrderMutation();
-    const isShipper = useMeShipper();
+
     const handleDuplicateClick = useCallback(() => {
         const newOrderDetails: OrderDetails = { ...order.details, orderId: `${order.details.orderId || 'None'} (duplicate)` };
         const duplicatedOrderHehicles = [...order.vehicles].map<OrderVehicleParam>(vehicle => {

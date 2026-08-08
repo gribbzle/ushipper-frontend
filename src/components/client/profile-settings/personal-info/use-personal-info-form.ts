@@ -39,7 +39,7 @@ export const usePersonalInfoForm = () => {
                 toast.success(tNotification<string>('updated-success'));
 
                 dispatch(globalActions.setUser(result));
-            } catch (e) {
+            } catch {
                 toast.error(tNotification<string>('update-error'));
             }
         },

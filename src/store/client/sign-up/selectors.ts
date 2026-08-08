@@ -1,8 +1,4 @@
-type AppState = {
-    client: {
-        signUp: any;
-    };
-};
+import { AppState } from "@store";
 
 const signUpPageSelector = (state: AppState) => state.client.signUp;
 

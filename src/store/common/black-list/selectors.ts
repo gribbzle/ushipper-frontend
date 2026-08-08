@@ -1,8 +1,4 @@
-type AppState = {
-    common: {
-        blackList: any;
-    };
-};
+import { AppState } from "@store";
 
 export const blackListPageSelector = (state: AppState) => state.common.blackList;
 

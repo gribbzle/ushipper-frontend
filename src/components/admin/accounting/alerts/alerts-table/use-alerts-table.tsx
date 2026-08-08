@@ -55,7 +55,7 @@ export const useAlertsTable = () => {
                         const order = await fetchOrder(alert.reasonEntity.id);
 
                         return { ...alert, order };
-                    } catch (error) {
+                    } catch {
                         return alert;
                     }
                 }
@@ -67,7 +67,7 @@ export const useAlertsTable = () => {
 
             setAlertsWithOrders(updatedAlerts);
             setIsOrdersSuccess(true);
-        } catch (error) {
+        } catch {
             toast.error(t<string>('fetch-orders-for-alerts-error'));
             setAlertsWithOrders(alertsData.data);
         } finally {
