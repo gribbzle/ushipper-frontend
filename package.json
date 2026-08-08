@@ -15,7 +15,9 @@
         "lint:fix": "oxlint --fix",
         "lint:watch": "cross-env NODE_ENV=development nodemon --watch . --ext .ts,.tsx --exec \"npm run-script lint\"",
         "cy:open": "cypress open",
-        "cy:run": "cypress run"
+        "cy:run": "cypress run",
+        "lint-staged": "lint-staged",
+        "stylelint:fix": "stylelint --fix"
     },
     "dependencies": {
         "@bem-react/classname": "^1.6.0",
