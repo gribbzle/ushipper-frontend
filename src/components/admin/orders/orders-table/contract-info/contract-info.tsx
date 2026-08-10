@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AttachmentItem } from '@/components/common';
+import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
 import { useCDContractAttachment } from '@/hooks/order';
 import { ImageProvider } from '@providers';
 

@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 
 import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
-import { CompanyFeesInfo, CompanyStatusInfo, Link, Tag } from '@/components/common';
+import { CompanyFeesInfo } from '@/components/common/table/common/company-fees-info/company-fees-info';
+import { CompanyStatusInfo } from '@/components/common/table/common/company-status-info/company-status-info';
+import { Link } from '@/components/common/link/link';
+import { Tag } from '@/components/common/tag/tag';
 import { GroupIcon, TruckIcon } from '@/components/common/main-layout/sidebar/icons';
 import { TotalRatingBlock } from '@/components/common/total-rating-block';
 import { CompanyStatusEnum, FeeCategoryTermType } from '@/enums';

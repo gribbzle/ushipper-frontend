@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

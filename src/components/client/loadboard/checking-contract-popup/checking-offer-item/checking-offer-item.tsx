@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { Button, ParsedOrderRoute } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOfferData } from '@store/client/loadboard';
 import { classname } from '@utils/classname';

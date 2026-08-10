@@ -1,4 +1,4 @@
-import { TabItemBase } from '@/components/common';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 
 export type AccountingDrawerTabsProps = {
     onSelectTab: (tab: TabItemBase) => void;

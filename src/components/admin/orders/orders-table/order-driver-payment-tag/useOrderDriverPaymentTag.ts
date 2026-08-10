@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { DropdownDividerOption, DropdownOption } from '@/components/common';
+import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
 import {
     useCodCopOrderOptions,
     useInstantPaymentAttachments,

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FieldsGroupWrapper, SaveButton } from '@/components/common';
+import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
+import { SaveButton } from '@/components/common/button/SaveButton';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
 import { translateByNamespace } from '@utils/i18n';

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Paginate, Table } from '@/components/common';
+import { Paginate } from '@/components/common/paginate/paginate';
+import { Table } from '@/components/common/table/table';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 

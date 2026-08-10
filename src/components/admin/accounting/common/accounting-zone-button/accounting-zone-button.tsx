@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ZoneButton } from '@/components/common';
+import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { classname } from '@utils/classname';
 
 import { AccountingZoneButtonProps } from './accounting-zone-button.types';

@@ -3,7 +3,10 @@ import { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { toast } from 'react-toastify';
 
-import { DateInfo, Link, TableColumn, TableRowMenu } from '@/components/common';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { Link } from '@/components/common/link/link';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { BalanceType, OrderSortingDirection } from '@/enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';

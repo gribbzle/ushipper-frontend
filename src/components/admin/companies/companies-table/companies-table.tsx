@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Paper, Table, TableLoader } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
+import { Table } from '@/components/common/table/table';
+import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
 import { Company } from '@store/admin';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

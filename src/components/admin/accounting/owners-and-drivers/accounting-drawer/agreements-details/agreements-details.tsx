@@ -2,7 +2,8 @@ import React from 'react';
 import arrayMutators from 'final-form-arrays';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Divider } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Divider } from '@/components/common/divider/divider';
 import { ContractorTypesEnum, FeesRule } from '@/enums';
 import { FormControl, InputLabel } from '@fields';
 import { PlusIcon } from '@icons';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { ExternalLinkIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 

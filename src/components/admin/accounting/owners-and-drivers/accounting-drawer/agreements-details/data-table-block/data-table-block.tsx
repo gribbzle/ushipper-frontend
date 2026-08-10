@@ -1,6 +1,9 @@
 import React, { useMemo } from 'react';
 
-import { AlertBlock, Button, Table, TableColumn } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
 import { FormControl, InputLabel } from '@fields';
 import { PlusIcon } from '@icons';
 import { classname } from '@utils/classname';

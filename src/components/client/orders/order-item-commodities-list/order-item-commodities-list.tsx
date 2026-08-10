@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CommodityDetails } from '@/components/common';
+import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
 import { OrderCommodity } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 

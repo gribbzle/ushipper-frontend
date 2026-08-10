@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { CompanyStatusesSelect, CompanyTypesSelect } from '@/components/common';
+import { CompanyStatusesSelect } from '@/components/common/company-statutes-select/company-statuses-select';
+import { CompanyTypesSelect } from '@/components/common/company-types-select/company-types-select';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
 import { classname } from '@utils/classname';

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, isCreateAccountingProfileLoadingSelector } from '@store/admin';

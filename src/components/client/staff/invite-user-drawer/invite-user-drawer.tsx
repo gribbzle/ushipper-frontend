@@ -1,7 +1,8 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Drawer } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { FormControl, InputLabel, SelectField, StringInput } from '@fields';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

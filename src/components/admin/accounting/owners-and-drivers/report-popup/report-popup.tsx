@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { DatePicker, FormControl, InputLabel } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

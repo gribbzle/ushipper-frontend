@@ -1,6 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { CompanyNameIsPartnerInfo, DateInfo, TableColumn, TableRowMenu, UserInfoBlock } from '@/components/common';
+import { CompanyNameIsPartnerInfo } from '@/components/common/table/common/company-name-is-partner-info/company-name-is-partner-info';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { UserRoleType } from '@/enums';
 import { useDriversActionsPermission } from '@hooks';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';

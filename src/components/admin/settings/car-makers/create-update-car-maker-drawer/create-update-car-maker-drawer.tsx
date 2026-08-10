@@ -2,7 +2,8 @@ import React, { useCallback, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 
-import { Button, Drawer } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { StringInput } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createEditCarMakerDrawerPropsSelector, createEditCarMakerFormSubmit, fetchedCarMakerSelector } from '@store/admin';

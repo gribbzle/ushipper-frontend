@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, ReportType, selectedAccountSelector } from '@store/admin';
 import { classname } from '@utils/classname';

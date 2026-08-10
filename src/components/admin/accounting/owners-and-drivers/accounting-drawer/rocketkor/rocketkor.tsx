@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { EmptyRocketkor } from '@/components/admin/accounting/common/empty-rocketkor/empty-rocketkor';
-import { Loader } from '@/components/common';
+import { Loader } from '@/components/common/loader/loader';
 
 import { OwnershipDocumentPopup } from './rocketkor-form/popups/ownership-document-popup';
 import { PassportPopup } from './rocketkor-form/popups/passport-popup';

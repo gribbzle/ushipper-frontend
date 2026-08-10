@@ -1,7 +1,9 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { LoadBoardOrderBrokerColumn, TableColumn, TableRowMenu } from '@/components/common';
+import { LoadBoardOrderBrokerColumn } from '@/components/common/load-board-order-broker-column/load-board-order-broker-column';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { FundsTransferStatus, OrderSortingDirection, OrderSortingName } from '@/enums';
 import { useOrdersActionsPermission } from '@/hooks/order';
 import { useCompanyPage, useQueryFilters, useTable } from '@hooks';

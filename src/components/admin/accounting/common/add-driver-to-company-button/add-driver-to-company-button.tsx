@@ -1,6 +1,9 @@
 import React, { MouseEvent, useCallback } from 'react';
 
-import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Tooltip } from '@/components/common/tooltip/tooltip';
+import { TooltipContent } from '@/components/common/tooltip/tooltip';
+import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';

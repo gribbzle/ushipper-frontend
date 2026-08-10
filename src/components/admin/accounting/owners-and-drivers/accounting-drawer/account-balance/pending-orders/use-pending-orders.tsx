@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Loader } from '@/components/common';
+import { Loader } from '@/components/common/loader/loader';
 import { DRIVER_ACCOUNT_PENDING_ORDERS_FILTERS } from '@constants';
 import { OrderStatisticsStatus, OrderStatus } from '@enums';
 import { useAppSelector } from '@store';

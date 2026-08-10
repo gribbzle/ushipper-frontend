@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { AttachmentsDropzone } from '@/components/client/orders/forms/attachments-form/attachments-dropzone';
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { FileUploaderField } from '@fields';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

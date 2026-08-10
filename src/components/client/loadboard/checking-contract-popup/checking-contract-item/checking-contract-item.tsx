@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Button, ParsedOrderRoute } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
 import { DownloadIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOrderData } from '@store/client/loadboard';

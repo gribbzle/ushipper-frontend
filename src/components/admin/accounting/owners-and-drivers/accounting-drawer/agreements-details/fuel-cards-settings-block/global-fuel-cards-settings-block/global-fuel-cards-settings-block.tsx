@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { AlertBlock, Loader } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Loader } from '@/components/common/loader/loader';
 import { isNumber } from '@/shared';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';

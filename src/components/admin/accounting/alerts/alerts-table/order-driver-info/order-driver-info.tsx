@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { UserInfoBlock } from '@/components/common';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
 import { User } from '@store/client';
 

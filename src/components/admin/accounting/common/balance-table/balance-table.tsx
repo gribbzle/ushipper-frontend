@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Table } from '@/components/common';
+import { Table } from '@/components/common/table/table';
 import { Transaction } from '@store/admin';
 
 import { BalanceTableProps } from './balance-table.types';

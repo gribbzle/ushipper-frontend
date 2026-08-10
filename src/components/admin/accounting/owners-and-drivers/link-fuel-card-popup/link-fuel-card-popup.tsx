@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Button, CloseButton, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { CloseButton } from '@/components/common/button/CloseButton';
+import { Popup } from '@/components/common/popup/popup';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

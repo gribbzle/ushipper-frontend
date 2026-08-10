@@ -2,15 +2,13 @@ import React, { useCallback } from 'react';
 import { useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import {
-    AppAndDeviceInfo,
-    CompanyRatingWithReviewCount,
-    DateInfo,
-    DriverAccountInfoBlock,
-    PhoneEmailInfo,
-    TableColumn,
-    TableRowMenu,
-} from '@/components/common';
+import { AppAndDeviceInfo } from '@/components/common/table/common/app-and-device-info/app-and-device-info';
+import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
+import { DateInfo } from '@/components/common/table/common/date-info/date-info';
+import { DriverAccountInfoBlock } from '@/components/common/table/common/driver-account-info-block/driver-account-info-block';
+import { PhoneEmailInfo } from '@/components/common/table/common/phone-email-info/phone-email-info';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { BalanceType, CompanyType } from '@/enums';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppDispatch } from '@store';

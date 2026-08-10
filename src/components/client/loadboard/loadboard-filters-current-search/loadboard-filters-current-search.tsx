@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Tag } from '@/components/common';
+import { Tag } from '@/components/common/tag/tag';
 import { useLoadboard } from '@hooks';
 import { XIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

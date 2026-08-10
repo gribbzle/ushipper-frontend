@@ -1,6 +1,6 @@
 import React, { MouseEvent, useCallback } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { useFuelCardsActionsPermission } from '@hooks';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';

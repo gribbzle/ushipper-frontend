@@ -9,7 +9,7 @@ import {
     getFeeTermTypesFieldsOfProject,
     renderAddButton,
 } from '@/components/admin/accounting/common/fees-fields-wrapper';
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
 import { useDriversActionsPermission } from '@hooks';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';

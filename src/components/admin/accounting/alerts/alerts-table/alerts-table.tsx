@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { EmptyLayout, Table, TableLoader } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { Table } from '@/components/common/table/table';
+import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
 import { translateByNamespace } from '@utils/i18n';
 
 import { IssueDataWithOrder, useAlertsTable } from './use-alerts-table';

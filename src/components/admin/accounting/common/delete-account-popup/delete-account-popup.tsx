@@ -1,7 +1,8 @@
 import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, deleteAccountPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';

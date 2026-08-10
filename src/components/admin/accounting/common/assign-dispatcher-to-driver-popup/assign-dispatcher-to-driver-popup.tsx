@@ -1,7 +1,9 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncUserSelect, Button, Popup } from '@/components/common';
+import { AsyncUserSelect } from '@/components/common/user-select/async-user-select';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { FormControl, InputLabel } from '@fields';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

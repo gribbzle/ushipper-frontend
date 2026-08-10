@@ -3,7 +3,8 @@ import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, declineOrPayToDriverPopupPropsSelector } from '@store/admin';

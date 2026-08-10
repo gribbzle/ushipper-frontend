@@ -1,7 +1,9 @@
 import React, { useMemo } from 'react';
 
 import { FuelCardLimits, FuelCardStatusTag, useOpenEditFuelCardPopup } from '@/components/admin/fuel';
-import { HelperText, TableColumn, TableRowMenu } from '@/components/common';
+import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { useFuelCardsActionsPermission, useFuelCardsViewPermission } from '@hooks';
 import { FuelCard } from '@store/admin';
 import { classname } from '@utils/classname';

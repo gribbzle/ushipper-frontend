@@ -1,7 +1,10 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { AlertBlock, Button, FieldsGroupWrapper, SaveButton } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
+import { SaveButton } from '@/components/common/button/SaveButton';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
 import { classname } from '@utils/classname';

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { TransactionStatusTag, TransactionStatusTagProps } from '@/components/common';
+import { TransactionStatusTag } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag';
+import { TransactionStatusTagProps } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag-types';
 import { PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
 import { Transaction } from '@store/admin';
 

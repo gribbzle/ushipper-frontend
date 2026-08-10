@@ -3,7 +3,7 @@ import { useForm } from 'react-final-form';
 import { FieldArray } from 'react-final-form-arrays';
 
 import { FeesFieldsWrapper } from '@/components/admin/accounting/common/fees-fields-wrapper';
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { FeeCategoryValueType, FeePeriod } from '@/enums';
 import { useDriversActionsPermission } from '@hooks';
 import { PlusCircleIcon } from '@icons';

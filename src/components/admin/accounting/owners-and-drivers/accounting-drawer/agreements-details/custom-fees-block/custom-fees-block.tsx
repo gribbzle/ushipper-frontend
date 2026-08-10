@@ -2,7 +2,7 @@ import React from 'react';
 import has from 'has-values';
 import { useForm } from 'react-final-form';
 
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { translateByNamespace } from '@utils/i18n';
 

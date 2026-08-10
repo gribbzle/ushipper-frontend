@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { ThumbnailImage } from '@/components/common';
+import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-image';
 import { useInstantPaymentAttachments } from '@/hooks/order';
 import { Attachment } from '@/shared';
 import { ImageProvider } from '@providers';

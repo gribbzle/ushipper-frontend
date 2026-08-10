@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AlertStatusSelect, AlertTypeSelect, Paper } from '@/components/common';
+import { AlertStatusSelect } from '@/components/common/selects/alert-status-select/alert-status-select';
+import { AlertTypeSelect } from '@/components/common/selects/alert-type-select/alert-type-select';
+import { Paper } from '@/components/common/paper/paper';
 import { FormControl, InputLabel } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

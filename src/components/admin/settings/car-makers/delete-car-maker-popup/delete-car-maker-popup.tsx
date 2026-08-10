@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppDispatch, useAppSelector } from '@store';
 import { deleteCarMakerAction, deleteCarMakerPopupPropsSelector } from '@store/admin';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';

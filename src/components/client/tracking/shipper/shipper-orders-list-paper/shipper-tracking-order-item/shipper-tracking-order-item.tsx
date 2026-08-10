@@ -1,7 +1,9 @@
 import React, { MouseEvent, useCallback, useMemo } from 'react';
 import { format } from 'date-fns';
 
-import { GenericButton, Loader, Paper } from '@/components/common';
+import { GenericButton } from '@/components/common/generic-button/generic-button';
+import { Loader } from '@/components/common/loader/loader';
+import { Paper } from '@/components/common/paper/paper';
 import { TrackingOrderStatus } from '@/enums';
 import { formatDrivingDistance } from '@/utils/driving';
 import { getOrderId } from '@/utils/order';

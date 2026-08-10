@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, FeeCategoryTypesSelect, Paper } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { FeeCategoryTypesSelect } from '@/components/common/selects/fee-category-types-select/fee-category-types-select';
+import { Paper } from '@/components/common/paper/paper';
 import { FeeCategoryType } from '@/enums';
 import { CurrencyPercentageField, FormControl, InputLabel, TextField } from '@fields';
 import { classname } from '@utils/classname';

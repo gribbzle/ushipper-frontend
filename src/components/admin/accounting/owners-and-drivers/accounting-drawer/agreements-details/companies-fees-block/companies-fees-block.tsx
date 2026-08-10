@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
 import { FeeCategoryTermType } from '@enums';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';

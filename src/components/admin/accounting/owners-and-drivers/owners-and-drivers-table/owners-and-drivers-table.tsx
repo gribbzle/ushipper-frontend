@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { EmptyLayout, Table } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { Table } from '@/components/common/table/table';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

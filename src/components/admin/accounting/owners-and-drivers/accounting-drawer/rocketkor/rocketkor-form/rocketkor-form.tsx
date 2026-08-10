@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, FieldRenderProps, Form } from 'react-final-form';
 
-import { Divider } from '@/components/common';
+import { Divider } from '@/components/common/divider/divider';
 import { DatePicker, FieldPrefix, FormControl, InputLabel, NativeSwitch, NativeSwitchProps, PhoneNumberInput, TextField } from '@fields';
 import { useFormSubmit } from '@hooks';
 import { classname } from '@utils/classname';

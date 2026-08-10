@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { RowItem } from '@/components/common';
+import { RowItem } from '@/components/common/table/common/row-item/row-item';
 import { FuelTransactionLineItem } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-final-form';
 
-import { Divider } from '@/components/common';
+import { Divider } from '@/components/common/divider/divider';
 import { ContractorTypesEnum } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, PrefixedFieldArray, SwitchInput } from '@fields';
 import { classname } from '@utils/classname';

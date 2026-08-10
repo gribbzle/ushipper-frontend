@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { classname } from '@utils/classname';
 
 import { AccountingEntityFiltersForm } from './accounting-entity-filters-form';

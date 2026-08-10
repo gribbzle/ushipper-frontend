@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { RowItem } from '@/components/common';
+import { RowItem } from '@/components/common/table/common/row-item/row-item';
 import { FuelTransactionLineItem } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
 import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';

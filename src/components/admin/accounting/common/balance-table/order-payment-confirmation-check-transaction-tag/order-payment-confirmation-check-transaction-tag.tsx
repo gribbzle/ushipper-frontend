@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CodCopOrdersActionTag } from '@/components/common';
+import { CodCopOrdersActionTag } from '@/components/common/table/common/cod-cop-order-action-tag/cod-cop-order-action-tag';
 import { BalanceValue } from '@store/admin';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { classname } from '@utils/classname';

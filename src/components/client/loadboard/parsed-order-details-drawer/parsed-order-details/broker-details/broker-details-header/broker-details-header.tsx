@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-popup/choose-phone-popup';
-import { Button, ParsedOrderChatButton } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { ParsedOrderChatButton } from '@/components/common/parsed-order-actions/parsed-order-chat-button/parsed-order-chat-button';
 import { useMeAdmin, useMeDriverRelated } from '@hooks';
 import { PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';

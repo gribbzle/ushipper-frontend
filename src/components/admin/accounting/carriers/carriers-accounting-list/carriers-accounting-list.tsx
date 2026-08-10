@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { EmptyLayout, Paginate } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { Paginate } from '@/components/common/paginate/paginate';
 import { CompanyType } from '@/enums';
 import { useQueryFilters, useTable } from '@hooks';
 import { useGetCompaniesQuery } from '@store/api/company-api';

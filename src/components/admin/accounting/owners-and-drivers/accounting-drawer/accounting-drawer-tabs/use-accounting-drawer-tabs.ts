@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { TabItemBase } from '@/components/common';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { BalanceType } from '@/enums';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';

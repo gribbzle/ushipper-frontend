@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { EmptyLayout, TableLoader } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
 import { BalanceType } from '@/enums';
 import { translateByNamespace } from '@utils/i18n';
 

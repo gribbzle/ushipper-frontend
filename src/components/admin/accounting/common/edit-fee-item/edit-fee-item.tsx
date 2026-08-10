@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { IconButton } from '@/components/common';
+import { IconButton } from '@/components/common/icon-button/icon-button';
 import { CurrencyPercentageField, FormControl, InputLabel } from '@fields';
 import { TrashIcon } from '@icons';
 import { classname } from '@utils/classname';

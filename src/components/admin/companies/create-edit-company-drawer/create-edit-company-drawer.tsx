@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Button, CompanyTypesSelect, Divider, Drawer } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { CompanyTypesSelect } from '@/components/common/company-types-select/company-types-select';
+import { Divider } from '@/components/common/divider/divider';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { SwitchInput } from '@/fields/switch-input';
 import { FormControl, ImageFileInput, InputLabel, PasswordField, PhoneNumberInput, TextField } from '@fields';
 import { classname } from '@utils/classname';

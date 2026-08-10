@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { Button, Popup } from '@/components/common';
+import { Button } from '@/components/common/button/button';
+import { Popup } from '@/components/common/popup/popup';
 import { useAppSelector } from '@store';
 import { isCreateTransactionLoadingSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

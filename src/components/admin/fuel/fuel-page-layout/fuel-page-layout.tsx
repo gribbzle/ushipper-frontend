@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SupportChatDrawer } from '@/components/common';
+import { SupportChatDrawer } from '@/components/common/chats/support-chat-drawer/support-chat-drawer';
 import { classname } from '@utils/classname';
 
 import './fuel-page-layout.scss';

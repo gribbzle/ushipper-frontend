@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { DropdownDividerOption, DropdownOption } from '@/components/common';
+import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
 import { useFundsTransferStatusOptions, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers, useOrdersActionsPermission } from '@/hooks/order';
 import { FundsTransferStatusView } from '@enums';
 import { useOpenTransactionsPage } from '@hooks';

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { FeeCategoryValueType } from '@/enums';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';

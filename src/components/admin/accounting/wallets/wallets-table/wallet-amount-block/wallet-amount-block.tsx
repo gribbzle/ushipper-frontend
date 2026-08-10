@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AmountInfoBlock } from '@/components/common';
+import { AmountInfoBlock } from '@/components/common/table/common/amount-info-block/amount-info-block';
 import { BalanceValue } from '@store/admin';
 
 export const WalletAmountBlock = ({ balance, view = 'light' }: { balance: BalanceValue; view?: 'light' | 'bold' }) => {

@@ -2,7 +2,12 @@ import React, { useCallback, useMemo } from 'react';
 import { toSnakeCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
-import { Link, StatusBlock, Table, TableColumn, TableRowMenu, UserInfoBlock } from '@/components/common';
+import { Link } from '@/components/common/link/link';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarMaker } from '@store/admin';
 import { carMakersFiltersSelector, carMakersSelector } from '@store/admin/car-makers-settings/selectors';

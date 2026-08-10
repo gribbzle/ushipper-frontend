@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Loader } from '@/components/common';
+import { Loader } from '@/components/common/loader/loader';
 import { classname } from '@utils/classname';
 
 import { EmptyBalanceBlock } from '../common';

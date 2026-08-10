@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { AccountingInfoRow } from '@/components/admin/accounting/common/accounting-info-row/accounting-info-row';
 import { File } from '@/components/client/job-offers/attachments-info-column/attachments-info-column';
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { useDriversActionsPermission } from '@hooks';
 import { PencilWithLineIcon } from '@icons';
 import { classname } from '@utils/classname';

@@ -2,7 +2,8 @@ import React from 'react';
 import arrayMutators from 'final-form-arrays';
 import { Form } from 'react-final-form';
 
-import { Drawer, SaveButton } from '@/components/common';
+import { Drawer } from '@/components/common/drawer/drawer';
+import { SaveButton } from '@/components/common/button/SaveButton';
 import { CarrierAccountingDrawerTab } from '@enums';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

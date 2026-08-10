@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import { useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { AmountInfoBlock, DescriptionInfoBlock, PriceAndReceiptPhotos, TableColumn, TransactionTimeInfoBlock, UserInfoBlock } from '@/components/common';
+import { AmountInfoBlock } from '@/components/common/table/common/amount-info-block/amount-info-block';
+import { DescriptionInfoBlock } from '@/components/common/table/common/description-info-block/description-info-block';
+import { PriceAndReceiptPhotos } from '@/components/common/table/common/price-and-receipt-photos/price-and-receipt-photos';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TransactionTimeInfoBlock } from '@/components/common/table/common/transaction-time-info-block/transaction-time-info-block';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { OrderSortingDirection, PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
 import { useIsTransactionsPage, useQueryFilters, useTable } from '@hooks';
 import { Transaction } from '@store/admin';
@@ -61,22 +66,23 @@ export const useBalanceTable = ({ balanceType, balanceId }: BalanceTableProps) =
                 key: 'created_at',
                 name: t('transaction-time-column-title'),
                 isSortable: true,
-                cellRender: ({ row: { createdAt, publicId } }) => <TransactionTimeInfoBlock time={createdAt} id={publicId} />,
+                cellRender: ({ row }: { row: Transaction }) => <TransactionTimeInfoBlock time={row.createdAt} id={row.publicId} />,
             },
             {
                 key: 'source_balance',
                 name: t('from-column-title'),
-                cellRender: ({ row: { sourceBalance } }) => <MoveBalanceInfoBlock balance={sourceBalance} />,
+                cellRender: ({ row }: { row: Transaction }) => <MoveBalanceInfoBlock balance={row.sourceBalance} />,
             },
             {
                 key: 'destination_balance',
                 name: t('to-column-title'),
-                cellRender: ({ row: { destinationBalance } }) => <MoveBalanceInfoBlock balance={destinationBalance} />,
+                cellRender: ({ row }: { row: Transaction }) => <MoveBalanceInfoBlock balance={row.destinationBalance} />,
             },
             {
                 key: 'amount',
                 name: t('amount-column-title'),
-                cellRender: ({ row: { sourceBalance, destinationBalance, type, amount, status } }) => {
+                cellRender: ({ row }: { row: Transaction }) => {
+                    const { sourceBalance, destinationBalance, type, amount, status } = row;
                     const isCancelledStatus = status === TransactionStatusesEnum.CANCELLED;
                     const isSameSourceAccount = sourceBalance?.accountId === accountIdFilter;
                     const cashIn = isCashIn({ confirmation: type, sourceType: sourceBalance?.type });
@@ -96,23 +102,23 @@ export const useBalanceTable = ({ balanceType, balanceId }: BalanceTableProps) =
             {
                 key: 'status',
                 name: t('status-column-title'),
-                cellRender: ({ row: { status, publicId, destinationBalance, sourceBalance, type, entity, amount, externalProvider } }) => (
+                cellRender: ({ row }: { row: Transaction }) => (
                     <StatusColumn
-                        status={status}
-                        publicId={publicId}
-                        destinationBalance={destinationBalance}
-                        sourceBalance={sourceBalance}
-                        type={type}
-                        entity={entity}
-                        amount={amount}
-                        externalProvider={externalProvider}
+                        status={row.status}
+                        publicId={row.publicId}
+                        destinationBalance={row.destinationBalance}
+                        sourceBalance={row.sourceBalance}
+                        type={row.type}
+                        entity={row.entity}
+                        amount={row.amount}
+                        externalProvider={row.externalProvider}
                     />
                 ),
             },
             {
                 key: 'type_and_description',
                 name: t('description-column-title'),
-                cellRender: ({ row }) => {
+                cellRender: ({ row }: { row: Transaction }) => {
                     const { type, entity, metadata } = row;
 
                     const isOrderPaymentConfirmationCheckTransaction = type === PaymentConfirmationType.ORDER_PAYMENT_CONFIRMED_CHECK;
@@ -152,34 +158,34 @@ export const useBalanceTable = ({ balanceType, balanceId }: BalanceTableProps) =
             {
                 key: 'amount_before',
                 name: t('balance-before-column-title'),
-                cellRender: ({ row: { amountBefore } }) => amountBefore?.formatted ?? '—',
+                cellRender: ({ row }: { row: Transaction }) => row.amountBefore?.formatted ?? '—',
             },
             {
                 key: 'type_and_description',
                 name: t('description-column-title'),
-                cellRender: ({ row }) => <DescriptionInfoBlock {...row} showDriverInfo={false} showReasonAccount={false} showExternalInfo={true} />,
+                cellRender: ({ row }: { row: Transaction }) => <DescriptionInfoBlock {...row} showDriverInfo={false} showReasonAccount={false} showExternalInfo={true} />,
             },
             {
                 key: 'status',
                 name: t('status-column-title'),
-                cellRender: ({ row: { status, publicId, destinationBalance, sourceBalance, type, entity, amount, externalProvider } }) => (
+                cellRender: ({ row }: { row: Transaction }) => (
                     <StatusColumn
-                        status={status}
-                        publicId={publicId}
-                        destinationBalance={destinationBalance}
-                        sourceBalance={sourceBalance}
-                        type={type}
-                        entity={entity}
-                        amount={amount}
-                        externalProvider={externalProvider}
+                        status={row.status}
+                        publicId={row.publicId}
+                        destinationBalance={row.destinationBalance}
+                        sourceBalance={row.sourceBalance}
+                        type={row.type}
+                        entity={row.entity}
+                        amount={row.amount}
+                        externalProvider={row.externalProvider}
                     />
                 ),
             },
             {
                 key: 'company',
                 name: t('company-column-title'),
-                cellRender: ({ row: { entity } }) => {
-                    const company = entity?.data?.company;
+                cellRender: ({ row }: { row: Transaction }) => {
+                    const company = row.entity?.data?.company;
 
                     return company ? <UserInfoBlock name={company.name} avatar={company.owner.avatar} role={translateCompanyType(company.type)} /> : '—';
                 },
@@ -187,7 +193,8 @@ export const useBalanceTable = ({ balanceType, balanceId }: BalanceTableProps) =
             {
                 key: 'owner_or_driver',
                 name: t('owner-or-driver-column-title'),
-                cellRender: ({ row: { entity, type, reasonAccount } }) => {
+                cellRender: ({ row }: { row: Transaction }) => {
+                    const { entity, type, reasonAccount } = row;
                     const handleDriverClick = (name: string) => window.open(`/admin/accounting/drivers?name=${encodeURIComponent(name)}`, '_blank');
 
                     if (type === PaymentConfirmationType.RECURRING_TRANSACTION) {

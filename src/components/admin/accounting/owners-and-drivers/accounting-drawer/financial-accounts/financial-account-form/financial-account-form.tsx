@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Divider } from '@/components/common';
+import { Divider } from '@/components/common/divider/divider';
 import { BalanceType } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, TextField } from '@fields';
 import { useFormSubmit } from '@hooks';

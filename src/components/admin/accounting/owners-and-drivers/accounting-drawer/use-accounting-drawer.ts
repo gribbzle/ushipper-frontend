@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { TabItemBase } from '@/components/common';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, accountingDrawerPropsSelector, selectedAccountSelector } from '@store/admin';
 import { useLazyGetAccountingAccountQuery } from '@store/api/accounting-accounts-api';

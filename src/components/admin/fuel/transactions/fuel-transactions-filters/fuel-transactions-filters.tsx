@@ -1,7 +1,10 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { AsyncDriverAccountsSelect, AsyncFuelCardsSelect, FuelCardCompaniesSelect, FuelTransactionStatusesSelect } from '@/components/common';
+import { AsyncDriverAccountsSelect } from '@/components/common/selects/async-driver-accounts-select/async-driver-accounts-select';
+import { AsyncFuelCardsSelect } from '@/components/common/selects/fuel/async-fuel-cards-select/async-fuel-cards-select';
+import { FuelCardCompaniesSelect } from '@/components/common/selects/fuel/fuel-card-companies-select/fuel-card-companies-select';
+import { FuelTransactionStatusesSelect } from '@/components/common/selects/fuel/fuel-transaction-statuses-select/fuel-transaction-statuses-select';
 import { parseField } from '@/utils/parse-field';
 import { FormControl, InputLabel } from '@fields';
 import { translateByNamespace } from '@utils/i18n';

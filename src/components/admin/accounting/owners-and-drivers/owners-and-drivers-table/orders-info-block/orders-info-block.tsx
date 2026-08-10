@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { RowItem } from '@/components/common';
+import { RowItem } from '@/components/common/table/common/row-item/row-item';
 import { FundsTransferCalculatedStatus, OrderStatisticsStatus } from '@enums';
 
 type OrdersInfoBlockProps = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FieldsGroupWrapper } from '@/components/common';
+import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
 import { EmailServerCredentialType } from '@types';
 import { translateByNamespace } from '@utils/i18n';

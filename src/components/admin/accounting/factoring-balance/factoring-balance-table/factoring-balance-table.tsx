@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { EmptyLayout } from '@/components/common';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { BalanceType } from '@/enums';
 import { translateByNamespace } from '@utils/i18n';
 

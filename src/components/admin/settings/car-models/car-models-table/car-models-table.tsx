@@ -2,8 +2,11 @@ import React, { memo, useCallback, useMemo } from 'react';
 import { toSnakeCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
-import { StatusBlock, UserInfoBlock } from '@/components/common';
-import { Table, TableColumn, TableRowMenu } from '@/components/common/table';
+import { StatusBlock } from '@/components/common/status-block/status-block';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
+import { Table } from '@/components/common/table/table';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarModel, carModelsFiltersSelector, carModelsSelector } from '@store/admin';
 import { carModelsSettingsActions } from '@store/admin/car-models-settings/slice';

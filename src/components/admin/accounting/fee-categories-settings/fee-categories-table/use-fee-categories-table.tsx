@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo } from 'react';
 
-import { TableColumn, TableRowMenu } from '@/components/common';
+import { TableColumn } from '@/components/common/table/table.types';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createEditFeeCategoryBlockPropsSelector } from '@store/admin';
 import { useGetFeeCategoriesQuery } from '@store/api/fee-categories-api';

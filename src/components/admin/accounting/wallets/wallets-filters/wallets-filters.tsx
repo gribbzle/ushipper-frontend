@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

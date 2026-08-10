@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { FormApi } from 'final-form';
 import { Form } from 'react-final-form';
 
-import { Paper } from '@/components/common';
+import { Paper } from '@/components/common/paper/paper';
 import { AppFilters } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

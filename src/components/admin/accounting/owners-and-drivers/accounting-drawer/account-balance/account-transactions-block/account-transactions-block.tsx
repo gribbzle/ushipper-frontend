@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { useCreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/use-create-transaction-popup';
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { useOpenTransactionsPage, useTransactionActionsPermission } from '@hooks';
 import { CreditCardIcon } from '@icons';
 import { useAppSelector } from '@store';

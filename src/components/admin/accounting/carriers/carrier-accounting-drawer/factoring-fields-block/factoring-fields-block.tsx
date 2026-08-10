@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FieldsGroupWrapper } from '@/components/common';
+import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { ExternalServiceType } from '@enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
 import { classname } from '@utils/classname';

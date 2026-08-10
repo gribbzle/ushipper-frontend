@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { AsyncMultiCompanySelect, CompanyStatusesSelect, CompanyTypesSelect } from '@/components/common';
+import { AsyncMultiCompanySelect } from '@/components/common/company-select/async-multi-company-select';
+import { CompanyStatusesSelect } from '@/components/common/company-statutes-select/company-statuses-select';
+import { CompanyTypesSelect } from '@/components/common/company-types-select/company-types-select';
 import { parseField } from '@/utils/parse-field';
 import { FormControl, InputLabel, TextField } from '@fields';
 import { classname } from '@utils/classname';

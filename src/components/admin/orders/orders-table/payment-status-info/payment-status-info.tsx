@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { AttachmentItem } from '@/components/common';
+import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
 import { useInstantPaymentAttachments, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { ImageProvider } from '@providers';
 import { classname } from '@utils/classname';

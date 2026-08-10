@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { Button } from '@/components/common';
+import { Button } from '@/components/common/button/button';
 import { BalanceType } from '@/enums';
 import { useDefaultAccountBalance, useTransactionActionsPermission } from '@hooks';
 import { PlusIcon } from '@icons';

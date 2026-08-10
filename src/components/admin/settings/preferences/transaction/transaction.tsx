@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { PerformTransactionEventsSelect, TransactionSystemSelect } from '@/components/common';
+import { PerformTransactionEventsSelect } from '@/components/common/selects/preferences/perform-transaction-events-select/perform-transaction-events-select';
+import { TransactionSystemSelect } from '@/components/common/selects/preferences/transaction-systems-select/transaction-systems-select';
 import { DriverAccountsSelect } from '@/components/common/orders-page-layout/driver-accounts-select';
 import { TransactionSystemEnum } from '@/enums';
 import { FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';

@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { DropdownOption } from '@/components/common';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { IssueStatus } from '@enums';
 import { useIssue, useIssueHelpers } from '@hooks';
 import { useAppDispatch } from '@store';

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 import { useForm } from 'react-final-form';
 
-import { AlertBlock } from '@/components/common';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { CurrencyInput, FormControl, InputLabel, PrefixedField } from '@fields';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

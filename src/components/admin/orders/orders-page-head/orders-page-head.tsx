@@ -2,7 +2,8 @@ import React, { useCallback, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { ExportButton, PageHeader } from '@/components/common';
+import { ExportButton } from '@/components/common/button/ExportButton';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { useOrdersActionsPermission, useOrdersExport } from '@/hooks/order';
 import { OrderType } from '@enums';
 import { translateByNamespace } from '@utils/i18n';

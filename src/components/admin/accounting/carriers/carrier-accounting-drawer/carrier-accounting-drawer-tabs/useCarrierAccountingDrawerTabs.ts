@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { TabItemBase } from '@/components/common';
+import { TabItemBase } from '@/components/common/tabs/tabs';
 import { CarrierAccountingDrawerTab } from '@/enums';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, carrierAccountingDrawerPropsSelector } from '@store/admin';

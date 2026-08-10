@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { RowItem } from '@/components/common';
+import { RowItem } from '@/components/common/table/common/row-item/row-item';
 import { AccountingAccountTransactionsData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';
 import { convertCentsToInteger } from '@utils/converter';

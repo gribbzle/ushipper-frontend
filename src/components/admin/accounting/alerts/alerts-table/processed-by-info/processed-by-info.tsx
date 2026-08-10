@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { UserInfoBlock } from '@/components/common';
+import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { useIssue } from '@hooks';
 import { useGetUserQuery } from '@store/api/users-api';
 import { classname } from '@utils/classname';

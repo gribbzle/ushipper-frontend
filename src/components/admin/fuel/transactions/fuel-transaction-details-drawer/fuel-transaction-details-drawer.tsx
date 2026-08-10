@@ -1,7 +1,8 @@
 import React, { Fragment, useMemo } from 'react';
 import has from 'has-values';
 
-import { Divider, Drawer } from '@/components/common';
+import { Divider } from '@/components/common/divider/divider';
+import { Drawer } from '@/components/common/drawer/drawer';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { formatDate } from '@utils/dates';

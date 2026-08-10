@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { DropdownOption, TableRowMenu } from '@/components/common';
+import { DropdownOption } from '@/components/common/dropdown/dropdown';
+import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { CarrierAccountingDrawerTab } from '@/enums';
 import { useLoginAs, useOpenDeleteCompanyPopup } from '@hooks';
 import { useAppDispatch } from '@store';
