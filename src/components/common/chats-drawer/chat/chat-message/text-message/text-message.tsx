@@ -3,7 +3,6 @@ import React, { RefObject, useMemo } from 'react';
 import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
 import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
-import { ExclamationCircleIcon, TickIcon } from '@icons';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -13,6 +12,8 @@ import { ChatMessageContent, ChatMessageWrapper } from '../common';
 import MessageReadStatusIcon from './message-read-status.svg';
 
 import './text-message.scss';
+import ExclamationCircleIcon from '@/assets/icons/exclamation-circle.svg';
+import TickIcon from '@/assets/icons/tick.svg';
 
 const cn = classname('text-message');
 const t = translateByNamespace('common:chats');

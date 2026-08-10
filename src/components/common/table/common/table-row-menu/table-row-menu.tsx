@@ -2,10 +2,10 @@ import React from 'react';
 
 import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
-import { ActionsIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './table-row-menu.scss';
+import ActionsIcon from '@/assets/icons/actions-icon.svg';
 
 type TableRowMenuProps = {
     dataTestId: string;

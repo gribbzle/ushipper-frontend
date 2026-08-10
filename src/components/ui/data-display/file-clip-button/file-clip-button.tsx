@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { FileWithClipIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './file-clip-button.scss';
+import FileWithClipIcon from '@/assets/icons/file-with-clip.svg';
 
 const cn = classname('file-clip-button');
 

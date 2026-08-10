@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 
 import { Loader } from '@/components/common/loader/loader';
 import { Popup } from '@/components/common/popup/popup';
-import { CloseIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { classname } from '@utils/classname';
 import { renderTextWithBreakLines } from '@utils/render';
@@ -11,6 +10,7 @@ import { FullCheckingContractOfferBlock } from './full-checking-contract-offer-b
 import { useCheckingContractPopup } from './use-checking-contract-popup';
 
 import './checking-contract-popup.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
 
 const cn = classname('checking-contract-popup');
 

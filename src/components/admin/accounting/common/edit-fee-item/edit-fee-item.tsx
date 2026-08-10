@@ -5,7 +5,6 @@ import { IconButton } from '@/components/common/icon-button/icon-button';
 import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
-import { TrashIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
@@ -15,6 +14,7 @@ import { EditFeeItemProps } from './edit-fee-item.types';
 import { useEditFeeItem } from './use-edit-fee-item';
 
 import './edit-fee-item.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const cn = classname('edit-fee-item');
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');

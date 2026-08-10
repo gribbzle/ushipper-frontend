@@ -3,7 +3,6 @@ import React, { useMemo } from 'react';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { StatusBlock } from '@/components/common/status-block/status-block';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { ArrowDownIcon, TickIcon, XCircleIcon } from '@icons';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -12,6 +11,9 @@ import { getAccountStatusTranslate } from '@utils/translate/get-account-status-t
 import { useVerifiedStatusInfo } from './use-verified-status-info';
 
 import './verified-status-info.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import TickIcon from '@/assets/icons/tick.svg';
+import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 
 const cn = classname('verified-status-info');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:table');

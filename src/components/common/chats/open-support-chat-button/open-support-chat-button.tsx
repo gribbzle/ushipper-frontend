@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { MessageTextRightIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { chatsActions } from '@store/client';
+import MessageTextRightIcon from '@/assets/icons/message-text-right.svg';
 
 export const OpenSupportChatButton = ({ name, accountId }: { name: string; accountId?: string | null }) => {
     const dispatch = useAppDispatch();

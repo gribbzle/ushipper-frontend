@@ -7,7 +7,6 @@ import { OrderPaymentInformationFieldsGroup } from '@/components/client/orders/f
 import { OrderForm } from '@/components/client/orders/order-form/order-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     OrderFormState,
@@ -21,6 +20,7 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-payment-information-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:payment-information');
 const cn = classname('order-payment-information-drawer');

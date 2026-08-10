@@ -2,13 +2,13 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
 import { Badge } from '@/components/common/badge/badge';
-import { DriverIcon } from '@icons';
 import { Driver, TrackingDriver, User } from '@store/client';
 import { classname } from '@utils/classname';
 import { checkIsGPSStatusRecentlyUpdated } from '@utils/dates';
 import { stringAvatar } from '@utils/string-avatar';
 
 import './driver-order-pin.scss';
+import DriverIcon from '@/assets/icons/driver-icon.svg';
 
 const cn = classname('driver-order-pin');
 

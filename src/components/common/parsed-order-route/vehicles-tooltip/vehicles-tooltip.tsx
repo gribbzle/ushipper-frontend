@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 
 import { VehicleSizesInfo } from '@/components/client/loadboard/common/vehicle-sizes-info';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { CarIcon2 } from '@icons';
 import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -12,6 +11,7 @@ import { ParsedOrderRouteProps } from '../parsed-order-route.types';
 import { getVehicleLabel, useVehiclesTooltip } from './use-vehicles-tooltip';
 
 import './vehicles-tooltip.scss';
+import CarIcon2 from '@/assets/icons/car-icon2.svg';
 
 const cn = classname('vehicles-tooltip');
 const t = translateByNamespace('client:loadboard:load-details');

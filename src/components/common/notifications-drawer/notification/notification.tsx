@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
-import { ActionsIcon, SystemIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -12,6 +11,8 @@ import { NotificationProps } from './notification.types';
 import { useNotification } from './use-notification';
 
 import './notification.scss';
+import ActionsIcon from '@/assets/icons/actions-icon.svg';
+import SystemIcon from '@/assets/icons/system-icon.svg';
 
 const t = translateByNamespace('common:notifications');
 const activityT = translateByNamespace('client:order:activity');

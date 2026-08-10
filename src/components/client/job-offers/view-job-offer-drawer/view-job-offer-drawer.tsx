@@ -4,7 +4,6 @@ import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-drawer-tabs';
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
-import { CheckIcon, CloseIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -16,6 +15,8 @@ import { useViewJobOfferDrawer } from './use-view-job-offer-drawer';
 import { useViewJobOfferDrawerActions } from './use-view-job-offer-drawer-actions';
 
 import './view-job-offer-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
+import CloseIcon from '@/assets/icons/close-icon.svg';
 
 const t = translateByNamespace('client:order-offers');
 const tTitle = translateByNamespace('client:job-offers-page.drawer');

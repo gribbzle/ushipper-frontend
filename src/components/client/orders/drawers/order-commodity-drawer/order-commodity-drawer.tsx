@@ -3,11 +3,11 @@ import React, { useCallback } from 'react';
 import { OrderCommodityForm } from '@/components/client/orders/forms/order-commodity-form/order-commodity-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderCommodityDrawerPropsSelector, ordersActions } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const formId = 'orderCommodityForm';
 const t = translateByNamespace('client:order:commodities');

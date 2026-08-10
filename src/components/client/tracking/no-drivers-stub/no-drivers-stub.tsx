@@ -5,13 +5,13 @@ import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { UserRoleGroup } from '@/enums/user-role-group';
 import { useUserRoleGroup } from '@/hooks/use-user-role-group';
-import { ExternalLinkIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './no-drivers-stub.scss';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
 
 const t = translateByNamespace('client:tracking-page');
 const cn = classname('no-drivers-stub-paper');

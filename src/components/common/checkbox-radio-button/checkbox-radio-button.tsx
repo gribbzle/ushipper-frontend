@@ -1,9 +1,9 @@
 import React, { ChangeEvent, useCallback } from 'react';
 
-import { CheckIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './checkbox-radio-button.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 type CheckboxRadioButtonProps = {
     name: string;

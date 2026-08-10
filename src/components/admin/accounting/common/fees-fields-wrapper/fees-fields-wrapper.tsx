@@ -2,12 +2,12 @@ import React, { ReactNode } from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
-import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';
 
 import './fees-fields-wrapper.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const cn = classname('fees-fields-wrapper');
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');

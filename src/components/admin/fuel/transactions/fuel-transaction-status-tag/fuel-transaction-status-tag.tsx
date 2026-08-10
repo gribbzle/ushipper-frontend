@@ -4,11 +4,11 @@ import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown
 import { StatusBlock } from '@/components/common/status-block/status-block';
 import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
-import { ArrowDownIcon } from '@icons';
 import { getFuelTransactionStatusTranslate } from '@utils/translate/fuel/get-fuel-transaction-status-translate';
 
 import { FuelTransactionStatusTagProps } from './fuel-transaction-status-tag.types';
 import { useFuelTransactionStatusTag } from './use-fuel-transaction-status-tag';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const statusViewMap: Record<FuelTransactionStatus, StatusBlockView> = {
     pending: 'warning',

@@ -3,7 +3,6 @@ import { Field, Form } from 'react-final-form';
 
 import { DispatchersSelect } from '@/components/common/dispatchers-select/dispatchers-select';
 import { Paper } from '@/components/common/paper/paper';
-import { CloseIcon } from '@icons';
 import { ShipperTrackingFiltersFormState } from '@store/client';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
@@ -15,6 +14,7 @@ import { StatusOrdersRadioGroup } from './status-orders-radio-group';
 import { useShipperTrackingFiltersForm } from './use-shipper-tracking-filters';
 
 import './shipper-tracking-filters.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
 
 const t = translateByNamespace('client:tracking-page:shipper-filters');
 const cn = classname('shipper-tracking-filters');

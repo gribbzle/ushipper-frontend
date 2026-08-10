@@ -8,7 +8,6 @@ import { Button } from '@/components/common/button/button';
 import { getAdminAuthLayout } from '@/components/admin/auth-layout/auth-layout';
 import { Link } from '@/components/common/link/link';
 import {StringInput} from '@/fields/string-input';
-import { ArrowRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { requestResetFormErrorSelector, requestResetFormSubmit, requestResetFormSubmitStatusSelector, RequestResetPasswordData } from '@store/common';
 import { classname } from '@utils/classname';
@@ -19,6 +18,7 @@ import { getProjectName } from '@utils/translate/get-project-name';
 import { composeValidators, emailValidator, required } from '@validators';
 
 import './password-recovery.scss';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
 
 const t = translateByNamespace('admin:password-recovery-page');
 const cn = classname('password-recovery-page');

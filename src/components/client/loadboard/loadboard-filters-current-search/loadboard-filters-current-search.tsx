@@ -2,7 +2,6 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Tag } from '@/components/common/tag/tag';
 import { useLoadboard } from '@/hooks/loadboard/use-loadboard';
-import { XIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { isSearchAlongRouteSelector, loadboardListSelector } from '@store/client/loadboard/selectors';
 import { loadboardActions } from '@store/client/loadboard/slice';
@@ -12,6 +11,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { getFilterValue } from './utils';
 
 import './loadboard-filters-current-search.scss';
+import XIcon from '@/assets/icons/x.svg';
 
 const t = translateByNamespace('client:loadboard-filters');
 

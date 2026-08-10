@@ -3,7 +3,6 @@ import React from 'react';
 import { Button } from '@/components/common/button/button';
 import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
-import { HireIcon, MessageTextLeftIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -13,6 +12,8 @@ import { CompanyBriefActionsProps } from './company-brief-actions.types';
 import { useCompanyBriefActions } from './use-company-brief-actions';
 
 import './company-brief-actions.scss';
+import HireIcon from '@/assets/icons/hire-icon.svg';
+import MessageTextLeftIcon from '@/assets/icons/message-text-left.svg';
 
 const cn = classname('company-brief-actions');
 const t = translateByNamespace('client:company-page.brief');

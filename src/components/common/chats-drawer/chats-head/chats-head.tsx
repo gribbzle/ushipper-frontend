@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 
 import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-popup/choose-phone-popup';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
-import { CallIcon, MessageTextRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions } from '@store/client';
 import { authorizedUserSelector } from '@store/global';
@@ -13,6 +12,8 @@ import { formatInternationalPhoneNumber } from '@utils/phone';
 import { Avatar } from '../../avatar';
 
 import './chats-head.scss';
+import CallIcon from '@/assets/icons/call-icon.svg';
+import MessageTextRightIcon from '@/assets/icons/message-text-right.svg';
 
 const t = translateByNamespace('common:chats');
 

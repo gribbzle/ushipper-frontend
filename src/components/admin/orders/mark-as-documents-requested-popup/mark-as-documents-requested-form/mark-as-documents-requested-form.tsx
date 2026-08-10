@@ -14,12 +14,13 @@ import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
-import { PlusIcon, TrashIcon } from '@icons';
 import { CreateRequestedDocumentPayload, useCreateRequestedDocumentsMutation, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './mark-as-documents-requested-form.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 export type DocumentsRequestedFormState = {
     documentsRequested: CreateRequestedDocumentPayload[];

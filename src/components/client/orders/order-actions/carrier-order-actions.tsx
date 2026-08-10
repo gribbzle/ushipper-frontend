@@ -8,7 +8,6 @@ import { OrderStatus } from '@/enums/order-status';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { HorizontalDotsIcon, UserPlusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { Load, orderPublicIdSelector, ordersActions } from '@store/client';
@@ -16,6 +15,8 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-actions.scss';
+import HorizontalDotsIcon from '@/assets/icons/horizontal-dots.svg';
+import UserPlusIcon from '@/assets/icons/user-plus.svg';
 
 type OrderActionsProps = {
     order: Load;

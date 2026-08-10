@@ -7,13 +7,13 @@ import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { useTracking } from '@/hooks/tracking/useTracking';
 import { useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { useUserTracking } from '@/hooks/tracking/useUserTracking';
-import { LineBrokenIcon } from '@icons';
 import { OrderTrackingProvider } from '@/providers/OrderTrackingProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatMetersToMiles } from '@utils/numbers';
 
 import './driver-orders.scss';
+import LineBrokenIcon from '@/assets/icons/line-broken.svg';
 
 const cn = classname('orders-container');
 

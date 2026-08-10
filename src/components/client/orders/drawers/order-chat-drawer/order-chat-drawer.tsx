@@ -4,13 +4,13 @@ import { OrderChat } from '@/components/client/orders/show/order-chat/order-chat
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { GeoLocationIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import { useOrderChatDrawer } from './use-order-chat-drawer';
 
 import './order-chat-drawer.scss';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
 
 const t = translateByNamespace('client:order:order-chat');
 const cn = classname('order-chat-drawer');

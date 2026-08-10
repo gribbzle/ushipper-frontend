@@ -5,12 +5,12 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
 import { InputAdornment } from '@/fields/text-field/input-adornment/input-adornment';
-import { LoaderIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { checkIfValidNumberInput } from '@utils/numbers';
 
 import './text-field.scss';
+import LoaderIcon from '@/assets/icons/small-loader.svg';
 
 const cn = classname('text-field');
 const t = translateByNamespace('common:field');

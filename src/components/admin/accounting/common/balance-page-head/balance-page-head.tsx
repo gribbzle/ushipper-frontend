@@ -12,8 +12,8 @@ import { TransactionTypeGroup } from '@/enums/transactions/transaction-type-grou
 import { useExportTransactions } from '@/hooks/useDownload';
 import { useIsTransactionsPage } from '@/hooks/accounting/use-is-transactions-page';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
-import { PlusCircleIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 type Props = {
     title: string;

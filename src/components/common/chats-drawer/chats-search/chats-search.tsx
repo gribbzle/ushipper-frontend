@@ -1,12 +1,13 @@
 import React, { ChangeEvent } from 'react';
 
-import { CloseIcon, SearchIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import { Input } from '../../input';
 
 import './chats-search.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
+import SearchIcon from '@/assets/icons/search.svg';
 
 type ChatsSearchProps = {
     searchText?: string;

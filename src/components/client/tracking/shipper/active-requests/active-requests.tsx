@@ -4,7 +4,6 @@ import { Accordion } from '@/components/common/accordion/accordion';
 import { Button } from '@/components/common/button/button';
 import { Loader } from '@/components/common/loader/loader';
 import { OfferToRequestStatusesEnum, RequestStatusesEnum } from '@/enums/request-statuses';
-import { ArrowDownIcon } from '@icons';
 import { useGetRequestsQuery } from '@store/api/order-requests-api';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';
@@ -13,6 +12,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { ActiveRequestItem } from './active-request-item';
 
 import './active-requests.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 type ActiveRequestsProps = {
     order: ShipperTrackingOrder;

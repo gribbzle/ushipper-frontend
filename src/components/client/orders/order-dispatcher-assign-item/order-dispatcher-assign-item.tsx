@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { AssignItem } from '@/components/common/assign/assign-item/assign-item';
-import { PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './order-dispatcher-assign-item.scss';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('order-dispatcher-assign-item');
 

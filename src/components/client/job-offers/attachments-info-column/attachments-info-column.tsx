@@ -3,7 +3,6 @@ import React from 'react';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { Attachment } from '@/shared';
-import { FileIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';
@@ -11,6 +10,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { FileProps } from './attachments-info-column.types';
 
 import './attachments-info-column.scss';
+import FileIcon from '@/assets/icons/file.svg';
 
 const cn = classname('attachments-info');
 const t = translateByNamespace('client:job-offers-page.job-offer.attachments');

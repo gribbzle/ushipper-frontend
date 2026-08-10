@@ -5,7 +5,6 @@ import { Button } from '@/components/common/button/button';
 import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { Paper } from '@/components/common/paper/paper';
 import useOutsideCLick from '@/hooks/use-outside-cLick';
-import { MessageFilledIcon, PhoneFilledIcon, UserCircle } from '@icons';
 import { useAppDispatch } from '@store';
 import { chatsActions, messagesActions, openChatByPhoneAction } from '@store/client';
 import { loadboardActions } from '@store/client/loadboard';
@@ -20,6 +19,9 @@ import { PhoneItem } from './phone-item';
 import { PhoneNumberInput } from './phone-number-input';
 
 import './choose-phone-popup.scss';
+import MessageFilledIcon from '@/assets/icons/message-filled-icon.svg';
+import PhoneFilledIcon from '@/assets/icons/phone-filled.svg';
+import UserCircle from '@/assets/icons/user-circle.svg';
 
 const cn = classname('choose-phone-popup');
 const t = translateByNamespace('client:loadboard:calling');

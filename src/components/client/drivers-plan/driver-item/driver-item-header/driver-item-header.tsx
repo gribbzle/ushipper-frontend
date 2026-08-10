@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Divider } from '@/components/common/divider/divider';
-import { CarIcon2, Flag2Icon, GeoLocationIcon, Truck } from '@icons';
 import { User } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -11,6 +10,10 @@ import { DriverDetailsWrapper } from './driver-details-wrapper';
 import { UserDetails } from './user-details';
 
 import './driver-item-header.scss';
+import CarIcon2 from '@/assets/icons/car-icon2.svg';
+import Flag2Icon from '@/assets/icons/flag2.svg';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
+import Truck from '@/assets/icons/truck.svg';
 
 const cn = classname('driver-item-header');
 const t = translateByNamespace('client:drivers-plan:driver-item');

@@ -7,7 +7,6 @@ import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { CompanyType } from '@/enums/company-type';
 import { useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
-import { CloseIcon, PencilWithLineIcon, StarIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderCarrierOrderSelector, orderShipperOrderSelector, reviewActions } from '@store/client';
 import { authorizedUserCompanyPublicIdSelector } from '@store/global';
@@ -19,6 +18,9 @@ import { translateByNamespace } from '@utils/i18n';
 import { translateCompanyType } from '@utils/translations';
 
 import './order-review-paper.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
+import StarIcon from '@/assets/icons/star-icon.svg';
 
 const t = translateByNamespace('client:order-review');
 const cn = classname('review-paper');

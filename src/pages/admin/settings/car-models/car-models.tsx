@@ -9,7 +9,6 @@ import { CreateEditCarModelDrawer } from '@/components/admin/settings/car-models
 import { DeleteCarModelPopup } from '@/components/admin/settings/car-models/delete-car-model-popup/delete-car-model-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useEffectOnce } from '@/hooks/use-effect-once';
-import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     CarModelsFilters,
@@ -27,6 +26,7 @@ import { RequestStatus } from '@utils/redux';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './car-models.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('admin:car-models-page');
 const cn = classname('car-models-page');

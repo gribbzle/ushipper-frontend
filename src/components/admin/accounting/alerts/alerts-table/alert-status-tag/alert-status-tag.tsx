@@ -4,7 +4,6 @@ import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { useIssue } from '@/hooks/issue/useIssue';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
-import { ArrowDownIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';
@@ -12,6 +11,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { useAlertStatusTag } from './use-alert-status-tag';
 
 import './alert-status-tag.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const cn = classname('alert-status-tag');
 const t = translateByNamespace('common:issue-status');

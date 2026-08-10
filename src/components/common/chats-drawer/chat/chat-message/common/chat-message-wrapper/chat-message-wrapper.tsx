@@ -5,7 +5,6 @@ import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useMeAdmin } from '@/hooks/use-user-role-group';
-import { SystemIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { chatExternalNumberSelector } from '@store/client';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
@@ -20,6 +19,7 @@ import { ChatMessageOrder } from '../chat-message-order';
 import MessageTailIcon from './message-tail.svg';
 
 import './chat-message-wrapper.scss';
+import SystemIcon from '@/assets/icons/system-icon.svg';
 
 const cn = classname('chat-message-wrapper');
 const notificationCn = classname('notification');

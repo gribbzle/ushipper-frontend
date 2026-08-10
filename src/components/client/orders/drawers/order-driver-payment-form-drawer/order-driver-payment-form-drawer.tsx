@@ -4,10 +4,10 @@ import { FormApi } from 'final-form';
 import { OrderDriverPaymentForm } from '@/components/client/orders/forms/order-driver-payment-form/order-driver-payment-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDriverPaymentFormDrawerPropsSelector, OrderDriverPaymentFormState, ordersActions } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:driver-payment-form');
 

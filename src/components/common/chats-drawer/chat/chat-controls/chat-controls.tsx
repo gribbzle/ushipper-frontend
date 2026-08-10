@@ -3,7 +3,6 @@ import { debounce } from 'debounce';
 
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useTimeoutManager } from '@/hooks/use-timeout-manager';
-import { AttachIcon, SendMessageIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatExternalNumberSelector, sendMessageAction } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
@@ -14,6 +13,8 @@ import { formatInternationalPhoneNumber } from '@utils/phone';
 import { ChatProps } from '../chat.types';
 
 import './chat-controls.scss';
+import AttachIcon from '@/assets/icons/attach.svg';
+import SendMessageIcon from '@/assets/icons/send-message.svg';
 
 type ChatControlsProps = Pick<ChatProps, 'chatId' | 'externalPhone'> & {
     chatType: ChatTypesEnum | null;

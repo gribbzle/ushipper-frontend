@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { TickIcon, XCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './verified-icon.scss';
+import TickIcon from '@/assets/icons/tick.svg';
+import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 
 const cn = classname('verified-icon');
 

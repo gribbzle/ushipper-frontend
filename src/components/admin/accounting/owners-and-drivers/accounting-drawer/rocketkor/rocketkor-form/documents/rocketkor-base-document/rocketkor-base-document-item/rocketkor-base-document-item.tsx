@@ -3,7 +3,6 @@ import React from 'react';
 import { File } from '@/components/client/job-offers/attachments-info-column';
 import { Button } from '@/components/common/button';
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { PencilWithLineIcon, TrashIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -12,6 +11,8 @@ import { fromDocumentTypeToTitle } from '../from-document-type-to-title';
 import { RocketkorDocumentItemProps } from './rocketkor-base-document-item.types';
 
 import './rocketkor-base-document-item.scss';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const cn = classname('rocketkor-base-document-item');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:rocketkor');

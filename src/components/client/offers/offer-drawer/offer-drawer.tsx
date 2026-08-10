@@ -10,7 +10,6 @@ import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-dra
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi from '@store/api/loadboard-api';
 import { useCancelOfferMutation, useGetOfferQuery, usePartiallyUpdateOfferMutation } from '@store/api/order-offers';
@@ -21,6 +20,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { OfferTabsEnum } from './offer-tabs-enum';
 
 import './offer-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order-offers');
 const cn = classname('offer-drawer');

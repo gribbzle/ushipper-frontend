@@ -7,7 +7,6 @@ import { DeleteRolePopup } from '@/components/common/settings/roles/delete-role-
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { RolesTable } from '@/components/common/settings/roles/roles-table/roles-table';
 import { useEffectOnce } from '@/hooks/use-effect-once';
-import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fetchRoleTypesAction } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';
@@ -16,6 +15,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './roles.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('common:roles-page');
 const cn = classname('roles-page');

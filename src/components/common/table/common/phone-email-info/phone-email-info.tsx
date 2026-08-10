@@ -1,10 +1,11 @@
 import React from 'react';
 import { formatPhoneNumberIntl } from 'react-phone-number-input';
 
-import { TickIcon, XCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './phone-email-info.scss';
+import TickIcon from '@/assets/icons/tick.svg';
+import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 
 const cn = classname('phone-email-info');
 

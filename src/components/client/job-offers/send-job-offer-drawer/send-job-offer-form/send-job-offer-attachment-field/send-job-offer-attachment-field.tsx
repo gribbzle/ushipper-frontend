@@ -5,7 +5,6 @@ import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
 import { FileItem, FileUploaderField } from '@/fields/file-uploader/file-uploader-field';
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { BinIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';
@@ -13,6 +12,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { useSendJobOfferAttachmentField } from './use-send-job-offer-attachment-field';
 
 import '../send-job-offer-form.scss';
+import BinIcon from '@/assets/icons/bin-icon.svg';
 
 const fuT = translateByNamespace('common:file-uploader');
 const tSendJobOffer = translateByNamespace('client:send-job-offer');

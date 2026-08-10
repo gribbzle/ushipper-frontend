@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Loader } from '@/components/common/loader/loader';
 import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
-import { HourGlassStartIcon, RacingTruckIcon, RoutingIcon } from '@icons';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';
 import { isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';
@@ -14,6 +13,9 @@ import {
 } from '@utils/tracking/tracking-driver-helpers';
 
 import './shipper-tracking-order-paper.scss';
+import HourGlassStartIcon from '@/assets/icons/hour-glass-start.svg';
+import RacingTruckIcon from '@/assets/icons/racing-truck.svg';
+import RoutingIcon from '@/assets/icons/routing.svg';
 
 type Props = {
     order: ShipperTrackingOrder;

@@ -15,7 +15,6 @@ import { OrderStatus } from '@/enums/order-status';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { calculateTotalPayment, getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { Ellipse, UserIcon } from '@icons';
 import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
 import { orderRequestsApi, usePartiallyUpdateRequestMutation } from '@store/api/order-requests-api';
 import { OrderRequest } from '@store/api/order-requests-types';
@@ -30,6 +29,8 @@ import { translateCompanyType } from '@utils/translations';
 import { MessageButton } from './message-button';
 
 import './request-item.scss';
+import Ellipse from '@/assets/icons/ellipse.svg';
+import UserIcon from '@/assets/icons/user.svg';
 
 const cn = classname('request-item');
 const t = translateByNamespace('client:requests-page:drawer:request-item');

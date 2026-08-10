@@ -6,12 +6,14 @@ import { FieldRenderProps } from 'react-final-form';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { Input } from '@/components/common/input/input';
 import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
-import { ArrowChevronLeftIcon, ArrowChevronRightIcon, CalendarIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import 'react-datepicker/dist/react-datepicker.css';
 import './datepicker.scss';
+import ArrowChevronLeftIcon from '@/assets/icons/arrow-chevron-left.svg';
+import ArrowChevronRightIcon from '@/assets/icons/arrow-chevron-right.svg';
+import CalendarIcon from '@/assets/icons/calendar.svg';
 
 const headerClassName = classname('datepicker');
 const inputClassName = classname('datepicker-input');

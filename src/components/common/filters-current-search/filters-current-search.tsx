@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
-import { XIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -11,6 +10,7 @@ import { FiltersCurrentSearchProps } from './filters-current-search.types';
 import { useFiltersCurrentSearch } from './use-filters-current-search';
 
 import './filters-current-search.scss';
+import XIcon from '@/assets/icons/x.svg';
 
 const t = translateByNamespace('client:loadboard-filters');
 

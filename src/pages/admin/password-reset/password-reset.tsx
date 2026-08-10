@@ -10,7 +10,6 @@ import { Link } from '@/components/common/link/link';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {PasswordField} from '@/fields/password-field';
-import { ArrowRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ResetPasswordData, resetPasswordFormSubmit, resetPasswordFormSubmitErrorMessageSelector, resetPasswordFormSubmitStatusSelector } from '@store/common';
 import { classname } from '@utils/classname';
@@ -21,6 +20,7 @@ import { getProjectName } from '@utils/translate/get-project-name';
 import { composeValidators, passwordValidator, required } from '@validators';
 
 import './password-reset.scss';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
 
 const t = translateByNamespace('admin:password-reset-page');
 const commonT = translateByNamespace('common:validators');

@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 import { toHeaderCase } from 'js-convert-case';
 
-import { Ellipse } from '@icons';
 import { ExternalInfo } from '@store/admin';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -10,6 +9,7 @@ import { getObjectWithoutEmptyFields } from '@utils/objects';
 import { getTransactionSystemTranslate } from '@utils/translate/preferences/get-transaction-system-translate';
 
 import './external-info.scss';
+import Ellipse from '@/assets/icons/ellipse.svg';
 
 const t = translateByNamespace('admin:accounting:balance-table');
 const cn = classname('external-info');

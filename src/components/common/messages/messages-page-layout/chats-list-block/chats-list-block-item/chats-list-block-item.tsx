@@ -6,7 +6,6 @@ import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import useMessageContent from '@/hooks/chat/use-message-content';
 import { useMeAdmin } from '@/hooks/use-user-role-group';
-import { ThumbtackIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
@@ -21,6 +20,7 @@ import { ChatItemOrderDetails } from './chat-item-order-details';
 import { SupportChatHeader } from './support-chat-header';
 
 import './chats-list-block-item.scss';
+import ThumbtackIcon from '@/assets/icons/thumbtack.svg';
 
 const t = translateByNamespace('common:chats');
 

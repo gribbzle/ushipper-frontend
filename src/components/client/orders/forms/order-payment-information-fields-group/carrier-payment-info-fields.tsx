@@ -11,7 +11,6 @@ import {PrefixedField} from '@/fields/field-prefix';
 import { useDisableCarrierChanging } from '@/hooks/order/use-disable-carrier-changing';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeShipper } from '@/hooks/use-user-role-group';
-import { TrashIcon } from '@icons';
 import { OrderFieldsGroup, OrderFormState } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -27,6 +26,7 @@ import {
 import { OrderPaymentInformationFieldsWrapper } from './order-payment-information-fields-wrapper';
 
 import './order-payment-information-fields-group.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 type Props = {
     showDelayedTermField: boolean;

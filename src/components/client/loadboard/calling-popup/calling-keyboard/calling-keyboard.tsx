@@ -3,12 +3,12 @@ import { Field, Form } from 'react-final-form';
 
 import { GenericButton } from '@/components/common/generic-button/generic-button';
 import {DarkInput} from '@/fields/dark-input';
-import { CloseIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { CallingKeyboardFormValue, CallingKeyboardProps } from './calling-keyboard.types';
 
 import './calling-keyboard.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
 
 const cn = classname('calling-keyboard');
 

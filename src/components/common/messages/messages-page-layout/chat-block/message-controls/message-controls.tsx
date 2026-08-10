@@ -3,7 +3,6 @@ import { debounce } from 'debounce';
 
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useTimeoutManager } from '@/hooks/use-timeout-manager';
-import { AttachIcon, SendFilledIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { sendMessageAction } from '@store/common';
 import { classname } from '@utils/classname';
@@ -11,6 +10,8 @@ import { translateByNamespace } from '@utils/i18n';
 import { formatInternationalPhoneNumber } from '@utils/phone';
 
 import './message-controls.scss';
+import AttachIcon from '@/assets/icons/attach.svg';
+import SendFilledIcon from '@/assets/icons/send-filled-icon.svg';
 
 type MessageControlsProps = {
     externalPhone?: string | null;

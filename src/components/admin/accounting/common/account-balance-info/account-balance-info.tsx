@@ -4,7 +4,6 @@ import { Button } from '@/components/common/button/button';
 import { BalanceType } from '@/enums/balance-type';
 import { useDefaultAccountBalance } from '@/hooks/accounting/use-default-account-balance';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
-import { PlusIcon } from '@icons';
 import { BalanceValue } from '@store/admin';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';
@@ -14,6 +13,7 @@ import { formatToCurrency } from '@utils/numbers';
 import { useCreateTransactionPopup } from '../create-transaction-popup';
 
 import './account-balance-info.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 type AccountBalanceInfoProps = Pick<AccountingAccountData, 'balances'> & {
     accountPublicId: string;

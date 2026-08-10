@@ -11,7 +11,6 @@ import { TimelineItem } from '@/components/common/timeline/timeline-item/timelin
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { Paper } from '@/components/common/paper/paper';
 import useElementSize from '@/hooks/use-element-size';
-import { LineBrokenIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatMetersToMiles } from '@utils/numbers';
@@ -22,6 +21,7 @@ import { OrderPickupInformationBlock } from './order-pickup-information-block';
 import { useOrderPickupAndDeliveryPaper } from './use-order-pickup-and-delivery-paper';
 
 import './order-pickup-and-delivery-paper.scss';
+import LineBrokenIcon from '@/assets/icons/line-broken.svg';
 
 const cn = classname('pickup-delivery-information-paper');
 const t = translateByNamespace('client:order:show-page');

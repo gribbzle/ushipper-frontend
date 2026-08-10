@@ -4,7 +4,6 @@ import Draggable from 'react-draggable';
 import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { Loader } from '@/components/common/loader/loader';
 import { Paper } from '@/components/common/paper/paper';
-import { ChatsIcon, EndCallIcon, KeyboardIcon, MicrophoneDisabledIcon, MicrophoneIcon, UserCircle } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -15,6 +14,12 @@ import { CallingKeyboard } from './calling-keyboard';
 import { useCallingPopup } from './use-calling-popup';
 
 import './calling-popup.scss';
+import ChatsIcon from '@/assets/icons/chats-icon.svg';
+import EndCallIcon from '@/assets/icons/end-call-icon.svg';
+import KeyboardIcon from '@/assets/icons/keyboard.svg';
+import MicrophoneDisabledIcon from '@/assets/icons/microphone-disabled-icon.svg';
+import MicrophoneIcon from '@/assets/icons/microphone-icon.svg';
+import UserCircle from '@/assets/icons/user-circle.svg';
 
 const cn = classname('calling-popup');
 const t = translateByNamespace('client:loadboard:calling');

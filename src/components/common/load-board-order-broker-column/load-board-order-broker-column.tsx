@@ -2,7 +2,6 @@ import React, { useCallback, useMemo } from 'react';
 import has from 'has-values';
 
 import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
-import { OctothorpeIcon, PhoneIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -10,6 +9,8 @@ import { getObjectWithoutEmptyFields } from '@utils/objects';
 import { formatPhoneNumber } from '@utils/phone';
 
 import './load-board-order-broker-column.scss';
+import OctothorpeIcon from '@/assets/icons/octothorpe.svg';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('load-board-order-broker-column');
 const loadBoardTranslate = translateByNamespace('client:loadboard:item');

@@ -7,12 +7,12 @@ import { DropdownDividerOption } from '@/components/common/dropdown/dropdown';
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { OrderStatus } from '@/enums/order-status';
 import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
-import { HorizontalDotsIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-actions.scss';
+import HorizontalDotsIcon from '@/assets/icons/horizontal-dots.svg';
 
 const t = translateByNamespace('client:order-actions');
 const tOptions = translateByNamespace('client:orders-page:order-options-dropdown');

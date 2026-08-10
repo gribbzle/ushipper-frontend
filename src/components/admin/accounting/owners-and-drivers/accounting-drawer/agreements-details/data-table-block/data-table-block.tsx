@@ -6,11 +6,11 @@ import { Table } from '@/components/common/table/table';
 import { TableColumn } from '@/components/common/table/table.types';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
-import { PlusIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './data-table-block.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('data-table-block');
 const tAdd = translateByNamespace('common:staff-table');

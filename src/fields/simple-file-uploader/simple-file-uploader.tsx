@@ -8,11 +8,12 @@ import { IconButton } from '@/components/common/icon-button/icon-button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useHover } from '@/hooks/use-hover';
 import { Attachment } from '@/shared';
-import { TrashIcon, UploadIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './simple-file-uploader.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
+import UploadIcon from '@/assets/icons/upload.svg';
 
 const cn = classname('simple-file-uploader');
 const t = translateByNamespace('common:simple-file-uploader');

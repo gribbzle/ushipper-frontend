@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { DownloadIcon, LoaderIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 
 import { Button, ButtonProps } from './button';
+import DownloadIcon from '@/assets/icons/download.svg';
+import LoaderIcon from '@/assets/icons/small-loader.svg';
 
 type ExportButtonProps = Omit<ButtonProps, 'children'> & {
     isLoading: boolean;

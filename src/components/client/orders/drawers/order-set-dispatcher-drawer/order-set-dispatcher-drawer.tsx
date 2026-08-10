@@ -6,7 +6,6 @@ import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { Link } from '@/components/common/link/link';
 import {TextField} from '@/fields/text-field';
-import { ExternalLinkIcon, UserMinusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi } from '@store/api/orders-api';
 import { Dispatcher, GetDispatchersParams, useGetDispatchersQuery } from '@store/api/users-api';
@@ -18,6 +17,8 @@ import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-set-dispatcher-drawer.scss';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
+import UserMinusIcon from '@/assets/icons/user-minus.svg';
 
 const t = translateByNamespace('client:order:assign-to-dispatcher');
 const cn = classname('order-set-dispatcher-drawer');

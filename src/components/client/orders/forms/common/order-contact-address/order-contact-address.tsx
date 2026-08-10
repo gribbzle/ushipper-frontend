@@ -14,7 +14,6 @@ import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
 import { useDisableCarrierChanging } from '@/hooks/order/use-disable-carrier-changing';
-import { ContactsIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { Contact, useGetContactsByNameQuery, useLazyGetContactByIdQuery } from '@store/api/contacts-api';
 import { fetchContactAction, OrderFieldsGroup } from '@store/client';
@@ -24,6 +23,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-contact-address.scss';
+import ContactsIcon from '@/assets/icons/contacts-icon.svg';
 
 const t = translateByNamespace('client:order:contact-address-fields');
 const cn = classname('order-contact-address');

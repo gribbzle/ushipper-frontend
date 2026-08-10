@@ -2,12 +2,12 @@ import React, { useMemo } from 'react';
 
 import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
 import { useOrder, useOrderHelpers } from '@/hooks/order';
-import { NoPhotoIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-company-info.scss';
+import NoPhotoIcon from '@/assets/icons/no-photo-icon.svg';
 
 const cn = classname('order-company-info');
 const t = translateByNamespace('admin:accounting:carriers:table');

@@ -15,7 +15,6 @@ import { TimelineItem } from '@/components/common/timeline/timeline-item/timelin
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { Paper } from '@/components/common/paper/paper';
 import { HistoryItemEventName } from '@/enums/history-item-event-name';
-import { ArrowDownIcon, SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { FundsTransferPayload, OrderActivity, orderActivityApi, useGetOrderActivityQuery } from '@store/api/order-activity-api';
 import { ordersActions } from '@store/client';
@@ -24,6 +23,8 @@ import { translateByNamespace } from '@utils/i18n';
 import { translateActivityFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 
 import './order-activity-paper.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import SystemIcon from '@/assets/icons/system-icon.svg';
 
 const cn = classname('order-activity-timeline');
 const t = translateByNamespace('client:order:activity');

@@ -7,13 +7,13 @@ import { Badge } from '@/components/common/badge/badge';
 import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { useTracking } from '@/hooks/tracking/useTracking';
 import { useUserTracking } from '@/hooks/tracking/useUserTracking';
-import { ArrowDownIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { checkIsGPSStatusRecentlyUpdated } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';
 import { stringAvatar } from '@utils/string-avatar';
 
 import './driver-row.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const cn = classname('driver-row');
 const t = translateByNamespace('client:tracking-page');

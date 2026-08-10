@@ -2,7 +2,6 @@ import React from 'react';
 import Draggable from 'react-draggable';
 
 import { formatPhoneNumber } from '@/components/client/loadboard/choose-phone-popup/format-phone-number';
-import { CloseIcon, EndCallIcon, PhoneFilledIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -14,6 +13,9 @@ import { Paper } from '../paper';
 import { useIncomingCalling } from './use-incoming-calling';
 
 import './incoming-calling.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
+import EndCallIcon from '@/assets/icons/end-call-icon.svg';
+import PhoneFilledIcon from '@/assets/icons/phone-filled.svg';
 
 const cn = classname('incoming-calling');
 const t = translateByNamespace('client:loadboard:calling');

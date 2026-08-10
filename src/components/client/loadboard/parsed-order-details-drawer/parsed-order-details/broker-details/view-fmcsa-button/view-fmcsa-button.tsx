@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { ExternalLinkIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
 
 const t = translateByNamespace('client:loadboard:load-details');
 

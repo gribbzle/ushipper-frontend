@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FlagIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { Button } from '../button';
@@ -8,6 +7,7 @@ import { Button } from '../button';
 import { FlagButtonProps } from './flag-button.types';
 
 import './flag-button.scss';
+import FlagIcon from '@/assets/icons/flag.svg';
 
 const cn = classname('flag-button');
 

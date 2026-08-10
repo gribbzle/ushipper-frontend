@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { AssignItem } from '@/components/common/assign/assign-item/assign-item';
-import { CarIcon, PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { isUshipper } from '@utils/project-config';
 
 import './order-driver-assign-item.scss';
+import CarIcon from '@/assets/icons/car.svg';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('order-driver-assign-item');
 

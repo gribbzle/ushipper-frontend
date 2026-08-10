@@ -8,7 +8,6 @@ import { InspectionType } from '@/enums/inspection-type';
 import { OrderStatus } from '@/enums/order-status';
 import { getOrderPriceWithTerms } from '@/utils/order';
 import { useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { FlagIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';
@@ -18,6 +17,7 @@ import { DriverPayInfo } from './driver-pay-info/driver-pay-info';
 import { DriverOrderPrice } from './driver-order-price';
 import { useOrderItemHeader } from './hooks';
 import { OrderItemHeaderProps } from './types';
+import FlagIcon from '@/assets/icons/flag.svg';
 
 const translateOrderItem = translateByNamespace('client:orders-page:order-item');
 const cn = classname('order-item');

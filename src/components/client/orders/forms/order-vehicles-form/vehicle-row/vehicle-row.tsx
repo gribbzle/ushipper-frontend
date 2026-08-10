@@ -14,7 +14,6 @@ import {CheckboxInput} from '@/fields/checkbox-input';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {TextField} from '@/fields/text-field';
-import { TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderFormState } from '@store/client';
 import { classname } from '@utils/classname';
@@ -22,6 +21,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './vehicle-row.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const cn = classname('vehicle-row');
 const tPlaceholder = translateByNamespace('client:order:fields');

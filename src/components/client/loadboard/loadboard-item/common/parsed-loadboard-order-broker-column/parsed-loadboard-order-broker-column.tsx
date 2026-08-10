@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { OctothorpeIcon, PhoneIcon } from '@icons';
 import { ExternalCDShipper, ExternalSDShipper } from '@store/client';
 import { classname } from '@utils/classname';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
@@ -12,6 +11,8 @@ import { ExternalBrokerRating, HiddenExternalBrokerTooltip } from '../../../comm
 import { ParsedLoadBoardOrderBrokerColumnProps } from './parsed-loadboard-order-broker-column.types';
 
 import './parsed-loadboard-order-broker-column.scss';
+import OctothorpeIcon from '@/assets/icons/octothorpe.svg';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('parsed-loadboard-order-broker-column');
 

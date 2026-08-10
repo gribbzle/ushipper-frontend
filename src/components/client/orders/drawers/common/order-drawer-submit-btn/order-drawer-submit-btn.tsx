@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { CheckIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order');
 

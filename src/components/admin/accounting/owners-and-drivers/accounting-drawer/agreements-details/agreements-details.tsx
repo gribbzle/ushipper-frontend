@@ -8,7 +8,6 @@ import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
 import { FeesRule } from '@/enums/fee/fees-rules-enum';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
-import { PlusIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -26,6 +25,7 @@ import { RecurringFeesFieldsArray } from './recurring-fees-fields-block';
 import { useAgreementsDetails } from './use-agreements-details';
 
 import './agreements-details.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('agreements-details');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:agreements');

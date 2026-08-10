@@ -3,11 +3,11 @@ import Head from 'next/head';
 
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('admin:accounting:wallets-page');
 

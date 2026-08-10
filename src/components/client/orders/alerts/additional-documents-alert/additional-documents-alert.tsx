@@ -6,7 +6,6 @@ import { AttachmentDownloadButton } from '@/components/common/attachment-downloa
 import { Button } from '@/components/common/button/button';
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import {MultiFileUploader} from '@/fields/multi-file-uploader';
-import { Ellipse } from '@icons';
 import { classname } from '@utils/classname';
 import { removeFieldPrefix } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';
@@ -15,6 +14,7 @@ import { AdditionalDocumentsAlertProps, AdditionalDocumentsAlertRowPropsRowProps
 import { useAdditionalDocumentsAlert } from './use-additional-documents-alert';
 
 import './additional-documents-alert.scss';
+import Ellipse from '@/assets/icons/ellipse.svg';
 
 const t = translateByNamespace('client:orders-page:additional-documents-alert');
 const cn = classname('additional-documents-alert');

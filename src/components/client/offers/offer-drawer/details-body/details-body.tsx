@@ -11,7 +11,6 @@ import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { getDestination } from '@/utils/driving';
 import { getOrderId, getPaymentTermsTranslate } from '@/utils/order';
 import { getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { UserIcon } from '@icons';
 import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -22,6 +21,7 @@ import { getOrderProducts } from '@utils/orders/get-order-products';
 import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
 import { OfferCommodities } from '../../offer-commodities';
+import UserIcon from '@/assets/icons/user.svg';
 
 const t = translateByNamespace('client:order-offers');
 const cn = classname('offer-drawer');

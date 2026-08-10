@@ -10,7 +10,6 @@ import { DeleteCarMakerPopup } from '@/components/admin/settings/car-makers/dele
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { Input } from '@/components/common/input/input';
 import { useEffectOnce } from '@/hooks/use-effect-once';
-import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarMakersFilters, carMakersFiltersSelector, fetchCarMakerAction, fetchCarMakersAction } from '@store/admin';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';
@@ -20,6 +19,7 @@ import { getObjectWithoutEmptyFields } from '@utils/objects';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './car-makers.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const cn = classname('car-makers-page');
 const t = translateByNamespace('admin:car-makers-page');

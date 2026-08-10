@@ -4,13 +4,13 @@ import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-pop
 import { Button } from '@/components/common/button/button';
 import { ParsedOrderChatButton } from '@/components/common/parsed-order-actions/parsed-order-chat-button/parsed-order-chat-button';
 import { useMeAdmin, useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import { BrokerDetailsHeaderProps } from './broker-details-header.types';
 
 import './broker-details-header.scss';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const t = translateByNamespace('client:loadboard:load-details');
 const tCall = translateByNamespace('client:loadboard:item');

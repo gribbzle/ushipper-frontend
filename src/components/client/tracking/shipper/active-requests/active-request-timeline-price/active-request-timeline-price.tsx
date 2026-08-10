@@ -2,13 +2,13 @@ import React, { useCallback, useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { calculateTotalPayment } from '@/utils/payment';
-import { Ellipse } from '@icons';
 import { OrderRequest } from '@store/api/order-requests-types';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';
 import { formatToCurrency } from '@utils/numbers';
 
 import './active-request-timeline-price.scss';
+import Ellipse from '@/assets/icons/ellipse.svg';
 
 type ActiveRequestTimelinePriceProps = {
     request: OrderRequest;

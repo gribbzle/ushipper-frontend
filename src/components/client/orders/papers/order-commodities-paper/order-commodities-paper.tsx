@@ -9,7 +9,6 @@ import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { useMeShipper } from '@/hooks/use-user-role-group';
-import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderCommodity } from '@store/api/orders-api';
 import { ordersActions } from '@store/common';
@@ -20,6 +19,7 @@ import { translateCompanyType } from '@utils/translations';
 import { CommodityItem } from './commodity-item';
 
 import './order-commodities-paper.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const t = translateByNamespace('client:order:commodities');
 const cn = classname('order-commodities-paper');

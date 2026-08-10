@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { useShowCompanyPage } from '@/hooks/use-show-company-page';
-import { CheckGearIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './company-name-block.scss';
+import CheckGearIcon from '@/assets/icons/check-gear-icon.svg';
 
 const cn = classname('company-name');
 

@@ -9,11 +9,11 @@ import { CommodityWeightUnitEnum } from '@/enums/commodity/commodity-weight-unit
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {TextField} from '@/fields/text-field';
-import { TrashIcon } from '@icons';
 import { OrderFieldsGroup, OrderFormState } from '@store/client';
 import { classname } from '@utils/classname';
 
 import './commodity-row.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const cn = classname('commodity-row');
 

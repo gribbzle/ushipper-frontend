@@ -1,10 +1,14 @@
 import React from 'react';
 
 import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
-import { CallLinesIcon, CrossIcon, HorizontalDotsIcon, PhoneFilledIcon, TickIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './call-message-icon.scss';
+import CallLinesIcon from '@/assets/icons/call-lines-icon.svg';
+import CrossIcon from '@/assets/icons/cross.svg';
+import HorizontalDotsIcon from '@/assets/icons/horizontal-dots.svg';
+import PhoneFilledIcon from '@/assets/icons/phone-filled.svg';
+import TickIcon from '@/assets/icons/tick.svg';
 
 const cn = classname('call-message-icon');
 

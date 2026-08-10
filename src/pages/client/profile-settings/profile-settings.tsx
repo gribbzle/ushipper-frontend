@@ -5,7 +5,6 @@ import { BusinessInfo } from '@/components/client/profile-settings/business-info
 import { Button } from '@/components/common/button/button';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { PersonalInfoForm } from '@/components/client/profile-settings/personal-info/personal-info-form';
-import { ExternalLinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
 import { classname } from '@utils/classname';
@@ -13,6 +12,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './profile-settings.scss';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
 
 const t = translateByNamespace('client:profile-settings');
 const cn = classname('profile-settings');

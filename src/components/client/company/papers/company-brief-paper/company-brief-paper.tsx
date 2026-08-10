@@ -12,7 +12,6 @@ import { Tag } from '@/components/common/tag/tag';
 import { Paper } from '@/components/common/paper/paper';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useIsRatingPanel } from '@/hooks/use-is-rating-panel';
-import { CheckGearIcon, GeoLocationIcon } from '@icons';
 import { Company } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';
 import { classname } from '@utils/classname';
@@ -23,6 +22,8 @@ import { DispatcherStats } from '../../dispatcher-stats';
 import { useHasBriefActions } from './use-has-brief-actions';
 
 import './company-brief-paper.scss';
+import CheckGearIcon from '@/assets/icons/check-gear-icon.svg';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
 
 type CompanyBriefPaperProps = {
     company: Company;

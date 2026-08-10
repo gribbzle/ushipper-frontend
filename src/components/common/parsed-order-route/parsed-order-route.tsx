@@ -6,7 +6,6 @@ import { Timeline } from '@/components/common/timeline/timeline';
 import { TimelineArrow } from '@/components/common/timeline/timeline-arrow/timeline-arrow';
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TransportTypeEnum } from '@/enums/transport-type-enum';
-import { LineBrokenIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { loadboardListSelector } from '@store/client/loadboard';
 import { classname } from '@utils/classname';
@@ -20,6 +19,7 @@ import { useParsedOrderRoute } from './use-parsed-order-route';
 import { VehiclesTooltip } from './vehicles-tooltip';
 
 import './parsed-order-route.scss';
+import LineBrokenIcon from '@/assets/icons/line-broken.svg';
 
 const cn = classname('parsed-order-route');
 const tVehicle = translateByNamespace('common:vehicle');

@@ -8,7 +8,6 @@ import { useDownloadAttachment } from '@/hooks/useDownload';
 import { Attachment } from '@/shared';
 import {FileItem} from '@/fields/file-uploader';
 import {FormHelperText} from '@/fields/form-helper-text';
-import { ArrowDownIcon, BinIcon, UploadIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
 import { classname } from '@utils/classname';
@@ -18,6 +17,9 @@ import { translateByNamespace } from '@utils/i18n';
 import { AttachmentDropzoneProps } from './attachments-form.types';
 
 import './attachments-form.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import BinIcon from '@/assets/icons/bin-icon.svg';
+import UploadIcon from '@/assets/icons/upload.svg';
 
 const fuT = translateByNamespace('common:file-uploader');
 const lT = translateByNamespace('client:loadboard-filters');

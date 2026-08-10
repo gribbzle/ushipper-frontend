@@ -6,12 +6,12 @@ import { HelperText } from '@/components/common/table/common/helper-text/helper-
 import { Tooltip } from '@/components/common/tooltip/tooltip';
 import { TooltipContent } from '@/components/common/tooltip/tooltip';
 import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { ArrowDownIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { useOrderDriverPaymentTag } from './useOrderDriverPaymentTag';
 
 import './order-driver-payment-tag.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const cn = classname('order-driver-payment-tag');
 

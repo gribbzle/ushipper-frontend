@@ -6,12 +6,13 @@ import { Paper } from '@/components/common/paper/paper';
 import { OrderStatisticsGroup } from '@/enums/order/order-statistics-group';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
-import { MagnifyingGlassIcon, PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { translateOrderStatisticsGroup, translateOrderStatisticsStatus } from '@utils/translate/order/translations';
 
 import './orders-empty-tab-panel.scss';
+import MagnifyingGlassIcon from '@/assets/icons/magnifying-glass.svg';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 type Props = {
     status?: OrderStatisticsStatus | OrderStatisticsStatus[];

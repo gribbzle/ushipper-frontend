@@ -5,9 +5,9 @@ import { useCreateTransactionPopup } from '@/components/admin/accounting/common/
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
-import { PlusCircleIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers');
 const tButton = translateByNamespace('admin:accounting');

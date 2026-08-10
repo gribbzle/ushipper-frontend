@@ -7,11 +7,11 @@ import { TimelineContent } from '@/components/common/timeline/timeline-content/t
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
-import { Ellipse } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './request-dates.scss';
+import Ellipse from '@/assets/icons/ellipse.svg';
 
 const cn = classname('request-dates');
 const t = translateByNamespace('client:requests-page:drawer:request-item');

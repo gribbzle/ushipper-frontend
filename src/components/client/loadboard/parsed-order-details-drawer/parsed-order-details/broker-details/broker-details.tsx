@@ -3,7 +3,6 @@ import has from 'has-values';
 
 import { Paper } from '@/components/common/paper/paper';
 import { getOrderCustomerAddress } from '@/utils/order';
-import { ClockIcon, EmailIcon, ExternalLinkIcon, GeoLocationIcon, PersonIcon, PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -17,6 +16,12 @@ import { NoData } from './no-data';
 import { ViewFMCSAButton } from './view-fmcsa-button';
 
 import './broker-details.scss';
+import ClockIcon from '@/assets/icons/clock-icon.svg';
+import EmailIcon from '@/assets/icons/email-icon.svg';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
+import PersonIcon from '@/assets/icons/person-icon.svg';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('broker-details');
 const tNoData = translateByNamespace('common:order');

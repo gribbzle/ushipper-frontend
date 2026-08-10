@@ -9,7 +9,6 @@ import { UserRoleType } from '@/enums/user-role-type';
 import { useIsAdminPage } from '@/hooks/use-is-admin-page';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { UserPlusIcon } from '@icons';
 import { User } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -19,6 +18,7 @@ import { getBalanceInfo } from '@utils/orders/get-balance-info';
 import { OrderInfoDetailsWrapper } from '../order-info-details-wrapper';
 
 import './user-info.scss';
+import UserPlusIcon from '@/assets/icons/user-plus.svg';
 
 const t = translateByNamespace('client:order:order-information');
 const cn = classname('user-info');

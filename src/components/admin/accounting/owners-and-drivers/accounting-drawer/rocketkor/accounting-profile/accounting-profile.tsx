@@ -4,7 +4,6 @@ import { AccountingInfoRow } from '@/components/admin/accounting/common/accounti
 import { File } from '@/components/client/job-offers/attachments-info-column/attachments-info-column';
 import { Button } from '@/components/common/button/button';
 import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
-import { PencilWithLineIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -14,6 +13,7 @@ import { AccountingProfileProps } from './accounting-profile.types';
 import { useAccountingProfile } from './use-accounting-profile';
 
 import './accounting-profile.scss';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
 
 const cn = classname('accounting-profile');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:rocketkor');

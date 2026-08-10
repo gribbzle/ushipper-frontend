@@ -13,7 +13,6 @@ import {InputLabel} from '@/fields/input-label';
 import {SimpleFileUploader} from '@/fields/simple-file-uploader';
 import {StringInput} from '@/fields/string-input';
 import {SwitchInput} from '@/fields/switch-input';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderExpense, useCreateOrderExpenseMutation, useGetOrderExpensesQuery, useUpdateOrderExpenseMutation } from '@store/api/order-expenses-api';
 import { orderExpenseDrawerPropsSelector, orderPublicIdSelector, ordersActions } from '@store/common';
@@ -22,6 +21,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './order-expense-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:expense-drawer');
 const cn = classname('order-expense-drawer');

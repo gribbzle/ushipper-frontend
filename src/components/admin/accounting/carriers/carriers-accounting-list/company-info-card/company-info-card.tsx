@@ -11,7 +11,6 @@ import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { PROJECT_KEY_NAME } from '@constants';
 import { useCarriersActionsPermission } from '@/hooks/accounting/use-carriers-actions-permission';
-import { CheckGearIcon, MoneyBagIcon, NoPhotoIcon } from '@icons';
 import { Company } from '@store/admin';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -21,6 +20,9 @@ import { isFreightX } from '@utils/project-config';
 import { CompanyActionsCard } from '../company-actions-card';
 
 import './company-info-card.scss';
+import CheckGearIcon from '@/assets/icons/check-gear-icon.svg';
+import MoneyBagIcon from '@/assets/icons/money-bag.svg';
+import NoPhotoIcon from '@/assets/icons/no-photo-icon.svg';
 
 const cn = classname('company-info-card');
 const t = translateByNamespace('admin:accounting:company-card-info');

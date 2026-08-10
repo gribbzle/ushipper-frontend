@@ -5,11 +5,11 @@ import { StatusBlock } from '@/components/common/status-block/status-block';
 import { StatusBlockView } from '@/components/common/status-block/status-block';
 import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
 import { useFuelCardsActionsPermission } from '@/hooks/fuel/use-fuel-cards-actions-permission';
-import { ArrowDownIcon } from '@icons';
 import { getFuelCardStatusTranslate } from '@utils/translate/fuel/get-fuel-card-status-translate';
 
 import { FuelCardStatusTagProps } from './fuel-card-status-tag.types';
 import { useFuelCardStatusTag } from './use-fuel-card-status-tag';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const statusViewMap: Record<FuelCardStatus, StatusBlockView> = {
     active: 'success',

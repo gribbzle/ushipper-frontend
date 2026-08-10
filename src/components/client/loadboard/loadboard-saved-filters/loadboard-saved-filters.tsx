@@ -6,7 +6,6 @@ import { Button } from '@/components/common/button/button';
 import { Tag } from '@/components/common/tag/tag';
 import { Popup } from '@/components/common/popup/popup';
 import { areFiltersEqual } from '@/utils/filters';
-import { ArrowDownIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { removeLoadboardSearch } from '@store/client/loadboard/actions';
 import { loadboardListSelector, loadboardSavedSearchesSelector } from '@store/client/loadboard/selectors';
@@ -15,6 +14,7 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './loadboard-saved-filters.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const t = translateByNamespace('client:loadboard-filters');
 const cn = classname('loadboard-saved-filters');

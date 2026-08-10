@@ -7,13 +7,13 @@ import { Button } from '@/components/common/button/button';
 import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
 import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
-import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import { EditRecurringFeeItem } from './edit-recurring-fee-item';
 
 import './recurring-fees-fields-array.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const cn = classname('recurring-fees-fields-array');
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');

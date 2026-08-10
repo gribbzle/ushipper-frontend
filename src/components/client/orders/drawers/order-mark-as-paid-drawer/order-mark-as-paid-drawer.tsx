@@ -3,7 +3,6 @@ import React, { useCallback, useMemo } from 'react';
 import { OrderMarkAsPaidForm } from '@/components/client/orders/forms/order-mark-as-paid-form/order-mark-as-paid-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderMarkAsPaidFormState } from '@store/api/order-payment-api';
 import { OrderFormEnum, orderMarkAsPaidDrawerPropsSelector, ordersActions } from '@store/client';
@@ -11,6 +10,7 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-mark-as-paid-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:orders-page:mark-order-as-paid-drawer');
 const cn = classname('order-mark-as-paid-drawer');

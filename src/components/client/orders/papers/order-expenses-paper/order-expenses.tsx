@@ -8,7 +8,6 @@ import { Button } from '@/components/common/button/button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { Paper } from '@/components/common/paper/paper';
 import { useCanManageOrder } from '@/hooks/order';
-import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderExpense, useGetOrderExpensesQuery } from '@store/api/order-expenses-api';
 import { ordersActions } from '@store/common';
@@ -18,6 +17,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { OrderExpenseItem } from './order-expense-item';
 
 import './order-expenses.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('expenses-paper');
 const t = translateByNamespace('client:order:expenses');

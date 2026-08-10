@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
-import { DownloadIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { ParsedOrderData } from '@store/client/loadboard';
 import { classname } from '@utils/classname';
@@ -13,6 +12,7 @@ import { formatToCurrency } from '@utils/numbers';
 import { useCheckingContractItem } from './use-checking-contract-item';
 
 import './checking-contract-item.scss';
+import DownloadIcon from '@/assets/icons/download.svg';
 
 const t = translateByNamespace('client:loadboard:checking-contract-popup');
 const tOrderId = translateByNamespace('client:loadboard:load-details');

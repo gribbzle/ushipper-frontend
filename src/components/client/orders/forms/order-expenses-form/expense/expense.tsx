@@ -9,13 +9,13 @@ import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {SimpleFileUploader} from '@/fields/simple-file-uploader';
 import {TextField} from '@/fields/text-field';
-import { TrashIcon } from '@icons';
 import { OrderFormState } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
 import './expense.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 type Props = {
     className: string;

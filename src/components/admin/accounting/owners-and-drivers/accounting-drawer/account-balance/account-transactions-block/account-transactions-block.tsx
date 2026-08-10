@@ -4,7 +4,6 @@ import { useCreateTransactionPopup } from '@/components/admin/accounting/common/
 import { Button } from '@/components/common/button/button';
 import { useOpenTransactionsPage } from '@/hooks/navigation/useOpenTransactionsPage';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
-import { CreditCardIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, internalUserWalletFromSelectedAccountSelector } from '@store/admin';
 import { classname } from '@utils/classname';
@@ -13,6 +12,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { AccountTransactionsBlockProps } from './account-transactions-block.types';
 
 import './account-transactions-block.scss';
+import CreditCardIcon from '@/assets/icons/credit-card-icon.svg';
 
 const cn = classname('account-transactions-block');
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:account-balance');

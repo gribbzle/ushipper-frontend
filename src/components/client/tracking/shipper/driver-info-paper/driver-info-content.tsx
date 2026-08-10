@@ -8,7 +8,6 @@ import { Button } from '@/components/common/button/button';
 import { RatingBar } from '@/components/common/rating-bar/rating-bar';
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { isNumber } from '@/shared';
-import { LikeIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useLazyGetOrderQuery } from '@store/api/orders-api';
 import {
@@ -34,6 +33,7 @@ import {
 import { CountersRow } from '../counters-row';
 
 import './driver-info-paper.scss';
+import LikeIcon from '@/assets/icons/like-icon.svg';
 
 const cn = classname('driver-info-paper');
 const t = translateByNamespace('client:tracking-page:driver-info-paper');

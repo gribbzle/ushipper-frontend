@@ -2,10 +2,10 @@ import React from 'react';
 
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { useCanManageOrder } from '@/hooks/order';
-import { PencilIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './name-field.scss';
+import PencilIcon from '@/assets/icons/pencil.svg';
 
 const cn = classname('name-field');
 

@@ -18,11 +18,14 @@ import { AsyncProps } from 'react-select/dist/declarations/src/useAsync';
 import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
 import { SelectOption } from '@/shared';
 import { CSSObject } from '@emotion/serialize';
-import { ArrowDownIcon, PlusIcon, TickIcon, XCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './select-field.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import PlusIcon from '@/assets/icons/plus.svg';
+import TickIcon from '@/assets/icons/tick.svg';
+import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 
 const t = translateByNamespace('common:select-input');
 const cn = classname('react-select-container');

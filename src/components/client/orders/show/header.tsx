@@ -16,13 +16,14 @@ import { useOnBack } from '@/hooks/useOnBack';
 import { getOrderId } from '@/utils/order';
 import { useIsAdminPage } from '@/hooks/use-is-admin-page';
 import { useMeCarrier } from '@/hooks/use-user-role-group';
-import { PencilIcon, PrinterIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Load, ordersActions, orderSelector } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';
 import { translateDeletedOrderStatus, translateShipperCancelledOrderStatus } from '@utils/translate/order/get-order-status-translate';
+import PencilIcon from '@/assets/icons/pencil.svg';
+import PrinterIcon from '@/assets/icons/printer.svg';
 
 const inspectionTypeTranslate = translateByNamespace('common:inspection-types');
 

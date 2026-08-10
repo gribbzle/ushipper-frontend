@@ -4,7 +4,6 @@ import { Timeline } from '@/components/common/timeline/timeline';
 import { TimelineConnector } from '@/components/common/timeline/timeline-connector/timeline-connector';
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TimelineIcon } from '@/components/common/timeline/timeline-icon/timeline-icon';
-import { FullTruckIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -12,6 +11,7 @@ import { ShipperTrackingOrderRouteProps } from './shipper-tracking-order-route.t
 import { useShipperTrackingOrderRoute } from './use-shipper-tracking-order-route';
 
 import './shipper-tracking-order-route.scss';
+import FullTruckIcon from '@/assets/icons/full-truck.svg';
 
 const cn = classname('shipper-tracking-order-route');
 const t = translateByNamespace('client:loadboard:parsed-order-route');

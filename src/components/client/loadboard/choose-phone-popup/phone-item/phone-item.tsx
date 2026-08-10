@@ -1,13 +1,14 @@
 import React from 'react';
 
 import { GenericButton } from '@/components/common/generic-button/generic-button';
-import { MessageOutlinedIcon, PhoneOutlinedIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { fromPhoneTypeToTranslation } from './from-phone-type-to-translation';
 import { PhoneItemProps } from './phone-item.types';
 
 import './phone-item.scss';
+import MessageOutlinedIcon from '@/assets/icons/message-outlined.svg';
+import PhoneOutlinedIcon from '@/assets/icons/phone-outlined.svg';
 
 const cn = classname('phone-item');
 

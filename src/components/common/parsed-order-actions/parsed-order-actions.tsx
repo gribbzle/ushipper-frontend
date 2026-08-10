@@ -5,7 +5,6 @@ import { LoadboardItemProps } from '@/components/client/loadboard/loadboard-item
 import { Button } from '@/components/common/button/button';
 import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { UserOrderStatus } from '@/enums/user-order-status-enum';
-import { ActionsIcon, PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -13,6 +12,8 @@ import { ParsedOrderChatButton } from './parsed-order-chat-button';
 import { useParsedOrderActions } from './use-parsed-order-actions';
 
 import './parsed-order-actions.scss';
+import ActionsIcon from '@/assets/icons/actions-icon.svg';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const cn = classname('parsed-order-actions');
 const t = translateByNamespace('client:loadboard:item');

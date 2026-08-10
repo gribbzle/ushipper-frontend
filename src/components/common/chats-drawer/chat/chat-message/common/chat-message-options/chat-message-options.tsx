@@ -1,13 +1,14 @@
 import React, { RefObject, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { Button } from '@/components/common/button';
-import { PencilWithLineIcon, TrashIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { deleteMessageRequestStatusSelector, messagesActions, sendMessageRequestStatusSelector } from '@store/common';
 import { classname } from '@utils/classname';
 import { RequestStatus } from '@utils/redux';
 
 import './chat-message-options.scss';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const DEFAULT_OFFSET = 10;
 

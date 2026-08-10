@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
 
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { QuestionCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './statistic-counter.scss';
+import QuestionCircleIcon from '@/assets/icons/question-sircle.svg';
 
 const cn = classname('statistic-counter');
 

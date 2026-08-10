@@ -1,12 +1,13 @@
 import React, { useCallback, useState } from 'react';
 
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { MinusIcon, PlusIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { CatalogFiltersGroupProps } from './catalog-filter-group.types';
 
 import './catalog-filter-group.scss';
+import MinusIcon from '@/assets/icons/minus-icon.svg';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('catalog-filter-group');
 

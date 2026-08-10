@@ -10,7 +10,6 @@ import { DeleteContactPopup } from '@/components/client/contacts/delete-contact-
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { Paper } from '@/components/common/paper/paper';
 import { useEffectOnce } from '@/hooks/use-effect-once';
-import { ExternalLinkIcon, PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     fetchContactAction,
@@ -26,6 +25,8 @@ import { RequestStatus } from '@utils/redux';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './contacts.scss';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('client:contacts-page');
 const cn = classname('contacts-page');

@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { GoldTruckIcon, LikeIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { fetchedSelectedDriverIdSelector, TrackingDriver } from '@store/client';
 import { classname } from '@utils/classname';
 
 import './driver-truck-pin.scss';
+import GoldTruckIcon from '@/assets/icons/gold-truck.svg';
+import LikeIcon from '@/assets/icons/like-icon.svg';
 
 type DriverTruckPinProps = {
     driver: TrackingDriver;

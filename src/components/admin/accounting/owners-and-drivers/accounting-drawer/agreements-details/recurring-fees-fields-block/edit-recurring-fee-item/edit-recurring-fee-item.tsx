@@ -9,7 +9,6 @@ import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
 import {FormControl} from '@/fields/form-control';
 import {FormHelperText} from '@/fields/form-helper-text';
 import {InputLabel} from '@/fields/input-label';
-import { TrashIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';
@@ -25,6 +24,7 @@ import { FeeRecurringWeekDaysSelect } from './fee-recurring-week-days-select';
 import { useEditRecurringFeeItem } from './use-edit-recurring-fee-item';
 
 import './edit-recurring-fee-item.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const cn = classname('edit-recurring-fee-item');
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');

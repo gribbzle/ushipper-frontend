@@ -8,7 +8,6 @@ import { OrderForm } from '@/components/client/orders/order-form/order-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { useMeCarrier } from '@/hooks/use-user-role-group';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     orderCustomerInformationDrawerPropsSelector,
@@ -21,6 +20,7 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-customer-information-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:customer-information');
 const cn = classname('order-customer-information-drawer');

@@ -7,13 +7,13 @@ import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { UserRoleGroup } from '@/enums/user-role-group';
 import { useCanManageOrder } from '@/hooks/order';
 import { useUserRoleGroup } from '@/hooks/use-user-role-group';
-import { PencilIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, ordersActions } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-driver-instructions-paper.scss';
+import PencilIcon from '@/assets/icons/pencil.svg';
 
 const t = translateByNamespace('client:order:driver-instructions');
 const detailsF = translateByNamespace('client:order:details:fields');

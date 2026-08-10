@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import has from 'has-values';
 
-import { PersonIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './contact-info.scss';
+import PersonIcon from '@/assets/icons/person-icon.svg';
 
 const t = translateByNamespace('common:contact-information');
 const cn = classname('contact-information');

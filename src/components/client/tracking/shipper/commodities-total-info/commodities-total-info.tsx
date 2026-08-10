@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 
-import { BasketIcon, BoxIcon } from '@icons';
 import { OrderCommodity } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { calculateTotalQuantitiesOfCommodities, calculateTotalWeightOfCommodities } from '@utils/commodity';
 import { translateByNamespace } from '@utils/i18n';
 
 import './commodities-total-info.scss';
+import BasketIcon from '@/assets/icons/basket-icon.svg';
+import BoxIcon from '@/assets/icons/box-icon.svg';
 
 type CommoditiesTotalInfoProps = {
     commodities: OrderCommodity[];

@@ -5,9 +5,9 @@ import { OrderExpensesForm } from '@/components/client/orders/forms/order-expens
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
-import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const t = translateByNamespace('client:order:expenses');
 

@@ -2,10 +2,11 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { Field } from 'react-final-form';
 
 import { TextField } from '@/fields/text-field/text-field';
-import { EyeClosedIcon, EyeIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './password-field.scss';
+import EyeClosedIcon from '@/assets/icons/eye-closed.svg';
+import EyeIcon from '@/assets/icons/eye.svg';
 
 export type PasswordFieldProps = {
     name: string;

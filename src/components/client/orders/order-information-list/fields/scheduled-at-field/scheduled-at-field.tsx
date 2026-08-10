@@ -2,11 +2,11 @@ import React, { useMemo } from 'react';
 
 import { DateTypes } from '@/enums/date-types-enum';
 import { useMeShipper } from '@/hooks/use-user-role-group';
-import { ScheduleIcon } from '@icons';
 import { formatLongDateOrGetDash } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';
 
 import { ItemField } from '../item-field';
+import ScheduleIcon from '@/assets/icons/schedule-icon.svg';
 
 const t = translateByNamespace('client:order');
 const dateTypesT = translateByNamespace('common:date-types');

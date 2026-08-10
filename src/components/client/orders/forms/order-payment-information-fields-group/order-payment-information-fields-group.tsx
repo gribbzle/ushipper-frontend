@@ -18,7 +18,6 @@ import {TextField} from '@/fields/text-field';
 import { useDisableCarrierChanging } from '@/hooks/order/use-disable-carrier-changing';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeShipper } from '@/hooks/use-user-role-group';
-import { PlusIcon, TrashIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { OrderFieldsGroup, orderPaymentStatusSelector } from '@store/client';
 import { classname } from '@utils/classname';
@@ -31,6 +30,8 @@ import { useCarrierPaymentInfoLabels, useGetPaymentInformationValues, useGetPaym
 import { OrderPaymentInformationFieldsWrapper } from './order-payment-information-fields-wrapper';
 
 import './order-payment-information-fields-group.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const t = translateByNamespace('client:order:payment-information');
 const tPlaceholder = translateByNamespace('client:order:fields');

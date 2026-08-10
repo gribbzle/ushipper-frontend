@@ -1,6 +1,5 @@
 import React, { MouseEvent, useCallback } from 'react';
 
-import { ArrowDownIcon, MinusCircleIcon, PlusCircleIcon } from '@icons';
 import { User } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -9,6 +8,9 @@ import { Button } from '../../button';
 import { useGetUsersWithCursorPagination, useOpenTableCollapse } from '../hooks';
 import { TableColumn, TableProps } from '../table.types';
 import { TableColumnBody } from '../table-column-body';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import MinusCircleIcon from '@/assets/icons/minus-circle-icon.svg';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const COLLAPSE_ICON_SIZE = 24;
 

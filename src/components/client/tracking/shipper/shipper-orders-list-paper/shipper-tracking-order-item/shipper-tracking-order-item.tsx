@@ -9,7 +9,6 @@ import { formatDrivingDistance } from '@/utils/driving';
 import { getOrderId } from '@/utils/order';
 import { calculateTotalPayment, getPaymentPerDistance } from '@/utils/payment';
 import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
-import { HorizontalDotsIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, ShipperTrackingOrder, trackingActions, User } from '@store/client';
 import { classname } from '@utils/classname';
@@ -28,6 +27,7 @@ import { ShipperOrderTag } from '../../shipper-tracking-order-tag';
 import { TrackingDriverInfo } from '../../tracking-driver-info';
 
 import './shipper-tracking-order-item.scss';
+import HorizontalDotsIcon from '@/assets/icons/horizontal-dots.svg';
 
 type ShipperTrackingOrderItemProps = {
     order: ShipperTrackingOrder;

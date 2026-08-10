@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 
 import { useMeAdmin } from '@/hooks/use-user-role-group';
-import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { messagesActions } from '@store/client';
 import { classname } from '@utils/classname';
@@ -10,6 +9,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { Button } from '../../button';
 
 import './empty-chats-list.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('common:chats');
 const tButton = translateByNamespace('common:messages-page');

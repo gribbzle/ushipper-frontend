@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { NoPhotoIcon, NoPhotoIconBlue } from '@icons';
 import { classname } from '@utils/classname';
 
 import './avatar.scss';
+import NoPhotoIcon from '@/assets/icons/no-photo-icon.svg';
+import NoPhotoIconBlue from '@/assets/icons/no-photo-icon-blue.svg';
 
 const cn = classname('avatar');
 

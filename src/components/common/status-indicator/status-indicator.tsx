@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { DoneIcon, ErrorIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './status-indicator.scss';
+import DoneIcon from '@/assets/icons/done-icon.svg';
+import ErrorIcon from '@/assets/icons/error-icon.svg';
 
 type Props = {
     label: string;

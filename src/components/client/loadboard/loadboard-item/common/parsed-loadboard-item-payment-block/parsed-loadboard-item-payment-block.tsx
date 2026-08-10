@@ -4,7 +4,6 @@ import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { useMeDriverRelated } from '@/hooks/use-user-role-group';
-import { ImportIcon, SuperDispatchImportIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
@@ -12,6 +11,8 @@ import { diffForHumans } from '@utils/dates';
 import { getOrderSource } from './utils';
 
 import './parsed-loadboard-item-payment-block.scss';
+import ImportIcon from '@/assets/icons/import-icon.svg';
+import SuperDispatchImportIcon from '@/assets/icons/super-dispatch-import-icon.svg';
 
 const cn = classname('parsed-loadboard-item-payment-block');
 

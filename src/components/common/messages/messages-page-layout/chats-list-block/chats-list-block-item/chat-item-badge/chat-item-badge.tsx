@@ -6,12 +6,14 @@ import { Badge } from '@/components/common/badge/badge';
 import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useMeAdmin } from '@/hooks/use-user-role-group';
-import { DefaultOrderIcon, DefaultPhoneIcon, SystemIcon } from '@icons';
 import { selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { classname } from '@utils/classname';
 
 import './chat-item-badge.scss';
+import DefaultOrderIcon from '@/assets/icons/default-order-icon.svg';
+import DefaultPhoneIcon from '@/assets/icons/default-phone-icon.svg';
+import SystemIcon from '@/assets/icons/system-icon.svg';
 
 const cn = classname('chat-item-badge');
 

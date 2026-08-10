@@ -8,10 +8,10 @@ import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { OrderPaymentStatus } from '@/enums/order-payment-status';
 import { OrderStatus } from '@/enums/order-status';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
-import { HorizontalDotsIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
+import HorizontalDotsIcon from '@/assets/icons/horizontal-dots.svg';
 
 const translateOrder = translateByNamespace('client:order');
 const actionsTranslate = translateByNamespace('client:order-actions');

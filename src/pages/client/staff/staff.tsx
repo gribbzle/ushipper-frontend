@@ -12,7 +12,6 @@ import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-
 import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
 import { StaffTableView } from '@/components/client/staff/staff-filters/staff-filters.types';
 import { useUsersPage } from '@/hooks/users/use-users-page';
-import { PlusCircleIcon, SendIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';
 import { classname } from '@utils/classname';
@@ -20,6 +19,8 @@ import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './staff.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
+import SendIcon from '@/assets/icons/send.svg';
 
 const t = translateByNamespace('client:staff-page');
 const cn = classname('staff-page');

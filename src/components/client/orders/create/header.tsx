@@ -4,9 +4,9 @@ import { BackLink } from '@/components/common/back-link/back-link';
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
 import { PageTitle } from '@/components/common/page-title/page-title';
-import { CheckIcon } from '@icons';
 import { OrderFormEnum } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:create-page');
 

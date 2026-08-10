@@ -8,7 +8,6 @@ import { UserStatusesSelect } from '@/components/common/selects/user-statuses-se
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
-import { ListIcon, TreeIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';
@@ -17,6 +16,8 @@ import { StaffFiltersFormProps, StaffFiltersFormState } from './staff-filters.ty
 import { useStaffFiltersForm } from './use-staff-filters-form';
 
 import './staff-filters.scss';
+import ListIcon from '@/assets/icons/list.svg';
+import TreeIcon from '@/assets/icons/tree.svg';
 
 const t = translateByNamespace('common:staff-filters');
 

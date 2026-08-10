@@ -2,13 +2,13 @@ import React from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
-import { MagnifyingGlassIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import { EmptyLayoutProps } from './empty-layout.types';
 import { useEmptyLayout } from './use-empty-layout';
 
 import './empty-layout.scss';
+import MagnifyingGlassIcon from '@/assets/icons/magnifying-glass.svg';
 
 const cn = classname('empty-layout');
 

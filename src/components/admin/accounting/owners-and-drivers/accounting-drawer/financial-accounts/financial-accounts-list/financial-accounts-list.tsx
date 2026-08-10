@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
-import { PencilWithLineIcon, TrashIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
@@ -16,6 +15,8 @@ import { FinancialAccountsListProps } from './financial-accounts-list.types';
 import { useFinancialAccountsList } from './use-financial-accounts-list';
 
 import './financial-accounts-list.scss';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:rocketkor');
 const cn = classname('financial-accounts-list');

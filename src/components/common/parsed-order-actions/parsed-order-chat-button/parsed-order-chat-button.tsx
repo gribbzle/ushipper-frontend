@@ -2,7 +2,6 @@ import React from 'react';
 
 import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-popup/choose-phone-popup';
 import { Button } from '@/components/common/button/button';
-import { MessageTextLeftIcon } from '@icons';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
@@ -10,6 +9,7 @@ import { classname } from '@utils/classname';
 import { useParsedOrderChatButton } from './use-parsed-order-chat-button';
 
 import './parsed-order-chat-button.scss';
+import MessageTextLeftIcon from '@/assets/icons/message-text-left.svg';
 
 const cn = classname('parsed-order-chat-button');
 

@@ -3,11 +3,11 @@ import Head from 'next/head';
 
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { CreditCardIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { walletActions } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
+import CreditCardIcon from '@/assets/icons/credit-card-icon.svg';
 
 const t = translateByNamespace('client:wallet-page');
 

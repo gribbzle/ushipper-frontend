@@ -9,7 +9,6 @@ import { Drawer } from '@/components/common/drawer/drawer';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import {PhoneNumberInput} from '@/fields/phone-number-input';
 import {StringInput} from '@/fields/string-input';
-import { CheckIcon, TrashIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { createEditContactFormSubmit, createEditContactModalModeSelector, fetchedContactSelector } from '@store/client';
 import { contactsActions } from '@store/common/contacts/slice';
@@ -20,6 +19,8 @@ import { composeValidators, emailValidator, phoneValidator } from '@validators';
 import { AddressFields } from '../../company-settings';
 
 import './create-edit-contacts-drawer.scss';
+import CheckIcon from '@/assets/icons/check-icon.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 type Props = {
     pageId: 'administrators' | 'contacts';

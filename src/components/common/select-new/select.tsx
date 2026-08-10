@@ -13,9 +13,11 @@ import VendorSelect, {
 
 import { SelectOption } from '@/shared';
 import { CSSObject } from '@emotion/serialize';
-import { ArrowDownIcon, TickIcon, XCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import TickIcon from '@/assets/icons/tick.svg';
+import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 
 type SelectValue<T, isMulti extends boolean> = isMulti extends true ? T[] : T;
 

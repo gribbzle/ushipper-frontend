@@ -2,10 +2,10 @@ import React, { MouseEvent, useCallback } from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { useFuelCardsActionsPermission } from '@/hooks/fuel/use-fuel-cards-actions-permission';
-import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const t = translateByNamespace('admin:fuel:cards-page:add-fuel-card-to-driver-popup');
 

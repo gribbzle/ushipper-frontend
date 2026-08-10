@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 
-import { CarrentIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './collapsible-section.scss';
+import CarrentIcon from '@/assets/icons/carrent-icon.svg';
 
 type Props = {
     title: string;

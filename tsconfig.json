@@ -25,7 +25,6 @@
             "@store": ["./src/store/index"],
             "@store/*": ["./src/store/*"],
             "@utils/*": ["./src/utils/*"],
-            "@icons": ["./src/assets/icons/index"],
             "@images": ["./src/assets/images/index"],
             "@logo": ["./src/assets/logos/index"],
             "@validators": ["./src/validators/index"],

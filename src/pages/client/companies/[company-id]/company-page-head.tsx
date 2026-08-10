@@ -6,12 +6,12 @@ import { toast } from 'react-toastify';
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
-import { LinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
+import LinkIcon from '@/assets/icons/link-icon.svg';
 
 const t = translateByNamespace('client:company-page:head');
 const translateNotification = translateByNamespace('client:company-page:notification');

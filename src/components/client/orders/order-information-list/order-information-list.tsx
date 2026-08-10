@@ -5,7 +5,6 @@ import has from 'has-values';
 
 import { ContactInfo } from '@/components/common/contact-info/contact-info';
 import { BusinessTypesEnum } from '@/enums/business-types-enum';
-import { BriefcaseIcon, GeoLocationIcon, NotesIcon, ScheduleIcon } from '@icons';
 import { OrderInformation } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -15,6 +14,10 @@ import { getBusinessTypeTranslate } from '@utils/translate/get-business-type-tra
 import { ItemField, NameField, ScheduledAtField } from './fields';
 
 import './order-information-list.scss';
+import BriefcaseIcon from '@/assets/icons/brief-case-icon.svg';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
+import NotesIcon from '@/assets/icons/notes-icon.svg';
+import ScheduleIcon from '@/assets/icons/schedule-icon.svg';
 
 const cn = classname('order-information-list');
 const t = translateByNamespace('client:order');

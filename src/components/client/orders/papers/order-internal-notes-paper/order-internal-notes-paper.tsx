@@ -11,7 +11,6 @@ import { NotificationItem } from '@/components/common/notification-item/notifica
 import { Paper } from '@/components/common/paper/paper';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
-import { ActionsIcon, ArrowDownIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderInternalNote, useGetOrderInternalNotesQuery } from '@store/api/order-internal-notes-api';
 import { ModeStateEnum, ordersActions } from '@store/client';
@@ -19,6 +18,8 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-internal-notes-paper.scss';
+import ActionsIcon from '@/assets/icons/actions-icon.svg';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const cn = classname('order-internal-notes');
 const t = translateByNamespace('client:order:internal-notes');

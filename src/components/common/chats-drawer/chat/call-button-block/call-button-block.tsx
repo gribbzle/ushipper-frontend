@@ -1,13 +1,13 @@
 import React, { useCallback } from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { PhoneIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { loadboardActions } from '@store/client/loadboard';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './call-button-block.scss';
+import PhoneIcon from '@/assets/icons/phone.svg';
 
 const tCall = translateByNamespace('client:loadboard:item');
 

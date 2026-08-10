@@ -2,12 +2,15 @@ import React, { FC, MouseEvent, SVGProps, useCallback, useRef, useState } from '
 
 import { Paper } from '@/components/common/paper/paper';
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
-import { CloseIcon, Ellipse, LikeIcon, QuestionIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';
 
 import './tracking-help-paper.scss';
+import CloseIcon from '@/assets/icons/close-icon.svg';
+import Ellipse from '@/assets/icons/ellipse.svg';
+import LikeIcon from '@/assets/icons/like-icon.svg';
+import QuestionIcon from '@/assets/icons/question-icon.svg';
 
 type LegendItemProps = {
     label: string;

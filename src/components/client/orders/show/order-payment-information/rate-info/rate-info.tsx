@@ -9,7 +9,6 @@ import { preparePaymentInformation } from '@/utils/orders';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeAdmin, useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
-import { PencilIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersActions, orderSelector } from '@store/client';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
@@ -21,6 +20,7 @@ import { formatToCurrency } from '@utils/numbers';
 import { BlockWrapper } from '../block-wrapper';
 
 import './rate-info.scss';
+import PencilIcon from '@/assets/icons/pencil.svg';
 
 const t = translateByNamespace('client:order:payment-information');
 const tFields = translateByNamespace('client:order:payment-information:fields');

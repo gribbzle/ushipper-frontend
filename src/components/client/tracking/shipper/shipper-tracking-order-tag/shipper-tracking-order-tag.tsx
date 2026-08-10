@@ -2,10 +2,12 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
-import { CheckFullCircleIcon, ExclamationFullCircleIcon, PlusFullCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './shipper-tracking-order-tag.scss';
+import CheckFullCircleIcon from '@/assets/icons/check-full-circle.svg';
+import ExclamationFullCircleIcon from '@/assets/icons/exclamation-full-circle.svg';
+import PlusFullCircleIcon from '@/assets/icons/plus-full-circle.svg';
 
 type ShipperOrderTagProps = {
     children?: React.ReactNode;

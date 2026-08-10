@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { ArrowDownIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './status-tag.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 export type StatusTagView = 'new' | 'pending' | 'success' | 'danger';
 

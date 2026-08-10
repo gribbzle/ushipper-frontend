@@ -1,9 +1,9 @@
 import React, { MouseEvent, ReactNode, useCallback, useState } from 'react';
 
-import { CarrentIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './accordion.scss';
+import CarrentIcon from '@/assets/icons/carrent-icon.svg';
 
 type Props = {
     title: ReactNode;

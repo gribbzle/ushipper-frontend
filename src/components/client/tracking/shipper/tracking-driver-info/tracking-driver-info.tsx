@@ -2,7 +2,6 @@ import React, { useCallback } from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
 import { GenericButton } from '@/components/common/generic-button/generic-button';
-import { LetterIcon2, LikeIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
 import { Avatar as AvatarType } from '@store/common/staff/avatar-types';
@@ -10,6 +9,8 @@ import { RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 
 import './tracking-driver-info.scss';
+import LetterIcon2 from '@/assets/icons/letter-icon2.svg';
+import LikeIcon from '@/assets/icons/like-icon.svg';
 
 type TrackingDriverInfoProps = {
     userName: string;

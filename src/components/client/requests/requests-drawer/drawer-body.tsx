@@ -4,13 +4,13 @@ import has from 'has-values';
 import { RequestItem } from '@/components/client/requests/request-item/request-item';
 import { RequestOrderInfo } from '@/components/client/requests/requests-drawer/request-order-info';
 import { Button } from '@/components/common/button/button';
-import { ArrowDownIcon } from '@icons';
 import { OrderRequest } from '@store/api/order-requests-types';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './requests-drawer.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
 
 const cn = classname('requests-drawer');
 

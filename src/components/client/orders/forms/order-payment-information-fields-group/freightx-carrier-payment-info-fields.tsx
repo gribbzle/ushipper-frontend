@@ -10,7 +10,6 @@ import {InputLabel} from '@/fields/input-label';
 import {PrefixedField} from '@/fields/field-prefix';
 import { useDisableCarrierChanging } from '@/hooks/order/use-disable-carrier-changing';
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
-import { TrashIcon } from '@icons';
 import { OrderFormState } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
@@ -19,6 +18,7 @@ import { useGetPaymentInformationValues, useHandleDelayedFieldsDelete } from './
 import { OrderPaymentInformationFieldsWrapper } from './order-payment-information-fields-wrapper';
 
 import './order-payment-information-fields-group.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const t = translateByNamespace('client:order:payment-information');
 const tPlaceholder = translateByNamespace('client:order:fields');

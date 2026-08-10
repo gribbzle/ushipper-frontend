@@ -11,11 +11,11 @@ import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
 import { useMeShipper } from '@/hooks/use-user-role-group';
-import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, OrderFieldsGroup, OrderFormState, ordersActions, orderSetDriverInstructionsDrawerPropsSelector } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 const t = translateByNamespace('client:order:details:fields');
 const tSubmitBtn = translateByNamespace('client:order:details');

@@ -8,7 +8,6 @@ import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { OrderStatus } from '@/enums/order-status';
 import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { getPaymentTermTranslate } from '@/utils/payment';
-import { GeoLocationIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';
@@ -23,6 +22,7 @@ import { ChatMessageOrders } from '../chat-message-orders';
 import { SupportChatHead } from './support-chat-head';
 
 import './chat-head.scss';
+import GeoLocationIcon from '@/assets/icons/geolocation-icon.svg';
 
 const t = translateByNamespace('common:chats');
 const cn = classname('chat-head');

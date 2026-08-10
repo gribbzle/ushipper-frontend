@@ -4,10 +4,10 @@ import { Button } from '@/components/common/button/button';
 import { Tooltip } from '@/components/common/tooltip/tooltip';
 import { TooltipContent } from '@/components/common/tooltip/tooltip';
 import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 type AddDriverToCompanyButtonProps = {
     disabled: boolean;

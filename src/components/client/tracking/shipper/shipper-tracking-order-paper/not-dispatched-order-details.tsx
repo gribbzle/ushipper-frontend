@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { calculateTotalPayment, getPaymentPerDistanceWithoutCurrency } from '@/utils/payment';
-import { CarIcon2, DollarCircleIcon, ScheduleWithoutCheckIcon } from '@icons';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -11,6 +10,9 @@ import { isFreightX } from '@utils/project-config';
 import { CommoditiesTotalInfo } from '../commodities-total-info';
 
 import './shipper-tracking-order-paper.scss';
+import CarIcon2 from '@/assets/icons/car-icon2.svg';
+import DollarCircleIcon from '@/assets/icons/dollar-circle-icon.svg';
+import ScheduleWithoutCheckIcon from '@/assets/icons/shedule-without-check.svg';
 
 const cn = classname('shipper-tracking-order-paper');
 const t = translateByNamespace('client:tracking-page');

@@ -3,11 +3,11 @@ import React from 'react';
 import { Button } from '@/components/common/button/button';
 import { Link } from '@/components/common/link/link';
 import { Paper } from '@/components/common/paper/paper';
-import { ExternalLinkIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './empty-orders-panel.scss';
+import ExternalLinkIcon from '@/assets/icons/external-link.svg';
 
 const t = translateByNamespace('client:orders-page');
 const cn = classname('empty-orders-panel');

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ArrowRightIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 
 import { Button } from '../button';
 import { Link } from '../link';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
 
 const t = translateByNamespace('common:go-to-sign-in-button');
 

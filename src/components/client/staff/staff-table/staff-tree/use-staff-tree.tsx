@@ -9,7 +9,6 @@ import { StatusBlock, StatusBlockView } from '@/components/common/status-block/s
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { User } from '@store/common';
 import { staffActions } from '@store/common/staff/slice';
@@ -23,6 +22,7 @@ import { useStaffTable } from '../use-staff-table';
 import { CounterLink } from './counter-link/counter-link';
 
 import '../staff-table.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('staff-table');
 

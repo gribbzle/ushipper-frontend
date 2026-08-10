@@ -4,7 +4,6 @@ import { CheckingContractPopup } from '@/components/client/loadboard/checking-co
 import { Button } from '@/components/common/button/button';
 import { MapBox } from '@/components/common/MapBox/MapBox';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { SearchIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { LoadBoardFilters, useGetLoadboardItemsQuery } from '@store/api/loadboard-api';
 import { trackingActions } from '@store/client';
@@ -17,6 +16,7 @@ import { DriverItemTab } from '../driver-item-tab';
 import { DriverOrdersBlock } from './driver-orders-block';
 
 import './driver-orders-accordion.scss';
+import SearchIcon from '@/assets/icons/search.svg';
 
 const cn = classname('driver-orders-accordion');
 const t = translateByNamespace('client:drivers-plan:driver-item:orders-tab');

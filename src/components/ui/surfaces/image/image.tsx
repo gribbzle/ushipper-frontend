@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { PhotoView } from 'react-photo-view';
 
-import { EyeIcon } from '@icons';
 import { ImageProvider, ImageProviderContext } from '@/providers/ImageProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
@@ -9,6 +8,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { ImageViewProps } from './image.types';
 
 import './image.scss';
+import EyeIcon from '@/assets/icons/eye.svg';
 
 const cn = classname('image');
 const t = translateByNamespace('common:image');

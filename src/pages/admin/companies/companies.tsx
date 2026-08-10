@@ -9,12 +9,12 @@ import { DeleteCompanyPopup } from '@/components/admin/companies/delete-company-
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useCompaniesActionsPermission } from '@/hooks/companies/use-companies-actions-permission';
 import { useOpenCreateCompanyDrawer } from '@/hooks/companies/use-open-create-company-drawer';
-import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 
 import './companies.scss';
+import PlusCircleIcon from '@/assets/icons/plus-circle-icon.svg';
 
 const t = translateByNamespace('admin:companies-page');
 const cn = classname('companies-page');

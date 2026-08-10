@@ -5,13 +5,16 @@ import { FieldRenderProps } from 'react-final-form';
 import { Button } from '@/components/common/button/button';
 import { useHover } from '@/hooks/use-hover';
 import { convertBytesToMB } from '@/utils/converter';
-import { CheckCircleIcon, FileIcon, UploadIcon, XSmallIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import { FormHelperText } from '../form-helper-text';
 
 import './file-uploader.scss';
+import CheckCircleIcon from '@/assets/icons/check-circle.svg';
+import FileIcon from '@/assets/icons/file.svg';
+import UploadIcon from '@/assets/icons/upload.svg';
+import XSmallIcon from '@/assets/icons/x-small.svg';
 
 const t = translateByNamespace('common:file-uploader');
 const cn = classname('file-uploader');

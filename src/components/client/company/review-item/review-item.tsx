@@ -4,7 +4,6 @@ import { Button } from '@/components/common/button/button';
 import { OverallRatingBlock } from '@/components/common/overall-rating-block/overall-rating-block';
 import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
 import { Paper } from '@/components/common/paper/paper';
-import { MessageTextLeftIcon, PencilWithLineIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Review } from '@store/client';
 import { reviewActions } from '@store/client';
@@ -19,6 +18,8 @@ import { ReviewReplyBlock } from './review-reply-block';
 import { ReviewerInfoBlock } from './reviewer-info-block';
 
 import './review-item.scss';
+import MessageTextLeftIcon from '@/assets/icons/message-text-left.svg';
+import PencilWithLineIcon from '@/assets/icons/pencil-with-line.svg';
 
 type Props = {
     review: Review;

@@ -5,12 +5,13 @@ import { FieldRenderProps } from 'react-final-form';
 import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { Attachment } from '@/shared';
-import { TrashIcon, UploadIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';
 
 import './multi-file-uploader.scss';
+import TrashIcon from '@/assets/icons/trash-can.svg';
+import UploadIcon from '@/assets/icons/upload.svg';
 
 const cn = classname('multi-file-uploader');
 const t = translateByNamespace('common:multi-file-uploader');

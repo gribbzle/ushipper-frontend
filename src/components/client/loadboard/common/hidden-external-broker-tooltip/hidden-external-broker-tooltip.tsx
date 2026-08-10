@@ -3,11 +3,11 @@ import React from 'react';
 import { Tooltip } from '@/components/common/tooltip/tooltip';
 import { TooltipContent } from '@/components/common/tooltip/tooltip';
 import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { ExclamationCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './hidden-external-broker-tooltip.scss';
+import ExclamationCircleIcon from '@/assets/icons/exclamation-circle.svg';
 
 const cn = classname('hidden-external-broker-tooltip');
 const t = translateByNamespace('client:loadboard:item:external-shipper');

@@ -10,7 +10,6 @@ import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { getVehicleTypeTranslation } from '@/utils/vehicle';
-import { PencilIcon, TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderVehicle } from '@/shared/types';
 import { classname } from '@utils/classname';
@@ -19,6 +18,8 @@ import { formatToCurrency } from '@utils/numbers';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import './vehicle-item.scss';
+import PencilIcon from '@/assets/icons/pencil.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const t = translateByNamespace('client:order:vehicles:fields');
 const cn = classname('vehicle-item');

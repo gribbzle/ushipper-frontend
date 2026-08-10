@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { PlusIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './zone-button.scss';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const cn = classname('zone-button');
 

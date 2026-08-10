@@ -5,10 +5,11 @@ import { Divider } from '@/components/common/divider/divider';
 import { OfferSortingName } from '@/enums/offer-sorting-name';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { OrderSortingName } from '@/enums/order-sorting-name';
-import { ArrowDownIcon, CheckIcon } from '@icons';
 import { classname } from '@utils/classname';
 
 import './sort-select.scss';
+import ArrowDownIcon from '@/assets/icons/arrow-down.svg';
+import CheckIcon from '@/assets/icons/check-icon.svg';
 
 export type SortSelectValue = [SortSelectOption<'orderName'>, SortSelectOption<'orderDirection'>];
 

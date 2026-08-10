@@ -7,7 +7,6 @@ import { Button } from '@/components/common/button/button';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import { useLoadboardTabSelection } from '@/hooks/loadboard/useLoadboardTabSelection';
 import { useMeCarrier } from '@/hooks/use-user-role-group';
-import { SaveIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { INITIAL_FILTERS, loadboardActions } from '@store/client/loadboard/slice';
 import { classname } from '@utils/classname';
@@ -17,6 +16,7 @@ import { getProjectName } from '@utils/translate/get-project-name';
 
 import './loadboard-page-header.scss';
 import 'react-loading-skeleton/dist/skeleton.css';
+import SaveIcon from '@/assets/icons/save.svg';
 
 const t = translateByNamespace('client:loadboard');
 const cn = classname('loadboard-page-header');

@@ -5,9 +5,9 @@ import { OrderCommoditiesForm } from '@/components/client/orders/forms/order-com
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const t = translateByNamespace('client:order:commodities');
 

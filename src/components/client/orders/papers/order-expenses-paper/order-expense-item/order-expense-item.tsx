@@ -4,11 +4,12 @@ import { toKebabCase } from 'js-convert-case';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { PencilIcon, TrashIcon } from '@icons';
 import { OrderExpense } from '@store/api/order-expenses-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';
+import PencilIcon from '@/assets/icons/pencil.svg';
+import TrashIcon from '@/assets/icons/trash-can.svg';
 
 const t = translateByNamespace('common:expense-types');
 const cn = classname('expenses-paper');

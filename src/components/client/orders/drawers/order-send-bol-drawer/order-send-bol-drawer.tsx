@@ -4,13 +4,14 @@ import { OrderSendBOLForm } from '@/components/client/orders/forms/order-send-bo
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { useHandleViewBol } from '@/hooks/order';
-import { EyeIcon, SendIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderFormEnum, ordersActions, orderSendBOLDrawerPropsSelector } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
 import './order-send-bol-drawer.scss';
+import EyeIcon from '@/assets/icons/eye.svg';
+import SendIcon from '@/assets/icons/send.svg';
 
 const t = translateByNamespace('client:order:send-bol');
 const cn = classname('order-send-bol-drawer');

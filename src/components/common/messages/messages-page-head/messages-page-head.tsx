@@ -4,7 +4,6 @@ import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-pop
 import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useMeAdmin, useMeCarrier } from '@/hooks/use-user-role-group';
 import { useMeCarrierDriver } from '@/hooks/use-user-role-type';
-import { CallIcon, MessageTextLeftIcon, MessageTextRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions } from '@store/client';
 import { messagesActions } from '@store/common/messages';
@@ -16,6 +15,9 @@ import { formatInternationalPhoneNumber } from '@utils/phone';
 import { Button } from '../../button';
 
 import './messages-page-head.scss';
+import CallIcon from '@/assets/icons/call-icon.svg';
+import MessageTextLeftIcon from '@/assets/icons/message-text-left.svg';
+import MessageTextRightIcon from '@/assets/icons/message-text-right.svg';
 
 const t = translateByNamespace('common:messages-page');
 
