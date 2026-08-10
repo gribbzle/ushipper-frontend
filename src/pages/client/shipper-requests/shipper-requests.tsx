@@ -2,7 +2,13 @@ import React, { useCallback, useEffect } from 'react';
 import Head from 'next/head';
 
 import { ShipperOrderItem } from '@/components/client/orders/order-item';
-import { getMainLayout, OrderSendOfferToCarrierDrawer, OrdersList, OrdersPageLayout, PageHeader, RequestsDrawer, SendOfferToRequestDrawer } from '@components';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer/order-send-offer-to-carrier-drawer';
+import { OrdersList } from '@/components/client/orders/orders-list/orders-list';
+import { OrdersPageLayout } from '@/components/common/orders-page-layout/orders-page-layout/orders-page-layout';
+import { PageHeader } from '@/components/common/page-header/page-header';
+import { RequestsDrawer } from '@/components/client/requests/requests-drawer/requests-drawer';
+import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
 import { useMeShipper } from '@hooks';
 import { useAppDispatch } from '@store';
 import { Load, ordersActions } from '@store/client';

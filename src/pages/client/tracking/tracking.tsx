@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { CarrierTrackingPage, getMainLayout, TrackingPageHead } from '@components';
+import { CarrierTrackingPage } from '@/components/client/tracking/tracking-page/carrier-tracking-page/carrier-tracking-page';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { TrackingPageHead } from '@/components/client/tracking/tracking-page-head/tracking-page-head';
 
 const TrackingPage = () => {
     return <CarrierTrackingPage />;

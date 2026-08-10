@@ -2,14 +2,12 @@ import React, { useCallback, useMemo } from 'react';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation';
 
-import {
-    Button,
-    CarModelsFilters as CarModelsFiltersComponent,
-    CarModelsTable,
-    CreateEditCarModelDrawer,
-    DeleteCarModelPopup,
-    getMainLayout,
-} from '@components';
+import { Button } from '@/components/common/button/button';
+import { CarModelsFilters as CarModelsFiltersComponent } from '@/components/admin/settings/car-models/car-models-filters/car-models-filters';
+import { CarModelsTable } from '@/components/admin/settings/car-models/car-models-table/car-models-table';
+import { CreateEditCarModelDrawer } from '@/components/admin/settings/car-models/create-edit-car-model-drawer/create-edit-car-model-drawer';
+import { DeleteCarModelPopup } from '@/components/admin/settings/car-models/delete-car-model-popup/delete-car-model-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useEffectOnce } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

@@ -1,17 +1,15 @@
 import React from 'react';
 
 import { BalanceType } from '@/enums';
-import {
-    AccountingPageLayout,
-    AccountingStatisticCounters,
-    BalancePageHead,
-    BrokerFeeBalanceTable,
-    CancelRollbackTransactionPopup,
-    CreateTransactionPopup,
-    DeclineOrPayToDriverPopup,
-    getMainLayout,
-    TransactionsFilters,
-} from '@components';
+import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';
+import { AccountingStatisticCounters } from '@/components/admin/accounting/common/accounting-statistic-counter/accounting-statistic-counters';
+import { BalancePageHead } from '@/components/admin/accounting/common/balance-page-head/balance-page-head';
+import { BrokerFeeBalanceTable } from '@/components/admin/accounting/broker-fee-balance/broker-fee-balance-table/broker-fee-balance-table';
+import { CancelRollbackTransactionPopup } from '@/components/admin/accounting/common/cancel-rollback-transaction-popup/cancel-rollback-transaction-popup';
+import { CreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/create-transaction-popup';
+import { DeclineOrPayToDriverPopup } from '@/components/admin/accounting/cod-orders/declined-or-pay-to-driver-popup/declined-or-pay-to-driver-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { TransactionsFilters } from '@/components/admin/accounting/common/transactions-filters/transactions-filters';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 

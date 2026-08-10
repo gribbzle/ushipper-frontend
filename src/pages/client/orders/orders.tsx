@@ -5,22 +5,20 @@ import { MarkAsPickedUpPopup } from '@/components/client/orders/mark-as-picked-u
 import { OrderItem, ShipperOrderItem } from '@/components/client/orders/order-item';
 import { RestoreOrderPopup } from '@/components/client/orders/restore-order-popup';
 import { UnasignDriverPopup } from '@/components/client/orders/unasign-driver-popup';
-import { useOrdersPageHeader } from '@/hooks/order/use-orders-page-header';
-import {
-    Button,
-    getMainLayout,
-    Link,
-    MarkAsDeliveredPopup,
-    OrderSendBOLDrawer,
-    OrderSendOfferToCarrierDrawer,
-    OrderSetDispatcherDrawer,
-    OrderSetDriverDrawer,
-    OrdersList,
-    OrdersPageLayout,
-    RequestsDrawer,
-    SendOfferToRequestDrawer,
-    UploadOrderLoader,
-} from '@components';
+import { useOrdersPageHeader } from '@hooks/order/use-orders-page-header';
+import { Button } from '@/components/common/button/button';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { Link } from '@/components/common/link/link';
+import { MarkAsDeliveredPopup } from '@/components/client/orders/popups/mark-as-delivered-popup/mark-as-delivered-popup';
+import { OrderSendBOLDrawer } from '@/components/client/orders/drawers/order-send-bol-drawer/order-send-bol-drawer';
+import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer/order-send-offer-to-carrier-drawer';
+import { OrderSetDispatcherDrawer } from '@/components/client/orders/drawers/order-set-dispatcher-drawer/order-set-dispatcher-drawer';
+import { OrderSetDriverDrawer } from '@/components/client/orders/drawers/order-set-driver-drawer/order-set-driver-drawer';
+import { OrdersList } from '@/components/client/orders/orders-list/orders-list';
+import { OrdersPageLayout } from '@/components/common/orders-page-layout/orders-page-layout/orders-page-layout';
+import { RequestsDrawer } from '@/components/client/requests/requests-drawer/requests-drawer';
+import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
+import { UploadOrderLoader } from '@/components/client/orders/upload-order-loader/upload-order-loader';
 import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@hooks';
 import { PlusCircleIcon, UploadIcon } from '@icons';
 import { Load } from '@store/client';

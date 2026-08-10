@@ -1,7 +1,10 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { BusinessInfo, Button, getMainLayout, PersonalInfoForm } from '@components';
+import { BusinessInfo } from '@/components/client/profile-settings/business-info/business-info-form';
+import { Button } from '@/components/common/button/button';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { PersonalInfoForm } from '@/components/client/profile-settings/personal-info/personal-info-form';
 import { ExternalLinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';

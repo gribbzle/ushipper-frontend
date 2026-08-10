@@ -3,7 +3,10 @@ import { FormApi } from 'final-form';
 import Head from 'next/head';
 import { Field, Form } from 'react-final-form';
 
-import { AlertBlock, Button, getAdminAuthLayout, Link } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { getAdminAuthLayout } from '@/components/admin/auth-layout/auth-layout';
+import { Link } from '@/components/common/link/link';
 import { StringInput } from '@fields';
 import { ArrowRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

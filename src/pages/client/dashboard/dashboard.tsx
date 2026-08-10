@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { DashboardCurrentLoads, DashboardStatisticsBlock, getMainLayout } from '@components';
+import { DashboardCurrentLoads } from '@/components/client/dashboard/dashboard-current-loads-block/dashboard-current-loads';
+import { DashboardStatisticsBlock } from '@/components/client/dashboard/dashboard-statistics-block/dashboard-statistics-block';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useMeDispatcher } from '@hooks';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

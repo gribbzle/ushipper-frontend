@@ -3,17 +3,15 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { BalanceType } from '@/enums';
-import {
-    AccountingPageLayout,
-    AccountingStatisticCounters,
-    BalancePageHead,
-    CancelRollbackTransactionPopup,
-    CreateTransactionPopup,
-    CustomBalanceTable,
-    DeclineOrPayToDriverPopup,
-    getMainLayout,
-    TransactionsFilters,
-} from '@components';
+import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';
+import { AccountingStatisticCounters } from '@/components/admin/accounting/common/accounting-statistic-counter/accounting-statistic-counters';
+import { BalancePageHead } from '@/components/admin/accounting/common/balance-page-head/balance-page-head';
+import { CancelRollbackTransactionPopup } from '@/components/admin/accounting/common/cancel-rollback-transaction-popup/cancel-rollback-transaction-popup';
+import { CreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/create-transaction-popup';
+import { CustomBalanceTable } from '@/components/admin/accounting/custom-balance/custom-balance-table/custom-balance-table';
+import { DeclineOrPayToDriverPopup } from '@/components/admin/accounting/cod-orders/declined-or-pay-to-driver-popup/declined-or-pay-to-driver-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { TransactionsFilters } from '@/components/admin/accounting/common/transactions-filters/transactions-filters';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, fetchedBalanceSelector } from '@store/admin';
 import { useGetBalanceQuery } from '@store/api/balances-api';

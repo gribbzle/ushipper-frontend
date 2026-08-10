@@ -3,7 +3,12 @@ import { debounce } from 'debounce';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { Button, CarMakersTable, CreateUpdateCarMakerDrawer, DeleteCarMakerPopup, getMainLayout, Input } from '@components';
+import { Button } from '@/components/common/button/button';
+import { CarMakersTable } from '@/components/admin/settings/car-makers/car-makers-table/car-makers-table';
+import { CreateUpdateCarMakerDrawer } from '@/components/admin/settings/car-makers/create-update-car-maker-drawer/create-update-car-maker-drawer';
+import { DeleteCarMakerPopup } from '@/components/admin/settings/car-makers/delete-car-maker-popup/delete-car-maker-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { Input } from '@/components/common/input/input';
 import { useEffectOnce } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

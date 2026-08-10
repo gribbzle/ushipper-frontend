@@ -2,7 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 import Header from '@/components/client/orders/create/header';
-import { getMainLayout, OrderGeneralForm } from '@components';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { OrderGeneralForm } from '@/components/client/orders/forms/order-general-form/order-general-form';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';

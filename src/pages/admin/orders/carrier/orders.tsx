@@ -1,6 +1,10 @@
 import React from 'react';
 
-import { AdminOrdersPageHead, AdminOrdersPageLayout, getMainLayout, OrdersTableContainer, RenderOrdersTableProps } from '@components';
+import { AdminOrdersPageHead } from '@/components/admin/orders/orders-page-head/orders-page-head';
+import { AdminOrdersPageLayout } from '@/components/common/orders-page-layout/admin-orders-page-layout/admin-orders-page-layout';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { OrdersTableContainer } from '@/components/admin/orders/orders-table-container/orders-table-container';
+import { RenderOrdersTableProps } from '@/components/common/orders-page-layout/admin-orders-page-layout/admin-orders-page-layout.types';
 import { OrderType } from '@enums';
 
 const ORDERS_TYPE = OrderType.CARRIER;

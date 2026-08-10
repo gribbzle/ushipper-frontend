@@ -3,12 +3,22 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Form } from 'react-final-form';
 
-import { AccountInfo, AccountType, BusinessDetails, Completed, Invitation, prepareSignUpPayload, Sidebar, UsdotVerification } from '@/components/client';
+import { AccountInfo } from '@/components/client/sign-up/account-info';
+import { AccountType } from '@/components/client/sign-up/account-type';
+import { BusinessDetails } from '@/components/client/sign-up/business-details';
+import { Completed } from '@/components/client/sign-up/completed';
+import { Invitation } from '@/components/client/sign-up/invitation';
+import { Sidebar } from '@/components/client/sign-up/sidebar';
+import { UsdotVerification } from '@/components/client/sign-up/usdot-verification';
+import { prepareSignUpPayload } from '@/components/client/sign-up/utils';
 import { CompanyType, RegistrationType, SignUpStep, UserRoleType } from '@/enums';
-import { Button, GoToSignInButton, Link } from '@components';
-import { useEffectOnce } from '@hooks';
-import { ArrowLeftIcon, ArrowRightIcon } from '@icons';
-import { useAppDispatch, useAppSelector } from '@store';
+import { Button } from '@/components/common/button/button';
+import { GoToSignInButton } from '@/components/common/go-to-sign-in-button';
+import { Link } from '@/components/common/link/link';
+import { useEffectOnce } from '@/hooks/use-effect-once';
+import ArrowLeftIcon from '@/assets/icons/arrow-left.svg';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
+import { useAppDispatch, useAppSelector } from '@/store';
 import { useGetInvitationActionQuery } from '@store/api/invite-api';
 import {
     acceptInvitationSubmit,

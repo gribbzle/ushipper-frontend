@@ -3,7 +3,11 @@ import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
 import { signUpConfirm } from '@api';
-import { AlertBlock, Button, getProductInfoLayout, GoToSignInButton, Link } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { Button } from '@/components/common/button/button';
+import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';
+import { GoToSignInButton } from '@/components/common/go-to-sign-in-button/go-to-sign-in-button';
+import { Link } from '@/components/common/link/link';
 import { wrapper } from '@store';
 import { signUpConfirmationStatusSelector } from '@store/client';
 import { signUpActions } from '@store/client/sign-up/slice';

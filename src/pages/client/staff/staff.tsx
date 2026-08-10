@@ -2,10 +2,15 @@ import React, { useCallback, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { AssignUserDrawer } from '@/components';
+import { AssignUserDrawer } from '@/components/client/staff/assign-user-drawer/assign-user-drawer';
+import { Button } from '@/components/common/button/button';
+import { CreateEditStaffDrawer } from '@/components/client/staff/create-edit-staff-drawer/create-edit-staff-drawer';
+import { DeleteUserPopup } from '@/components/client/staff/delete-user-popup/delete-user-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { InviteUserDrawer } from '@/components/client/staff/invite-user-drawer/invite-user-drawer';
+import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-filters';
+import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
 import { StaffTableView } from '@/components/client/staff/staff-filters/staff-filters.types';
-import { Button, CreateEditStaffDrawer, DeleteUserPopup, getMainLayout, StaffFiltersForm, StaffTable } from '@components';
 import { useUsersPage } from '@hooks';
 import { PlusCircleIcon, SendIcon } from '@icons';
 import { useAppDispatch } from '@store';

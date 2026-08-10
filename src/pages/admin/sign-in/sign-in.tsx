@@ -4,7 +4,10 @@ import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 
 import { UserRoleGroup } from '@/enums';
-import { Button, getAdminAuthLayout, Link, SignInErrorAlert } from '@components';
+import { Button } from '@/components/common/button/button';
+import { getAdminAuthLayout } from '@/components/admin/auth-layout/auth-layout';
+import { Link } from '@/components/common/link/link';
+import { SignInErrorAlert } from '@/components/common/sign-in-error-alert/sign-in-error-alert';
 import { FormControl, InputLabel, PasswordField, TextField } from '@fields';
 import { useAppDispatch, useAppSelector, wrapper } from '@store';
 import { SignInFormData, signInFormSubmit, signInFormSubmitErrorMessageSelector, signInFormSubmitStatusSelector } from '@store/client';

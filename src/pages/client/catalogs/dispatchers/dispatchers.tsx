@@ -1,7 +1,11 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { CatalogList, CatalogPageHeader, CatalogPageLayout, DispatcherItem, getMainLayout } from '@components';
+import { CatalogList } from '@/components/client/catalogs/catalog-list/catalog-list';
+import { CatalogPageHeader } from '@/components/client/catalogs/catalog-page-header/catalog-page-header';
+import { CatalogPageLayout } from '@/components/client/catalogs/catalog-page-layout/catalog-page-layout';
+import { DispatcherItem } from '@/components/client/catalogs/catalog-item/catalog-item';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useDispatchersCatalogPage } from '@hooks';
 import { DispatcherCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';

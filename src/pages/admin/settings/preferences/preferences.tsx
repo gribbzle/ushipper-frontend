@@ -1,8 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { FuelCardsPreferences, RegistrationPreferences, TransactionPreferences } from '@components';
-import { getMainLayout } from '@components';
+import { FuelCardsPreferences } from '@/components/admin/settings/preferences/fuel-cards/fuel-cards';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { RegistrationPreferences } from '@/components/admin/settings/preferences/registration/registration';
+import { TransactionPreferences } from '@/components/admin/settings/preferences/transaction/transaction';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

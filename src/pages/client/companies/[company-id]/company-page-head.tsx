@@ -3,7 +3,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { Button, PageHeader } from '@/components';
+import { Button } from '@/components/common/button/button';
+import { PageHeader } from '@/components/common/page-header/page-header';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
 import { LinkIcon } from '@icons';
 import { useAppSelector } from '@store';

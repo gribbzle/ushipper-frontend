@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { CompanyOrdersTable, CompanyPageHead, getMainLayout } from '@components';
+import { CompanyOrdersTable } from '@/components/admin/companies/company-orders-table/company-orders-table';
+import { CompanyPageHead } from '@/components/admin/companies/company-page-head/company-page-head';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { classname } from '@utils/classname';
 
 import './show.scss';

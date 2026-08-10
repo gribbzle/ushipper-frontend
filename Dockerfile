@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json ./
-RUN npm_config_build_from_source=true npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
 FROM node:20-slim AS app
 WORKDIR /application

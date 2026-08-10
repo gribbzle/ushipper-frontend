@@ -87,14 +87,6 @@ const nextConfig = {
         // Configurate configs for client side
         config.resolve.alias.config$ = require.resolve('./config/config-plugin.js');
 
-        // Ensure path aliases from tsconfig.json are resolved correctly
-        config.resolve.alias['@api'] = path.resolve(__dirname, 'src/api');
-        config.resolve.alias['@api/'] = path.resolve(__dirname, 'src/api');
-        config.resolve.alias['@hooks'] = path.resolve(__dirname, 'src/hooks');
-        config.resolve.alias['@hooks/'] = path.resolve(__dirname, 'src/hooks');
-        config.resolve.alias['@utils'] = path.resolve(__dirname, 'src/utils');
-        config.resolve.alias['@utils/'] = path.resolve(__dirname, 'src/utils');
-
         config.module.rules.push({
             test: /\.svg$/i,
             issuer: /\.[jt]sx?$/,
@@ -138,4 +130,6 @@ const sentryWebpackPluginOptions = {
     injectSentryVersion: false,
 };
 
-module.exports = withSentryConfig(nextConfig, sentryWebpackPluginOptions);
+module.exports = process.env.NODE_ENV === 'production'
+    ? withSentryConfig(nextConfig, sentryWebpackPluginOptions)
+    : nextConfig;

@@ -2,16 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 
 import { AcceptJobOfferModal } from '@/components/client/job-offers/accept-job-offer-modal/accept-job-offer-modal';
-import {
-    DeclineJobOfferModal,
-    EmptyLayout,
-    getMainLayout,
-    JobOfferItem,
-    JobOffersFilters,
-    Paginate,
-    SendJobOfferDrawer,
-    ViewJobOfferDrawer,
-} from '@components';
+import { DeclineJobOfferModal } from '@/components/client/job-offers/decline-job-offer-modal/decline-job-offer-modal';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { JobOfferItem } from '@/components/client/job-offers/job-offer-item/job-offer-item';
+import { JobOffersFilters } from '@/components/client/job-offers/job-offers-filters/job-offers-filters';
+import { Paginate } from '@/components/common/paginate/paginate';
+import { SendJobOfferDrawer } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-drawer';
+import { ViewJobOfferDrawer } from '@/components/client/job-offers/view-job-offer-drawer/view-job-offer-drawer';
 import { useJobOffers } from '@hooks';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

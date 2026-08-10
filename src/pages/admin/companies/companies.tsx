@@ -1,7 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { Button, CompaniesFilters as CompaniesFiltersComponent, CompaniesTable, CreateEditCompanyDrawer, DeleteCompanyPopup, getMainLayout } from '@components';
+import { Button } from '@/components/common/button/button';
+import { CompaniesFilters as CompaniesFiltersComponent } from '@/components/admin/companies/companies-filters/companies-filters';
+import { CompaniesTable } from '@/components/admin/companies/companies-table/companies-table';
+import { CreateEditCompanyDrawer } from '@/components/admin/companies/create-edit-company-drawer/create-edit-company-drawer';
+import { DeleteCompanyPopup } from '@/components/admin/companies/delete-company-popup/delete-company-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useCompaniesActionsPermission, useOpenCreateCompanyDrawer } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';

@@ -2,7 +2,13 @@ import React, { useCallback, useMemo } from 'react';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation';
 
-import { Button, ContactSearch, ContactsTable, CreateEditContactDrawer, DeleteContactPopup, getMainLayout, Paper } from '@components';
+import { Button } from '@/components/common/button/button';
+import { ContactSearch } from '@/components/client/contacts/contact-search/contact-search';
+import { ContactsTable } from '@/components/client/contacts/contacts-table/contacts-table';
+import { CreateEditContactDrawer } from '@/components/client/contacts/creat-edit-contact-drawer/create-edit-contacts-drawer';
+import { DeleteContactPopup } from '@/components/client/contacts/delete-contact-popup/delete-contact-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { Paper } from '@/components/common/paper/paper';
 import { useEffectOnce } from '@hooks';
 import { ExternalLinkIcon, PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

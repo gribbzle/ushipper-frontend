@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 
 import Header from '@/components/client/orders/edit/header';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
-import { getMainLayout, OrderGeneralForm } from '@components';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { OrderGeneralForm } from '@/components/client/orders/forms/order-general-form/order-general-form';
 import { useIsPartnerCompany } from '@hooks';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { classname } from '@utils/classname';

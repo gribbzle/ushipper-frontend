@@ -2,7 +2,12 @@ import React, { useCallback, useEffect, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { Field, Form } from 'react-final-form';
 
-import { AlertBlock, AuthPageHeader, ControlsActions, getProductInfoLayout, GoToSignInButton, SignUpBlock } from '@components';
+import { AlertBlock } from '@/components/common/alert-block/alert-block';
+import { AuthPageHeader } from '@/components/common/auth-page-header/auth-page-header';
+import { ControlsActions } from '@/components/client/password-recovery/controls-actions/controls-actions';
+import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';
+import { GoToSignInButton } from '@/components/common/go-to-sign-in-button/go-to-sign-in-button';
+import { SignUpBlock } from '@/components/client/sign-in/sign-up-block/sign-up-block';
 import { StringInput } from '@fields';
 import { useAppDispatch, useAppSelector } from '@store';
 import { requestResetFormErrorSelector, requestResetFormSubmit, requestResetFormSubmitStatusSelector, RequestResetPasswordData } from '@store/common';

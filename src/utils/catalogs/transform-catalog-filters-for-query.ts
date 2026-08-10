@@ -1,5 +1,5 @@
 import { CatalogListTabsEnum } from '@/enums';
-import { CatalogFiltersForUrlParams } from '@components';
+import { CatalogFiltersForUrlParams } from '@/components/client/catalogs/catalog-filters-tabs/catalog-filters-tabs.types';
 import { BaseCatalogFiltersParams } from '@store/client';
 
 const statusToFieldMap = new Map<CatalogListTabsEnum, keyof BaseCatalogFiltersParams>([

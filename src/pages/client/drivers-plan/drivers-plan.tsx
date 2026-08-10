@@ -1,7 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { BetweenPhonesChatDrawer, DriversList, getMainLayout, LoadboardNoticePopup, OrderChatDrawer, ParsedOrderDetailsDrawer } from '@components';
+import { BetweenPhonesChatDrawer } from '@/components/common/between-phones-chat-drawer/between-phones-chat-drawer';
+import { DriversList } from '@/components/client/drivers-plan/drivers-list/drivers-list';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { LoadboardNoticePopup } from '@/components/client/loadboard/loadboard-notice-popup/loadboard-notice-popup';
+import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer/order-chat-drawer';
+import { ParsedOrderDetailsDrawer } from '@/components/client/loadboard/parsed-order-details-drawer/parsed-order-details-drawer';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

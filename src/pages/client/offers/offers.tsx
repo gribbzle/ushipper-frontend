@@ -2,14 +2,19 @@ import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 
 import DeclineModal from '@/components/client/offers/decline-modal/decline-modal';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { OfferItem } from '@/components/client/offers/offer-item/offer-item';
+import { OffersFilters } from '@/components/client/offers/offers-filters/offers-filters';
 import OfferDrawer from '@/components/client/offers/offer-drawer/offer-drawer';
+import { Paginate } from '@/components/common/paginate/paginate';
 import { OffersListTabsEnum } from '@/enums';
-import { EmptyLayout, getMainLayout, OfferItem, OffersFilters, Paginate, useOffersFilters } from '@components';
 import { useMeShipper, useUserRoleGroup } from '@hooks';
 import { OffersStatistic, useGetOffersQuery, useGetOffersStatisticQuery } from '@store/api/order-offers';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
+import { useOffersFilters } from '@/components/client/offers/offers-filters/use-offer-filters';
 
 import './offers.scss';
 

@@ -2,7 +2,12 @@ import React, { useCallback } from 'react';
 import Head from 'next/head';
 
 import { UserRoleGroup } from '@/enums';
-import { Button, CreateEditStaffDrawer, DeleteUserPopup, getMainLayout, StaffFiltersForm, StaffTable } from '@components';
+import { Button } from '@/components/common/button/button';
+import { CreateEditStaffDrawer } from '@/components/client/staff/create-edit-staff-drawer/create-edit-staff-drawer';
+import { DeleteUserPopup } from '@/components/client/staff/delete-user-popup/delete-user-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-filters';
+import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
 import { useUsersPage } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';

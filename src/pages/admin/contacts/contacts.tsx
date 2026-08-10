@@ -1,7 +1,11 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { ContactSearch, ContactsTable, CreateEditContactDrawer, EmptyLayout, getMainLayout } from '@components';
+import { ContactSearch } from '@/components/client/contacts/contact-search/contact-search';
+import { ContactsTable } from '@/components/client/contacts/contacts-table/contacts-table';
+import { CreateEditContactDrawer } from '@/components/client/contacts/creat-edit-contact-drawer/create-edit-contacts-drawer';
+import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

@@ -5,27 +5,25 @@ import { toast } from 'react-toastify';
 
 import { ReviewReplyDrawer } from '@/components/client/company/review-reply-drawer';
 import { OrderSortingDirection, ReviewTabsEnum } from '@/enums';
-import {
-    CompanyAvgDetailsRatingPaper,
-    CompanyBriefPaper,
-    CompanyContactInfoPaper,
-    CompanyFMCSAInfo,
-    CompanyInfo,
-    CompanyOverallRatingPaper,
-    CompanyReviewFilters,
-    CompanyStaticticsChartBlock,
-    DispatcherInfo,
-    getAllFiltersFromUrlParams,
-    getMainLayout,
-    getReviewsFiltersFromUrlParams,
-    Paginate,
-    Paper,
-    ReviewFiltersFormState,
-    ReviewFiltersTabFromUrlParams,
-    ReviewsList,
-    ReviewsNoData,
-    SendJobOfferDrawer,
-} from '@components';
+import { CompanyAvgDetailsRatingPaper } from '@/components/client/company/papers/company-avg-details-rating-paper/company-avg-details-rating-paper';
+import { CompanyBriefPaper } from '@/components/client/company/papers/company-brief-paper/company-brief-paper';
+import { CompanyContactInfoPaper } from '@/components/client/company/papers/company-contact-info-paper/company-contact-info-paper';
+import { CompanyFMCSAInfo } from '@/components/client/company/papers/company-fmcsa-info/company-fmcsa-info-paper';
+import { CompanyInfo } from '@/components/client/company/papers/company-info-paper/company-info-paper';
+import { CompanyOverallRatingPaper } from '@/components/client/company/papers/company-overall-rating-paper/company-overall-rating-paper';
+import { CompanyReviewFilters } from '@/components/client/company/company-review-filters/company-review-filters';
+import { CompanyStaticticsChartBlock } from '@/components/client/company/company-statistics-chart-block/company-statistics-chart-block';
+import { DispatcherInfo } from '@/components/client/company/dispatcher-info/dispatcher-info';
+import { getAllFiltersFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { getReviewsFiltersFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
+import { Paginate } from '@/components/common/paginate/paginate';
+import { Paper } from '@/components/common/paper/paper';
+import { ReviewFiltersFormState } from '@/components/client/company/company-review-filters/company-review-filters';
+import { ReviewFiltersTabFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
+import { ReviewsList } from '@/components/client/company/reviews-list/reviews-list';
+import { ReviewsNoData } from '@/components/client/company/reviews-no-data/reviews-no-data';
+import { SendJobOfferDrawer } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-drawer';
 import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fetchCompanyAction, fetchedCompanySelector } from '@store/admin';

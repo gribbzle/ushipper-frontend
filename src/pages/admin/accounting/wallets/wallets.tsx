@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { AccountingPageLayout, CreateWalletPopup, getMainLayout, WalletsFilters, WalletsPageHead, WalletsTable } from '@components';
+import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';
+import { CreateWalletPopup } from '@/components/admin/accounting/wallets/create-wallet-popup/create-wallet-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { WalletsFilters } from '@/components/admin/accounting/wallets/wallets-filters/wallets-filters';
+import { WalletsPageHead } from '@/components/admin/accounting/wallets/wallets-page-head/wallets-page-head';
+import { WalletsTable } from '@/components/admin/accounting/wallets/wallets-table/wallets-table';
 
 const WalletsPage = () => (
     <AccountingPageLayout>

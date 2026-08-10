@@ -1,7 +1,11 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { Button, CreateUpdateRoleBlock, DeleteRolePopup, getMainLayout, RolesTable } from '@components';
+import { Button } from '@/components/common/button/button';
+import { CreateUpdateRoleBlock } from '@/components/common/settings/roles/create-update-role-block/create-update-role-block';
+import { DeleteRolePopup } from '@/components/common/settings/roles/delete-role-popup/delete-role-popup';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
+import { RolesTable } from '@/components/common/settings/roles/roles-table/roles-table';
 import { useEffectOnce } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';

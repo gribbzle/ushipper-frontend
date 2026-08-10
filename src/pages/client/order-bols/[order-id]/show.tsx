@@ -2,7 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { getFreeAccessLayout, Link, OrderBolDamageCode, OrderBolDetails, OrderBOLHeaderButtons, OrderBolVehiclesInspections } from '@components';
+import { getFreeAccessLayout } from '@/components/common/free-access-layout/free-access-layout';
+import { Link } from '@/components/common/link/link';
+import { OrderBolDamageCode } from '@/components/client/order-bols/order-bol-damage-code/order-bol-damage-code';
+import { OrderBolDetails } from '@/components/client/order-bols/order-bol-details/order-bol-details';
+import { OrderBOLHeaderButtons } from '@/components/client/order-bols/order-BOL-header-buttons/order-BOL-header-buttons';
+import { OrderBolVehiclesInspections } from '@/components/client/order-bols/order-bol-vehicles-inspections/order-bol-vehicles-inspections';
 import { useAppSelector } from '@store';
 import { useGetOrderBolQuery } from '@store/api/order-bol-api';
 import { OrderBOLSelector } from '@store/client/order-BOL';

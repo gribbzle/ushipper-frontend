@@ -1,7 +1,11 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { CarrierItem, CatalogList, CatalogPageHeader, CatalogPageLayout, getMainLayout } from '@components';
+import { CarrierItem } from '@/components/client/catalogs/catalog-item/catalog-item';
+import { CatalogList } from '@/components/client/catalogs/catalog-list/catalog-list';
+import { CatalogPageHeader } from '@/components/client/catalogs/catalog-page-header/catalog-page-header';
+import { CatalogPageLayout } from '@/components/client/catalogs/catalog-page-layout/catalog-page-layout';
+import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useCarriersCatalogPage } from '@hooks';
 import { CarriersCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
