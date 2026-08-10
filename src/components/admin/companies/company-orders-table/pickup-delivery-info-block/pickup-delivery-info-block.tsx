@@ -1,7 +1,8 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderRoute, OrderTag } from '@/components/client';
+import { OrderRoute } from '@/components/client/orders/order-route/order-route';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';

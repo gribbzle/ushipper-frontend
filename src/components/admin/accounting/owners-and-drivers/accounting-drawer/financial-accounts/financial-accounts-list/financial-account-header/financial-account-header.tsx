@@ -1,7 +1,7 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderTag } from '@/components/client';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { BalanceType } from '@/enums';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

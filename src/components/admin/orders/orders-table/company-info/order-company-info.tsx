@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { CompanyLogo } from '@/components/client';
+import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
 import { useOrder, useOrderHelpers } from '@/hooks/order';
 import { NoPhotoIcon } from '@icons';
 import { classname } from '@utils/classname';

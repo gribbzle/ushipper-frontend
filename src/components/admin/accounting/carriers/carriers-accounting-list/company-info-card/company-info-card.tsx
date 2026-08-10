@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { CompanyLogo } from '@/components/client';
+import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
 import { CompanyFeesInfo, CompanyStatusInfo, Link, Tag } from '@/components/common';
 import { GroupIcon, TruckIcon } from '@/components/common/main-layout/sidebar/icons';
 import { TotalRatingBlock } from '@/components/common/total-rating-block';
