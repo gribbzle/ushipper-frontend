@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { UserTrackingContext } from '@providers';
+import { UserTrackingContext } from '@/providers/UserTrackingProvider';
 import { UserTracking } from '@store/client';
 
 export const useUserTracking = (): UserTracking => {

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { PhotoView } from 'react-photo-view';
 
 import { EyeIcon } from '@icons';
-import { ImageProvider, ImageProviderContext } from '@providers';
+import { ImageProvider, ImageProviderContext } from '@/providers/ImageProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

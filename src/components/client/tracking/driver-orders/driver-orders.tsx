@@ -5,7 +5,7 @@ import { Button } from '@/components/common/button/button';
 import { UserRoleGroup } from '@enums';
 import { useDriverTrackingMap, useTracking, useUserRoleGroup, useUserTracking } from '@hooks';
 import { LineBrokenIcon } from '@icons';
-import { OrderTrackingProvider } from '@providers';
+import { OrderTrackingProvider } from '@/providers/OrderTrackingProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatMetersToMiles } from '@utils/numbers';

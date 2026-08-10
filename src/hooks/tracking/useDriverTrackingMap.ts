@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { DriverTrackingMapContext, DriverTrackingMapContextType } from '@providers';
+import { DriverTrackingMapContext, DriverTrackingMapContextType } from '@/providers/DriverTrackingMapProvider';
 
 export const useDriverTrackingMap = (): DriverTrackingMapContextType => {
     const context = useContext(DriverTrackingMapContext);

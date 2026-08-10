@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { PublicIdContext } from '@providers';
+import { PublicIdContext } from '@/providers/PublicIdProvider';
 
 export const usePublicId = () => {
     const context = useContext(PublicIdContext);

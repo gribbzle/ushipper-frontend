@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
 import { useInstantPaymentAttachments, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { classname } from '@utils/classname';
 
 import { OrderDriverPaymentTag } from '../order-driver-payment-tag';

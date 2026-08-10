@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { OrderTrackingContext } from '@providers';
+import { OrderTrackingContext } from '@/providers/OrderTrackingProvider';
 import { OrderTracking } from '@store/client';
 
 export const useOrderTracking = (): OrderTracking => {

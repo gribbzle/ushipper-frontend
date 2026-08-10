@@ -5,7 +5,7 @@ import { useHandleViewBol } from '@/hooks/order';
 import { Attachment } from '@/shared';
 import { fetchOrderBOL } from '@api';
 import { AttachmentType, OrderSortingDirection } from '@enums';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { useAppDispatch } from '@store';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';
 import { viewersActions } from '@store/common/viewers';

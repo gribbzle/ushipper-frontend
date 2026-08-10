@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/common/button/button';
 import { getArchiveOfInspectionCarBodyPhotos } from '@api';
 import { DownloadIcon } from '@icons';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { InspectionPhoto } from '@store/client/order-BOL';
 import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';

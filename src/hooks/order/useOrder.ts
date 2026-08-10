@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { OrderContext } from '@providers';
+import { OrderContext } from '@/providers/OrderProvider';
 import { Load } from '@store/client';
 
 export const useOrder = (): Load => {

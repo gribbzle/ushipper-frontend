@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { DriversTrackingMap } from '@/components/client/tracking/drivers-tracking-map/drivers-tracking-map';
-import { DriverTrackingMapProvider } from '@providers';
+import { DriverTrackingMapProvider } from '@/providers/DriverTrackingMapProvider';
 import { useAppSelector } from '@store';
 import { fetchedSelectedDriverIdSelector } from '@store/client';
 

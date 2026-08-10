@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { IssueContext } from '@providers';
+import { IssueContext } from '@/providers/IssueProvider';
 import { IssueData } from '@store/api/issues-api';
 
 export const useIssue = (): IssueData => {

@@ -29,7 +29,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/too
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { AttachmentType, BalanceType, OrderType } from '@enums';
 import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
-import { OrderProvider } from '@providers';
+import { OrderProvider } from '@/providers/OrderProvider';
 import { GetOrdersData } from '@store/api/orders-api';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

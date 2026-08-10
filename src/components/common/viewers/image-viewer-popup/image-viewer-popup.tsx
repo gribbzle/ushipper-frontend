@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { CancelButton } from '@/components/common/button/CancelButton';
 import { DownloadButton } from '@/components/common/button/DownloadButton';
 import { Popup } from '@/components/common/popup/popup';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { useAppDispatch, useAppSelector } from '@store';
 import { imageViewerPopupSelector, viewersActions } from '@store/common/viewers';
 import { ImageView } from '@/components/ui/surfaces/image';

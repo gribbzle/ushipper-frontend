@@ -4,7 +4,8 @@ import { DriverMarker } from '@/components/client/tracking/drivers-tracking-map/
 import { Button } from '@/components/common/button/button';
 import { MapBox } from '@/components/common/MapBox/MapBox';
 import { Popup } from '@/components/common/popup/popup';
-import { DriverTrackingMapProvider, UserTrackingProvider } from '@providers';
+import { DriverTrackingMapProvider } from '@/providers/DriverTrackingMapProvider';
+import { UserTrackingProvider } from '@/providers/UserTrackingProvider';
 import { useAppSelector } from '@store';
 import { driversMapPopupPropsSelector } from '@store/admin';
 import { useGetTrackingQuery } from '@store/api/users-api';

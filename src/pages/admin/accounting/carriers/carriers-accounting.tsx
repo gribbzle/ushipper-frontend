@@ -8,7 +8,7 @@ import { CreateEditCompanyDrawer } from '@/components/admin/companies/create-edi
 import { DeleteCompanyPopup } from '@/components/admin/companies/delete-company-popup/delete-company-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { useCarriersActionsPermission, useCompaniesActionsPermission } from '@hooks';
-import { PublicIdProvider } from '@providers';
+import { PublicIdProvider } from '@/providers/PublicIdProvider';
 import { useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 

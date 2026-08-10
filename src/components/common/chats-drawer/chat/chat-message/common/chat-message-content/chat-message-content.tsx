@@ -2,7 +2,7 @@ import React from 'react';
 
 import useMessageContent from '@/hooks/chat/use-message-content';
 import { convertBytesToMB } from '@/utils/converter';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';

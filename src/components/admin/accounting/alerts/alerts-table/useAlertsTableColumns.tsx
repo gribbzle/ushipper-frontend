@@ -6,7 +6,9 @@ import { DateInfo } from '@/components/common/table/common/date-info/date-info';
 import { OrderPriceInfo } from '@/components/common/table/common/order-price-info/order-price-info';
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { ImageProvider, IssueProvider, OrderProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
+import { IssueProvider } from '@/providers/IssueProvider';
+import { OrderProvider } from '@/providers/OrderProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

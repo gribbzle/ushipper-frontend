@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-image';
 import { useInstantPaymentAttachments } from '@/hooks/order';
 import { Attachment } from '@/shared';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
 import { FileClipButton } from '@/components/ui/data-display/file-clip-button';

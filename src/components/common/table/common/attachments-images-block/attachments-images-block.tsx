@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-image';
 import { useInstantPaymentAttachments } from '@/hooks/order';
-import { ImageProvider } from '@providers';
+import { ImageProvider } from '@/providers/ImageProvider';
 import { FileClipButton } from '@/components/ui/data-display/file-clip-button';
 import { getLastVisibleAttachmentOverlayText, SplitAttachmentsResult, splitAttachmentsWithPdfLimit } from '@utils/attachments';
 import { classname } from '@utils/classname';

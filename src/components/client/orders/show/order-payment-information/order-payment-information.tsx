@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useHasPartnerCompanies, useIsPartnerCompany, useMeAdmin, useMeCarrier, useMeDriverRelated } from '@hooks';
-import { OrderProvider } from '@providers';
+import { OrderProvider } from '@/providers/OrderProvider';
 import { useAppSelector } from '@store';
 import { orderDriverSelector, orderSelector } from '@store/client';
 import { classname } from '@utils/classname';
