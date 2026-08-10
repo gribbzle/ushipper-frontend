@@ -2,7 +2,7 @@ import { MouseEvent, useCallback } from 'react';
 import { toast } from 'react-toastify';
 
 import { useCheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/use-checking-contract-popup';
-import { useParsedOrderSettingsError } from '@hooks';
+import { useParsedOrderSettingsError } from '@/hooks/loadboard/use-parsed-order-settings-error';
 import { useAppDispatch } from '@store';
 import { useLazyGetExternalOrdersQuery } from '@store/api/external-orders-api';
 import { LoadBoardFilters } from '@store/api/loadboard-api';

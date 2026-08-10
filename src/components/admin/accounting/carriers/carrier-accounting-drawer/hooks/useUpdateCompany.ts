@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { usePublicId } from '@hooks';
+import { usePublicId } from '@/hooks/usePublicId';
 import { usePathCompanyJSONMutation } from '@store/api/company-api';
 import { handleError } from '@utils/handle-error';
 import { translateByNamespace } from '@utils/i18n';

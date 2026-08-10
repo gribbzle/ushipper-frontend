@@ -1,7 +1,8 @@
 import { useCallback, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 
-import { useHandleFiltersChange, useQueryFilters } from '@hooks';
+import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useAppDispatch } from '@store';
 import { ShipperTrackingFiltersFormState, trackingActions } from '@store/client';
 import { convertToStringArray } from '@utils/converter';

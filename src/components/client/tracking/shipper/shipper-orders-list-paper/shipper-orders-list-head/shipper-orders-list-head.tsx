@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { useHandleFiltersChange, useQueryFilters } from '@hooks';
+import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { ShipperTrackingFiltersFormState } from '@store/client';
 import { SegmentedControl } from '@/components/ui/panel/SegmentedControl';
 import { classname } from '@utils/classname';

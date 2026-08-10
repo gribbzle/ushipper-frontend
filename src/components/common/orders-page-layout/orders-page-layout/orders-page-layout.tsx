@@ -9,7 +9,7 @@ import { CreateEditOrderInternalNotePopup } from '@/components/client/orders/pop
 import { DeleteOrderPopup } from '@/components/client/orders/popups/delete-order-popup/delete-order-popup';
 import { StatisticCounters } from '@/components/client/orders/statistic-counters/statistic-counters';
 import { BackLink } from '@/components/common/back-link/back-link';
-import { useMeDriverRelated } from '@hooks';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { translateOrderStatisticsGroup } from '@utils/translate/order/translations';

@@ -4,7 +4,10 @@ import { FormApi } from 'final-form';
 import { useSelector } from 'react-redux';
 
 import parseValidationFields from '@/utils/parse-validation-fields';
-import { useEffectOnce, useIsPartnerCompany, useMeAdmin, useMeOwner } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
+import { useMeOwner } from '@/hooks/use-user-role-type';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createEditUserFormSubmit, createEditUserModalModeSelector, fetchedUserSelector, fetchUserRolesAction, userRolesSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';

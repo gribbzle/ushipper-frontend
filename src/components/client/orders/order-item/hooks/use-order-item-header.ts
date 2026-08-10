@@ -1,7 +1,8 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { useIsPartnerCompany, useMeCarrier } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { useDeleteOrderFlagMutation } from '@store/api/orders-api';
 import { translateByNamespace } from '@utils/i18n';
 

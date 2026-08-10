@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useOrderPaymentInformationHelpers } from '@/hooks/order';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 
 import { BlockWrapper } from '../block-wrapper';

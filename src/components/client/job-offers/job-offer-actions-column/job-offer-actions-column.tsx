@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { JobOffer } from '@store/client';
 import { classname } from '@utils/classname';
 

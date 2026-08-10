@@ -19,7 +19,7 @@ import { OrdersPageLayout } from '@/components/common/orders-page-layout/orders-
 import { RequestsDrawer } from '@/components/client/requests/requests-drawer/requests-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
 import { UploadOrderLoader } from '@/components/client/orders/upload-order-loader/upload-order-loader';
-import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@hooks';
+import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { PlusCircleIcon, UploadIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

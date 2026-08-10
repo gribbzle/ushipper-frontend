@@ -9,7 +9,7 @@ import { OffersFilters } from '@/components/client/offers/offers-filters/offers-
 import OfferDrawer from '@/components/client/offers/offer-drawer/offer-drawer';
 import { Paginate } from '@/components/common/paginate/paginate';
 import { OffersListTabsEnum } from '@/enums/offers-list-tabs-enum';
-import { useMeShipper, useUserRoleGroup } from '@hooks';
+import { useMeShipper, useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { OffersStatistic, useGetOffersQuery, useGetOffersStatisticQuery } from '@store/api/order-offers';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

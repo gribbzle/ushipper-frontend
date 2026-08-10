@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { TransactionSystemEnum } from '@/enums/preferences/transaction-system-enum';
-import { useHandleTransactionError } from '@hooks';
+import { useHandleTransactionError } from '@/hooks/accounting/use-handle-transaction-error';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { transactionsApi, useUpdateTransactionMutation } from '@store/api/transactions-api';

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { BalanceType } from '@/enums/balance-type';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
-import { useAsyncSelect } from '@hooks';
+import { useAsyncSelect } from '@/hooks/selects/use-async-select';
 import { FinancialBalanceData } from '@store/admin';
 import { useLazyGetBalanceQuery, useLazyGetBalancesQuery } from '@store/api/balances-api';
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
 
-import { useMeDriverRelated } from '@hooks';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetAccountQuery } from '@store/api/accounts-api';
 import { accountsActions, accountsUsersSelector } from '@store/client/accounts';

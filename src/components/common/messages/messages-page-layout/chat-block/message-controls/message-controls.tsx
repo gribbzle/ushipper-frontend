@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { debounce } from 'debounce';
 
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
-import { useTimeoutManager } from '@hooks';
+import { useTimeoutManager } from '@/hooks/use-timeout-manager';
 import { AttachIcon, SendFilledIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { sendMessageAction } from '@store/common';

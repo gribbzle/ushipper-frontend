@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { useHandleOpenAccountingDrawerClick } from '@hooks';
+import { useHandleOpenAccountingDrawerClick } from '@/hooks/accounting/use-handle-open-accounting-drawer-click';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 
 export const useOnRowClickHandler = () => {

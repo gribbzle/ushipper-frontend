@@ -11,7 +11,7 @@ import {
 } from '@/components/admin/accounting/common/fees-fields-wrapper';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee, FeeData } from '@types';
 import { classname } from '@utils/classname';

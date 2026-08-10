@@ -2,7 +2,8 @@ import React from 'react';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
-import { useIssue, useTransactionActionsPermission } from '@hooks';
+import { useIssue } from '@/hooks/issue/useIssue';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { ArrowDownIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';

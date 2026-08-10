@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { useDebouncedGetChats } from '@hooks';
+import { useDebouncedGetChats } from '@/hooks/chat/use-debounced-get-chats';
 import { useAppDispatch, useAppSelector } from '@store';
 import { drawerChatsSelector, getChatsRequestSelector, isChatsDrawerOpenSelector, selectedChatIdSelector } from '@store/common';
 import { ChatsDrawerSliceState } from '@store/common/chats/types';

@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 
-import { useIssue, useIssueHelpers } from '@hooks';
+import { useIssue } from '@/hooks/issue/useIssue';
+import { useIssueHelpers } from '@/hooks/issue/useIssueHelpers';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
 import { classname } from '@utils/classname';

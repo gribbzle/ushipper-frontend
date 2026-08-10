@@ -6,7 +6,7 @@ import { FeesFieldsWrapper } from '@/components/admin/accounting/common/fees-fie
 import { Button } from '@/components/common/button/button';
 import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
 import { FeePeriod } from '@/enums/fee/fee-periods-enum';
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

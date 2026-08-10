@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useGetCompanyData } from '@hooks';
+import { useGetCompanyData } from '@/hooks/companies/use-get-company-data';
 
 import { BusinessInfoCardFormType } from './business-info-card.types';
 

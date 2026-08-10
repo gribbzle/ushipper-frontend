@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { Form } from 'react-final-form';
 
 import { Paper } from '@/components/common/paper/paper';
-import { AppFilters } from '@hooks';
+import { AppFilters } from '@/hooks/filters/use-query-filters';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 

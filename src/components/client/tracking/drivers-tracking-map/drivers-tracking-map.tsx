@@ -3,7 +3,7 @@ import { useMap } from 'react-map-gl/mapbox';
 
 import { DriverList } from '@/components/client/tracking/DriverList/DriverList';
 import { MapBox } from '@/components/common/MapBox/MapBox';
-import { useDriverTrackingMap } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { UsersTrackingProvider } from '@/providers/UsersTrackingProvider';
 import { UserTrackingProvider } from '@/providers/UserTrackingProvider';
 import { useAppSelector } from '@store';

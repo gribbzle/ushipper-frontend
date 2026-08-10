@@ -6,7 +6,8 @@ import { ChatsSearch } from '@/components/common/chats-drawer/chats-search/chats
 import { EmptyChatsList } from '@/components/common/chats-drawer/empty-chats-list/empty-chats-list';
 import { Loader } from '@/components/common/loader/loader';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
-import { useDebouncedGetChats, useMeAdmin, useMeDriverRelated } from '@hooks';
+import { useDebouncedGetChats } from '@/hooks/chat/use-debounced-get-chats';
+import { useMeAdmin, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     chatsSearchTextSelector,

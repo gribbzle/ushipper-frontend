@@ -3,7 +3,8 @@ import React from 'react';
 import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { Paginate } from '@/components/common/paginate/paginate';
 import { CompanyType } from '@/enums/company-type';
-import { useQueryFilters, useTable } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
+import { useTable } from '@/hooks/use-table';
 import { useGetCompaniesQuery } from '@store/api/company-api';
 import { translateByNamespace } from '@utils/i18n';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
-import { Permission } from '@hooks';
+import { Permission } from '@/hooks/use-check-permission';
 
 export type Route = {
     name: string;

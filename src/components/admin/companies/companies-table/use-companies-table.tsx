@@ -7,7 +7,10 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { UsersCountInfo } from '@/components/common/table/common/users-count-info/users-count-info';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
-import { useCompaniesActionsPermission, useOpenDeleteCompanyPopup, useQueryFilters, useTable } from '@hooks';
+import { useCompaniesActionsPermission } from '@/hooks/companies/use-companies-actions-permission';
+import { useOpenDeleteCompanyPopup } from '@/hooks/companies/use-open-delete-company-popup';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
+import { useTable } from '@/hooks/use-table';
 import { useAppDispatch } from '@store';
 import { Company, fetchCompanyAction } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';

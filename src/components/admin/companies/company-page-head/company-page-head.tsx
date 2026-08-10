@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { useCompanyPage } from '@hooks';
+import { useCompanyPage } from '@/hooks/companies/use-company-page';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';
 

@@ -9,7 +9,7 @@ import { Paper } from '@/components/common/paper/paper';
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { getFinalPaymentAmount } from '@/utils/payment';
-import { useMeCarrier, useMeShipper } from '@hooks';
+import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

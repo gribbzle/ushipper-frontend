@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router';
 
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';
 

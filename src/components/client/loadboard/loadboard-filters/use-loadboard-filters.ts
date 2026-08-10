@@ -3,7 +3,10 @@ import { FormApi } from 'final-form';
 
 import { Filters } from '@/components/client/loadboard/loadboard-filters/types';
 import { areFiltersEqual } from '@/utils/filters';
-import { useHasPartnerCompanies, useIsPartnerCompany, useLoadboard, useMeDispatcher, useMeDriver } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useLoadboard } from '@/hooks/loadboard/use-loadboard';
+import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
 import { isSearchAlongRouteSelector, loadboardActions } from '@store/client/loadboard';

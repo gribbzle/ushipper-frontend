@@ -2,7 +2,8 @@ import { useCallback } from 'react';
 import { toSnakeCase } from 'js-convert-case';
 import { useRouter } from 'next/router';
 
-import { useMeAdmin, useMeOwner } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
+import { useMeOwner } from '@/hooks/use-user-role-type';
 import { useAppDispatch, useAppSelector } from '@store';
 import { User, usersFiltersSelector } from '@store/common';
 import { staffActions } from '@store/common/staff/slice';

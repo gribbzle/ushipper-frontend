@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { useRolesOptions } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-form/use-roles-options';
 import { UserRoleType } from '@/enums/user-role-type';
-import { useInvalidateSelectedAccountTags } from '@hooks';
+import { useInvalidateSelectedAccountTags } from '@/hooks/accounting/use-invalidate-selected-account-tags';
 import { useAppDispatch, useAppSelector } from '@store';
 import { addDriverToCompanyPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';

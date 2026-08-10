@@ -1,6 +1,6 @@
 import { MouseEvent, useCallback } from 'react';
 
-import { useOpenParsedOrderDetailsDrawer } from '@hooks';
+import { useOpenParsedOrderDetailsDrawer } from '@/hooks/navigation/useOpenParsedOrderDetailsDrawer';
 
 export const useChatMessageOrders = () => {
     const { handleParsedOrderClick } = useOpenParsedOrderDetailsDrawer();

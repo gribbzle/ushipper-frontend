@@ -11,7 +11,7 @@ import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { BalanceType } from '@/enums/balance-type';
 import { CompanyType } from '@/enums/company-type';
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { AccountingAccountData, accountingAccountsApi } from '@store/api/accounting-accounts-api';

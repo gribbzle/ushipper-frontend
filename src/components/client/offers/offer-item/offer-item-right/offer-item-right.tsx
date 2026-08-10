@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';

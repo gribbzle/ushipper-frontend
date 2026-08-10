@@ -9,7 +9,7 @@ import { CreateEditContactDrawer } from '@/components/client/contacts/creat-edit
 import { DeleteContactPopup } from '@/components/client/contacts/delete-contact-popup/delete-contact-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { Paper } from '@/components/common/paper/paper';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { ExternalLinkIcon, PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

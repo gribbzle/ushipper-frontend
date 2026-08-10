@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { useHandleFiltersChange, useQueryFilters } from '@/hooks';
+import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 
 import { FuelCardsFiltersFormState } from './fuel-cards-filters.types';
 

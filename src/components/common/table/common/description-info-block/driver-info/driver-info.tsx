@@ -2,7 +2,8 @@ import React from 'react';
 
 import { OpenSupportChatButton } from '@/components/common/chats/open-support-chat-button/open-support-chat-button';
 import { Link } from '@/components/common/link/link';
-import { useChatsPermission, useMeAdmin } from '@hooks';
+import { useChatsPermission } from '@/hooks/chat/use-chats-permission';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:balance-table');

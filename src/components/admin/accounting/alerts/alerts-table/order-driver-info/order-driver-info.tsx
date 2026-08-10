@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
+import { useDriversViewPermission } from '@/hooks/accounting/use-drivers-view-permission';
+import { useHandleOpenAccountingDrawerClick } from '@/hooks/accounting/use-handle-open-accounting-drawer-click';
 import { User } from '@store/client';
 
 export const OrderDriverInfo = ({ driver, showChatButton }: { driver?: User | null; showChatButton?: boolean }) => {

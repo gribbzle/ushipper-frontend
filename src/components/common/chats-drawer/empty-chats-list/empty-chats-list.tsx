@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { messagesActions } from '@store/client';

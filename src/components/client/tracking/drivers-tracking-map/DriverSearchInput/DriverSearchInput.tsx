@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
 
 import {StringInput} from '@/fields/string-input';
-import { useDriverTrackingMap } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { SearchIcon, XBigIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

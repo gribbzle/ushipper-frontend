@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
 import { Tag } from '@/components/common/tag/tag';
-import { useLoadboard } from '@hooks';
+import { useLoadboard } from '@/hooks/loadboard/use-loadboard';
 import { XIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { isSearchAlongRouteSelector, loadboardListSelector } from '@store/client/loadboard/selectors';

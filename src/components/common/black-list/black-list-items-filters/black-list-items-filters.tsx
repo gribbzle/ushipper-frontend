@@ -6,7 +6,7 @@ import { Field, Form } from 'react-final-form';
 
 import {FormControl} from '@/fields/form-control';
 import {TextField} from '@/fields/text-field';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { useAppDispatch } from '@store';
 import { fetchBlackListItemsAction } from '@store/client';
 import { blackListActions } from '@store/common/black-list/slice';

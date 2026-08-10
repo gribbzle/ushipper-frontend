@@ -8,7 +8,7 @@ import { Button } from '@/components/common/button/button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { OrderVehicle } from '@/shared/types';

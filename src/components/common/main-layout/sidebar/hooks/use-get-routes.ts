@@ -1,6 +1,8 @@
 import { useCallback, useMemo } from 'react';
 
-import { useCheckPermission, useIsPartnerCompany, useMeCarrierDriver } from '@hooks';
+import { useCheckPermission } from '@/hooks/use-check-permission';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeCarrierDriver } from '@/hooks/use-user-role-type';
 import { useAppSelector } from '@store';
 import { accountsUsersSelector } from '@store/client/accounts';
 import { translateByNamespace } from '@utils/i18n';

@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 
 import { BalanceType } from '@/enums/balance-type';
 import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
-import { useHandleTransactionError, useInvalidateSelectedAccountTags } from '@hooks';
+import { useHandleTransactionError } from '@/hooks/accounting/use-handle-transaction-error';
+import { useInvalidateSelectedAccountTags } from '@/hooks/accounting/use-invalidate-selected-account-tags';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createTransactionPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';

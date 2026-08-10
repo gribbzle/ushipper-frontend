@@ -9,7 +9,7 @@ import { OrdersPageLayout } from '@/components/common/orders-page-layout/orders-
 import { PageHeader } from '@/components/common/page-header/page-header';
 import { RequestsDrawer } from '@/components/client/requests/requests-drawer/requests-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch } from '@store';
 import { Load, ordersActions } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';

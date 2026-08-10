@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from '@/components/common/link/link';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { Transaction } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
 

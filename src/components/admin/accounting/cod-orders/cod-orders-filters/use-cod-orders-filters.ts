@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
-import { useHandleFiltersChange, useQueryFilters } from '@hooks';
+import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { AdminFormOrdersFilters } from '@types';
 import { convertToStringArray } from '@utils/converter';
 

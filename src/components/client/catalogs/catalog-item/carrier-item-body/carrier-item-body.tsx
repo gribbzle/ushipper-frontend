@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FlagButton } from '@/components/common/flag-button/flag-button';
-import { useShowCompanyPage } from '@hooks';
+import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { CarriersCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
 

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, isCreateAccountingProfileLoadingSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

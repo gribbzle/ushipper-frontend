@@ -5,7 +5,7 @@ import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
 import { RequestError } from '@/shared';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { useFuelTransactionsActionsPermission } from '@hooks';
+import { useFuelTransactionsActionsPermission } from '@/hooks/fuel/use-fuel-transactions-actions-permission';
 import { useAppDispatch } from '@store';
 import { fuelCardsApi, usePartiallyUpdateFuelTransactionMutation } from '@store/api/fuel-cards-api';
 import { translateByNamespace } from '@utils/i18n';

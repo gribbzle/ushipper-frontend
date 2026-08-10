@@ -6,7 +6,8 @@ import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-dra
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { useRedirectToOrder } from '@/hooks/order';
 import { formatToCurrency } from '@/utils/numbers';
-import { useMeCarrier, useMeShipper, useTimeoutManager } from '@hooks';
+import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
+import { useTimeoutManager } from '@/hooks/use-timeout-manager';
 import { useAppDispatch } from '@store';
 import {
     changeNotificationStatusAction,

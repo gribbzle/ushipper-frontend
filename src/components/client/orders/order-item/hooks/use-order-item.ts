@@ -6,7 +6,9 @@ import { OrderPaymentStatus } from '@/enums/order-payment-status';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { OrderStatus } from '@/enums/order-status';
 import { PaymentTerm } from '@/enums/payment-term';
-import { useHasPartnerCompanies, useIsPartnerCompany, useMeDriverRelated } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { Load } from '@store/client';
 

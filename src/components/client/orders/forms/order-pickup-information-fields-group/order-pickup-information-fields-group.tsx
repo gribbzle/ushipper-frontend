@@ -9,7 +9,7 @@ import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {StringInput} from '@/fields/string-input';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

@@ -4,7 +4,7 @@ import { DispatcherLanguages } from '@/components/common/dispatcher-languages/di
 import { InfoList } from '@/components/common/info-list/info-list';
 import { InfoListBody } from '@/components/common/info-list/info-list-body/info-list-body';
 import { Paper } from '@/components/common/paper/paper';
-import { useIsDriverOwnerPage } from '@hooks';
+import { useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
 import { useGetUserQuery } from '@store/api/users-api';

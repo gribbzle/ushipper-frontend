@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { useCreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/use-create-transaction-popup';
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { useTransactionActionsPermission } from '@hooks';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { PlusCircleIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

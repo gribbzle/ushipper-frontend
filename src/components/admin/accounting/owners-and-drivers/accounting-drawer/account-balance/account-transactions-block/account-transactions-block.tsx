@@ -2,7 +2,8 @@ import React, { useCallback } from 'react';
 
 import { useCreateTransactionPopup } from '@/components/admin/accounting/common/create-transaction-popup/use-create-transaction-popup';
 import { Button } from '@/components/common/button/button';
-import { useOpenTransactionsPage, useTransactionActionsPermission } from '@hooks';
+import { useOpenTransactionsPage } from '@/hooks/navigation/useOpenTransactionsPage';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { CreditCardIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, internalUserWalletFromSelectedAccountSelector } from '@store/admin';

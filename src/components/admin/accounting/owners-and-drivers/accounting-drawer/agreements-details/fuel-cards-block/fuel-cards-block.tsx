@@ -4,7 +4,8 @@ import { FuelCardLimits, FuelCardStatusTag, useOpenEditFuelCardPopup } from '@/c
 import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
 import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
-import { useFuelCardsActionsPermission, useFuelCardsViewPermission } from '@hooks';
+import { useFuelCardsActionsPermission } from '@/hooks/fuel/use-fuel-cards-actions-permission';
+import { useFuelCardsViewPermission } from '@/hooks/fuel/use-fuel-cards-view-permission';
 import { FuelCard } from '@store/admin';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

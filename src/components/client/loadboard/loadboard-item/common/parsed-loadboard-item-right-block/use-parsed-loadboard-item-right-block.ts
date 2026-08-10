@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 
 import { useParsedOrderActions } from '@/components/common/parsed-order-actions/use-parsed-order-actions';
-import { useMeCarrier, useMeCarrierDriver, useMeDispatcher, useMeDriverRelated } from '@hooks';
+import { useMeCarrier, useMeDispatcher, useMeDriverRelated } from '@/hooks/use-user-role-group';
+import { useMeCarrierDriver } from '@/hooks/use-user-role-type';
 import { useAppSelector } from '@store';
 import { authorizedUserPublicIdSelector } from '@store/global';
 import { diffForHumans } from '@utils/dates';

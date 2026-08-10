@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
 import { Button } from '@/components/common/button/button';
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { useAppDispatch } from '@store';
 import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';
 import { OrderOffer } from '@store/common/orders/types';

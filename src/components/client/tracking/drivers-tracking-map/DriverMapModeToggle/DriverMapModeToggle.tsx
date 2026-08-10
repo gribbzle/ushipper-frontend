@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useDriverTrackingMap } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { SegmentedControl } from '@/components/ui/panel/SegmentedControl';
 import { translateByNamespace } from '@utils/i18n';
 

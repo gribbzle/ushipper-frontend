@@ -6,7 +6,7 @@ import { CatalogPageHeader } from '@/components/client/catalogs/catalog-page-hea
 import { CatalogPageLayout } from '@/components/client/catalogs/catalog-page-layout/catalog-page-layout';
 import { DispatcherItem } from '@/components/client/catalogs/catalog-item/catalog-item';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useDriversCatalogPage } from '@hooks';
+import { useDriversCatalogPage } from '@/hooks/catalogs/use-drivers-catalog-page';
 import { DispatcherCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

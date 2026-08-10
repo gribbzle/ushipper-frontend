@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { VerifiedIcon } from '@/components/common/verified-icon';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { ChatAccountInfo } from '@store/common/chats/types';
 import { authorizedUserTwilioPhoneSelector } from '@store/global';

@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
-import { useHasPartnerCompanies, useMeAdmin } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { orderSelector } from '@store/client';

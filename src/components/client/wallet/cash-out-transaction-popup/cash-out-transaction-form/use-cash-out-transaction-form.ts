@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-import { useHandleTransactionError } from '@hooks';
+import { useHandleTransactionError } from '@/hooks/accounting/use-handle-transaction-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions } from '@store/admin';
 import { balancesApi } from '@store/api/balances-api';

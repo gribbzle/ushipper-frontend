@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
 import { Paper } from '@/components/common/paper/paper';
-import { useOpenParsedOrderDetailsDrawer } from '@hooks';
+import { useOpenParsedOrderDetailsDrawer } from '@/hooks/navigation/useOpenParsedOrderDetailsDrawer';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

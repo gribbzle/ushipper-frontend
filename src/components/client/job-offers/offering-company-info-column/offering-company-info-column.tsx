@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
-import { useShowCompanyPage } from '@hooks';
+import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { classname } from '@utils/classname';
 
 import { OfferingCompanyInfoColumnProps } from './offering-company-info-column.types';

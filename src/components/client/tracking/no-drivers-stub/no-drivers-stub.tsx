@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { UserRoleGroup } from '@/enums/user-role-group';
-import { useUserRoleGroup } from '@hooks';
+import { useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { ExternalLinkIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';

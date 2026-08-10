@@ -7,7 +7,7 @@ import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { Button } from '@/components/common/button/button';
 import { getOrderId, getPaymentTermsTranslate } from '@/utils/order';
 import { getFinalPaymentAmount, getPaymentPerDistance } from '@/utils/payment';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { OrderOffer } from '@store/common/orders/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

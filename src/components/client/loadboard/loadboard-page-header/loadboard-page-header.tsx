@@ -5,7 +5,8 @@ import { useDispatch } from 'react-redux';
 
 import { Button } from '@/components/common/button/button';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { useLoadboardTabSelection, useMeCarrier } from '@hooks';
+import { useLoadboardTabSelection } from '@/hooks/loadboard/useLoadboardTabSelection';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { SaveIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { INITIAL_FILTERS, loadboardActions } from '@store/client/loadboard/slice';

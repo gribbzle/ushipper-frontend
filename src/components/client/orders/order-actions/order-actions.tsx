@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CarrierOrderActions } from '@/components/client/orders/order-actions/carrier-order-actions';
 import { ShipperOrderActions } from '@/components/client/orders/order-actions/shipper-order-actions';
-import { useMeAdmin, useMeShipper } from '@hooks';
+import { useMeAdmin, useMeShipper } from '@/hooks/use-user-role-group';
 import { Load } from '@store/client';
 
 import { AdminOrderActions } from './admin-order-actions';

@@ -5,7 +5,7 @@ import { ChatAttachmentsInfo } from '@/components/common/chats-drawer/chats-list
 import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import useMessageContent from '@/hooks/chat/use-message-content';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { ThumbtackIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, selectedChatIdSelector } from '@store/common';

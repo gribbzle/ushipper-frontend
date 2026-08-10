@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
 import { BackError, processError } from '@/utils/process-error';
-import { useInvalidateSelectedAccountTags } from '@hooks';
+import { useInvalidateSelectedAccountTags } from '@/hooks/accounting/use-invalidate-selected-account-tags';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, assignDispatcherToDriverPopupPropsSelector } from '@store/admin';
 import { accountingAccountsApi } from '@store/api/accounting-accounts-api';

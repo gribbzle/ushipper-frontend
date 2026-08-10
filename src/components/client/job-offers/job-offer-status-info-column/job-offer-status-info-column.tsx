@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

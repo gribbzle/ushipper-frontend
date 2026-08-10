@@ -34,7 +34,9 @@ import { OrderSendBOLDrawer } from '@/components/client/orders/drawers/order-sen
 import { OrderSendInvoiceDrawer } from '@/components/client/orders/drawers/order-send-invoice-drawer/order-send-invoice-drawer';
 import { RequestsDrawer } from '@/components/client/requests/requests-drawer/requests-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
-import { useIsPartnerCompany, useMeCarrier, useMeDriverRelated, useScrollTop } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeCarrier, useMeDriverRelated } from '@/hooks/use-user-role-group';
+import { useScrollTop } from '@/hooks/use-scroll-top';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { orderDeletedAtSelector, ordersActions, orderSourceSelector, orderStatusSelector } from '@store/client';

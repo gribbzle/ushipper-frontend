@@ -11,7 +11,7 @@ import { InviteUserDrawer } from '@/components/client/staff/invite-user-drawer/i
 import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-filters';
 import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
 import { StaffTableView } from '@/components/client/staff/staff-filters/staff-filters.types';
-import { useUsersPage } from '@hooks';
+import { useUsersPage } from '@/hooks/users/use-users-page';
 import { PlusCircleIcon, SendIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';

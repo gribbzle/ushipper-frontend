@@ -23,7 +23,7 @@ import { AccessForbiddenBlock } from '@/components/common/main-layout/access-for
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrderStatus } from '@/enums/order-status';
 import { useOrdersActionsPermission } from '@/hooks/order';
-import { useScrollTop } from '@hooks';
+import { useScrollTop } from '@/hooks/use-scroll-top';
 import { useAppDispatch } from '@store';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { ordersActions } from '@store/client';

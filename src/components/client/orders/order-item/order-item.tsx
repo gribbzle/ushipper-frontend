@@ -6,7 +6,8 @@ import { OrderDriverPaymentFormAlert } from '@/components/client/orders/alerts/o
 import { OrderActions } from '@/components/client/orders/order-actions/order-actions';
 import { OrderItemHeader } from '@/components/client/orders/order-item/order-item-header';
 import { Paper } from '@/components/common/paper/paper';
-import { useIsPartnerCompany, useMeAdmin, useMeDriverRelated } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeAdmin, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

@@ -2,7 +2,8 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { BalanceType } from '@/enums/balance-type';
-import { useDefaultAccountBalance, useTransactionActionsPermission } from '@hooks';
+import { useDefaultAccountBalance } from '@/hooks/accounting/use-default-account-balance';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { PlusIcon } from '@icons';
 import { BalanceValue } from '@store/admin';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';

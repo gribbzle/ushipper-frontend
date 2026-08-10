@@ -2,7 +2,9 @@ import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
-import { useHandleCreateEditCompanyFees, useHandleDeleteFees, usePublicId } from '@hooks';
+import { useHandleCreateEditCompanyFees } from '@/hooks/accounting/use-handle-create-edit-company-fees';
+import { useHandleDeleteFees } from '@/hooks/accounting/use-handle-delete-fees';
+import { usePublicId } from '@/hooks/usePublicId';
 import { filterValidFeeDataList } from '@utils/format-fee-for-form';
 import { translateByNamespace } from '@utils/i18n';
 

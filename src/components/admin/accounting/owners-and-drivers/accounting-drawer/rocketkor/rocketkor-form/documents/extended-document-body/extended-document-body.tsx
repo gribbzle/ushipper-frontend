@@ -1,7 +1,7 @@
 import React from 'react';
 import { format } from 'date-fns';
 
-import { useCountriesAndStates } from '@hooks';
+import { useCountriesAndStates } from '@/hooks/use-countries-and-states';
 import { AccountingProfileDocument } from '@store/api/accounts-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

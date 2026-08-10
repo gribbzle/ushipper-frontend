@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Paginate } from '@/components/common/paginate/paginate';
-import { useIsAdminPage } from '@hooks';
+import { useIsAdminPage } from '@/hooks/use-is-admin-page';
 import { Load } from '@store/client';
 import { PaginatedResponse } from '@utils/redux';
 

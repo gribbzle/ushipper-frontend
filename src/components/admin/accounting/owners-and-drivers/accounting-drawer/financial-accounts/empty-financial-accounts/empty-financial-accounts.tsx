@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AccountingZoneButton } from '@/components/admin/accounting/common/accounting-zone-button/accounting-zone-button';
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { translateByNamespace } from '@utils/i18n';
 
 import { useEmptyFinancialAccounts } from './use-empty-financial-accounts';

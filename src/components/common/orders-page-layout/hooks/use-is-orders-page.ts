@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import { useIsAdminPage } from '@hooks';
+import { useIsAdminPage } from '@/hooks/use-is-admin-page';
 
 export const useIsOrdersPage = () => {
     const router = useRouter();

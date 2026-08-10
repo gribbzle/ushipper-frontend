@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { useQueryFilters } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useAppSelector } from '@store';
 import { TrackingOrdersByStatusData } from '@store/api/tracking-api';
 import { isShipperOrdersTrackingLoadingSelector, ShipperTrackingFiltersFormState } from '@store/client';

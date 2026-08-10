@@ -7,7 +7,7 @@ import { OrderCustomerInformationFieldsGroup } from '@/components/client/orders/
 import { OrderForm } from '@/components/client/orders/order-form/order-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

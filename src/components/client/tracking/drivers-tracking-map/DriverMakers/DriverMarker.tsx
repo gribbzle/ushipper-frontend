@@ -2,7 +2,9 @@ import React, { useCallback } from 'react';
 import { Marker } from 'react-map-gl/mapbox';
 
 import { DriverOrderPin } from '@/components/client/tracking/common/driver-order-pin/driver-order-pin';
-import { useDriverTrackingMap, useTracking, useUserTracking } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
+import { useTracking } from '@/hooks/tracking/useTracking';
+import { useUserTracking } from '@/hooks/tracking/useUserTracking';
 
 export const DriverMarker = (): JSX.Element | null => {
     const { user: driver, orders } = useUserTracking();

@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 
 import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-popup/choose-phone-popup';
-import { useIsPartnerCompany } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { CallIcon, MessageTextRightIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions } from '@store/client';

@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { Avatar } from '@/components/common/avatar/avatar';
 import { CompanyType } from '@/enums/company-type';
 import { UserRoleType } from '@/enums/user-role-type';
-import { useIsDriversCatalogPage } from '@hooks';
+import { useIsDriversCatalogPage } from '@/hooks/catalogs/use-catalog-page-status';
 import { DispatcherCatalogInfo } from '@store/client';
 import { AuthorizedUserInfo } from '@store/global/types';
 import { classname } from '@utils/classname';

@@ -7,7 +7,7 @@ import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {RatingField} from '@/fields/rating-field';
 import {TextField} from '@/fields/text-field';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi } from '@store/api/orders-api';
 import { ReviewAspect, ReviewFormValues, useCreateReviewMutation, useUpdateReviewMutation } from '@store/api/review';

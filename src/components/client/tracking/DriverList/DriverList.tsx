@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DriverRow } from '@/components/client/tracking/driver-row/driver-row';
-import { useUsersTracking } from '@hooks';
+import { useUsersTracking } from '@/hooks/tracking/useUsersTracking';
 import { UserTrackingProvider } from '@/providers/UserTrackingProvider';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

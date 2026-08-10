@@ -4,7 +4,7 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { Table } from '@/components/common/table/table';
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserRoleType } from '@/enums/user-role-type';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { useAppDispatch, useAppSelector } from '@store';
 import { clickedRowIdSelector, fetchedRolesSelector, fetchRoleAction, fetchRolesAction, UserRole } from '@store/common';
 import { rolesSettingsActions } from '@store/common/roles-settings/slice';

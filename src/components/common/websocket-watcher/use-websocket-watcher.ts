@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 import { OffersCountEvent, RequestCountEvent } from '@/components/common/websocket-watcher/types';
 import { fetchChat } from '@api';
-import { useMeCarrier, useMeShipper } from '@hooks';
+import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { issuesApi } from '@store/api/issues-api';
 import { ordersActions } from '@store/client';

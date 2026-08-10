@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { useCountriesAndStates } from '@hooks';
+import { useCountriesAndStates } from '@/hooks/use-countries-and-states';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 import { useGetAccountingProfile } from '../../hooks/use-get-accounting-profile';

@@ -5,7 +5,7 @@ import CompanyCard from '@/components/client/company-settings/company-card';
 import CompanySettingsHeader from '@/components/client/company-settings/company-settings-header';
 import ContactCard from '@/components/client/company-settings/contact-card';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

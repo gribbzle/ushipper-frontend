@@ -7,7 +7,8 @@ import { CarriersAccountingPageHead } from '@/components/admin/accounting/carrie
 import { CreateEditCompanyDrawer } from '@/components/admin/companies/create-edit-company-drawer/create-edit-company-drawer';
 import { DeleteCompanyPopup } from '@/components/admin/companies/delete-company-popup/delete-company-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useCarriersActionsPermission, useCompaniesActionsPermission } from '@hooks';
+import { useCarriersActionsPermission } from '@/hooks/accounting/use-carriers-actions-permission';
+import { useCompaniesActionsPermission } from '@/hooks/companies/use-companies-actions-permission';
 import { PublicIdProvider } from '@/providers/PublicIdProvider';
 import { useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';

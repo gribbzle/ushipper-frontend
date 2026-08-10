@@ -11,7 +11,9 @@ import { UserInfoBlock } from '@/components/common/user-info-block/user-info-blo
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
-import { useIsTransactionsPage, useQueryFilters, useTable } from '@hooks';
+import { useIsTransactionsPage } from '@/hooks/accounting/use-is-transactions-page';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
+import { useTable } from '@/hooks/use-table';
 import { Transaction } from '@store/admin';
 import { TransactionsFiltersParams, useGetTransactionsQuery } from '@store/api/transactions-api';
 import { TransactionsFiltersState } from '@types';

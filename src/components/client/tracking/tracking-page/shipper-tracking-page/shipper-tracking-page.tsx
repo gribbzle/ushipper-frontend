@@ -5,7 +5,7 @@ import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-d
 import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests';
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
-import { useQueryFilters } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetTrackingOrdersQuery } from '@store/api/tracking-api';
 import { isShipperOrdersListShownSelector, ShipperTrackingFiltersFormState, trackingActions } from '@store/client';

@@ -5,7 +5,7 @@ import { ConditionsInfoColumn } from '@/components/client/job-offers/conditions-
 import { DescriptionInfoColumn } from '@/components/client/job-offers/description-info-column/description-info-column';
 import { JobOfferStatusInfoColumn } from '@/components/client/job-offers/job-offer-status-info-column/job-offer-status-info-column';
 import { OfferingCompanyInfoColumn } from '@/components/client/job-offers/offering-company-info-column/offering-company-info-column';
-import { useMeDispatcher, useMeDriver } from '@hooks';
+import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { JobOffer } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

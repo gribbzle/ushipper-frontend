@@ -8,7 +8,7 @@ import { CarModelsTable } from '@/components/admin/settings/car-models/car-model
 import { CreateEditCarModelDrawer } from '@/components/admin/settings/car-models/create-edit-car-model-drawer/create-edit-car-model-drawer';
 import { DeleteCarModelPopup } from '@/components/admin/settings/car-models/delete-car-model-popup/delete-car-model-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

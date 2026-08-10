@@ -7,7 +7,8 @@ import { CompaniesTable } from '@/components/admin/companies/companies-table/com
 import { CreateEditCompanyDrawer } from '@/components/admin/companies/create-edit-company-drawer/create-edit-company-drawer';
 import { DeleteCompanyPopup } from '@/components/admin/companies/delete-company-popup/delete-company-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useCompaniesActionsPermission, useOpenCreateCompanyDrawer } from '@hooks';
+import { useCompaniesActionsPermission } from '@/hooks/companies/use-companies-actions-permission';
+import { useOpenCreateCompanyDrawer } from '@/hooks/companies/use-open-create-company-drawer';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

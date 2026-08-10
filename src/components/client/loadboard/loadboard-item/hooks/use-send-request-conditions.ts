@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 
-import { useHasPartnerCompanies, useMeCarrierDriver, useMeDispatcher, useMeDriver } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useMeCarrierDriver } from '@/hooks/use-user-role-type';
+import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 
 import { useHasSendRequestAuthorizedUserPermissions } from './use-has-send-request-authorized-user-permission';
 import { useHasSendRequestForNoPartnerUserPermissions } from './use-has-send-request-for-no-partner-user-permission';

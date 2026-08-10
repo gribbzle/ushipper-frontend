@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
 import parseValidationFields from '@/utils/parse-validation-fields';
-import { useGetCompanyData } from '@hooks';
+import { useGetCompanyData } from '@/hooks/companies/use-get-company-data';
 import { CompanyPathData, usePathCompanyJSONMutation } from '@store/api/company-api';
 import { translateByNamespace } from '@utils/i18n';
 import { transformFormValuesToSpecializations } from '@utils/specialization';

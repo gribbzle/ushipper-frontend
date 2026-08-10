@@ -3,7 +3,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 
 import {NativeInput} from '@/fields/text-field';
-import { useDebounce } from '@hooks';
+import { useDebounce } from '@/hooks/use-debounce';
 import { useAppDispatch } from '@store';
 import { fetchContactsAction } from '@store/common';
 import { contactsActions } from '@store/common/contacts/slice';

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { useHasPartnerCompanies, useIsPartnerCompany, useMeAdmin, useMeCarrier, useMeDriverRelated } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeAdmin, useMeCarrier, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { OrderProvider } from '@/providers/OrderProvider';
 import { useAppSelector } from '@store';
 import { orderDriverSelector, orderSelector } from '@store/client';

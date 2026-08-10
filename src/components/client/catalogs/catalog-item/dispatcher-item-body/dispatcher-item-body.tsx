@@ -4,7 +4,7 @@ import { DispatcherLanguages } from '@/components/common/dispatcher-languages/di
 import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { InfoListBody } from '@/components/common/info-list/info-list-body/info-list-body';
 import { PillTag } from '@/components/common/pill-tag/pill-tag';
-import { useShowCompanyPage } from '@hooks';
+import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { DispatcherCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
 import { getWorkingTimeTranslate } from '@utils/get-working-time-translate';

@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { useChatId } from '@hooks';
+import { useChatId } from '@/hooks/chat/use-chat-id';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDrivingDistanceSelector, ordersActions } from '@store/client';
 import { chatUnreadMessagesSelector } from '@store/common';

@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useIsPartnerCompany } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, isChatsDrawerOpenSelector, selectedChatIdSelector } from '@store/common';
 import { classname } from '@utils/classname';

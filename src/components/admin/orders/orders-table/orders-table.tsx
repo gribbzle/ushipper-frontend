@@ -30,7 +30,8 @@ import { UserInfoBlock } from '@/components/common/user-info-block/user-info-blo
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { BalanceType } from '@/enums/balance-type';
 import { OrderType } from '@/enums/order/order-type';
-import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
+import { useDriversViewPermission } from '@/hooks/accounting/use-drivers-view-permission';
+import { useHandleOpenAccountingDrawerClick } from '@/hooks/accounting/use-handle-open-accounting-drawer-click';
 import { OrderProvider } from '@/providers/OrderProvider';
 import { GetOrdersData } from '@store/api/orders-api';
 import { Load } from '@store/client';

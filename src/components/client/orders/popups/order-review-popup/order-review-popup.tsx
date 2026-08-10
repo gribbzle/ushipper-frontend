@@ -6,7 +6,7 @@ import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { Link } from '@/components/common/link/link';
 import { Popup } from '@/components/common/popup/popup';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderReviewPopupPropsSelector, reviewActions } from '@store/client';
 import { Rating } from '@/components/ui/inputs/rating';

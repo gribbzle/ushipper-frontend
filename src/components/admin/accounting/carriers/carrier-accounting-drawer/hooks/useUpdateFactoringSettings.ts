@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
 import { ExternalServiceType } from '@/enums/company/external-service-type';
-import { usePublicId } from '@hooks';
+import { usePublicId } from '@/hooks/usePublicId';
 import { useCreateCompanyExternalServiceSettingsMutation } from '@store/api/company-external-service-settings';
 import { handleError } from '@utils/handle-error';
 import { translateByNamespace } from '@utils/i18n';

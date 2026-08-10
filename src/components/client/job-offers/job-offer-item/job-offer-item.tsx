@@ -2,7 +2,7 @@ import React from 'react';
 
 import { DispatcherPersonalInfo } from '@/components/client/catalogs/common/dispatcher-personal-info/dispatcher-personal-info';
 import { Paper } from '@/components/common/paper/paper';
-import { useMeCarrier, useMeDispatcher, useMeDriver } from '@hooks';
+import { useMeCarrier, useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { useGetUserQuery } from '@store/api/users-api';
 import { JobOffer } from '@store/client';
 import { classname } from '@utils/classname';

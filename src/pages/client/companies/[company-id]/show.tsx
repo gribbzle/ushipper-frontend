@@ -25,7 +25,7 @@ import { ReviewFiltersTabFromUrlParams } from '@/components/client/company/revie
 import { ReviewsList } from '@/components/client/company/reviews-list/reviews-list';
 import { ReviewsNoData } from '@/components/client/company/reviews-no-data/reviews-no-data';
 import { SendJobOfferDrawer } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-drawer';
-import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
+import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fetchCompanyAction, fetchedCompanySelector } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';

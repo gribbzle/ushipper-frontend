@@ -7,7 +7,8 @@ import { ErrorBoundary } from '@/components/common/error-boundary/error-boundary
 import { ImageViewerPopup } from '@/components/common/viewers/image-viewer-popup/image-viewer-popup';
 import { PDFViewerPopup } from '@/components/common/viewers/pdf-viewer-popup/pdf-viewer-popup';
 import { WebsocketWatcher } from '@/components/common/websocket-watcher/websocket-watcher';
-import { Permission, useCheckPermission, useMeDispatcher } from '@hooks';
+import { Permission, useCheckPermission } from '@/hooks/use-check-permission';
+import { useMeDispatcher } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
 import { classname } from '@utils/classname';

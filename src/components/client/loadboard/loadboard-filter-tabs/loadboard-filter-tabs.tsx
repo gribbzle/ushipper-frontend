@@ -4,7 +4,7 @@ import { LoadboardFiltersCurrentSearch } from '@/components/client/loadboard/loa
 import { LoadboardSavedFilters } from '@/components/client/loadboard/loadboard-saved-filters/loadboard-saved-filters';
 import { Tabs } from '@/components/common/tabs/tabs';
 import { Paper } from '@/components/common/paper/paper';
-import { useLoadboardTabSelection } from '@hooks';
+import { useLoadboardTabSelection } from '@/hooks/loadboard/useLoadboardTabSelection';
 import { useAppDispatch } from '@store';
 import { getLoadboardSearches } from '@store/client/loadboard/actions';
 

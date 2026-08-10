@@ -1,6 +1,6 @@
 import { MouseEvent, useCallback } from 'react';
 
-import { useIsDispatcherOwnerPage } from '@hooks';
+import { useIsDispatcherOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useAppDispatch } from '@store';
 import { fetchCompanyAction } from '@store/admin';
 

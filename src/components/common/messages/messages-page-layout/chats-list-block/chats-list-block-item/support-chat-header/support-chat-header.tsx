@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

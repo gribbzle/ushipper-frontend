@@ -5,7 +5,9 @@ import { useSelector } from 'react-redux';
 import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
 import { Table } from '@/components/common/table/table';
 import { Paper } from '@/components/common/paper/paper';
-import { useEffectOnce, usePagination, useTable } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
+import { usePagination } from '@/hooks/use-pagination';
+import { useTable } from '@/hooks/use-table';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     BlackListItem,

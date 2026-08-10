@@ -4,7 +4,7 @@ import { Button } from '@/components/common/button/button';
 import { Link } from '@/components/common/link/link';
 import { PageHeader } from '@/components/common/page-header/page-header';
 import {NativeSwitch} from '@/fields/switch-input';
-import { useMeDriverRelated } from '@hooks';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { PlusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { isShipperOrdersListShownSelector, trackingActions } from '@store/client';

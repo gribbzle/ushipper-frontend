@@ -2,7 +2,10 @@ import { useMemo, useState } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
-import { useIsPartnerCompany, useLoadboard, useLoadboardTabSelection, useMeDriverRelated } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useLoadboard } from '@/hooks/loadboard/use-loadboard';
+import { useLoadboardTabSelection } from '@/hooks/loadboard/useLoadboardTabSelection';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { loadboardSavedSearchesSelector } from '@store/client/loadboard';
 import { translateLoadboardTab } from '@utils/translate/loadboard';

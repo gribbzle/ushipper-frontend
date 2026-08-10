@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order');

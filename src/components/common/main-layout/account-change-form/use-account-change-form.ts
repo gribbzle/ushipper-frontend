@@ -3,7 +3,7 @@ import { useFormState } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { CompanyType } from '@/enums/company-type';
-import { useRouterForAccountChange } from '@hooks';
+import { useRouterForAccountChange } from '@/hooks/use-router-for-account-change';
 import { useAppDispatch, useAppSelector } from '@store';
 import { changeAccountSubmit } from '@store/client';
 import { accountsUsersSelector } from '@store/client/accounts';

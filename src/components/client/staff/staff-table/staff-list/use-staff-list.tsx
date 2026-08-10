@@ -11,7 +11,7 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { UserRoleType } from '@/enums/user-role-type';
-import { useLoginAs } from '@hooks';
+import { useLoginAs } from '@/hooks/use-login-as';
 import { useAppDispatch } from '@store';
 import { User } from '@store/common';
 import { staffActions } from '@store/common/staff/slice';

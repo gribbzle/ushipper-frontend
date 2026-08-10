@@ -8,7 +8,7 @@ import { DeleteUserPopup } from '@/components/client/staff/delete-user-popup/del
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-filters';
 import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
-import { useUsersPage } from '@hooks';
+import { useUsersPage } from '@/hooks/users/use-users-page';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { staffActions } from '@store/common/staff/slice';

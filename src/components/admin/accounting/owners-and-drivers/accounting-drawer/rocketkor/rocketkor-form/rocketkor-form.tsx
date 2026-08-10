@@ -9,7 +9,7 @@ import {InputLabel} from '@/fields/input-label';
 import {NativeSwitch, NativeSwitchProps} from '@/fields/switch-input';
 import {PhoneNumberInput} from '@/fields/phone-number-input';
 import {TextField} from '@/fields/text-field';
-import { useFormSubmit } from '@hooks';
+import { useFormSubmit } from '@/hooks/use-form-submit';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, linkValidator, required, taxIdValidator, validateDateBeforeToday } from '@validators';

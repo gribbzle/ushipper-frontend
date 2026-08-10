@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
+import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { LinkIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';

@@ -9,7 +9,7 @@ import { CreateUpdateCarMakerDrawer } from '@/components/admin/settings/car-make
 import { DeleteCarMakerPopup } from '@/components/admin/settings/car-makers/delete-car-maker-popup/delete-car-maker-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { Input } from '@/components/common/input/input';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { CarMakersFilters, carMakersFiltersSelector, fetchCarMakerAction, fetchCarMakersAction } from '@store/admin';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Loader } from '@/components/common/loader/loader';
-import { useDeliveryMetrics } from '@hooks';
+import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
 import { HourGlassStartIcon, RacingTruckIcon, RoutingIcon } from '@icons';
 import { ShipperTrackingOrder } from '@store/client';
 import { classname } from '@utils/classname';

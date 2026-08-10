@@ -2,7 +2,8 @@ import { useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
 import { DEFAULT_COD_COP_ORDERS_PARAMS } from '@constants';
-import { useQueryFilters, useTable } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
+import { useTable } from '@/hooks/use-table';
 import { GetOrdersData, useGetOrdersQuery } from '@store/api/orders-api';
 import { convertToStringArray } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';

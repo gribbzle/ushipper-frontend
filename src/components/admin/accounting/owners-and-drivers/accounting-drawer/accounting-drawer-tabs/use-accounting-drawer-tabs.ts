@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { BalanceType } from '@/enums/balance-type';
-import { useDefaultAccountBalance } from '@hooks';
+import { useDefaultAccountBalance } from '@/hooks/accounting/use-default-account-balance';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

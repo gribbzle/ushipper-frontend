@@ -2,7 +2,9 @@ import { useRef } from 'react';
 import { useRouter } from 'next/router';
 
 import { CompanyType } from '@/enums/company-type';
-import { useHandleFiltersChange, useIsCarriersAccountingBalancePage, useQueryFilters } from '@/hooks';
+import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
+import { useIsCarriersAccountingBalancePage } from '@/hooks/accounting/use-is-carriers-accounting-page';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { convertToStringArray } from '@utils/converter';
 
 import { AccountingEntityFiltersFormState } from './accounting-filters-entity-form.types';

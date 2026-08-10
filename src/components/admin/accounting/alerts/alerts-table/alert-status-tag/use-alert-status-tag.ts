@@ -2,7 +2,8 @@ import { useCallback, useMemo } from 'react';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { IssueStatus } from '@/enums/issues/issue-status';
-import { useIssue, useIssueHelpers } from '@hooks';
+import { useIssue } from '@/hooks/issue/useIssue';
+import { useIssueHelpers } from '@/hooks/issue/useIssueHelpers';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

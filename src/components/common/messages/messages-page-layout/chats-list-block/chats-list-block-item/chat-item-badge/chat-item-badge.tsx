@@ -5,7 +5,7 @@ import { Avatar } from '@/components/common/avatar/avatar';
 import { Badge } from '@/components/common/badge/badge';
 import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { DefaultOrderIcon, DefaultPhoneIcon, SystemIcon } from '@icons';
 import { selectedChatIdSelector } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';

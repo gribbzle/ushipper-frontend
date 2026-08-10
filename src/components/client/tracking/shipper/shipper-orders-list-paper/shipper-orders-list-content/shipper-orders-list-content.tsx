@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
-import { useQueryFilters } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { TrackingOrdersByDispatcherData, TrackingOrdersByStatusData } from '@store/api/tracking-api';
 import { ShipperTrackingFiltersFormState } from '@store/client';
 import { classname } from '@utils/classname';

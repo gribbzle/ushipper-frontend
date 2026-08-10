@@ -13,7 +13,7 @@ import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-d
 import { BetweenPhonesChatDrawer } from '@/components/common/between-phones-chat-drawer/between-phones-chat-drawer';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { useLoadboard } from '@hooks';
+import { useLoadboard } from '@/hooks/loadboard/use-loadboard';
 import { classname } from '@utils/classname';
 
 import { LoadboardContent } from '../loadboard-content';

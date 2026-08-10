@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
-import { useShowCompanyPage } from '@hooks';
+import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

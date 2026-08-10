@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useDriverTrackingMap } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 import { OrderTrackingProvider } from '@/providers/OrderTrackingProvider';
 
 import { Direction } from './Direction';

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { OffersListTabsEnum } from '@/enums/offers-list-tabs-enum';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { OffersStatistic } from '@store/api/order-offers';
 import { translateByNamespace } from '@utils/i18n';
 

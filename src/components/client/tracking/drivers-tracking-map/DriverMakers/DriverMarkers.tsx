@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useUsersTracking } from '@hooks';
+import { useUsersTracking } from '@/hooks/tracking/useUsersTracking';
 import { UserTrackingProvider } from '@/providers/UserTrackingProvider';
 
 import { DriverMarker } from './DriverMarker';

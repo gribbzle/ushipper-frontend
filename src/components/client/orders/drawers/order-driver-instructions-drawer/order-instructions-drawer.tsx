@@ -10,7 +10,7 @@ import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, OrderFieldsGroup, OrderFormState, ordersActions, orderSetDriverInstructionsDrawerPropsSelector } from '@store/client';

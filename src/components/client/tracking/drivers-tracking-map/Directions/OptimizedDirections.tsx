@@ -2,7 +2,7 @@ import React from 'react';
 import { Marker } from 'react-map-gl/mapbox';
 
 import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
-import { useDriverTrackingMap } from '@hooks';
+import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
 
 import Source from './Direction/Source';
 

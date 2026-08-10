@@ -2,7 +2,8 @@ import React from 'react';
 
 import { UserRoleGroup } from '@/enums/user-role-group';
 import { UserRoleType } from '@/enums/user-role-type';
-import { useHasPartnerCompanies, useMeDriverRelated, useUserRoleGroup } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useMeDriverRelated, useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { User } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

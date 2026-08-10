@@ -6,7 +6,7 @@ import Header from '@/components/client/orders/edit/header';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrderGeneralForm } from '@/components/client/orders/forms/order-general-form/order-general-form';
-import { useIsPartnerCompany } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { useGetOrderQuery } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

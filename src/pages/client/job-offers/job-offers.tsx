@@ -10,7 +10,7 @@ import { JobOffersFilters } from '@/components/client/job-offers/job-offers-filt
 import { Paginate } from '@/components/common/paginate/paginate';
 import { SendJobOfferDrawer } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-drawer';
 import { ViewJobOfferDrawer } from '@/components/client/job-offers/view-job-offer-drawer/view-job-offer-drawer';
-import { useJobOffers } from '@hooks';
+import { useJobOffers } from '@/hooks/job-offers/use-job-offers';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

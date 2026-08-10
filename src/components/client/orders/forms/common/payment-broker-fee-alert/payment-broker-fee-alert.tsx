@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

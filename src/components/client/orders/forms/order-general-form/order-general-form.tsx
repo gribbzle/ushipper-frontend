@@ -31,7 +31,7 @@ import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
 import { InspectionType } from '@/enums/inspection-type';
 import { OrderPaymentStatus } from '@/enums/order-payment-status';
 import { VehicleType } from '@/enums/vehicle-type';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useUpdateOrderPaymentMutation } from '@store/api/order-payment-api';
 import { ordersApi, useCreateOrderAttachmentMutation, useCreateOrderMutation, useUpdateOrderMutation } from '@store/api/orders-api';

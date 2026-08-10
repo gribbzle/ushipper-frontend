@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { useCreateParsedOrderCall } from '@hooks';
+import { useCreateParsedOrderCall } from '@/hooks/loadboard/use-create-parsed-order-call';
 import { useAppDispatch, useAppSelector } from '@store';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { loadboardActions } from '@store/client/loadboard/slice';

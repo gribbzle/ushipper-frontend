@@ -3,7 +3,10 @@ import { useSelector } from 'react-redux';
 
 import { ChatEmptyBlock, ChatHead, ChatMessage, ChatMessageDelimiter, ChatUnreadMessageDelimiter } from '@/components/common/chats-drawer/chat';
 import { ChatTypesEnum } from '@/enums/chat-types-enum';
-import { useDebouncedGetChatInfo, useDebouncedGetChatMessages, useDebouncedGetChatReadMessages, useDebouncedGetChatUnreadMessages } from '@hooks';
+import { useDebouncedGetChatInfo } from '@/hooks/chat/use-debounced-get-chat-info';
+import { useDebouncedGetChatMessages } from '@/hooks/chat/use-debounced-get-chat-messages';
+import { useDebouncedGetChatReadMessages } from '@/hooks/chat/use-debounced-get-chat-read-messages';
+import { useDebouncedGetChatUnreadMessages } from '@/hooks/chat/use-debounced-get-chat-unread-messages';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     chatInfoSelector,

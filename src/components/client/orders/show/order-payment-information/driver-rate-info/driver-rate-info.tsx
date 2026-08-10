@@ -3,7 +3,6 @@ import React, { useMemo } from 'react';
 import { useOrderPaymentTerms } from '@/hooks/order';
 import { isReceiptlessOrder, preparePaymentInformation } from '@/utils/orders';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
-import {} from '@hooks';
 import { useAppSelector } from '@store';
 import { orderDriverDelayedPaymentSelector, orderDriverFeeChargeSelector, orderFullPriceSelector, orderPriceSelector, orderSelector } from '@store/client';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';

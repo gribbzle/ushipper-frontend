@@ -4,7 +4,7 @@ import get from 'lodash.get';
 import { useForm } from 'react-final-form';
 
 import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
-import { useOpenTransactionsPage } from '@hooks';
+import { useOpenTransactionsPage } from '@/hooks/navigation/useOpenTransactionsPage';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';
 import { useGetFeeCategoriesQuery } from '@store/api/fee-categories-api';

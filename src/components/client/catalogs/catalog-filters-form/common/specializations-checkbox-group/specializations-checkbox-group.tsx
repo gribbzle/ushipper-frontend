@@ -3,7 +3,7 @@ import { Field } from 'react-final-form';
 
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import {LabeledCheckboxInput} from '@/fields/checkbox-input';
-import { useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';
+import { useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@/hooks/catalogs/use-catalog-page-status';
 import { translateByNamespace } from '@utils/i18n';
 import { getTransportServiceTranslate } from '@utils/specialization';
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
 import { StatisticCounter } from '@/components/common/statistic-counter';
-import { useQueryFilters } from '@hooks';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useGetBalanceStatisticQuery } from '@store/api/balance-statistic-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

@@ -7,7 +7,7 @@ import {FieldPrefix} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
-import { useFormSubmit } from '@hooks';
+import { useFormSubmit } from '@/hooks/use-form-submit';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

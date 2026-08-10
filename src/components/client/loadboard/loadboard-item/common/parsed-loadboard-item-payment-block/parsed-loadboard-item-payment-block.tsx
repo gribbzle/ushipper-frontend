@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { useMeDriverRelated } from '@hooks';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { ImportIcon, SuperDispatchImportIcon } from '@icons';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useGetCompanyData } from '@hooks';
+import { useGetCompanyData } from '@/hooks/companies/use-get-company-data';
 
 export const useIsAuthorizedUserCompanyPartner = () => {
     const { data: authorizedUserCompany } = useGetCompanyData();

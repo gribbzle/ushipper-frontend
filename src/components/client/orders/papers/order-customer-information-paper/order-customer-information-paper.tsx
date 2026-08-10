@@ -5,7 +5,7 @@ import { OrderCustomerInformationDrawer } from '@/components/client/orders/drawe
 import { OrderInformationList } from '@/components/client/orders/order-information-list/order-information-list';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useCanManageOrder } from '@/hooks/order';
-import { useMeCarrier, useMeDriverRelated } from '@hooks';
+import { useMeCarrier, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderCustomerInformation, orderCustomerInformationSelector, ordersActions } from '@store/client';
 import { classname } from '@utils/classname';

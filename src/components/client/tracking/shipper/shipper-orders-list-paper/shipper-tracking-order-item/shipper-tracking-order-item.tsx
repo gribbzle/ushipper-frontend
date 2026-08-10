@@ -8,7 +8,7 @@ import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum
 import { formatDrivingDistance } from '@/utils/driving';
 import { getOrderId } from '@/utils/order';
 import { calculateTotalPayment, getPaymentPerDistance } from '@/utils/payment';
-import { useDeliveryMetrics } from '@hooks';
+import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
 import { HorizontalDotsIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, ShipperTrackingOrder, trackingActions, User } from '@store/client';

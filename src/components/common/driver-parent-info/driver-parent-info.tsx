@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { useIsAdminPage } from '@hooks';
+import { useIsAdminPage } from '@/hooks/use-is-admin-page';
 import { DriverParent } from '@store/common';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

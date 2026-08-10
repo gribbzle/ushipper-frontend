@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
-import { useDefaultAccountBalance } from '@hooks';
+import { useDefaultAccountBalance } from '@/hooks/accounting/use-default-account-balance';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';
 import { useGetTransactionsQuery } from '@store/api/transactions-api';

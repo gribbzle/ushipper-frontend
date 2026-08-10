@@ -3,7 +3,8 @@ import Head from 'next/head';
 
 import { Button } from '@/components/common/button/button';
 import { PageHeader } from '@/components/common/page-header/page-header';
-import { useCompaniesActionsPermission, useOpenCreateCompanyDrawer } from '@hooks';
+import { useCompaniesActionsPermission } from '@/hooks/companies/use-companies-actions-permission';
+import { useOpenCreateCompanyDrawer } from '@/hooks/companies/use-open-create-company-drawer';
 import { PlusCircleIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

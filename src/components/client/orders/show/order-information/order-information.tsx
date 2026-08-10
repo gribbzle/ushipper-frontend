@@ -8,7 +8,8 @@ import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { UserRoleGroup } from '@/enums/user-role-group';
 import { UserRoleType } from '@/enums/user-role-type';
 import { useCanManageOrder } from '@/hooks/order';
-import { useIsPartnerCompany, useMeDriverRelated, useUserRoleGroup } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeDriverRelated, useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     orderCarrierOrderSelector,

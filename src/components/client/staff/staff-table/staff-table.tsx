@@ -1,6 +1,7 @@
 import React, { memo, useCallback } from 'react';
 
-import { usePagination, useTable } from '@hooks';
+import { usePagination } from '@/hooks/use-pagination';
+import { useTable } from '@/hooks/use-table';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetUsersQuery } from '@store/api/users-api';
 import { usersFiltersSelector } from '@store/client';

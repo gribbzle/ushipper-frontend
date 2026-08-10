@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
 import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
-import { useTransactionActionsPermission } from '@hooks';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { StatusTag, StatusTagView } from '@/components/ui/data-display/status-tag';
 import { translateByNamespace } from '@utils/i18n';
 import { renderTextWithBreakLines } from '@utils/render';

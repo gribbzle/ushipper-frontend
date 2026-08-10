@@ -4,7 +4,7 @@ import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { OrderStatus } from '@/enums/order-status';
-import { useIsPartnerCompany } from '@hooks';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';
 import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';

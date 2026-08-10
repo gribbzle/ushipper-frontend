@@ -10,7 +10,9 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
-import { useFuelCardsActionsPermission, useQueryFilters, useTable } from '@hooks';
+import { useFuelCardsActionsPermission } from '@/hooks/fuel/use-fuel-cards-actions-permission';
+import { useQueryFilters } from '@/hooks/filters/use-query-filters';
+import { useTable } from '@/hooks/use-table';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';
 import { GetFuelCardParams, useGetFuelCardsQuery } from '@store/api/fuel-cards-api';

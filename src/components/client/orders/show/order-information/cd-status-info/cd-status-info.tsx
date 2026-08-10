@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { orderPublicIdSelector, ordersActions } from '@store/client';

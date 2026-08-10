@@ -10,7 +10,7 @@ import { TotalRatingBlock } from '@/components/common/total-rating-block';
 import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { PROJECT_KEY_NAME } from '@constants';
-import { useCarriersActionsPermission } from '@hooks';
+import { useCarriersActionsPermission } from '@/hooks/accounting/use-carriers-actions-permission';
 import { CheckGearIcon, MoneyBagIcon, NoPhotoIcon } from '@icons';
 import { Company } from '@store/admin';
 import { classname } from '@utils/classname';

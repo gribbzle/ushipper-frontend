@@ -3,7 +3,8 @@ import { GeoJSON } from 'geojson';
 import { Marker } from 'react-map-gl/mapbox';
 
 import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
-import { useOrderTracking, useTracking } from '@hooks';
+import { useOrderTracking } from '@/hooks/tracking/useOrderTracking';
+import { useTracking } from '@/hooks/tracking/useTracking';
 import { Coordinate } from '@types';
 
 import Source from './Source';

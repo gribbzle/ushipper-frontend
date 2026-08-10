@@ -6,7 +6,7 @@ import { CreateUpdateRoleBlock } from '@/components/common/settings/roles/create
 import { DeleteRolePopup } from '@/components/common/settings/roles/delete-role-popup/delete-role-popup';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { RolesTable } from '@/components/common/settings/roles/roles-table/roles-table';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { PlusCircleIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fetchRoleTypesAction } from '@store/common';

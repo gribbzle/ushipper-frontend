@@ -7,7 +7,7 @@ import { Link } from '@/components/common/link/link';
 import { InspectionType } from '@/enums/inspection-type';
 import { OrderStatus } from '@/enums/order-status';
 import { getOrderPriceWithTerms } from '@/utils/order';
-import { useMeDriverRelated } from '@hooks';
+import { useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { FlagIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

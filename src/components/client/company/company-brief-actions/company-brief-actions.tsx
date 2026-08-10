@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '@/components/common/button/button';
 import { FlagButton } from '@/components/common/flag-button/flag-button';
-import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@hooks';
+import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { HireIcon, MessageTextLeftIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

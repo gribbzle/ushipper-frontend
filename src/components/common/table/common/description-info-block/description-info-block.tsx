@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
 import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
-import { useDestinationAccountingNumber } from '@hooks';
+import { useDestinationAccountingNumber } from '@/hooks/accounting/use-destination-accounting-number';
 import { useAppDispatch } from '@store';
 import { accountingActions, Transaction } from '@store/admin';
 import { classname } from '@utils/classname';

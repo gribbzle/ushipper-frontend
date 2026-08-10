@@ -5,7 +5,7 @@ import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { PaymentInfo } from '@/components/common/payment-info/payment-info';
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
-import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@hooks';
+import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

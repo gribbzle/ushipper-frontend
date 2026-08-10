@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import {AsyncSelectField} from '@/fields/select-field';
-import { useAsyncSelect } from '@hooks';
+import { useAsyncSelect } from '@/hooks/selects/use-async-select';
 import { useLazyGetFuelCardQuery, useLazyGetFuelCardsQuery } from '@store/api/fuel-cards-api';
 import { translateByNamespace } from '@utils/i18n';
 

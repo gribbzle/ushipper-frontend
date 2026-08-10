@@ -1,7 +1,9 @@
 import { useCallback, useMemo } from 'react';
 
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
-import { useHasPartnerCompanies, useIsPartnerCompany, useMeCarrier, useMeDriver } from '@hooks';
+import { useHasPartnerCompanies } from '@/hooks/authorized-user/use-has-partner-companies';
+import { useIsPartnerCompany } from '@/hooks/authorized-user/use-is-partner-company';
+import { useMeCarrier, useMeDriver } from '@/hooks/use-user-role-group';
 
 import { ORDERS_FILTERS_TABS_MAP } from './constants';
 

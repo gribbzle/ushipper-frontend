@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { NonNullableFields } from '@/shared';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { Order } from '@store/api/orders-api';
 import { translateByNamespace } from '@utils/i18n';
 import { getObjectWithoutEmptyFields } from '@utils/objects';

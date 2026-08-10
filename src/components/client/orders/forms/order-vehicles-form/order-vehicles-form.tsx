@@ -4,7 +4,7 @@ import { FieldArray } from 'react-final-form-arrays';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import {InputLabel} from '@/fields/input-label';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

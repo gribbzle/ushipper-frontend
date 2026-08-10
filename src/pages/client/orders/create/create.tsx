@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Header from '@/components/client/orders/create/header';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrderGeneralForm } from '@/components/client/orders/forms/order-general-form/order-general-form';
-import { useEffectOnce } from '@hooks';
+import { useEffectOnce } from '@/hooks/use-effect-once';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
 import { classname } from '@utils/classname';

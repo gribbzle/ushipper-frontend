@@ -6,7 +6,7 @@ import { OrderReviewPopup } from '@/components/client/orders/popups/order-review
 import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { CompanyType } from '@/enums/company-type';
-import { useMeDriverRelated, useMeShipper } from '@hooks';
+import { useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { CloseIcon, PencilWithLineIcon, StarIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderCarrierOrderSelector, orderShipperOrderSelector, reviewActions } from '@store/client';

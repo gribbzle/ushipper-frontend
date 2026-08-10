@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { useIssue } from '@hooks';
+import { useIssue } from '@/hooks/issue/useIssue';
 import { useGetUserQuery } from '@store/api/users-api';
 import { classname } from '@utils/classname';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useShowCompanyPage } from '@hooks';
+import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { CheckGearIcon } from '@icons';
 import { classname } from '@utils/classname';
 

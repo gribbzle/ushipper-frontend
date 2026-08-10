@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useDriversActionsPermission } from '@hooks';
+import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

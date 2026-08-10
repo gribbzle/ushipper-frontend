@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { UserRoleType } from '@/enums/user-role-type';
 import {AsyncSelectField} from '@/fields/select-field';
-import { useAsyncSelect } from '@hooks';
+import { useAsyncSelect } from '@/hooks/selects/use-async-select';
 import { useLazyGetAccountQuery, useLazyGetAccountsQuery } from '@store/api/accounts-api';
 
 export const DriverOwnersSelect = ({ input, excludedDriverId, disabled }: FieldRenderProps<string> & { excludedDriverId: string }) => {

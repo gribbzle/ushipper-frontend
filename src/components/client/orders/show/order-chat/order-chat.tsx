@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import { Chat } from '@/components/common/chats-drawer/chat';
-import { useChatId } from '@hooks';
+import { useChatId } from '@/hooks/chat/use-chat-id';
 import { isChatInitiazedSelector } from '@store/common';
 
 export const OrderChat = () => {

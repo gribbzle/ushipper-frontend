@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ParsedOrderDetailsDrawer } from '@/components/client/loadboard/parsed-order-details-drawer/parsed-order-details-drawer';
 import { Paper } from '@/components/common/paper/paper';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { selectedChatIdSelector } from '@store/client';
 import { classname } from '@utils/classname';

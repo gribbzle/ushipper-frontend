@@ -8,7 +8,7 @@ import {FieldPrefixContext, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';
-import { useDisableCarrierChanging } from '@hooks';
+import { useDisableCarrierChanging } from '@/hooks/order/use-disable-carrier-changing';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

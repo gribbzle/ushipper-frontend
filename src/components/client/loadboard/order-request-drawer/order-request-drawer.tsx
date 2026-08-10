@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { LoadboardDrawerMap } from '@/components/client/loadboard/loadboard-drawer-map/loadboard-drawer-map';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { useMeCarrier } from '@hooks';
+import { useMeCarrier } from '@/hooks/use-user-role-group';
 import { AppState } from '@store';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { loadboardActions } from '@store/client/loadboard/slice';

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { useMeCarrier, useMeCarrierDriver, useMeDispatcher, useMeDriverRelated } from '@hooks';
+import { useMeCarrier, useMeDispatcher, useMeDriverRelated } from '@/hooks/use-user-role-group';
+import { useMeCarrierDriver } from '@/hooks/use-user-role-type';
 import { OrderRequest } from '@store/api/order-requests-types';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';

@@ -3,7 +3,7 @@ import React, { memo, useMemo } from 'react';
 import { OrderTag } from '@/components/client/orders/order-tag';
 import { OrderStatus } from '@/enums/order-status';
 import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
-import { useMeShipper } from '@hooks';
+import { useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector, driverPaymentRequestsCounterSelector, issuesCounterSelector } from '@store/global';
 import { classname } from '@utils/classname';

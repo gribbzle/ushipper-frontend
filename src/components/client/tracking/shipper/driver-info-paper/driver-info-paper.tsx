@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import { Loader } from '@/components/common/loader/loader';
 import { Paper } from '@/components/common/paper/paper';
-import { useShipperTrackingDriver } from '@hooks';
+import { useShipperTrackingDriver } from '@/hooks/tracking/use-shipper-tracking-driver';
 import { useAppDispatch, useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector, trackingActions } from '@store/client';
 import { classname } from '@utils/classname';

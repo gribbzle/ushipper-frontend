@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 
-import { useDriversViewPermission, useHandleOpenAccountingDrawerClick } from '@hooks';
+import { useDriversViewPermission } from '@/hooks/accounting/use-drivers-view-permission';
+import { useHandleOpenAccountingDrawerClick } from '@/hooks/accounting/use-handle-open-accounting-drawer-click';
 import { TransactionBalanceResource } from '@store/admin';
 import { classname } from '@utils/classname';
 

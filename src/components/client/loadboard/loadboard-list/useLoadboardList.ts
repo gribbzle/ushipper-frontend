@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { useLoadboardTabSelection } from '@hooks';
+import { useLoadboardTabSelection } from '@/hooks/loadboard/useLoadboardTabSelection';
 import { useAppSelector } from '@store';
 import { loadboardListSelector } from '@store/client/loadboard';
 

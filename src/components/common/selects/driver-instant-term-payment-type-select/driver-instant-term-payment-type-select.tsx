@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import {SelectField} from '@/fields/select-field';
-import { useMeAdmin } from '@hooks';
+import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { getDriverPaymentRecipientTranslate, getPaymentRecipientTranslate } from '@utils/translate/get-payment-recipient-translate';
 
 export const DriverInstantTermPaymentTypeSelect = (props: FieldRenderProps<string>) => {

@@ -10,7 +10,8 @@ import { PageHeader } from '@/components/common/page-header/page-header';
 import { BalanceType } from '@/enums/balance-type';
 import { TransactionTypeGroup } from '@/enums/transactions/transaction-type-group';
 import { useExportTransactions } from '@/hooks/useDownload';
-import { useIsTransactionsPage, useTransactionActionsPermission } from '@hooks';
+import { useIsTransactionsPage } from '@/hooks/accounting/use-is-transactions-page';
+import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';
 import { PlusCircleIcon } from '@icons';
 import { translateByNamespace } from '@utils/i18n';
 

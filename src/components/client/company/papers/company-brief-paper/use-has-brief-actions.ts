@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { useIsCarrierOwnerPage, useIsDispatcherOwnerPage, useIsDriverOwnerPage, useMeCarrier, useMeDispatcher, useMeDriver } from '@hooks';
+import { useIsCarrierOwnerPage, useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
+import { useMeCarrier, useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 
 export const useHasBriefActions = () => {
     const isDispatcherOwnerPage = useIsDispatcherOwnerPage();

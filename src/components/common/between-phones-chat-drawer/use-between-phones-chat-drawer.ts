@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useRouter } from 'next/router';
 
-import { useDebouncedGetChats } from '@hooks';
+import { useDebouncedGetChats } from '@/hooks/chat/use-debounced-get-chats';
 import { useAppDispatch, useAppSelector } from '@store';
 import { chatsActions, messagesActions, selectedChatIdSelector } from '@store/client';
 import { loadboardActions, loadboardBetweenPhonesChatDrawerStateSelector } from '@store/client/loadboard';

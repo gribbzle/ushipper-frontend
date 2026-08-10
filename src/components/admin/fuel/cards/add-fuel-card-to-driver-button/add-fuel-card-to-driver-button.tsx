@@ -1,7 +1,7 @@
 import React, { MouseEvent, useCallback } from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { useFuelCardsActionsPermission } from '@hooks';
+import { useFuelCardsActionsPermission } from '@/hooks/fuel/use-fuel-cards-actions-permission';
 import { PlusIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';

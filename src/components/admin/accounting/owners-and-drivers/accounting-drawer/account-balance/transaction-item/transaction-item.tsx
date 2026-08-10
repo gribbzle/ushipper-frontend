@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import { Link } from '@/components/common/link/link';
 import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
-import { useDestinationAccountingNumber } from '@hooks';
+import { useDestinationAccountingNumber } from '@/hooks/accounting/use-destination-accounting-number';
 import { Transaction, TransactionBalanceResource } from '@store/admin';
 import { classname } from '@utils/classname';
 import { getPaymentConfirmationTypeTranslate } from '@utils/get-payment-confirmation-type-translate';

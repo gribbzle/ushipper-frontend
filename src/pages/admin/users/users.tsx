@@ -6,7 +6,8 @@ import { DeleteUserPopup } from '@/components/client/staff/delete-user-popup/del
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { StaffFiltersForm } from '@/components/client/staff/staff-filters/staff-filters';
 import { StaffTable } from '@/components/client/staff/staff-table/staff-table';
-import { useHasPermission, useUsersPage } from '@hooks';
+import { useHasPermission } from '@/hooks/use-check-permission';
+import { useUsersPage } from '@/hooks/users/use-users-page';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getProjectName } from '@utils/translate/get-project-name';

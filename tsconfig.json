@@ -20,7 +20,6 @@
         "paths": {
             "@api": ["./src/api/index"],
             "@api/*": ["./src/api/*"],
-            "@hooks": ["./src/hooks/index"],
             "@hooks/*": ["./src/hooks/*"],
             "@constants": ["./src/constants/index"],
             "@store": ["./src/store/index"],

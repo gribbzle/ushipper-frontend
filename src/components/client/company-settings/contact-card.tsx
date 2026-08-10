@@ -7,7 +7,7 @@ import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import parseValidationFields from '@/utils/parse-validation-fields';
 import {StringInput} from '@/fields/string-input';
-import { useGetCompanyData } from '@hooks';
+import { useGetCompanyData } from '@/hooks/companies/use-get-company-data';
 import { useAppSelector } from '@store';
 import { CompanyContactPathData, usePathCompanyContactMutation } from '@store/api/company-api';
 import { authorizedUserSelector } from '@store/global';
