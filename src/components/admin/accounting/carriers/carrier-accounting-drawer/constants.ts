@@ -1,4 +1,4 @@
-import { FactoringProvider } from '@/enums';
+import { FactoringProvider } from '@/enums/company/factoring-provider';
 import { EmailServerCredentialType } from '@types';
 
 export const DEFAULT_FACTORING_EMAILS_SETTINGS = {

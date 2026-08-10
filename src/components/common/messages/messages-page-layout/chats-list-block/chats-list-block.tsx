@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { ChatsSearch } from '@/components/common/chats-drawer/chats-search/chats-search';
 import { EmptyChatsList } from '@/components/common/chats-drawer/empty-chats-list/empty-chats-list';
 import { Loader } from '@/components/common/loader/loader';
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useDebouncedGetChats, useMeAdmin, useMeDriverRelated } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

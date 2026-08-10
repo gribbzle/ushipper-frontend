@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import has from 'has-values';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { getOrderInformation } from '@/utils/order';
 import { OrderInformation } from '@store/client';
 import { classname } from '@utils/classname';

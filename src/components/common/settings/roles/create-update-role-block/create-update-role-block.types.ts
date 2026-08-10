@@ -1,4 +1,4 @@
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { SelectOption } from '@/shared';
 
 export type CreateUpdateRoleFormState = {

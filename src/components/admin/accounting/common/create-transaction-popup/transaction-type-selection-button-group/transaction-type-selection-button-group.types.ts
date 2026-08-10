@@ -1,6 +1,6 @@
 import { FieldValidator } from 'final-form';
 
-import { TransactionTypesEnum } from '@/enums';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 
 import { LimitedBalanceTypesEnum } from '../create-transaction-form/create-transaction-form.types';
 

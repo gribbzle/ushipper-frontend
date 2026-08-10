@@ -1,4 +1,4 @@
-import { CatalogListTabsEnum } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { CatalogFiltersForUrlParams } from '@/components/client/catalogs/catalog-filters-tabs/catalog-filters-tabs.types';
 import { BaseCatalogFiltersParams } from '@store/client';
 

@@ -1,4 +1,5 @@
-import { CompanyType, OrderSortingDirection } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { Review } from '@store/client/review/types';
 import { PaginatedResponse } from '@utils/redux';
 

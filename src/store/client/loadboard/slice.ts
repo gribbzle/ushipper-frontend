@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { SavedLoadBoardFilters } from '@store/api/loadboard-api';
 import { isUshipper } from '@utils/project-config';
 

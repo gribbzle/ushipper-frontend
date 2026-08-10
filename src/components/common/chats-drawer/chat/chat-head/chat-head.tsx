@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { Button } from '@/components/common/button/button';
-import { ChatTypesEnum, OrderStatus } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
+import { OrderStatus } from '@/enums/order-status';
 import { useMeCarrier, useMeDriverRelated, useMeShipper } from '@/hooks/use-user-role-group';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import { GeoLocationIcon } from '@icons';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';

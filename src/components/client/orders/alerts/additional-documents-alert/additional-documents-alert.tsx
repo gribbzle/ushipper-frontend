@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { AttachmentDownloadButton } from '@/components/common/attachment-download-button/attachment-download-button';
 import { Button } from '@/components/common/button/button';
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import {MultiFileUploader} from '@/fields/multi-file-uploader';
 import { Ellipse } from '@icons';
 import { classname } from '@utils/classname';

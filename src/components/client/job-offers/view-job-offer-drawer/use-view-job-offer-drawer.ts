@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetJobOfferQuery } from '@store/api/job-offers';
 import { isNotificationsDrawerOpenSelector } from '@store/common';

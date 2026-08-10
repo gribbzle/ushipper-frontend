@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
 import { MileCostTooltip } from '@/components/common/mile-cost-tooltip/mile-cost-tooltip';
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { getOrderPriceWithTerms, getParsedOrderPriceWithTermsAndMethods } from '@/utils/order';
 import { calculateTotalPayment } from '@/utils/payment';
 import { OrderCommodity } from '@store/api/orders-api';

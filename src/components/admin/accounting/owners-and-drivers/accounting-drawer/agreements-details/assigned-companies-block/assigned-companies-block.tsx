@@ -5,7 +5,7 @@ import { DateInfo } from '@/components/common/table/common/date-info/date-info';
 import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useDriversActionsPermission } from '@hooks';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';

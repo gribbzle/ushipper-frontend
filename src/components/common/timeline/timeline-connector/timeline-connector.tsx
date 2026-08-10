@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { classname } from '@utils/classname';
 
 import './timeline-connector.scss';

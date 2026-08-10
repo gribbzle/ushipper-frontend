@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 import { useSelector } from 'react-redux';
 
 import { WorkingTimeSelectionButtonGroup } from '@/components/common/working-time-selection-button-group/working-time-selection-button-group';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { DatePicker } from '@/fields/datepicker/datepicker';
 import { FormControl } from '@/fields/form-control/form-control';
 import { InputLabel } from '@/fields/input-label/input-label';

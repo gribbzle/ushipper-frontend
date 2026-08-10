@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { useOrderPaymentTerms } from '@/hooks/order';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import { BalanceValue } from '@store/admin';

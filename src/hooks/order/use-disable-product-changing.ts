@@ -1,4 +1,4 @@
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { useUserRoleGroup } from '@/hooks';
 import { useAppSelector } from '@store';
 import { orderCarrierOrderSelector, orderShipperOrderSelector } from '@store/client';

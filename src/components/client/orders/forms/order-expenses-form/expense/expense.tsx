@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ExpenseTypesSelect } from '@/components/common/expense-types-select/expense-types-select';
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { ExpenseTypeEnum } from '@/enums';
+import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
 import {CheckboxInput} from '@/fields/checkbox-input';
 import {DatePicker} from '@/fields/datepicker';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';

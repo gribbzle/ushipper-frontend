@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { PaymentConfirmationType } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import { RollbackTransaction } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';
 

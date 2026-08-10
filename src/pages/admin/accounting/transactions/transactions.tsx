@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { AccountingDrawer } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer';
 import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';
 import { AddDriverToCompanyPopup } from '@/components/admin/accounting/owners-and-drivers/add-driver-to-company-popup/add-driver-to-company-popup';

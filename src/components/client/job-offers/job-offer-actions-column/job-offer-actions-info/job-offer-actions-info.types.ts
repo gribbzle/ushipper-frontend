@@ -1,4 +1,4 @@
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { Creator } from '@/shared';
 import { Company } from '@store/admin';
 

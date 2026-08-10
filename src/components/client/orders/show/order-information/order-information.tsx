@@ -4,7 +4,9 @@ import { OrderSetDispatcherDrawer } from '@/components/client/orders/drawers/ord
 import { OrderSetDriverDrawer } from '@/components/client/orders/drawers/order-set-driver-drawer/order-set-driver-drawer';
 import { UserInfo } from '@/components/client/orders/show/order-information/user-info';
 import { Paper } from '@/components/common/paper/paper';
-import { OrderSourcesEnum, UserRoleGroup, UserRoleType } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useCanManageOrder } from '@/hooks/order';
 import { useIsPartnerCompany, useMeDriverRelated, useUserRoleGroup } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';

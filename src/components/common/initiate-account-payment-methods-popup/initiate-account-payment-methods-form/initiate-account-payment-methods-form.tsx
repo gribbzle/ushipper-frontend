@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 import { Field, Form } from 'react-final-form';
 
 import { Link } from '@/components/common/link/link';
-import { MassPayUserTypesEnum } from '@/enums';
+import { MassPayUserTypesEnum } from '@/enums/account/masspay-user-types-enum';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';

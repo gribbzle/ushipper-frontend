@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:payment-terms');

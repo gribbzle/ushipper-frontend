@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { DriverLoadboardPaymentTermEnum } from '@/enums';
+import { DriverLoadboardPaymentTermEnum } from '@/enums/driver-loadboard-payment-terms-enum';
 import {SelectField} from '@/fields/select-field';
 import { getDriverLoadboardPaymentTermTranslate } from '@utils/translate/get-driver-loadboard-payment-terms-translate';
 

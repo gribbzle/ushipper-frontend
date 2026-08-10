@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { createCompany, deleteCompany, editCompany, fetchCompanies, fetchCompany } from '@api';
 import { companyApi } from '@store/api/company-api';
 import { CompanyTotalRating } from '@store/api/company-rating-types';

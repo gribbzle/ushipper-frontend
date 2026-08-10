@@ -1,7 +1,9 @@
 import { MutableRefObject, useCallback } from 'react';
 import { FormApi } from 'final-form';
 
-import { ContractorTypesEnum, FeesRule, FuelCardsRule } from '@/enums';
+import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
+import { FeesRule } from '@/enums/fee/fees-rules-enum';
+import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
 import { useHandleCreateEditAccountFees, useHandleDeleteFees } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';

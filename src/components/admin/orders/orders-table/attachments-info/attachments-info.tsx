@@ -4,7 +4,8 @@ import { AttachmentItem } from '@/components/common/attachment-item/attachment-i
 import { useHandleViewBol } from '@/hooks/order';
 import { Attachment } from '@/shared';
 import { fetchOrderBOL } from '@api';
-import { AttachmentType, OrderSortingDirection } from '@enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { ImageProvider } from '@/providers/ImageProvider';
 import { useAppDispatch } from '@store';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';

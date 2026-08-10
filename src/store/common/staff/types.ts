@@ -1,4 +1,6 @@
-import { CompanyStatusEnum, UserRoleGroup, UserRoleType } from '@enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
 
 import { NullableFields } from '@/shared';
 import { Fee } from '../../../types/fee';

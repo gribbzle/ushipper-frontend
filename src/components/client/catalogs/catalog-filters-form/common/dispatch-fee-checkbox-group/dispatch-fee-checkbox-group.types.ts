@@ -1,4 +1,4 @@
-import { DispatchFeeFilterEnum } from '@/enums';
+import { DispatchFeeFilterEnum } from '@/enums/dispatch-fee-filter-enum';
 
 export type DispatchFeeRangeValue = 'any' | { from: number; to: number };
 

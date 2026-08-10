@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { useAppSelector } from '@store';
 import { TrackingOrdersByDispatcherData } from '@store/api/tracking-api';
 import { isShipperOrdersTrackingLoadingSelector } from '@store/client';

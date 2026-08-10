@@ -1,4 +1,4 @@
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { AppState } from "@store";
 
 const paymentTermsStateSelector = (state: AppState) => state.common.paymentTerms;

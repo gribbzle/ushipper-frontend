@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useShowCompanyPage } from '@hooks';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';

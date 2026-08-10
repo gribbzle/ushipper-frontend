@@ -1,5 +1,6 @@
 import { SortSelectValue } from '@/components/common/sort-select/sort-select';
-import { CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
+import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 
 import { CategoryFields } from '../../profile-settings';
 

@@ -22,17 +22,15 @@ import { Paper } from '@/components/common/paper/paper';
 import { useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { Attachment } from '@/shared';
-import {
-    AttachmentType,
-    CommodityDimensionUnitEnum,
-    CommodityTemperatureUnitEnum,
-    CommodityWeightUnitEnum,
-    DelayedPaymentTerm,
-    ExpenseTypeEnum,
-    InspectionType,
-    OrderPaymentStatus,
-    VehicleType,
-} from '@enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
+import { CommodityDimensionUnitEnum } from '@/enums/commodity/commodity-dimension-unit-enum';
+import { CommodityTemperatureUnitEnum } from '@/enums/commodity/commodity-temperature-unit-enum';
+import { CommodityWeightUnitEnum } from '@/enums/commodity/commodity-weight-unit-enum';
+import { DelayedPaymentTerm } from '@/enums/payment-term';
+import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
+import { InspectionType } from '@/enums/inspection-type';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { VehicleType } from '@/enums/vehicle-type';
 import { useMeCarrier } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useUpdateOrderPaymentMutation } from '@store/api/order-payment-api';

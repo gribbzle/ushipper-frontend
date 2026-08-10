@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
-import { TimeCondition, UserRoleType } from '@/enums';
+import { TimeCondition } from '@/enums/time-condition';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { Attachment } from '@/shared';

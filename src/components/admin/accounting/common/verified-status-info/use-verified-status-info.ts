@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { StatusBlockView } from '@/components/common/status-block/status-block';
-import { AccountStatusesEnum } from '@/enums';
+import { AccountStatusesEnum } from '@/enums/account/account-statuses-enum';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppDispatch } from '@store';
 import { AccountingAccountData, accountingAccountsApi } from '@store/api/accounting-accounts-api';

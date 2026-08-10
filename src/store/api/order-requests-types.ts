@@ -1,4 +1,5 @@
-import { OfferToRequestStatusesEnum, PaymentMethod, RequestStatusesEnum } from '@/enums';
+import { OfferToRequestStatusesEnum, RequestStatusesEnum } from '@/enums/request-statuses';
+import { PaymentMethod } from '@/enums/payment-method';
 import { PaymentTerm } from '@/enums/payment-term';
 import { Company } from '@store/admin/companies/types';
 import { User } from '@store/common/staff/types';

@@ -1,4 +1,5 @@
-import { FuelCardStatus, FuelTransactionStatus } from '@/enums';
+import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
+import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
 import { FuelCard, FuelTransaction } from '@store/admin';
 import { PaginatedResponse } from '@utils/redux';
 

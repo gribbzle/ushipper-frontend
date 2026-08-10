@@ -1,6 +1,10 @@
 import { RocketkorFormValue } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/rocketkor/rocketkor.types';
 import { DocumentFormValue } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/rocketkor/rocketkor-form/document-form/document-form.types';
-import { AccountStatusesEnum, DriverLoadboardPaymentTermEnum, MassPayUserTypesEnum, OrderSourcesEnum, UserRoleType } from '@/enums';
+import { AccountStatusesEnum } from '@/enums/account/account-statuses-enum';
+import { DriverLoadboardPaymentTermEnum } from '@/enums/driver-loadboard-payment-terms-enum';
+import { MassPayUserTypesEnum } from '@/enums/account/masspay-user-types-enum';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { UserRoleType } from '@/enums/user-role-type';
 import { Attachment } from '@/shared';
 import { toFormData } from '@/utils/to-form-data';
 import { BalanceValue } from '@store/admin/accounting/balance-types';

@@ -1,7 +1,7 @@
 import { MutableRefObject } from 'react';
 import { FormApi } from 'final-form';
 
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { Attachment } from '@/shared';
 import { TermCondition } from '@store/client';
 

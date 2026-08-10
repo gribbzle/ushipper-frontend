@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppDispatch, useAppSelector } from '@store';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { markAsDeliveredPopupSelector, orderPublicIdSelector, ordersActions } from '@store/client';

@@ -1,4 +1,5 @@
-import { AccountSubTypesEnum, BalanceType } from '@/enums';
+import { AccountSubTypesEnum } from '@/enums/account-subtypes-enum';
+import { BalanceType } from '@/enums/balance-type';
 import { BankAccount, BillingAddress, Card } from '@store/admin';
 
 export type FinancialAccountFormValue = {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';
 import { AccountingStatisticCounters } from '@/components/admin/accounting/common/accounting-statistic-counter/accounting-statistic-counters';
 import { BalancePageHead } from '@/components/admin/accounting/common/balance-page-head/balance-page-head';

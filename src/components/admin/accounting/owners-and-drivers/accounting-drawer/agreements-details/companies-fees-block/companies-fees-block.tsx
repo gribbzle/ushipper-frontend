@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
-import { FeeCategoryTermType } from '@enums';
+import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee } from '@types';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';

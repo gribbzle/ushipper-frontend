@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 
 import { getAllFiltersFromUrlParams } from '@/components/client/company/review-filters-tabs/utils';
-import { ReviewTabsEnum } from '@/enums';
+import { ReviewTabsEnum } from '@/enums/review-tab-enum';
 
 export const useIsRatingPanel = () => {
     const router = useRouter();

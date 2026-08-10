@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { OrderSortingDirection, TransactionStatusGroupEnum } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';

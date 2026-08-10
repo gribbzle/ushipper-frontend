@@ -1,4 +1,6 @@
-import { DamageCode, InspectionSubtype, InspectionType } from '@/enums';
+import { DamageCode } from '@/enums/damage-code';
+import { InspectionSubtype } from '@/enums/inspection-subtype';
+import { InspectionType } from '@/enums/inspection-type';
 import { Attachment, Creator, NullableFields } from '@/shared';
 
 export type InspectionItem = number | string | boolean | null;

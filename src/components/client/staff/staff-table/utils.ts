@@ -1,6 +1,6 @@
 import { ReadonlyURLSearchParams } from 'next/navigation';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { StaffFilters } from '@store/client';
 
 export const getUserFiltersFromUrlParams = (params: ReadonlyURLSearchParams, defaultFilters: Partial<StaffFilters> = {}): Partial<StaffFilters> => {

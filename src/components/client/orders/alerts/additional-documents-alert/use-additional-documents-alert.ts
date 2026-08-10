@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { useAppDispatch } from '@store';
 import { ordersApi, useCreateOrderRequestedDocumentsMutation, usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { removeFieldPrefix } from '@utils/form';

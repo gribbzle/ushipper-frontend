@@ -1,4 +1,6 @@
-import { CatalogListTabsEnum, CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
+import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 
 export type CatalogFiltersForUrlParams = Partial<{
     statisticsStatus: CatalogListTabsEnum;

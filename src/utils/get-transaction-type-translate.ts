@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { TransactionTypesEnum } from '@/enums';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 import { translateByNamespace } from '@/utils/i18n';
 import { LimitedBalanceTypesEnum } from '@/components/admin/accounting/common/create-transaction-popup/create-transaction-form/create-transaction-form.types';
 

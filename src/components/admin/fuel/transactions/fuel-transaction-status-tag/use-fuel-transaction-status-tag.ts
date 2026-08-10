@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { FuelTransactionStatus } from '@/enums';
+import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
 import { RequestError } from '@/shared';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useFuelTransactionsActionsPermission } from '@hooks';

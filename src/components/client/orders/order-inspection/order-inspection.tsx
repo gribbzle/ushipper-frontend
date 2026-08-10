@@ -8,7 +8,7 @@ import { InspectionStub } from '@/components/client/orders/inspection/inspection
 import { Accordion } from '@/components/common/accordion/accordion';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Tabs } from '@/components/common/tabs/tabs';
-import { InspectionSubtype } from '@/enums';
+import { InspectionSubtype } from '@/enums/inspection-subtype';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
 import { useAppSelector } from '@store';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';

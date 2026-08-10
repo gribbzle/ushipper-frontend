@@ -1,7 +1,7 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { CheckFullCircleIcon, ExclamationFullCircleIcon, PlusFullCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 

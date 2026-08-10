@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { Divider } from '@/components/common/divider/divider';
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import {FieldPrefix} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

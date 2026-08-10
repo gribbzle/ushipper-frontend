@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { CarrierAccountingDrawerTab } from '@/enums';
+import { CarrierAccountingDrawerTab } from '@/enums/tabs/carrier-accounting-drawer-tab';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

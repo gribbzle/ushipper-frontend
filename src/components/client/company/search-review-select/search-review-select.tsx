@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
-import { ReviewsFilterEnum } from '@/enums';
+import { ReviewsFilterEnum } from '@/enums/reviews-filter-enum';
 import {SelectField} from '@/fields/select-field';
 import { useAppSelector } from '@store';
 import { companyRatingsReviewCountArraySelector, companyReviewsTotalSelector } from '@store/admin';

@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { FuelCardStatus } from '@/enums';
+import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const fuelCardStatusTranslate = translateByNamespace('admin:fuel:cards-page:statuses');

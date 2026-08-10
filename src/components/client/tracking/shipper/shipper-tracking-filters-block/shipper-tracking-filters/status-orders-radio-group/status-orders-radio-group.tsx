@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { RadioOption } from '@/components/common/radio-button-group/radio-button-group';
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import {RadioGroupInput} from '@/fields/radio-group-input';
 import { translateByNamespace } from '@utils/i18n';
 import { getTrackingOrderStatusTranslate } from '@utils/translate/tracking/get-tracking-order-status-translate';

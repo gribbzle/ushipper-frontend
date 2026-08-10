@@ -1,6 +1,10 @@
 import * as validate from 'joi';
 
-import { FactoringProvider, FeeCategoryTermType, FeeCategoryValueType, FeeRecurringWeekDay, RecurringIntervalType } from '@enums';
+import { FactoringProvider } from '@/enums/company/factoring-provider';
+import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
+import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
+import { FeeRecurringWeekDay } from '@/enums/fee/fee-recurring-week-days-enum';
+import { RecurringIntervalType } from '@/enums/fee/recurring-interval-type';
 
 const stringValidator = validate.string();
 const numberValidator = validate.number();

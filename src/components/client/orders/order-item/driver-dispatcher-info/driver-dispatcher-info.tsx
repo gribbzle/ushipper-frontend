@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { UserRoleGroup, UserRoleType } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useHasPartnerCompanies, useMeDriverRelated, useUserRoleGroup } from '@hooks';
 import { User } from '@store/client';
 import { classname } from '@utils/classname';

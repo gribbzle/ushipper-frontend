@@ -20,13 +20,11 @@
         "paths": {
             "@api": ["./src/api/index"],
             "@api/*": ["./src/api/*"],
-            "@enums": ["./src/enums/index"],
             "@hooks": ["./src/hooks/index"],
             "@hooks/*": ["./src/hooks/*"],
             "@constants": ["./src/constants/index"],
             "@store": ["./src/store/index"],
             "@store/*": ["./src/store/*"],
-            "@utils": ["./src/utils/index"],
             "@utils/*": ["./src/utils/*"],
             "@icons": ["./src/assets/icons/index"],
             "@images": ["./src/assets/images/index"],

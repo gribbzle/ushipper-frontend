@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ChatMessageTypesEnum } from '@/enums';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatMessage } from '@store/common/chats/types';
 import { isFileImage } from '@utils/files';
 import { translateByNamespace } from '@utils/i18n';

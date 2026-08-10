@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
-import { FeesRule } from '@/enums';
+import { FeesRule } from '@/enums/fee/fees-rules-enum';
 import {SelectionButtonGroupInput} from '@/fields/selection-button-group-input';
 import { translateByNamespace } from '@utils/i18n';
 

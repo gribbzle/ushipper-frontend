@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import { useRolesOptions } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-form/use-roles-options';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useInvalidateSelectedAccountTags } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { addDriverToCompanyPopupPropsSelector } from '@store/admin';

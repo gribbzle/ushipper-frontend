@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useQueryFilters, useTable } from '@hooks';
 import { GetAccountingAccountsParams, useGetAccountingAccountsQuery } from '@store/api/accounting-accounts-api';
 import { convertToStringArray } from '@utils/converter';

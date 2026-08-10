@@ -1,4 +1,6 @@
-import { ContractorTypesEnum, FeesRule, FuelCardsRule } from '@enums';
+import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
+import { FeesRule } from '@/enums/fee/fees-rules-enum';
+import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
 import { AccountConfigPatchData } from '@store/api/accounts-api';
 import { FeeData, RecurringFeeData } from '@types';
 

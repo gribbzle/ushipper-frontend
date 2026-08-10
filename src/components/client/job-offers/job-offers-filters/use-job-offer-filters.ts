@@ -1,7 +1,9 @@
 import { useCallback, useState } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { JobOfferSortingName, OfferStatusesEnum, OrderSortingDirection } from '@/enums';
+import { JobOfferSortingName } from '@/enums/offer-sorting-name';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useMeCarrier } from '@hooks/use-user-role-group';
 
 import { JobOffersFiltersParams, JobOffersFiltersTypes } from './job-offers-filters.types';

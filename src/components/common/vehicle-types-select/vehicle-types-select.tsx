@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { VehicleType } from '@enums';
+import { VehicleType } from '@/enums/vehicle-type';
 import {SelectField, SelectFieldProps} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

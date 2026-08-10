@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from '@/components/common/link/link';
-import { SignUpStep } from '@/enums';
+import { SignUpStep } from '@/enums/sign-up-step';
 import CheckIcon from '@/pages/client/sign-up/check.svg';
 import logos from '@logo';
 import { classname } from '@utils/classname';

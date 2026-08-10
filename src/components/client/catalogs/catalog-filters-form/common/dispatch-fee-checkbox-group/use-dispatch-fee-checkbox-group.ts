@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useField, useForm } from 'react-final-form';
 
-import { DispatchFeeFilterEnum } from '@/enums';
+import { DispatchFeeFilterEnum } from '@/enums/dispatch-fee-filter-enum';
 import { useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';

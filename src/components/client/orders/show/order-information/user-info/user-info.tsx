@@ -5,7 +5,7 @@ import { Avatar } from '@/components/common/avatar/avatar';
 import { Badge } from '@/components/common/badge/badge';
 import { Button } from '@/components/common/button/button';
 import { DriverParentInfo } from '@/components/common/driver-parent-info/driver-parent-info';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useIsAdminPage, useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { UserPlusIcon } from '@icons';
 import { User } from '@store/common';

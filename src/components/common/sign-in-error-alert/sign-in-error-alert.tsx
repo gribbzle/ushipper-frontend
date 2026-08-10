@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SignInErrorMessages } from '@/enums';
+import { SignInErrorMessages } from '@/enums/sign-in-error-messages-enum';
 import { translateByNamespace } from '@utils/i18n';
 import { renderTextWithBreakLines } from '@utils/render';
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import {FormControl} from '@/fields/form-control';
 import { useAppSelector } from '@store';

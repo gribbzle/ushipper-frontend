@@ -1,7 +1,7 @@
 import { useCallback, useRef } from 'react';
 import { FormApi } from 'final-form';
 
-import { CarrierAccountingDrawerTab } from '@/enums';
+import { CarrierAccountingDrawerTab } from '@/enums/tabs/carrier-accounting-drawer-tab';
 import { useAppDispatch, useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { companyApi } from '@store/api/company-api';

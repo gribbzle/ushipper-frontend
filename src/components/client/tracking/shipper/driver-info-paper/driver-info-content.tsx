@@ -6,7 +6,7 @@ import { ShipperOrderTag } from '@/components/client/tracking/shipper/shipper-tr
 import { Avatar } from '@/components/common/avatar/avatar';
 import { Button } from '@/components/common/button/button';
 import { RatingBar } from '@/components/common/rating-bar/rating-bar';
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { isNumber } from '@/shared';
 import { LikeIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

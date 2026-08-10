@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { LoadboardTab } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
 import { useIsPartnerCompany, useLoadboard, useLoadboardTabSelection, useMeDriverRelated } from '@hooks';
 import { useAppSelector } from '@store';
 import { loadboardSavedSearchesSelector } from '@store/client/loadboard';

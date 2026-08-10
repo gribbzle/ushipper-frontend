@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { getAddress, getScheduledAtInfo } from '@/utils/order';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
 import { classname } from '@utils/classname';

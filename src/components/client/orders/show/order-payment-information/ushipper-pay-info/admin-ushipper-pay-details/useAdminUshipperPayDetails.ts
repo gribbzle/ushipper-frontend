@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { useOrder, useOrderFees, useOrderPaymentInformationHelpers } from '@/hooks/order';
-import { FundsTransferStatus } from '@enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { translateByNamespace } from '@utils/i18n';
 
 import { FormattedFee } from './admin-ushipper-pay-details.types';

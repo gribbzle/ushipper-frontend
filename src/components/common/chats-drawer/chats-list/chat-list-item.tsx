@@ -4,7 +4,8 @@ import { useSelector } from 'react-redux';
 
 import { Avatar } from '@/components/common/avatar/avatar';
 import { Badge } from '@/components/common/badge/badge';
-import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import useMessageContent from '@/hooks/chat/use-message-content';
 import { SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';

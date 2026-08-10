@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { TransportTypeEnum } from '@/enums';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { useCodCopOrderOptions } from '@/hooks/order';
 import { translateByNamespace } from '@utils/i18n';
 

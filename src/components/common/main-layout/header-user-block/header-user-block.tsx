@@ -3,7 +3,7 @@ import JsCookie from 'js-cookie';
 import { useSelector } from 'react-redux';
 
 import { Avatar } from '@/components/common/avatar/avatar';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useAppDispatch } from '@store';
 import { backToAdminSubmit } from '@store/client';
 import { notificationsActions } from '@store/common';

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { RegistrationType } from '@/enums';
+import { RegistrationType } from '@/enums/registration-type';
 import { translateRegistrationType } from '@/utils/translations';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';

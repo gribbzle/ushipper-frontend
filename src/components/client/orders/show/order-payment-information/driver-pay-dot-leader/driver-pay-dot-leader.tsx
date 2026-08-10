@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { FundsTransferStatus, OrderStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { orderSelector } from '@store/client';

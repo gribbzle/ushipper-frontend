@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { IssueType } from '@enums';
+import { IssueType } from '@/enums/issues/issue-type';
 import {SelectField} from '@/fields/select-field';
 import { translateIssueType } from '@utils/translate/issue/translate-issue-type';
 

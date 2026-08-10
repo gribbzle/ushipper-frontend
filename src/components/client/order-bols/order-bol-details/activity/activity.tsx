@@ -9,7 +9,7 @@ import { TimelineContent } from '@/components/common/timeline/timeline-content/t
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
 import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import {
     orderBOLCreatedAtSelector,

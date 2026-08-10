@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { Table } from '@/components/common/table/table';
 import { TableColumn } from '@/components/common/table/table.types';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { clickedRowIdSelector, fetchedRolesSelector, fetchRoleAction, fetchRolesAction, UserRole } from '@store/common';

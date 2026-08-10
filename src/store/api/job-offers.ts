@@ -2,7 +2,7 @@ import { toSnakeCase } from 'js-convert-case';
 
 import { JobOffersFiltersParams, JobOfferStatisticsCounters } from '@/components/client/job-offers/job-offers-filters/job-offers-filters.types';
 import { SendJobOfferFormValue } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-form/send-job-offer-form.types';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { Attachment } from '@/shared';
 import { apiSlice } from '@store/api/api-slice';
 import { JobOffer } from '@store/client/job-offers/types';

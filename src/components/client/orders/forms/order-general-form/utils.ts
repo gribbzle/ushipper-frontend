@@ -3,7 +3,8 @@ import { isObject, set, unset } from 'lodash';
 import get from 'lodash.get';
 import isEqual from 'lodash.isequal';
 
-import { ExpenseTypeEnum, VehicleType } from '@enums';
+import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
+import { VehicleType } from '@/enums/vehicle-type';
 import { OrderExpense } from '@store/api/order-expenses-api';
 import { OrderCommodity } from '@store/api/orders-api';
 import { OrderVehicle } from '@/shared/types';

@@ -1,4 +1,4 @@
-import { OrderStatisticsGroup } from '@/enums';
+import { OrderStatisticsGroup } from '@/enums/order/order-statistics-group';
 
 export const ORDER_STATISTICS_GROUP_COLOR: Record<OrderStatisticsGroup, string> = {
     [OrderStatisticsGroup.AGING_ORDERS]: '#eb5757',

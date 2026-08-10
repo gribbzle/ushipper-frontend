@@ -7,7 +7,7 @@ import { HelperText } from '@/components/common/table/common/helper-text/helper-
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { hasAddress } from '@/utils/order';
-import { OrderSortingDirection } from '@enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelTransaction } from '@store/admin';

@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { PaymentMethodsSelect } from '@/components/common/payment-methods-select/payment-methods-select';
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import {CurrencyInput} from '@/fields/currency-input';
 import {DatePicker} from '@/fields/datepicker';
 import {FormControl} from '@/fields/form-control';

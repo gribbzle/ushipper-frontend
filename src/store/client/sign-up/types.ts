@@ -1,4 +1,7 @@
-import { CompanyType, GrantTypeEnum, RegistrationType, UserRoleType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
+import { GrantTypeEnum } from '@/enums/grant-type-enum';
+import { RegistrationType } from '@/enums/registration-type';
+import { UserRoleType } from '@/enums/user-role-type';
 import { Company } from '@store/admin/companies/types';
 import { RequestStatus, RequestWithStatus } from '@utils/redux';
 

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

@@ -2,7 +2,8 @@ import { useCallback, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 
-import { DeclinationJobOfferReasonsEnum, OfferStatusesEnum } from '@/enums';
+import { DeclinationJobOfferReasonsEnum } from '@/enums/declination-reasons-enum';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 
 import { useViewJobOfferDrawerActions } from '../view-job-offer-drawer/use-view-job-offer-drawer-actions';
 

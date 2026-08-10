@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import { useFormState } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { ExternalServiceType } from '@enums';
+import { ExternalServiceType } from '@/enums/company/external-service-type';
 import { useAppDispatch, useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { companyApi } from '@store/api/company-api';

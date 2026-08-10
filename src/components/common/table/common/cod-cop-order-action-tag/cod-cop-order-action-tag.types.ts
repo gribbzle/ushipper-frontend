@@ -1,4 +1,4 @@
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { User } from '@store/client';
 
 export type CodCopOrdersActionTagProps = {

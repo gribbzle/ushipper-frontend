@@ -1,4 +1,4 @@
-import { OrderStatisticsStatus } from '@/enums';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 
 export const ORDERS_FILTERS_TABS_MAP = new Map<'partnerCarrier' | 'carrier' | 'shipper', OrderStatisticsStatus[]>([
     [

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { CatalogListTabsEnum } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { CatalogStatistic } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
 

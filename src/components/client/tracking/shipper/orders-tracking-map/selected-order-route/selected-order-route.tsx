@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { MapRef, Marker } from 'react-map-gl/mapbox';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { isNumber } from '@/shared';
 import { formatDrivingDistance } from '@/utils/driving';
 import { getDistanceMatrix } from '@api';

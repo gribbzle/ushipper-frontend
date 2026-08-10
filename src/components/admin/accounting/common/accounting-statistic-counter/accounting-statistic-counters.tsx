@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { StatisticCounter } from '@/components/common/statistic-counter';
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { FinancialBalanceData } from '@store/admin';
 import { useGetBalancesQuery } from '@store/api/balances-api';
 import { translateByNamespace } from '@utils/i18n';

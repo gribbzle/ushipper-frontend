@@ -2,7 +2,8 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Loader } from '@/components/common/loader/loader';
 import { DRIVER_ACCOUNT_PENDING_ORDERS_FILTERS } from '@constants';
-import { OrderStatisticsStatus, OrderStatus } from '@enums';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector } from '@store/admin';
 import { useGetOrdersQuery, useGetOrdersStatisticsCountersQuery } from '@store/api/orders-api';

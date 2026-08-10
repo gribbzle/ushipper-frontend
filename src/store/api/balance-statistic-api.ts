@@ -1,4 +1,4 @@
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { BalanceValue } from '@store/admin';
 
 import { apiSlice } from './api-slice';

@@ -2,7 +2,8 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { FeeCategoryType, FeePeriod } from '@/enums';
+import { FeeCategoryType } from '@/enums/fee/fee-category-types-enum';
+import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import { isNumber } from '@/shared';
 import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
 import {FormControl} from '@/fields/form-control';

@@ -1,4 +1,5 @@
-import { TrackingDriverStatus, TrackingOrderStatus } from '@/enums';
+import { TrackingDriverStatus } from '@/enums/tracking/tracking-driver-status';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { apiSlice } from '@store/api/api-slice';
 import { ShipperTrackingOrder, TrackingDriver, TrackingOrderGrouping } from '@store/client/tracking/types';
 import { User } from '@store/common/staff/types';

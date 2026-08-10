@@ -1,7 +1,8 @@
 import React, { RefObject, useMemo } from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
-import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum } from '@/enums';
+import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { classname } from '@utils/classname';
 import { formatDuration } from '@utils/dates';

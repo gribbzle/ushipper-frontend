@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Link } from '@/components/common/link/link';
-import { RegistrationType } from '@/enums';
+import { RegistrationType } from '@/enums/registration-type';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { renderTextWithBreakLines } from '@utils/render';

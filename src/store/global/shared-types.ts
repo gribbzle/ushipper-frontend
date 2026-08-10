@@ -1,4 +1,8 @@
-import { CompanyStatusEnum, SidebarCountsEnum, TimeCondition, UserRoleGroup, UserRoleType } from '@/enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
+import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
+import { TimeCondition } from '@/enums/time-condition';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
 import { BalanceResource } from '@store/admin/accounting/balance-types';
 import { Specialization } from '@store/common/specialization/types';
 import { Avatar } from '@store/common/staff/avatar-types';

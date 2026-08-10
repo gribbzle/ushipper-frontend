@@ -1,4 +1,4 @@
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { CarModel, CarModelsFilters } from '@store/admin';
 import { PaginatedData } from '@utils/redux';
 

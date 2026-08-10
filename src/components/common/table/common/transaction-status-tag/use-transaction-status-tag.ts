@@ -2,7 +2,8 @@ import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { TransactionStatusesEnum, TransactionSystemEnum } from '@/enums';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
+import { TransactionSystemEnum } from '@/enums/preferences/transaction-system-enum';
 import { useHandleTransactionError } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';

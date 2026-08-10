@@ -1,4 +1,4 @@
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { UserRole } from '@/store/common/staff/types';
 
 import { apiSlice } from './api-slice';

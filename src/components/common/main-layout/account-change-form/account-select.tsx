@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import {SelectField} from '@/fields/select-field';
 import { useAppSelector } from '@store';
 import { accountsUsersSelector } from '@store/client/accounts';

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { BusinessTypesEnum } from '@/enums';
+import { BusinessTypesEnum } from '@/enums/business-types-enum';
 import {SelectField} from '@/fields/select-field';
 import { getBusinessTypeTranslate } from '@utils/translate/get-business-type-translate';
 

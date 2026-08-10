@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 
 import { SortSelectOptions } from '@/components/common/sort-select/sort-select';
-import { OrderSortingDirection, OrderSortingName } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import { translateSortingOption } from '@/utils/translations';
 
 export const useOrdersSortingFieldOptions = () => {

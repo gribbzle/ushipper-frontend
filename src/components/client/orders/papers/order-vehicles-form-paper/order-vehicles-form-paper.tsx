@@ -5,7 +5,7 @@ import { OrderVehiclesForm } from '@/components/client/orders/forms/order-vehicl
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { VehicleType } from '@enums';
+import { VehicleType } from '@/enums/vehicle-type';
 import { PlusIcon } from '@icons';
 import { OrderFieldsGroup } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';

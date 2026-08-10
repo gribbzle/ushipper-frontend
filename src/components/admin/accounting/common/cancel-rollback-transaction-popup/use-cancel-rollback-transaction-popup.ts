@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { TransactionStatusesEnum } from '@/enums';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { RequestError } from '@/shared';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useAppDispatch, useAppSelector } from '@store';

@@ -1,7 +1,8 @@
 import { MutableRefObject } from 'react';
 import { FormApi } from 'final-form';
 
-import { BalanceType, TransactionTypesEnum } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 
 export type CreateTransactionFormState = {
     type: TransactionTypesEnum;

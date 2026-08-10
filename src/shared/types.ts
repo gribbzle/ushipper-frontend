@@ -1,4 +1,4 @@
-import { AttachmentType } from '@/enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
 
 import { Avatar } from '../store/common/staff/avatar-types';
 

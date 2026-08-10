@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 
 import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
 import { useFundsTransferStatusOptions, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers, useOrdersActionsPermission } from '@/hooks/order';
-import { FundsTransferStatusView } from '@enums';
+import { FundsTransferStatusView } from '@/enums/funds-transfer-status';
 import { useOpenTransactionsPage } from '@hooks';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

@@ -3,7 +3,8 @@ import mapboxgl from 'mapbox-gl';
 import { ReadonlyURLSearchParams } from 'next/navigation';
 import { Map, MapRef, Marker } from 'react-map-gl/mapbox';
 
-import { InspectionSubtype, LoadboardTab } from '@enums';
+import { InspectionSubtype } from '@/enums/inspection-subtype';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';

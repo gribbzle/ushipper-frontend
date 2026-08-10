@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { DelayedPaymentTerm, InstantPaymentTerm, PaymentTerm } from '@/enums';
+import { DelayedPaymentTerm, InstantPaymentTerm, PaymentTerm } from '@/enums/payment-term';
 
 import { useGetPaymentInformationValues } from './use-get-payment-information-values';
 import { useTermsFieldSelected } from './use-terms-field-selected';

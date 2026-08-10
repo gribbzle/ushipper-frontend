@@ -1,4 +1,6 @@
-import { FundsTransferCalculatedStatus, OrderSortingDirection, OrderSortingName } from '@enums';
+import { FundsTransferCalculatedStatus } from '@/enums/funds-transfer-calculated-status';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import { GetOrdersData } from '@store/api/orders-api';
 
 export const DRIVER_ACCOUNT_PENDING_ORDERS_FILTERS: GetOrdersData = {

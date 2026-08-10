@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { TransactionTypesEnum } from '@/enums';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 import {CurrencyInput} from '@/fields/currency-input';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

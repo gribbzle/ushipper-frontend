@@ -2,7 +2,7 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { ChatOrderTagsInfo } from '@/components/common/chats-drawer/chats-list/chat-order-tags-info/chat-order-tags-info';
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

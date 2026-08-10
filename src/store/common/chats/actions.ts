@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { AppState } from "@store";
 import {
     createBetweenPhonesChat,

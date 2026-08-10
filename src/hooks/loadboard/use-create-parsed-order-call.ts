@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { UserOrderStatus } from '@/enums';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { useAppDispatch } from '@store';
 import { loadboardApi } from '@store/api/loadboard-api';
 import { LoadBoardFilters } from '@store/api/loadboard-api';

@@ -4,7 +4,7 @@ import { toSnakeCase } from 'js-convert-case';
 import JsCookie from 'js-cookie';
 import { toast } from 'react-toastify';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { Attachment } from '@/shared';
 import { TransactionsFiltersState } from '@types';
 import { translateByNamespace } from '@utils/i18n';

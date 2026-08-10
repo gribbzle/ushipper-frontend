@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { translateByNamespace } from '@/utils/i18n';
 
 const t = translateByNamespace('common:orders:instant-term-payment-type');

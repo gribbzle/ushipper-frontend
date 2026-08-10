@@ -1,4 +1,4 @@
-import { TransportTypeEnum } from '@/enums';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
 import { OrderVehicle } from '@/shared/types';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
 

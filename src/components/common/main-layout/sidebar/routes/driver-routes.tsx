@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SidebarCountsEnum } from '@/enums';
+import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
 
 import {
     CogIcon,

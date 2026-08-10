@@ -1,7 +1,7 @@
 import { toKebabCase } from 'js-convert-case';
 
 import { translateByNamespace } from '@/utils/i18n';
-import { IssueType } from '@enums';
+import { IssueType } from '@/enums/issues/issue-type';
 
 const t = translateByNamespace('common:issue-type');
 

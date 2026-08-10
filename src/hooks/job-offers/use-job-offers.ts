@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { useJobOffersFilters } from '@/components/client/job-offers/job-offers-filters/use-job-offer-filters';
-import { OffersListTabsEnum } from '@/enums';
+import { OffersListTabsEnum } from '@/enums/offers-list-tabs-enum';
 import { useGetJobOffersQuery, useGetJobOffersStatisticQuery } from '@store/api/job-offers';
 import { OffersStatistic } from '@store/api/order-offers';
 import { translateByNamespace } from '@utils/i18n';

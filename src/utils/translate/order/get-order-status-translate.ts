@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { translateByNamespace } from '@/utils/i18n';
 
 const t = translateByNamespace('common:order-status');

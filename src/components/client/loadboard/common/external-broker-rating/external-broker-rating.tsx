@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { CompanyRatingWithReviewCount } from '@/components/common/company-rating-with-review-count/company-rating-with-review-count';
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { ExternalCDShipper, ExternalCompany, ExternalSDShipper } from '@store/client';
 import { classname } from '@utils/classname';
 

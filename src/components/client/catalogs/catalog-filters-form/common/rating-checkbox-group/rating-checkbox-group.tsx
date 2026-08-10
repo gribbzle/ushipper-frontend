@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
-import { ReviewsFilterEnum } from '@/enums';
+import { ReviewsFilterEnum } from '@/enums/reviews-filter-enum';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import {LabeledCheckboxInput} from '@/fields/checkbox-input';
 import { Rating } from '@/components/ui/inputs/rating';

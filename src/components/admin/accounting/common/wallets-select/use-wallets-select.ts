@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { BalanceType, OrderSortingDirection } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useAsyncSelect } from '@hooks';
 import { FinancialBalanceData } from '@store/admin';
 import { useLazyGetBalanceQuery, useLazyGetBalancesQuery } from '@store/api/balances-api';

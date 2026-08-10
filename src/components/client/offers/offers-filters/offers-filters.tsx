@@ -6,7 +6,7 @@ import { SearchSubjectsSelect } from '@/components/common/search-subjects-select
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Tabs } from '@/components/common/tabs/tabs';
 import { Paper } from '@/components/common/paper/paper';
-import { OfferSortingName } from '@/enums';
+import { OfferSortingName } from '@/enums/offer-sorting-name';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {StringInput} from '@/fields/string-input';

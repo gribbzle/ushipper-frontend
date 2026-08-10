@@ -1,4 +1,4 @@
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { NullableFields } from '@/shared';
 
 import { PaginatedResponse, RequestWithStatus } from '../../../utils/redux';

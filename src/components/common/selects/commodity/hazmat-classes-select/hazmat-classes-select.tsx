@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CommodityHazmatClassEnum } from '@/enums';
+import { CommodityHazmatClassEnum } from '@/enums/commodity/commodity-hazmat-classes-enum';
 import {SelectField} from '@/fields/select-field';
 import { getHazmatClassTranslate } from '@utils/translate/commodity/get-hazmat-class-translate';
 

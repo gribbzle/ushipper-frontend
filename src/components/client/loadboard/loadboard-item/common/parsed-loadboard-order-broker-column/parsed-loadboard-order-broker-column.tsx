@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import has from 'has-values';
 
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { OctothorpeIcon, PhoneIcon } from '@icons';
 import { ExternalCDShipper, ExternalSDShipper } from '@store/client';
 import { classname } from '@utils/classname';

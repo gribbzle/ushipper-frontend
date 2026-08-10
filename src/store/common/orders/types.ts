@@ -1,20 +1,18 @@
 import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { Attachment, Creator, NullableFields } from '@/shared';
 import { OrderVehicle } from '@/shared';
-import {
-    DateTypes,
-    FundsTransferStatus,
-    InspectionType,
-    InstantTermPaymentType,
-    OfferStatusesEnum,
-    OrderPaymentStatus,
-    OrderSourcesEnum,
-    OrderStatus,
-    OrderType,
-    PaymentMethod,
-    PaymentTerm,
-    TransportTypeEnum,
-} from '@enums';
+import { DateTypes } from '@/enums/date-types-enum';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { InspectionType } from '@/enums/inspection-type';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { OrderStatus } from '@/enums/order-status';
+import { OrderType } from '@/enums/order/order-type';
+import { PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
 import { BalanceValue } from '@store/admin/accounting/balance-types';
 import { Company } from '@store/admin/companies/types';
 import { OrderCommodity } from '@store/api/order-commodity-types';

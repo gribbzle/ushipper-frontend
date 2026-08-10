@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { Button } from '@/components/common/button/button';
 import { getAdminAuthLayout } from '@/components/admin/auth-layout/auth-layout';
 import { Link } from '@/components/common/link/link';

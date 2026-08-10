@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
-import { CompanyType, UserRoleType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useIsDriversCatalogPage } from '@hooks';
 import { DispatcherCatalogInfo } from '@store/client';
 import { AuthorizedUserInfo } from '@store/global/types';

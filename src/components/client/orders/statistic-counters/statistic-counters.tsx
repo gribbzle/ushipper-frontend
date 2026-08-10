@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import { toCamelCase } from 'js-convert-case';
 
 import { StatisticCounter } from '@/components/common/statistic-counter/statistic-counter';
-import { OrderStatisticsGroup } from '@/enums';
+import { OrderStatisticsGroup } from '@/enums/order/order-statistics-group';
 import { StatisticsCounters } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { translateOrderStatisticsGroup, translateOrderStatisticsGroupTooltip } from '@utils/translate/order/translations';

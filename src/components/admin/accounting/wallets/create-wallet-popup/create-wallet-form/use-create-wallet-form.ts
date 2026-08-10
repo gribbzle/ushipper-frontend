@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createWalletPopupPropsSelector } from '@store/admin';
 import { balancesApi, useCreateFinancialAccountMutation, usePartiallyUpdateBalanceMutation } from '@store/api/balances-api';

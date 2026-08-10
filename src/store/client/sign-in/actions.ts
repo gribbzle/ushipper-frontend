@@ -2,7 +2,7 @@ import JsCookie from 'js-cookie';
 import Router from 'next/router';
 import { createAsyncThunk, Dispatch } from '@reduxjs/toolkit';
 
-import { GrantTypeEnum } from '@/enums';
+import { GrantTypeEnum } from '@/enums/grant-type-enum';
 import {
     acceptInvitation,
     changeAccount,

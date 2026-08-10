@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { translateByNamespace } from '@/utils/i18n';
 
 const t = translateByNamespace('common:funds-transfer-status');

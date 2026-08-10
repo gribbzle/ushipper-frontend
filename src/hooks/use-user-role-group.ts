@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { AppState } from '@store';
 
 import { useMeCarrierDriver } from './use-user-role-type';

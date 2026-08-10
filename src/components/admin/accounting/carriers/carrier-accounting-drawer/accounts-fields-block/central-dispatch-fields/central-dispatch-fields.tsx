@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { SaveButton } from '@/components/common/button/SaveButton';
-import { ExternalServiceType } from '@enums';
+import { ExternalServiceType } from '@/enums/company/external-service-type';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

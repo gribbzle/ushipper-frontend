@@ -1,7 +1,7 @@
 import React, { Fragment, useCallback, useEffect, useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useDebouncedGetChatInfo } from '@/hooks/chat/use-debounced-get-chat-info';
 import { useDebouncedGetChatMessages } from '@/hooks/chat/use-debounced-get-chat-messages';
 import { useDebouncedGetChatReadMessages } from '@/hooks/chat/use-debounced-get-chat-read-messages';

@@ -8,7 +8,7 @@ import { OfferItem } from '@/components/client/offers/offer-item/offer-item';
 import { OffersFilters } from '@/components/client/offers/offers-filters/offers-filters';
 import OfferDrawer from '@/components/client/offers/offer-drawer/offer-drawer';
 import { Paginate } from '@/components/common/paginate/paginate';
-import { OffersListTabsEnum } from '@/enums';
+import { OffersListTabsEnum } from '@/enums/offers-list-tabs-enum';
 import { useMeShipper, useUserRoleGroup } from '@hooks';
 import { OffersStatistic, useGetOffersQuery, useGetOffersStatisticQuery } from '@store/api/order-offers';
 import { classname } from '@utils/classname';

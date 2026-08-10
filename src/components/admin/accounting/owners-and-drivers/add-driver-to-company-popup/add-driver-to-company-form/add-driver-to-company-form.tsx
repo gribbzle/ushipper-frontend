@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 
 import { AsyncCompanySelect } from '@/components/common/company-select/async-company-select';
 import { AsyncUserSelect } from '@/components/common/user-select/async-user-select';
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {SelectField} from '@/fields/select-field';

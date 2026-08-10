@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { CommodityPackingGroupEnum } from '@/enums';
+import { CommodityPackingGroupEnum } from '@/enums/commodity/commodity-packing-group-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const packingGroupTranslate = translateByNamespace('common:commodity:packing-group');

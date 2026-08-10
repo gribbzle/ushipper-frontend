@@ -4,7 +4,8 @@ import { FieldArray } from 'react-final-form-arrays';
 
 import { FeesFieldsWrapper } from '@/components/admin/accounting/common/fees-fields-wrapper';
 import { Button } from '@/components/common/button/button';
-import { FeeCategoryValueType, FeePeriod } from '@/enums';
+import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
+import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import { useDriversActionsPermission } from '@hooks';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';

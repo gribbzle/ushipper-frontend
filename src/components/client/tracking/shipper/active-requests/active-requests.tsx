@@ -3,7 +3,7 @@ import React, { MouseEvent, useCallback, useMemo, useState } from 'react';
 import { Accordion } from '@/components/common/accordion/accordion';
 import { Button } from '@/components/common/button/button';
 import { Loader } from '@/components/common/loader/loader';
-import { OfferToRequestStatusesEnum, RequestStatusesEnum } from '@/enums';
+import { OfferToRequestStatusesEnum, RequestStatusesEnum } from '@/enums/request-statuses';
 import { ArrowDownIcon } from '@icons';
 import { useGetRequestsQuery } from '@store/api/order-requests-api';
 import { ShipperTrackingOrder } from '@store/client';

@@ -1,4 +1,4 @@
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { PaginatedData } from '@utils/redux';
 
 import { apiSlice } from './api-slice';

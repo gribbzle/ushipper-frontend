@@ -1,7 +1,11 @@
 import { useMemo } from 'react';
 
 import { useOrderPaymentTerms } from '@/hooks/order';
-import { FundsTransferStatus, OrderPaymentStatus, OrderStatisticsStatus, OrderStatus, PaymentTerm } from '@enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
+import { OrderStatus } from '@/enums/order-status';
+import { PaymentTerm } from '@/enums/payment-term';
 import { useHasPartnerCompanies, useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { Load } from '@store/client';

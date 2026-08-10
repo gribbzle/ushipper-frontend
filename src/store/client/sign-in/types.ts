@@ -1,4 +1,4 @@
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { AuthorizedUserInfo } from '@store/global/shared-types';
 
 export type SignInFormData = {

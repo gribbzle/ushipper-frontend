@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
-import { OffersSearchSubjectsEnum, SearchSubjectsEnum } from '@/enums';
+import { OffersSearchSubjectsEnum, SearchSubjectsEnum } from '@/enums/search-subjects-enum';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

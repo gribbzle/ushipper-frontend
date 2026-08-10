@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { ExportButton } from '@/components/common/button/ExportButton';
 import { PageHeader } from '@/components/common/page-header/page-header';
 import { useOrdersActionsPermission, useOrdersExport } from '@/hooks/order';
-import { OrderType } from '@enums';
+import { OrderType } from '@/enums/order/order-type';
 import { translateByNamespace } from '@utils/i18n';
 import { getAllAminOrdersFiltersFromUrlParams } from '@utils/orders/filters-helpers';
 import { getProjectName } from '@utils/translate/get-project-name';

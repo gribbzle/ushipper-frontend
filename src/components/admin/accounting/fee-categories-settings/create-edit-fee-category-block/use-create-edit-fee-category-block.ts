@@ -2,7 +2,9 @@ import { useCallback, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { toast } from 'react-toastify';
 
-import { BalanceType, FeeCategoryType, FeeCategoryValueType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { FeeCategoryType } from '@/enums/fee/fee-category-types-enum';
+import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
 import { BackError, processError } from '@/utils/process-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createEditFeeCategoryBlockPropsSelector } from '@store/admin';

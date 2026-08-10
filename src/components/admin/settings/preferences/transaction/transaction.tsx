@@ -4,7 +4,7 @@ import { toKebabCase } from 'js-convert-case';
 import { PerformTransactionEventsSelect } from '@/components/common/selects/preferences/perform-transaction-events-select/perform-transaction-events-select';
 import { TransactionSystemSelect } from '@/components/common/selects/preferences/transaction-systems-select/transaction-systems-select';
 import { DriverAccountsSelect } from '@/components/common/orders-page-layout/driver-accounts-select';
-import { TransactionSystemEnum } from '@/enums';
+import { TransactionSystemEnum } from '@/enums/preferences/transaction-system-enum';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

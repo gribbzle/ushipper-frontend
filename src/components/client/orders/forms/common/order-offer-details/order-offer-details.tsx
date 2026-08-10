@@ -5,7 +5,8 @@ import { PaymentBrokerFeeAlert } from '@/components/client/orders/forms/common/p
 import { TotalPaymentAlert } from '@/components/client/orders/forms/common/total-payment-alert/total-payment-alert';
 import { DateTypesSelect } from '@/components/client/orders/selects/date-types-select/date-types-select';
 import { Divider } from '@/components/common/divider/divider';
-import { PaymentMethod, PaymentTerm } from '@/enums';
+import { PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
 import { getOrderTermWithMethod } from '@/utils/order';
 import {CurrencyInput} from '@/fields/currency-input';
 import {DatePicker} from '@/fields/datepicker';

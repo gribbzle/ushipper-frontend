@@ -4,7 +4,12 @@ import { Filters, LoadboardFiltersForUrlParams, LoadboardFiltersFromUrlParams } 
 import { RADS } from '@/components/common/radius-select/radius-select';
 import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { SelectOption } from '@/shared';
-import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { TermsEnum } from '@/enums/terms-enum';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
+import { VehicleType } from '@/enums/vehicle-type';
 import { CoordinatesWithName, SavedLoadBoardFilters } from '@store/api/loadboard-api';
 import { translateByNamespace } from '@utils/i18n';
 import { getObjectWithoutEmptyFields } from '@utils/objects';

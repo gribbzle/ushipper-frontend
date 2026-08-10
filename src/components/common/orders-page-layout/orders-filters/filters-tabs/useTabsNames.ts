@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 
-import { OrderStatisticsStatus } from '@enums';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { useHasPartnerCompanies, useIsPartnerCompany, useMeCarrier, useMeDriver } from '@hooks';
 
 import { ORDERS_FILTERS_TABS_MAP } from './constants';

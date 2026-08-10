@@ -1,4 +1,4 @@
-import { BusinessDaysPaymentMethod, CodCopPaymentMethod } from '@/enums';
+import { BusinessDaysPaymentMethod, CodCopPaymentMethod } from '@/enums/payment-method';
 
 export const isInstantTermPaymentMethod = (method?: string | null): boolean =>
     !!method && Object.values(CodCopPaymentMethod).includes(method as CodCopPaymentMethod);

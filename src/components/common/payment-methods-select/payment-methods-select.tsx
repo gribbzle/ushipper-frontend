@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { BusinessDaysPaymentMethod, CodCopPaymentMethod, PaymentMethod, PaymentTerm } from '@/enums';
+import { BusinessDaysPaymentMethod, CodCopPaymentMethod, PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
 import { getPaymentMethodTranslate } from '@/utils/payment-method-translate';
 import {SelectField} from '@/fields/select-field';
 

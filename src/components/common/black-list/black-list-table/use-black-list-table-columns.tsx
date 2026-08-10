@@ -3,7 +3,7 @@ import React, { Fragment, useCallback, useMemo } from 'react';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import { useAppDispatch } from '@store';
 import { BlackListItem, fetchBlackListItemAction } from '@store/client';

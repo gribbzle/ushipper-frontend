@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import Head from 'next/head';
 
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { Button } from '@/components/common/button/button';
 import { CreateEditStaffDrawer } from '@/components/client/staff/create-edit-staff-drawer/create-edit-staff-drawer';
 import { DeleteUserPopup } from '@/components/client/staff/delete-user-popup/delete-user-popup';

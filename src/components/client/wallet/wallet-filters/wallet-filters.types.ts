@@ -1,4 +1,4 @@
-import { TransactionTypesEnum } from '@/enums';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 
 export type WalletFiltersState = {
     createdAtFrom: string;

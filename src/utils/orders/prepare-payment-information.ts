@@ -1,4 +1,4 @@
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { OrderPaymentInformation } from '@store/client';
 
 import { isDelayedTermPaymentMethod, isInstantTermPaymentMethod } from './is-payment-method-type';

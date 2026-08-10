@@ -2,7 +2,8 @@ import React, { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
 import { ChatAttachmentsInfo } from '@/components/common/chats-drawer/chats-list/chat-attachments-info/chat-attachments-info';
-import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import useMessageContent from '@/hooks/chat/use-message-content';
 import { useMeAdmin } from '@hooks';
 import { ThumbtackIcon } from '@icons';

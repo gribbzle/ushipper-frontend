@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useRouter } from 'next/router';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useHandleFiltersChange, useIsCarriersAccountingBalancePage, useQueryFilters } from '@/hooks';
 import { convertToStringArray } from '@utils/converter';
 

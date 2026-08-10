@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
-import { FuelCardsRule } from '@/enums';
+import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
 import {SelectionButtonGroupInput} from '@/fields/selection-button-group-input';
 import { translateByNamespace } from '@utils/i18n';
 

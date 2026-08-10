@@ -1,5 +1,5 @@
 import { Attachment } from '@/shared';
-import { AttachmentType } from '@enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
 
 export type AttachmentsShowBodyProps = {
     orderId: string;

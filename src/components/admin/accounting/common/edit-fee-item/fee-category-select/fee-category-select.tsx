@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FeeCategoryType } from '@/enums';
+import { FeeCategoryType } from '@/enums/fee/fee-category-types-enum';
 import {SelectField} from '@/fields/select-field';
 import { useGetFeeCategoriesQuery } from '@store/api/fee-categories-api';
 

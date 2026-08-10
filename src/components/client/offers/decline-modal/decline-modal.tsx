@@ -5,7 +5,7 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { DeclinationReasonsEnum } from '@/enums/declination-reasons-enum';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { DELAYED_TERMS, INSTANT_TERMS, PaymentTerm } from '@/enums';
+import { DELAYED_TERMS, INSTANT_TERMS, PaymentTerm } from '@/enums/payment-term';
 
 export const usePaymentTerm = () => {
     const isDelayed = (term: PaymentTerm) => DELAYED_TERMS.includes(term);

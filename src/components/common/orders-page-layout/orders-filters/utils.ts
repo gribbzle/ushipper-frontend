@@ -1,4 +1,4 @@
-import { OrderSortingName } from '@enums';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import { FormOrdersFilters } from '@types';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 

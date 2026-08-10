@@ -3,7 +3,9 @@ import { useRouter } from 'next/router';
 
 import { CatalogFiltersFormState } from '@/components/client/catalogs/catalog-filters-form/catalog-filters-form.types';
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { CatalogListTabsEnum, CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
+import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useAppDispatch, useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client/catalogs/selectors';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';

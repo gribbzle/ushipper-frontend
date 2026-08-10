@@ -1,4 +1,4 @@
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { DistanceMatrix, TrackingMapPoint } from '@store/client';
 
 export const isPickupPoint = (point: TrackingMapPoint) => point.markerType === 'pickup';

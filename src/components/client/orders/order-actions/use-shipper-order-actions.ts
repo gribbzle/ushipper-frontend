@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import useOrderValidation from '@/hooks/order/use-order-validation';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';

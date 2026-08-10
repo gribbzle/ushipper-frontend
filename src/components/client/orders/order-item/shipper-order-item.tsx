@@ -8,7 +8,7 @@ import { OrderItemProps } from '@/components/client/orders/order-item/types';
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column';
 import { OrderItemVehiclesList } from '@/components/client/orders/order-item-vehicles-list';
 import { Paper } from '@/components/common/paper/paper';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { getOrderPriceWithTerms } from '@/utils/order';
 import { calculateTotalPayment, getPaymentTermTranslate } from '@/utils/payment';
 import { OrderPaymentInformation } from '@store/client';

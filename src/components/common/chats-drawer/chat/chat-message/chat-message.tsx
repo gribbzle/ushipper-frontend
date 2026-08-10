@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import useInViewport from '@/hooks/use-in-viewport';
 import { useAppSelector } from '@store';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';

@@ -1,4 +1,4 @@
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { Load, ShipperTrackingOrder, TrackingDriver, TrackingDriverOrder, TrackingMapPoint } from '@store/client';
 
 export type CreateTrackingMapPointValues = Omit<TrackingMapPoint, 'lat' | 'lon'> & {

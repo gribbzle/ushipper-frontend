@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ChatMessageExternalStatusesEnum } from '@/enums';
+import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
 import { CallLinesIcon, CrossIcon, HorizontalDotsIcon, PhoneFilledIcon, TickIcon } from '@icons';
 import { classname } from '@utils/classname';
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { Paginate } from '@/components/common/paginate/paginate';
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useQueryFilters, useTable } from '@hooks';
 import { useGetCompaniesQuery } from '@store/api/company-api';
 import { translateByNamespace } from '@utils/i18n';

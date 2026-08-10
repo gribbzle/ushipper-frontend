@@ -7,7 +7,8 @@ import { RestoreOrderPopup } from '@/components/client/orders/restore-order-popu
 import PageHead from '@/components/client/orders/show/header';
 import { UnasignDriverPopup } from '@/components/client/orders/unasign-driver-popup';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
-import { OrderSourcesEnum, OrderStatus } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { OrderStatus } from '@/enums/order-status';
 import { AttachmentsForm } from '@/components/client/orders/forms/attachments-form/attachments-form';
 import { ContactFooterContextProvider } from '@/components/client/orders/forms/common/contact-footer-context/contact-footer-context';
 import { CreateEditOrderInternalNotePopup } from '@/components/client/orders/popups/create-edit-order-internal-note-popup/create-edit-order-internal-note-popup';

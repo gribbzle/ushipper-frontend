@@ -1,4 +1,5 @@
-import { FundsTransferCalculatedStatus, OrderStatisticsStatus } from '@enums';
+import { FundsTransferCalculatedStatus } from '@/enums/funds-transfer-calculated-status';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { GetOrdersData } from '@store/api/orders-api';
 
 export const getPartnerStatisticStatus = (statisticsStatus: OrderStatisticsStatus | undefined): Partial<GetOrdersData> => {

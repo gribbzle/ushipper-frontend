@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CatalogListTabsEnum } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { XIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

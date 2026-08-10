@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { JobOffer } from '@store/client';
 
 const statusTimeMap = {

@@ -1,7 +1,7 @@
 import { AxiosResponse } from 'axios';
 import randomColor from 'randomcolor';
 
-import { UserStatusEnum } from '@enums';
+import { UserStatusEnum } from '@/enums/user-status-enum';
 import { UserTracking } from '@store/client/tracking/types';
 import { Avatar } from '@store/common/staff/avatar-types';
 import { StaffFilters, User, UserFormState } from '@store/common/staff/types';

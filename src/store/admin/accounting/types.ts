@@ -1,17 +1,15 @@
 import { AccountingTab } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer-tabs/accounting-tab-enum';
-import {
-    AccountSubTypesEnum,
-    BalanceType,
-    CarrierAccountingDrawerTab,
-    InstantTermPaymentType,
-    IssueStatus,
-    PaymentConfirmationType,
-    PaymentTerm,
-    TransactionStatusesEnum,
-    TransactionStatusGroupEnum,
-    TransactionSystemEnum,
-    TransactionTypesEnum,
-} from '@enums';
+import { AccountSubTypesEnum } from '@/enums/account-subtypes-enum';
+import { BalanceType } from '@/enums/balance-type';
+import { CarrierAccountingDrawerTab } from '@/enums/tabs/carrier-accounting-drawer-tab';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
+import { IssueStatus } from '@/enums/issues/issue-status';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
+import { PaymentTerm } from '@/enums/payment-term';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
+import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
+import { TransactionSystemEnum } from '@/enums/preferences/transaction-system-enum';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 import { AccountingAccountData, AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { AccountingProfileDocument, AccountInitiatePaymentMethod } from '@store/api/accounts-api';
 import { User } from '@store/common/staff/types';

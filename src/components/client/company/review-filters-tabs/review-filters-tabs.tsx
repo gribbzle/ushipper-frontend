@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { Tabs } from '@/components/common/tabs/tabs';
-import { ReviewTabsEnum } from '@/enums';
+import { ReviewTabsEnum } from '@/enums/review-tab-enum';
 import { translateByNamespace } from '@utils/i18n';
 
 type FiltersReviewTabsProps = {

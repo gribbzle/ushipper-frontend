@@ -1,4 +1,4 @@
-import { FeePeriod } from '@enums';
+import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import { Fee, FeeData, RecurringFeeData } from '@types';
 
 import { validateFeeData } from '../validators/fee';

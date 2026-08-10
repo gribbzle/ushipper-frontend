@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { CompanyStatusEnum } from '@/enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const companyStatusTranslate = translateByNamespace('common:company-statuses');

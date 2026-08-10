@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { OrderStatisticsStatus } from '@enums';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { GetOrdersData, useGetOrdersQuery } from '@store/api/orders-api';
 
 import { BASE_ORDERS_FILTERS } from './constants';

@@ -1,4 +1,6 @@
-import { OfferStatusesEnum, TimeCondition, UserRoleType } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { TimeCondition } from '@/enums/time-condition';
+import { UserRoleType } from '@/enums/user-role-type';
 import { Attachment, Creator } from '@/shared';
 import { Company } from '@store/admin';
 

@@ -1,6 +1,9 @@
 import { ReactElement } from 'react';
 
-import { FundsTransferStatus, InspectionType, InstantTermPaymentType, OrderStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { InspectionType } from '@/enums/inspection-type';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
+import { OrderStatus } from '@/enums/order-status';
 import { BalanceValue } from '@store/admin';
 import { PaymentInformation } from '@store/api/orders-api';
 import { Load } from '@store/client';

@@ -1,4 +1,4 @@
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 import { FinancialBalanceData } from '@store/admin';
 import { AppState } from "@store";

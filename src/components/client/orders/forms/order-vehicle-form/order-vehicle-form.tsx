@@ -9,7 +9,7 @@ import { VehicleMakerInput } from '@/components/common/vehicle-maker-input/vehic
 import { VehicleModelInput } from '@/components/common/vehicle-model-input/vehicle-model-input';
 import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
 import { VehicleVinInput } from '@/components/common/vehicle-vin-input/vehicle-vin-input';
-import { VehicleType } from '@enums';
+import { VehicleType } from '@/enums/vehicle-type';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {SwitchInput} from '@/fields/switch-input';

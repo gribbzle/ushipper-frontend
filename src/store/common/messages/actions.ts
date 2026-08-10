@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { createSupportChat, fetchChats } from '@api';
 import { RequestStatus } from '@utils/redux';
 

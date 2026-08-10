@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 
 import { OrderOptionsDropdown } from '@/components/client/orders/order-options-dropdown/order-options-dropdown';
 import { Button } from '@/components/common/button/button';
-import { OrderPaymentStatus, OrderStatus } from '@/enums';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { OrderStatus } from '@/enums/order-status';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import { useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { HorizontalDotsIcon, UserPlusIcon } from '@icons';

@@ -4,7 +4,9 @@ import { Dropdown, DropdownDividerOption, DropdownOption } from '@/components/co
 import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import { downloadFileUsingAnchorElement } from '@/utils/files';
-import { OrderPaymentStatus, OrderStatisticsStatus, OrderStatus } from '@enums';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
+import { OrderStatus } from '@/enums/order-status';
 import { useIsPartnerCompany, useMeDriverRelated } from '@hooks';
 import { useAppDispatch } from '@store';
 import { useCreateOrderInvoiceMutation, useLazyGetOrderInvoiceQuery } from '@store/api/order-invoice-api';

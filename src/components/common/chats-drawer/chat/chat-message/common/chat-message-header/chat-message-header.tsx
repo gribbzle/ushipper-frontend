@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum } from '@/enums';
+import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
 import { useAppSelector } from '@store';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { authorizedUserAccountPublicIdSelector } from '@store/global';

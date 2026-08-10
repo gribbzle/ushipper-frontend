@@ -1,4 +1,4 @@
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { apiSlice } from '@store/api/api-slice';
 import {
     BaseCatalogFiltersParams,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { AccountingDrawer } from '@/components/admin/accounting/owners-and-drivers/accounting-drawer/accounting-drawer';
 import { AccountingEntityFilters } from '@/components/admin/accounting/common/accounting-filters/accounting-entity-filters';
 import { AccountingPageLayout } from '@/components/admin/accounting/common/accounting-page-layout/accounting-page-layout';

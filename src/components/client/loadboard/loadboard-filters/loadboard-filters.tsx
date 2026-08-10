@@ -13,7 +13,7 @@ import { TermTypesSelect } from '@/components/common/terms-select/terms-select';
 import { TransportTypeSelect } from '@/components/common/transport-type-select/transport-type-select';
 import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
 import { Paper } from '@/components/common/paper/paper';
-import { OrderSortingName } from '@/enums';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import { AddressField } from '@/fields/address-field/address-field';
 import RadiusField from '@/fields/radius-field/radius-field';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';

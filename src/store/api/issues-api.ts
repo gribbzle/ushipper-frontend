@@ -1,5 +1,7 @@
 import { ChangeDetails } from '@/shared';
-import { IssueReasonTypesEnum, IssueStatus, IssueType } from '@enums';
+import { IssueReasonTypesEnum } from '@/enums/issues/issue-reason-types-enum';
+import { IssueStatus } from '@/enums/issues/issue-status';
+import { IssueType } from '@/enums/issues/issue-type';
 
 import { PaginatedResponse } from '../../utils/redux';
 

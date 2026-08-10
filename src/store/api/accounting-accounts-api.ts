@@ -1,4 +1,4 @@
-import { AccountStatusesEnum } from '@enums';
+import { AccountStatusesEnum } from '@/enums/account/account-statuses-enum';
 import { BillingAddress, FinancialBalanceData, MaskedBankAccount, MaskedCard } from '@store/admin/accounting/balance-data-types';
 import { BalanceResource, BalanceValue } from '@store/admin/accounting/balance-types';
 import { Company } from '@store/admin/companies/types';

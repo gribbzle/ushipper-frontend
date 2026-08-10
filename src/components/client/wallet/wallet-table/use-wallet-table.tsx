@@ -7,7 +7,9 @@ import { PriceAndReceiptPhotos } from '@/components/common/table/common/price-an
 import { TransactionStatusTag } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag';
 import { TransactionTimeInfoBlock } from '@/components/common/table/common/transaction-time-info-block/transaction-time-info-block';
 import { TableColumn } from '@/components/common/table/table.types';
-import { OrderSortingDirection, PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { useQueryFilters, useTable } from '@hooks';
 import { useAppSelector } from '@store';
 import { Transaction } from '@store/admin';

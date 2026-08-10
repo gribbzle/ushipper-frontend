@@ -1,4 +1,4 @@
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { ChatMessage, ChatShortInfo } from '@store/common/chats/types';
 import { axios } from '@utils/axios';
 import { CursorPagination } from '@utils/redux';

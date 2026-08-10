@@ -1,7 +1,7 @@
 import React, { Fragment, useMemo } from 'react';
 import has from 'has-values';
 
-import { CommodityWeightUnitEnum } from '@/enums';
+import { CommodityWeightUnitEnum } from '@/enums/commodity/commodity-weight-unit-enum';
 import { Ellipse } from '@icons';
 import { OrderCommodity } from '@store/api/orders-api';
 import { classname } from '@utils/classname';

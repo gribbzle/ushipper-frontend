@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Chat } from '@/components/common/chats-drawer/chat';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 
 import { JobOfferChatProps } from './job-offer-chat.types';
 import { useJobOfferChat } from './use-job-offer-chat';

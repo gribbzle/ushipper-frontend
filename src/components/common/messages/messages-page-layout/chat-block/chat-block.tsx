@@ -2,7 +2,7 @@ import React, { Fragment, useCallback, useEffect, useMemo, useRef } from 'react'
 import { useSelector } from 'react-redux';
 
 import { ChatEmptyBlock, ChatHead, ChatMessage, ChatMessageDelimiter, ChatUnreadMessageDelimiter } from '@/components/common/chats-drawer/chat';
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useDebouncedGetChatInfo, useDebouncedGetChatMessages, useDebouncedGetChatReadMessages, useDebouncedGetChatUnreadMessages } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

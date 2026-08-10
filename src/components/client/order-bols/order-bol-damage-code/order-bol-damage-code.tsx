@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Accordion } from '@/components/common/accordion/accordion';
-import { DamageCode } from '@/enums';
+import { DamageCode } from '@/enums/damage-code';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

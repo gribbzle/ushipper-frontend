@@ -4,7 +4,8 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { Divider } from '@/components/common/divider/divider';
-import { ContractorTypesEnum, FeesRule } from '@/enums';
+import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
+import { FeesRule } from '@/enums/fee/fees-rules-enum';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import { PlusIcon } from '@icons';

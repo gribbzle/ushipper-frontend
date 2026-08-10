@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { IssueStatus } from '@enums';
+import { IssueStatus } from '@/enums/issues/issue-status';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

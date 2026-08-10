@@ -1,4 +1,7 @@
-import { AccountStatusesEnum, CompanyStatusEnum, UserRoleGroup, UserRoleType } from '@enums';
+import { AccountStatusesEnum } from '@/enums/account/account-statuses-enum';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
+import { UserRoleGroup } from '@/enums/user-role-group';
+import { UserRoleType } from '@/enums/user-role-type';
 import { BalanceResource } from '@store/admin/accounting/balance-types';
 import { Company } from '@store/admin/companies/types';
 import { Avatar } from '@store/common/staff/avatar-types';

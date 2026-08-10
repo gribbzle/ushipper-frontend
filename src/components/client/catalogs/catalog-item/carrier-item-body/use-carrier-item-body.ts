@@ -1,7 +1,7 @@
 import { MouseEvent, useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useAppDispatch } from '@store';
 import { apiSlice } from '@store/api/api-slice';
 import { useCreateCompanyFlagMutation, useDeleteCompanyFlagMutation } from '@store/api/company-api';

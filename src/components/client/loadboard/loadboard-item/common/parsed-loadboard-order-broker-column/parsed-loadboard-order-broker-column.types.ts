@@ -1,4 +1,4 @@
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { CustomerInformation } from '@store/api/orders-api';
 import { ExternalCDShipper, ExternalSDShipper, OrderDetails } from '@store/client';
 

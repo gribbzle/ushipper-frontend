@@ -2,7 +2,8 @@ import React from 'react';
 
 import { TransactionStatusTag } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag';
 import { TransactionStatusTagProps } from '@/components/common/table/common/transaction-status-tag/transaction-status-tag-types';
-import { PaymentConfirmationType, TransactionStatusesEnum } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { Transaction } from '@store/admin';
 
 import { OrderPaymentConfirmationCheckTransactionTag } from '../order-payment-confirmation-check-transaction-tag';

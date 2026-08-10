@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { RadioOption } from '@/components/common/radio-button-group/radio-button-group';
-import { InspectionType } from '@/enums';
+import { InspectionType } from '@/enums/inspection-type';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {PrefixedField} from '@/fields/field-prefix';

@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { BusinessTypesEnum } from '@/enums';
+import { BusinessTypesEnum } from '@/enums/business-types-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const businessTypeTranslate = translateByNamespace('common:business-types');

@@ -1,6 +1,6 @@
 import has from 'has-values';
 
-import { CommodityTypesEnum } from '@/enums';
+import { CommodityTypesEnum } from '@/enums/commodity/commodity-types-enum';
 import { translateByNamespace } from '@/utils/i18n';
 import { getObjectWithoutEmptyFields } from '@/utils/objects';
 import { OrderCommodity } from '@store/api/orders-api';

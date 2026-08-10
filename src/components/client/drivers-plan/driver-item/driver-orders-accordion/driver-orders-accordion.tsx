@@ -3,7 +3,7 @@ import React, { MouseEvent, useCallback, useEffect, useMemo, useState } from 're
 import { CheckingContractPopup } from '@/components/client/loadboard/checking-contract-popup/checking-contract-popup';
 import { Button } from '@/components/common/button/button';
 import { MapBox } from '@/components/common/MapBox/MapBox';
-import { OrderSourcesEnum } from '@enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { SearchIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { LoadBoardFilters, useGetLoadboardItemsQuery } from '@store/api/loadboard-api';

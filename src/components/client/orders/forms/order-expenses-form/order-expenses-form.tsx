@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldArray } from 'react-final-form-arrays';
 
-import { ExpenseTypeEnum } from '@/enums';
+import { ExpenseTypeEnum } from '@/enums/expense-type-enum';
 import {InputLabel} from '@/fields/input-label';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';

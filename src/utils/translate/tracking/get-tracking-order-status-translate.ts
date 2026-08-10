@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const trackingOrderStatusTranslate = translateByNamespace('client:tracking-page:shipper-orders-statuses');

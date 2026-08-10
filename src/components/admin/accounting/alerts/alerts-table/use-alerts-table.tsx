@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import { fetchOrder } from '@api';
-import { IssueReasonTypesEnum, OrderSortingDirection } from '@enums';
+import { IssueReasonTypesEnum } from '@/enums/issues/issue-reason-types-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useQueryFilters, useTable } from '@hooks';
 import { GetIssuesParams, IssueData, useGetIssuesQuery } from '@store/api/issues-api';
 import { Load } from '@store/client';

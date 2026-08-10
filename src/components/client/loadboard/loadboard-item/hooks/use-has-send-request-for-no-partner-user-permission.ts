@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useAppSelector } from '@store';
 import { accountsUsersSelector } from '@store/client/accounts';
 

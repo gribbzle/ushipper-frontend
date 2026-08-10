@@ -7,7 +7,7 @@ import { LoadboardFiltersFromUrlParams } from '@/components/client/loadboard/loa
 import { getLoadboardFiltersForUrlParams, getLoadboardFiltersFromUrlParams } from '@/components/client/loadboard/loadboard-filters/utils';
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { areFiltersEqual } from '@/utils/filters';
-import { LoadboardTab } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
 import { useAppSelector } from '@store';
 import { LoadBoardFilters, SavedLoadBoardFilters, useGetLoadboardItemsQuery, useGetLoadboardStatisticQuery } from '@store/api/loadboard-api';
 import { isSearchAlongRouteSelector, loadboardListSelector } from '@store/client/loadboard/selectors';

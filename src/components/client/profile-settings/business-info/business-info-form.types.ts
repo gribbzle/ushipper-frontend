@@ -1,4 +1,4 @@
-import { TimeCondition } from '@/enums';
+import { TimeCondition } from '@/enums/time-condition';
 
 export type CategoryFields = {
     [key: string]: number[];

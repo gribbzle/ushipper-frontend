@@ -1,4 +1,6 @@
-import { OrderSortingDirection, OrderSortingName, SearchSubjectsEnum } from '@enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
+import { SearchSubjectsEnum } from '@/enums/search-subjects-enum';
 import { AdminOrdersFiltersValue, FormOrdersFilters, OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams, OrdersFiltersValue } from '@types';
 
 import { getObjectWithoutEmptyFields } from '../objects';

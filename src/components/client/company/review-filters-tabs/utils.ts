@@ -1,6 +1,7 @@
 import cleanDeep from 'clean-deep';
 
-import { ReviewsFilterEnum, ReviewTabsEnum } from '@/enums';
+import { ReviewsFilterEnum } from '@/enums/reviews-filter-enum';
+import { ReviewTabsEnum } from '@/enums/review-tab-enum';
 
 export type ReviewFiltersTabFromUrlParams = Partial<{
     rating: string | number;

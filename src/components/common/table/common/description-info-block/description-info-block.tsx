@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 
-import { PaymentConfirmationType } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import { useDestinationAccountingNumber } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions, Transaction } from '@store/admin';

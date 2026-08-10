@@ -5,7 +5,7 @@ import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 import { Timeline } from '@/components/common/timeline/timeline';
 import { TimelineArrow } from '@/components/common/timeline/timeline-arrow/timeline-arrow';
 import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-dot';
-import { TransportTypeEnum } from '@/enums';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
 import { LineBrokenIcon } from '@icons';
 import { useAppSelector } from '@store';
 import { loadboardListSelector } from '@store/client/loadboard';

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { LoadboardTab } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
 
 export const useLoadboardTabSelection = () => {
     const router = useRouter();

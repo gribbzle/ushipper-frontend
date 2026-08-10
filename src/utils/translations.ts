@@ -1,7 +1,8 @@
 import { toKebabCase } from 'js-convert-case';
 
 import { translateByNamespace } from '@/utils/i18n';
-import { MapboxStyle, RegistrationType } from '@enums';
+import { MapboxStyle } from '@/enums/mapbox-style';
+import { RegistrationType } from '@/enums/registration-type';
 
 const t = translateByNamespace('common');
 const translateValue = translateByNamespace('common:translate-value');

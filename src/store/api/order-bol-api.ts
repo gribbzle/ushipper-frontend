@@ -1,4 +1,4 @@
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { Attachment } from '@/shared';
 import { OrderCommodity } from '@store/api/orders-api';
 import { OrderVehicle } from '@/shared/types';

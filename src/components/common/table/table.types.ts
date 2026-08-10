@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 
-import { OrderSortingName } from '@/enums';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 
 export type ClickedRowId = number | string | null;
 

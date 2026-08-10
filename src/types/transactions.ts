@@ -1,4 +1,7 @@
-import { PaymentConfirmationType, TransactionStatusesEnum, TransactionTypeGroup, TransactionTypesEnum } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
+import { TransactionTypeGroup } from '@/enums/transactions/transaction-type-group';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 
 export type TransactionsFiltersState = {
     createdAtFrom: string;

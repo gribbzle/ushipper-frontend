@@ -8,7 +8,7 @@ import { Divider } from '@/components/common/divider/divider';
 import { LanguagesSelect } from '@/components/common/languages-select/languages-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Paper } from '@/components/common/paper/paper';
-import { CarriersCatalogSortingNameEnum, CatalogSortingNameEnum } from '@/enums';
+import { CarriersCatalogSortingNameEnum, CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';

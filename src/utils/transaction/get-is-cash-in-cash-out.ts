@@ -1,4 +1,5 @@
-import { BalanceType, PaymentConfirmationType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 
 const externalWalletTypes = new Set([BalanceType.EXTERNAL_BANK_WALLET, BalanceType.EXTERNAL_CARD_WALLET]);
 

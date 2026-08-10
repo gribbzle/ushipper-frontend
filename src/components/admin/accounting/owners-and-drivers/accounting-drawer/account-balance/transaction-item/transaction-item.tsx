@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { Link } from '@/components/common/link/link';
-import { PaymentConfirmationType, TransactionStatusGroupEnum } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
+import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
 import { useDestinationAccountingNumber } from '@hooks';
 import { Transaction, TransactionBalanceResource } from '@store/admin';
 import { classname } from '@utils/classname';

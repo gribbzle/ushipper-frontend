@@ -4,7 +4,7 @@ import { DeclineOrPayToDriverPopup } from '@/components/admin/accounting/cod-ord
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { CodCopOrdersActionTag } from '@/components/common/table/common/cod-cop-order-action-tag/cod-cop-order-action-tag';
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { useInstantPaymentAttachments, useOpenDriverPaymentFormDrawer, useOrdersActionsPermission } from '@/hooks/order';
 import { classname } from '@/utils/classname';
 import { convertBytesToMB } from '@/utils/converter';

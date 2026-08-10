@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { AttachmentType } from '@/enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, rocketkorDocumentsPopupsPropsSelector, RocketkorDocumentsPopupsState } from '@store/admin';
 import { accountsApi, DocumentType, useSendAccountingProfileDocumentMutation, useUpdateAccountingProfileDocumentMutation } from '@store/api/accounts-api';

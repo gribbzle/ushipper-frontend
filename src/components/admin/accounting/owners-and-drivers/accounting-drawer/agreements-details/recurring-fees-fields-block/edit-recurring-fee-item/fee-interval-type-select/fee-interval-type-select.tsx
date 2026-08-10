@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { RecurringIntervalType } from '@enums';
+import { RecurringIntervalType } from '@/enums/fee/recurring-interval-type';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

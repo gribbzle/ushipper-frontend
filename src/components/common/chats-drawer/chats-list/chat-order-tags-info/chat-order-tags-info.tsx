@@ -2,7 +2,7 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useMeCarrier, useMeShipper } from '@hooks';
 import { ChatShortInfo } from '@store/common/chats/types';
 import { translateByNamespace } from '@utils/i18n';

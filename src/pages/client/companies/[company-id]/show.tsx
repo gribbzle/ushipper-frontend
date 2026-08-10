@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { ReviewReplyDrawer } from '@/components/client/company/review-reply-drawer';
-import { OrderSortingDirection, ReviewTabsEnum } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { ReviewTabsEnum } from '@/enums/review-tab-enum';
 import { CompanyAvgDetailsRatingPaper } from '@/components/client/company/papers/company-avg-details-rating-paper/company-avg-details-rating-paper';
 import { CompanyBriefPaper } from '@/components/client/company/papers/company-brief-paper/company-brief-paper';
 import { CompanyContactInfoPaper } from '@/components/client/company/papers/company-contact-info-paper/company-contact-info-paper';

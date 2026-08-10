@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { useRedirectToOrder } from '@/hooks/order';
 import { formatToCurrency } from '@/utils/numbers';
 import { useMeCarrier, useMeShipper, useTimeoutManager } from '@hooks';

@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Paper } from '@/components/common/paper/paper';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import {
     orderBOLOrderDeliveryInformationSelector,

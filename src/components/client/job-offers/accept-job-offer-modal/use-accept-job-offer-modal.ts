@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useGetJobOfferQuery, usePartiallyUpdateJobOfferMutation } from '@store/api/job-offers';
 import { translateByNamespace } from '@utils/i18n';
 

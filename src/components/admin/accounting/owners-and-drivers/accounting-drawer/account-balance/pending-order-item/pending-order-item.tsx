@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { Link } from '@/components/common/link/link';
-import { TransactionStatusGroupEnum } from '@/enums';
+import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
 import { useOrder, usePendingOrderLabel } from '@/hooks/order';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

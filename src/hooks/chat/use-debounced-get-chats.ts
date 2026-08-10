@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { debounce } from 'debounce';
 import { PayloadAction } from '@reduxjs/toolkit';
 
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useAppDispatch } from '@store';
 import { chatsActions, getChatsAction } from '@store/common';
 import { ChatShortInfo } from '@store/common/chats/types';

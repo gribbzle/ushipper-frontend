@@ -1,7 +1,9 @@
 import { useMemo } from 'react';
 
 import { getOrderId } from '@/utils/order';
-import { FundsTransferStatus, OrderStatus, OrderType } from '@enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { OrderStatus } from '@/enums/order-status';
+import { OrderType } from '@/enums/order/order-type';
 import { getOrderCheckStatuses, isReceiptlessOrder } from '@utils/orders/order-payment-helpers';
 
 import { useOrder } from './useOrder';

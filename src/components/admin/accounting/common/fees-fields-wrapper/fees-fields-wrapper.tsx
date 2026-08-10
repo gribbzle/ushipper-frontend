@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { FeeCategoryValueType } from '@/enums';
+import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
 import { PlusCircleIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

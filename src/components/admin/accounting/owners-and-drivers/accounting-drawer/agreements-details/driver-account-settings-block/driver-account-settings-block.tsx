@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-final-form';
 
 import { Divider } from '@/components/common/divider/divider';
-import { ContractorTypesEnum } from '@/enums';
+import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
 import {FieldPrefix, PrefixedField, PrefixedFieldArray} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

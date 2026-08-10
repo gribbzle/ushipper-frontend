@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer';
 import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer';
 import { SendOfferToRequestDrawer } from '@/components/client/requests';
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { useQueryFilters } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetTrackingOrdersQuery } from '@store/api/tracking-api';

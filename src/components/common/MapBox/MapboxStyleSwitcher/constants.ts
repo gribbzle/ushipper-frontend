@@ -1,4 +1,4 @@
-import { MapboxStyle } from '@enums';
+import { MapboxStyle } from '@/enums/mapbox-style';
 
 import { MapboxStyleDefinition } from './types';
 

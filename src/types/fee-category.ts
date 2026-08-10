@@ -1,4 +1,7 @@
-import { FeeCategoryType, FeeCategoryValueType, FeeRecurringWeekDay, RecurringIntervalType } from '@enums';
+import { FeeCategoryType } from '@/enums/fee/fee-category-types-enum';
+import { FeeCategoryValueType } from '@/enums/fee/fee-category-value-types-enum';
+import { FeeRecurringWeekDay } from '@/enums/fee/fee-recurring-week-days-enum';
+import { RecurringIntervalType } from '@/enums/fee/recurring-interval-type';
 
 export type FeeCategory = {
     name: string;

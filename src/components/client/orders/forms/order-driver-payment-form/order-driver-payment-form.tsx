@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 
 import { PaymentMethodsSelect } from '@/components/common/payment-methods-select/payment-methods-select';
 import { DriverInstantTermPaymentTypeSelect } from '@/components/common/selects/driver-instant-term-payment-type-select/driver-instant-term-payment-type-select';
-import { InstantTermPaymentType, PaymentMethod, PaymentTerm } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
+import { PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
 import {FileUploaderField} from '@/fields/file-uploader';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

@@ -1,4 +1,4 @@
-import { BalanceType } from '@enums';
+import { BalanceType } from '@/enums/balance-type';
 
 export type BalanceValue = {
     amount: string;

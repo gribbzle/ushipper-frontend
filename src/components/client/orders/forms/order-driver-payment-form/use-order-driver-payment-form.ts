@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import { AttachmentType, InstantTermPaymentType } from '@/enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { useAppDispatch } from '@store';
 import { ordersApi, useCreateOrderAttachmentMutation, useRemoveOrderAttachmentMutation, useUpdateOrderMutation } from '@store/api/orders-api';
 import { OrderDriverPaymentFormState } from '@store/client';

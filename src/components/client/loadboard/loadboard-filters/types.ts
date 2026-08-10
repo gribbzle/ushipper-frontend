@@ -2,7 +2,12 @@ import { LocationFilterValue } from '@/components/client/loadboard/loadboard-fil
 import { WaypointsValue } from '@/components/client/loadboard/loadborad-filter-waypoints/loadboard-filter-waypoints';
 import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { SelectOption } from '@/shared';
-import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
+import { TermsEnum } from '@/enums/terms-enum';
+import { VehicleType } from '@/enums/vehicle-type';
 
 export interface Filters {
     vehicleTypes?: SelectOption<VehicleType>[];

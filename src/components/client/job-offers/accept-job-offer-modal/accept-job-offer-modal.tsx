@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 
 import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import {FormControl} from '@/fields/form-control';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';

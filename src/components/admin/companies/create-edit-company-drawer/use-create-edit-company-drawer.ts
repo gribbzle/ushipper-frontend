@@ -3,7 +3,7 @@ import { AxiosError } from 'axios';
 import { FormApi } from 'final-form';
 import { useSelector } from 'react-redux';
 
-import { CompanyStatusEnum } from '@/enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { useOpenDeleteCompanyPopup } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import {

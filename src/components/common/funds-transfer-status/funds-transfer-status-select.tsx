@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import {SelectField} from '@/fields/select-field';
 import { translateFundsTransferStatus } from '@utils/translate/order/funds-transfer-status-translations';
 

@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
 import { OpenSupportChatButton } from '@/components/common/chats/open-support-chat-button/open-support-chat-button';
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useChatsPermission } from '@hooks';
 import { AccountingAccountOwnerUser, AccountingAccountParentData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';

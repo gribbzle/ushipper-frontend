@@ -6,7 +6,7 @@ import { LoadboardList } from '@/components/client/loadboard/loadboard-list/load
 import { LoadboardMap } from '@/components/client/loadboard/loadboard-map/loadboard-map';
 import { LoadboardNoData } from '@/components/client/loadboard/loadboard-no-data/loadboard-no-data';
 import { Paginate } from '@/components/common/paginate/paginate';
-import { LoadboardTab } from '@enums';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
 import { useLoadboard, useLoadboardTabSelection } from '@hooks';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

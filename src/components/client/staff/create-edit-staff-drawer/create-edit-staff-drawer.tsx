@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import {FormControl} from '@/fields/form-control';
 import {ImageFileInput} from '@/fields/image-file-input';
 import {InputLabel} from '@/fields/input-label';

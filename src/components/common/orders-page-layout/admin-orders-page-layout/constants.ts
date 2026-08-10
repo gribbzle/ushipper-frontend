@@ -1,4 +1,5 @@
-import { OrderSortingDirection, OrderSortingName } from '@enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import { GetOrdersData } from '@store/api/orders-api';
 
 export const DEFAULT_PARAMS: GetOrdersData = {

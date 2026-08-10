@@ -1,13 +1,11 @@
-import {
-    FundsTransferCalculatedStatus,
-    InstantTermPaymentType,
-    OrderSortingDirection,
-    OrderSortingName,
-    OrderStatisticsGroup,
-    OrderStatisticsStatus,
-    OrderStatus,
-    OrderType,
-} from '@enums';
+import { FundsTransferCalculatedStatus } from '@/enums/funds-transfer-calculated-status';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
+import { OrderStatisticsGroup } from '@/enums/order/order-statistics-group';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
+import { OrderStatus } from '@/enums/order-status';
+import { OrderType } from '@/enums/order/order-type';
 
 export type OrderFilters = Partial<{
     searchSubject: string;

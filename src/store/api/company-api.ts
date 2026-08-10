@@ -1,4 +1,4 @@
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { Company } from '@store/admin/companies/types';
 import { apiSlice } from '@store/api/api-slice';
 import { PaginatedResponse } from '@utils/redux';

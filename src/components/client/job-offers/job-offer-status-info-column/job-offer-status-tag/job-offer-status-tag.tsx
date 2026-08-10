@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { SendSimpleIcon } from '@icons';
 import { classname } from '@utils/classname';
 

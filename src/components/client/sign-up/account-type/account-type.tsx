@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { Link } from '@/components/common/link/link';
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import {RadioPanelInput} from '@/fields/radio-panel-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

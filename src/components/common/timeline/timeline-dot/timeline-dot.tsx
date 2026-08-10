@@ -1,7 +1,8 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { HistoryItemEventName, OrderStatus } from '@/enums';
+import { HistoryItemEventName } from '@/enums/history-item-event-name';
+import { OrderStatus } from '@/enums/order-status';
 import { ColorValueHex } from '@/shared';
 import { classname } from '@utils/classname';
 

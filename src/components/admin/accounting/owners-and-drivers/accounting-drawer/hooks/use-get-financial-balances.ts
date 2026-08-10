@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { useAppSelector } from '@store';
 import { accountingDrawerPropsSelector } from '@store/admin';
 import { useGetBalancesQuery } from '@store/api/balances-api';

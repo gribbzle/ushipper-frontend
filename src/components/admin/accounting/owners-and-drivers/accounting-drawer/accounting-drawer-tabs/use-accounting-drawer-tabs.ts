@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { BalanceType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
 import { useDefaultAccountBalance } from '@hooks';
 import { useAppSelector } from '@store';
 import { balancesFromSelectedAccountSelector } from '@store/admin';

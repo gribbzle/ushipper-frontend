@@ -2,7 +2,8 @@ import React, { ReactNode, RefObject, useMemo, useRef } from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
 import { Dropdown } from '@/components/common/dropdown/dropdown';
-import { ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { SystemIcon } from '@icons';
 import { useAppSelector } from '@store';

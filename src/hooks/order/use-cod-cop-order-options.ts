@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';
 import { Load } from '@store/client';

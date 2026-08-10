@@ -1,4 +1,4 @@
-import { FuelTransactionStatus } from '@/enums';
+import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
 
 export type FuelTransactionsFiltersFormState = {
     cardId: number;

@@ -1,4 +1,5 @@
-import { OrderStatus, TrackingOrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { SelectedShipperTrackingOrder } from '@store/client';
 
 const statusTitleMap: Record<OrderStatus, TrackingOrderStatus> = {

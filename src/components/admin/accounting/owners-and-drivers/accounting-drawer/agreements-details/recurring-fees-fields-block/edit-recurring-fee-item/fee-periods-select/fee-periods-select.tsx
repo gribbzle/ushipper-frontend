@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FeePeriod } from '@/enums';
+import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 

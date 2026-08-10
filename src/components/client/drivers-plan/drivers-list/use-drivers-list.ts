@@ -1,4 +1,4 @@
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useAppSelector } from '@store';
 import { useGetUsersQuery } from '@store/api/users-api';
 import { authorizedUserPublicIdSelector } from '@store/global';

@@ -1,7 +1,7 @@
 import { MutableRefObject } from 'react';
 import { FormApi } from 'final-form';
 
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { InstantTermPaymentMethod } from '@/store/common/orders/types';
 import { Attachment } from '@/shared';
 import { OrderDriverPaymentFormState } from '@store/client';

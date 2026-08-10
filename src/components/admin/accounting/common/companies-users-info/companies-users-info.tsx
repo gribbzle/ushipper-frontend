@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { classname } from '@utils/classname';
 

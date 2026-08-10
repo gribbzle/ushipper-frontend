@@ -6,7 +6,8 @@ import { ReviewFiltersTabs } from '@/components/client/company/review-filters-ta
 import { SearchReviewSelect } from '@/components/client/company/search-review-select/search-review-select';
 import { TabItemBase } from '@/components/common/tabs/tabs';
 import { Paper } from '@/components/common/paper/paper';
-import { ReviewsFilterEnum, ReviewTabsEnum } from '@/enums';
+import { ReviewsFilterEnum } from '@/enums/reviews-filter-enum';
+import { ReviewTabsEnum } from '@/enums/review-tab-enum';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 

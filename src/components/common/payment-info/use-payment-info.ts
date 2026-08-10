@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { OrderSourcesEnum, PaymentTerm } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { PaymentTerm } from '@/enums/payment-term';
 import { getOrderTermWithMethod } from '@/utils/order';
 import { calculateTotalPayment, getPaymentTermTranslate, getShortPaymentTermTranslate } from '@/utils/payment';
 import { useMeDriverRelated } from '@hooks';

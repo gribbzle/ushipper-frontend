@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useMap } from 'react-map-gl/mapbox';
 
-import { OrderStatus } from '@enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import { Driver, fetchedIsDriversListShownSelector, OrderCoordinate, OrderTracking } from '@store/client';
 import { Coordinate, DirectionsResponse, Geo, Location, TripsResponse } from '@types';

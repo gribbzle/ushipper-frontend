@@ -1,4 +1,4 @@
-import { InstantTermPaymentType } from '@enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 
 import { OrderDriverPaymentFormAlertViewVariant } from './order-driver-payment-form-alert.types';
 

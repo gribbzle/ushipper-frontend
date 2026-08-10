@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FundsTransferCalculatedStatus } from '@/enums';
+import { FundsTransferCalculatedStatus } from '@/enums/funds-transfer-calculated-status';
 import {SelectField} from '@/fields/select-field';
 import { translateFundsTransferCalculatedStatus } from '@utils/translate/order/translate-funds-transfer-calculated-status';
 

@@ -1,4 +1,4 @@
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { wrapper } from '@store';
 import { authorizedUserSelector } from '@store/global';
 

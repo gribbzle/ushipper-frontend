@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { PaymentConfirmationType } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import {SelectField} from '@/fields/select-field';
 import { getPaymentConfirmationTypeTranslate } from '@utils/get-payment-confirmation-type-translate';
 

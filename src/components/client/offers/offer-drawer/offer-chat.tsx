@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import { Chat } from '@/components/common/chats-drawer/chat';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useAppDispatch } from '@store';
 import { isChatInitiazedSelector, openChatByOrderOfferIdAction } from '@store/common';
 

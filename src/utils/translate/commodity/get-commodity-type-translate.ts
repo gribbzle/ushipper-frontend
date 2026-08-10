@@ -1,6 +1,6 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { CommodityTypesEnum } from '@/enums';
+import { CommodityTypesEnum } from '@/enums/commodity/commodity-types-enum';
 import { translateByNamespace } from '@/utils/i18n';
 
 const commodityTypeTranslate = translateByNamespace('common:commodity:commodity-types');

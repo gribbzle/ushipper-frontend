@@ -2,7 +2,7 @@ import JsCookie from 'js-cookie';
 import Router from 'next/router';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { revokeToken } from '@api/auth';
 
 import { authorizedUserSelector } from './selectors';

@@ -21,7 +21,7 @@ import { OrderInspectionsPaper } from '@/components/client/orders/show/order-ins
 import { RecalculateTransactionsPopup } from '@/components/client/orders/show/recalculate-order-transactions-popup/recalculate-order-transactions-popup';
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useOrdersActionsPermission } from '@/hooks/order';
 import { useScrollTop } from '@hooks';
 import { useAppDispatch } from '@store';

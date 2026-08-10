@@ -5,7 +5,7 @@ import { Button } from '@/components/common/button/button';
 import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { DropdownDividerOption } from '@/components/common/dropdown/dropdown';
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
 import { HorizontalDotsIcon } from '@icons';
 import { Load } from '@store/client';

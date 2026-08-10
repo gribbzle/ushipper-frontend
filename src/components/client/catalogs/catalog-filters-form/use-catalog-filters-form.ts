@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { FormApi } from 'final-form';
 
-import { CatalogSortingNameEnum, OrderSortingDirection } from '@/enums';
+import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useAppDispatch, useAppSelector } from '@store';
 import { catalogsIsAllFiltersResetSelector, catalogsSelectedFiltersSelector } from '@store/client';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';

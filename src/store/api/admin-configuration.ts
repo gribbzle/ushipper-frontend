@@ -1,4 +1,7 @@
-import { CompanyType, PerformTransactionEventEnum, RegistrationType, TransactionSystemEnum } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
+import { PerformTransactionEventEnum } from '@/enums/preferences/perform-transaction-event-enum';
+import { RegistrationType } from '@/enums/registration-type';
+import { TransactionSystemEnum } from '@/enums/preferences/transaction-system-enum';
 
 import { apiSlice } from './api-slice';
 

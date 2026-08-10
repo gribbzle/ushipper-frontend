@@ -5,7 +5,7 @@ import { AdminOrdersPageLayout } from '@/components/common/orders-page-layout/ad
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrdersTableContainer } from '@/components/admin/orders/orders-table-container/orders-table-container';
 import { RenderOrdersTableProps } from '@/components/common/orders-page-layout/admin-orders-page-layout/admin-orders-page-layout.types';
-import { OrderType } from '@enums';
+import { OrderType } from '@/enums/order/order-type';
 
 const ORDERS_TYPE = OrderType.CARRIER;
 

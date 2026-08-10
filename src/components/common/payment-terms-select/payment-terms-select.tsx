@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { PaymentTerm } from '@/enums';
+import { PaymentTerm } from '@/enums/payment-term';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import {SelectField} from '@/fields/select-field';
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { OrdersTable } from '@/components/admin/orders';
 import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { TableLoader } from '@/components/common/table/common/table-loader/table-loader';
-import { OrderType } from '@enums';
+import { OrderType } from '@/enums/order/order-type';
 import { translateByNamespace } from '@utils/i18n';
 
 import { useCODOrdersTable } from './use-cod-orders-table';

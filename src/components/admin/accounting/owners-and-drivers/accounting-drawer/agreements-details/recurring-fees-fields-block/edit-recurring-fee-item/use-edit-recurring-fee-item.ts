@@ -3,7 +3,7 @@ import { debounce } from 'debounce';
 import get from 'lodash.get';
 import { useForm } from 'react-final-form';
 
-import { PaymentConfirmationType } from '@/enums';
+import { PaymentConfirmationType } from '@/enums/transactions/payment-confirmation-type';
 import { useOpenTransactionsPage } from '@hooks';
 import { useAppSelector } from '@store';
 import { selectedAccountSelector } from '@store/admin';

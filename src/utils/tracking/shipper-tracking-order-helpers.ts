@@ -1,4 +1,4 @@
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { Load, ShipperTrackingOrder } from '@store/client';
 
 import { mapOrderStatusToTrackingStatus } from './map-order-status-to-tracking-order-status';

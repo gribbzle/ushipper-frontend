@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { PerformTransactionEventEnum } from '@/enums';
+import { PerformTransactionEventEnum } from '@/enums/preferences/perform-transaction-event-enum';
 import {SelectField} from '@/fields/select-field';
 import { getPerformTransactionEventTranslate } from '@utils/translate/preferences/get-perform-transaction-event-translate';
 

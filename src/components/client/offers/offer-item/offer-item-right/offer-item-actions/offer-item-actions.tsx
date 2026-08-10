@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
 import { Button } from '@/components/common/button/button';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useMeCarrier } from '@hooks';
 import { useAppDispatch } from '@store';
 import { orderOffersApi, useCancelOfferMutation } from '@store/api/order-offers';

@@ -7,7 +7,7 @@ import { Button } from '@/components/common/button/button';
 import { Divider } from '@/components/common/divider/divider';
 import { Loader } from '@/components/common/loader/loader';
 import { RolesSelect } from '@/components/common/selects/roles-select/roles-select';
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

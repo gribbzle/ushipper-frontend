@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { OrderSourcesEnum, UserOrderStatus } from '@enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { useLoadboardTabSelection } from '@hooks';
 import { classname } from '@utils/classname';
 

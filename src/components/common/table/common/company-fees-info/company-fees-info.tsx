@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { FeeCategoryTermType } from '@enums';
+import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { Fee } from '@types';
 import { classname } from '@utils/classname';
 import { formatFeeValueType } from '@utils/fees';

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FreightClassesEnum } from '@/enums';
+import { FreightClassesEnum } from '@/enums/commodity/freight-classes-enum';
 import {SelectField} from '@/fields/select-field';
 
 export const FreightClassesSelect = (props: FieldRenderProps<string>) => {

@@ -1,4 +1,4 @@
-import { FundsTransferStatus, FundsTransferStatusView } from '@enums';
+import { FundsTransferStatus, FundsTransferStatusView } from '@/enums/funds-transfer-status';
 
 export const FUNDS_TRANSFER_STATUS_VIEW: Record<FundsTransferStatus, FundsTransferStatusView> = {
     [FundsTransferStatus.NONE]: FundsTransferStatusView.PENDING,

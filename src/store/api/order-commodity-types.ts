@@ -1,13 +1,11 @@
-import {
-    CommodityDimensionUnitEnum,
-    CommodityHazmatClassEnum,
-    CommodityPackingGroupEnum,
-    CommodityTemperatureUnitEnum,
-    CommodityTypesEnum,
-    CommodityVolumeUnitEnum,
-    CommodityWeightUnitEnum,
-    FreightClassesEnum,
-} from '@/enums';
+import { CommodityDimensionUnitEnum } from '@/enums/commodity/commodity-dimension-unit-enum';
+import { CommodityHazmatClassEnum } from '@/enums/commodity/commodity-hazmat-classes-enum';
+import { CommodityPackingGroupEnum } from '@/enums/commodity/commodity-packing-group-enum';
+import { CommodityTemperatureUnitEnum } from '@/enums/commodity/commodity-temperature-unit-enum';
+import { CommodityTypesEnum } from '@/enums/commodity/commodity-types-enum';
+import { CommodityVolumeUnitEnum } from '@/enums/commodity/commodity-volume-unit-enum';
+import { CommodityWeightUnitEnum } from '@/enums/commodity/commodity-weight-unit-enum';
+import { FreightClassesEnum } from '@/enums/commodity/freight-classes-enum';
 
 export type OrderCommodity = {
     publicId: string;

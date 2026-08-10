@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { useOpenMarkAsDocumentsRequestedPopup } from '@/components/admin/orders/mark-as-documents-requested-popup/useOpenMarkAsDocumentsRequestedPopup';
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { translateFundsTransferStatusAction } from '@utils/translate/order/translate-funds-transfer-status-action';
 
 import { useUpdateFundsTransferStatus } from './use-update-funds-transfer-status';

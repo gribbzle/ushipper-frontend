@@ -1,4 +1,9 @@
-import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum, ChatTypesEnum, OfferStatusesEnum, OrderStatus, PaymentTerm } from '@/enums';
+import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { OrderStatus } from '@/enums/order-status';
+import { PaymentTerm } from '@/enums/payment-term';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { SystemMessagesTypesEnum } from '@/enums/system-messages-type';
 import { Avatar } from '@store/common/staff/avatar-types';

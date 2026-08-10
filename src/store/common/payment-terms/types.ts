@@ -1,4 +1,5 @@
-import { PaymentMethod as PaymentMethodEnum, PaymentTerm as PaymentTermEnum } from '@/enums';
+import { PaymentMethod as PaymentMethodEnum } from '@/enums/payment-method';
+import { PaymentTerm as PaymentTermEnum } from '@/enums/payment-term';
 
 export type PaymentMethod = {
     id: PaymentMethodEnum;

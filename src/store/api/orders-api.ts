@@ -1,4 +1,10 @@
-import { AttachmentType, DateTypes, InspectionType, OrderPaymentStatus, OrderSortingDirection, OrderStatus, TransportTypeEnum } from '@/enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
+import { DateTypes } from '@/enums/date-types-enum';
+import { InspectionType } from '@/enums/inspection-type';
+import { OrderPaymentStatus } from '@/enums/order-payment-status';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderStatus } from '@/enums/order-status';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
 import { Attachment, NullableFields, OrderVehicle } from '@/shared';
 import { BalanceValue } from '@store/admin/accounting/balance-types';
 import { OrderCommodity } from '@store/api/order-commodity-types';

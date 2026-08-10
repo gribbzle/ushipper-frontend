@@ -1,4 +1,7 @@
-import { OffersListTabsEnum, OfferSortingName, OfferStatusesEnum, OrderSortingDirection } from '@/enums';
+import { OffersListTabsEnum } from '@/enums/offers-list-tabs-enum';
+import { OfferSortingName } from '@/enums/offer-sorting-name';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { apiSlice } from '@store/api/api-slice';
 import { OrderOffer } from '@store/common/orders/types';
 import { PaginatedResponse } from '@utils/redux';

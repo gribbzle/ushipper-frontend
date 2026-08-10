@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
-import { CarrierAccountingDrawerTab } from '@/enums';
+import { CarrierAccountingDrawerTab } from '@/enums/tabs/carrier-accounting-drawer-tab';
 import { useLoginAs, useOpenDeleteCompanyPopup } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions, Company } from '@store/admin';

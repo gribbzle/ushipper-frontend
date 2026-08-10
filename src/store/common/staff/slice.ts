@@ -2,7 +2,7 @@ import { AxiosError } from 'axios';
 import { toast } from 'react-toastify';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { selectedAccountSelector } from '@/store/admin/accounting/selectors';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { createEditUser, deleteUser, fetchRoles, fetchUser } from '@api';

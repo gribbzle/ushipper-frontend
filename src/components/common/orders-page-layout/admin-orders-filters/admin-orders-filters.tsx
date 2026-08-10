@@ -8,7 +8,7 @@ import { FundsTransferCalculatedStatusSelect } from '@/components/common/selects
 import { ReceiptStatusSelect } from '@/components/common/selects/receipt-status-select/receipt-status-select';
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Paper } from '@/components/common/paper/paper';
-import { OrderSortingName } from '@enums';
+import { OrderSortingName } from '@/enums/order-sorting-name';
 import {DatePicker} from '@/fields/datepicker';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

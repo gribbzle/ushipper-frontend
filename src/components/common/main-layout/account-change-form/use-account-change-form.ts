@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useFormState } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { useRouterForAccountChange } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { changeAccountSubmit } from '@store/client';

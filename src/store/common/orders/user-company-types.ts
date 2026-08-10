@@ -1,5 +1,5 @@
 import { Avatar } from '@/store/common/staff/avatar-types';
-import { CompanyStatusEnum } from '@enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { Company } from '@store/admin/companies/types';
 
 import { Rating } from '@store/client';

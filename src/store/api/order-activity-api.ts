@@ -1,4 +1,5 @@
-import { FundsTransferStatus, HistoryItemEventName } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
+import { HistoryItemEventName } from '@/enums/history-item-event-name';
 import { User } from '@store/common/staff/types';
 import { CursorPagination } from '@utils/redux';
 

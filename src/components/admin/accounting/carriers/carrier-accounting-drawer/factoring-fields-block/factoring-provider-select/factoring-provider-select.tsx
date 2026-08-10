@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FactoringProvider } from '@/enums';
+import { FactoringProvider } from '@/enums/company/factoring-provider';
 import {SelectField} from '@/fields/select-field';
 import { getFactoringProviderTranslation } from '@utils/translate/accounting/get-factoring-provider-translation';
 

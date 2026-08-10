@@ -9,7 +9,7 @@ import { DateInfo } from '@/components/common/table/common/date-info/date-info';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { TableColumn } from '@/components/common/table/table.types';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
-import { OrderSortingDirection } from '@enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useFuelCardsActionsPermission, useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fuelActions, FuelCard } from '@store/admin';

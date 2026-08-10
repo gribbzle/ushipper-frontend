@@ -4,7 +4,7 @@ import { toKebabCase } from 'js-convert-case';
 import { Accordion } from '@/components/common/accordion/accordion';
 import { Button } from '@/components/common/button/button';
 import { Loader } from '@/components/common/loader/loader';
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { ArrowDownIcon, Ellipse } from '@icons';
 import { useAppSelector } from '@store';
 import { isShipperOrdersTrackingLoadingSelector, ShipperTrackingOrder } from '@store/client';

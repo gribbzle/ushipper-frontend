@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import { GenericButton } from '@/components/common/generic-button/generic-button';
 import { Loader } from '@/components/common/loader/loader';
 import { Paper } from '@/components/common/paper/paper';
-import { TrackingOrderStatus } from '@/enums';
+import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { formatDrivingDistance } from '@/utils/driving';
 import { getOrderId } from '@/utils/order';
 import { calculateTotalPayment, getPaymentPerDistance } from '@/utils/payment';

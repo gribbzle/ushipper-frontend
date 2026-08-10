@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
 import { useOrder, useOrderHelpers } from '@/hooks/order';
-import { TransactionStatusesEnum } from '@enums';
+import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { useOpenTransactionsPage, useTransactionActionsPermission } from '@hooks';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';

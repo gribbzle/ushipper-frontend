@@ -2,7 +2,9 @@ import { enUS } from 'date-fns/locale';
 import { formatInTimeZone } from 'date-fns-tz';
 import has from 'has-values';
 
-import { OrderStatus, PaymentMethod, PaymentTerm } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
+import { PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
 import { formatLongDateOrNull } from '@/utils/dates';
 import { translateByNamespace } from '@/utils/i18n';
 import { formatToCurrency } from '@/utils/numbers';

@@ -1,7 +1,7 @@
 import React, { Fragment, useMemo } from 'react';
 import { Marker } from 'react-map-gl/mapbox';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector } from '@store/client';
 import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';

@@ -14,7 +14,7 @@ import { TimelineDot } from '@/components/common/timeline/timeline-dot/timeline-
 import { TimelineItem } from '@/components/common/timeline/timeline-item/timeline-item';
 import { TimelineSeparator } from '@/components/common/timeline/timeline-separator/timeline-separator';
 import { Paper } from '@/components/common/paper/paper';
-import { HistoryItemEventName } from '@/enums';
+import { HistoryItemEventName } from '@/enums/history-item-event-name';
 import { ArrowDownIcon, SystemIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { FundsTransferPayload, OrderActivity, orderActivityApi, useGetOrderActivityQuery } from '@store/api/order-activity-api';

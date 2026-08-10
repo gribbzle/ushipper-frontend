@@ -4,7 +4,10 @@ import { toast } from 'react-toastify';
 
 import { useCancelRequest, useCreateEmptyRequest, useLoadboardItemActions, useSendRequestAction } from '@/components/client/loadboard/loadboard-item/hooks';
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { OrderSourcesEnum, OrderStatus, RequestStatusesEnum, UserOrderStatus } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { OrderStatus } from '@/enums/order-status';
+import { RequestStatusesEnum } from '@/enums/request-statuses';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { useCreateParsedOrderCall, useMeDriverRelated, useOpenParsedOrderDetailsDrawer } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import loadboardApi, { LoadBoardFilters } from '@store/api/loadboard-api';

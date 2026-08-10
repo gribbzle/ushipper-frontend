@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 import { Button } from '@/components/common/button/button';
 import { FeeCategoryTypesSelect } from '@/components/common/selects/fee-category-types-select/fee-category-types-select';
 import { Paper } from '@/components/common/paper/paper';
-import { FeeCategoryType } from '@/enums';
+import { FeeCategoryType } from '@/enums/fee/fee-category-types-enum';
 import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

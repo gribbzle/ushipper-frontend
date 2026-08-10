@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { CarriersCatalogListTabsEnum } from '@/enums';
+import { CarriersCatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { useAppSelector } from '@store';
 import { useGetCarriersCatalogQuery, useGetCarriersCatalogStatisticQuery } from '@store/api/catalogs-api';
 import { CarriersCatalogStatistic, catalogsSelectedFiltersSelector } from '@store/client';

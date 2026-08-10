@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { InspectionSubtype, RouteMarkerType } from '@/enums';
+import { InspectionSubtype } from '@/enums/inspection-subtype';
+import { RouteMarkerType } from '@/enums/route-marker-type-enum';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 

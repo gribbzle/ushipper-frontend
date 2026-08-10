@@ -4,7 +4,12 @@ import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
-import { CompanyType, ContractorTypesEnum, FeeCategoryTermType, FeesRule, FuelCardsRule, OrderSourcesEnum } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
+import { ContractorTypesEnum } from '@/enums/contractor-types-enum';
+import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
+import { FeesRule } from '@/enums/fee/fees-rules-enum';
+import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { isNumber } from '@/shared';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';

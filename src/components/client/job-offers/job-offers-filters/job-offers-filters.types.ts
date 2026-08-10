@@ -1,6 +1,8 @@
 import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { JobOfferSortingName, OfferStatusesEnum, OrderSortingDirection } from '@/enums';
+import { JobOfferSortingName } from '@/enums/offer-sorting-name';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { OffersStatistic } from '@store/api/order-offers';
 import { JobOffer } from '@store/client';
 

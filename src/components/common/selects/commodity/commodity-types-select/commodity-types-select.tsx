@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CommodityTypesEnum } from '@/enums';
+import { CommodityTypesEnum } from '@/enums/commodity/commodity-types-enum';
 import {SelectField} from '@/fields/select-field';
 import { getCommodityTypeTranslate } from '@utils/translate/commodity/get-commodity-type-translate';
 

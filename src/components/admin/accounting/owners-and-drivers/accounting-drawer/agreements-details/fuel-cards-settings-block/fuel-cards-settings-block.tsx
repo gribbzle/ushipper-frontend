@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useForm } from 'react-final-form';
 
-import { FuelCardsRule } from '@/enums';
+import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
 import {CurrencyInput} from '@/fields/currency-input';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OrderDeleteAttachmentPopup } from '@/components/client/orders/popups/order-delete-attachment-popup/order-delete-attachment-popup';
 import { PROJECT_KEY_NAME } from '@constants';
-import { AttachmentType } from '@enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';

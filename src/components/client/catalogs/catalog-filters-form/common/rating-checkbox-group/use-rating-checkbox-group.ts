@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useField, useForm } from 'react-final-form';
 
-import { ReviewsFilterEnum } from '@/enums';
+import { ReviewsFilterEnum } from '@/enums/reviews-filter-enum';
 import { useAppSelector } from '@store';
 import { catalogsSelectedFiltersSelector } from '@store/client';
 

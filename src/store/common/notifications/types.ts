@@ -1,5 +1,5 @@
 import { OrdersCountEvent } from '@/components/common/websocket-watcher/types';
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { RequestStatus } from '@utils/redux';
 
 import { Avatar } from '../staff/avatar-types';

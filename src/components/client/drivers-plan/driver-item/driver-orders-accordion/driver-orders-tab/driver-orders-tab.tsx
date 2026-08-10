@@ -4,7 +4,7 @@ import { Accordion } from '@/components/common/accordion/accordion';
 import { ParsedOrderActions } from '@/components/common/parsed-order-actions/parsed-order-actions';
 import { ParsedOrderRoute } from '@/components/common/parsed-order-route/parsed-order-route';
 import { PaymentInfo } from '@/components/common/payment-info/payment-info';
-import { UserOrderStatus } from '@/enums';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { LoadBoardFilters } from '@store/api/loadboard-api';
 import { GetOrdersData } from '@store/api/orders-api';
 import { Load } from '@store/common';

@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 import { Field } from 'react-final-form';
 
 import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
-import { AccountSubTypesEnum } from '@/enums';
+import { AccountSubTypesEnum } from '@/enums/account-subtypes-enum';
 import {SelectionButtonGroupInput} from '@/fields/selection-button-group-input';
 import { translateByNamespace } from '@utils/i18n';
 

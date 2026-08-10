@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { UserOrderStatus } from '@/enums';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { classname } from '@utils/classname';
 
 import './parsed-order-status-block.scss';

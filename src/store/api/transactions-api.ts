@@ -1,5 +1,7 @@
 import { CreateTransactionFormState } from '@/components/admin/accounting/common/create-transaction-popup/create-transaction-form/create-transaction-form.types';
-import { BalanceType, TransactionStatusGroupEnum, TransactionTypeGroup } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { TransactionStatusGroupEnum } from '@/enums/transactions/transaction-status-group-enum';
+import { TransactionTypeGroup } from '@/enums/transactions/transaction-type-group';
 import { Transaction } from '@store/admin';
 import { apiSlice } from '@store/api/api-slice';
 import { CursorPagination, PaginatedResponse } from '@utils/redux';

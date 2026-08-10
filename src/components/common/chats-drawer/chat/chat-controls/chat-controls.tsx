@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { debounce } from 'debounce';
 
-import { ChatTypesEnum } from '@/enums';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { useTimeoutManager } from '@/hooks/use-timeout-manager';
 import { AttachIcon, SendMessageIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

@@ -1,4 +1,5 @@
-import { CompanyType, OrderSortingDirection } from '@enums';
+import { CompanyType } from '@/enums/company-type';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { CompanyTotalRating } from '@store/api/company-rating-types';
 import { Specialization } from '@store/common/specialization/types';
 import { Avatar } from '@store/common/staff/avatar-types';

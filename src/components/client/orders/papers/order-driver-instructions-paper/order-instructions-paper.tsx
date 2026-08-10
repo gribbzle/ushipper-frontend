@@ -4,7 +4,7 @@ import { OrderInstructionsDrawer } from '@/components/client/orders/drawers/orde
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { UserRoleGroup } from '@/enums';
+import { UserRoleGroup } from '@/enums/user-role-group';
 import { useCanManageOrder } from '@/hooks/order';
 import { useUserRoleGroup } from '@hooks';
 import { PencilIcon } from '@icons';

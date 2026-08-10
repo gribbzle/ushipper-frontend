@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-drawer-tabs';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { CheckIcon, CloseIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

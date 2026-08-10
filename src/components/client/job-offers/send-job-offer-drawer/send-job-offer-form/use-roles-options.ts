@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { UserRoleType } from '@/enums';
+import { UserRoleType } from '@/enums/user-role-type';
 import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { useGetRolesQuery } from '@store/api/roles-api';

@@ -5,7 +5,7 @@ import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { SaveButton } from '@/components/common/button/SaveButton';
-import { ExternalServiceType } from '@enums';
+import { ExternalServiceType } from '@/enums/company/external-service-type';
 import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

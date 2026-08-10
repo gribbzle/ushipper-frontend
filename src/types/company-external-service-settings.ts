@@ -1,4 +1,5 @@
-import { ExternalServiceType, FactoringProvider } from '@enums';
+import { ExternalServiceType } from '@/enums/company/external-service-type';
+import { FactoringProvider } from '@/enums/company/factoring-provider';
 
 export type CompanyExternalServiceParams = {
     companyId: string;

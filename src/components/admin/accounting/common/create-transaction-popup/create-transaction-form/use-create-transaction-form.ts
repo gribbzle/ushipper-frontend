@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
-import { BalanceType, TransactionTypesEnum } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enum';
 import { useHandleTransactionError, useInvalidateSelectedAccountTags } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createTransactionPopupPropsSelector } from '@store/admin';

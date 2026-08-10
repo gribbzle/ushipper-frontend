@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { Button } from '@/components/common/button/button';
 import { FlagButton } from '@/components/common/flag-button/flag-button';
 import { PaymentInfo } from '@/components/common/payment-info/payment-info';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { RequestStatusesEnum } from '@/enums/request-statuses';
 import { useMeAdmin, useMeDriverRelated, useMeShipper } from '@hooks';
 import { classname } from '@utils/classname';

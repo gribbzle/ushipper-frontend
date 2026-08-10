@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { DispatcherCatalogListTabsEnum } from '@/enums';
+import { DispatcherCatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { useAppSelector } from '@store';
 import { useGetDriversCatalogQuery, useGetDriversCatalogStatisticQuery } from '@store/api/catalogs-api';
 import { DispatcherCatalogStatistic } from '@store/client';

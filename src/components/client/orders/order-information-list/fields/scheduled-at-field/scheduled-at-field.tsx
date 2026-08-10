@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { DateTypes } from '@enums';
+import { DateTypes } from '@/enums/date-types-enum';
 import { useMeShipper } from '@hooks';
 import { ScheduleIcon } from '@icons';
 import { formatLongDateOrGetDash } from '@utils/dates';

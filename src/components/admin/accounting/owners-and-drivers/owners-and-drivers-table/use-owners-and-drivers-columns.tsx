@@ -9,7 +9,8 @@ import { DriverAccountInfoBlock } from '@/components/common/table/common/driver-
 import { PhoneEmailInfo } from '@/components/common/table/common/phone-email-info/phone-email-info';
 import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
-import { BalanceType, CompanyType } from '@/enums';
+import { BalanceType } from '@/enums/balance-type';
+import { CompanyType } from '@/enums/company-type';
 import { useDriversActionsPermission } from '@hooks';
 import { useAppDispatch } from '@store';
 import { accountingActions } from '@store/admin';

@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { toast } from 'react-toastify';
 
-import { FundsTransferStatus } from '@/enums';
+import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { translateByNamespace } from '@utils/i18n';
 

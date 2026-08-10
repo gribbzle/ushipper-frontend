@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { ExternalServiceType, FeeCategoryTermType } from '@/enums';
+import { ExternalServiceType } from '@/enums/company/external-service-type';
+import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { usePublicId } from '@hooks';
 import { useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';

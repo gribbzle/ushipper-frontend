@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { Load } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';
 import { getOrderCheckStatuses } from '@utils/orders/order-payment-helpers';

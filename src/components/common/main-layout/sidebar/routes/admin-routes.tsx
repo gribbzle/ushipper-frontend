@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SidebarCountsEnum } from '@/enums';
+import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
 
 import { AccountingIcon, ArchiveIcon, BriefcaseIcon, CogIcon, CommentIcon, ContactIcon, GasStationIcon, GroupIcon, TransformIcon } from '../icons';
 import { Route } from '../sidebar.types';

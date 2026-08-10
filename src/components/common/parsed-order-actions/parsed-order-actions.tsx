@@ -4,7 +4,7 @@ import { ChoosePhonePopup } from '@/components/client/loadboard/choose-phone-pop
 import { LoadboardItemProps } from '@/components/client/loadboard/loadboard-item/loadboard-item.types';
 import { Button } from '@/components/common/button/button';
 import { Dropdown } from '@/components/common/dropdown/dropdown';
-import { UserOrderStatus } from '@/enums';
+import { UserOrderStatus } from '@/enums/user-order-status-enum';
 import { ActionsIcon, PhoneIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

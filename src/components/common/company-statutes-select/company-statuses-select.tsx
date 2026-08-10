@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CompanyStatusEnum } from '@/enums';
+import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import {SelectField} from '@/fields/select-field';
 import { getCompanyStatusTranslate } from '@utils/get-company-status-translate';
 

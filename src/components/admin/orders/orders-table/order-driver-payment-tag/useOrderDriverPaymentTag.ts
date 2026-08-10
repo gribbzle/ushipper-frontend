@@ -10,7 +10,7 @@ import {
     useOrdersActionsPermission,
 } from '@/hooks/order';
 import { getFormattedToCurrencyTotalPayment } from '@/utils/payment';
-import { InstantTermPaymentType } from '@enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';
 import { translateActionRequired, translateDriverPaymentTagLabel } from '@utils/translate/order/instant-term-payment-type-translations';

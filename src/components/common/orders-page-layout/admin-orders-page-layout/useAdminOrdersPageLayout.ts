@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import cleanDeep from 'clean-deep';
 
-import { OrderSortingDirection, OrderSortingName, OrderStatisticsStatus, OrderType } from '@enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSortingName } from '@/enums/order-sorting-name';
+import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
+import { OrderType } from '@/enums/order/order-type';
 import { useAppSelector } from '@store';
 import { GetOrdersData, useGetOrdersQuery } from '@store/api/orders-api';
 import { authorizedUserSelector } from '@store/global';

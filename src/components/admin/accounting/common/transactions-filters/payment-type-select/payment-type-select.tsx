@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { TransactionTypeGroup } from '@/enums';
+import { TransactionTypeGroup } from '@/enums/transactions/transaction-type-group';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 import { getTransactionTypeGroupTranslate } from '@utils/translate/get-transaction-type-group-translate';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { OrderSourcesEnum } from '@/enums';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { SelectOption } from '@/shared';
 import {SelectField} from '@/fields/select-field';
 import { translateOrderSource } from '@utils/translate/order/translate-order-source';

@@ -1,6 +1,7 @@
 import { toKebabCase } from 'js-convert-case';
 
-import { PaymentMethod, PaymentTerm } from '@/enums';
+import { PaymentMethod } from '@/enums/payment-method';
+import { PaymentTerm } from '@/enums/payment-term';
 import { convertMetersToMiles } from '@/utils/converter';
 import { translateByNamespace } from '@/utils/i18n';
 import { formatToCurrency } from '@/utils/numbers';

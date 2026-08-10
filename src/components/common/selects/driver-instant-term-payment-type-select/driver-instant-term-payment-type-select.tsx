@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { InstantTermPaymentType } from '@/enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import {SelectField} from '@/fields/select-field';
 import { useMeAdmin } from '@hooks';
 import { getDriverPaymentRecipientTranslate, getPaymentRecipientTranslate } from '@utils/translate/get-payment-recipient-translate';

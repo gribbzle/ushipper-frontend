@@ -3,7 +3,7 @@ import React from 'react';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { StatusBlock } from '@/components/common/status-block/status-block';
 import { StatusBlockView } from '@/components/common/status-block/status-block';
-import { FuelCardStatus } from '@/enums';
+import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
 import { useFuelCardsActionsPermission } from '@hooks';
 import { ArrowDownIcon } from '@icons';
 import { getFuelCardStatusTranslate } from '@utils/translate/fuel/get-fuel-card-status-translate';

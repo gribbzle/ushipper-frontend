@@ -1,4 +1,9 @@
-import { LoadboardTab, OrderSortingDirection, OrderSourcesEnum, TermsEnum, TransportTypeEnum, VehicleType } from '@enums';
+import { TermsEnum } from '@/enums/terms-enum';
+import { LoadboardTab } from '@/enums/tabs/loadboard-tab';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { OrderSourcesEnum } from '@/enums/order-sources-enum';
+import { TransportTypeEnum } from '@/enums/transport-type-enum';
+import { VehicleType } from '@/enums/vehicle-type';
 import { apiSlice } from '@store/api/api-slice';
 import { Load } from '@store/common/orders/types';
 import { PaginatedResponse } from '@utils/redux';

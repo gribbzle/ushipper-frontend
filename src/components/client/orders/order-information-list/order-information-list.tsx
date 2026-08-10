@@ -4,7 +4,7 @@ import { formatInTimeZone } from 'date-fns-tz';
 import has from 'has-values';
 
 import { ContactInfo } from '@/components/common/contact-info/contact-info';
-import { BusinessTypesEnum } from '@/enums';
+import { BusinessTypesEnum } from '@/enums/business-types-enum';
 import { BriefcaseIcon, GeoLocationIcon, NotesIcon, ScheduleIcon } from '@icons';
 import { OrderInformation } from '@store/client';
 import { classname } from '@utils/classname';

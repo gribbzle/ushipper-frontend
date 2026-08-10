@@ -1,6 +1,8 @@
 import React, { RefObject, useMemo } from 'react';
 
-import { ChatMessageExternalStatusesEnum, ChatMessageTypesEnum, ChatTypesEnum } from '@/enums';
+import { ChatMessageExternalStatusesEnum } from '@/enums/chat-message-external-statuses-enum';
+import { ChatMessageTypesEnum } from '@/enums/chat-message-types-enum';
+import { ChatTypesEnum } from '@/enums/chat-types-enum';
 import { ExclamationCircleIcon, TickIcon } from '@icons';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
 import { classname } from '@utils/classname';

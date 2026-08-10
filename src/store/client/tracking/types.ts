@@ -1,5 +1,6 @@
-import { CommunicationType, TimeCondition } from '@/enums';
-import { OrderStatus } from '@/enums';
+import { CommunicationType } from '@/enums/communication-type';
+import { TimeCondition } from '@/enums/time-condition';
+import { OrderStatus } from '@/enums/order-status';
 import { ColorValueHex } from '@/shared';
 import { Company } from '@store/admin/companies/types';
 import { OrderRequest } from '@store/api/order-requests-types';

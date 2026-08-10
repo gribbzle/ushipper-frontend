@@ -8,7 +8,7 @@ import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { OfferDrawerTabs } from '@/components/common/offer-drawer-tabs/offer-drawer-tabs';
 import { TabItemBase } from '@/components/common/tabs/tabs';
-import { OfferStatusesEnum } from '@/enums';
+import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { CheckIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';

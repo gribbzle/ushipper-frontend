@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { AttachmentType, OrderSortingDirection } from '@/enums';
+import { AttachmentType } from '@/enums/attachment-types-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { Attachment } from '@/shared';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';

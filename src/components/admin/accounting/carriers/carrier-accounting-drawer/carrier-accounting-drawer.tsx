@@ -4,7 +4,7 @@ import { Form } from 'react-final-form';
 
 import { Drawer } from '@/components/common/drawer/drawer';
 import { SaveButton } from '@/components/common/button/SaveButton';
-import { CarrierAccountingDrawerTab } from '@enums';
+import { CarrierAccountingDrawerTab } from '@/enums/tabs/carrier-accounting-drawer-tab';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

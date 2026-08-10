@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 
 export type AppFilters = {

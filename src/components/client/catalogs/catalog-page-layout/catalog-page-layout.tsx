@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { Paginate } from '@/components/common/paginate/paginate';
-import { CatalogListTabsEnum } from '@/enums';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
 import { CatalogStatistic } from '@store/client';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';
 import { classname } from '@utils/classname';

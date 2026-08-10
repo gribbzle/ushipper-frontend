@@ -6,7 +6,7 @@ import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { UsersCountInfo } from '@/components/common/table/common/users-count-info/users-count-info';
-import { OrderSortingDirection } from '@/enums';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useCompaniesActionsPermission, useOpenDeleteCompanyPopup, useQueryFilters, useTable } from '@hooks';
 import { useAppDispatch } from '@store';
 import { Company, fetchCompanyAction } from '@store/admin';

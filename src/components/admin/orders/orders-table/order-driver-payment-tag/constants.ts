@@ -1,4 +1,4 @@
-import { InstantTermPaymentType } from '@enums';
+import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 
 export const INSTANT_TERM_PAYMENT_TYPE_TAG_VARIANT: Record<InstantTermPaymentType, 'delivered' | 'source-declined' | 'picked-up'> = {
     [InstantTermPaymentType.RECIPIENT_COMPANY_DECLINED]: 'source-declined',

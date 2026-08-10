@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CompanyType } from '@/enums';
+import { CompanyType } from '@/enums/company-type';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';

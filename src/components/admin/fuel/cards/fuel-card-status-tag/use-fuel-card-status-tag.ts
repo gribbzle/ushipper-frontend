@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { FuelCardStatusTagProps } from '@/components/admin/fuel/cards/fuel-card-status-tag/fuel-card-status-tag.types';
 import { DropdownOption } from '@/components/common/dropdown/dropdown';
-import { FuelCardStatus } from '@/enums';
+import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
 import { useAppDispatch } from '@store';
 import { fuelCardsApi, usePartiallyUpdateFuelCardMutation } from '@store/api/fuel-cards-api';
 import { translateByNamespace } from '@utils/i18n';

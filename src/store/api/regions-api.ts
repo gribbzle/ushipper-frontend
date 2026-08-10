@@ -1,4 +1,4 @@
-import { RegionKeyEnum } from '@/enums';
+import { RegionKeyEnum } from '@/enums/region-key-enum';
 
 import { apiSlice } from './api-slice';
 

@@ -1,11 +1,9 @@
-import {
-    CarriersCatalogListTabsEnum,
-    CatalogListTabsEnum,
-    CatalogSortingNameEnum,
-    DispatcherCatalogListTabsEnum,
-    OrderSortingDirection,
-    SidebarCountsEnum,
-} from '@/enums';
+import { CarriersCatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
+import { CatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
+import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
+import { DispatcherCatalogListTabsEnum } from '@/enums/catalog-list-tabs-enum';
+import { OrderSortingDirection } from '@/enums/order-sorting-direction';
+import { SidebarCountsEnum } from '@/enums/sidebar-counts-enum';
 import { Company } from '@store/admin';
 import { AuthorizedUserInfo } from '@store/global/shared-types';
 import { CatalogFiltersFormState } from "@/components/client/catalogs/catalog-filters-form/catalog-filters-form.types";

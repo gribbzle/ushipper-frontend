@@ -5,7 +5,7 @@ import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawer
 import OrderItemValidationPopup from '@/components/client/orders/order-item-validation-popup/order-item-validation-popup';
 import ShipperOptionsDropdown from '@/components/client/orders/order-options-dropdown/shipper-options-dropdown';
 import { Button } from '@/components/common/button/button';
-import { OrderStatus } from '@/enums';
+import { OrderStatus } from '@/enums/order-status';
 import { Load } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

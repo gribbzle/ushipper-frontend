@@ -1,4 +1,4 @@
-import { PaymentMethod } from '@/enums';
+import { PaymentMethod } from '@/enums/payment-method';
 
 import { apiSlice } from './api-slice';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
-import { FeeRecurringWeekDay } from '@/enums';
+import { FeeRecurringWeekDay } from '@/enums/fee/fee-recurring-week-days-enum';
 import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 
