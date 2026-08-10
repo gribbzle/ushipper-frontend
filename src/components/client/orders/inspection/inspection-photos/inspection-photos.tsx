@@ -5,7 +5,7 @@ import { getArchiveOfInspectionCarBodyPhotos } from '@api';
 import { DownloadIcon } from '@icons';
 import { ImageProvider } from '@providers';
 import { InspectionPhoto } from '@store/client/order-BOL';
-import { ImageView } from '@ui';
+import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

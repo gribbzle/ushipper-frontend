@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToOneDecimal } from '@utils/numbers';

@@ -4,7 +4,7 @@ import { Divider } from '@/components/common/divider/divider';
 import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { companyAvgDetailsRatingSelector } from '@store/admin';
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

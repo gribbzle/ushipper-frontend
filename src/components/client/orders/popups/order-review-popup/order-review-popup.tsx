@@ -9,7 +9,7 @@ import { Popup } from '@/components/common/popup/popup';
 import { useMeShipper } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderReviewPopupPropsSelector, reviewActions } from '@store/client';
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { translateCompanyType } from '@utils/translations';

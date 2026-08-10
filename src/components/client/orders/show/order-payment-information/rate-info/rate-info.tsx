@@ -11,7 +11,7 @@ import { useIsPartnerCompany, useMeAdmin, useMeCarrier, useMeShipper } from '@ho
 import { PencilIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersActions, orderSelector } from '@store/client';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { formatDateWithMonthInWords } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

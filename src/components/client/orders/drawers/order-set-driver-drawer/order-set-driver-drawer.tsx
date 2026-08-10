@@ -14,7 +14,7 @@ import { ordersApi } from '@store/api/orders-api';
 import { Driver, GetDriversParams, useGetDriversQuery } from '@store/api/users-api';
 import { orderFormSubmitAction, ordersActions, orderSetDriverDrawerPropsSelector } from '@store/client';
 import { staffActions } from '@store/common/staff/slice';
-import { List } from '@ui';
+import { List } from '@/components/ui/data-display/list';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

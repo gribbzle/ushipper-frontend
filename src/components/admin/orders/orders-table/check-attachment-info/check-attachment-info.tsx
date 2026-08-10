@@ -6,7 +6,7 @@ import { Attachment } from '@/shared';
 import { ImageProvider } from '@providers';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
-import { FileClipButton } from '@ui';
+import { FileClipButton } from '@/components/ui/data-display/file-clip-button';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { isFileImage, isFilePdf } from '@utils/files';

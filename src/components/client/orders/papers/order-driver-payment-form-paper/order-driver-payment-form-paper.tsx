@@ -6,7 +6,7 @@ import { OrderStatus } from '@enums';
 import { useHasPartnerCompanies, useMeDriverRelated } from '@hooks';
 import { useAppSelector } from '@store';
 import { orderSelector } from '@store/client';
-import { Paper } from '@ui';
+import { Paper } from '@/components/ui/surfaces/paper';
 
 export const OrderDriverPaymentFormPaper = () => {
     const order = useAppSelector(orderSelector);

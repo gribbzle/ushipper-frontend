@@ -5,7 +5,7 @@ import { PROJECT_KEY_NAME } from '@constants';
 import { FeeCategoryTermType } from '@enums';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { Fee } from '@types';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';

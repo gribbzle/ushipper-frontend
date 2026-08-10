@@ -6,7 +6,7 @@ import { ReviewsFilterEnum } from '@/enums';
 import { SelectField } from '@fields';
 import { useAppSelector } from '@store';
 import { companyRatingsReviewCountArraySelector, companyReviewsTotalSelector } from '@store/admin';
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

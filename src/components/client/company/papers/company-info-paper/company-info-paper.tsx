@@ -5,7 +5,7 @@ import { LabeledText } from '@/components/common/labeled-text/labeled-text';
 import { Paper } from '@/components/common/paper/paper';
 import { useAppSelector } from '@store';
 import { fetchedCompanySelector } from '@store/admin';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { extractStreetAndNumber, formatAddress } from '@utils/address';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

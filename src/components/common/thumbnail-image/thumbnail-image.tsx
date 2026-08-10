@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageView } from '@ui';
+import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';
 
 import { ThumbnailImageProps } from './thumbnail-image.types';

@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from '@store';
 import { Review } from '@store/client';
 import { reviewActions } from '@store/client';
 import { authorizedUserCompanyPublicIdSelector, authorizedUserNameSelector } from '@store/global';
-import { RatingOneStarIcon } from '@ui';
+import { RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

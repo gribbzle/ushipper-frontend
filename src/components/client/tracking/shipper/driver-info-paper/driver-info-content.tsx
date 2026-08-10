@@ -20,7 +20,7 @@ import {
     TrackingDriver,
 } from '@store/client';
 import { requestsSliceActions } from '@store/client/requests/slice';
-import { RatingOneStarIcon } from '@ui';
+import { RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isUshipper } from '@utils/project-config';

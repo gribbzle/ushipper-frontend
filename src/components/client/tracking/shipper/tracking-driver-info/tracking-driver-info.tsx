@@ -6,7 +6,7 @@ import { LetterIcon2, LikeIcon } from '@icons';
 import { useAppDispatch } from '@store';
 import { ordersActions } from '@store/client';
 import { Avatar as AvatarType } from '@store/common/staff/avatar-types';
-import { RatingOneStarIcon } from '@ui';
+import { RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 
 import './tracking-driver-info.scss';

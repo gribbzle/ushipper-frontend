@@ -4,7 +4,7 @@ import { FundsTransferStatus, OrderStatus } from '@/enums';
 import { useAppSelector } from '@store';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { orderSelector } from '@store/client';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isOrderCheckApproval } from '@utils/orders/order-payment-helpers';

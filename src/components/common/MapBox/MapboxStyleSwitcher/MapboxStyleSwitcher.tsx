@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { SegmentedControl, SegmentedControlOption } from '@ui';
+import { SegmentedControl, SegmentedControlOption } from '@/components/ui/panel/SegmentedControl';
 import { classname } from '@utils/classname';
 import { translateMapBoxStyle } from '@utils/translations';
 

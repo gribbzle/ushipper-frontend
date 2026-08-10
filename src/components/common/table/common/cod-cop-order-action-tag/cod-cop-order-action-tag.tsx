@@ -3,7 +3,7 @@ import React from 'react';
 import { FloatingDropdown } from '@/components/common/dropdown/floating-dropdown';
 import { InstantTermPaymentType } from '@/enums';
 import { useTransactionActionsPermission } from '@hooks';
-import { StatusTag, StatusTagView } from '@ui';
+import { StatusTag, StatusTagView } from '@/components/ui/data-display/status-tag';
 import { classname } from '@utils/classname';
 import { diffForHumans } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

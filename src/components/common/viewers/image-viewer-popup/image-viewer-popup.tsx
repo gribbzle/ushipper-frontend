@@ -6,7 +6,7 @@ import { Popup } from '@/components/common/popup/popup';
 import { ImageProvider } from '@providers';
 import { useAppDispatch, useAppSelector } from '@store';
 import { imageViewerPopupSelector, viewersActions } from '@store/common/viewers';
-import { ImageView } from '@ui';
+import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';
 import { downloadFileUsingFetch } from '@utils/files';
 

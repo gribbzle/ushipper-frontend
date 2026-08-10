@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 
 type Props = {
     name: string;

@@ -5,7 +5,7 @@ import { useHasPartnerCompanies, useMeAdmin } from '@hooks';
 import { useAppSelector } from '@store';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { orderSelector } from '@store/client';
-import { Paper } from '@ui';
+import { Paper } from '@/components/ui/surfaces/paper';
 
 import { OrderAdditionalDocumentsAlert } from '../../alerts';
 

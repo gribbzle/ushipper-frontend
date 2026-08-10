@@ -4,7 +4,7 @@ import { ThumbnailImage } from '@/components/common/thumbnail-image/thumbnail-im
 import { useDownloadAttachment } from '@/hooks/useDownload';
 import { useAppDispatch } from '@store';
 import { viewersActions } from '@store/common/viewers';
-import { FileClipButton } from '@ui';
+import { FileClipButton } from '@/components/ui/data-display/file-clip-button';
 import { isFileImage, isFilePdf } from '@utils/files';
 
 import { AttachmentItemProps } from './attachment-item.types';

@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
 import { ShipperTrackingFiltersFormState } from '@store/client';
-import { SegmentedControl } from '@ui';
+import { SegmentedControl } from '@/components/ui/panel/SegmentedControl';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Avatar } from '@/components/common/avatar/avatar';
-import { RatingOneStarIcon } from '@ui';
+import { RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 
 import './manager-info.scss';

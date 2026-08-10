@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useOrder, useOrderPaymentInformationHelpers } from '@/hooks/order';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';
 

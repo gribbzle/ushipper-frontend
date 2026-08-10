@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { User } from '@store/common';
-import { List } from '@ui';
+import { List } from '@/components/ui/data-display/list';
 import { classname } from '@utils/classname';
 
 import { AssignUserItem } from '../assign-user-item/assign-user-item';

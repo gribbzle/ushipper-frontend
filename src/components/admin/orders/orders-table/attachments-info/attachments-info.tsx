@@ -9,7 +9,7 @@ import { ImageProvider } from '@providers';
 import { useAppDispatch } from '@store';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';
 import { viewersActions } from '@store/common/viewers';
-import { FileClipButton } from '@ui';
+import { FileClipButton } from '@/components/ui/data-display/file-clip-button';
 import { getLastVisibleAttachmentOverlayText, SplitAttachmentsResult, splitAttachmentsWithPdfLimit } from '@utils/attachments';
 import { classname } from '@utils/classname';
 import { isFilePdf } from '@utils/files';

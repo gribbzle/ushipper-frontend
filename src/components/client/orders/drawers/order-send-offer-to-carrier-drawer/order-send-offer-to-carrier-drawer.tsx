@@ -15,7 +15,7 @@ import { companiesActions } from '@store/admin/companies/slice';
 import { useCreateOfferMutation } from '@store/api/order-offers';
 import { usePartiallyUpdateOrderMutation } from '@store/api/orders-api';
 import { ordersActions, orderSendOfferToCarrierPropsSelector, SendOfferToCarrierFormState } from '@store/client';
-import { List } from '@ui';
+import { List } from '@/components/ui/data-display/list';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

@@ -4,7 +4,7 @@ import useMessageContent from '@/hooks/chat/use-message-content';
 import { convertBytesToMB } from '@/utils/converter';
 import { ImageProvider } from '@providers';
 import { ChatMessage as ChatMessageType } from '@store/common/chats/types';
-import { ImageView } from '@ui';
+import { ImageView } from '@/components/ui/surfaces/image';
 import { classname } from '@utils/classname';
 import { isFileImage } from '@utils/files';
 

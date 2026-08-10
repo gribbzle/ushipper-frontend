@@ -6,7 +6,7 @@ import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/paym
 import {} from '@hooks';
 import { useAppSelector } from '@store';
 import { orderDriverDelayedPaymentSelector, orderDriverFeeChargeSelector, orderFullPriceSelector, orderPriceSelector, orderSelector } from '@store/client';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { convertCentsToDollars, convertCentsToInteger } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

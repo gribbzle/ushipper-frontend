@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { Review } from '@store/client';
-import { Rating } from '@ui';
+import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

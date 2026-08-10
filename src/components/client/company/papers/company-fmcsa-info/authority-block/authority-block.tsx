@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { CollapsibleSection } from '@/components/common/collapsible-section/collapsible-section';
 import { CompanyFMCSAAuthorizedInfo, CompanyFMCSARecord } from '@store/api/company-api';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { translateByNamespace } from '@utils/i18n';
 import { translateBooleanOrFormatValue } from '@utils/translations';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import has from 'has-values';
 
 import { MassPayCompanyDTO, MassPayPayerDTO } from '@store/api/accounts-api';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { formatDate } from '@utils/dates';
 import { translateByNamespace } from '@utils/i18n';

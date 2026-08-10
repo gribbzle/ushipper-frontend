@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Rating, RatingOneStarIcon } from '@ui';
+import { Rating, RatingOneStarIcon } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 
 import { CompanyRatingWithReviewCountProps } from './company-rating-with-review-count.types';

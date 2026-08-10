@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { InspectionItem as InspectionItemType, InspectionItems as InspectionItemsType } from '@store/client/order-BOL';
-import { DotLeader } from '@ui';
+import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
