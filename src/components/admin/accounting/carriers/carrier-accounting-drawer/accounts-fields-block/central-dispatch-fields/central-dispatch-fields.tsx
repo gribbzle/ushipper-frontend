@@ -4,7 +4,11 @@ import { FieldRenderProps } from 'react-final-form';
 import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { SaveButton } from '@/components/common/button/SaveButton';
 import { ExternalServiceType } from '@enums';
-import { FieldPrefix, FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PasswordField, PasswordFieldProps} from '@/fields/password-field';
+import {TextField} from '@/fields/text-field';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

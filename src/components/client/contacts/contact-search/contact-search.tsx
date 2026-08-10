@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 
-import { NativeInput } from '@fields';
+import {NativeInput} from '@/fields/text-field';
 import { useDebounce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fetchContactsAction } from '@store/common';

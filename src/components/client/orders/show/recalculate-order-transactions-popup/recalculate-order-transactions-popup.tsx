@@ -4,7 +4,9 @@ import { Field, Form } from 'react-final-form';
 import { Button } from '@/components/common/button/button';
 import { CloseButton } from '@/components/common/button/CloseButton';
 import { Popup } from '@/components/common/popup/popup';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

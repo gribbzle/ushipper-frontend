@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, FieldRenderProps } from 'react-final-form';
 
 import { NativeSwitch, NativeSwitchProps } from '@/fields/switch-input/native-switch';
-import { FormControl } from '@fields';
+import {FormControl} from '@/fields/form-control';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:carrier-accounting-drawer');

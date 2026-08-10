@@ -2,7 +2,11 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
-import { FormControl, InputLabel, PasswordField, PasswordFieldProps, PrefixedField, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PasswordField, PasswordFieldProps} from '@/fields/password-field';
+import {PrefixedField} from '@/fields/field-prefix';
+import {TextField} from '@/fields/text-field';
 import { EmailServerCredentialType } from '@types';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

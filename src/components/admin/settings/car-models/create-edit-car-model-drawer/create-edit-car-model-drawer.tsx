@@ -5,7 +5,10 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { FormControl, InputLabel, SelectField, StringInput } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SelectField} from '@/fields/select-field';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch, useAppSelector } from '@store';
 import {
     createEditCarModelDrawerPropsSelector,

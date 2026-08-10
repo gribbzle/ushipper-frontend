@@ -3,7 +3,7 @@ import { toCamelCase } from 'js-convert-case';
 
 import { UserRoleType } from '@/enums';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { FormControl } from '@fields';
+import {FormControl} from '@/fields/form-control';
 import { useAppSelector } from '@store';
 import { roleTypesSelector } from '@store/common';
 import { translateByNamespace } from '@utils/i18n';

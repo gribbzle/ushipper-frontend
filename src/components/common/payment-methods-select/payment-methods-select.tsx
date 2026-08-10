@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { BusinessDaysPaymentMethod, CodCopPaymentMethod, PaymentMethod, PaymentTerm } from '@/enums';
 import { getPaymentMethodTranslate } from '@/utils/payment-method-translate';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 
 type Props = FieldRenderProps<string> & {
     selectedPaymentTerm?: PaymentTerm;

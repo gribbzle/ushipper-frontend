@@ -4,7 +4,8 @@ import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 import { Field, Form } from 'react-final-form';
 
-import { FormControl, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {TextField} from '@/fields/text-field';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch } from '@store';
 import { fetchBlackListItemsAction } from '@store/client';

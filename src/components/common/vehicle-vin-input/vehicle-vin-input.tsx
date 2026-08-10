@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { debounce } from 'debounce';
 import { Field, FieldRenderProps, useForm } from 'react-final-form';
 
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 import { CheckVinResponse, useVerifyVinMutation } from '@store/api/vin-api';
 import { OrderFieldsGroup } from '@store/client';
 

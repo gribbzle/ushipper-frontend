@@ -1,7 +1,10 @@
 import React from 'react';
 import { Field, useFormState } from 'react-final-form';
 
-import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useAppSelector } from '@store';
 import { editFinancialAccountPopupPropsSelector } from '@store/admin';
 import { translateByNamespace } from '@utils/i18n';

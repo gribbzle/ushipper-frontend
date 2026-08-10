@@ -2,7 +2,8 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { AsyncDriverAccountsSelect } from '@/components/common/selects/async-driver-accounts-select/async-driver-accounts-select';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { parseField } from '@utils/parse-field';

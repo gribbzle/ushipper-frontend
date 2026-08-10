@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { LabeledCheckboxInput } from '@fields';
+import {LabeledCheckboxInput} from '@/fields/checkbox-input';
 
 import { useDispatchFeeCheckBoxGroup } from './use-dispatch-fee-checkbox-group';
 

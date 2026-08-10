@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { CompanyType } from '@/enums';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useAsyncSelect } from '@hooks';
 import { GetCompaniesParams, useLazyGetCompaniesQuery, useLazyGetCompanyQuery } from '@store/api/company-api';
 

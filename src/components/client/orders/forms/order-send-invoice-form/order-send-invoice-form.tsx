@@ -2,7 +2,10 @@ import React, { useCallback, useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { DatePicker, FormControl, InputLabel, StringInput } from '@fields';
+import {DatePicker} from '@/fields/datepicker';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch } from '@store';
 import { OrderSendInvoiceFormState, useCreateOrderInvoiceMutation, useSendOrderInvoiceMutation } from '@store/api/order-invoice-api';
 import { ordersApi } from '@store/api/orders-api';

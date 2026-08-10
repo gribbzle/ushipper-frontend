@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { SortSelectOptions, SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { CatalogSortingNameEnum, JobOfferSortingName, OfferSortingName, OrderSortingDirection, OrderSortingName } from '@/enums';
 import { translateSortingOption } from '@/utils/translations';
-import { SortSelectInput } from '@fields';
+import {SortSelectInput} from '@/fields/sort-select-input';
 
 type Props = {
     options: OrderSortingName | OfferSortingName | JobOfferSortingName | CatalogSortingNameEnum;

@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { AccountStatusesEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { getAccountStatusTranslate } from '@utils/translate/get-account-status-translate';
 
 export const AccountStatusesSelect = (props: FieldRenderProps<string>) => {

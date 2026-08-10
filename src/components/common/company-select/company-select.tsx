@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { fetchCompaniesAction, fetchedCompaniesSelector } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';

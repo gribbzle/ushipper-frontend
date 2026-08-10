@@ -3,7 +3,7 @@ import { Field } from 'react-final-form';
 
 import { ReviewsFilterEnum } from '@/enums';
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { LabeledCheckboxInput } from '@fields';
+import {LabeledCheckboxInput} from '@/fields/checkbox-input';
 import { Rating } from '@/components/ui/inputs/rating';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

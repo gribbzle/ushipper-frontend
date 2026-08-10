@@ -4,7 +4,10 @@ import ContactInfoFooter from '@/components/client/orders/contact-info-footer/co
 import { OrderContactAddress } from '@/components/client/orders/forms/common/order-contact-address/order-contact-address';
 import { OrderContactDetails } from '@/components/client/orders/forms/common/order-contact-details/order-contact-details';
 import { BusinessTypesSelect } from '@/components/common/selects/business-types-select/business-types-select';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useDisableCarrierChanging, useMeCarrier, useMeShipper } from '@hooks';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';

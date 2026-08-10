@@ -1,7 +1,10 @@
 import React from 'react';
 
 import AddressInputAutocompleteField from '@/fields/address-field/address-input-autocomplete-field';
-import { FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PrefixedField} from '@/fields/field-prefix';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required as requiredValidator } from '@validators';

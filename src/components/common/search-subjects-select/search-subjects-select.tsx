@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
 import { OffersSearchSubjectsEnum, SearchSubjectsEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:order-search-subjects');

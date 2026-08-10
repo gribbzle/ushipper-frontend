@@ -3,7 +3,8 @@ import { Field } from 'react-final-form';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { FileUploaderField, InputLabel } from '@fields';
+import {FileUploaderField} from '@/fields/file-uploader';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { requiredFile } from '@validators';
 

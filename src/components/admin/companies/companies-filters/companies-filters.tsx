@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 
 import { CompanyStatusesSelect } from '@/components/common/company-statutes-select/company-statuses-select';
 import { CompanyTypesSelect } from '@/components/common/company-types-select/company-types-select';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useHandleFiltersChange, useQueryFilters } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

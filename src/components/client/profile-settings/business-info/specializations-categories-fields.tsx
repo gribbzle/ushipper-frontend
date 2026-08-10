@@ -3,7 +3,8 @@ import { Field, useField } from 'react-final-form';
 
 import { TrailerCategoriesSelect } from '@/components/common/trailer-categories-select/trailer-categories-select';
 import { SelectOption } from '@/shared';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { useAppSelector } from '@store';
 import { specializationByIdSelector } from '@store/common';
 import { translateByNamespace } from '@utils/i18n';

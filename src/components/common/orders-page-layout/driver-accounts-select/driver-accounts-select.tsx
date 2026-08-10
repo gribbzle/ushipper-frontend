@@ -4,7 +4,7 @@ import { MultiValue, SingleValue } from 'react-select';
 
 import { UserRoleType } from '@/enums';
 import { SelectOption } from '@/shared';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { GetAccountsParams, useLazyGetAccountsQuery } from '@store/api/accounts-api';
 import { classname } from '@utils/classname';
 

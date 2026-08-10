@@ -7,7 +7,10 @@ import { DateTypesSelect } from '@/components/client/orders/selects/date-types-s
 import { Divider } from '@/components/common/divider/divider';
 import { PaymentMethod, PaymentTerm } from '@/enums';
 import { getOrderTermWithMethod } from '@/utils/order';
-import { CurrencyInput, DatePicker, FormControl, InputLabel } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {DatePicker} from '@/fields/datepicker';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

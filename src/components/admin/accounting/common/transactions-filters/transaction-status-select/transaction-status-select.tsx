@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { TransactionStatusesEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { getTransactionStatusTranslate } from '@utils/translate/get-transaction-status-translate';
 
 export const TransactionStatusSelect = (props: FieldRenderProps<string>) => {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-final-form';
 
-import { CurrencyPercentageField } from '@fields';
+import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
 
 export type FeeRecurringLimitFieldProps = {
     prefix: string;

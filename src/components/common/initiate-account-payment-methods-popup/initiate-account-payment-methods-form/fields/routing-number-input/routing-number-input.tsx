@@ -2,7 +2,7 @@ import { MaskProps } from '@react-input/mask';
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 const MASK_VALUE = 'XXXXXXXXX';
 
 export const RoutingNumberInput = (props: FieldRenderProps<string>) => {

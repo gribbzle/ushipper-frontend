@@ -3,7 +3,7 @@ import React from 'react';
 import { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 
 export const BusinessTaxIdInput = (props: FieldRenderProps<string>) => {
     const mask = useMemo<MaskProps>(() => ({ mask: 'XX-XXXXXXX', replacement: { X: /\d/ } }), []);

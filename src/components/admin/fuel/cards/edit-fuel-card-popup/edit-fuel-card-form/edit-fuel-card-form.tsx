@@ -1,7 +1,10 @@
 import React from 'react';
 import { Field, FieldRenderProps, Form } from 'react-final-form';
 
-import { CurrencyInput, FormControl, InputLabel, NativeSwitch, NativeSwitchProps } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {NativeSwitch, NativeSwitchProps} from '@/fields/switch-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

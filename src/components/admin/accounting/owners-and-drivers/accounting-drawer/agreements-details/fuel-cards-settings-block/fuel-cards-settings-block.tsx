@@ -2,7 +2,10 @@ import React, { useMemo } from 'react';
 import { useForm } from 'react-final-form';
 
 import { FuelCardsRule } from '@/enums';
-import { CurrencyInput, FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { useGetAdminConfigQuery } from '@store/api/admin-configuration';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

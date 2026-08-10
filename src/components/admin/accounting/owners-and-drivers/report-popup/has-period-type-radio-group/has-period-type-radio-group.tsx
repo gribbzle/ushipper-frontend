@@ -2,7 +2,8 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { RadioOption } from '@/components/common/radio-button-group/radio-button-group';
-import { FormControl, RadioGroupInput } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {RadioGroupInput} from '@/fields/radio-group-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

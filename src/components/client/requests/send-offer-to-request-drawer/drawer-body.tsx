@@ -8,7 +8,10 @@ import { RequestOrderInfo } from '@/components/client/requests/requests-drawer/r
 import { Button } from '@/components/common/button/button';
 import { Paper } from '@/components/common/paper/paper';
 import { getFinalPaymentAmount } from '@/utils/payment';
-import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SwitchInput} from '@/fields/switch-input';
+import {TextField} from '@/fields/text-field';
 import { useCreateOfferMutation } from '@store/api/order-offers';
 import { OrderRequest } from '@store/api/order-requests-types';
 import { Load, SendOfferToCarrierFormState } from '@store/client';

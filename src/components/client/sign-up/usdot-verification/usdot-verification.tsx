@@ -3,7 +3,9 @@ import { Field } from 'react-final-form';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Link } from '@/components/common/link/link';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useAppSelector } from '@store';
 import { usdotVerifyFormSubmitErrorCodeSelector, usdotVerifyFormSubmitErrorDataSelector } from '@store/client';
 import { classname } from '@utils/classname';

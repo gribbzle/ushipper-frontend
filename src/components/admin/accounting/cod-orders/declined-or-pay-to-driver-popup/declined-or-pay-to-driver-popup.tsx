@@ -5,7 +5,9 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, declineOrPayToDriverPopupPropsSelector } from '@store/admin';
 import { ordersApi, useUpdateOrderMutation } from '@store/api/orders-api';

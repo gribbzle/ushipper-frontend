@@ -2,7 +2,7 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { NativeSwitch } from '@/fields/switch-input/native-switch';
-import { LabeledCheckboxInput } from '@fields';
+import {LabeledCheckboxInput} from '@/fields/checkbox-input';
 import { useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';
 import { translateByNamespace } from '@utils/i18n';
 import { getTransportServiceTranslate } from '@utils/specialization';

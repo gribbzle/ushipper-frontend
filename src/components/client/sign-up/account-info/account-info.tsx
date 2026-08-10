@@ -2,7 +2,12 @@ import React from 'react';
 import { Field, useField } from 'react-final-form';
 
 import { Link } from '@/components/common/link/link';
-import { FormControl, InputLabel, PasswordField, PhoneNumberInput, SwitchInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PasswordField} from '@/fields/password-field';
+import {PhoneNumberInput} from '@/fields/phone-number-input';
+import {SwitchInput} from '@/fields/switch-input';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, passwordValidator, phoneValidator, required } from '@validators';

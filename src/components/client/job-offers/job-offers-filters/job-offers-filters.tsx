@@ -5,7 +5,9 @@ import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select'
 import { Tabs } from '@/components/common/tabs/tabs';
 import { Paper } from '@/components/common/paper/paper';
 import { JobOfferSortingName, OrderSortingDirection } from '@/enums';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useMeCarrier } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

@@ -10,7 +10,10 @@ import { VehicleModelInput } from '@/components/common/vehicle-model-input/vehic
 import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
 import { VehicleVinInput } from '@/components/common/vehicle-vin-input/vehicle-vin-input';
 import { VehicleType } from '@enums';
-import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SwitchInput} from '@/fields/switch-input';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useCreateOrderVehicleMutation, useGetOrderVehiclesQuery, useUpdateOrderVehicleMutation } from '@store/api/order-vehicle-api';
 import { ordersApi } from '@store/api/orders-api';

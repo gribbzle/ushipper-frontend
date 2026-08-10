@@ -9,7 +9,9 @@ import { LanguagesSelect } from '@/components/common/languages-select/languages-
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Paper } from '@/components/common/paper/paper';
 import { CarriersCatalogSortingNameEnum, CatalogSortingNameEnum } from '@/enums';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useIsCarriersCatalogPage, useIsDispatchersCatalogPage, useIsDriversCatalogPage } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

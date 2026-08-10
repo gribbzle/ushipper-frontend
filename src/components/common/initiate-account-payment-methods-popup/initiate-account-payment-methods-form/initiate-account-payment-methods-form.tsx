@@ -4,7 +4,8 @@ import { Field, Form } from 'react-final-form';
 
 import { Link } from '@/components/common/link/link';
 import { MassPayUserTypesEnum } from '@/enums';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { composeValidators, required } from '@validators';
 

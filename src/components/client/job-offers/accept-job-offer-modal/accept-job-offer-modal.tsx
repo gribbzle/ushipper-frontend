@@ -4,7 +4,8 @@ import { Field, Form } from 'react-final-form';
 
 import { OfferActionModal } from '@/components/common/offer-action-modal/offer-action-modal';
 import { UserRoleType } from '@/enums';
-import { FormControl, SelectField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

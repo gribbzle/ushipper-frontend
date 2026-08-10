@@ -5,7 +5,9 @@ import { AsyncMultiCompanySelect } from '@/components/common/company-select/asyn
 import { CompanyStatusesSelect } from '@/components/common/company-statutes-select/company-statuses-select';
 import { CompanyTypesSelect } from '@/components/common/company-types-select/company-types-select';
 import { parseField } from '@/utils/parse-field';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

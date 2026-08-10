@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
 import { NullableFields } from '@/shared';
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderInternalNote, useCreateOrderInternalNoteMutation, useUpdateOrderInternalNoteMutation } from '@store/api/order-internal-notes-api';
 import { createEditInternalNotePopupPropsSelector, ordersActions } from '@store/common';

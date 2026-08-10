@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { UserRoleType } from '@/enums';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useAsyncSelect } from '@hooks';
 import { useLazyGetAccountQuery, useLazyGetAccountsQuery } from '@store/api/accounts-api';
 

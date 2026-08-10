@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { BalanceType } from '@/enums';
-import { AsyncSelectField, SelectField } from '@fields';
+import {AsyncSelectField, SelectField} from '@/fields/select-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

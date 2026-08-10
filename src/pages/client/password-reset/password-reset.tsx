@@ -8,7 +8,9 @@ import { ControlsActions } from '@/components/client/password-recovery/controls-
 import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';
 import { GoToSignInButton } from '@/components/common/go-to-sign-in-button/go-to-sign-in-button';
 import { SignUpBlock } from '@/components/client/sign-in/sign-up-block/sign-up-block';
-import { FormControl, InputLabel, PasswordField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PasswordField} from '@/fields/password-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ResetPasswordData, resetPasswordFormSubmit, resetPasswordFormSubmitErrorMessageSelector, resetPasswordFormSubmitStatusSelector } from '@store/common';
 import { classname } from '@utils/classname';

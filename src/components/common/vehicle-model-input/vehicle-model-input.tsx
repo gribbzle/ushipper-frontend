@@ -3,7 +3,7 @@ import { debounce } from 'debounce';
 import { Field, FieldRenderProps } from 'react-final-form';
 
 import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
-import { AutocompleteStringInput } from '@fields';
+import {AutocompleteStringInput} from '@/fields/autocomplete-string-input';
 import { useGetCarModelsByNameQuery } from '@store/api/car-models-api';
 
 type VehicleModelInputProps = FieldRenderProps<string> & {

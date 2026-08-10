@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, FieldRenderProps } from 'react-final-form';
 
 import { OrderSourcesEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateOrderSource } from '@utils/translate/order/translate-order-source';
 
 export const OrderSourceSelect = ({ label, input, ...rest }: FieldRenderProps<string>) => {

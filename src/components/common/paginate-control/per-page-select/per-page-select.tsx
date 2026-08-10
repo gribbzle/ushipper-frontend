@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 
 export const PerPageSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(() => {

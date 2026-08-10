@@ -4,7 +4,13 @@ import { toast } from 'react-toastify';
 
 import { PaymentMethodsSelect } from '@/components/common/payment-methods-select/payment-methods-select';
 import { PaymentTerm } from '@/enums';
-import { CurrencyInput, DatePicker, FormControl, InputLabel, PrefixedField, StringInput, TextField } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {DatePicker} from '@/fields/datepicker';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PrefixedField} from '@/fields/field-prefix';
+import {StringInput} from '@/fields/string-input';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch } from '@store';
 import { OrderMarkAsPaidFormState, useCreateOrderPaymentMutation } from '@store/api/order-payment-api';
 import { ordersApi } from '@store/api/orders-api';

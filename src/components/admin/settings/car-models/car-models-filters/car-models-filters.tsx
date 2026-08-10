@@ -5,7 +5,10 @@ import { useRouter } from 'next/router';
 import { ParsedUrlQuery } from 'querystring';
 import { Field, Form } from 'react-final-form';
 
-import { FormControl, InputLabel, SelectField, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SelectField} from '@/fields/select-field';
+import {TextField} from '@/fields/text-field';
 import { useEffectOnce } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { carModelStatusesSelector, filterSearchCarMakersAction, filterSearchCarMakersSelector } from '@store/admin';

@@ -3,7 +3,8 @@ import { FieldRenderProps } from 'react-final-form';
 
 import XCircleIcon from '@/assets/icons/x-circle-icon.svg';
 import { AddressInput, AddressValue } from '@/components/common/address-input/address-input';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

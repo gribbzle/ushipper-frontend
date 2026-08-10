@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FactoringProvider } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { getFactoringProviderTranslation } from '@utils/translate/accounting/get-factoring-provider-translation';
 
 export const FactoringProviderSelect = (props: FieldRenderProps<string>) => {

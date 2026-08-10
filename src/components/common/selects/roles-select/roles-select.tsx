@@ -1,7 +1,9 @@
 import React, { useMemo } from 'react';
 import { Field, FieldRenderProps } from 'react-final-form';
 
-import { FormControl, InputLabel, SelectField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SelectField} from '@/fields/select-field';
 import { useAppSelector } from '@store';
 import { useGetRolesQuery } from '@store/api/roles-api';
 import { clickedRowIdSelector } from '@store/common';

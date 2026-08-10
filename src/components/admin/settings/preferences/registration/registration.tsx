@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { RegistrationTypesSelect } from '@/components/common/registration-types-select';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

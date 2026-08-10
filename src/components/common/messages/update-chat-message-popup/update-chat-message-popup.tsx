@@ -5,7 +5,8 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
-import { FormControl, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { messagesActions, sendMessageRequestStatusSelector, updateChatMessagePopupPropsSelector, updateMessageAction } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';

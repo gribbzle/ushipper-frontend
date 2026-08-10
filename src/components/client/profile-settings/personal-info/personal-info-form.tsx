@@ -6,7 +6,11 @@ import { AddressFields } from '@/components/client/company-settings/company-addr
 import { Button } from '@/components/common/button/button';
 import { Divider } from '@/components/common/divider/divider';
 import { Paper } from '@/components/common/paper/paper';
-import { FormControl, ImageFileInput, InputLabel, PhoneNumberInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {ImageFileInput} from '@/fields/image-file-input';
+import {InputLabel} from '@/fields/input-label';
+import {PhoneNumberInput} from '@/fields/phone-number-input';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { NullableFields } from '@/shared';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useCreateReviewReplyMutation, useUpdateReviewReplyMutation } from '@store/api/review-reply-api';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

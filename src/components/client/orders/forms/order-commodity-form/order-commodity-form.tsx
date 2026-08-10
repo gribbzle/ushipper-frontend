@@ -9,7 +9,10 @@ import { FreightClassesSelect } from '@/components/common/selects/commodity/frei
 import { HazmatClassesSelect } from '@/components/common/selects/commodity/hazmat-classes-select/hazmat-classes-select';
 import { PackingGroupSelect } from '@/components/common/selects/commodity/packing-group-select/packing-group-select';
 import { CommodityDimensionUnitEnum, CommodityTemperatureUnitEnum, CommodityWeightUnitEnum } from '@/enums';
-import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SwitchInput} from '@/fields/switch-input';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useCreateOrderCommodityMutation, useGetOrderCommodityQuery, useUpdateOrderCommodityMutation } from '@store/api/order-commodity-api';
 import { ordersApi } from '@store/api/orders-api';

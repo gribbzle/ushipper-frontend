@@ -7,7 +7,9 @@ import { SearchSubjectsSelect } from '@/components/common/search-subjects-select
 import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select';
 import { Paper } from '@/components/common/paper/paper';
 import { OrderSortingName } from '@/enums';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useMeCarrier, useMeDriverRelated } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

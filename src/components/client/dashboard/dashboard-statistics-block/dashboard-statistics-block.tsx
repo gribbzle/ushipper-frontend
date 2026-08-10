@@ -7,7 +7,7 @@ import { ChartData } from '@/components/common/stacked-area-chart/stacked-area-c
 import { StackedAreaChart } from '@/components/common/stacked-area-chart/stacked-area-chart';
 import { Paper } from '@/components/common/paper/paper';
 import { SelectOption } from '@/shared';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useAppSelector } from '@store';
 import { GetStatisticParams, StatisticInformation, useLazyGetStatisticsQuery } from '@store/api/users-api';
 import { accountsUsersSelector, AccountUser } from '@store/client/accounts';

@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 import { AttachmentsDropzone } from '@/components/client/orders/forms/attachments-form/attachments-dropzone';
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
-import { FileUploaderField } from '@fields';
+import {FileUploaderField} from '@/fields/file-uploader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

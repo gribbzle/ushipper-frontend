@@ -2,7 +2,10 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { TransactionTypesEnum } from '@/enums';
-import { CurrencyInput, FormControl, InputLabel, TextField } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isFreightX } from '@utils/project-config';

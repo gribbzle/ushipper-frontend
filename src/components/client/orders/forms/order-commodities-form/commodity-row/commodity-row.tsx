@@ -6,7 +6,8 @@ import { CommodityTypesSelect } from '@/components/common/selects/commodity/comm
 import { FreightClassesSelect } from '@/components/common/selects/commodity/freight-classes-select/freight-classes-select';
 import { CommodityDimensionUnitEnum, CommodityWeightUnitEnum } from '@/enums';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { FieldPrefix, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {TextField} from '@/fields/text-field';
 import { TrashIcon } from '@icons';
 import { OrderFieldsGroup, OrderFormState } from '@store/client';
 import { classname } from '@utils/classname';

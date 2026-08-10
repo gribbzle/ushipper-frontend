@@ -3,7 +3,10 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { FormControl, InputLabel, SwitchInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SwitchInput} from '@/fields/switch-input';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { nameWithSpacesValidator, required } from '@validators';

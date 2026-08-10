@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { CurrencyInput, FormControl, InputLabel } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

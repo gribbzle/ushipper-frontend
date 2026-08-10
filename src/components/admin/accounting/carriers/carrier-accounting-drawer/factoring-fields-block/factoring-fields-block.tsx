@@ -2,7 +2,10 @@ import React from 'react';
 
 import { FieldsGroupWrapper } from '@/components/common/fields-group-wrapper/fields-group-wrapper';
 import { ExternalServiceType } from '@enums';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, emailValidator, required } from '@validators';

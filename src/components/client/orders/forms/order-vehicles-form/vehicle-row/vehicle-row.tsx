@@ -10,7 +10,10 @@ import { VehicleModelInput } from '@/components/common/vehicle-model-input/vehic
 import { VehicleTypesSelect } from '@/components/common/vehicle-types-select/vehicle-types-select';
 import { VehicleVinInput } from '@/components/common/vehicle-vin-input/vehicle-vin-input';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
-import { CheckboxInput, FieldPrefix, FormControl, PrefixedField, TextField } from '@fields';
+import {CheckboxInput} from '@/fields/checkbox-input';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {TextField} from '@/fields/text-field';
 import { TrashIcon } from '@icons';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';
 import { OrderFormState } from '@store/client';

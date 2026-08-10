@@ -7,7 +7,9 @@ import { SortBySelect } from '@/components/common/sort-by-select/sort-by-select'
 import { Tabs } from '@/components/common/tabs/tabs';
 import { Paper } from '@/components/common/paper/paper';
 import { OfferSortingName } from '@/enums';
-import { FormControl, InputLabel, StringInput } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {StringInput} from '@/fields/string-input';
 import { useMeShipper } from '@hooks';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

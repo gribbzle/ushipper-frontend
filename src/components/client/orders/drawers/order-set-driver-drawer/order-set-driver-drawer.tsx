@@ -7,7 +7,7 @@ import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { Link } from '@/components/common/link/link';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 import { ExternalLinkIcon, UserMinusIcon } from '@icons';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi } from '@store/api/orders-api';

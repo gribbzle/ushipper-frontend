@@ -1,7 +1,11 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { CurrencyInput, FieldPrefix, FormControl, InputLabel, NativeSwitch, NativeSwitchProps, PrefixedField } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {NativeSwitch, NativeSwitchProps} from '@/fields/switch-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { composeValidators, positiveNumberValidator, requiredCurrency } from '@validators';

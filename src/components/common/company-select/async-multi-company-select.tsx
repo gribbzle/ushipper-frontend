@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { MultiValue } from 'react-select';
 
 import { SelectOption } from '@/shared';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useLazyGetCompaniesQuery } from '@store/api/company-api';
 
 export const AsyncMultiCompanySelect = ({ input, isClearable = true, ...rest }: FieldRenderProps<string[]>) => {

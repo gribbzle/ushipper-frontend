@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { RegistrationType } from '@/enums';
 import { translateRegistrationType } from '@/utils/translations';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('common:registration-types');

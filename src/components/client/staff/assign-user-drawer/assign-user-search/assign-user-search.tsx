@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

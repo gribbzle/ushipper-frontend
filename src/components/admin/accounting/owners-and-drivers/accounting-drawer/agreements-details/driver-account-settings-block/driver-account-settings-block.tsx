@@ -3,7 +3,10 @@ import { useForm } from 'react-final-form';
 
 import { Divider } from '@/components/common/divider/divider';
 import { ContractorTypesEnum } from '@/enums';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField, PrefixedFieldArray, SwitchInput } from '@fields';
+import {FieldPrefix, PrefixedField, PrefixedFieldArray} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SwitchInput} from '@/fields/switch-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required, requiredArray } from '@validators';

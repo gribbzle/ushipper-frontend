@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FeeCategoryType } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useGetFeeCategoriesQuery } from '@store/api/fee-categories-api';
 
 type FeeCategorySelectProps = FieldRenderProps<string> & { hideRecurringOption?: boolean };

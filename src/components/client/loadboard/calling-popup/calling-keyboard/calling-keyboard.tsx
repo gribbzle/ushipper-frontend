@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { GenericButton } from '@/components/common/generic-button/generic-button';
-import { DarkInput } from '@fields';
+import {DarkInput} from '@/fields/dark-input';
 import { CloseIcon } from '@icons';
 import { classname } from '@utils/classname';
 

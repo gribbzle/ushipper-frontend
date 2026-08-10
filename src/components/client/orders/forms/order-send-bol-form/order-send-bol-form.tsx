@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
 
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch } from '@store';
 import { OrderFormEnum, orderSendBOLAction, OrderSendBOLFormState } from '@store/client';
 import { classname } from '@utils/classname';

@@ -6,7 +6,12 @@ import { CompanyTypesSelect } from '@/components/common/company-types-select/com
 import { Divider } from '@/components/common/divider/divider';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { SwitchInput } from '@/fields/switch-input';
-import { FormControl, ImageFileInput, InputLabel, PasswordField, PhoneNumberInput, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {ImageFileInput} from '@/fields/image-file-input';
+import {InputLabel} from '@/fields/input-label';
+import {PasswordField} from '@/fields/password-field';
+import {PhoneNumberInput} from '@/fields/phone-number-input';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { parseField } from '@utils/parse-field';

@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { OrderSourcesEnum } from '@/enums';
 import { SelectOption } from '@/shared';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateOrderSource } from '@utils/translate/order/translate-order-source';
 
 export const LoadboardSourcesSelect = (props: FieldRenderProps<string>) => {

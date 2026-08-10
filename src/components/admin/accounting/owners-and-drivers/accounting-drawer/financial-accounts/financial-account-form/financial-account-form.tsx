@@ -3,7 +3,10 @@ import { Field, Form } from 'react-final-form';
 
 import { Divider } from '@/components/common/divider/divider';
 import { BalanceType } from '@/enums';
-import { FieldPrefix, FormControl, InputLabel, TextField } from '@fields';
+import {FieldPrefix} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useFormSubmit } from '@hooks';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

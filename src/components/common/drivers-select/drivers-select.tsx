@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { MultiValue, SingleValue } from 'react-select';
 
 import { SelectOption } from '@/shared';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useLazyGetDriversQuery } from '@store/api/users-api';
 
 type Props = FieldRenderProps<string[]> & { ownerAccountId?: string };

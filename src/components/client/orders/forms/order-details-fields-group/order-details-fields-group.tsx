@@ -2,7 +2,10 @@ import React, { useMemo } from 'react';
 
 import { InspectionTypeRadioGroup } from '@/components/common/inspection-type-radio-group/inspection-type-radio-group';
 import { TransportTypeSelect } from '@/components/common/transport-type-select/transport-type-select';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useDisableCarrierChanging, useMeCarrier, useMeShipper } from '@hooks';
 import { useAppSelector } from '@store';
 import { OrderFieldsGroup, orderPickedUpAtSelector, orderShipperOrderSelector } from '@store/client';

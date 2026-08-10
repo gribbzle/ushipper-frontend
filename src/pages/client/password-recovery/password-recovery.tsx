@@ -8,7 +8,7 @@ import { ControlsActions } from '@/components/client/password-recovery/controls-
 import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';
 import { GoToSignInButton } from '@/components/common/go-to-sign-in-button/go-to-sign-in-button';
 import { SignUpBlock } from '@/components/client/sign-in/sign-up-block/sign-up-block';
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch, useAppSelector } from '@store';
 import { requestResetFormErrorSelector, requestResetFormSubmit, requestResetFormSubmitStatusSelector, RequestResetPasswordData } from '@store/common';
 import { classname } from '@utils/classname';

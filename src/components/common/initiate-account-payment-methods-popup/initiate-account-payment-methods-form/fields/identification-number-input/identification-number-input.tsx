@@ -3,7 +3,7 @@ import React from 'react';
 import { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 const MASK_VALUE = 'X-XXXXXXX';
 
 export const IdentificationNumberInput = (props: FieldRenderProps<string>) => {

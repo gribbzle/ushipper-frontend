@@ -2,7 +2,9 @@ import React from 'react';
 import { Field } from 'react-final-form';
 
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { CurrencyPercentageField, FormControl, InputLabel } from '@fields';
+import {CurrencyPercentageField} from '@/fields/currency-percentage-field';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { TrashIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

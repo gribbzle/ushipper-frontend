@@ -3,7 +3,7 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { useAppSelector } from '@store';
 import { OrderInternalNoteFormState, useCreateOrderInternalNoteMutation } from '@store/api/order-internal-notes-api';
 import { orderPublicIdSelector } from '@store/client';

@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
 import { RadioOption } from '@/components/common/radio-button-group/radio-button-group';
-import { RadioGroupInput } from '@fields';
+import {RadioGroupInput} from '@/fields/radio-group-input';
 import { translateByNamespace } from '@utils/i18n';
 
 import { ShipperTrackingFieldWrapper } from '../shipper-tracking-field-wrapper';

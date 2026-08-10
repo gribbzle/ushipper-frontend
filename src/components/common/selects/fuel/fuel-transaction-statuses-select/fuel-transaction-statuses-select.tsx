@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FuelTransactionStatus } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 import { getFuelTransactionStatusTranslate } from '@utils/translate/fuel/get-fuel-transaction-status-translate';
 

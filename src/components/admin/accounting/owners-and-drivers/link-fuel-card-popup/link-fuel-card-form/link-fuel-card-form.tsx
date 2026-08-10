@@ -2,7 +2,8 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { AsyncFuelCardsSelect } from '@/components/common/selects/fuel/async-fuel-cards-select/async-fuel-cards-select';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

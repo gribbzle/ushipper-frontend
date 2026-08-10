@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { InputLabel, RatingField } from '@fields';
+import {InputLabel} from '@/fields/input-label';
+import {RatingField} from '@/fields/rating-field';
 import { useAppSelector } from '@store';
 import { useLazyGetReviewItemsQuery } from '@store/api/review';
 import { orderReviewPopupPropsSelector } from '@store/client';

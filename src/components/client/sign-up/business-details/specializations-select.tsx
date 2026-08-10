@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { CheckboxMultiSelectInput, FormControl, InputLabel } from '@fields';
+import {CheckboxMultiSelectInput} from '@/fields/checkbox-multi-input';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { translateByNamespace } from '@utils/i18n';
 import { requiredArray } from '@validators';
 

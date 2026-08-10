@@ -5,7 +5,9 @@ import { AsyncCompanySelect } from '@/components/common/company-select/async-com
 import { SelectionGroup } from '@/components/common/selection-group/selection-group';
 import { RolesSelect } from '@/components/common/selects/roles-select/roles-select';
 import { UserStatusesSelect } from '@/components/common/selects/user-statuses-select/user-statuses-select';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { ListIcon, TreeIcon } from '@icons';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';

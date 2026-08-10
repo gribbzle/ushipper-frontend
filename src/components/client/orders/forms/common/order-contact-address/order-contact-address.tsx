@@ -8,7 +8,11 @@ import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/a
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import AddressInputAutocompleteField from '@/fields/address-field/address-input-autocomplete-field';
 import { getCopyToCustomerState } from '@/utils/order';
-import { AutocompleteStringInput, FieldPrefixContext, FormControl, InputLabel, PrefixedField, TextField } from '@fields';
+import {AutocompleteStringInput} from '@/fields/autocomplete-string-input';
+import {FieldPrefixContext, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { useDisableCarrierChanging } from '@hooks';
 import { ContactsIcon } from '@icons';
 import { useAppDispatch } from '@store';

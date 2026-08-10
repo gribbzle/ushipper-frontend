@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field } from 'react-final-form';
 
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

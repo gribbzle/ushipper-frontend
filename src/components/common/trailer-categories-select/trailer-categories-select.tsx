@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { SelectOption } from '@/shared';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { classname } from '@utils/classname';
 
 import './trailer-categories-select.scss';

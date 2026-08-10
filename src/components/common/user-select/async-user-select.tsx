@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useAsyncSelect } from '@hooks';
 import { useLazyGetUserQuery, useLazyGetUsersQuery } from '@store/api/users-api';
 

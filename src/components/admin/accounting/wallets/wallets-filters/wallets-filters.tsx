@@ -2,7 +2,9 @@ import React from 'react';
 import { Field, Form } from 'react-final-form';
 
 import { Paper } from '@/components/common/paper/paper';
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

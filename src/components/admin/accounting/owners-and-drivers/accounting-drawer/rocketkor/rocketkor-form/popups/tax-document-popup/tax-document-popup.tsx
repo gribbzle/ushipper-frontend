@@ -1,7 +1,9 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
-import { FormControl, InputLabel, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {TextField} from '@/fields/text-field';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

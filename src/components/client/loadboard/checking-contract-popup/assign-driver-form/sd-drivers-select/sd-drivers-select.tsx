@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useGetExternalDriversQuery } from '@store/api/external-drivers-api';
 
 export const SDDriversSelect = (props: FieldRenderProps<string[]>) => {

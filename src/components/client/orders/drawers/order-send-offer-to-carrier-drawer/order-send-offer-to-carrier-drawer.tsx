@@ -8,7 +8,7 @@ import { OrderCarrierCompanyAssignItem } from '@/components/client/orders/order-
 import { Divider } from '@/components/common/divider/divider';
 import { Drawer } from '@/components/common/drawer/drawer';
 import { OrderStatus } from '@/enums';
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 import { useAppDispatch, useAppSelector } from '@store';
 import { Company, fetchCompaniesAction, fetchedCompaniesSelector } from '@store/admin';
 import { companiesActions } from '@store/admin/companies/slice';

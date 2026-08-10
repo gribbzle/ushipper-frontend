@@ -3,7 +3,7 @@ import { FieldRenderProps } from 'react-final-form';
 import { MultiValue, SingleValue } from 'react-select';
 
 import { SelectOption } from '@/shared';
-import { AsyncSelectField } from '@fields';
+import {AsyncSelectField} from '@/fields/select-field';
 import { useLazyGetDispatchersQuery } from '@store/api/users-api';
 
 export const DispatchersSelect = (props: FieldRenderProps<string[]>) => {

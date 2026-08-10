@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldArray } from 'react-final-form-arrays';
 
 import { ExpenseTypeEnum } from '@/enums';
-import { InputLabel } from '@fields';
+import {InputLabel} from '@/fields/input-label';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

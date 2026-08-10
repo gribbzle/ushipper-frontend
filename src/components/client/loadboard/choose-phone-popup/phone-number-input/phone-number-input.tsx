@@ -2,7 +2,7 @@ import { MaskProps } from '@react-input/mask';
 import React, { useEffect, useMemo, useState } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { DarkInput } from '@/fields';
+import { DarkInput } from '@/fields/dark-input';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('client:loadboard:calling');

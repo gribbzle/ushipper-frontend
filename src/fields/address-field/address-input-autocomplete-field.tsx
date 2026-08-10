@@ -4,7 +4,9 @@ import { useForm } from 'react-final-form';
 
 import { AutocompleteSuggestion } from '@/components/common/autocomplete-input/autocomplete-input';
 import { createGeocoding, getAddressByName } from '@/utils/geocoding';
-import { AutocompleteStringInput, FieldPrefixContext, TextFieldProps } from '@fields';
+import {AutocompleteStringInput} from '@/fields/autocomplete-string-input';
+import {FieldPrefixContext} from '@/fields/field-prefix';
+import {TextFieldProps} from '@/fields/text-field';
 import { GeocodingFeature } from '@mapbox/search-js-core';
 import { GeocodingFeatureContext } from '@mapbox/search-js-core/dist/geocode/types';
 

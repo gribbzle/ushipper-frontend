@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
 import { AccountSubTypesEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:financial-accounts:form');

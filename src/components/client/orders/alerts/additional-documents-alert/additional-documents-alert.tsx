@@ -5,7 +5,7 @@ import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { AttachmentDownloadButton } from '@/components/common/attachment-download-button/attachment-download-button';
 import { Button } from '@/components/common/button/button';
 import { FundsTransferStatus } from '@/enums';
-import { MultiFileUploader } from '@fields';
+import {MultiFileUploader} from '@/fields/multi-file-uploader';
 import { Ellipse } from '@icons';
 import { classname } from '@utils/classname';
 import { removeFieldPrefix } from '@utils/form';

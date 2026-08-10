@@ -4,7 +4,11 @@ import ContactInfoFooter from '@/components/client/orders/contact-info-footer/co
 import { OrderContactAddress } from '@/components/client/orders/forms/common/order-contact-address/order-contact-address';
 import { OrderContactDetails } from '@/components/client/orders/forms/common/order-contact-details/order-contact-details';
 import { DateTypesSelect } from '@/components/client/orders/selects/date-types-select/date-types-select';
-import { DatePicker, FieldPrefix, FormControl, InputLabel, PrefixedField, StringInput } from '@fields';
+import {DatePicker} from '@/fields/datepicker';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {StringInput} from '@/fields/string-input';
 import { useMeShipper } from '@hooks';
 import { OrderFieldsGroup } from '@store/client';
 import { classname } from '@utils/classname';

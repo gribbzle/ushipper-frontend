@@ -6,7 +6,8 @@ import { AsyncFuelCardsSelect } from '@/components/common/selects/fuel/async-fue
 import { FuelCardCompaniesSelect } from '@/components/common/selects/fuel/fuel-card-companies-select/fuel-card-companies-select';
 import { FuelTransactionStatusesSelect } from '@/components/common/selects/fuel/fuel-transaction-statuses-select/fuel-transaction-statuses-select';
 import { parseField } from '@/utils/parse-field';
-import { FormControl, InputLabel } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { translateByNamespace } from '@utils/i18n';
 
 import { FuelFiltersPaper } from '../../fuel-filters-paper';

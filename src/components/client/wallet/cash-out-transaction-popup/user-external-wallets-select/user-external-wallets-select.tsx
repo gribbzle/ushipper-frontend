@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AsyncSelectField, SelectField } from '@fields';
+import {AsyncSelectField, SelectField} from '@/fields/select-field';
 
 import { useUserExternalWalletsSelect } from './use-user-external-wallets-select';
 import { UserExternalWalletsSelectProps } from './user-external-wallets-select.types';

@@ -5,7 +5,9 @@ import { PerformTransactionEventsSelect } from '@/components/common/selects/pref
 import { TransactionSystemSelect } from '@/components/common/selects/preferences/transaction-systems-select/transaction-systems-select';
 import { DriverAccountsSelect } from '@/components/common/orders-page-layout/driver-accounts-select';
 import { TransactionSystemEnum } from '@/enums';
-import { FieldPrefix, FormControl, InputLabel, PrefixedField } from '@fields';
+import {FieldPrefix, PrefixedField} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { RegistrationSettings } from '@store/api/admin-configuration';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';

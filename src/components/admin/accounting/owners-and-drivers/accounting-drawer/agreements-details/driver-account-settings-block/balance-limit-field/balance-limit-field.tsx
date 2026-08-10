@@ -3,7 +3,10 @@ import has from 'has-values';
 import { useForm } from 'react-final-form';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
-import { CurrencyInput, FormControl, InputLabel, PrefixedField } from '@fields';
+import {CurrencyInput} from '@/fields/currency-input';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {PrefixedField} from '@/fields/field-prefix';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { formatToCurrency } from '@utils/numbers';

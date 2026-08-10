@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { SelectOption } from '@/shared';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useGetLanguagesQuery } from '@store/api/languages-api';
 
 export const LanguagesSelect = (props: FieldRenderProps<string>) => {

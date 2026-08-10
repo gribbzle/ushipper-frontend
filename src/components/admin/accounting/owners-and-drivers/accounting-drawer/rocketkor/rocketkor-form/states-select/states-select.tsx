@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps, useFormState } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useGetStatesQuery } from '@store/api/states-api';
 
 const DEFAULT_STATIC_COUNTRY_CODE = 'USA';

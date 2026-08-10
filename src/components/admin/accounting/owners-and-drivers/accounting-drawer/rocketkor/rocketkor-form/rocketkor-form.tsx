@@ -2,7 +2,13 @@ import React from 'react';
 import { Field, FieldRenderProps, Form } from 'react-final-form';
 
 import { Divider } from '@/components/common/divider/divider';
-import { DatePicker, FieldPrefix, FormControl, InputLabel, NativeSwitch, NativeSwitchProps, PhoneNumberInput, TextField } from '@fields';
+import {DatePicker} from '@/fields/datepicker';
+import {FieldPrefix} from '@/fields/field-prefix';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {NativeSwitch, NativeSwitchProps} from '@/fields/switch-input';
+import {PhoneNumberInput} from '@/fields/phone-number-input';
+import {TextField} from '@/fields/text-field';
 import { useFormSubmit } from '@hooks';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

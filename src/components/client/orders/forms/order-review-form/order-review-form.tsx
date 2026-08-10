@@ -3,7 +3,10 @@ import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
-import { FormControl, InputLabel, RatingField, TextField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {RatingField} from '@/fields/rating-field';
+import {TextField} from '@/fields/text-field';
 import { useMeShipper } from '@hooks';
 import { useAppDispatch, useAppSelector } from '@store';
 import { ordersApi } from '@store/api/orders-api';

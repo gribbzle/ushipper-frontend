@@ -2,7 +2,7 @@ import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FundsTransferCalculatedStatus } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { translateFundsTransferCalculatedStatus } from '@utils/translate/order/translate-funds-transfer-calculated-status';
 
 const ALLOWED_STATUSES: FundsTransferCalculatedStatus[] = [

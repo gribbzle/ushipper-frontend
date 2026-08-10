@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { AccountPaymentMethod } from '@store/api/accounts-api';
 import { translateByNamespace } from '@utils/i18n';
 

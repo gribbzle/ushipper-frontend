@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { toKebabCase } from 'js-convert-case';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 import { useGetUserStatusesQuery } from '@store/api/user-statuses-api';
 import { translateByNamespace } from '@utils/i18n';
 

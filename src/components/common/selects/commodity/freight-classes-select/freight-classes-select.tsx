@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
 import { FreightClassesEnum } from '@/enums';
-import { SelectField } from '@fields';
+import {SelectField} from '@/fields/select-field';
 
 export const FreightClassesSelect = (props: FieldRenderProps<string>) => {
     const options = useMemo(

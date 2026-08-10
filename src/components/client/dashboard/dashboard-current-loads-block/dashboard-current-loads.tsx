@@ -5,7 +5,7 @@ import { useTrackingDisplayedPathsOnMap } from '@/components/client/tracking/dri
 import { TrackingMap } from '@/components/client/tracking/common/tracking-map/tracking-map';
 import { DriversSelect } from '@/components/common/drivers-select/drivers-select';
 import { Paper } from '@/components/common/paper/paper';
-import { FormControl } from '@fields';
+import {FormControl} from '@/fields/form-control';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useGetTrackingQuery, useLazyGetDriversQuery } from '@store/api/users-api';
 import { fetchedSelectedDriverIdSelector, selectedDriverOrderIdSelector, trackingActions } from '@store/client';

@@ -3,7 +3,7 @@ import { Field } from 'react-final-form';
 
 import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
 import { FuelCardsRule } from '@/enums';
-import { SelectionButtonGroupInput } from '@fields';
+import {SelectionButtonGroupInput} from '@/fields/selection-button-group-input';
 import { translateByNamespace } from '@utils/i18n';
 
 const t = translateByNamespace('admin:accounting:owners-and-drivers:accounting-drawer:agreements:fuel-cards-settings');

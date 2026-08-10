@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, FieldRenderProps } from 'react-final-form';
 
-import { FormControl, InputLabel, SelectField } from '@fields';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
+import {SelectField} from '@/fields/select-field';
 
 import { useTermsSelectOptions } from './use-terms-select-options';
 

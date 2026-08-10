@@ -3,7 +3,9 @@ import { Field, Form } from 'react-final-form';
 
 import { Paper } from '@/components/common/paper/paper';
 import { TransactionTypeSelect } from '@/components/common/transaction-type-select/transaction-type-select';
-import { DatePicker, FormControl, InputLabel } from '@fields';
+import {DatePicker} from '@/fields/datepicker';
+import {FormControl} from '@/fields/form-control';
+import {InputLabel} from '@/fields/input-label';
 import { classname } from '@utils/classname';
 import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';

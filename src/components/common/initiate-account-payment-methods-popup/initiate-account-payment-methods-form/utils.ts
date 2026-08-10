@@ -3,7 +3,7 @@ import { toKebabCase } from 'js-convert-case';
 
 import { isString } from '@/shared';
 import { FieldValidator } from '@/validators/types';
-import { TextField } from '@fields';
+import {TextField} from '@/fields/text-field';
 import { MassPayUserAttributeDTO } from '@store/api/accounts-api';
 import { translateByNamespace } from '@utils/i18n';
 

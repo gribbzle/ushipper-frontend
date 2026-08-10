@@ -3,7 +3,7 @@ import { Field } from 'react-final-form';
 
 import { SelectionButtonOption } from '@/components/common/selection-button-group/selection-button-group';
 import { TransactionTypesEnum } from '@/enums';
-import { SelectionButtonGroupInput } from '@fields';
+import {SelectionButtonGroupInput} from '@/fields/selection-button-group-input';
 import { getTransactionTypeTranslate } from '@utils/get-transaction-type-translate';
 
 import { TransactionTypeSelectionButtonGroupProps } from './transaction-type-selection-button-group.types';

@@ -4,7 +4,7 @@ import { Field, Form } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { StringInput } from '@fields';
+import {StringInput} from '@/fields/string-input';
 import { useAppDispatch, useAppSelector } from '@store';
 import { createEditCarMakerDrawerPropsSelector, createEditCarMakerFormSubmit, fetchedCarMakerSelector } from '@store/admin';
 import { carMakersSettingsActions } from '@store/admin/car-makers-settings/slice';
