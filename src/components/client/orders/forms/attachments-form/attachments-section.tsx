@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { useAppDispatch } from '@store';
 import { useCreateOrderAttachmentMutation, useGetOrderAttachmentsQuery } from '@store/api/orders-api';

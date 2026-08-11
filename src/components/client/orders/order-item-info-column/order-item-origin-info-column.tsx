@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { format } from 'date-fns';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
-import { NonNullableFields } from '@/shared';
+import { NonNullableFields } from '@/shared/nullable';
 import { useMeShipper } from '@/hooks/use-user-role-group';
 import { Order } from '@store/api/orders-api';
 import { translateByNamespace } from '@utils/i18n';

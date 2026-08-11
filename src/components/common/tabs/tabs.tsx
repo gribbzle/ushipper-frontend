@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { classname } from '@utils/classname';
 import { isClientSide } from '@utils/nextjs';
 

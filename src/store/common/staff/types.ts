@@ -2,7 +2,7 @@ import { CompanyStatusEnum } from '@/enums/company-status-enum';
 import { UserRoleGroup } from '@/enums/user-role-group';
 import { UserRoleType } from '@/enums/user-role-type';
 
-import { NullableFields } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
 import { Fee } from '../../../types/fee';
 import { RequestWithStatus } from '../../../utils/redux';
 import { BalanceResource } from '../../admin/accounting/balance-types';

@@ -5,7 +5,7 @@ import { Button } from '@/components/common/button/button';
 import { Input } from '@/components/common/input/input';
 import { Popup } from '@/components/common/popup/popup';
 import Select from '@/components/common/select-new/select';
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import { useAppDispatch, useAppSelector } from '@store';

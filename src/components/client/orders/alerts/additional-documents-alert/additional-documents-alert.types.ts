@@ -1,5 +1,5 @@
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { GetOrderRequestedDocument } from '@store/api/orders-api';
 
 export type AdditionalDocumentsFormValues = {

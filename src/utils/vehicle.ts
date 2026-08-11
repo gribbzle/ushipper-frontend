@@ -1,7 +1,7 @@
 import has from 'has-values';
 import { toKebabCase } from 'js-convert-case';
 
-import { OrderVehicle } from '@/shared';
+import { OrderVehicle } from '@/shared/types';
 import { translateByNamespace } from '@/utils/i18n';
 import { getObjectWithoutEmptyFields } from '@/utils/objects';
 

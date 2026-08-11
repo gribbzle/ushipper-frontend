@@ -1,4 +1,4 @@
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 
 export type AttachmentsShowBodyProps = {

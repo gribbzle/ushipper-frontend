@@ -5,7 +5,7 @@ import { Dropdown } from '@/components/common/dropdown/dropdown';
 import DropdownArrow from '@/components/common/main-layout/header-user-block/dropdown-arrow.svg';
 import { Tabs } from '@/components/common/tabs/tabs';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
-import { isString } from '@/shared';
+import { isString } from '@/shared/type-guards';
 import { StatisticsCounters } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

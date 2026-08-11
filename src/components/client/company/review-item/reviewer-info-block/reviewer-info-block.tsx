@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
-import { CreatorCompanyInfo } from '@/shared';
+import { CreatorCompanyInfo } from '@/shared/types';
 import { convertCityToAbbreviation } from '@/utils/converter';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

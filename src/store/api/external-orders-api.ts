@@ -1,4 +1,4 @@
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { ParsedOrderData } from '@store/client/loadboard';
 import { Load } from '@store/common/orders/types';
 

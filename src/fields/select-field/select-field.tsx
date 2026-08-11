@@ -16,7 +16,7 @@ import { GroupBase, MenuPlacement, MultiValue as MultiValueType, SingleValue } f
 import { AsyncProps } from 'react-select/dist/declarations/src/useAsync';
 
 import { FormHelperText } from '@/fields/form-helper-text/form-helper-text';
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import { CSSObject } from '@emotion/serialize';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

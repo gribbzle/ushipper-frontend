@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
 import { useHandleViewBol } from '@/hooks/order';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { fetchOrderBOL } from '@api';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';

@@ -1,6 +1,6 @@
 import { FuelCardStatus } from '@/enums/fuel/fuel-card-status-enum';
 import { FuelTransactionStatus } from '@/enums/fuel/fuel-transaction-status-enum';
-import { NullableFields } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
 import { Avatar } from '@/store/common/staff/avatar-types';
 import { DriverParent } from '@/store/common/staff/types';
 

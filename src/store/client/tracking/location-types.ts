@@ -1,4 +1,4 @@
-import { NullableFields } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
 
 export type LatestLocation = {
     geoLatitude: number;

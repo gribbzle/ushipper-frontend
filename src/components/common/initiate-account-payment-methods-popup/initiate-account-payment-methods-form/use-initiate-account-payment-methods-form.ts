@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { MassPayUserTypesEnum } from '@/enums/account/masspay-user-types-enum';
-import { RequestError } from '@/shared';
+import { RequestError } from '@/shared/types';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, initiateAccountPaymentMethodsPopupPropsSelector } from '@store/admin';

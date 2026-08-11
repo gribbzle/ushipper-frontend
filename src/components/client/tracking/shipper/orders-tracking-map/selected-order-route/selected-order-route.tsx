@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import { MapRef, Marker } from 'react-map-gl/mapbox';
 
 import { OrderStatus } from '@/enums/order-status';
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { formatDrivingDistance } from '@/utils/driving';
 import { getDistanceMatrix } from '@api';
 import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
@@ -17,7 +17,10 @@ import { getOrderStatusForTracking } from '@utils/tracking/map-order-status-to-t
 import { findOptimalPath, getPointsDistanceMatrix } from '@utils/tracking/optimal-route-finder';
 import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';
 
-import { DriverOrderPin, MapOrderRoute, OrderMarker, OrderPin } from '../../../common';
+import { DriverOrderPin } from '@/components/client/tracking/common/driver-order-pin/driver-order-pin';
+import { MapOrderRoute } from '@/components/client/tracking/common/map-order-route/map-order-route';
+import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
+import { OrderPin } from '@/components/client/tracking/common/order-pin/order-pin';
 
 import { isDriverPoint, isSelectedOrderPoint } from './utils';
 

@@ -5,7 +5,9 @@ import { useShowCompanyPage } from '@/hooks/use-show-company-page';
 import { CarriersCatalogInfo } from '@store/client';
 import { classname } from '@utils/classname';
 
-import { CarrierPersonalInfo, CarrierSpecializationBlock, CompanyContactsBlock } from '../../common';
+import { CarrierPersonalInfo } from '@/components/client/catalogs/common/carrier-personal-info/carrier-personal-info';
+import { CarrierSpecializationBlock } from '@/components/client/catalogs/common/carrier-specializations-block/carrier-specializations-block';
+import { CompanyContactsBlock } from '@/components/client/catalogs/common/company-contacts-block/company-contacts-block';
 
 import { useCarrierItemBody } from './use-carrier-item-body';
 

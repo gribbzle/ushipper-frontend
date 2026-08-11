@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import {SelectField} from '@/fields/select-field';
 import { useGetSpecializationsQuery } from '@store/api/specializations-api';
 import { classname } from '@utils/classname';

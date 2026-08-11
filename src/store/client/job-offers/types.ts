@@ -1,7 +1,7 @@
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
 import { TimeCondition } from '@/enums/time-condition';
 import { UserRoleType } from '@/enums/user-role-type';
-import { Attachment, Creator } from '@/shared';
+import { Attachment, Creator } from '@/shared/types';
 import { Company } from '@store/admin';
 
 export type TermCondition =

@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useRef, useState } from 'react';
 
 import Select from '@/components/common/select-new/select';
 import useOutsideCLick from '@/hooks/use-outside-cLick';
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

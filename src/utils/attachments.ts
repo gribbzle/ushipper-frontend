@@ -1,4 +1,4 @@
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 
 import { isFilePdf } from './files';
 

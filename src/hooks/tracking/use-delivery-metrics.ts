@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { ShipperTrackingOrder } from '@store/client';
 import { LatestLocation } from '@store/client/tracking/location-types';
 import { isTrackingOrderPickedUp } from '@utils/tracking/shipper-tracking-order-helpers';

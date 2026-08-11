@@ -6,7 +6,7 @@ import { TimeCondition } from '@/enums/time-condition';
 import { UserRoleType } from '@/enums/user-role-type';
 import { useIsDriverOwnerPage } from '@/hooks/catalogs/use-type-company-owner';
 import { useMeDispatcher, useMeDriver } from '@/hooks/use-user-role-group';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { useAppDispatch, useAppSelector } from '@store';
 import { jobOffersApi, useCreateJobOfferMutation, usePartiallyUpdateJobOfferMutation } from '@store/api/job-offers';
 import { TermCondition } from '@store/client';

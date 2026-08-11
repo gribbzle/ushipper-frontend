@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import { OrderType } from '@/enums/order/order-type';
 import {SelectField} from '@/fields/select-field';
 import { translateOrderStatisticsStatus } from '@utils/translate/order/translations';

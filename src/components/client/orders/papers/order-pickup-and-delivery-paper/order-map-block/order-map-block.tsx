@@ -6,7 +6,7 @@ import { Map, Marker } from 'react-map-gl/mapbox';
 import { DriverOrderPin } from '@/components/client/tracking/common/driver-order-pin/driver-order-pin';
 import { MapOrderRoute } from '@/components/client/tracking/common/map-order-route/map-order-route';
 import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
-import { ColorValueHex } from '@/shared';
+import { ColorValueHex } from '@/shared/types';
 import { useAppSelector } from '@store';
 import { orderDriverSelector, orderSelector } from '@store/client';
 import { classname } from '@utils/classname';

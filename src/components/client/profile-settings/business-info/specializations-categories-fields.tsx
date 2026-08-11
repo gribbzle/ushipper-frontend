@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Field, useField } from 'react-final-form';
 
 import { TrailerCategoriesSelect } from '@/components/common/trailer-categories-select/trailer-categories-select';
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import { useAppSelector } from '@store';

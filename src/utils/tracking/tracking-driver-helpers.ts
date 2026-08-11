@@ -1,4 +1,4 @@
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { TrackingDriver, User } from '@store/client';
 
 import { formatDrivingDistance } from '../driving';

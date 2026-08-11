@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { useGetOrderAttachmentsQuery } from '@store/api/orders-api';
 
 export const useInstantPaymentAttachments = (publicId?: string) => {

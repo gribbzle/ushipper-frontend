@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Loader } from '@/components/common/loader/loader';
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

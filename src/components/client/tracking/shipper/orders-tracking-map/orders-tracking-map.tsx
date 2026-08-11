@@ -6,7 +6,8 @@ import { useAppSelector } from '@store';
 import { selectedShipperTrackingOrderSelector } from '@store/client';
 import { isTrackingOrderNotDispatched } from '@utils/tracking/shipper-tracking-order-helpers';
 
-import { OrderPin, TrackingMap } from '../../common';
+import { OrderPin } from '@/components/client/tracking/common/order-pin/order-pin';
+import { TrackingMap } from '@/components/client/tracking/common/tracking-map/tracking-map';
 import { DriverInfoPaper } from '../driver-info-paper';
 
 import { DriversMarkers } from './driver-markers';

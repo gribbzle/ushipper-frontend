@@ -1,4 +1,4 @@
-import { NonNullableFields } from '@/shared';
+import { NonNullableFields } from '@/shared/nullable';
 
 export function getObjectWithoutEmptyFields<T extends Record<string, unknown>>(obj: T): NonNullableFields<T> {
     const acc: Partial<T> = {};

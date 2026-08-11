@@ -3,7 +3,7 @@ import { FormApi } from 'final-form';
 
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { InstantTermPaymentMethod } from '@/store/common/orders/types';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { OrderDriverPaymentFormState } from '@store/client';
 
 export type OrderDriverPaymentFormProps = {

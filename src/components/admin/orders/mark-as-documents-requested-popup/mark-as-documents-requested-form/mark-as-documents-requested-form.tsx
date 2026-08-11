@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
-import { RequestError } from '@/shared';
+import { RequestError } from '@/shared/types';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Field } from 'react-final-form';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import {CheckboxMultiSelectInput} from '@/fields/checkbox-multi-input';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';

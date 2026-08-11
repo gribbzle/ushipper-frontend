@@ -10,7 +10,7 @@ import { classname } from '@utils/classname';
 import { getWorkingTimeTranslate } from '@utils/get-working-time-translate';
 import { getTransportServiceTranslate } from '@utils/specialization';
 
-import { DispatcherPersonalInfo } from '../../common';
+import { DispatcherPersonalInfo } from '@/components/client/catalogs/common/dispatcher-personal-info/dispatcher-personal-info';
 
 import { useDispatcherItemBody } from './use-dispatcher-item-body';
 

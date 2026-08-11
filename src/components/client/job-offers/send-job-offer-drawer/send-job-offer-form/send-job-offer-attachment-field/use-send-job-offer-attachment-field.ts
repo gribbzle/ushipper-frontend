@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 
 import { useSendJobOfferDrawer } from '../use-send-job-offer-drawer';
 

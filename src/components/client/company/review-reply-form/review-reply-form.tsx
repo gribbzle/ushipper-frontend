@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
 import { toast } from 'react-toastify';
 
-import { NullableFields } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
 import {FormControl} from '@/fields/form-control';
 import {InputLabel} from '@/fields/input-label';
 import {TextField} from '@/fields/text-field';

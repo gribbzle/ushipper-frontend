@@ -7,7 +7,7 @@ import { Avatar } from '@/components/common/avatar/avatar';
 import { Button } from '@/components/common/button/button';
 import { RatingBar } from '@/components/common/rating-bar/rating-bar';
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useLazyGetOrderQuery } from '@store/api/orders-api';
 import {

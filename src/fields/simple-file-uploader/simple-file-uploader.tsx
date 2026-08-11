@@ -7,7 +7,7 @@ import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { useHover } from '@/hooks/use-hover';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

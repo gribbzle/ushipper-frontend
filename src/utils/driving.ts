@@ -1,6 +1,6 @@
 import { differenceInMinutes } from 'date-fns';
 
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { convertMetersToMiles } from '@/utils/converter';
 
 export const getDestination = (meters = 0, round = false, decimalPlaces = 2): string => {

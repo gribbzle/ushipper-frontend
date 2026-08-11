@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import { FieldRenderProps, useFormState } from 'react-final-form';
 import { SingleValue } from 'react-select';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 
 export const useAsyncSelect = ({ input, callback }: { input: FieldRenderProps<string | number>['input']; callback?: (val: string | undefined) => void }) => {
     const { initialValues } = useFormState();

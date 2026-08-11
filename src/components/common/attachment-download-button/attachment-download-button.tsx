@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useDownloadAttachment } from '@/hooks/useDownload';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';

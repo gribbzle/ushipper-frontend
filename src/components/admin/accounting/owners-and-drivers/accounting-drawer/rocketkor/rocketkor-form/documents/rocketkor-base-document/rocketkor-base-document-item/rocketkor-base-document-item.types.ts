@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 
 import { RocketkorBaseDocumentProps } from '../rocketkor-base-document.types';
 

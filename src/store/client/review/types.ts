@@ -1,4 +1,4 @@
-import { Creator } from '@/shared';
+import { Creator } from '@/shared/types';
 
 import { UserCompany } from '../../common/orders/user-company-types';
 

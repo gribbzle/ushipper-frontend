@@ -13,7 +13,11 @@ import { classname } from '@utils/classname';
 import { convertToStringArray } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';
 
-import { OrdersTrackingMap, ShippersOrdersListPaper, ShipperTrackingFiltersBlock, ShipperTrackingOrderPaper, TrackingHelpPaper } from '../../shipper';
+import { OrdersTrackingMap } from '@/components/client/tracking/shipper/orders-tracking-map/orders-tracking-map';
+import { ShippersOrdersListPaper } from '@/components/client/tracking/shipper/shipper-orders-list-paper/shipper-orders-list-paper';
+import { ShipperTrackingFiltersBlock } from '@/components/client/tracking/shipper/shipper-tracking-filters-block/shipper-tracking-filters-block';
+import { ShipperTrackingOrderPaper } from '@/components/client/tracking/shipper/shipper-tracking-order-paper/shipper-tracking-order-paper';
+import { TrackingHelpPaper } from '@/components/client/tracking/shipper/tracking-help-paper/tracking-help-paper';
 
 import './shipper-tracking-page.scss';
 

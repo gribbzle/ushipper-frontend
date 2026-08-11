@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { FieldRenderProps } from 'react-final-form';
 import { MultiValue, SingleValue } from 'react-select';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import {AsyncSelectField} from '@/fields/select-field';
 import { useLazyGetDispatchersQuery } from '@store/api/users-api';
 

@@ -11,7 +11,7 @@ import VendorSelect, {
     SelectComponentsConfig,
 } from 'react-select';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import { CSSObject } from '@emotion/serialize';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

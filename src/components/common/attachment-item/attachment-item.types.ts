@@ -1,4 +1,4 @@
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 
 export type AttachmentItemProps = {
     attachment?: Attachment | null;

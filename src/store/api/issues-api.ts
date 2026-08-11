@@ -1,4 +1,4 @@
-import { ChangeDetails } from '@/shared';
+import { ChangeDetails } from '@/shared/types';
 import { IssueReasonTypesEnum } from '@/enums/issues/issue-reason-types-enum';
 import { IssueStatus } from '@/enums/issues/issue-status';
 import { IssueType } from '@/enums/issues/issue-type';

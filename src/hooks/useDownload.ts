@@ -5,7 +5,7 @@ import JsCookie from 'js-cookie';
 import { toast } from 'react-toastify';
 
 import { BalanceType } from '@/enums/balance-type';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { TransactionsFiltersState } from '@/types/transactions';
 import { translateByNamespace } from '@utils/i18n';
 

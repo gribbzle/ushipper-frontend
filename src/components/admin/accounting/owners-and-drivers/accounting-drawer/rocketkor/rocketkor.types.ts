@@ -1,4 +1,4 @@
-import { NullableFields } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
 import { Address } from '@/types/address';
 
 export type MailingAddress = NullableFields<Address>;

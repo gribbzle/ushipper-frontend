@@ -1,6 +1,6 @@
 import { UserOrderStatus } from '@/enums/user-order-status-enum';
-import { Attachment, Creator, NullableFields } from '@/shared';
-import { OrderVehicle } from '@/shared';
+import { NullableFields } from '@/shared/nullable';
+import { Attachment, Creator, OrderVehicle } from '@/shared/types';
 import { DateTypes } from '@/enums/date-types-enum';
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { InspectionType } from '@/enums/inspection-type';

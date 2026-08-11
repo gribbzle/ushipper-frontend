@@ -4,7 +4,7 @@ import { FieldRenderProps } from 'react-final-form';
 
 import { Button } from '@/components/common/button/button';
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { classname } from '@utils/classname';
 import { convertBytesToMB } from '@utils/converter';
 import { translateByNamespace } from '@utils/i18n';

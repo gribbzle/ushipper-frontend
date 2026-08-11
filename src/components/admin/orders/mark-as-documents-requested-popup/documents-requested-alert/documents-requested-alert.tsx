@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { AttachmentDownloadButton } from '@/components/common/attachment-download-button/attachment-download-button';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { useGetOrderRequestedDocumentsQuery } from '@store/api/orders-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

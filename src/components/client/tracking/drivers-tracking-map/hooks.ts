@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import randomColor from 'randomcolor';
 
-import { ColorValueHex } from '@/shared';
+import { ColorValueHex } from '@/shared/types';
 import { OrderColors, TrackingMapPoint, UserTracking } from '@store/client';
 
 const COLORS_OF_FIRST_FIVE_ORDERS: ColorValueHex[] = ['#6284FF', '#F178B6', '#6FCF97', '#F7CE68', '#C6A8E3'];

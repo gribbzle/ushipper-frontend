@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { FuelTransactionLocation, FuelTransactionRawData, Transaction } from '@store/admin';
 import { getGallonsTranslate } from '@utils/translate/get-units-of-measurement-translate';
 

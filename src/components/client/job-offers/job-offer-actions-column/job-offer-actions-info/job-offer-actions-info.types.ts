@@ -1,5 +1,5 @@
 import { OfferStatusesEnum } from '@/enums/offer-statuses-enum';
-import { Creator } from '@/shared';
+import { Creator } from '@/shared/types';
 import { Company } from '@store/admin';
 
 type ActionsInfo = {

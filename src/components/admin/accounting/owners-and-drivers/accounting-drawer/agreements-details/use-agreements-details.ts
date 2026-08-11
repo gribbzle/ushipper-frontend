@@ -10,7 +10,7 @@ import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { FeesRule } from '@/enums/fee/fees-rules-enum';
 import { FuelCardsRule } from '@/enums/fuel/fuel-cards-rules-enum';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingDrawerPropsSelector, selectedAccountSelector } from '@store/admin';

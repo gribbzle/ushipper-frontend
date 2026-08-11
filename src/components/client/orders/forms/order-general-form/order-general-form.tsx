@@ -21,7 +21,7 @@ import { RouterContext } from '@/components/common/router-provider/router-provid
 import { Paper } from '@/components/common/paper/paper';
 import { useRedirectToOrder } from '@/hooks/order';
 import { useOnBack } from '@/hooks/useOnBack';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { CommodityDimensionUnitEnum } from '@/enums/commodity/commodity-dimension-unit-enum';
 import { CommodityTemperatureUnitEnum } from '@/enums/commodity/commodity-temperature-unit-enum';

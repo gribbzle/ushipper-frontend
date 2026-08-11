@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { isNumber } from '@/shared';
+import { isNumber } from '@/shared/type-guards';
 import { calculateElapsedTime, formatDrivingDistance } from '@/utils/driving';
 import { useDrivingMetrics } from '@/hooks/tracking/use-driving-metrics';
 import { useShipperTrackingDriver } from '@/hooks/tracking/use-shipper-tracking-driver';

@@ -5,7 +5,7 @@ import { DriverLoadboardPaymentTermEnum } from '@/enums/driver-loadboard-payment
 import { MassPayUserTypesEnum } from '@/enums/account/masspay-user-types-enum';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
 import { UserRoleType } from '@/enums/user-role-type';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { toFormData } from '@/utils/to-form-data';
 import { BalanceValue } from '@store/admin/accounting/balance-types';
 import { AccountData, AccountProfileData } from '@store/client/accounts';

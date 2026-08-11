@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import { useForm, useFormState } from 'react-final-form';
 
-import { SelectOption } from '@/shared';
+import { SelectOption } from '@/shared/types';
 import { useAppSelector } from '@store';
 import { fetchedSpecializationsSelector } from '@store/common';
 import { getTransportServiceTranslate } from '@utils/specialization';

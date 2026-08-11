@@ -1,4 +1,4 @@
-import { Creator } from '@/shared';
+import { Creator } from '@/shared/types';
 import { PaginatedData, RequestWithStatus } from '@utils/redux';
 
 export type CarMakersFilters = {

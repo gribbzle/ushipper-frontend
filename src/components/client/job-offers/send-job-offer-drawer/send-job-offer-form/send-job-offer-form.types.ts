@@ -2,7 +2,7 @@ import { MutableRefObject } from 'react';
 import { FormApi } from 'final-form';
 
 import { UserRoleType } from '@/enums/user-role-type';
-import { Attachment } from '@/shared';
+import { Attachment } from '@/shared/types';
 import { TermCondition } from '@store/client';
 
 export type SendJobOfferFormProps = {

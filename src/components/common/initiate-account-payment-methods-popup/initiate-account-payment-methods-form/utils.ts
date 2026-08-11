@@ -1,7 +1,7 @@
 import React from 'react';
 import { toKebabCase } from 'js-convert-case';
 
-import { isString } from '@/shared';
+import { isString } from '@/shared/type-guards';
 import { FieldValidator } from '@/validators/types';
 import {TextField} from '@/fields/text-field';
 import { MassPayUserAttributeDTO } from '@store/api/accounts-api';

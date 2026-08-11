@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
-import { RequestError } from '@/shared';
+import { RequestError } from '@/shared/types';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, cancelRollbackTransactionPopupPropsSelector } from '@store/admin';
