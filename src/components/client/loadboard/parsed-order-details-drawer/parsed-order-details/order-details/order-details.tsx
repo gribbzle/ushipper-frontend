@@ -8,7 +8,10 @@ import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { renderProjectSpecificComponent } from '@utils/render-project-specific-component';
 
-import { CommoditiesDetailsBlock, OrderRouteDetails, PaymentInfoBlock, VehiclesDetailsBlock } from '../../../common';
+import { CommoditiesDetailsBlock } from '@/components/client/loadboard/common/commodities-details-block/commodities-details-block';
+import { OrderRouteDetails } from '@/components/client/loadboard/common/order-route-details/order-route-details';
+import { PaymentInfoBlock } from '@/components/client/loadboard/common/payment-info-block/payment-info-block';
+import { VehiclesDetailsBlock } from '@/components/client/loadboard/common/vehicles-details-block/vehicles-details-block';
 
 import './order-details.scss';
 

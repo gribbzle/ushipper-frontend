@@ -6,7 +6,8 @@ import { getOrderCustomerAddress } from '@/utils/order';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
-import { ExternalBrokerRating, HiddenExternalBrokerTooltip } from '../../../common';
+import { ExternalBrokerRating } from '@/components/client/loadboard/common/external-broker-rating/external-broker-rating';
+import { HiddenExternalBrokerTooltip } from '@/components/client/loadboard/common/hidden-external-broker-tooltip/hidden-external-broker-tooltip';
 import { DetailItem } from '../../detail-item';
 import { ExternalCompanyContactInfo } from '../../external-company-contact';
 

@@ -7,7 +7,7 @@ import { CatalogStatistic } from '@store/client';
 import { catalogsSliceActions } from '@store/client/catalogs/slice';
 import { classname } from '@utils/classname';
 
-import { LoadboardNoData } from '../../loadboard';
+import { LoadboardNoData } from '../../loadboard/loadboard-no-data/loadboard-no-data';
 import { CatalogFiltersForm } from '../catalog-filters-form';
 import { CatalogFilterTabs, useCatalogFiltersTabs } from '../catalog-filters-tabs';
 

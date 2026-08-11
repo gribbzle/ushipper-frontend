@@ -6,7 +6,8 @@ import { ExternalCDShipper, ExternalSDShipper } from '@store/client';
 import { classname } from '@utils/classname';
 import { getObjectWithoutEmptyFields } from '@utils/objects';
 
-import { ExternalBrokerRating, HiddenExternalBrokerTooltip } from '../../../common';
+import { ExternalBrokerRating } from '@/components/client/loadboard/common/external-broker-rating/external-broker-rating';
+import { HiddenExternalBrokerTooltip } from '@/components/client/loadboard/common/hidden-external-broker-tooltip/hidden-external-broker-tooltip';
 
 import { ParsedLoadBoardOrderBrokerColumnProps } from './parsed-loadboard-order-broker-column.types';
 

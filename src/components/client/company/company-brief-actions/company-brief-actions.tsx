@@ -6,7 +6,7 @@ import { useIsDispatcherOwnerPage, useIsDriverOwnerPage } from '@/hooks/catalogs
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
-import { useOpenSendJobOfferDrawer } from '../../job-offers';
+import { useOpenSendJobOfferDrawer } from '@/components/client/job-offers/send-job-offer-drawer/send-job-offer-form/use-open-send-job-offer-drawer';
 
 import { CompanyBriefActionsProps } from './company-brief-actions.types';
 import { useCompanyBriefActions } from './use-company-brief-actions';
