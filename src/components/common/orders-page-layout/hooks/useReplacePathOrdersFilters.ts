@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import { OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams } from '@types';
+import { OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams } from '@/types/order';
 
 export const useReplacePathOrdersFilters = (filters: OrdersFiltersFromUrlParams | OrdersAminFiltersFromUrlParams) => {
     const router = useRouter();

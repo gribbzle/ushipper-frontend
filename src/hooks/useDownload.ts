@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 import { BalanceType } from '@/enums/balance-type';
 import { Attachment } from '@/shared';
-import { TransactionsFiltersState } from '@types';
+import { TransactionsFiltersState } from '@/types/transactions';
 import { translateByNamespace } from '@utils/i18n';
 
 const tExternalContract = translateByNamespace('client:loadboard:notifications');

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { FormApi } from 'final-form';
 import { useRouter } from 'next/router';
 
-import { AdminFormOrdersFilters } from '@types';
+import { AdminFormOrdersFilters } from '@/types/order';
 
 import { useOrdersFiltersChange, useOrdersSortingFieldOptions } from '../hooks';
 

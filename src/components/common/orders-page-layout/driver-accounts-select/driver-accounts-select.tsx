@@ -102,7 +102,7 @@ export const DriverAccountsSelect = ({ input, isClearable = true, isMulti = true
                     isClearable={isClearable}
                     cacheOptions={true}
                     closeMenuOnSelect={true}
-                    onBlur={event => input.onBlur(event)}
+                    onBlur={(event: React.FocusEvent<HTMLElement, Element>) => input.onBlur(event)}
                 />
             )}
         </>

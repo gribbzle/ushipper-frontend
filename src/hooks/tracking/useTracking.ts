@@ -4,7 +4,7 @@ import { useMap } from 'react-map-gl/mapbox';
 import { OrderStatus } from '@/enums/order-status';
 import { useAppSelector } from '@store';
 import { Driver, fetchedIsDriversListShownSelector, OrderCoordinate, OrderTracking } from '@store/client';
-import { Coordinate, DirectionsResponse, Geo, Location, TripsResponse } from '@types';
+import { Coordinate, DirectionsResponse, Geo, Location, TripsResponse } from '@/types/tracking';
 import { axios } from '@utils/axios';
 import { pointsToBounds } from '@utils/tracking';
 

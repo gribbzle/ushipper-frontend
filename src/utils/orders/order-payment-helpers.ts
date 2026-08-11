@@ -1,5 +1,5 @@
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 import { isFeeValueTypePercent } from '../fees';
 

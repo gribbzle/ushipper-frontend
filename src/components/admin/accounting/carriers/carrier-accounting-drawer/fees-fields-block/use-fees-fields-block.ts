@@ -1,7 +1,7 @@
 import { MutableRefObject, useCallback } from 'react';
 import { FormApi } from 'final-form';
 
-import { FeeTermTypeFields } from '../../../common';
+import { FeeTermTypeFields } from '@/components/admin/accounting/common/fees-fields-wrapper/fees-fields-wrapper';
 import { CarrierAccountingDrawerFormValue } from '../carrier-accounting-drawer.types';
 
 export const useFeesFieldsBlock = (formRef: MutableRefObject<FormApi<CarrierAccountingDrawerFormValue> | undefined>) => {

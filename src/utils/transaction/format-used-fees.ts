@@ -1,6 +1,6 @@
 import { addMonths, addWeeks, format } from 'date-fns';
 
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 import { formatFeeValueType } from '../fees';
 

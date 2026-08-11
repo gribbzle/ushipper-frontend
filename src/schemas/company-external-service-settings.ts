@@ -1,6 +1,6 @@
 import Joi from 'joi';
 
-import { ExternalServiceData, FactoringEmailsData } from '@types';
+import { ExternalServiceData, FactoringEmailsData } from '@/types/company-external-service-settings';
 
 import { factoringProviderValidator, requiredBooleanValidator, requiredStringValidator } from '../validators/jois';
 

@@ -8,7 +8,7 @@ import {AutocompleteStringInput} from '@/fields/autocomplete-string-input';
 import {FieldPrefixContext} from '@/fields/field-prefix';
 import {TextFieldProps} from '@/fields/text-field';
 import { GeocodingFeature } from '@mapbox/search-js-core';
-import { GeocodingFeatureContext } from '@mapbox/search-js-core/dist/geocode/types';
+import { GeocodingFeatureContext, GeocodingFeatureContextComponent } from '@mapbox/search-js-core/dist/geocode/types';
 
 type Props = TextFieldProps & {
     label: string;
@@ -18,33 +18,19 @@ type Props = TextFieldProps & {
     isAccountAddress?: boolean;
 };
 
-const parseAddressContext = (context: GeocodingFeatureContext[]) => {
+const parseAddressContext = (context: Partial<GeocodingFeatureContext>) => {
     let city, state, zipCode;
 
-    context.forEach(contextItem => {
-        const contextType = contextItem.id.split('.')[0];
-
-        switch (contextType) {
-            case 'place':
-                city = contextItem.text;
-                break;
-            case 'region':
-                let stateShortName = '';
-                const shortCode = contextItem.short_code;
-
-                if (shortCode) {
-                    stateShortName = shortCode.split('-')[1];
-                }
-                state = stateShortName || contextItem.text;
-
-                break;
-            case 'postcode':
-                zipCode = contextItem.text;
-                break;
-            default:
-                break;
-        }
-    });
+    if (context.place) {
+        city = context.place.name;
+    }
+    if (context.region) {
+        const regionCode = (context.region as GeocodingFeatureContextComponent & { region_code?: string }).region_code;
+        state = regionCode || context.region.name;
+    }
+    if (context.postcode) {
+        zipCode = context.postcode.name;
+    }
 
     return {
         city,
@@ -82,13 +68,13 @@ export default function AddressInputAutocompleteField({ searchType, isAccountAdd
 
             const isAddress = address.id.startsWith('address');
             const isZip = address.id.startsWith('postcode');
-            const { city, state, zipCode } = parseAddressContext(address.context);
+            const { city, state, zipCode } = parseAddressContext(address.properties.context);
 
             let streetAddress = '';
             let zip = zipCode || '';
 
             if (isAddress) {
-                const splitPlace = address.place_name.split(', ');
+                const splitPlace = address.properties.full_address.split(', ');
 
                 if (splitPlace.length >= 4) {
                     streetAddress = splitPlace[0];
@@ -96,7 +82,7 @@ export default function AddressInputAutocompleteField({ searchType, isAccountAdd
             }
 
             if (isZip) {
-                zip = address.text;
+                zip = address.properties.name;
             }
 
             batch(() => {
@@ -133,12 +119,12 @@ export default function AddressInputAutocompleteField({ searchType, isAccountAdd
 
     const suggestions = useMemo<Array<AutocompleteSuggestion>>(() => {
         return addresses.map(address => {
-            const center = Array.isArray(address.center) ? address.center : [undefined, undefined];
+            const coords = address.geometry?.coordinates ?? [undefined, undefined];
 
             return {
-                value: searchType === 'postcode' ? address.text : address.place_name,
-                lat: center[1],
-                long: center[0],
+                value: searchType === 'postcode' ? address.properties.name : address.properties.full_address,
+                lat: coords[1],
+                long: coords[0],
                 address: address,
             };
         });

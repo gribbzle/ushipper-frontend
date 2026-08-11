@@ -57,7 +57,13 @@ export const registerUIroutes = (server: FastifyInstance) => {
         });
     }
 
-    server.register(fastifyNextJS, { dev: process.env.NODE_ENV !== 'production' }).after(() => {
+  // @ts-ignore
+  server.register(fastifyNextJS, {
+    dev: process.env.NODE_ENV !== 'production',
+    hostname: 'localhost',
+    port: port,
+    noStackTrace: true,
+  }).after(() => {
         //@ts-ignore
         server.next('/*', (app, req, reply) => {
             // @ts-ignore

@@ -5,7 +5,7 @@ import { Company } from '@store/admin/companies/types';
 import { AccountData, AccountProfileData, AccountSuperiorUser, AccountUser, ParentData } from '@store/client/accounts/types';
 import { LatestLocation } from '@store/client/tracking/location-types';
 import { DeviceInformation } from '@store/common/staff/types';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { PaginatedResponse } from '@utils/redux';
 
 import { apiSlice } from './api-slice';

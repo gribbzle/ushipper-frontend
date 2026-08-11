@@ -16,7 +16,7 @@ import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useTable } from '@/hooks/use-table';
 import { Transaction } from '@store/admin';
 import { TransactionsFiltersParams, useGetTransactionsQuery } from '@store/api/transactions-api';
-import { TransactionsFiltersState } from '@types';
+import { TransactionsFiltersState } from '@/types/transactions';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { isCashIn, isCashOut } from '@utils/transaction/get-is-cash-in-cash-out';

@@ -26,7 +26,7 @@ const getEchoOptions = (authToken: string) => ({
             Authorization: authToken,
         },
     },
-    broadcaster: 'pusher',
+    broadcaster: 'pusher' as const,
     httpHost: process.env.pusherHost,
     httpsHost: process.env.pusherHost,
     wsHost: process.env.pusherHost,
@@ -41,7 +41,7 @@ const getEchoOptions = (authToken: string) => ({
 
 export const WebsocketWatcher = () => {
     const dispatch = useAppDispatch();
-    const echoRef = useRef<Echo>();
+    const echoRef = useRef<Echo<'pusher'>>();
     const router = useRouter();
 
     const isAuthorized = useAppSelector(isUserAuthorizedSelector);

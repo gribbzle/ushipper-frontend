@@ -68,7 +68,7 @@ export const DriverOwnersSelect = ({ input, excludedDriverId, disabled }: FieldR
                     isClearable={true}
                     cacheOptions={true}
                     closeMenuOnSelect={true}
-                    onBlur={event => input.onBlur(event)}
+                    onBlur={(event: React.FocusEvent<HTMLElement, Element>) => input.onBlur(event)}
                 />
             )}
         </>

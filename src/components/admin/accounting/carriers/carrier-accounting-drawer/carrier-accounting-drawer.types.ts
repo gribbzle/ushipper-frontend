@@ -1,4 +1,5 @@
-import { ExternalServiceData, FactoringEmailsData, FeeData } from '@types';
+import { ExternalServiceData, FactoringEmailsData } from '@/types/company-external-service-settings';
+import { FeeData } from '@/types/fee';
 
 export type CarrierAccountingDrawerFormValue = {
     isPartner: boolean;

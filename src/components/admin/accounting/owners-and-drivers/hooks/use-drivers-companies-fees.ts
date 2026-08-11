@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 export const useDriversCompaniesFees = (users?: AccountingAccountUserData[]) => {
     return useMemo(() => {

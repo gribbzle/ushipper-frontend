@@ -1,4 +1,4 @@
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 import { isFeeValueTypeFixed, isFeeValueTypePercent } from '../fees';
 

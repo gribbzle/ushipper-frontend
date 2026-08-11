@@ -1,7 +1,7 @@
 import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';
 import { StatisticsCounters } from '@store/api/orders-api';
-import { FormOrdersFilters } from '@types';
+import { FormOrdersFilters } from '@/types/order';
 
 export type OrdersFiltersFormState = Partial<{
     searchSubject: string;

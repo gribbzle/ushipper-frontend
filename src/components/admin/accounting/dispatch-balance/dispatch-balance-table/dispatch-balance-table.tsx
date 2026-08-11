@@ -4,7 +4,8 @@ import { EmptyLayout } from '@/components/common/empty-layout/empty-layout';
 import { BalanceType } from '@/enums/balance-type';
 import { translateByNamespace } from '@utils/i18n';
 
-import { BalanceTable, useBalanceTable } from '../../common';
+import { BalanceTable } from '@/components/admin/accounting/common/balance-table/balance-table';
+import { useBalanceTable } from '@/components/admin/accounting/common/balance-table/use-balance-table';
 
 const t = translateByNamespace('admin:accounting');
 

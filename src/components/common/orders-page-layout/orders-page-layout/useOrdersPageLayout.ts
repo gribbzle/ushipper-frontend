@@ -11,7 +11,7 @@ import { useMeCarrier, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppSelector } from '@store';
 import { GetOrdersData, useGetOrdersQuery, useGetOrdersStatisticsCountersQuery } from '@store/api/orders-api';
 import { authorizedAccountParentIdSelector, authorizedAccountPublicIdSelector, authorizedUserSelector } from '@store/global';
-import { FormOrdersFilters, OrdersFiltersFromUrlParams } from '@types';
+import { FormOrdersFilters, OrdersFiltersFromUrlParams } from '@/types/order';
 
 import { useApplyOrdersFilters, useHandleOrdersLoadError, useIsOrdersPage, useReplacePathOrdersFilters, useScrollToOrdersPage } from '../hooks';
 import { getPartnerStatisticStatus } from '../utils';

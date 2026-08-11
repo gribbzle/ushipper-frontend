@@ -3,6 +3,7 @@ import { Marker } from 'react-map-gl/mapbox';
 
 import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
 import { useDriverTrackingMap } from '@/hooks/tracking/useDriverTrackingMap';
+import { Waypoint } from '@/types/tracking';
 
 import Source from './Direction/Source';
 
@@ -20,7 +21,7 @@ export const OptimizedDirections = (): JSX.Element | null => {
     return (
         <>
             {optimizedRoute.properties.waypoints.map(
-                (waypoint, index): JSX.Element => (
+                (waypoint: Waypoint, index: number): JSX.Element => (
                     <Marker longitude={waypoint.location[0]} latitude={waypoint.location[1]} key={index}>
                         <OrderMarker type='counter' hideLetters={true} orderNumber={waypoint.waypointIndex + 1} />
                     </Marker>

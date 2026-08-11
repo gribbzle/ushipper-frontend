@@ -7,7 +7,7 @@ import {InputLabel} from '@/fields/input-label';
 import {PasswordField, PasswordFieldProps} from '@/fields/password-field';
 import {PrefixedField} from '@/fields/field-prefix';
 import {TextField} from '@/fields/text-field';
-import { EmailServerCredentialType } from '@types';
+import { EmailServerCredentialType } from '@/types/company-external-service-settings';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 

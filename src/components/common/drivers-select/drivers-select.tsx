@@ -83,7 +83,7 @@ export const DriversSelect = ({ ownerAccountId, ...props }: Props) => {
                     isClearable={props.isClearable ?? false}
                     cacheOptions={true}
                     closeMenuOnSelect={props.closeMenuOnSelect}
-                    onBlur={event => props.input.onBlur(event)}
+                    onBlur={(event: React.FocusEvent<HTMLElement, Element>) => props.input.onBlur(event)}
                     placeholder={props.placeholder}
                 />
             )}

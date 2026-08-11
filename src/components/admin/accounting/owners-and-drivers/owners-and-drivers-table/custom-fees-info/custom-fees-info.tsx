@@ -7,7 +7,7 @@ import { PROJECT_KEY_NAME } from '@constants';
 import { CompanyType } from '@/enums/company-type';
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { classname } from '@utils/classname';
 import { formatFeeValueType } from '@utils/fees';
 import { translateByNamespace } from '@utils/i18n';

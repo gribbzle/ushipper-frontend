@@ -1,4 +1,4 @@
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { isRecurringFeeMonthIntervalType, isRecurringFeeWeekIntervalType } from '@utils/transaction/get-is-recurring-fee-interval-type';
 import { summarizeFees } from '@utils/transaction/summarize-fees';
 

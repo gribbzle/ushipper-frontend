@@ -5,7 +5,7 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { useAppDispatch, useAppSelector } from '@store';
 import { accountingActions, createEditFeeCategoryBlockPropsSelector } from '@store/admin';
 import { useGetFeeCategoriesQuery } from '@store/api/fee-categories-api';
-import { FeeCategory } from '@types';
+import { FeeCategory } from '@/types/fee-category';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 import { getFeeCategoryTypeTranslate } from '@utils/translate/get-fee-category-type-translate';

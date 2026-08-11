@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import cleanDeep from 'clean-deep';
 
-import { TransactionsFiltersState } from '@types';
+import { TransactionsFiltersState } from '@/types/transactions';
 
 export const useOpenTransactionsPage = () => {
     return useCallback((params?: Partial<TransactionsFiltersState>) => {

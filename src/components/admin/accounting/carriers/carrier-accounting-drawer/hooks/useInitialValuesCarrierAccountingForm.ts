@@ -7,7 +7,7 @@ import { useAppSelector } from '@store';
 import { carrierAccountingDrawerPropsSelector } from '@store/admin';
 import { useGetCompanyExternalServiceSettingsQuery } from '@store/api/company-external-service-settings';
 import { useGetFeesQuery } from '@store/api/fee-api';
-import { ExternalServiceData, FactoringEmailsData } from '@types';
+import { ExternalServiceData, FactoringEmailsData } from '@/types/company-external-service-settings';
 import { formatFeeForForm } from '@utils/format-fee-for-form';
 import { validateExternalServicePayload, validateFactoringEmailsPayload } from '@validators';
 

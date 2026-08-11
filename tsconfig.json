@@ -29,7 +29,6 @@
             "@logo": ["./src/assets/logos/index"],
             "@validators": ["./src/validators/index"],
             "@schemas": ["./src/schemas/index"],
-            "@types": ["./src/types/index"],
             "@/*": ["./src/*"]
         }
     },

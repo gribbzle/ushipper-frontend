@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { formatFeeValueType } from '@utils/fees';
 
 export const useCompaniesFeesBlock = (fees: Fee[]) => {

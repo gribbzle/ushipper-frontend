@@ -288,7 +288,7 @@ export function SelectField<T>({
                 onInputChange={onInputChange}
                 components={components as any}
                 classNames={classNames}
-                onBlur={event => input.onBlur(event)}
+                onBlur={(event: React.FocusEvent<HTMLElement, Element>) => input.onBlur(event)}
                 styles={styles as any}
                 placeholder={placeholder === undefined ? t('choose-placeholder') : placeholder}
                 closeMenuOnSelect={closeMenuOnSelect}

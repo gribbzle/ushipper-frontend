@@ -1,7 +1,7 @@
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { FeePeriod } from '@/enums/fee/fee-periods-enum';
 import { useCreateFeeMutation, usePathFeeMutation } from '@store/api/fee-api';
-import { FeeData, RecurringFeeData } from '@types';
+import { FeeData, RecurringFeeData } from '@/types/fee';
 
 export const useHandleCreateEditAccountFees = () => {
     const [updateFee] = usePathFeeMutation();

@@ -1,5 +1,5 @@
 import { FactoringProvider } from '@/enums/company/factoring-provider';
-import { EmailServerCredentialType } from '@types';
+import { EmailServerCredentialType } from '@/types/company-external-service-settings';
 
 export const DEFAULT_FACTORING_EMAILS_SETTINGS = {
     driver: FactoringProvider.FACTORING_EXPRESS,

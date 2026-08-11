@@ -1,5 +1,5 @@
 import { useCreateFeeMutation, usePathFeeMutation } from '@store/api/fee-api';
-import { FeeData } from '@types';
+import { FeeData } from '@/types/fee';
 
 export const useHandleCreateEditCompanyFees = () => {
     const [updateFee] = usePathFeeMutation();

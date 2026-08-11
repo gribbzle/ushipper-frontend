@@ -1,4 +1,4 @@
-import { FeeCategory } from '@types';
+import { FeeCategory } from '@/types/fee-category';
 
 export type CurrencyPercentageFieldProps = {
     fieldName: string;

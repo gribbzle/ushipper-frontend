@@ -1,4 +1,4 @@
-import { Fee, FeeData, FeeParams } from '@types';
+import { Fee, FeeData, FeeParams } from '@/types/fee';
 
 import { apiSlice } from './api-slice';
 

@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 
 import { useHandleFiltersChange } from '@/hooks/filters/use-handle-filters-change';
 import { useQueryFilters } from '@/hooks/filters/use-query-filters';
-import { AdminFormOrdersFilters } from '@types';
+import { AdminFormOrdersFilters } from '@/types/order';
 import { convertToStringArray } from '@utils/converter';
 
 export const useCODOrdersFilters = () => {

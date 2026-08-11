@@ -13,7 +13,8 @@ import { TransactionTypesEnum } from '@/enums/transactions/transaction-types-enu
 import { AccountingAccountData, AccountingAccountUserData } from '@store/api/accounting-accounts-api';
 import { AccountingProfileDocument, AccountInitiatePaymentMethod } from '@store/api/accounts-api';
 import { User } from '@store/common/staff/types';
-import { Fee, FeeCategory } from '@types';
+import { Fee } from '@/types/fee';
+import { FeeCategory } from '@/types/fee-category';
 import { FinancialBalanceData } from '@store/admin';
 
 import { Company } from '../companies';

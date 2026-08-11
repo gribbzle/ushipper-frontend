@@ -75,7 +75,7 @@ export const DispatchersSelect = (props: FieldRenderProps<string[]>) => {
                     isClearable={true}
                     cacheOptions={true}
                     closeMenuOnSelect={props.closeMenuOnSelect}
-                    onBlur={event => props.input.onBlur(event)}
+                    onBlur={(event: React.FocusEvent<HTMLElement, Element>) => props.input.onBlur(event)}
                     placeholder={props.placeholder}
                 />
             )}

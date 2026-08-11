@@ -6,7 +6,8 @@ import { PROJECT_KEY_NAME } from '@constants';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
-import { EditFeeItem, FeesFieldsWrapper, getFeeTermTypesFieldsOfProject, renderAddButton } from '../../../common';
+import { EditFeeItem } from '@/components/admin/accounting/common/edit-fee-item/edit-fee-item';
+import { FeesFieldsWrapper, getFeeTermTypesFieldsOfProject, renderAddButton } from '@/components/admin/accounting/common/fees-fields-wrapper/fees-fields-wrapper';
 import { CarrierAccountingDrawerFormValue } from '../carrier-accounting-drawer.types';
 
 import { useFeesFieldsBlock } from './use-fees-fields-block';

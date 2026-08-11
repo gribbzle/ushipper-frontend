@@ -1,6 +1,6 @@
 import { Schema } from 'joi';
 
-import { ExternalServiceData, FactoringEmailsData } from '@types';
+import { ExternalServiceData, FactoringEmailsData } from '@/types/company-external-service-settings';
 
 import { externalServiceValidationSchema, factoringEmailsValidationSchema } from '../schemas/company-external-service-settings';
 import { changesInfoDetailsSchema } from '../schemas/issue';

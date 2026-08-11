@@ -21,37 +21,32 @@ export const getAddressByName = (search: string, geocoding: GeocodingCore): Prom
 };
 
 export const getAddressName = (feature: GeocodingFeature): string => {
-    switch (feature.place_type[0]) {
-        case 'region': {
-            const [country, region] = feature.properties.short_code?.split('-') || [];
+    const props = feature.properties;
+    const ctx = props.context;
 
-            return `${region}, ${country}`;
+    switch (props.feature_type) {
+        case 'region': {
+            return `${ctx.region?.name}, ${ctx.country?.name}`;
         }
         case 'place': {
-            const [country, region] = feature.context[1].short_code?.split('-') || [];
-
-            return `${feature.text}, ${region}, ${country}`;
+            return `${props.name}, ${ctx.region?.name}, ${ctx.country?.name}`;
         }
         case 'locality': {
-            const [country, region] = feature.context[2].short_code?.split('-') || [];
-
-            return `${feature.text}, ${feature.context[0].text}, ${region}, ${country}`;
+            return `${props.name}, ${ctx.place?.name}, ${ctx.region?.name}, ${ctx.country?.name}`;
         }
         case 'postcode':
-            const [country, region] = feature.context[2].short_code?.split('-') || [];
-
-            return `${feature.text}, ${feature.context[0].text}${region ? `, ${region}` : ''}${country ? `, ${country}` : ''}`;
+            return `${props.name}, ${ctx.place?.name}${ctx.region?.name ? `, ${ctx.region?.name}` : ''}${ctx.country?.name ? `, ${ctx.country?.name}` : ''}`;
         default:
-            return feature.place_name;
+            return props.full_address;
     }
 };
 
 export const getPlaceName = (feature: GeocodingFeature): string => {
-    switch (feature.place_type[0]) {
+    switch (feature.properties.feature_type) {
         case 'postcode':
-            return feature.text;
+            return feature.properties.name;
         default:
-            return feature.place_name;
+            return feature.properties.full_address;
     }
 };
 

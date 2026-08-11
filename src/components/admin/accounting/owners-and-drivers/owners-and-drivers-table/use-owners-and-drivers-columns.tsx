@@ -19,7 +19,10 @@ import { usePartiallyUpdateAccountMutation } from '@store/api/accounts-api';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 
-import { AccountBalanceInfo, AddDriverToCompanyButton, CompaniesUsersInfo, VerifiedStatusInfo } from '../../common';
+import { AccountBalanceInfo } from '@/components/admin/accounting/common/account-balance-info/account-balance-info';
+import { AddDriverToCompanyButton } from '@/components/admin/accounting/common/add-driver-to-company-button/add-driver-to-company-button';
+import { CompaniesUsersInfo } from '@/components/admin/accounting/common/companies-users-info/companies-users-info';
+import { VerifiedStatusInfo } from '@/components/admin/accounting/common/verified-status-info/verified-status-info';
 
 import { CustomFeesInfo } from './custom-fees-info';
 import { LatestLocationInfo } from './latest-location-block';

@@ -14,7 +14,7 @@ import { FormValuesSpy } from '@utils/form';
 import { translateByNamespace } from '@utils/i18n';
 import { required } from '@validators';
 
-import { WalletsSelect } from '../../common';
+import { WalletsSelect } from '@/components/admin/accounting/common/wallets-select/wallets-select';
 
 import { CreateEditFeeCategoryFormState } from './create-edit-fee-category-block.types';
 import { useCreateEditFeeCategoryBlock } from './use-create-edit-fee-category-block';

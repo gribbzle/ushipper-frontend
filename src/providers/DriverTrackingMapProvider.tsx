@@ -1,7 +1,7 @@
 import React, { createContext, ReactNode, useCallback, useState } from 'react';
 
 import { Driver, OrderTracking } from '@store/client';
-import { Geo } from '@types';
+import { Geo } from '@/types/tracking';
 
 export type DriverTrackingMap = {
     driver?: Driver;

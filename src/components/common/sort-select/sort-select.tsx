@@ -1,5 +1,5 @@
 import React, { useEffect, useId, useState } from 'react';
-import { ActionMeta, components, default as ReactSelect, DropdownIndicatorProps, MultiValue, OptionProps, SingleValue } from 'react-select';
+import { ActionMeta, components, ControlProps, default as ReactSelect, DropdownIndicatorProps, MultiValue, MultiValueProps, OptionProps, SingleValue } from 'react-select';
 
 import { Divider } from '@/components/common/divider/divider';
 import { OfferSortingName } from '@/enums/offer-sorting-name';
@@ -102,7 +102,7 @@ export const SortSelect = (props: Props) => {
                 menuList: () => cn('dropdown-menu'),
                 singleValue: () => cn('value'),
                 input: () => cn('input'),
-                control: props => cn('control', { disabled: props.isDisabled, 'menu-opened': props.menuIsOpen }),
+                control: (props: ControlProps<SortSelectOption, boolean, SortSelectGroup>) => cn('control', { disabled: props.isDisabled, 'menu-opened': props.menuIsOpen }),
                 placeholder: () => cn('placeholder'),
                 group: () => cn('group'),
                 valueContainer: () => cn('value-container'),
@@ -116,7 +116,7 @@ export const SortSelect = (props: Props) => {
             closeMenuOnSelect={closeMenuOnSelect}
             components={{
                 DropdownIndicator,
-                MultiValue: props => <span>{props.data.labelForInput || props.data.label}</span>,
+                MultiValue: (props: MultiValueProps<SortSelectOption, boolean, SortSelectGroup>) => <span>{props.data.labelForInput || props.data.label}</span>,
                 Option,
                 GroupHeading: () => <Divider className={cn('divider')} />,
                 IndicatorSeparator: () => null,

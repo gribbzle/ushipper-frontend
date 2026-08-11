@@ -1,6 +1,6 @@
 import Joi from 'joi';
 
-import { FeeData } from '@types';
+import { FeeData } from '@/types/fee';
 
 import {
     feeCategoryTermTypeValidator,

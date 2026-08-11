@@ -1,7 +1,7 @@
 import { Feature, Point } from 'geojson';
 
 import bbox from '@turf/bbox';
-import { Coordinate } from '@types';
+import { Coordinate } from '@/types/tracking';
 
 export * from './map-order-status-to-tracking-order-status';
 export * from './get-order-tracking-points';

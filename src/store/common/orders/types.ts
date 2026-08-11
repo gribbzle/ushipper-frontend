@@ -20,7 +20,7 @@ import { OrderExpense } from '@store/api/order-expenses-api';
 import { OrderInternalNote } from '@store/api/order-internal-notes-api';
 import { OrderRequest } from '@store/api/order-requests-types';
 import { User } from '@store/common/staff/types';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 import { Review } from '../../client/review/types';
 

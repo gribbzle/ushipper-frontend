@@ -3,7 +3,7 @@ import { toCamelCase } from 'js-convert-case';
 import { RequestError } from '@/shared';
 import { ExternalServiceType } from '@/enums/company/external-service-type';
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
-import { FeeData } from '@types';
+import { FeeData } from '@/types/fee';
 
 export const getExternalServiceFieldPrefix = (serviceType: ExternalServiceType) => toCamelCase(serviceType);
 

@@ -1,4 +1,4 @@
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { isFeeValueTypePercent } from '@utils/fees';
 import { formatToCurrency } from '@utils/numbers';
 

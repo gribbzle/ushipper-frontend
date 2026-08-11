@@ -38,12 +38,12 @@ export const useAddressSuggestions = ({ search = '', hasRegionsSuggestions }: Ad
 
     const suggestions = useMemo<Array<AutocompleteSuggestion>>(() => {
         const addressSuggestions = addresses.map(address => {
-            const center = Array.isArray(address.center) ? address.center : [undefined, undefined];
+            const coords = address.geometry?.coordinates ?? [undefined, undefined];
 
             return {
                 value: getAddressName(address),
-                lat: center[1],
-                long: center[0],
+                lat: coords[1],
+                long: coords[0],
                 address: address,
             };
         });

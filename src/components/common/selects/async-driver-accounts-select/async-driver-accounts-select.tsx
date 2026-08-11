@@ -63,7 +63,7 @@ export const AsyncDriverAccountsSelect = ({ input, meta, callback, placeholder, 
                     isClearable={true}
                     cacheOptions={true}
                     closeMenuOnSelect={true}
-                    onBlur={event => input.onBlur(event)}
+                    onBlur={(event: React.FocusEvent<HTMLElement, Element>) => input.onBlur(event)}
                     errorText={meta.error || meta.submitError}
                     errored={errored}
                     placeholder={placeholder ?? t('all-placeholder')}

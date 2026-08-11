@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import { OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams } from '@types';
+import { OrdersAminFiltersFromUrlParams, OrdersFiltersFromUrlParams } from '@/types/order';
 import { getAllAminOrdersFiltersFromUrlParams, getAllOrdersFiltersFromUrlParams } from '@utils/orders/filters-helpers';
 
 type FilterType = OrdersFiltersFromUrlParams | OrdersAminFiltersFromUrlParams;

@@ -1,4 +1,4 @@
-import { FeeData, RecurringFeeData } from '@types';
+import { FeeData, RecurringFeeData } from '@/types/fee';
 
 /**
  * Combines delayed and instant fees and extracts deleted fee IDs.

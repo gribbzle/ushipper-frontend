@@ -13,7 +13,7 @@ import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
 import { useDriversActionsPermission } from '@/hooks/accounting/use-drivers-actions-permission';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { Fee, FeeData } from '@types';
+import { Fee, FeeData } from '@/types/fee';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';
 

@@ -1,5 +1,5 @@
 import { apiSlice } from '@store/api/api-slice';
-import { CompanyExternalServiceParams, CompanyExternalServiceSettings, ExternalServiceCredentialsRequest, FactoringEmailSettingsRequest } from '@types';
+import { CompanyExternalServiceParams, CompanyExternalServiceSettings, ExternalServiceCredentialsRequest, FactoringEmailSettingsRequest } from '@/types/company-external-service-settings';
 
 export const companyExternalServiceSettingsApi = apiSlice.injectEndpoints({
     endpoints: builder => ({

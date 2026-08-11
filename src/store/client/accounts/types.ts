@@ -6,7 +6,7 @@ import { BalanceResource } from '@store/admin/accounting/balance-types';
 import { Company } from '@store/admin/companies/types';
 import { Avatar } from '@store/common/staff/avatar-types';
 import { Permissions } from '@store/global/shared-types';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 
 type AccountUserRole = {
     name: string;

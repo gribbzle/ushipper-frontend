@@ -4,7 +4,7 @@ import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { PROJECT_KEY_NAME } from '@constants';
 import { FeeCategoryTermType } from '@/enums/fee/fee-category-term-types-enum';
 import { AccountingAccountUserData } from '@store/api/accounting-accounts-api';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

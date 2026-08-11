@@ -8,7 +8,7 @@ import { OrderType } from '@/enums/order/order-type';
 import { useAppSelector } from '@store';
 import { GetOrdersData, useGetOrdersQuery } from '@store/api/orders-api';
 import { authorizedUserSelector } from '@store/global';
-import { AdminFormOrdersFilters, OrdersAminFiltersFromUrlParams } from '@types';
+import { AdminFormOrdersFilters, OrdersAminFiltersFromUrlParams } from '@/types/order';
 
 import { useApplyAminOrdersFilters, useHandleOrdersLoadError, useIsOrdersPage, useReplacePathOrdersFilters, useScrollToOrdersPage } from '../hooks';
 

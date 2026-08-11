@@ -3,7 +3,7 @@ import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { CompanyTotalRating } from '@store/api/company-rating-types';
 import { Specialization } from '@store/common/specialization/types';
 import { Avatar } from '@store/common/staff/avatar-types';
-import { Fee } from '@types';
+import { Fee } from '@/types/fee';
 import { PaginatedResponse, RequestWithStatus } from '@utils/redux';
 
 type CompanyLogo = {

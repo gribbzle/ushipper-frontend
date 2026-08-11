@@ -1,5 +1,6 @@
 import { AccountSubTypesEnum } from '@/enums/account-subtypes-enum';
-import { Address, FeeCategory } from '@types';
+import { Address } from '@/types/address';
+import { FeeCategory } from '@/types/fee-category';
 
 import { BalanceResource, BalanceValue } from './balance-types';
 

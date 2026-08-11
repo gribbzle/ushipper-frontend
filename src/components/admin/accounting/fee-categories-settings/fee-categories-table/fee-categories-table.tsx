@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Table } from '@/components/common/table/table';
-import { FeeCategory } from '@types';
+import { FeeCategory } from '@/types/fee-category';
 import { classname } from '@utils/classname';
 
 import { useFeeCategoriesTable } from './use-fee-categories-table';

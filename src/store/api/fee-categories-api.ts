@@ -1,5 +1,5 @@
 import { CreateEditFeeCategoryFormState } from '@/components/admin/accounting/fee-categories-settings/create-edit-fee-category-block/create-edit-fee-category-block.types';
-import { FeeCategory } from '@types';
+import { FeeCategory } from '@/types/fee-category';
 
 import { apiSlice } from './api-slice';
 

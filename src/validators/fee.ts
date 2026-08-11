@@ -1,6 +1,6 @@
 import { Schema } from 'joi';
 
-import { FeeData } from '@types';
+import { FeeData } from '@/types/fee';
 
 import { feeDataSchema } from '../schemas/fee';
 
