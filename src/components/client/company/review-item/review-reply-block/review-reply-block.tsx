@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { OrderItemInfoColumn } from '@/components/client/orders';
+import { OrderItemInfoColumn } from '@/components/client/orders/order-item-info-column/order-item-info-column';
 import { Button } from '@/components/common/button/button';
 import { UserInfoBlock } from '@/components/common/user-info-block/user-info-block';
 import { useAppDispatch, useAppSelector } from '@store';

@@ -24,7 +24,7 @@ import { translateByNamespace } from '@utils/i18n';
 import { formatMetersToMiles, formatToCurrency } from '@utils/numbers';
 import { translateOrderStatus } from '@utils/translate/order/get-order-status-translate';
 
-import { OrderTag } from '../../orders';
+import { OrderTag } from '@/components/client/orders/order-tag/order-tag';
 
 import './driver-order.scss';
 

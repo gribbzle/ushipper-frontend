@@ -2,7 +2,7 @@ import { SortSelectValue } from '@/components/common/sort-select/sort-select';
 import { CatalogSortingNameEnum } from '@/enums/catalog-sorting-name-enum';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 
-import { CategoryFields } from '../../profile-settings';
+import { CategoryFields } from '@/components/client/profile-settings/business-info/business-info-form.types';
 
 export type RatingOrDispatchFeeFilter = {
     from: number;

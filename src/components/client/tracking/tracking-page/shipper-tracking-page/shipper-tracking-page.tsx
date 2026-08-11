@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { OrderChatDrawer } from '@/components/client/orders/drawers/order-chat-drawer';
 import { OrderSendOfferToCarrierDrawer } from '@/components/client/orders/drawers/order-send-offer-to-carrier-drawer';
-import { SendOfferToRequestDrawer } from '@/components/client/requests';
+import { SendOfferToRequestDrawer } from '@/components/client/requests/send-offer-to-request-drawer/send-offer-to-request-drawer';
 import { TrackingOrderStatus } from '@/enums/tracking/tracking-order-status-enum';
 import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useAppDispatch, useAppSelector } from '@store';

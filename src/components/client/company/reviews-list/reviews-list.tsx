@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import { Review } from '@store/client';
 import { classname } from '@utils/classname';
 
-import { OrderReviewPopup } from '../../orders';
+import { OrderReviewPopup } from '@/components/client/orders/popups/order-review-popup/order-review-popup';
 import { ReviewItem } from '../review-item';
 
 import './reviews-list.scss';
