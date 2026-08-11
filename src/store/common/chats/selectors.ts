@@ -4,6 +4,8 @@ import { RequestStatus } from '@utils/redux';
 
 import { SupportChatDrawerPropsState } from './types';
 
+const EMPTY_ARRAY: never[] = [];
+
 export const chatsSelector = (state: AppState) => state.common.chats;
 
 export const chatsNextCursorSelector = (state: AppState) => {
@@ -66,16 +68,16 @@ export const chatMessagesSelector = (chatId: string | null) => (state: AppState)
     }
     const { chats } = chatsSelector(state);
 
-    return chats[chatId]?.messages || [];
+    return chats[chatId]?.messages || EMPTY_ARRAY;
 };
 
 export const chatUnreadMessagesSelector = (chatId: string | null) => (state: AppState) => {
     if (!chatId) {
-        return [];
+        return EMPTY_ARRAY;
     }
     const { chats } = chatsSelector(state);
 
-    return chats[chatId]?.unreadMessages || [];
+    return chats[chatId]?.unreadMessages || EMPTY_ARRAY;
 };
 
 export const chatMessagesRequestSelector = (chatId: string | null) => (state: AppState) => {
