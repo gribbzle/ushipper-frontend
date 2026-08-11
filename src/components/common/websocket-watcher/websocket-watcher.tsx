@@ -19,29 +19,21 @@ if (isClientSide()) {
 }
 
 const getEchoOptions = (authToken: string) => ({
-    authEndpoint: `${process.env.pusherScheme}://${process.env.pusherHost}/api/broadcasting/auth`,
-    auth: {
-        headers: {
-            Accept: 'application/json',
-            Authorization: authToken,
-        },
-    },
-    broadcaster: 'pusher' as const,
-    httpHost: process.env.pusherHost,
-    httpsHost: process.env.pusherHost,
-    wsHost: process.env.pusherHost,
-    wssHost: process.env.pusherHost,
+    broadcaster: 'reverb',
     key: process.env.pusherAppKey,
-    wsPort: process.env.pusherPort,
-    wssPort: process.env.pusherPort,
+    wsHost: process.env.pusherHost,
+    wssPort: Number(process.env.pusherPort),
+    wsPort: Number(process.env.pusherPort),
     forceTLS: false,
     disableStats: true,
-    cluster: process.env.pusherAppCluster,
+    enabledTransports: ['ws', 'wss'],
+    authEndpoint: `${process.env.pusherScheme}://${process.env.pusherHost}/api/broadcasting/auth`,
+    auth: { headers: { Accept: 'application/json', Authorization: authToken } },
 });
 
 export const WebsocketWatcher = () => {
     const dispatch = useAppDispatch();
-    const echoRef = useRef<Echo<'pusher'>>();
+    const echoRef = useRef<Echo<'reverb'>>();
     const router = useRouter();
 
     const isAuthorized = useAppSelector(isUserAuthorizedSelector);

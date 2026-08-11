@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import { Rating as StarRating, RatingProps } from 'react-simple-star-rating';
 
 import { classname } from '@utils/classname';
@@ -21,7 +22,7 @@ type Props = RatingProps & {
     onChange?: (value: string) => void;
 };
 
-export const Rating = ({ size = 16, readonly = true, allowFraction = false, onChange, ...rest }: Props) => {
+const RatingBase = ({ size = 16, readonly = true, allowFraction = false, onChange, ...rest }: Props) => {
     const handleRating = useCallback(
         (value: number) => {
             onChange?.(value.toString());
@@ -41,6 +42,8 @@ export const Rating = ({ size = 16, readonly = true, allowFraction = false, onCh
         />
     );
 };
+
+export const Rating = dynamic(() => Promise.resolve(RatingBase), { ssr: false });
 
 export const RatingOneStarIcon = ({ initialValue, ...rest }: Props) => {
     const initialValueForPercent = (initialValue ?? 0) / 5;

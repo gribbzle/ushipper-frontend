@@ -1,5 +1,6 @@
 import { AppState } from "@store";
 
+const EMPTY_ARRAY: any[] = [];
 const contactsPageSelector = (state: AppState) => state.common.contacts;
 
 export const isCreateEditContactModalVisibleSelector = (state: AppState) => {
@@ -29,7 +30,7 @@ export const contactsFiltersSelector = (state: AppState) => {
 export const fetchedContactsSelector = (state: AppState) => {
     const { fetchContacts } = contactsPageSelector(state);
 
-    return fetchContacts.data?.data ?? [];
+    return fetchContacts.data?.data ?? EMPTY_ARRAY;
 };
 
 export const fetchedContactsStatusSelector = (state: AppState) => {

@@ -10,12 +10,19 @@ services:
       - API_BASE_URL=${API_BASE_URL}
       - MAPBOX_TOKEN=${MAPBOX_TOKEN}
       - PROJECT_NAME=${PROJECT_NAME}
+      - PUSHER_SCHEME=${PUSHER_SCHEME}
+      - PUSHER_HOST=${PUSHER_HOST}
+      - PUSHER_PORT=${PUSHER_PORT}
+      - PUSHER_APP_KEY=${PUSHER_APP_KEY}
+      - PUSHER_APP_CLUSTER=${PUSHER_APP_CLUSTER}
     volumes:
       - ./src:/application/src
       - ./server:/application/server
       - ./public:/application/public
       - next-cache:/application/.next
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 volumes:
   next-cache:

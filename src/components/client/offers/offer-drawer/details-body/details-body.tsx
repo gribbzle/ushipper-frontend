@@ -62,7 +62,7 @@ export default function DetailsBody({ offer }: Props) {
         const key = entry[0];
         const value = entry[1];
 
-        return <div className={cn('value')}>{infoKeysRenderers[key] ? infoKeysRenderers[key](value) : value}</div>;
+        return <div key={key} className={cn('value')}>{infoKeysRenderers[key] ? infoKeysRenderers[key](value) : value}</div>;
     };
     const isCarrier = useMeCarrier();
     const isShipper = useMeShipper();

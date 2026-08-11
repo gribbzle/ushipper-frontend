@@ -1,11 +1,13 @@
 import { AppState } from "@store";
 
+const EMPTY_ARRAY: any[] = [];
+
 export const blackListPageSelector = (state: AppState) => state.common.blackList;
 
 export const fetchedBlackListItemsSelector = (state: AppState) => {
     const { fetchBlackListItems } = blackListPageSelector(state);
 
-    return fetchBlackListItems.data?.data ?? [];
+    return fetchBlackListItems.data?.data ?? EMPTY_ARRAY;
 };
 
 export const isCreateEditBlackListItemModalVisibleSelector = (state: AppState) => {

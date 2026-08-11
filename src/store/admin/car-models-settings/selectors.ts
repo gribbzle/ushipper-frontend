@@ -1,11 +1,13 @@
 import { AppState } from "@store";
 
+const EMPTY_ARRAY: any[] = [];
+
 const carModelsSettingsPageSelector = (state: AppState) => state.admin.carModelsSettings;
 
 export const carModelsSelector = (state: AppState) => {
     const { fetchCarModels } = carModelsSettingsPageSelector(state);
 
-    return fetchCarModels.data?.data ?? [];
+    return fetchCarModels.data?.data ?? EMPTY_ARRAY;
 };
 
 export const carModelsFiltersSelector = (state: AppState) => {

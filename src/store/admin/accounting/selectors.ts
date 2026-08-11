@@ -3,6 +3,8 @@ import { AccountingAccountData } from '@store/api/accounting-accounts-api';
 import { FinancialBalanceData } from '@store/admin';
 import { AppState } from "@store";
 
+const EMPTY_ARRAY: any[] = [];
+
 import {
     AccountingDrawerPropsState,
     AddDriverToCompanyPopupPropsState,
@@ -43,7 +45,7 @@ export const selectedAccountSelector = (state: AppState): AccountingAccountData 
 export const balancesFromSelectedAccountSelector = (state: AppState) => {
     const account = selectedAccountSelector(state);
 
-    return account?.balances ?? [];
+    return account?.balances ?? EMPTY_ARRAY;
 };
 
 export const internalUserWalletFromSelectedAccountSelector = (state: AppState) => {

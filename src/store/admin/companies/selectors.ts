@@ -1,11 +1,13 @@
 import { AppState } from "@store";
 
+const EMPTY_ARRAY: any[] = [];
+
 const companiesPageSelector = (state: AppState) => state.admin.companies;
 
 export const fetchedCompaniesSelector = (state: AppState) => {
     const { fetchCompanies } = companiesPageSelector(state);
 
-    return fetchCompanies.data?.data ?? [];
+    return fetchCompanies.data?.data ?? EMPTY_ARRAY;
 };
 
 export const companiesRequestStatusSelector = (state: AppState) => {
