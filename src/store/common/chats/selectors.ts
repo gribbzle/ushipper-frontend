@@ -1,3 +1,4 @@
+import { createSelector } from '@reduxjs/toolkit';
 import { AppState } from "@store";
 import { RequestStatus } from '@utils/redux';
 
@@ -11,15 +12,14 @@ export const chatsNextCursorSelector = (state: AppState) => {
     return getChatsRequest.nextCursor;
 };
 
-export const isChatsDrawerOpenSelector = (state: AppState) => {
-    const { isDrawerOpen, needToReset, setSelectedAtTop } = chatsSelector(state);
-
-    return {
+export const isChatsDrawerOpenSelector = createSelector(
+    [chatsSelector],
+    ({ isDrawerOpen, needToReset, setSelectedAtTop }) => ({
         isDrawerOpen,
         needToReset,
         setSelectedAtTop,
-    };
-};
+    }),
+);
 
 export const drawerChatsSelector = (state: AppState) => {
     const { drawerChats } = chatsSelector(state);
