@@ -1,6 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { fetchSignUpConfig, signUp, usdotVerify } from '@api';
+import { fetchSignUpConfig, signUp } from '@api/common';
+import { usdotVerify } from '@api/usdot';
 
 import { SignUpConfig, SignUpFormData } from './types';
 

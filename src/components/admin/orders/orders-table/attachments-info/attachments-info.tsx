@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
 import { useHandleViewBol } from '@/hooks/order/use-handle-view-bol';
 import { Attachment } from '@/shared/types';
-import { fetchOrderBOL } from '@api';
+import { fetchOrderBOL } from '@api/orderBOL';
 import { AttachmentType } from '@/enums/attachment-types-enum';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { ImageProvider } from '@/providers/ImageProvider';

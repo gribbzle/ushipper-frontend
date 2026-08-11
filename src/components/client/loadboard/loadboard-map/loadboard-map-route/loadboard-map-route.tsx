@@ -3,7 +3,7 @@ import type { FeatureCollection } from 'geojson';
 import { Layer, Marker, Source } from 'react-map-gl/mapbox';
 
 import { RouteMarkerType } from '@/enums/route-marker-type-enum';
-import { fetchRouteGeoJSON } from '@api';
+import { fetchRouteGeoJSON } from '@api/tracking';
 import { useAppSelector } from '@store';
 import { loadboardListSelector } from '@store/client/loadboard/selectors';
 

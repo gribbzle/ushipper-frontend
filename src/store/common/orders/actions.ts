@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { createOrder, fetchOrder, sendOrderBOL, updateOrder } from '@api';
+import { createOrder, fetchOrder, sendOrderBOL, updateOrder } from '@api/orders';
 
 import { translateByNamespace } from '../../../utils/i18n';
 

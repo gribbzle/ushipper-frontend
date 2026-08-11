@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { createUpdateCarMaker, deleteCarMaker, fetchCarMaker, fetchCarMakers } from '@api';
+import { createUpdateCarMaker, deleteCarMaker, fetchCarMaker, fetchCarMakers } from '@api/car-makers';
 import { composeBuilder, requestInitial } from '@utils/redux';
 
 import { carMakersFiltersSelector, createEditCarMakerDrawerPropsSelector, deleteCarMakerPopupPropsSelector } from './selectors';

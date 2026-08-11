@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { requestResetPassword, resetPassword } from '@api';
+import { requestResetPassword, resetPassword } from '@api/common';
 
 import { RequestResetPasswordData, ResetPasswordData } from './types';
 

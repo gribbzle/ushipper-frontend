@@ -5,7 +5,7 @@ import { MapRef, Marker } from 'react-map-gl/mapbox';
 import { OrderStatus } from '@/enums/order-status';
 import { isNumber } from '@/shared/type-guards';
 import { formatDrivingDistance } from '@/utils/driving';
-import { getDistanceMatrix } from '@api';
+import { getDistanceMatrix } from '@api/tracking';
 import { useDeliveryMetrics } from '@/hooks/tracking/use-delivery-metrics';
 import { useShipperTrackingDriver } from '@/hooks/tracking/use-shipper-tracking-driver';
 import { useAppSelector } from '@store';

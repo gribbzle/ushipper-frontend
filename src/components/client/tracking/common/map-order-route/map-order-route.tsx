@@ -3,7 +3,7 @@ import type { FeatureCollection } from 'geojson';
 import { LngLatBounds } from 'mapbox-gl';
 import { Layer, MapRef, Source } from 'react-map-gl/mapbox';
 
-import { fetchRouteGeoJSON } from '@api';
+import { fetchRouteGeoJSON } from '@api/tracking';
 import { useAppSelector } from '@store';
 import { selectedIsTestRoutePathLogic, TrackingMapPoint } from '@store/client';
 

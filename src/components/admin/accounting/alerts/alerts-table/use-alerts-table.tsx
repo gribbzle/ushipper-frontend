@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import { fetchOrder } from '@api';
+import { fetchOrder } from '@api/orders';
 import { IssueReasonTypesEnum } from '@/enums/issues/issue-reason-types-enum';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { useQueryFilters } from '@/hooks/filters/use-query-filters';

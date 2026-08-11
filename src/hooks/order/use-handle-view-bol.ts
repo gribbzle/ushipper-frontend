@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { fetchOrderBOL } from '@api';
+import { fetchOrderBOL } from '@api/orderBOL';
 import { downloadFileUsingAnchorElement } from '@utils/files';
 
 export const useHandleViewBol = (publicId: string | null) => {

@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { createEditContact, deleteContact, fetchContact, fetchContacts } from '@api';
+import { createEditContact, deleteContact, fetchContact, fetchContacts } from '@api/contacts';
 
 import { translateByNamespace } from '../../../utils/i18n';
 

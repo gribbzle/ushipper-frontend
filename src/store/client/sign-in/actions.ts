@@ -10,9 +10,9 @@ import {
     fetchedAuthorizedAccount,
     fetchedAuthorizedUser,
     fetchedUserPermissions,
-    revokeToken,
     signIn,
-} from '@api';
+} from '@api/common';
+import { revokeToken } from '@api/auth';
 import { globalActions } from '@store/global';
 
 import { SignInFormData, Token } from './types';

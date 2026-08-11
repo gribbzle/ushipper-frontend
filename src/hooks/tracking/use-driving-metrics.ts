@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { calculateDeliveryTime } from '@/utils/driving';
-import { getDistanceMatrix } from '@api';
+import { getDistanceMatrix } from '@api/tracking';
 
 type Coordinates = {
     geoLatitude: number | null;

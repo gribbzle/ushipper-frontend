@@ -2,7 +2,8 @@ import { toast } from 'react-toastify';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
-import { createEditCarModel, deleteCarModel, fetchCarMakers, fetchCarModel, fetchCarModels, fetchCarModelStatuses } from '@api';
+import { createEditCarModel, deleteCarModel, fetchCarModel, fetchCarModels, fetchCarModelStatuses } from '@api/car-models';
+import { fetchCarMakers } from '@api/car-makers';
 import { CarMaker } from '@store/admin/car-makers-settings/types';
 import { composeBuilder, PaginatedData, requestInitial } from '@utils/redux';
 

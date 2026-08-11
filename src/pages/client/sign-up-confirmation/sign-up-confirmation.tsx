@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
-import { signUpConfirm } from '@api';
+import { signUpConfirm } from '@api/common';
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { getProductInfoLayout } from '@/components/common/product-info-layout/product-info-layout';

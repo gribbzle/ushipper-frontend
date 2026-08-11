@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button } from '@/components/common/button/button';
-import { getArchiveOfInspectionCarBodyPhotos } from '@api';
+import { getArchiveOfInspectionCarBodyPhotos } from '@api/orderBOL';
 import { ImageProvider } from '@/providers/ImageProvider';
 import { InspectionPhoto } from '@store/client/order-BOL';
 import { ImageView } from '@/components/ui/surfaces/image';

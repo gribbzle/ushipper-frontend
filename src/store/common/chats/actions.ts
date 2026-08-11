@@ -15,7 +15,7 @@ import {
     readMessage,
     sendMessage,
     updateMessage,
-} from '@api';
+} from '@api/chats';
 import { cleanPhoneNumber } from '@utils/phone';
 import { RequestStatus } from '@utils/redux';
 

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 
 import { OffersCountEvent, RequestCountEvent } from '@/components/common/websocket-watcher/types';
-import { fetchChat } from '@api';
+import { fetchChat } from '@api/chats';
 import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { issuesApi } from '@store/api/issues-api';

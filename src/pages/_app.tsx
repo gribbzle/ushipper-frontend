@@ -16,7 +16,7 @@ import {
     fetchedDriverPaymentRequestCounter,
     fetchedIssuesCounter,
     fetchedUserPermissions,
-} from '@/api';
+} from '@api/common';
 import RouterProvider from '@/components/common/router-provider/router-provider';
 import { wrapper } from '@/store';
 import { AccountData, AccountUser } from '@/store/client/accounts/types';

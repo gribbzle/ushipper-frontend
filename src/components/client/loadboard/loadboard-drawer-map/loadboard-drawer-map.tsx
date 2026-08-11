@@ -5,7 +5,7 @@ import type { MapRef } from 'react-map-gl/mapbox';
 import { Layer, Map as MapGL, Marker, Source } from 'react-map-gl/mapbox';
 
 import { OrderMarker } from '@/components/client/tracking/common/order-marker/order-marker';
-import { fetchRouteGeoJSON } from '@api';
+import { fetchRouteGeoJSON } from '@api/tracking';
 import { OrderDeliveryInformation, OrderPickupInformation } from '@store/client';
 import { classname } from '@utils/classname';
 
