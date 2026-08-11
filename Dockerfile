@@ -1,4 +1,4 @@
-FROM node:20-slim AS modules
+FROM node:22-slim AS modules
 WORKDIR /modules
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libvips-dev \
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY package.json package-lock.json ./
 RUN npm install --legacy-peer-deps
 
-FROM node:20-slim AS app
+FROM node:22-slim AS app
 WORKDIR /application
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libvips \
