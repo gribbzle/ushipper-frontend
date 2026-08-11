@@ -1,6 +1,8 @@
 import React, { useMemo } from 'react';
 
-import { FuelCardLimits, FuelCardStatusTag, useOpenEditFuelCardPopup } from '@/components/admin/fuel';
+import { FuelCardLimits } from '@/components/admin/fuel/cards/fuel-card-limits/fuel-card-limits';
+import { FuelCardStatusTag } from '@/components/admin/fuel/cards/fuel-card-status-tag/fuel-card-status-tag';
+import { useOpenEditFuelCardPopup } from '@/components/admin/fuel/cards/edit-fuel-card-popup/use-open-edit-fuel-card-popup';
 import { HelperText } from '@/components/common/table/common/helper-text/helper-text';
 import { TableColumn } from '@/components/common/table/table.types';
 import { TableRowMenu } from '@/components/common/table/common/table-row-menu/table-row-menu';

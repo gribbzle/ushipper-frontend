@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { ReactElement, ReactNode } from 'react';
+import React, { useEffect, ReactElement, ReactNode } from 'react';
 import { FastifyRequest } from 'fastify';
 import i18next from 'i18next';
 import { NextPage } from 'next';
