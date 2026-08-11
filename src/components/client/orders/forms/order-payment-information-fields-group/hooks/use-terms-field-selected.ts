@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { usePaymentTerm } from '@/hooks/order';
+import { usePaymentTerm } from '@/hooks/order/use-order-payment-terms';
 
 import { useGetPaymentInformationValues } from './use-get-payment-information-values';
 

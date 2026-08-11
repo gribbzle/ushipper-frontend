@@ -1,14 +1,12 @@
 import { useCallback, useMemo } from 'react';
 
 import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
-import {
-    useCodCopOrderOptions,
-    useInstantPaymentAttachments,
-    useOpenDriverPaymentFormDrawer,
-    useOrder,
-    useOrderHelpers,
-    useOrdersActionsPermission,
-} from '@/hooks/order';
+import { useCodCopOrderOptions } from '@/hooks/order/use-cod-cop-order-options';
+import { useInstantPaymentAttachments } from '@/hooks/order/use-instant-payment-attachments';
+import { useOpenDriverPaymentFormDrawer } from '@/hooks/order/use-open-driver-payment-form-drawer';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrdersActionsPermission } from '@/hooks/order/use-orders-actions-permission';
 import { getFormattedToCurrencyTotalPayment } from '@/utils/payment';
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
 import { diffForHumans } from '@utils/dates';

@@ -22,7 +22,7 @@ import { RecalculateTransactionsPopup } from '@/components/client/orders/show/re
 import { AccessForbiddenBlock } from '@/components/common/main-layout/access-forbidden-block';
 import { getMainLayout } from '@/components/common/main-layout/main-layout';
 import { OrderStatus } from '@/enums/order-status';
-import { useOrdersActionsPermission } from '@/hooks/order';
+import { useOrdersActionsPermission } from '@/hooks/order/use-orders-actions-permission';
 import { useScrollTop } from '@/hooks/use-scroll-top';
 import { useAppDispatch } from '@store';
 import { useGetOrderQuery } from '@store/api/orders-api';

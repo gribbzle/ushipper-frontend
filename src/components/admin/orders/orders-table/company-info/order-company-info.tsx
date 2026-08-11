@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
 import { CompanyLogo } from '@/components/client/company/company-logo/company-logo';
-import { useOrder, useOrderHelpers } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
 import { classname } from '@utils/classname';
 import { getCompanyTypeTranslate } from '@utils/get-company-type-translate';
 import { translateByNamespace } from '@utils/i18n';

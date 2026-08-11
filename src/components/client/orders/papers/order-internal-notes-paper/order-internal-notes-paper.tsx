@@ -10,7 +10,7 @@ import { Dropdown } from '@/components/common/dropdown/dropdown';
 import { NotificationItem } from '@/components/common/notification-item/notification-item';
 import { Paper } from '@/components/common/paper/paper';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useAppDispatch } from '@store';
 import { OrderInternalNote, useGetOrderInternalNotesQuery } from '@store/api/order-internal-notes-api';
 import { ModeStateEnum, ordersActions } from '@store/client';

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { useRedirectToOrder } from '@/hooks/order';
+import { useRedirectToOrder } from '@/hooks/order/use-redirect-to-order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { classname } from '@utils/classname';
 

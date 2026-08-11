@@ -5,7 +5,7 @@ import { IconButton } from '@/components/common/icon-button/icon-button';
 import { TextAccordion } from '@/components/common/text-accordion/text-accordion';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { UserRoleGroup } from '@/enums/user-role-group';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useUserRoleGroup } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderDetailsSelector, ordersActions } from '@store/common';

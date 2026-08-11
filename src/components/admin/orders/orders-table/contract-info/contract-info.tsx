@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
-import { useCDContractAttachment } from '@/hooks/order';
+import { useCDContractAttachment } from '@/hooks/order/use-cd-contract-attachment';
 import { ImageProvider } from '@/providers/ImageProvider';
 
 export const ContractInfo = ({ publicId }: { publicId: string }) => {

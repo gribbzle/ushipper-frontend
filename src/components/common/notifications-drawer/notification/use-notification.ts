@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import { OfferTabsEnum } from '@/components/client/offers/offer-drawer/offer-drawer';
 import { OrderSourcesEnum } from '@/enums/order-sources-enum';
-import { useRedirectToOrder } from '@/hooks/order';
+import { useRedirectToOrder } from '@/hooks/order/use-redirect-to-order';
 import { formatToCurrency } from '@/utils/numbers';
 import { useMeCarrier, useMeShipper } from '@/hooks/use-user-role-group';
 import { useTimeoutManager } from '@/hooks/use-timeout-manager';

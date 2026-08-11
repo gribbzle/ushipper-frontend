@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import { Button } from '@/components/common/button/button';
 import { Popup } from '@/components/common/popup/popup';
-import { useRedirectToOrder } from '@/hooks/order';
+import { useRedirectToOrder } from '@/hooks/order/use-redirect-to-order';
 import parseAndShowAxiosError from '@/utils/parse-axios-error';
 import { useAppDispatch, useAppSelector } from '@store';
 import { useDeleteOrderMutation } from '@store/api/orders-api';

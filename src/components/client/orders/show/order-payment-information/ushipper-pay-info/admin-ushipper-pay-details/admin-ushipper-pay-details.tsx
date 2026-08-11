@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { useOrder, useOrderFees, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderFees } from '@/hooks/order/useOrderFees';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { classname } from '@utils/classname';
 import { translateByNamespace } from '@utils/i18n';

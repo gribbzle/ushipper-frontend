@@ -117,6 +117,9 @@ const nextConfig = {
 };
 
 const sentryWebpackPluginOptions = {
+    sourcemaps: {
+        deleteSourcemapsAfterUpload: true,
+    },
     org: 'gribbzle',
     project: `${projectName}-frontend`,
     silent: true,

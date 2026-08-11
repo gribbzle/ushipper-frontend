@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
-import { useOrder, useOrderHelpers } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
 import { TransactionStatusesEnum } from '@/enums/transactions/transaction-statuses-enum';
 import { useOpenTransactionsPage } from '@/hooks/navigation/useOpenTransactionsPage';
 import { useTransactionActionsPermission } from '@/hooks/accounting/use-transaction-actions-permission';

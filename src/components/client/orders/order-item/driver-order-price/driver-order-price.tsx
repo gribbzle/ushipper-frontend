@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
-import { useOrderPaymentTerms } from '@/hooks/order';
+import { useOrderPaymentTerms } from '@/hooks/order/use-order-payment-terms';
 import { getPaymentTermTranslate } from '@/utils/payment';
 import { BalanceValue } from '@store/admin';
 import { OrderPaymentInformation } from '@store/client';

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { useOrder, useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
 import { DotLeader } from '@/components/ui/data-display/dot-leader';
 import { translateByNamespace } from '@utils/i18n';

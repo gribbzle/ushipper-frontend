@@ -3,7 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import { OrderSendBOLForm } from '@/components/client/orders/forms/order-send-bol-form/order-send-bol-form';
 import { Button } from '@/components/common/button/button';
 import { Drawer } from '@/components/common/drawer/drawer';
-import { useHandleViewBol } from '@/hooks/order';
+import { useHandleViewBol } from '@/hooks/order/use-handle-view-bol';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderFormEnum, ordersActions, orderSendBOLDrawerPropsSelector } from '@store/common';
 import { classname } from '@utils/classname';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 import { useMeAdmin } from '@/hooks/use-user-role-group';
 import { classname } from '@utils/classname';
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
-import { useHandleViewBol } from '@/hooks/order';
+import { useHandleViewBol } from '@/hooks/order/use-handle-view-bol';
 import { Attachment } from '@/shared/types';
 import { fetchOrderBOL } from '@api';
 import { AttachmentType } from '@/enums/attachment-types-enum';

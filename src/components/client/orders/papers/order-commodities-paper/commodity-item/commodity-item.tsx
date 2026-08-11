@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CommodityDetails } from '@/components/common/commodity/commodity-details/commodity-details';
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { OrderCommodity } from '@store/api/orders-api';
 import { classname } from '@utils/classname';

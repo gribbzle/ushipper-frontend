@@ -5,7 +5,7 @@ import { translateByNamespace } from '@/utils/i18n';
 import { getObjectWithoutEmptyFields } from '@/utils/objects';
 import { OrderCommodity } from '@store/api/orders-api';
 
-import { getCommodityTypeTranslate } from './translate';
+import { getCommodityTypeTranslate } from './translate/commodity/get-commodity-type-translate';
 
 const t = translateByNamespace('client:popups:delete-commodity');
 

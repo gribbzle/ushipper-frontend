@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
-import { useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 
 export const useClientUshipperPayInformation = () => {
     const { receiptlessOrder } = useOrderHelpers();

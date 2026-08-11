@@ -6,7 +6,7 @@ import { DeleteOrderCommodityPopup } from '@/components/client/orders/popups/del
 import { AlertBlock } from '@/components/common/alert-block/alert-block';
 import { Button } from '@/components/common/button/button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { useMeShipper } from '@/hooks/use-user-role-group';
 import { useAppDispatch } from '@store';

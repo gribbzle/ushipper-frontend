@@ -7,7 +7,7 @@ import { DeleteOrderExpensePopup } from '@/components/client/orders/popups/delet
 import { Button } from '@/components/common/button/button';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
 import { Paper } from '@/components/common/paper/paper';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useAppDispatch } from '@store';
 import { OrderExpense, useGetOrderExpensesQuery } from '@store/api/order-expenses-api';
 import { ordersActions } from '@store/common';

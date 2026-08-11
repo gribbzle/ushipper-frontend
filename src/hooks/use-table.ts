@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { toSnakeCase } from 'js-convert-case';
 
-import { useQueryFilters } from './filters';
+import { useQueryFilters } from './filters/use-query-filters';
 import { usePagination } from './use-pagination';
 
 export const useTable = () => {

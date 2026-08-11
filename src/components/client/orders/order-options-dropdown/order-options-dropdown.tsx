@@ -1,7 +1,8 @@
 import React, { ReactNode, useCallback, useMemo } from 'react';
 
 import { Dropdown, DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
-import { useHandleSendBOLDrawer, useHandleViewBol } from '@/hooks/order';
+import { useHandleSendBOLDrawer } from '@/hooks/order/use-handle-send-bol-drawer';
+import { useHandleViewBol } from '@/hooks/order/use-handle-view-bol';
 import useOrderOptionsHandlers from '@/hooks/order/use-order-options-handlers';
 import { downloadFileUsingAnchorElement } from '@/utils/files';
 import { OrderPaymentStatus } from '@/enums/order-payment-status';

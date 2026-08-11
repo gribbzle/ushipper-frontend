@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 
-import { useOrder, useOrderPaymentTerms } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderPaymentTerms } from '@/hooks/order/use-order-payment-terms';
 import { getOrderTermWithMethod } from '@/utils/order';
 import { calculateTotalPayment, getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
 import { classname } from '@utils/classname';

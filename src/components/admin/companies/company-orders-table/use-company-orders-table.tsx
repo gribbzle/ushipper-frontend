@@ -7,7 +7,7 @@ import { TableRowMenu } from '@/components/common/table/common/table-row-menu/ta
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { OrderSortingDirection } from '@/enums/order-sorting-direction';
 import { OrderSortingName } from '@/enums/order-sorting-name';
-import { useOrdersActionsPermission } from '@/hooks/order';
+import { useOrdersActionsPermission } from '@/hooks/order/use-orders-actions-permission';
 import { useCompanyPage } from '@/hooks/companies/use-company-page';
 import { useQueryFilters } from '@/hooks/filters/use-query-filters';
 import { useTable } from '@/hooks/use-table';

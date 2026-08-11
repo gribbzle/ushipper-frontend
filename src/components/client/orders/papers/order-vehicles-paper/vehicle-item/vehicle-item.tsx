@@ -7,7 +7,7 @@ import { IconButton } from '@/components/common/icon-button/icon-button';
 import { Tooltip } from '@/components/common/tooltip/tooltip';
 import { TooltipContent } from '@/components/common/tooltip/tooltip';
 import { TooltipTrigger } from '@/components/common/tooltip/tooltip';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useDisableProductChanging } from '@/hooks/order/use-disable-product-changing';
 import { getVehicleTypeTranslation } from '@/utils/vehicle';
 import { useGetOrderVehicleInspectionsQuery } from '@store/api/order-vehicle-api';

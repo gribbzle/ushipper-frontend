@@ -4,7 +4,7 @@ import { UserRoleGroup } from '@/enums/user-role-group';
 import { useAppSelector } from '@store';
 import { authorizedUserSelector } from '@store/global';
 
-import { useGetCompanyData } from '../companies';
+import { useGetCompanyData } from '../companies/use-get-company-data';
 
 export const useIsPartnerCompany = () => {
     const { data: userCompany } = useGetCompanyData();

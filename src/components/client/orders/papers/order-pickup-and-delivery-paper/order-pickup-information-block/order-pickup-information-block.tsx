@@ -4,7 +4,7 @@ import has from 'has-values';
 import { OrderPickupInformationDrawer } from '@/components/client/orders/drawers/order-pickup-information-drawer/order-pickup-information-drawer';
 import { OrderInformationList } from '@/components/client/orders/order-information-list/order-information-list';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useAppDispatch, useAppSelector } from '@store';
 import { orderPickedUpAtSelector, orderPickupInformationSelector, ordersActions } from '@store/client';
 import { translateByNamespace } from '@utils/i18n';

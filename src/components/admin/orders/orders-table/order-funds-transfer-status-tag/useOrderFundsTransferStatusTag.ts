@@ -1,7 +1,11 @@
 import { useCallback, useMemo } from 'react';
 
 import { DropdownDividerOption, DropdownOption } from '@/components/common/dropdown/dropdown';
-import { useFundsTransferStatusOptions, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers, useOrdersActionsPermission } from '@/hooks/order';
+import { useFundsTransferStatusOptions } from '@/hooks/order/useFundsTransferStatusOptions';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
+import { useOrdersActionsPermission } from '@/hooks/order/use-orders-actions-permission';
 import { FundsTransferStatusView } from '@/enums/funds-transfer-status';
 import { useOpenTransactionsPage } from '@/hooks/navigation/useOpenTransactionsPage';
 import { diffForHumans } from '@utils/dates';

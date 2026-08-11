@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import { toast } from 'react-toastify';
 
 import { Link } from '@/components/common/link/link';
-import { useOrder } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
 import { getFullNameOfVehicle } from '@/utils/vehicle';
 import { classname } from '@utils/classname';
 import { getFullNameOfCommodity } from '@utils/commodity';

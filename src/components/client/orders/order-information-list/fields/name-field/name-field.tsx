@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IconButton } from '@/components/common/icon-button/icon-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { classname } from '@utils/classname';
 
 import './name-field.scss';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useOrderPaymentTerms } from '@/hooks/order';
+import { useOrderPaymentTerms } from '@/hooks/order/use-order-payment-terms';
 import { FundsTransferStatus } from '@/enums/funds-transfer-status';
 import { OrderPaymentStatus } from '@/enums/order-payment-status';
 import { OrderStatisticsStatus } from '@/enums/order/order-statistics-status';

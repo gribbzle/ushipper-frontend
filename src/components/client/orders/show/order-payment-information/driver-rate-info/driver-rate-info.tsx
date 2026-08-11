@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 
-import { useOrderPaymentTerms } from '@/hooks/order';
-import { isReceiptlessOrder, preparePaymentInformation } from '@/utils/orders';
+import { useOrderPaymentTerms } from '@/hooks/order/use-order-payment-terms';
+import { isReceiptlessOrder } from '@/utils/orders/order-payment-helpers';
+import { preparePaymentInformation } from '@/utils/orders/prepare-payment-information';
 import { getPaymentMethodTranslate, getPaymentTermTranslate } from '@/utils/payment';
 import { useAppSelector } from '@store';
 import { orderDriverDelayedPaymentSelector, orderDriverFeeChargeSelector, orderFullPriceSelector, orderPriceSelector, orderSelector } from '@store/client';

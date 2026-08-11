@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 
 import { InstantTermPaymentType } from '@/enums/instant-term-payment-type';
-import { useCodCopOrderOptions } from '@/hooks/order';
+import { useCodCopOrderOptions } from '@/hooks/order/use-cod-cop-order-options';
 import { translateByNamespace } from '@utils/i18n';
 
 import { CodCopOrdersActionTagProps } from './cod-cop-order-action-tag.types';

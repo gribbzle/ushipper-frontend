@@ -4,7 +4,7 @@ import has from 'has-values';
 import { OrderCustomerInformationDrawer } from '@/components/client/orders/drawers/order-customer-information-drawer/order-customer-information-drawer';
 import { OrderInformationList } from '@/components/client/orders/order-information-list/order-information-list';
 import { ZoneButton } from '@/components/common/zone-button/zone-button';
-import { useCanManageOrder } from '@/hooks/order';
+import { useCanManageOrder } from '@/hooks/order/use-can-manage-order';
 import { useMeCarrier, useMeDriverRelated } from '@/hooks/use-user-role-group';
 import { useAppDispatch, useAppSelector } from '@store';
 import { OrderCustomerInformation, orderCustomerInformationSelector, ordersActions } from '@store/client';

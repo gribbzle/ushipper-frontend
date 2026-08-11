@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 
-import { useOrder, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 import { getProjectOrderPayText } from '@utils/translate/order/get-project-order-pay-text';
 
 export const useUshipperPayInformation = () => {

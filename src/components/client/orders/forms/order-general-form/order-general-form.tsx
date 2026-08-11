@@ -19,7 +19,7 @@ import { OrderExpensesFormPaper } from '@/components/client/orders/papers/order-
 import { OrderVehiclesFormPaper } from '@/components/client/orders/papers/order-vehicles-form-paper/order-vehicles-form-paper';
 import { RouterContext } from '@/components/common/router-provider/router-provider';
 import { Paper } from '@/components/common/paper/paper';
-import { useRedirectToOrder } from '@/hooks/order';
+import { useRedirectToOrder } from '@/hooks/order/use-redirect-to-order';
 import { useOnBack } from '@/hooks/useOnBack';
 import { Attachment } from '@/shared/types';
 import { AttachmentType } from '@/enums/attachment-types-enum';

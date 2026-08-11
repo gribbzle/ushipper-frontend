@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 
 import { AttachmentItem } from '@/components/common/attachment-item/attachment-item';
-import { useInstantPaymentAttachments, useOrder, useOrderHelpers, useOrderPaymentInformationHelpers } from '@/hooks/order';
+import { useInstantPaymentAttachments } from '@/hooks/order/use-instant-payment-attachments';
+import { useOrder } from '@/hooks/order/useOrder';
+import { useOrderHelpers } from '@/hooks/order/useOrderHelpers';
+import { useOrderPaymentInformationHelpers } from '@/hooks/order/useOrderPaymentInformationHelpers';
 import { ImageProvider } from '@/providers/ImageProvider';
 import { classname } from '@utils/classname';
 
