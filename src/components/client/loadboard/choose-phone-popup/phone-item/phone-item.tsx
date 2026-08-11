@@ -7,7 +7,7 @@ import { fromPhoneTypeToTranslation } from './from-phone-type-to-translation';
 import { PhoneItemProps } from './phone-item.types';
 
 import './phone-item.scss';
-import MessageOutlinedIcon from '@/assets/icons/message-outlined.svg';
+import MessageOutlinedIcon from '@/assets/icons/message-outlined-icon.svg';
 import PhoneOutlinedIcon from '@/assets/icons/phone-outlined.svg';
 
 const cn = classname('phone-item');
