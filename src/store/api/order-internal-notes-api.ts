@@ -21,6 +21,7 @@ type OrderInternalNotesResponse = {
 };
 
 export const orderInternalNotesApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getOrderInternalNotes: builder.query<OrderInternalNotesResponse, { orderId: string; cursor?: string }>({
             query: ({ orderId, cursor }) => ({

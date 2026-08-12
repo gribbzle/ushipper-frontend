@@ -24,6 +24,7 @@ type OrderPaymentResponse = {
 };
 
 export const orderPaymentApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         createOrderPayment: builder.mutation<OrderPaymentResponse, OrderMarkAsPaidFormState>({
             query: ({ orderId, ...data }) => ({

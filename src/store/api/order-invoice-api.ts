@@ -50,6 +50,7 @@ export type OrderSendInvoiceFormState = Partial<{
 }>;
 
 const orderInvoiceApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getOrderInvoices: builder.query<PaginatedResponse<Invoice[]>, string>({
             query: orderId => ({
