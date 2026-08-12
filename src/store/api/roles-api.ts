@@ -11,6 +11,7 @@ export type GetRolesQueryType = {
 };
 
 const rolesApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getRoles: builder.query<UserRole[], GetRolesQueryType>({
             query: params => ({

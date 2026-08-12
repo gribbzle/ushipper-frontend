@@ -4,6 +4,7 @@ import { specializationsActions } from '@store/common/specialization/slice';
 import { apiSlice } from './api-slice';
 
 const specializationsApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getSpecializations: builder.query<Specialization[], void>({
             query: () => {

@@ -6,6 +6,7 @@ export type Language = {
 };
 
 const languagesApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getLanguages: builder.query<Language[], void>({
             query: () => ({

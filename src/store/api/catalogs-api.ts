@@ -10,6 +10,7 @@ import {
 import { PaginatedResponse } from '@utils/redux';
 
 export const catalogsApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getDispatchersCatalog: builder.query<PaginatedResponse<DispatcherCatalogInfo[]>, BaseCatalogFiltersParams>({
             query: params => ({

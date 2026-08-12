@@ -7,6 +7,7 @@ export type Country = {
 };
 
 const countriesApi = apiSlice.injectEndpoints({
+    overrideExisting: true,
     endpoints: builder => ({
         getCountries: builder.query<Country[], void>({
             query: () => ({
