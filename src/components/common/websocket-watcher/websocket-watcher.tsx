@@ -19,14 +19,14 @@ if (isClientSide()) {
 }
 
 const getEchoOptions = (authToken: string) => ({
-    broadcaster: 'reverb',
+    broadcaster: 'reverb' as const,
     key: process.env.pusherAppKey,
     wsHost: process.env.pusherHost,
     wssPort: Number(process.env.pusherPort),
     wsPort: Number(process.env.pusherPort),
     forceTLS: false,
     disableStats: true,
-    enabledTransports: ['ws', 'wss'],
+    enabledTransports: ['ws', 'wss'] as const,
     authEndpoint: `${process.env.pusherScheme}://${process.env.pusherHost}/api/broadcasting/auth`,
     auth: { headers: { Accept: 'application/json', Authorization: authToken } },
 });
